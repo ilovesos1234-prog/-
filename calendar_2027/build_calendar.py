@@ -4,6 +4,7 @@
 2) 표지 부제: '세무·행정'을 마지막으로 이동
 3) 1~12월 범례: '세무·행정' <-> '학교시험' 자리 바꾸기
 4) 2월·8월 주요 일정에서 '대구 태권도 …' 항목 삭제
+5) 2월 21일에 '정월대보름' 추가
 
 사용법: python3 build_calendar.py 원본.pdf 결과.pdf 폰트폴더
 """
@@ -306,6 +307,19 @@ def remove_taekwondo(data):
     return data[:m4.start()] + data[m4.end():]
 
 
+def day_labels():
+    """날짜 칸에 추가할 글 (달력 원본의 절기 글씨와 같은 위치·크기·색)."""
+    buf = io.BytesIO()
+    c = canvas.Canvas(buf, pagesize=(841.8898, 595.2756))
+    c.setFillColor(HexColor("#9A6A24"))
+    c.setFont("NGB", 6.8)
+    c.drawString(46.185, 209, "정월대보름")  # 2월 21일(일)
+    c.showPage()
+    c.save()
+    buf.seek(0)
+    return pypdf.PdfReader(buf).pages[0]
+
+
 def main():
     register_fonts()
     reader = pypdf.PdfReader(SRC)
@@ -329,6 +343,8 @@ def main():
         if month in (2, 8):
             data = remove_taekwondo(data)
         set_content(writer, page, data)
+        if month == 2:
+            page.merge_page(day_labels())
 
     writer.insert_page(member_page(), 1)
     writer.add_metadata(reader.metadata)
