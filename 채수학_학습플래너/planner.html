@@ -76,14 +76,16 @@
   .col{padding:0 4mm;display:flex;flex-direction:column;gap:3mm;}
   .col:first-child{padding-left:0;border-right:1.5px solid var(--green);}
   .col:last-child{padding-right:0;}
-  .q{display:flex;flex-direction:column;}
+  .q{display:flex;flex-direction:column;flex:1 1 0;min-height:0;}
+  .q .tw{flex:1 1 0;min-height:0;}
+  .q .tw table{height:100%;}
   .q .qt{font-size:10px;letter-spacing:-.2px;font-weight:500;margin-bottom:1.4mm;white-space:nowrap;}
   .q .qt b{font-weight:900;color:var(--green-d);font-size:12.5px;margin-right:1mm;}
   .q .qt .pt{color:var(--orange);font-weight:900;}
   .q .qt .bl{display:inline-block;width:4.5mm;}
   table{width:100%;border-collapse:collapse;table-layout:fixed;background:#fff;}
   th{background:var(--green);color:#fff;font-size:10.5px;font-weight:700;height:5.6mm;border:1px solid var(--green);}
-  td{border:1px solid var(--green-line);height:6.75mm;position:relative;}
+  td{border:1px solid var(--green-line);height:6mm;position:relative;}
   td.c{border-right:none;}
   td.ck{width:6mm;border-left:none;}
   td.ck::after{content:"";position:absolute;width:3mm;height:3mm;border:1.2px solid var(--green-line);border-radius:.7mm;left:50%;top:50%;transform:translate(-50%,-50%);}
@@ -96,7 +98,7 @@
   .choices{display:flex;justify-content:space-between;font-size:10.5px;font-weight:500;color:var(--green-d);padding:1.6mm 1mm 0;}
   .choices .ci{display:inline-flex;align-items:center;justify-content:center;width:4mm;height:4mm;border:1px solid var(--green-d);border-radius:50%;font-size:8.5px;font-weight:700;margin-right:.8mm;}
 
-  .weekly table td{height:11.2mm;}
+  .weekly table td{height:9mm;}
   .weekly .wk-row{display:flex;}
   .weekly td .day{position:absolute;left:1.6mm;top:1.2mm;font-size:9px;font-weight:900;color:var(--green);}
   .weekly td.goal{background:var(--orange-l);}
@@ -273,8 +275,8 @@
     for(let i=0;i<12;i++) rows+='<tr><td></td><td class="c"></td><td class="ck"></td><td></td></tr>';
     return `<div class="q">
       <div class="qt"><b>${n}.</b><span class="bl"></span>월<span class="bl"></span>일<span class="bl"></span>요일의 &lt;계획표&gt;를 참고하여 옳은 것을 고르시오. <span class="pt">[3점]</span></div>
-      <table><colgroup><col style="width:13mm"><col><col style="width:6mm"><col style="width:12mm"></colgroup>
-      <tr><th>과목</th><th colspan="2">내용 (단원 · 쪽 · 문항)</th><th>Time</th></tr>${rows}</table>
+      <div class="tw"><table><colgroup><col style="width:13mm"><col><col style="width:6mm"><col style="width:12mm"></colgroup>
+      <tr><th>과목</th><th colspan="2">내용 (단원 · 쪽 · 문항)</th><th>Time</th></tr>${rows}</table></div>
       ${memo()}${choices()}</div>`;
   }
   function weekly(){
@@ -283,7 +285,7 @@
     rows += days.map(d=>`<tr><td><span class="day">${d}</span></td></tr>`).join('');
     return `<div class="q weekly">
       <div class="qt"><b>0.</b>주간 계획을 작성하고 이를 이행한 후, 옳은 선지를 고르시오.</div>
-      <table><tr><th>Weekly Plan</th></tr>${rows}</table>
+      <div class="tw"><table><tr><th>Weekly Plan</th></tr>${rows}</table></div>
       ${choices()}</div>`;
   }
   document.getElementById('c1a').innerHTML = weekly() + daily(1);
