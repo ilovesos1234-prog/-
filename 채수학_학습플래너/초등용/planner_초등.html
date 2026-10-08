@@ -112,7 +112,7 @@
   .review h4 b{color:var(--orange);margin-right:1.5mm;}
   .score-t td{height:8mm;text-align:center;font-size:11px;font-weight:700;}
   .score-t td.lab{background:var(--green-l);color:var(--green-d);}
-  .wrong td{height:10.6mm;}
+  .wrong td{height:14.4mm;}
   .wrong td.n{text-align:center;font-weight:900;color:var(--green);font-size:11px;}
   .lines{background:#fff;border:1.2px solid var(--green);border-radius:1.5mm;padding:0 3mm;}
   .lines div{height:8mm;border-bottom:1px dashed var(--green-line);}
@@ -124,6 +124,15 @@
   .tchr .lb{font-size:11px;font-weight:900;color:var(--orange);}
   .tchr .sign{position:absolute;right:3mm;bottom:2mm;font-size:10px;color:var(--muted);font-weight:700;}
   .tchr .sign span{display:inline-block;width:12mm;height:12mm;border:1.2px dashed var(--orange);border-radius:50%;vertical-align:middle;margin-left:1.5mm;}
+  .lv{position:absolute;display:flex;align-items:center;gap:1.6mm;font-size:11.5px;font-weight:900;color:var(--green-d);border:1.5px solid var(--green);border-radius:999px;padding:1.2mm 3.2mm;background:#fff;}
+  .lv .bx{display:inline-block;width:3.6mm;height:3.6mm;border:1.3px solid var(--green);border-radius:.8mm;margin-left:.6mm;vertical-align:-.5mm;}
+  .lv .dot{color:var(--green-line);}
+  .lv.l{left:30mm;top:10mm;}
+  .lv.r{right:0;top:10mm;}
+  .cover .lvc{position:absolute;right:18mm;top:58mm;font-size:12px;font-weight:700;color:#d9e6dd;display:flex;gap:2mm;align-items:center;}
+  .stk{display:grid;grid-template-columns:repeat(7,1fr);gap:2mm;}
+  .stk div{text-align:center;font-size:11px;font-weight:900;color:var(--green);}
+  .stk div i{display:block;margin:1mm auto 0;width:10.5mm;height:10.5mm;border:1.5px dashed var(--orange);border-radius:50%;background:#fff;}
 </style>
 </head>
 <body>
@@ -137,7 +146,7 @@
   <span class="badge">제 0교시</span>
   <div class="sub">채수학교습소 학습 플래너 문제지</div>
   <div class="title">계획 영역</div>
-  <div class="type">채수학형</div>
+  <div class="type">초등형</div>
 
   <div class="idrow">
     <div class="idbox"><div class="lab">성명</div><div class="blank"></div></div>
@@ -146,26 +155,10 @@
     </div>
   </div>
 
-  <div class="box">
-    <div class="rule"><span class="o"></span><span>계획표의 해당란에 성명과 학습 기간을 정확히 쓰시오.</span></div>
-    <div class="rule"><span class="o"></span><span>답안지의 필적 확인란에 다음의 문구를 정자로 기재하시오.</span></div>
-    <div class="stamp">채수학, <b>가능성</b>이 열리는 시간</div>
-    <div class="rule"><span class="o"></span><span>주간 계획과 일간 계획은 진도에 맞게 <b>단원·쪽수·문항 수</b>까지 구체적으로 작성하시오.</span></div>
-    <div class="rule"><span class="o"></span><span>학습 후에는 총 공부시간과 <b>오늘 틀린 문제·틀린 이유</b>를 Memo란에 빠짐없이 정리하시오.</span></div>
-    <div class="rule"><span class="o"></span><span>각 문항의 선택지 중 자신의 수행 정도를 가장 잘 나타내는 것을 고르시오.</span></div>
-    <div class="rule"><span class="o"></span><span>한 주를 마친 뒤 주간 점검 쪽에서 오답을 다시 풀고, 채쌤 확인을 받으시오.</span></div>
-  </div>
+  <div class="box"><div class="rule"><span class="o"></span><span>이름과 공부 기간을 또박또박 써요.</span></div><div class="rule"><span class="o"></span><span>아래 문장을 바른 글씨로 따라 써 봐요.</span></div><div class="stamp">채수학, <b>가능성</b>이 열리는 시간</div><div class="rule"><span class="o"></span><span>한 주의 계획을 먼저 세우고, 하루에 할 일을 <b>책 이름·쪽수</b>까지 적어요.</span></div><div class="rule"><span class="o"></span><span>공부를 마치면 다 한 일에 <b>✔ 표시</b>를 하고, 공부한 시간을 적어요.</span></div><div class="rule"><span class="o"></span><span>오늘 공부가 어땠는지 ①~⑤ 중에서 골라 동그라미 해요.</span></div><div class="rule"><span class="o"></span><span>한 주가 끝나면 점검 쪽을 채우고, 채쌤께 확인을 받아요.</span></div></div>
+  <div class="box notice"><h3><span>※</span> 꼭 기억해요 <span>※</span></h3><div class="chk"><span class="o"></span>조금씩이라도 매일 하는 게 가장 중요해요.<span class="dots"></span><span class="sq"></span></div><div class="chk"><span class="o"></span>틀려도 괜찮아요. 다시 풀면 내 실력이 돼요.<span class="dots"></span><span class="sq"></span></div><div class="chk"><span class="o"></span>모르는 건 부끄러운 게 아니에요. 꼭 질문해요!<span class="dots"></span><span class="sq"></span></div><div class="chk"><span class="o"></span>어제의 나보다 조금만 더 자라면 충분해요.<span class="dots"></span><span class="sq"></span></div><div class="chk"><span class="o"></span>끝까지 해낸 나를 꼭 칭찬해 줘요!<span class="dots"></span><span class="sq"></span></div></div>
 
-  <div class="box notice">
-    <h3><span>※</span> 수험생 유의사항 <span>※</span></h3>
-    <div class="chk"><span class="o"></span>수학은 많이 푸는 것보다 제대로 이해하는 것이 먼저예요.<span class="dots"></span><span class="sq"></span></div>
-    <div class="chk"><span class="o"></span>틀린 문제는 실패가 아니라, 오늘 찾은 나의 약점이에요.<span class="dots"></span><span class="sq"></span></div>
-    <div class="chk"><span class="o"></span>답을 외우지 말고, 왜 그렇게 되는지 스스로 설명해 봐요.<span class="dots"></span><span class="sq"></span></div>
-    <div class="chk"><span class="o"></span>비교할 사람은 어제의 나 하나면 충분해요.<span class="dots"></span><span class="sq"></span></div>
-    <div class="chk"><span class="o"></span>오늘 한 줄의 풀이가 모여 결국 실력이 돼요. 끝까지 함께해요!<span class="dots"></span><span class="sq"></span></div>
-  </div>
-
-  <div class="warn"><span>※</span> 학습이 시작될 때까지 표지를 넘기지 마십시오.</div>
+  <div class="warn"><span>※</span> 공부를 시작할 때까지 표지를 넘기지 마세요!</div>
 
   <div class="logo">
     <div class="kr">채<i>수</i>학</div>
@@ -179,13 +172,11 @@
     <div class="sub">채수학교습소 학습 플래너 문제지</div>
     <div class="t">계획 영역</div>
     <span class="badge">제 0교시</span>
+    <div class="lv l">초등</div>
     <div class="pno">1</div>
   </div>
-  <div class="meta">
-    학습 기간 : <span class="sp" style="width:7mm"></span>월<span class="sp" style="width:5mm"></span>일<span class="sp" style="width:5mm"></span>요일 ~ <span class="sp" style="width:6mm"></span>월<span class="sp" style="width:5mm"></span>일<span class="sp" style="width:5mm"></span>요일 ( <span class="sp" style="width:4mm"></span>일 ),
-    <span style="margin-left:2mm">일 총학습시간 : <span class="sp" style="width:6mm"></span>H<span class="sp" style="width:6mm"></span>M</span>
-    <span class="score">원점수 : <span class="sp" style="width:7mm"></span>/ 21</span>
-  </div>
+  <div class="meta">공부 기간 : <span class="sp" style="width:7mm"></span>월<span class="sp" style="width:5mm"></span>일<span class="sp" style="width:5mm"></span>요일 ~ <span class="sp" style="width:6mm"></span>월<span class="sp" style="width:5mm"></span>일<span class="sp" style="width:5mm"></span>요일,
+    <span style="margin-left:3mm">이번 주 공부시간 : <span class="sp" style="width:8mm"></span>시간<span class="sp" style="width:7mm"></span>분</span><span class="score">원점수 : <span class="sp" style="width:7mm"></span>/ 21</span></div>
   <div class="cols">
     <div class="col" id="c1a"></div>
     <div class="col" id="c1b"></div>
@@ -199,7 +190,7 @@
     <div class="sub">채수학교습소 학습 플래너 문제지</div>
     <div class="t">계획 영역</div>
     <div class="pno" style="left:0;right:auto">2</div>
-    <div class="brand"></div>
+    <div class="lv r">초등</div>
   </div>
   <div class="cols" style="margin-top:4mm">
     <div class="col" id="c2a"></div>
@@ -214,69 +205,38 @@
     <div class="sub">채수학교습소 학습 플래너 문제지</div>
     <div class="t">점검 영역</div>
     <span class="badge">주간 점검</span>
+    <div class="lv l">초등</div>
     <div class="pno">3</div>
   </div>
 
   <div class="cols" style="margin-top:5mm">
     <div class="col" style="gap:5mm">
-      <div>
-        <h4><b>8.</b>이번 주 원점수를 기록하시오.</h4>
-        <table class="score-t">
-          <tr><th>요일</th><th>월</th><th>화</th><th>수</th><th>목</th><th>금</th><th>토</th><th>일</th></tr>
-          <tr><td class="lab">점수</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-          <tr><td class="lab">시간</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-        </table>
-      </div>
-      <div>
-        <h4><b>9.</b>이번 주 다시 풀 오답을 정리하시오. <span style="color:var(--orange)">[5점]</span></h4>
-        <table class="wrong">
-          <colgroup><col style="width:7mm"><col style="width:22mm"><col><col style="width:9mm"></colgroup>
-          <tr><th>No</th><th>교재·쪽·번호</th><th>틀린 이유 (개념 / 계산 / 해석)</th><th>재풀이</th></tr>
-          <tbody id="wrongRows"></tbody>
-        </table>
-      </div>
+      <div><h4><b>8.</b>이번 주 점수와 공부 시간을 적어 봐요.</h4><table class="score-t"><tr><th>요일</th><th>월</th><th>화</th><th>수</th><th>목</th><th>금</th><th>토</th><th>일</th></tr>
+      <tr><td class="lab">점수</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td class="lab">시간(분)</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr></table></div>
+      <div><h4><b>9.</b>틀린 문제를 다시 풀어 봐요. <span style="color:var(--orange)">[5점]</span></h4><table class="wrong"><colgroup><col style="width:7mm"><col style="width:24mm"><col><col style="width:15mm"></colgroup>
+      <tr><th>No</th><th>책·쪽·번호</th><th>왜 틀렸을까요?</th><th>다시 풀기</th></tr><tbody id="wrongRows"></tbody></table></div>
     </div>
     <div class="col" style="gap:5mm">
-      <div>
-        <h4><b>10.</b>이번 주에 새로 알게 된 개념·공식을 쓰시오.</h4>
-        <div class="lines"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
-      </div>
-      <div>
-        <h4><b>11.</b>자신의 학습 태도를 점검하시오.</h4>
-        <div class="self">
-          <span>계획한 분량을 끝까지 했나요?</span><span class="s"><i>1</i><i>2</i><i>3</i><i>4</i><i>5</i></span>
-          <span>풀이 과정을 꼼꼼히 썼나요?</span><span class="s"><i>1</i><i>2</i><i>3</i><i>4</i><i>5</i></span>
-          <span>틀린 이유를 스스로 찾았나요?</span><span class="s"><i>1</i><i>2</i><i>3</i><i>4</i><i>5</i></span>
-          <span>모르는 문제를 질문했나요?</span><span class="s"><i>1</i><i>2</i><i>3</i><i>4</i><i>5</i></span>
-          <span>숙제를 미루지 않았나요?</span><span class="s"><i>1</i><i>2</i><i>3</i><i>4</i><i>5</i></span>
-        </div>
-      </div>
-      <div>
-        <h4><b>12.</b>다음 주 나에게 한마디를 쓰시오.</h4>
-        <div class="lines"><div></div><div></div><div></div><div></div></div>
-      </div>
-      <div class="tchr">
-        <div class="lb">채쌤 한마디</div>
-        <div class="sign">확인<span></span></div>
-      </div>
-    </div>
-  </div>
+      <div><h4><b>10.</b>이번 주에 새로 알게 된 것을 써 봐요.</h4><div class="lines"><div></div><div></div><div></div><div></div><div></div></div></div>
+      <div><h4><b>11.</b>이번 주 나는 어땠나요?</h4><div class="self"><span>계획을 끝까지 지켰나요?</span><span class="s"><i>1</i><i>2</i><i>3</i><i>4</i><i>5</i></span><span>풀이를 또박또박 썼나요?</span><span class="s"><i>1</i><i>2</i><i>3</i><i>4</i><i>5</i></span><span>틀린 문제를 다시 풀었나요?</span><span class="s"><i>1</i><i>2</i><i>3</i><i>4</i><i>5</i></span><span>모르는 것을 질문했나요?</span><span class="s"><i>1</i><i>2</i><i>3</i><i>4</i><i>5</i></span><span>숙제를 미루지 않았나요?</span><span class="s"><i>1</i><i>2</i><i>3</i><i>4</i><i>5</i></span></div></div>
+      <div><h4><b>12.</b>오늘 할 일을 다 했다면 칭찬 스티커를 붙여요!</h4><div class="stk"><div>월<i></i></div><div>화<i></i></div><div>수<i></i></div><div>목<i></i></div><div>금<i></i></div><div>토<i></i></div><div>일<i></i></div></div></div>
+      <div class="tchr"><div class="lb">채쌤 한마디</div><div class="sign">확인<span></span></div></div>
+    </div></div>
   <div class="footer"><b>채수학교습소</b> · 대구 수성구 범어동 261-33 4층 (수성구청역 2번 출구) · 상담 010-8677-2263 · blog.naver.com/chaemath2263</div>
 </section>
 
 <script>
-  const CHOICES = ['매우만족','만족','보통','아쉬움','휴식'];
-  const choices = () => '<div class="choices">' + CHOICES.map((c,i)=>`<span><span class="ci">${i+1}</span>${c}</span>`).join('') + '</div>';
+  const CFG = {"rows": 9, "wrong": 14, "choices": ["최고예요", "잘했어요", "보통이에요", "아쉬워요", "쉬었어요"], "memo": "오늘 새로 알게 된 것", "qt": "요일, 오늘 할 일을 계획해 봐요!", "content": "오늘 할 일 (책 · 쪽수)", "time": "시간", "wq": "이번 주 계획을 세우고, 지킨 만큼 골라 봐요.", "wh": "이번 주 계획"};
+  const choices = () => '<div class="choices">' + CFG.choices.map((c,i)=>`<span><span class="ci">${i+1}</span>${c}</span>`).join('') + '</div>';
   const memo = () => `<div class="memo-wrap"><span class="bogi">&lt;보 기&gt;</span>
-      <div class="memo"><div>Memo.</div><div><span>✔</span> 오늘 틀린 문제 · 이유</div></div></div>`;
-
+      <div class="memo"><div>Memo.</div><div><span>✔</span> ${CFG.memo}</div></div></div>`;
   function daily(n){
     let rows='';
-    for(let i=0;i<12;i++) rows+='<tr><td></td><td class="c"></td><td class="ck"></td><td></td></tr>';
+    for(let i=0;i<CFG.rows;i++) rows+='<tr><td></td><td class="c"></td><td class="ck"></td><td></td></tr>';
     return `<div class="q">
-      <div class="qt"><b>${n}.</b><span class="bl"></span>월<span class="bl"></span>일<span class="bl"></span>요일의 &lt;계획표&gt;를 참고하여 옳은 것을 고르시오. <span class="pt">[3점]</span></div>
+      <div class="qt"><b>${n}.</b><span class="bl"></span>월<span class="bl"></span>일<span class="bl"></span>${CFG.qt} <span class="pt">[3점]</span></div>
       <div class="tw"><table><colgroup><col style="width:13mm"><col><col style="width:6mm"><col style="width:12mm"></colgroup>
-      <tr><th>과목</th><th colspan="2">내용 (단원 · 쪽 · 문항)</th><th>Time</th></tr>${rows}</table></div>
+      <tr><th>과목</th><th colspan="2">${CFG.content}</th><th>${CFG.time}</th></tr>${rows}</table></div>
       ${memo()}${choices()}</div>`;
   }
   function weekly(){
@@ -284,15 +244,15 @@
     let rows = '<tr><td class="goal"><span class="day">이번 주 목표</span></td></tr>';
     rows += days.map(d=>`<tr><td><span class="day">${d}</span></td></tr>`).join('');
     return `<div class="q weekly">
-      <div class="qt"><b>0.</b>주간 계획을 작성하고 이를 이행한 후, 옳은 선지를 고르시오.</div>
-      <div class="tw"><table><tr><th>Weekly Plan</th></tr>${rows}</table></div>
+      <div class="qt"><b>0.</b>${CFG.wq}</div>
+      <div class="tw"><table><tr><th>${CFG.wh}</th></tr>${rows}</table></div>
       ${choices()}</div>`;
   }
   document.getElementById('c1a').innerHTML = weekly() + daily(1);
   document.getElementById('c1b').innerHTML = daily(2) + daily(3);
   document.getElementById('c2a').innerHTML = daily(4) + daily(5);
   document.getElementById('c2b').innerHTML = daily(6) + daily(7);
-  let w=''; for(let i=1;i<=16;i++) w+=`<tr><td class="n">${i}</td><td></td><td></td><td class="ck" style="width:auto;border-left:1px solid var(--green-line)"></td></tr>`;
+  let w=''; for(let i=1;i<=CFG.wrong;i++) w+=`<tr><td class="n">${i}</td><td></td><td></td><td class="ck" style="width:auto;border-left:1px solid var(--green-line)"></td></tr>`;
   document.getElementById('wrongRows').innerHTML=w;
 </script>
 </body>
