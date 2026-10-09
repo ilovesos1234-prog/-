@@ -5,6 +5,7 @@
 3) 1~12월 범례: '세무·행정' <-> '학교시험' 자리 바꾸기
 4) 2월·8월 주요 일정에서 '대구 태권도 …' 항목 삭제
 5) 2월 21일에 '정월대보름' 추가
+6) 표지 로고를 연합회 공식 로고(akas_logo.png)로 바꾸고 영문을 'Art School'로 수정
 
 사용법: python3 build_calendar.py 원본.pdf 결과.pdf 폰트폴더
 """
@@ -307,6 +308,27 @@ def remove_taekwondo(data):
     return data[:m4.start()] + data[m4.end():]
 
 
+LOGO = __file__.rsplit("/", 1)[0] + "/akas_logo.png" if "/" in __file__ else "akas_logo.png"
+# 표지의 옛 AKAS 그림(타원 안 막대 + AKAS 글자) 부분
+OLD_LOGO_RE = re.compile(rb"q\nn 289\.0264 147 m .*?\(AKAS\) Tj T\* ET\nQ\n", re.S)
+
+
+def cover_logo():
+    """표지의 옛 로고 자리에 공식 로고 그림을 놓는다."""
+    buf = io.BytesIO()
+    c = canvas.Canvas(buf, pagesize=(841.8898, 595.2756))
+    h = 38
+    w = h * 1362 / 734  # 그림 가로세로 비율 유지
+    c.drawImage(LOGO, 256.0264 - w / 2, 147 - h / 2, w, h, mask="auto")
+    c.setFillColor(HexColor("#26342F"))
+    c.setFont("Times-Italic", 11)
+    c.drawString(304.0264, 133.5, "The Association of Korea Art School")
+    c.showPage()
+    c.save()
+    buf.seek(0)
+    return pypdf.PdfReader(buf).pages[0]
+
+
 def day_labels():
     """날짜 칸에 추가할 글 (달력 원본의 절기 글씨와 같은 위치·크기·색)."""
     buf = io.BytesIO()
@@ -335,7 +357,15 @@ def main():
     new = (b"(\\001\\002 \\003\\004 \\005\\006 \\007 \\013\\006\\014\\011\\015\\016 \\007 "
            b"\\010\\011\\007\\012\\006 \\017\\020)")
     assert cover.count(old) == 1
-    set_content(writer, pages[0], cover.replace(old, new))
+    cover = cover.replace(old, new)
+    cover, n = OLD_LOGO_RE.subn(b"", cover)
+    assert n == 1
+    # 옛 영문(Helvetica)은 지우고, 로고와 같은 기울임 글씨로 cover_logo()에서 다시 쓴다
+    eng = b"BT 1 0 0 1 304.0264 135 Tm (The  Association  of  Korea  Academic  School) Tj T* ET\n"
+    assert cover.count(eng) == 1
+    cover = cover.replace(eng, b"")
+    set_content(writer, pages[0], cover)
+    pages[0].merge_page(cover_logo())
 
     for month in range(1, 13):
         page = pages[month]
