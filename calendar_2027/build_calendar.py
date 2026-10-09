@@ -5,7 +5,7 @@
 3) 1~12월 범례: '세무·행정' <-> '학교시험' 자리 바꾸기
 4) 2월·8월 주요 일정에서 '대구 태권도 …' 항목 삭제
 5) 2월 21일에 '정월대보름' 추가
-6) 표지 로고를 연합회 공식 로고(akas_logo.png)로 바꾸고 영문을 'Art School'로 수정
+6) 표지 로고를 연합회 공식 로고(akas_logo.png)로 바꾸고 영문을 'Daegu Association of Private Tutoring Centers'로 수정
 
 사용법: python3 build_calendar.py 원본.pdf 결과.pdf 폰트폴더
 """
@@ -322,7 +322,7 @@ def cover_logo():
     c.drawImage(LOGO, 256.0264 - w / 2, 147 - h / 2, w, h, mask="auto")
     c.setFillColor(HexColor("#26342F"))
     c.setFont("Times-Italic", 11)
-    c.drawString(304.0264, 133.5, "The Association of Korea Art School")
+    c.drawString(304.0264, 133.5, "Daegu Association of Private Tutoring Centers")
     c.showPage()
     c.save()
     buf.seek(0)
