@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>채수학 학습 플래너</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&family=Noto+Serif+KR:wght@700;900&display=swap">
+<style>
+  :root{
+    --green:#1f5a45;
+    --green-d:#163f31;
+    --green-dd:#10302a;
+    --green-l:#e3eee6;
+    --green-line:#9fbfae;
+    --ivory:#fbf8ef;
+    --ivory-2:#f4efe0;
+    --orange:#e8833a;
+    --orange-l:#fbe7d6;
+    --ink:#22302a;
+    --muted:#6f7d75;
+  }
+  @page{size:A4;margin:0;}
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{font-family:'Noto Sans KR',sans-serif;color:var(--ink);background:#ccc;}
+  .page{width:210mm;height:297mm;position:relative;overflow:hidden;background:var(--ivory);page-break-after:always;}
+  .page:last-child{page-break-after:auto;}
+  @media screen{.page{margin:10mm auto;box-shadow:0 4px 20px rgba(0,0,0,.2);}}
+  .serif{font-family:'Noto Serif KR',serif;}
+
+  /* ===== 공통 배지 ===== */
+  .badge{display:inline-block;background:var(--orange);color:#fff;font-weight:900;border-radius:999px;letter-spacing:.5px;}
+
+  /* ===== 표지 ===== */
+  .cover{background:var(--green-d);color:var(--ivory);padding:16mm 17mm 12mm;}
+  .cover::before{content:"";position:absolute;inset:7mm;border:1.2px solid rgba(251,248,239,.35);border-radius:6mm;pointer-events:none;}
+  .cover .badge{font-size:15px;padding:6px 18px;}
+  .cover .sub{text-align:center;font-size:18px;font-weight:700;margin-top:4mm;letter-spacing:.5px;color:#d9e6dd;}
+  .cover .title{text-align:center;font-size:60px;font-weight:900;letter-spacing:14px;margin-top:2mm;line-height:1.15;}
+  .cover .type{position:absolute;right:18mm;top:44mm;border:2px solid var(--orange);color:var(--orange);font-weight:900;font-size:17px;padding:5px 12px;border-radius:8px;background:rgba(232,131,58,.08);}
+  .cover .math-deco{position:absolute;font-family:'Noto Serif KR',serif;color:rgba(251,248,239,.06);font-weight:900;user-select:none;}
+  .idrow{display:flex;justify-content:center;gap:9mm;margin-top:7mm;}
+  .idbox{display:flex;border:1.5px solid var(--ivory);height:12mm;}
+  .idbox .lab{background:var(--ivory);color:var(--green-d);font-weight:900;font-size:16px;padding:0 4mm;display:flex;align-items:center;}
+  .idbox .blank{width:42mm;}
+  .idbox .cell{width:8.5mm;border-left:1.5px solid var(--ivory);display:flex;align-items:center;justify-content:center;font-weight:900;}
+  .box{border:1.5px solid rgba(251,248,239,.8);border-radius:3mm;padding:4.5mm 8mm;margin-top:6mm;}
+  .rule{display:flex;gap:3mm;font-size:14.5px;font-weight:500;line-height:1.55;margin:2.4mm 0;}
+  .rule .o{flex:0 0 auto;width:4mm;height:4mm;border:1.5px solid var(--ivory);border-radius:50%;margin-top:1.2mm;}
+  .stamp{margin:4mm auto 4mm;width:80%;background:var(--ivory);color:var(--green-d);text-align:center;font-size:19px;font-weight:900;padding:3mm 0;border-radius:2mm;letter-spacing:1px;}
+  .stamp b{color:var(--orange);}
+  .notice h3{text-align:center;font-size:17px;font-weight:900;margin-bottom:3mm;}
+  .notice h3 span{color:var(--orange);}
+  .chk{display:flex;align-items:center;gap:3mm;font-size:14.5px;font-weight:500;margin:3.2mm 0;}
+  .chk .o{flex:0 0 auto;width:4mm;height:4mm;border:1.5px solid var(--ivory);border-radius:50%;}
+  .chk .dots{flex:1;border-bottom:1.5px dotted rgba(251,248,239,.45);margin:0 2mm;height:0;}
+  .chk .sq{flex:0 0 auto;width:7mm;height:7mm;border:1.5px solid var(--ivory);border-radius:1.2mm;}
+  .warn{border:1.5px solid rgba(251,248,239,.8);border-radius:2mm;text-align:center;font-weight:900;font-size:15.5px;padding:3mm;margin-top:6mm;}
+  .warn span{color:var(--orange);}
+  .logo{position:absolute;left:0;right:0;bottom:11mm;text-align:center;}
+  .logo .kr{font-family:'Noto Serif KR',serif;font-weight:900;font-size:30px;letter-spacing:6px;}
+  .logo .kr i{font-style:normal;color:var(--orange);}
+  .logo .en{font-size:9.5px;letter-spacing:2.5px;color:#b9cdbf;margin-top:1mm;font-weight:500;}
+
+  /* ===== 내지 ===== */
+  .inner{padding:9mm 10mm 11mm 12mm;display:flex;flex-direction:column;}
+  .head{position:relative;text-align:center;border-bottom:2.5px solid var(--green);padding-bottom:2mm;}
+  .head .sub{font-size:13px;font-weight:700;color:var(--green);}
+  .head .t{font-size:34px;font-weight:900;letter-spacing:9px;color:var(--green-d);line-height:1.25;}
+  .head .badge{position:absolute;left:0;top:10mm;font-size:12.5px;padding:4px 13px;}
+  .head .pno{position:absolute;right:0;top:2mm;font-family:'Noto Serif KR',serif;font-weight:900;font-size:30px;color:var(--green-d);}
+  .head .brand{position:absolute;right:0;top:13mm;font-size:10px;font-weight:700;color:var(--muted);}
+  .meta{display:flex;align-items:center;gap:2mm;font-size:12px;font-weight:700;padding:2.2mm 1mm;border-bottom:1px solid var(--green-line);color:var(--green-d);white-space:nowrap;}
+  .meta .sp{display:inline-block;}
+  .meta .score{margin-left:auto;background:var(--green-l);padding:1mm 3mm;border-radius:1.5mm;}
+  .cols{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);column-gap:0;margin-top:3mm;flex:1;min-height:0;}
+  .col{padding:0 4mm;display:flex;flex-direction:column;gap:3mm;}
+  .col:first-child{padding-left:0;border-right:1.5px solid var(--green);}
+  .col:last-child{padding-right:0;}
+  .q{display:flex;flex-direction:column;flex:1 1 0;min-height:0;}
+  .q .tw{flex:1 1 0;min-height:0;}
+  .q .tw table{height:100%;}
+  .q .qt{font-size:10px;letter-spacing:-.2px;font-weight:500;margin-bottom:1.4mm;white-space:nowrap;}
+  .q .qt b{font-weight:900;color:var(--green-d);font-size:12.5px;margin-right:1mm;}
+  .q .qt .pt{color:var(--orange);font-weight:900;}
+  .q .qt .bl{display:inline-block;width:4.5mm;}
+  table{width:100%;border-collapse:collapse;table-layout:fixed;background:#fff;}
+  th{background:var(--green);color:#fff;font-size:10.5px;font-weight:700;height:5.6mm;border:1px solid var(--green);}
+  td{border:1px solid var(--green-line);height:6mm;position:relative;}
+  td.c{border-right:none;}
+  td.ck{width:6mm;border-left:none;}
+  td.ck::after{content:"";position:absolute;width:3mm;height:3mm;border:1.2px solid var(--green-line);border-radius:.7mm;left:50%;top:50%;transform:translate(-50%,-50%);}
+  .memo-wrap{margin-top:2mm;position:relative;}
+  .memo-wrap .bogi{position:absolute;top:-2.2mm;left:50%;transform:translateX(-50%);background:var(--ivory);padding:0 2mm;font-size:9.5px;font-weight:700;color:var(--green);}
+  .memo{border:1.2px solid var(--green);border-radius:1.5mm;background:#fff;height:15mm;padding:1.6mm 2.4mm;display:grid;grid-template-columns:1fr 1fr;gap:2mm;}
+  .memo div{font-size:9.5px;font-weight:700;color:var(--muted);}
+  .memo div + div{border-left:1px dashed var(--green-line);padding-left:2mm;}
+  .memo div span{color:var(--orange);}
+  .choices{display:flex;justify-content:space-between;font-size:10.5px;font-weight:500;color:var(--green-d);padding:1.6mm 1mm 0;}
+  .choices .ci{display:inline-flex;align-items:center;justify-content:center;width:4mm;height:4mm;border:1px solid var(--green-d);border-radius:50%;font-size:8.5px;font-weight:700;margin-right:.8mm;}
+
+  .weekly table td{height:9mm;}
+  .weekly .wk-row{display:flex;}
+  .weekly td .day{position:absolute;left:1.6mm;top:1.2mm;font-size:9px;font-weight:900;color:var(--green);}
+  .weekly td.goal{background:var(--orange-l);}
+  .weekly td.goal .day{color:var(--orange);}
+
+  .footer{position:absolute;bottom:4mm;left:0;right:0;text-align:center;font-size:9px;color:var(--muted);font-weight:500;letter-spacing:.5px;}
+  .footer b{color:var(--green);}
+
+  /* ===== 주간 점검 ===== */
+  .review h4{font-size:13.5px;font-weight:900;color:var(--green-d);margin-bottom:2mm;}
+  .review h4 b{color:var(--orange);margin-right:1.5mm;}
+  .score-t td{height:8mm;text-align:center;font-size:11px;font-weight:700;}
+  .score-t td.lab{background:var(--green-l);color:var(--green-d);}
+  .wrong td{height:14.4mm;}
+  .wrong td.n{text-align:center;font-weight:900;color:var(--green);font-size:11px;}
+  .lines{background:#fff;border:1.2px solid var(--green);border-radius:1.5mm;padding:0 3mm;}
+  .lines div{height:8mm;border-bottom:1px dashed var(--green-line);}
+  .lines div:last-child{border-bottom:none;}
+  .self{display:grid;grid-template-columns:1fr auto;row-gap:2.6mm;font-size:11.5px;font-weight:500;}
+  .self .s{display:flex;gap:1.2mm;}
+  .self .s i{font-style:normal;width:5mm;height:5mm;border:1px solid var(--green);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:8.5px;font-weight:700;color:var(--green);}
+  .tchr{border:1.5px solid var(--orange);border-radius:2mm;background:#fff;padding:2mm 3mm;flex:1;position:relative;}
+  .tchr .lb{font-size:11px;font-weight:900;color:var(--orange);}
+  .tchr .sign{position:absolute;right:3mm;bottom:2mm;font-size:10px;color:var(--muted);font-weight:700;}
+  .tchr .sign span{display:inline-block;width:12mm;height:12mm;border:1.2px dashed var(--orange);border-radius:50%;vertical-align:middle;margin-left:1.5mm;}
+  .lv{position:absolute;display:flex;align-items:center;gap:1.6mm;font-size:11.5px;font-weight:900;color:var(--green-d);border:1.5px solid var(--green);border-radius:999px;padding:1.2mm 3.2mm;background:#fff;}
+  .lv .bx{display:inline-block;width:3.6mm;height:3.6mm;border:1.3px solid var(--green);border-radius:.8mm;margin-left:.6mm;vertical-align:-.5mm;}
+  .lv .dot{color:var(--green-line);}
+  .lv.l{left:30mm;top:10mm;}
+  .lv.r{right:0;top:10mm;}
+  .cover .lvc{position:absolute;right:18mm;top:58mm;font-size:12px;font-weight:700;color:#d9e6dd;display:flex;gap:2mm;align-items:center;}
+  .stk{display:grid;grid-template-columns:repeat(7,1fr);gap:2mm;}
+  .stk div{text-align:center;font-size:11px;font-weight:900;color:var(--green);}
+  .stk div i{display:block;margin:1mm auto 0;width:10.5mm;height:10.5mm;border:1.5px dashed var(--orange);border-radius:50%;background:#fff;}
+</style>
+</head>
+<body>
+
+<!-- ================= 표지 ================= -->
+<section class="page cover">
+  <div class="math-deco" style="font-size:150px;right:-6mm;top:118mm;">∑</div>
+  <div class="math-deco" style="font-size:120px;left:-4mm;top:170mm;">∫</div>
+  <div class="math-deco" style="font-size:90px;right:12mm;bottom:28mm;">π</div>
+
+  <span class="badge">제 0교시</span>
+  <div class="sub">채수학교습소 학습 플래너 문제지</div>
+  <div class="title">계획 영역</div>
+  <div class="type">초등형</div>
+
+  <div class="idrow">
+    <div class="idbox"><div class="lab">성명</div><div class="blank"></div></div>
+    <div class="idbox"><div class="lab">학습기간</div>
+      <div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell">-</div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div>
+    </div>
+  </div>
+
+  <div class="box"><div class="rule"><span class="o"></span><span>이름과 공부 기간을 또박또박 써요.</span></div><div class="rule"><span class="o"></span><span>아래 문장을 바른 글씨로 따라 써 봐요.</span></div><div class="stamp">채수학, <b>가능성</b>이 열리는 시간</div><div class="rule"><span class="o"></span><span>한 주의 계획을 먼저 세우고, 하루에 할 일을 <b>책 이름·쪽수</b>까지 적어요.</span></div><div class="rule"><span class="o"></span><span>공부를 마치면 다 한 일에 <b>✔ 표시</b>를 하고, 공부한 시간을 적어요.</span></div><div class="rule"><span class="o"></span><span>오늘 공부가 어땠는지 ①~⑤ 중에서 골라 동그라미 해요.</span></div><div class="rule"><span class="o"></span><span>한 주가 끝나면 점검 쪽을 채우고, 채쌤께 확인을 받아요.</span></div></div>
+  <div class="box notice"><h3><span>※</span> 꼭 기억해요 <span>※</span></h3><div class="chk"><span class="o"></span>조금씩이라도 매일 하는 게 가장 중요해요.<span class="dots"></span><span class="sq"></span></div><div class="chk"><span class="o"></span>틀려도 괜찮아요. 다시 풀면 내 실력이 돼요.<span class="dots"></span><span class="sq"></span></div><div class="chk"><span class="o"></span>모르는 건 부끄러운 게 아니에요. 꼭 질문해요!<span class="dots"></span><span class="sq"></span></div><div class="chk"><span class="o"></span>어제의 나보다 조금만 더 자라면 충분해요.<span class="dots"></span><span class="sq"></span></div><div class="chk"><span class="o"></span>끝까지 해낸 나를 꼭 칭찬해 줘요!<span class="dots"></span><span class="sq"></span></div></div>
+
+  <div class="warn"><span>※</span> 공부를 시작할 때까지 표지를 넘기지 마세요!</div>
+
+  <div class="logo">
+    <div class="kr">채<i>수</i>학</div>
+    <div class="en">WE TEACH HOW TO DO MATH</div>
+  </div>
+</section>
+
+<!-- ================= 1쪽 ================= -->
+<section class="page inner" id="p1">
+  <div class="head">
+    <div class="sub">채수학교습소 학습 플래너 문제지</div>
+    <div class="t">계획 영역</div>
+    <span class="badge">제 0교시</span>
+    <div class="lv l">초등</div>
+    <div class="pno">1</div>
+  </div>
+  <div class="meta">공부 기간 : <span class="sp" style="width:7mm"></span>월<span class="sp" style="width:5mm"></span>일<span class="sp" style="width:5mm"></span>요일 ~ <span class="sp" style="width:6mm"></span>월<span class="sp" style="width:5mm"></span>일<span class="sp" style="width:5mm"></span>요일,
+    <span style="margin-left:3mm">이번 주 공부시간 : <span class="sp" style="width:8mm"></span>시간<span class="sp" style="width:7mm"></span>분</span><span class="score">원점수 : <span class="sp" style="width:7mm"></span>/ 21</span></div>
+  <div class="cols">
+    <div class="col" id="c1a"></div>
+    <div class="col" id="c1b"></div>
+  </div>
+  <div class="footer"><b>채수학교습소</b> · 수학하는 방법을 가르칩니다 · 가능성이 열리는 시간</div>
+</section>
+
+<!-- ================= 2쪽 ================= -->
+<section class="page inner" id="p2">
+  <div class="head">
+    <div class="sub">채수학교습소 학습 플래너 문제지</div>
+    <div class="t">계획 영역</div>
+    <div class="pno" style="left:0;right:auto">2</div>
+    <div class="lv r">초등</div>
+  </div>
+  <div class="cols" style="margin-top:4mm">
+    <div class="col" id="c2a"></div>
+    <div class="col" id="c2b"></div>
+  </div>
+  <div class="footer"><b>채수학교습소</b> · 수학하는 방법을 가르칩니다 · 가능성이 열리는 시간</div>
+</section>
+
+<!-- ================= 3쪽 : 주간 점검 ================= -->
+<section class="page inner review">
+  <div class="head">
+    <div class="sub">채수학교습소 학습 플래너 문제지</div>
+    <div class="t">점검 영역</div>
+    <span class="badge">주간 점검</span>
+    <div class="lv l">초등</div>
+    <div class="pno">3</div>
+  </div>
+
+  <div class="cols" style="margin-top:5mm">
+    <div class="col" style="gap:5mm">
+      <div><h4><b>8.</b>이번 주 점수와 공부 시간을 적어 봐요.</h4><table class="score-t"><tr><th>요일</th><th>월</th><th>화</th><th>수</th><th>목</th><th>금</th><th>토</th><th>일</th></tr>
+      <tr><td class="lab">점수</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td class="lab">시간(분)</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr></table></div>
+      <div><h4><b>9.</b>틀린 문제를 다시 풀어 봐요. <span style="color:var(--orange)">[5점]</span></h4><table class="wrong"><colgroup><col style="width:7mm"><col style="width:24mm"><col><col style="width:15mm"></colgroup>
+      <tr><th>No</th><th>책·쪽·번호</th><th>왜 틀렸을까요?</th><th>다시 풀기</th></tr><tbody id="wrongRows"></tbody></table></div>
+    </div>
+    <div class="col" style="gap:5mm">
+      <div><h4><b>10.</b>이번 주에 새로 알게 된 것을 써 봐요.</h4><div class="lines"><div></div><div></div><div></div><div></div><div></div></div></div>
+      <div><h4><b>11.</b>이번 주 나는 어땠나요?</h4><div class="self"><span>계획을 끝까지 지켰나요?</span><span class="s"><i>1</i><i>2</i><i>3</i><i>4</i><i>5</i></span><span>풀이를 또박또박 썼나요?</span><span class="s"><i>1</i><i>2</i><i>3</i><i>4</i><i>5</i></span><span>틀린 문제를 다시 풀었나요?</span><span class="s"><i>1</i><i>2</i><i>3</i><i>4</i><i>5</i></span><span>모르는 것을 질문했나요?</span><span class="s"><i>1</i><i>2</i><i>3</i><i>4</i><i>5</i></span><span>숙제를 미루지 않았나요?</span><span class="s"><i>1</i><i>2</i><i>3</i><i>4</i><i>5</i></span></div></div>
+      <div><h4><b>12.</b>오늘 할 일을 다 했다면 칭찬 스티커를 붙여요!</h4><div class="stk"><div>월<i></i></div><div>화<i></i></div><div>수<i></i></div><div>목<i></i></div><div>금<i></i></div><div>토<i></i></div><div>일<i></i></div></div></div>
+      <div class="tchr"><div class="lb">채쌤 한마디</div><div class="sign">확인<span></span></div></div>
+    </div></div>
+  <div class="footer"><b>채수학교습소</b> · 대구 수성구 범어동 261-33 4층 (수성구청역 2번 출구) · 상담 010-8677-2263 · blog.naver.com/chaemath2263</div>
+</section>
+
+<script>
+  const CFG = {"rows": 9, "wrong": 14, "choices": ["최고예요", "잘했어요", "보통이에요", "아쉬워요", "쉬었어요"], "memo": "오늘 새로 알게 된 것", "qt": "요일, 오늘 할 일을 계획해 봐요!", "content": "오늘 할 일 (책 · 쪽수)", "time": "시간", "wq": "이번 주 계획을 세우고, 지킨 만큼 골라 봐요.", "wh": "이번 주 계획"};
+  const choices = () => '<div class="choices">' + CFG.choices.map((c,i)=>`<span><span class="ci">${i+1}</span>${c}</span>`).join('') + '</div>';
+  const memo = () => `<div class="memo-wrap"><span class="bogi">&lt;보 기&gt;</span>
+      <div class="memo"><div>Memo.</div><div><span>✔</span> ${CFG.memo}</div></div></div>`;
+  function daily(n){
+    let rows='';
+    for(let i=0;i<CFG.rows;i++) rows+='<tr><td></td><td class="c"></td><td class="ck"></td><td></td></tr>';
+    return `<div class="q">
+      <div class="qt"><b>${n}.</b><span class="bl"></span>월<span class="bl"></span>일<span class="bl"></span>${CFG.qt} <span class="pt">[3점]</span></div>
+      <div class="tw"><table><colgroup><col style="width:13mm"><col><col style="width:6mm"><col style="width:12mm"></colgroup>
+      <tr><th>과목</th><th colspan="2">${CFG.content}</th><th>${CFG.time}</th></tr>${rows}</table></div>
+      ${memo()}${choices()}</div>`;
+  }
+  function weekly(){
+    const days=['월','화','수','목','금','토','일'];
+    let rows = '<tr><td class="goal"><span class="day">이번 주 목표</span></td></tr>';
+    rows += days.map(d=>`<tr><td><span class="day">${d}</span></td></tr>`).join('');
+    return `<div class="q weekly">
+      <div class="qt"><b>0.</b>${CFG.wq}</div>
+      <div class="tw"><table><tr><th>${CFG.wh}</th></tr>${rows}</table></div>
+      ${choices()}</div>`;
+  }
+  document.getElementById('c1a').innerHTML = weekly() + daily(1);
+  document.getElementById('c1b').innerHTML = daily(2) + daily(3);
+  document.getElementById('c2a').innerHTML = daily(4) + daily(5);
+  document.getElementById('c2b').innerHTML = daily(6) + daily(7);
+  let w=''; for(let i=1;i<=CFG.wrong;i++) w+=`<tr><td class="n">${i}</td><td></td><td></td><td class="ck" style="width:auto;border-left:1px solid var(--green-line)"></td></tr>`;
+  document.getElementById('wrongRows').innerHTML=w;
+</script>
+</body>
+</html>
