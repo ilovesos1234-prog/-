@@ -83,22 +83,15 @@ const GRAPHS = {
   ], pts: [{ x: -7, y: 0, t: '(−7, 0)', c: '#333' }, { x: -1, y: 1, open: 1, c: '#333' }, { x: -1, y: -1, open: 1, c: '#333' }, { x: 5, y: 2 / 3, c: '#2e8b57' }] }),
 };
 
-// ---------- 1) 시험지 B4 ----------
-function qBlock(q) {
-  const short = !q.chList && q.ch && q.ch.every((c) => c.length < 22);
-  let ch = '';
-  if (q.ch) {
-    ch = `<div class="ch ${q.chList ? 'list' : short ? 'row5' : 'row3'}">` +
-      q.ch.map((c, i) => q.chList ? `<span><b>${CIRC[i]}</b> ${tex(c.split('##')[0])}</span><span>${tex(c.split('##')[1])}</span>` : `<span><b>${CIRC[i]}</b> ${tex(c)}</span>`).join('') + '</div>';
-  }
-  return `<div class="q"><div class="qt"><span class="qn">${q.n}.</span> ${tex(q.q)}</div>
-<div class="pt">[${q.pt}점]</div>${ch}</div>`;
-}
-const LAYOUT = [
-  [[1, 2, 3], [4, 5, 6]],
-  [[7, 8, 9], [10, 11, 12]],
-  [[13, 14], [15, 16]],
-  [[17, 18], [19, 20]],
+// ---------- 1) 시험지 B4 (채수학 B4 시험지 틀, 2026.09.19 확정) ----------
+// B4 257×364 · 2단(단 110.5mm) · 좌우 18mm · 위 8+머리 4 · 아래 8+꼬리 14
+// 본문 11.5pt/165% · 수식 11pt · 한쪽 4문제 · 아래 문제는 단 149mm에서 시작(최대 +20mm)
+const TYPE = {1:'합성함수',2:'항등함수',3:'역함수의 성질',4:'명제와 진리집합',5:'필요조건·충분조건',
+  6:'무리함수의 최솟값',7:'산술·기하평균',8:'진리집합의 개수',9:'무리함수와 직선',10:'역함수 존재 조건',
+  11:'유리함수와 직선',12:'넓이의 최대',13:'교점의 개수',14:'일대일대응 추론',15:'역함수와의 교점',
+  16:'유리함수와 거리',17:'함수 추론',18:'역함수와 외접원',19:'합성함수 방정식',20:'합성함수와 직선'};
+const LAYOUT = [ // 쪽마다 [왼쪽 단, 오른쪽 단], 단마다 [위, 아래]
+  [[1, 2], [3, 4]], [[5, 6], [7, 8]], [[9, 10], [11, 12]], [[13, 14], [15, 16]], [[17, 18], [19, 20]],
 ];
 const byN = Object.fromEntries(Q.map((q) => [q.n, q]));
 const total = Q.reduce((a, q) => a + parseFloat(q.pt), 0);
@@ -106,52 +99,73 @@ const nObj = Q.filter((q) => q.type === '객').length;
 const nSub = Q.length - nObj;
 const ptObj = Q.filter((q) => q.type === '객').reduce((a, q) => a + parseFloat(q.pt), 0);
 
+function qBlock(q, pos) {
+  let ch = '';
+  if (q.ch) {
+    ch = `<div class="chs" ${q.chList ? 'data-one="1"' : ''}>` + q.ch.map((c, i) => q.chList
+      ? `<span class="c"><span class="pp">${CIRC[i]} ${tex(c.split('##')[0])}</span><span>${tex(c.split('##')[1])}</span></span>`
+      : `<span class="c">${CIRC[i]} ${tex(c)}</span>`).join('') + '</div>';
+  }
+  return `<div class="q ${pos}"><div class="qh"><span class="no">${String(q.n).padStart(2, '0')}</span><span class="pill">채수학 X ${TYPE[q.n]}</span></div>
+<div class="qt">${tex(q.q)}</div><div class="pt">[${q.pt}점]</div>${ch}</div>`;
+}
+
 function buildExam() {
   const css = `
-body{font-family:'Nanum Myeongjo',serif;font-size:10.6pt;line-height:1.75}
-.sheet{width:257mm;height:364mm;padding:14mm 13mm 12mm;position:relative;page-break-after:always;display:flex;flex-direction:column}
+body{font-family:'Nanum Gothic',sans-serif;font-size:11.5pt;line-height:165%}
+.katex{font-size:${(11 / 11.5).toFixed(4)}em}
+.sheet{width:257mm;height:364mm;position:relative;page-break-after:always;overflow:hidden}
 .sheet:last-child{page-break-after:auto}
-.hd{border:1.6px solid #111;display:grid;grid-template-columns:1fr auto;margin-bottom:5mm}
-.hd .t{padding:3.5mm 5mm;border-right:1px solid #111}
-.hd .t .s1{font-family:'Nanum Gothic';font-size:9.5pt;color:#444;letter-spacing:.5px}
-.hd .t .s2{font-size:20pt;font-weight:800;letter-spacing:-.5px;margin-top:1mm}
-.hd .f{display:grid;grid-template-columns:auto 34mm;font-family:'Nanum Gothic';font-size:9.5pt}
-.hd .f div{border-bottom:1px solid #111;padding:1.8mm 3mm;display:flex;align-items:center}
-.hd .f div:nth-child(odd){background:#f1f1f1;border-right:1px solid #111;font-weight:700}
-.hd .f div:nth-last-child(-n+2){border-bottom:0}
-.info{font-family:'Nanum Gothic';font-size:9pt;border-top:1px solid #111;border-bottom:1px solid #111;padding:1.4mm 2mm;margin:-2mm 0 4mm;text-align:center}
-.cols{flex:1;display:grid;grid-template-columns:1fr 1fr;column-gap:0;min-height:0}
-.col{display:flex;flex-direction:column;padding:0 5mm}
-.col:first-child{border-right:1px solid #111;padding-left:0}
-.col:last-child{padding-right:0}
-.q{flex:1;padding-top:1mm}
+.head{position:absolute;top:8mm;left:18mm;right:18mm;height:4mm;font-size:7.5pt;line-height:4mm;color:#777;display:flex;justify-content:space-between}
+.body{position:absolute;top:12mm;left:18mm;width:221mm;bottom:22mm;display:grid;grid-template-columns:110.5mm 110.5mm}
+.col{position:relative;height:100%}
+.col.l{border-right:.8px solid #333;padding-right:5mm}
+.col.r{padding-left:5mm}
+.q{position:absolute;left:0;right:0}
+.col.l .q{right:5mm}.col.r .q{left:5mm}
+.q.top{top:2mm}
+.qh{display:flex;align-items:center;gap:2.2mm;margin-bottom:1.2mm}
+.no{font-weight:800;font-size:14pt;color:#000;background:#fff;line-height:1}
+.pill{background:#e3f4e1;color:#1b2a5a;font-size:9pt;font-weight:700;border-radius:99px;padding:.6mm 3mm;line-height:1.3;white-space:nowrap}
 .qt{text-align:justify;word-break:keep-all}
-.qn{font-family:'Nanum Gothic';font-weight:800;font-size:12.5pt;margin-right:1mm}
-.pt{text-align:right;font-size:9pt;color:#333;margin:.5mm 0 1.5mm}
-.ch{display:grid;row-gap:1.6mm;column-gap:2mm}
-.ch.row5{grid-template-columns:repeat(5,1fr)}
-.ch.row3{grid-template-columns:repeat(3,1fr)}
-.ch.list{grid-template-columns:1fr 1fr}
-.ch b{font-weight:400}
-.cen{text-align:center;margin:1.5mm 0}
-.ind{margin:1mm 0 1mm 10mm}
-.box{border:1px solid #111;padding:2mm 3.5mm;margin:2mm 0}
-.ft{position:absolute;bottom:5mm;left:0;right:0;text-align:center;font-family:'Nanum Gothic';font-size:9pt;color:#555}
+.pt{text-align:right;font-size:9.5pt;color:#333;line-height:1.4;margin-top:.5mm}
+.chs{display:grid;grid-auto-rows:32pt;align-items:center}
+.chs .c{white-space:nowrap;justify-self:start}
+.chs .pp{display:inline-block;width:52%}
+.cen{text-align:center;margin:1mm 0}
+.ind{margin:.5mm 0 .5mm 8mm}
+.box{border:1px solid #111;padding:1.5mm 3.5mm;margin:1.5mm 0}
+.title{position:absolute;top:12mm;left:18mm;right:18mm}
+.foot{position:absolute;bottom:8mm;left:18mm;right:18mm;height:14mm;display:flex;align-items:flex-end;justify-content:space-between;font-size:8.5pt;color:#555;border-top:.6px solid #bbb;padding-bottom:1mm}
+.foot b{color:#111}
 `;
+  // 선택지: 가장 넓은 선택지가 (칸 너비 − 3mm) 안에 드는 가장 큰 수 5→3→2→1
+  // 아래 문제: 단 149mm에서 시작, 위 문제가 넘으면 20mm까지만 내림, 문항 사이 최소 22mm
+  const script = `<script>window.__done=false;document.fonts.ready.then(()=>{
+const mm=96/25.4, warn=[];
+document.querySelectorAll('.chs').forEach(g=>{
+  const cs=[...g.children]; const W=g.clientWidth;
+  const need=Math.max(...cs.map(c=>c.scrollWidth));
+  let n=1; if(!g.dataset.one){for(const k of [5,3,2,1]){if(need<=W/k-3*mm){n=k;break;}}}
+  g.style.gridTemplateColumns='repeat('+n+',1fr)'; g.dataset.n=n;
+});
+document.querySelectorAll('.col').forEach(col=>{
+  const top=col.querySelector('.q.top'), bot=col.querySelector('.q.bot'); if(!bot)return;
+  const topEnd=top.offsetTop+top.offsetHeight; let y=149*mm;
+  if(topEnd+22*mm>y) y=Math.min(topEnd+22*mm,169*mm);
+  if(topEnd+22*mm>169*mm) warn.push('간격부족 '+bot.querySelector('.no').textContent);
+  bot.style.top=y+'px';
+  if(y+bot.offsetHeight>col.clientHeight) warn.push('넘침 '+bot.querySelector('.no').textContent);
+});
+window.__warn=warn; window.__done=true;});</script>`;
   let body = '';
   LAYOUT.forEach((pg, pi) => {
-    body += '<section class="sheet">';
-    if (pi === 0) {
-      body += `<div class="hd"><div class="t"><div class="s1">${META.year}학년도 2학기 기말고사 기출</div>
-<div class="s2">${META.school} 1학년 · ${META.subject}</div></div>
-<div class="f"><div>반 / 번호</div><div></div><div>이 름</div><div></div><div>점 수</div><div></div></div></div>
-<div class="info">■ 총 ${LAYOUT.length}면 ${Q.length}문항 &nbsp;■ 만점 ${total.toFixed(2)}점 &nbsp;/&nbsp; ■ 선택형 ${nObj}문항 ${ptObj.toFixed(2)}점 &nbsp;■ 서술형 ${nSub}문항 ${(total - ptObj).toFixed(2)}점</div>`;
-    }
-    body += '<div class="cols">' + pg.map((col) =>
-      '<div class="col">' + col.map((n) => qBlock(byN[n])).join('') + '</div>').join('') + '</div>';
-    body += `<div class="ft">${META.title} · ${META.subject} &nbsp;&nbsp; ${pi + 1} / ${LAYOUT.length}</div></section>`;
+    body += `<section class="sheet"><div class="head"><span>채수학 · ${META.title}</span><span>${META.subject} · ${Q.length}문항 · 만점 ${total.toFixed(2)}점</span></div><div class="body">`;
+    body += pg.map((col, ci) => `<div class="col ${ci ? 'r' : 'l'}">` +
+      col.map((n, k) => qBlock(byN[n], k ? 'bot' : 'top')).join('') + '</div>').join('');
+    body += `</div><div class="foot"><span>${META.title} · ${META.subject} &nbsp; <b>${pi + 1}</b> / ${LAYOUT.length}</span><span><b>B4</b> · ☎ 010-8677-2263</span></div></section>`;
   });
-  return page(`${META.title} (시험지 B4)`, '257mm 364mm', css, body);
+  return page(`${META.title} (시험지 B4)`, '257mm 364mm', css, body + script);
 }
 
 // ---------- 2) 손풀이 A4 ----------
@@ -274,6 +288,9 @@ tr.sub td{background:#fbfaf4}
     fs.writeFileSync(hp, html);
     await pg.goto('file://' + hp, { waitUntil: 'networkidle' });
     await pg.evaluate(() => document.fonts.ready);
+    await pg.waitForFunction(() => window.__done !== false);
+    const w = await pg.evaluate(() => window.__warn);
+    if (w && w.length) console.log('경고', w);
     await pg.pdf({ path: path.join(OUT, name + '.pdf'), printBackground: true, preferCSSPageSize: true, ...fmt });
     console.log('ok', name);
   }
