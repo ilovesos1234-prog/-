@@ -15,6 +15,7 @@ const NM = path.join(__dirname, 'node_modules');
 const tex = (s) => s.replace(/\$([^$]+)\$/g, (_, m) =>
   katex.renderToString(m, { throwOnError: true, displayMode: false, strict: false }));
 const CIRC = ['①', '②', '③', '④', '⑤'];
+const imgTag = (q) => q.img ? `<div class="fig"><img src="data:image/png;base64,${fs.readFileSync(q.img).toString('base64')}" style="width:${q.imgW || 55}mm"></div>` : '';
 const LV = ['', '하', '중', '상', '최상'];
 
 const fontCss = [
@@ -76,11 +77,14 @@ const GRAPHS = D.graphs ? D.graphs(plot) : {};
 // 본문 11.5pt/165% · 수식 11pt · 한쪽 4문제 · 아래 문제는 단 149mm에서 시작(최대 +20mm)
 const TYPE = D.TYPE || {};
 // 쪽마다 [왼쪽 단, 오른쪽 단], 단마다 [위, 아래] — 앞에서부터 4문제씩
-const LAYOUT = [];
-for (let i = 0; i < Q.length; i += 4) {
-  const ns = Q.slice(i, i + 4).map((q) => q.n);
-  LAYOUT.push([ns.slice(0, 2), ns.slice(2, 4)]);
+// 긴 문제(q.alone)는 혼자 한 단을 쓴다
+const cols = [];
+for (let i = 0; i < Q.length;) {
+  if (Q[i].alone || (Q[i + 1] && Q[i + 1].alone) || i + 1 >= Q.length) { cols.push([Q[i].n]); i += 1; }
+  else { cols.push([Q[i].n, Q[i + 1].n]); i += 2; }
 }
+const LAYOUT = [];
+for (let i = 0; i < cols.length; i += 2) LAYOUT.push(cols.slice(i, i + 2));
 const byN = Object.fromEntries(Q.map((q) => [q.n, q]));
 const total = Q.reduce((a, q) => a + parseFloat(q.pt), 0);
 const nObj = Q.filter((q) => q.type === '객').length;
@@ -90,12 +94,12 @@ const ptObj = Q.filter((q) => q.type === '객').reduce((a, q) => a + parseFloat(
 function qBlock(q, pos) {
   let ch = '';
   if (q.ch) {
-    ch = `<div class="chs" ${q.chList ? 'data-one="1"' : ''}>` + q.ch.map((c, i) => q.chList
+    ch = `<div class="chs" ${q.chList ? 'data-one="1"' : ''}>` + q.ch.map((c, i) => q.chList && c.includes('##')
       ? `<span class="c"><span class="pp">${CIRC[i]} ${tex(c.split('##')[0])}</span><span>${tex(c.split('##')[1])}</span></span>`
       : `<span class="c">${CIRC[i]} ${tex(c)}</span>`).join('') + '</div>';
   }
   return `<div class="q ${pos}"><div class="qh"><span class="no">${String(q.n).padStart(2, '0')}</span><span class="pill">채수학 X ${q.tp || TYPE[q.n]}</span></div>
-<div class="qt">${tex(q.q)}</div><div class="pt">[${q.pt}점${q.ptGuess ? '*' : ''}]</div>${q.fig ? `<div class="fig">${GRAPHS[q.fig]()}</div>` : ''}${ch}</div>`;
+<div class="qt">${tex(q.q)}</div><div class="pt">[${q.pt}점${q.ptGuess ? '*' : ''}]</div>${q.fig ? `<div class="fig">${GRAPHS[q.fig]()}</div>` : ''}${imgTag(q)}${ch}</div>`;
 }
 
 function buildExam() {
@@ -175,6 +179,7 @@ body{font-family:'Nanum Myeongjo',serif;font-size:10pt}
 .prob .cen{text-align:center}
 .prob .ind{margin-left:8mm}
 .prob .chs{margin-top:1mm;color:#555}
+.prob .fig{text-align:center}.prob .fig img{max-width:45mm}
 .body{display:flex;gap:4mm;padding:3mm 5mm 4mm}
 .hand{flex:1;font-family:'Nanum Pen Script',cursive;font-size:17.5pt;line-height:1.5;color:#1a3c8f}
 .hand .katex{font-size:.66em;color:#1a3c8f}
@@ -190,7 +195,7 @@ body{font-family:'Nanum Myeongjo',serif;font-size:10pt}
     const chs = q.ch ? `<div class="chs">${q.ch.map((c, i) => `${CIRC[i]} ${tex(c.replace('##', ', '))}`).join(' &nbsp; ')}</div>` : '';
     body += `<div class="card"><div class="ch"><span class="n">${q.n}</span><span class="tag">${q.sub} · ${tex(q.key)} · ${q.pt}점${q.ptGuess ? '(추정)' : ''} · 난이도 ${LV[q.lv]}</span>
 <span class="ans">정답 ${tex(q.ans)}</span></div>
-<div class="prob">${tex(q.q)}${chs}</div>
+<div class="prob">${tex(q.q)}${imgTag(q)}${chs}</div>
 <div class="body"><div class="hand"><ol>${q.sol.map((l) => `<li>${tex(l)}</li>`).join('')}</ol>
 <span class="fin">답 ${tex(q.fin)}</span></div>${q.graph ? `<div class="gr">${GRAPHS[q.graph]()}</div>` : ''}</div></div>`;
   }
@@ -255,7 +260,7 @@ tr.sub td{background:#fbfaf4}
 <div class="tot">만점<b>${total.toFixed(2)}점</b></div></div>
 <div class="kpi"><div><small>전체 문항</small><b>${Q.length}</b>문항</div><div><small>선택형</small><b>${nObj}</b>문항 · ${ptObj.toFixed(2)}점</div>
 <div><small>서술형</small><b>${nSub}</b>문항 · ${(total - ptObj).toFixed(2)}점</div><div><small>상 · 최상 비율</small><b>${lvs[3] + lvs[4]}</b>문항 (${Math.round((lvPt[3] + lvPt[4]) / total * 100)}%)</div></div>
-<table><thead><tr><th style="width:8mm">번호</th><th style="width:14mm">유형</th><th style="width:34mm">단원</th><th>핵심 개념</th><th style="width:13mm">난이도</th><th style="width:12mm">배점</th><th style="width:14mm">정답</th></tr></thead>
+<table><thead><tr><th style="width:8mm">번호</th><th style="width:14mm">유형</th><th style="width:34mm">단원</th><th>핵심 개념</th><th style="width:13mm">난이도</th><th style="width:12mm">배점</th><th style="width:24mm">정답</th></tr></thead>
 <tbody>${rows}</tbody></table>
 <div class="row"><div class="panel"><h3>단원별 배점</h3>${bars(subs, (v) => v.p, (v) => `${v.n}문항 ${v.p.toFixed(1)}점`)}</div>
 <div class="panel"><h3>난이도별 배점</h3>${bars(Object.fromEntries(Object.entries(lvs).map(([k, n]) => [LV[k], { n, p: lvPt[k] }])), (v) => v.p, (v) => `${v.n}문항 ${v.p.toFixed(1)}점`)}</div></div>
