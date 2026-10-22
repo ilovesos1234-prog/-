@@ -1,12 +1,13 @@
 // 3종 세트(시험지 B4 · 손풀이 A4 · 분석표 A4) 생성
-// 사용법: node build.js <출력폴더>
+// 사용법: node build.js <데이터.js> <출력폴더>
 const fs = require('fs');
 const path = require('path');
 const katex = require('katex');
 const { chromium } = require('/opt/node22/lib/node_modules/playwright');
-const { META, Q } = require('./data.js');
+const D = require(path.resolve(process.argv[2]));
+const { META, Q } = D;
 
-const OUT = process.argv[2] || path.join(__dirname, 'out');
+const OUT = process.argv[3] || path.join(__dirname, 'out');
 fs.mkdirSync(OUT, { recursive: true });
 const NM = path.join(__dirname, 'node_modules');
 
@@ -36,7 +37,7 @@ function plot(o) {
   const W = o.w || 300, H = o.h || 230, pad = 14;
   const X = (x) => pad + (x - o.x0) / (o.x1 - o.x0) * (W - 2 * pad);
   const Y = (y) => H - pad - (y - o.y0) / (o.y1 - o.y0) * (H - 2 * pad);
-  let s = `<svg viewBox="0 0 ${W} ${H}" width="${W}" height="${H}" xmlns="http://www.w3.org/2000/svg" font-family="Nanum Gothic" font-size="11">`;
+  let s = `<svg viewBox="0 0 ${W} ${H}" width="${W}" height="${H}" xmlns="http://www.w3.org/2000/svg" font-family="Nanum Gothic" font-size="${o.fs || 11}">`;
   s += `<line x1="${X(o.x0)}" y1="${Y(0)}" x2="${X(o.x1)}" y2="${Y(0)}" stroke="#555" stroke-width=".8"/>`;
   s += `<line x1="${X(0)}" y1="${Y(o.y0)}" x2="${X(0)}" y2="${Y(o.y1)}" stroke="#555" stroke-width=".8"/>`;
   s += `<text x="${X(o.x1) - 6}" y="${Y(0) - 4}" fill="#555">x</text><text x="${X(0) + 4}" y="${Y(o.y1) + 9}" fill="#555">y</text>`;
@@ -58,41 +59,28 @@ function plot(o) {
     s += `<path d="${d}" fill="none" stroke="${f.c || '#1b3a8a'}" stroke-width="${f.w || 1.8}" ${f.dash ? 'stroke-dasharray="5 3"' : ''} clip-path="inset(0)"/>`;
     if (f.t) s += `<text x="${X(f.tx)}" y="${Y(f.ty)}" fill="${f.c || '#1b3a8a'}">${f.t}</text>`;
   }
+  for (const g of o.segs || []) {
+    s += `<line x1="${X(g.x1)}" y1="${Y(g.y1)}" x2="${X(g.x2)}" y2="${Y(g.y2)}" stroke="${g.c || '#111'}" stroke-width="1" ${g.dash ? 'stroke-dasharray="3 3"' : ''}/>`;
+  }
+  for (const l of o.labels || []) s += `<text x="${X(l.x)}" y="${Y(l.y)}" fill="${l.c || '#111'}">${l.t}</text>`;
   for (const p of o.pts || []) {
     s += `<circle cx="${X(p.x)}" cy="${Y(p.y)}" r="2.6" fill="${p.open ? '#fff' : (p.c || '#c0392b')}" stroke="${p.c || '#c0392b'}" stroke-width="1.2"/>`;
     if (p.t) s += `<text x="${X(p.x) + 4}" y="${Y(p.y) - 4}" fill="${p.c || '#c0392b'}">${p.t}</text>`;
   }
   return s + '</svg>';
 }
-const GRAPHS = {
-  g9: () => plot({ x0: -3, x1: 3.5, y0: -1, y1: 4, fns: [
-    { f: (x) => -Math.sqrt(x + 2) + 3, a: -2, b: 3.5, t: 'y=−√(x+2)+3', tx: 0.6, ty: 1.9 },
-    { f: (x) => -x + 1, a: -3, b: 3.5, c: '#c0392b', dash: 1, w: 1.2, t: 'k=1', tx: -2.9, ty: 3.5 },
-    { f: (x) => -x + 0.75, a: -3, b: 3.5, c: '#2e8b57', dash: 1, w: 1.2, t: 'k=3/4 (접함)', tx: 1.1, ty: -0.7 },
-  ], pts: [{ x: -2, y: 3, t: '(−2, 3)' }, { x: -1.75, y: 2.5, c: '#2e8b57' }] }),
-  g13: () => plot({ x0: -0.6, x1: 11, y0: -0.6, y1: 8, asym: [{ x: 3, t: 'x=3' }, { y: 2, t: 'y=2' }, { y: 4, c: '#c0392b', t: 'y=4' }], fns: [
-    { f: (x) => Math.abs(6 / (x - 3) - 2), a: 0.0001, b: 2.999 },
-    { f: (x) => Math.abs(6 / (x - 3) - 2), a: 3.001, b: 11 },
-  ], pts: [{ x: 0, y: 4, open: 1 }, { x: 6, y: 0, t: '(6, 0)' }] }),
-  g20: () => plot({ w: 330, x0: -9, x1: 6, y0: -2, y1: 2.2, asym: [{ y: 1, t: '' }], fns: [
-    { f: () => 1, a: -9, b: -1 },
-    { f: () => -1, a: -1, b: 0 },
-    { f: (u) => (u - 1) / (u + 1), a: 0, b: 6, t: 'u≥0', tx: 3.2, ty: 0.15 },
-    { f: (u) => 4 / 18 * (u + 7), a: -9, b: 6, c: '#c0392b', dash: 1, w: 1.1, t: 'm=4', tx: -3.4, ty: 1.55 },
-    { f: (u) => 1 / 18 * (u + 7), a: -9, b: 6, c: '#2e8b57', dash: 1, w: 1.1, t: 'm=1 (접함)', tx: 2.8, ty: 0.85 },
-  ], pts: [{ x: -7, y: 0, t: '(−7, 0)', c: '#333' }, { x: -1, y: 1, open: 1, c: '#333' }, { x: -1, y: -1, open: 1, c: '#333' }, { x: 5, y: 2 / 3, c: '#2e8b57' }] }),
-};
+const GRAPHS = D.graphs ? D.graphs(plot) : {};
 
 // ---------- 1) 시험지 B4 (채수학 B4 시험지 틀, 2026.09.19 확정) ----------
 // B4 257×364 · 2단(단 110.5mm) · 좌우 18mm · 위 8+머리 4 · 아래 8+꼬리 14
 // 본문 11.5pt/165% · 수식 11pt · 한쪽 4문제 · 아래 문제는 단 149mm에서 시작(최대 +20mm)
-const TYPE = {1:'합성함수',2:'항등함수',3:'역함수의 성질',4:'명제와 진리집합',5:'필요조건·충분조건',
-  6:'무리함수의 최솟값',7:'산술·기하평균',8:'진리집합의 개수',9:'무리함수와 직선',10:'역함수 존재 조건',
-  11:'유리함수와 직선',12:'넓이의 최대',13:'교점의 개수',14:'일대일대응 추론',15:'역함수와의 교점',
-  16:'유리함수와 거리',17:'함수 추론',18:'역함수와 외접원',19:'합성함수 방정식',20:'합성함수와 직선'};
-const LAYOUT = [ // 쪽마다 [왼쪽 단, 오른쪽 단], 단마다 [위, 아래]
-  [[1, 2], [3, 4]], [[5, 6], [7, 8]], [[9, 10], [11, 12]], [[13, 14], [15, 16]], [[17, 18], [19, 20]],
-];
+const TYPE = D.TYPE || {};
+// 쪽마다 [왼쪽 단, 오른쪽 단], 단마다 [위, 아래] — 앞에서부터 4문제씩
+const LAYOUT = [];
+for (let i = 0; i < Q.length; i += 4) {
+  const ns = Q.slice(i, i + 4).map((q) => q.n);
+  LAYOUT.push([ns.slice(0, 2), ns.slice(2, 4)]);
+}
 const byN = Object.fromEntries(Q.map((q) => [q.n, q]));
 const total = Q.reduce((a, q) => a + parseFloat(q.pt), 0);
 const nObj = Q.filter((q) => q.type === '객').length;
@@ -106,8 +94,8 @@ function qBlock(q, pos) {
       ? `<span class="c"><span class="pp">${CIRC[i]} ${tex(c.split('##')[0])}</span><span>${tex(c.split('##')[1])}</span></span>`
       : `<span class="c">${CIRC[i]} ${tex(c)}</span>`).join('') + '</div>';
   }
-  return `<div class="q ${pos}"><div class="qh"><span class="no">${String(q.n).padStart(2, '0')}</span><span class="pill">채수학 X ${TYPE[q.n]}</span></div>
-<div class="qt">${tex(q.q)}</div><div class="pt">[${q.pt}점]</div>${ch}</div>`;
+  return `<div class="q ${pos}"><div class="qh"><span class="no">${String(q.n).padStart(2, '0')}</span><span class="pill">채수학 X ${q.tp || TYPE[q.n]}</span></div>
+<div class="qt">${tex(q.q)}</div><div class="pt">[${q.pt}점${q.ptGuess ? '*' : ''}]</div>${q.fig ? `<div class="fig">${GRAPHS[q.fig]()}</div>` : ''}${ch}</div>`;
 }
 
 function buildExam() {
@@ -135,6 +123,7 @@ body{font-family:'Nanum Gothic',sans-serif;font-size:11.5pt;line-height:165%}
 .cen{text-align:center;margin:1mm 0}
 .ind{margin:.5mm 0 .5mm 8mm}
 .box{border:1px solid #111;padding:1.5mm 3.5mm;margin:1.5mm 0}
+.fig{text-align:center;margin:0}
 .title{position:absolute;top:12mm;left:18mm;right:18mm}
 .foot{position:absolute;bottom:8mm;left:18mm;right:18mm;height:14mm;display:flex;align-items:flex-end;justify-content:space-between;font-size:8.5pt;color:#555;border-top:.6px solid #bbb;padding-bottom:1mm}
 .foot b{color:#111}
@@ -151,7 +140,7 @@ document.querySelectorAll('.chs').forEach(g=>{
 });
 document.querySelectorAll('.col').forEach(col=>{
   const top=col.querySelector('.q.top'), bot=col.querySelector('.q.bot'); if(!bot)return;
-  const topEnd=top.offsetTop+top.offsetHeight; let y=149*mm;
+  if(!top)return; const topEnd=top.offsetTop+top.offsetHeight; let y=149*mm;
   if(topEnd+22*mm>y) y=Math.min(topEnd+22*mm,169*mm);
   if(topEnd+22*mm>169*mm) warn.push('간격부족 '+bot.querySelector('.no').textContent);
   bot.style.top=y+'px';
@@ -199,7 +188,7 @@ body{font-family:'Nanum Myeongjo',serif;font-size:10pt}
   let body = `<div class="wrap"><div class="top"><h1>${META.title} · 손풀이</h1><span>${META.subject} · ${Q.length}문항 · 정답은 빠른정답과 대조 완료</span></div>`;
   for (const q of Q) {
     const chs = q.ch ? `<div class="chs">${q.ch.map((c, i) => `${CIRC[i]} ${tex(c.replace('##', ', '))}`).join(' &nbsp; ')}</div>` : '';
-    body += `<div class="card"><div class="ch"><span class="n">${q.n}</span><span class="tag">${q.sub} · ${tex(q.key)} · ${q.pt}점 · 난이도 ${LV[q.lv]}</span>
+    body += `<div class="card"><div class="ch"><span class="n">${q.n}</span><span class="tag">${q.sub} · ${tex(q.key)} · ${q.pt}점${q.ptGuess ? '(추정)' : ''} · 난이도 ${LV[q.lv]}</span>
 <span class="ans">정답 ${tex(q.ans)}</span></div>
 <div class="prob">${tex(q.q)}${chs}</div>
 <div class="body"><div class="hand"><ol>${q.sol.map((l) => `<li>${tex(l)}</li>`).join('')}</ol>
@@ -239,6 +228,11 @@ tr.sub td{background:#fbfaf4}
 .bar .v{text-align:right;color:#444}
 .note{margin-top:4mm;border-left:3px solid #c9a24b;background:#fbf7ec;padding:3mm 4mm;line-height:1.65}
 .note b{color:#1b2a5a}
+.many td{padding:.75mm 1.5mm}
+.many .bar{margin:.7mm 0}
+.many .kpi{margin:3mm 0}
+.many .row{margin-top:3mm}
+.many .note{margin-top:3mm;line-height:1.55}
 .katex{font-size:1em}
 `;
   const units = {};
@@ -255,9 +249,9 @@ tr.sub td{background:#fbfaf4}
   const bars = (obj, val, lab) => Object.entries(obj).map(([k, v]) =>
     `<div class="bar"><span>${k}</span><span class="t"><i style="width:${(val(v) / total * 100).toFixed(1)}%"></i></span><span class="v">${lab(v)}</span></div>`).join('');
   const rows = Q.map((q) => `<tr class="${q.type === '서' ? 'sub' : ''}"><td><b>${q.n}</b></td><td>${q.type === '객' ? '선택형' : '서술형'}</td>
-<td class="l">${q.sub}</td><td class="l">${tex(q.key)}</td><td><span class="lv lv${q.lv}">${LV[q.lv]}</span></td><td>${q.pt}</td><td><b>${tex(q.ans)}</b></td></tr>`).join('');
-  const body = `<div class="wrap">
-<div class="top"><div><h1>${META.title} 분석표</h1><div class="s">${META.subject} · 집합과 명제 / 함수와 그래프</div></div>
+<td class="l">${q.sub}</td><td class="l">${tex(q.key)}</td><td><span class="lv lv${q.lv}">${LV[q.lv]}</span></td><td>${q.pt}${q.ptGuess ? '*' : ''}</td><td><b>${tex(q.ans)}</b></td></tr>`).join('');
+  const body = `<div class="wrap${Q.length > 20 ? ' many' : ''}">
+<div class="top"><div><h1>${META.title} 분석표</h1><div class="s">${META.subject} · ${META.units}</div></div>
 <div class="tot">만점<b>${total.toFixed(2)}점</b></div></div>
 <div class="kpi"><div><small>전체 문항</small><b>${Q.length}</b>문항</div><div><small>선택형</small><b>${nObj}</b>문항 · ${ptObj.toFixed(2)}점</div>
 <div><small>서술형</small><b>${nSub}</b>문항 · ${(total - ptObj).toFixed(2)}점</div><div><small>상 · 최상 비율</small><b>${lvs[3] + lvs[4]}</b>문항 (${Math.round((lvPt[3] + lvPt[4]) / total * 100)}%)</div></div>
@@ -265,12 +259,7 @@ tr.sub td{background:#fbfaf4}
 <tbody>${rows}</tbody></table>
 <div class="row"><div class="panel"><h3>단원별 배점</h3>${bars(subs, (v) => v.p, (v) => `${v.n}문항 ${v.p.toFixed(1)}점`)}</div>
 <div class="panel"><h3>난이도별 배점</h3>${bars(Object.fromEntries(Object.entries(lvs).map(([k, n]) => [LV[k], { n, p: lvPt[k] }])), (v) => v.p, (v) => `${v.n}문항 ${v.p.toFixed(1)}점`)}</div></div>
-<div class="note"><b>총평</b> &nbsp;공통수학2 후반부(명제 ~ 유리·무리함수) 범위로, 함수와 그래프가 배점의 약 ${Math.round(units['함수와 그래프'] / total * 100)}%를 차지한다.
-1~7번은 기본 개념 확인 문항이지만, 8번부터는 진리집합·역함수 존재 조건·그래프 교점 개수처럼 <b>그래프를 직접 그려 판단</b>해야 하는 문항이 이어진다.
-서술형 18~20번은 역함수의 대칭성과 외접원(18), 합성함수 방정식을 두 방정식으로 나누어 공통근까지 따지는 문제(19),
-절댓값 유리함수를 치환해 직선의 기울기로 경우를 나누는 문제(20)로, 변별력이 가장 큰 구간이다.
-<br><b>대비 포인트</b> &nbsp;① $f(a)=f(b)$ 꼴은 대칭축을 이용해 두 방정식으로 나누기 ② 무리함수와 직선은 $\\sqrt{\\ }$를 $t$로 치환해 이차방정식 근의 조건으로 ③ 유리함수 위 점과 점근선 교점 사이 거리는 산술·기하평균.
-<br><span style="color:#888">※ 배점은 원본 표기 그대로이며 4번이 4.83점이라 합계가 ${total.toFixed(2)}점입니다.</span></div>
+<div class="note">${META.note(units, total)}</div>
 </div>`;
   return page(`${META.title} (분석표)`, 'A4', css, tex(body));
 }
