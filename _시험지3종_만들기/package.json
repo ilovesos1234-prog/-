@@ -1,0 +1,18 @@
+{
+  "name": "build",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@fontsource/nanum-gothic": "^5.0.13",
+    "@fontsource/nanum-myeongjo": "^5.0.13",
+    "@fontsource/nanum-pen-script": "^5.0.12",
+    "katex": "^0.16.11"
+  }
+}
