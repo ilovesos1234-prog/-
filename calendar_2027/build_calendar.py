@@ -346,7 +346,16 @@ def day_labels():
 HERE = __file__.rsplit("/", 1)[0] if "/" in __file__ else "."
 PAGE_W, PAGE_H = 841.8898, 595.2756
 # 달마다 들어갈 작품 정보 (학생 이름 · 학년 · 교습소). 비어 있으면 안내 문구만 연하게 표시
-ARTWORK_INFO = {m: "" for m in range(1, 13)}
+# 값: (작품 제목, 학생 이름 · 학교 학년 · 교습소)
+ARTWORK_INFO = {m: None for m in range(1, 13)}
+ARTWORK_INFO.update({
+    1: ("무지개 문어와 친구들", "노연서 · 대청초 3학년 · 아이꿈미술교습소"),
+    5: ("하리보디자인", "변초아 · 대청초 6학년 · 아이꿈미술교습소"),
+    7: ("강아지와 함께하는 목욕놀이", "구하윤 · 월암중 1학년 · 디오티미술교습소"),
+    10: ("별빛 부엉이", "홍하윤 · 대청초 6학년 · 아이꿈미술교습소"),
+    11: ("바닷속이야기", "이채민 · 사수초 3학년(2025) · 레핀미술교습소"),
+    12: ("걱정마세요, 행복한 왕자님", "손은서 · 사수초 1학년(2025) · 레핀미술교습소"),
+})
 
 
 def artwork_path(month):
@@ -434,9 +443,16 @@ def artwork_page(month):
     # 작품 정보
     info = ARTWORK_INFO[month]
     if info:
-        c.setFillColor(INK)
-        c.setFont("NGB", 10)
-        c.drawCentredString(PAGE_W / 2, 48, info)
+        title, who = f"「{info[0]}」", info[1]
+        tw = c.stringWidth(title, "NGB", 11)
+        ww = c.stringWidth(who, "NG", 9)
+        x = (PAGE_W - (tw + 12 + ww)) / 2
+        c.setFillColor(GREEN2)
+        c.setFont("NGB", 11)
+        c.drawString(x, 48, title)
+        c.setFillColor(GRAY)
+        c.setFont("NG", 9)
+        c.drawString(x + tw + 12, 48, who)
     else:
         c.setFillColor(HexColor("#C2CEC8"))
         c.setFont("NG", 9)
