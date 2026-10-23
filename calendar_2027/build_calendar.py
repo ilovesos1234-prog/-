@@ -5,6 +5,7 @@
 3) 1~12월 범례: '세무·행정' <-> '학교시험' 자리 바꾸기
 4) 2월·8월 주요 일정에서 '대구 태권도 …' 항목 삭제
 5) 2월 21일에 '정월대보름' 추가
+7) 표지에 12작품 모자이크, 매달 달력 앞에 그 달의 작품 쪽 추가 (artworks/01~12.jpg)
 6) 표지 로고를 연합회 공식 로고(akas_logo.png)로 바꾸고 영문을 'Daegu Association of Private Tutoring Centers'로 수정
 
 사용법: python3 build_calendar.py 원본.pdf 결과.pdf 폰트폴더
@@ -342,6 +343,113 @@ def day_labels():
     return pypdf.PdfReader(buf).pages[0]
 
 
+HERE = __file__.rsplit("/", 1)[0] if "/" in __file__ else "."
+PAGE_W, PAGE_H = 841.8898, 595.2756
+# 달마다 들어갈 작품 정보 (학생 이름 · 학년 · 교습소). 비어 있으면 안내 문구만 연하게 표시
+ARTWORK_INFO = {m: "" for m in range(1, 13)}
+
+
+def artwork_path(month):
+    return f"{HERE}/artworks/{month:02d}.jpg"
+
+
+def thumb(month, w, h):
+    """작품을 w:h 비율로 가운데를 잘라 작은 그림으로 만든다 (표지 모자이크용)."""
+    from PIL import Image
+    from reportlab.lib.utils import ImageReader
+    im = Image.open(artwork_path(month)).convert("RGB")
+    iw, ih = im.size
+    if iw / ih > w / h:
+        nw = ih * w / h
+        im = im.crop(((iw - nw) / 2, 0, (iw + nw) / 2, ih))
+    else:
+        nh = iw * h / w
+        im = im.crop((0, (ih - nh) / 2, iw, (ih + nh) / 2))
+    im.thumbnail((int(w * 5), int(h * 5)))  # 인쇄용 약 360dpi
+    out = io.BytesIO()
+    im.save(out, "JPEG", quality=85)
+    out.seek(0)
+    return ImageReader(out)
+
+
+def cover_mosaic():
+    """표지 로고 줄 양옆에 12작품을 3x2 모자이크로 작게 놓는다."""
+    buf = io.BytesIO()
+    c = canvas.Canvas(buf, pagesize=(PAGE_W, PAGE_H))
+    tw, th, gap = 42, 26.5, 3
+    top = 175  # 작은 달력들 아래
+    for side, x0 in ((0, 64), (1, 802.205 - 3 * tw - 2 * gap - 24)):
+        for i in range(6):
+            month = side * 6 + i + 1
+            col, row = i % 3, i // 3
+            x = x0 + col * (tw + gap)
+            y = top - (row + 1) * th - row * gap
+            c.drawImage(thumb(month, tw, th), x, y, tw, th)
+            c.setStrokeColor(HexColor("#FFFFFF"))
+            c.setLineWidth(0.8)
+            c.rect(x, y, tw, th, stroke=1, fill=0)
+    c.showPage()
+    c.save()
+    buf.seek(0)
+    return pypdf.PdfReader(buf).pages[0]
+
+
+def artwork_page(month):
+    """그 달 달력 앞에 들어가는 작품 쪽."""
+    from PIL import Image
+    buf = io.BytesIO()
+    c = canvas.Canvas(buf, pagesize=(PAGE_W, PAGE_H))
+    c.setFillColor(HexColor("#FFFFFF"))
+    c.rect(0, 0, PAGE_W, PAGE_H, stroke=0, fill=1)
+
+    # 위쪽 제목
+    c.setFillColor(GREEN)
+    c.roundRect(39.685, 543, 66, 30, 7, stroke=0, fill=1)
+    c.setFillColor(HexColor("#FFFFFF"))
+    c.setFont("NGEB", 16)
+    c.drawCentredString(72.685, 552, f"{month}월")
+    c.setFillColor(GREEN2)
+    c.setFont("NGEB", 13)
+    c.drawString(116, 553, "이달의 작품")
+    c.setFillColor(LIGHTGRAY)
+    c.setFont("NG", 8.5)
+    c.drawRightString(802.205, 553, "2027 대구광역시 교습소 탁상달력")
+    c.setStrokeColor(LINE)
+    c.setLineWidth(0.6)
+    c.line(39.685, 535, 802.205, 535)
+
+    # 작품 (비율 유지, 가운데)
+    box_x, box_y, box_w, box_h = 39.685, 70, 762.52, 452
+    iw, ih = Image.open(artwork_path(month)).size
+    scale = min(box_w / iw, box_h / ih)
+    w, h = iw * scale, ih * scale
+    x, y = box_x + (box_w - w) / 2, box_y + (box_h - h) / 2
+    c.setFillColor(HexColor("#E3EBE7"))
+    c.rect(x + 2.5, y - 2.5, w, h, stroke=0, fill=1)  # 옅은 그림자
+    c.drawImage(artwork_path(month), x, y, w, h)
+    c.setStrokeColor(LINE)
+    c.setLineWidth(0.6)
+    c.rect(x, y, w, h, stroke=1, fill=0)
+
+    # 작품 정보
+    info = ARTWORK_INFO[month]
+    if info:
+        c.setFillColor(INK)
+        c.setFont("NGB", 10)
+        c.drawCentredString(PAGE_W / 2, 48, info)
+    else:
+        c.setFillColor(HexColor("#C2CEC8"))
+        c.setFont("NG", 9)
+        c.drawCentredString(PAGE_W / 2, 48, "작품 정보 (학생 이름 · 학년 · 교습소)")
+    c.setFillColor(LIGHTGRAY)
+    c.setFont("NG", 6.5)
+    c.drawRightString(802.205, 22, f"사)한국교습소총연합회 대구광역시지회  ·  2027 · {month:02d}")
+    c.showPage()
+    c.save()
+    buf.seek(0)
+    return pypdf.PdfReader(buf).pages[0]
+
+
 def main():
     register_fonts()
     reader = pypdf.PdfReader(SRC)
@@ -366,6 +474,7 @@ def main():
     cover = cover.replace(eng, b"")
     set_content(writer, pages[0], cover)
     pages[0].merge_page(cover_logo())
+    pages[0].merge_page(cover_mosaic())
 
     for month in range(1, 13):
         page = pages[month]
@@ -376,6 +485,9 @@ def main():
         if month == 2:
             page.merge_page(day_labels())
 
+    # 달마다 작품 쪽(앞면) 다음에 달력 쪽(뒷면). 12월부터 넣어야 앞쪽 번호가 밀리지 않는다
+    for month in range(12, 0, -1):
+        writer.insert_page(artwork_page(month), month)
     writer.insert_page(member_page(), 1)
     writer.add_metadata(reader.metadata)
     with open(OUT, "wb") as f:
