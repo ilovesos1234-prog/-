@@ -6,8 +6,8 @@
    - 범례 순서: 교과 | 예체능 | 학교시험 | 법정의무교육 | 세무·행정 | 공휴일
    - 2월·8월 '대구 태권도 …' 일정 삭제, 2월 21일 '정월대보름' 추가
 4) 표지: 작은 달력 대신 12작품을 4x3으로 (2025년 표지처럼)
-5) 2쪽 2026년 12월, 3쪽 2027년 한눈에 보기(AKAS 워터마크), 4쪽부터 달마다 작품·달력
-6) 회원 명단과 주요 사항 안내는 맨 뒤
+5) 4쪽 2026년 12월, 5쪽 2027년 한눈에 보기(AKAS 워터마크), 6쪽부터 달마다 작품·달력
+6) 2쪽 회원 명단, 3쪽 연혁(HISTORY), 주요 사항 안내는 맨 뒤
 7) 표지 로고를 연합회 공식 로고(akas_logo.png)로 바꾸고 영문을 'Daegu Association of Private Tutoring Centers'로 수정
 
 사용법: python3 build_calendar.py 원본.pdf 결과.pdf 폰트폴더
@@ -325,11 +325,34 @@ def artwork_path(month):
     return f"{HERE}/artworks/{month:02d}.jpg"
 
 
+_SHARP = {}
+
+
+def sharp_image(month):
+    """작품 사진을 또렷하게: 윤곽 선명하게(언샤프 마스크) + 대비·채도 살짝 올림."""
+    from PIL import Image, ImageEnhance, ImageFilter
+    if month not in _SHARP:
+        im = Image.open(artwork_path(month)).convert("RGB")
+        im = im.filter(ImageFilter.UnsharpMask(radius=2.2, percent=110, threshold=2))
+        im = ImageEnhance.Contrast(im).enhance(1.06)
+        im = ImageEnhance.Color(im).enhance(1.06)
+        _SHARP[month] = im
+    return _SHARP[month]
+
+
+def sharp_reader(month):
+    from reportlab.lib.utils import ImageReader
+    out = io.BytesIO()
+    sharp_image(month).save(out, "JPEG", quality=90)
+    out.seek(0)
+    return ImageReader(out)
+
+
 def thumb(month, w, h):
     """작품을 w:h 비율로 가운데를 잘라 작은 그림으로 만든다 (표지 모자이크용)."""
     from PIL import Image
     from reportlab.lib.utils import ImageReader
-    im = Image.open(artwork_path(month)).convert("RGB")
+    im = sharp_image(month).copy()
     iw, ih = im.size
     if iw / ih > w / h:
         nw = ih * w / h
@@ -392,13 +415,13 @@ def artwork_page(month):
 
     # 작품 (비율 유지, 가운데)
     box_x, box_y, box_w, box_h = 39.685, 70, 762.52, 452
-    iw, ih = Image.open(artwork_path(month)).size
+    iw, ih = sharp_image(month).size
     scale = min(box_w / iw, box_h / ih)
     w, h = iw * scale, ih * scale
     x, y = box_x + (box_w - w) / 2, box_y + (box_h - h) / 2
     c.setFillColor(HexColor("#E3EBE7"))
     c.rect(x + 2.5, y - 2.5, w, h, stroke=0, fill=1)  # 옅은 그림자
-    c.drawImage(artwork_path(month), x, y, w, h)
+    c.drawImage(sharp_reader(month), x, y, w, h)
     c.setStrokeColor(LINE)
     c.setLineWidth(0.6)
     c.rect(x, y, w, h, stroke=1, fill=0)
@@ -761,6 +784,66 @@ def year_page():
     return page
 
 
+# 3쪽 연혁: (연도, 내용) 순서대로. 비어 있으면 안내 문구만 표시
+HISTORY = []
+
+
+def history_page():
+    """3쪽: 사)한국교습소총연합회 대구광역시지회 연혁."""
+    buf = io.BytesIO()
+    c = canvas.Canvas(buf, pagesize=(PAGE_W, PAGE_H))
+    c.setFillColor(HexColor("#FFFFFF"))
+    c.rect(0, 0, PAGE_W, PAGE_H, stroke=0, fill=1)
+    c.setFillColor(GREEN)
+    c.roundRect(39.685, 488, 128, 70, 11, stroke=0, fill=1)
+    c.setFillColor(HexColor("#FFFFFF"))
+    c.setFont("NGEB", 24)
+    c.drawCentredString(103.685, 514, "연혁")
+    c.setFillColor(GREEN2)
+    c.setFont("NGEB", 18)
+    c.drawString(185.685, 534, "함께 걸어온 길")
+    c.setFillColor(GRAY)
+    c.setFont("NGB", 10.5)
+    c.drawString(185.685, 512, "사)한국교습소총연합회 대구광역시지회")
+    c.setStrokeColor(LINE)
+    c.setLineWidth(0.6)
+    c.line(39.685, 470, 802.205, 470)
+
+    if not HISTORY:
+        c.setFillColor(HexColor("#C2CEC8"))
+        c.setFont("NG", 11)
+        c.drawCentredString(PAGE_W / 2, 280, "연혁 내용이 들어갈 자리입니다")
+    else:
+        # 세로 시간선 + 연도 + 내용 (많으면 두 단)
+        per_col = 18
+        cols = 1 if len(HISTORY) <= per_col else 2
+        col_w = (802.205 - 60) / cols
+        for i, (year, text) in enumerate(HISTORY):
+            col, row = i // per_col, i % per_col
+            x = 60 + col * col_w
+            y = 448 - row * 22.5
+            c.setStrokeColor(LINE)
+            c.setLineWidth(1)
+            if row:
+                c.line(x + 52, y + 3.5 + 22.5, x + 52, y + 3.5)
+            c.setFillColor(GOLD)
+            c.circle(x + 52, y + 3.5, 3, stroke=0, fill=1)
+            c.setFillColor(GREEN2)
+            c.setFont("NGB", 10.5)
+            c.drawRightString(x + 42, y, str(year))
+            c.setFillColor(INK)
+            c.setFont("NG", 9.5)
+            c.drawString(x + 64, y, text)
+
+    c.setFillColor(LIGHTGRAY)
+    c.setFont("NG", 6.5)
+    c.drawRightString(802.205, 22, "사)한국교습소총연합회 대구광역시지회  ·  연혁")
+    c.showPage()
+    c.save()
+    buf.seek(0)
+    return pypdf.PdfReader(buf).pages[0]
+
+
 def cover_grid():
     """표지: 작은 달력 자리에 12작품을 4x3으로 크게 놓는다 (2025년 표지처럼)."""
     buf = io.BytesIO()
@@ -815,14 +898,15 @@ def main():
     cover_page.merge_page(cover_logo())
     cover_page.merge_page(cover_grid())
 
-    # 2쪽 지난해 12월, 3쪽 2027년 한눈에 보기, 4쪽부터 달마다 작품(앞면)·달력(뒷면)
+    # 2쪽 회원 명단, 3쪽 연혁, 4쪽 지난해 12월, 5쪽 2027년 한눈에 보기,
+    # 6쪽부터 달마다 작품(앞면)·달력(뒷면), 끝에 원본 마지막 안내 쪽
+    writer.add_page(member_page())
+    writer.add_page(history_page())
     writer.add_page(month_page(12, year=2026, data=DEC_2026, art=False))
     writer.add_page(year_page())
     for month in range(1, 13):
         writer.add_page(artwork_page(month))
         writer.add_page(month_page(month))
-    # 끝에 회원 명단과 원본 마지막 안내 쪽
-    writer.add_page(member_page())
     writer.add_page(reader.pages[13])
     writer.add_metadata(reader.metadata)
     with open(OUT, "wb") as f:
