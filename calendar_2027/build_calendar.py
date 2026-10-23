@@ -1,13 +1,14 @@
 """2027 대구광역시 교습소 탁상달력 수정 스크립트.
 
-1) 2쪽에 회원 교습소 명단 페이지 추가
+1) 회원 교습소 명단 페이지 추가
 2) 표지 부제: '세무·행정'을 마지막으로 이동
-3) 1~12월 범례: '세무·행정' <-> '학교시험' 자리 바꾸기
-4) 2월·8월 주요 일정에서 '대구 태권도 …' 항목 삭제
-5) 2월 21일에 '정월대보름' 추가
-8) 표지 가운데에 AKAS 로고를 옅은 워터마크로 추가
-7) 표지에 12작품 모자이크, 매달 달력 앞에 그 달의 작품 쪽 추가 (artworks/01~12.jpg)
-6) 표지 로고를 연합회 공식 로고(akas_logo.png)로 바꾸고 영문을 'Daegu Association of Private Tutoring Centers'로 수정
+3) 1~12월 달력 속지를 2025년 달력 모양으로 새로 그림 (month_page)
+   - 범례 순서: 교과 | 예체능 | 학교시험 | 법정의무교육 | 세무·행정 | 공휴일
+   - 2월·8월 '대구 태권도 …' 일정 삭제, 2월 21일 '정월대보름' 추가
+4) 표지: 작은 달력 대신 12작품을 4x3으로 (2025년 표지처럼)
+5) 2쪽 2026년 12월, 3쪽 2027년 한눈에 보기(AKAS 워터마크), 4쪽부터 달마다 작품·달력
+6) 회원 명단과 주요 사항 안내는 맨 뒤
+7) 표지 로고를 연합회 공식 로고(akas_logo.png)로 바꾸고 영문을 'Daegu Association of Private Tutoring Centers'로 수정
 
 사용법: python3 build_calendar.py 원본.pdf 결과.pdf 폰트폴더
 """
@@ -124,6 +125,8 @@ def register_fonts():
     for name, file in [("NG", "NanumGothic-Regular.ttf"), ("NGB", "NanumGothic-Bold.ttf"),
                        ("NGEB", "NanumGothic-ExtraBold.ttf")]:
         pdfmetrics.registerFont(TTFont(name, f"{FONT_DIR}/{file}"))
+    # 한자(丁未年)용
+    pdfmetrics.registerFont(TTFont("NSKR", f"{FONT_DIR}/NotoSansKR.ttf"))
 
 
 def member_page():
@@ -269,45 +272,11 @@ def member_page():
     return pypdf.PdfReader(buf).pages[0]
 
 
-# ---------------------------------------------------------------- 기존 쪽 수정
-LEGEND_SEP = b"  |  "
-ITEM4_RE = re.compile(  # 주요 일정 4번 항목(동그라미 + 숫자 + 글)
-    rb"[.\d]+ [.\d]+ [.\d]+ rg\nn\n546\.2 474\.5 m\n.*?\(4\) Tj T\* ET\n"
-    rb"[.\d]+ [.\d]+ [.\d]+ rg\nBT 1 0 0 1 553 471\.5 Tm (/F\S+ 9\.5 Tf 11\.4 TL) (\(.*?\)) Tj T\* ET\n",
-    re.S)
-ITEM3_TEXT_RE = re.compile(rb"(BT 1 0 0 1 553 487 Tm /F\S+ 9\.5 Tf 11\.4 TL )(\(.*?\)) Tj")
-TAEKWONDO = b"(\\004\\005 \\270\\271\\272 "  # '대구 태권도 ' 글자 코드
-
-
+# ---------------------------------------------------------------- 표지 수정
 def set_content(writer, page, data):
     s = DecodedStreamObject()
     s.set_data(data)
     page[NameObject("/Contents")] = writer._add_object(s)
-
-
-def swap_legend(data):
-    def fix(m):
-        parts = m.group(1).split(LEGEND_SEP)
-        assert len(parts) == 6, parts
-        parts[2], parts[4] = parts[4], parts[2]  # 세무·행정 <-> 학교시험
-        return b"(" + LEGEND_SEP.join(parts) + b") Tj"
-    new, n = re.subn(rb"\(([^()\n]*  \|  [^()\n]*)\) Tj", fix, data)
-    assert n == 1, n
-    return new
-
-
-def remove_taekwondo(data):
-    m4 = ITEM4_RE.search(data)
-    m3 = ITEM3_TEXT_RE.search(data)
-    assert m4 and m3
-    if m3.group(2).startswith(TAEKWONDO):
-        # 2월: 3번이 태권도 -> 4번 글을 3번 자리로 올리고 4번 삭제
-        data = data[:m3.start(2)] + m4.group(2) + data[m3.end(2):]
-        m4 = ITEM4_RE.search(data)
-    else:
-        # 8월: 4번이 태권도 -> 4번 삭제
-        assert m4.group(2).startswith(TAEKWONDO)
-    return data[:m4.start()] + data[m4.end():]
 
 
 LOGO = __file__.rsplit("/", 1)[0] + "/akas_logo.png" if "/" in __file__ else "akas_logo.png"
@@ -325,19 +294,6 @@ def cover_logo():
     c.setFillColor(HexColor("#26342F"))
     c.setFont("Times-Italic", 11)
     c.drawString(304.0264, 133.5, "Daegu Association of Private Tutoring Centers")
-    c.showPage()
-    c.save()
-    buf.seek(0)
-    return pypdf.PdfReader(buf).pages[0]
-
-
-def day_labels():
-    """날짜 칸에 추가할 글 (달력 원본의 절기 글씨와 같은 위치·크기·색)."""
-    buf = io.BytesIO()
-    c = canvas.Canvas(buf, pagesize=(841.8898, 595.2756))
-    c.setFillColor(HexColor("#9A6A24"))
-    c.setFont("NGB", 6.8)
-    c.drawString(46.185, 209, "정월대보름")  # 2월 21일(일)
     c.showPage()
     c.save()
     buf.seek(0)
@@ -410,28 +366,6 @@ def cover_watermark():
     return pypdf.PdfReader(buf).pages[0]
 
 
-def cover_mosaic():
-    """표지 로고 줄 양옆에 12작품을 3x2 모자이크로 작게 놓는다."""
-    buf = io.BytesIO()
-    c = canvas.Canvas(buf, pagesize=(PAGE_W, PAGE_H))
-    tw, th, gap = 42, 26.5, 3
-    top = 175  # 작은 달력들 아래
-    for side, x0 in ((0, 64), (1, 802.205 - 3 * tw - 2 * gap - 24)):
-        for i in range(6):
-            month = side * 6 + i + 1
-            col, row = i % 3, i // 3
-            x = x0 + col * (tw + gap)
-            y = top - (row + 1) * th - row * gap
-            c.drawImage(thumb(month, tw, th), x, y, tw, th)
-            c.setStrokeColor(HexColor("#FFFFFF"))
-            c.setLineWidth(0.8)
-            c.rect(x, y, tw, th, stroke=1, fill=0)
-    c.showPage()
-    c.save()
-    buf.seek(0)
-    return pypdf.PdfReader(buf).pages[0]
-
-
 def artwork_page(month):
     """그 달 달력 앞에 들어가는 작품 쪽."""
     from PIL import Image
@@ -495,46 +429,401 @@ def artwork_page(month):
     return pypdf.PdfReader(buf).pages[0]
 
 
+# 달마다 주요 일정(✓)과 날짜 칸 글씨
+# 글씨 종류: holiday 공휴일(빨강) · term 절기·명절(갈색) · admin 세무·행정(초록)
+# off: 일요일이 아닌데 빨간 날(공휴일·연휴·대체공휴일)
+MONTHS = {
+    1: {
+        "items": ['겨울방학 특강', '신학기 수업계획·교재 준비', '상반기 콩쿠르·공모전 준비', '사업장현황신고 자료 준비'],
+        "labels": {1: [('신정', 'holiday')], 5: [('소한', 'term')], 20: [('대한', 'term')]},
+        "off": [1],
+    },
+    2: {
+        "items": ['2/10 면세사업자 사업장현황신고', '신학기 반편성·시간표 확정', '법정의무교육 연간계획 확인'],
+        "labels": {4: [('입춘', 'term')], 6: [('설 연휴', 'holiday')], 7: [('설날', 'holiday')], 8: [('설 연휴', 'holiday')], 9: [('대체공휴일', 'holiday')], 10: [('사업장현황신고', 'admin')], 19: [('우수', 'term')], 21: [('정월대보름', 'term')]},
+        "off": [6, 8, 9],
+    },
+    3: {
+        "items": ['신학기 개학·학력평가', '1학기 내신·중간고사 대비 시작', '봄 예체능 대회·공모전 준비', '학교별 학사일정 확인'],
+        "labels": {1: [('삼일절', 'holiday')], 6: [('경칩', 'term')], 21: [('춘분', 'term')]},
+        "off": [1],
+    },
+    4: {
+        "items": ['1학기 중간고사 집중 대비', '학교별 시험일정 확인', '종합소득세 신고·납부 준비(5/31까지)', '봄 예체능 대회·공모전 시즌'],
+        "labels": {5: [('청명', 'term')], 20: [('곡우', 'term')]},
+        "off": [],
+    },
+    5: {
+        "items": ['대구 교습소 정기연수(예정)', '중간고사 분석·학부모 상담', '기말고사 대비 시작', '종합소득세 신고·납부'],
+        "labels": {1: [('노동절', 'holiday')], 3: [('대체공휴일', 'holiday')], 5: [('어린이날', 'holiday')], 6: [('입하', 'term')], 13: [('부처님오신날', 'holiday')], 21: [('소만', 'term')], 31: [('종합소득세 기한', 'admin')]},
+        "off": [1, 3, 5, 13],
+    },
+    6: {
+        "items": ['수능 모의평가', '1학기 기말고사 집중 대비', '여름방학 특강 모집', '상반기 예체능 대회 일정 확인'],
+        "labels": {6: [('현충일', 'holiday'), ('망종', 'term')], 21: [('하지', 'term')]},
+        "off": [],
+    },
+    7: {
+        "items": ['1학기 성적분석·상담', '여름방학 특강·2학기 선행', '예체능 여름방학 특강', '상반기 장부·증빙자료 점검'],
+        "labels": {7: [('소서', 'term')], 17: [('제헌절', 'holiday')], 19: [('대체공휴일', 'holiday')], 23: [('대서', 'term')]},
+        "off": [17, 19],
+    },
+    8: {
+        "items": ['2학기 개학·반편성·시간표 조정', '2학기 중간고사 선행', '하반기 예체능 대회 준비'],
+        "labels": {8: [('입추', 'term')], 15: [('광복절', 'holiday')], 16: [('대체공휴일', 'holiday')], 23: [('처서', 'term')]},
+        "off": [16],
+    },
+    9: {
+        "items": ['수능 모의평가', '2학기 중간고사 집중 대비', '법정의무교육 이수기간 시작(9~12월)', '가을 콩쿠르·공모전 시즌'],
+        "labels": {8: [('백로', 'term')], 14: [('추석 연휴', 'holiday')], 15: [('추석', 'holiday')], 16: [('추석 연휴', 'holiday')], 23: [('추분', 'term')]},
+        "off": [14, 15, 16],
+    },
+    10: {
+        "items": ['전국연합학력평가', '중간고사 분석·기말고사 대비 시작', '법정의무교육 이수·점검', '가을 예체능 행사 일정 확인'],
+        "labels": {3: [('개천절', 'holiday')], 4: [('대체공휴일', 'holiday')], 8: [('한로', 'term')], 9: [('한글날', 'holiday')], 11: [('대체공휴일', 'holiday')], 23: [('상강', 'term')]},
+        "off": [4, 9, 11],
+    },
+    11: {
+        "items": ['대학수학능력시험', '2학기 기말고사 집중 대비', '예비중·예비고·겨울특강 모집', '법정의무교육 이수·점검'],
+        "labels": {7: [('입동', 'term')], 22: [('소설', 'term')]},
+        "off": [],
+    },
+    12: {
+        "items": ['교습소 원장님 작품전시회', '기말고사 분석·학부모 상담', '겨울방학 특강·다음 학년도 반편성', '법정의무교육 최종 이수 점검'],
+        "labels": {7: [('대설', 'term')], 22: [('동지', 'term')], 25: [('성탄절', 'holiday')], 27: [('대체공휴일', 'holiday')]},
+        "off": [25, 27],
+    },
+}
+
+
+# ---------------------------------------------------------------- 월별 속지 (2025년 달력 모양)
+MONTH_EN = ["", "January", "February", "March", "April", "May", "June", "July",
+            "August", "September", "October", "November", "December"]
+WEEK = [("일요일", "Sunday"), ("월요일", "Monday"), ("화요일", "Tuesday"),
+        ("수요일", "Wednesday"), ("목요일", "Thursday"), ("금요일", "Friday"),
+        ("토요일", "Saturday")]
+RED = HexColor("#BB3E45")
+BLUE = HexColor("#355C9A")
+WEEKDAY_BAR = HexColor("#A7B1AC")
+BIG_NUM = HexColor("#9FB3A9")
+LABEL_COLOR = {"holiday": RED, "term": HexColor("#9A6A24"), "admin": GREEN2}
+LEGEND = "교과  |  예체능  |  학교시험  |  법정의무교육  |  세무·행정  |  공휴일"
+
+
+def lunar_mark(year, month, day):
+    """음력 1일·15일이면 '음M.D' 글씨를 돌려준다 (2025년 달력처럼)."""
+    from korean_lunar_calendar import KoreanLunarCalendar
+    cal = KoreanLunarCalendar()
+    cal.setSolarDate(year, month, day)
+    if cal.lunarDay in (1, 15) and not cal.isIntercalation:
+        return f"음{cal.lunarMonth}.{cal.lunarDay}"
+    return ""
+
+
+def mini_month(c, year, month, x, y, w, h):
+    """날짜 칸 안에 들어가는 지난달·다음달 작은 달력. (x, y)는 칸의 왼쪽 위."""
+    import calendar as pycal
+    c.setFillColor(INK)
+    c.setFont("NG", 7)
+    c.drawString(x + 6, y - 12, MONTH_EN[month])
+    c.drawRightString(x + w - 6, y - 12, f"{month} / {year}")
+    cw = (w - 12) / 7
+    c.setFont("NG", 4.3)
+    for i, en in enumerate(["SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT"]):
+        c.setFillColor(RED if i == 0 else BLUE if i == 6 else GRAY)
+        c.drawCentredString(x + 6 + cw * (i + 0.5), y - 20, en)
+    c.setStrokeColor(LINE)
+    c.setLineWidth(0.4)
+    c.line(x + 6, y - 22.5, x + w - 6, y - 22.5)
+    first = (pycal.monthrange(year, month)[0] + 1) % 7  # 일요일=0
+    days = pycal.monthrange(year, month)[1]
+    rh = min(7.6, (h - 28) / 6)
+    c.setFont("NG", 5.3)
+    for d in range(1, days + 1):
+        i = first + d - 1
+        col, row = i % 7, i // 7
+        c.setFillColor(RED if col == 0 else BLUE if col == 6 else INK)
+        c.drawCentredString(x + 6 + cw * (col + 0.5), y - 29 - row * rh, str(d))
+
+
+def month_page(month, year=2027, data=None, art=True):
+    import calendar as pycal
+    data = data or MONTHS[month]
+    buf = io.BytesIO()
+    c = canvas.Canvas(buf, pagesize=(PAGE_W, PAGE_H))
+    c.setFillColor(HexColor("#FFFFFF"))
+    c.rect(0, 0, PAGE_W, PAGE_H, stroke=0, fill=1)
+    L, R = 30, PAGE_W - 30
+
+    # 머리 부분 (맨 위 40pt는 스프링 자리로 비움)
+    c.setFillColor(BIG_NUM)
+    c.setFont("NGEB", 64)
+    c.drawString(L + 4, 482, f"{month:02d}")
+    nx = L + 4 + c.stringWidth(f"{month:02d}", "NGEB", 64) + 10
+    c.setFillColor(GRAY)
+    c.setFont("NG", 20)
+    c.drawString(nx, 512, str(year))
+    c.setFillColor(GREEN2)
+    c.setFont("NGB", 20)
+    c.drawString(nx + c.stringWidth(f"{year} ", "NG", 20), 512, MONTH_EN[month])
+    c.setFillColor(LIGHTGRAY)
+    c.setFont("NG", 7.5)
+    c.drawString(nx, 497, "사)한국교습소총연합회 대구광역시지회")
+    c.setFillColor(GRAY)
+    c.setFont("NG", 7)
+    c.drawString(nx, 484, LEGEND)
+
+    # 이달의 주요 일정 (✓ 표시, 두 줄씩 두 칸)
+    ix = 372
+    c.setFont("NGB", 9)
+    for i, item in enumerate(data["items"]):
+        col, row = i // 2, i % 2
+        x = ix + col * 140
+        y = 516 - row * 19
+        c.setStrokeColor(RED)
+        c.setLineWidth(1.1)
+        c.circle(x + 3.5, y + 3, 3.6, stroke=1, fill=0)
+        p = c.beginPath()
+        p.moveTo(x + 1.8, y + 3.1)
+        p.lineTo(x + 3.2, y + 1.6)
+        p.lineTo(x + 5.4, y + 4.6)
+        c.drawPath(p, stroke=1, fill=0)
+        c.setFillColor(INK)
+        size = 9
+        while c.stringWidth(item, "NGB", size) > 124 and size > 6.5:
+            size -= 0.25
+        c.setFont("NGB", size)
+        c.drawString(x + 11, y, item)
+    if data["items"]:
+        c.setFillColor(LIGHTGRAY)
+        c.setFont("NG", 6.8)
+        c.drawString(ix, 478, f"{month}월 교습소 주요 일정")
+
+    # 오른쪽 위 그 달의 작품
+    if art:
+        aw, ah = 128, 84
+        ax, ay = R - aw, 470
+        c.drawImage(thumb(month, aw, ah), ax, ay, aw, ah)
+        c.setStrokeColor(LINE)
+        c.setLineWidth(0.5)
+        c.rect(ax, ay, aw, ah, stroke=1, fill=0)
+
+    # 요일 줄
+    cw = (R - L) / 7
+    bar_y, bar_h = 440, 22
+    for i, (ko, en) in enumerate(WEEK):
+        c.setFillColor(RED if i == 0 else BLUE if i == 6 else WEEKDAY_BAR)
+        c.rect(L + i * cw + (0 if i == 0 else 0.6), bar_y, cw - (0 if i in (0, 6) else 0.6), bar_h,
+               stroke=0, fill=1)
+        kw = c.stringWidth(ko, "NGB", 9.5)
+        ew = c.stringWidth(en, "NG", 8)
+        sx = L + i * cw + (cw - kw - 4 - ew) / 2
+        c.setFillColor(HexColor("#FFFFFF"))
+        c.setFont("NGB", 9.5)
+        c.drawString(sx, bar_y + 7.3, ko)
+        c.setFillColor(HexColor("#FFFFFF") if i in (0, 6) else HexColor("#EEF2F0"))
+        c.setFont("NG", 8)
+        c.drawString(sx + kw + 4, bar_y + 7.3, en)
+
+    # 날짜 칸
+    first = (pycal.monthrange(year, month)[0] + 1) % 7  # 일요일=0
+    days = pycal.monthrange(year, month)[1]
+    rows = (first + days + 6) // 7
+    top, bottom = bar_y, 36
+    rh = (top - bottom) / rows
+    trailing = rows * 7 - first - days
+    for r in range(rows):
+        y = top - r * rh
+        c.setStrokeColor(HexColor("#D5DDD9"))
+        c.setLineWidth(0.6)
+        if r:
+            c.line(L, y, R, y)
+        for i in range(1, 7):  # 칸 위쪽에 짧은 세로선
+            c.line(L + i * cw, y - 1, L + i * cw, y - 20)
+    c.setLineWidth(0.6)
+    c.line(L, bottom, R, bottom)
+
+    for d in range(1, days + 1):
+        i = first + d - 1
+        col, row = i % 7, i // 7
+        x = L + col * cw + 8
+        y = top - row * rh - 20
+        red = col == 0 or d in data["off"]
+        c.setFillColor(RED if red else BLUE if col == 6 else INK)
+        c.setFont("NG", 17)
+        c.drawString(x, y, str(d))
+        lx = x + c.stringWidth(str(d), "NG", 17) + 4
+        ly = y + 1
+        texts = []
+        lunar = lunar_mark(year, month, d)
+        if lunar:
+            texts.append((lunar, GRAY))
+        for t, kind in data["labels"].get(d, []):
+            texts.append((t, LABEL_COLOR[kind]))
+        for j, (t, col_) in enumerate(texts):
+            c.setFillColor(col_)
+            c.setFont("NGB" if col_ is not GRAY else "NG", 7)
+            if j == 0:
+                c.drawString(lx, ly, t)
+            else:
+                c.drawString(x, y - 11 * j, t)
+
+    # 지난달·다음달 작은 달력: 앞쪽 빈칸에 지난달, 뒤쪽 빈칸에 다음달 (모자라면 한쪽에 둘 다)
+    prev_m = (year - 1, 12) if month == 1 else (year, month - 1)
+    next_m = (year + 1, 1) if month == 12 else (year, month + 1)
+    def cell(idx):
+        return L + (idx % 7) * cw, top - (idx // 7) * rh
+    if first >= 1 and trailing >= 1:
+        spots = [0, rows * 7 - 1]
+    elif first >= 2:
+        spots = [0, 1]
+    else:
+        spots = [rows * 7 - 2, rows * 7 - 1]
+    for (yy, mm), idx in zip((prev_m, next_m), spots):
+        x, y = cell(idx)
+        mini_month(c, yy, mm, x + 2, y - 2, cw - 4, rh - 4)
+
+    # 바닥글
+    c.setFillColor(LIGHTGRAY)
+    c.setFont("NG", 6.5)
+    c.drawString(L, 20, "※ 학교 시험·대회·공모전·심사 일정은 변경될 수 있습니다. "
+                        "세무·의무교육은 사업자 유형과 종사자 현황에 따라 적용사항을 확인하세요.")
+    c.drawRightString(R, 20, f"사)한국교습소총연합회 대구광역시지회  ·  {year} · {month:02d}")
+    c.showPage()
+    c.save()
+    buf.seek(0)
+    return pypdf.PdfReader(buf).pages[0]
+
+
+# 2쪽: 지난해 12월 (2025년 달력처럼 일정·작품 없이 날짜만)
+DEC_2026 = {
+    "items": [],
+    "labels": {7: [("대설", "term")], 22: [("동지", "term")], 25: [("성탄절", "holiday")]},
+    "off": [25],
+}
+
+
+def year_page():
+    """3쪽: 2027년 한눈에 보기 (12달 작은 달력) + AKAS 워터마크."""
+    import calendar as pycal
+    buf = io.BytesIO()
+    c = canvas.Canvas(buf, pagesize=(PAGE_W, PAGE_H))
+    c.setFillColor(HexColor("#FFFFFF"))
+    c.rect(0, 0, PAGE_W, PAGE_H, stroke=0, fill=1)
+    tw = c.stringWidth("2027", "NGEB", 34)
+    c.setFillColor(GRAY)
+    c.setFont("NSKR", 12)
+    lw = c.stringWidth("정미년(丁未年)  ", "NSKR", 12)
+    x0 = (PAGE_W - lw - tw) / 2
+    c.drawString(x0, 508, "정미년(丁未年)")
+    c.setFillColor(BIG_NUM)
+    c.setFont("NGEB", 34)
+    c.drawString(x0 + lw, 504, "2027")
+
+    cols, rows = 4, 3
+    L, R, top, bottom = 70, PAGE_W - 70, 482, 40
+    gw = (R - L) / cols
+    gh = (top - bottom) / rows
+    for m in range(1, 13):
+        col, row = (m - 1) % cols, (m - 1) // cols
+        x = L + col * gw + 14
+        y = top - row * gh
+        w = gw - 28
+        cw = w / 7
+        c.setFillColor(INK)
+        num, en = f"{m} ", MONTH_EN[m]
+        nw = c.stringWidth(num, "NGB", 11) + c.stringWidth(en, "NG", 10)
+        c.setFont("NGB", 11)
+        c.drawString(x + (w - nw) / 2, y - 12, num)
+        c.setFont("NG", 10)
+        c.drawString(x + (w - nw) / 2 + c.stringWidth(num, "NGB", 11), y - 12, en)
+        c.setStrokeColor(GRAY)
+        c.setLineWidth(0.5)
+        c.line(x, y - 17, x + w, y - 17)
+        c.setFont("NGB", 7.5)
+        for i, d in enumerate("SMTWTFS"):
+            c.setFillColor(RED if i == 0 else BLUE if i == 6 else INK)
+            c.drawCentredString(x + cw * (i + 0.5), y - 27, d)
+        c.line(x, y - 31, x + w, y - 31)
+        first = (pycal.monthrange(2027, m)[0] + 1) % 7
+        c.setFont("NG", 8.5)
+        for d in range(1, pycal.monthrange(2027, m)[1] + 1):
+            i = first + d - 1
+            cc, rr = i % 7, i // 7
+            red = cc == 0 or d in MONTHS[m]["off"]
+            c.setFillColor(RED if red else BLUE if cc == 6 else INK)
+            c.drawCentredString(x + cw * (cc + 0.5), y - 43 - rr * 12.5, str(d))
+    c.showPage()
+    c.save()
+    buf.seek(0)
+    page = pypdf.PdfReader(buf).pages[0]
+    page.merge_page(cover_watermark())
+    return page
+
+
+def cover_grid():
+    """표지: 작은 달력 자리에 12작품을 4x3으로 크게 놓는다 (2025년 표지처럼)."""
+    buf = io.BytesIO()
+    c = canvas.Canvas(buf, pagesize=(PAGE_W, PAGE_H))
+    gap, th = 9, 88
+    tw = th * 4 / 3
+    x0 = (PAGE_W - (4 * tw + 3 * gap)) / 2
+    top = 462
+    for m in range(1, 13):
+        col, row = (m - 1) % 4, (m - 1) // 4
+        x = x0 + col * (tw + gap)
+        y = top - (row + 1) * th - row * gap
+        c.drawImage(thumb(m, tw, th), x, y, tw, th)
+        c.setStrokeColor(LINE)
+        c.setLineWidth(0.4)
+        c.rect(x, y, tw, th, stroke=1, fill=0)
+    c.showPage()
+    c.save()
+    buf.seek(0)
+    return pypdf.PdfReader(buf).pages[0]
+
+
+# 원본 표지의 작은 달력 12개 부분 (첫 달력 상자부터 옛 로고 앞까지)
+OLD_MINI_CALS_RE = re.compile(rb"q\n\.964706 \.980392 \.972549 rg\n.*?(?=q\nn 289\.0264 147 m )", re.S)
+
+
 def main():
     register_fonts()
     reader = pypdf.PdfReader(SRC)
     writer = pypdf.PdfWriter()
-    for p in reader.pages:
-        writer.add_page(p)
-    pages = writer.pages
 
+    # 표지 (원본 1쪽을 고쳐 씀)
+    writer.add_page(reader.pages[0])
+    cover_page = writer.pages[0]
+    cover = cover_page.get_contents().get_data()
     # 표지 부제: 월별 주요 일정 · 법정의무교육 · 세무·행정 안내
-    cover = pages[0].get_contents().get_data()
     old = (b"(\\001\\002 \\003\\004 \\005\\006 \\007 \\010\\011\\007\\012\\006 \\007 "
            b"\\013\\006\\014\\011\\015\\016 \\017\\020)")
     new = (b"(\\001\\002 \\003\\004 \\005\\006 \\007 \\013\\006\\014\\011\\015\\016 \\007 "
            b"\\010\\011\\007\\012\\006 \\017\\020)")
     assert cover.count(old) == 1
     cover = cover.replace(old, new)
+    cover, n = OLD_MINI_CALS_RE.subn(b"", cover)
+    assert n == 1
     cover, n = OLD_LOGO_RE.subn(b"", cover)
     assert n == 1
     # 옛 영문(Helvetica)은 지우고, 로고와 같은 기울임 글씨로 cover_logo()에서 다시 쓴다
     eng = b"BT 1 0 0 1 304.0264 135 Tm (The  Association  of  Korea  Academic  School) Tj T* ET\n"
     assert cover.count(eng) == 1
     cover = cover.replace(eng, b"")
-    set_content(writer, pages[0], cover)
-    pages[0].merge_page(cover_logo())
-    pages[0].merge_page(cover_mosaic())
-    pages[0].merge_page(cover_watermark())
+    set_content(writer, cover_page, cover)
+    cover_page.merge_page(cover_logo())
+    cover_page.merge_page(cover_grid())
 
+    # 2쪽 지난해 12월, 3쪽 2027년 한눈에 보기, 4쪽부터 달마다 작품(앞면)·달력(뒷면)
+    writer.add_page(month_page(12, year=2026, data=DEC_2026, art=False))
+    writer.add_page(year_page())
     for month in range(1, 13):
-        page = pages[month]
-        data = swap_legend(page.get_contents().get_data())
-        if month in (2, 8):
-            data = remove_taekwondo(data)
-        set_content(writer, page, data)
-        if month == 2:
-            page.merge_page(day_labels())
-
-    # 달마다 작품 쪽(앞면) 다음에 달력 쪽(뒷면). 12월부터 넣어야 앞쪽 번호가 밀리지 않는다
-    for month in range(12, 0, -1):
-        writer.insert_page(artwork_page(month), month)
-    writer.insert_page(member_page(), 1)
+        writer.add_page(artwork_page(month))
+        writer.add_page(month_page(month))
+    # 끝에 회원 명단과 원본 마지막 안내 쪽
+    writer.add_page(member_page())
+    writer.add_page(reader.pages[13])
     writer.add_metadata(reader.metadata)
     with open(OUT, "wb") as f:
         writer.write(f)
