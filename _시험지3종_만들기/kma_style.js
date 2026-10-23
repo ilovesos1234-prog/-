@@ -6,6 +6,7 @@ const katex = require('katex');
 const { chromium } = require('/opt/node22/lib/node_modules/playwright');
 const D = require(path.resolve(process.argv[2]));
 const OUT = process.argv[3];
+const TEACHER = process.argv[4] === 'teacher';  // 교사용: 풀이가 문제 바로 아래
 const NM = path.join(__dirname, 'node_modules');
 const tex = (s) => s.replace(/\$([^$]+)\$/g, (_, m) => katex.renderToString(m, { throwOnError: true, strict: false }));
 const CIRC = ['①', '②', '③', '④', '⑤'];
@@ -45,8 +46,13 @@ body{margin:0;font-family:'Nanum Gothic',sans-serif;color:#1A1A1A;font-size:9.5p
 .s b.n{font-size:10.5pt;font-weight:800;display:block;line-height:1.2;margin-bottom:2pt}
 .s .a{display:inline-block;margin-top:2pt;color:#C2362B;font-weight:800;border:1pt solid #C2362B;border-radius:4pt;padding:0 5pt}
 .s .t{color:#245641;font-weight:700}
+.tsol{margin-top:5pt;border-top:.8pt dashed #2E6B4F;padding-top:4pt;color:#1d3f8f;font-size:8.8pt;line-height:1.6}
+.tsol .k{display:inline-block;background:#2E6B4F;color:#fff;font-size:7.5pt;font-weight:800;border-radius:3pt;padding:0 4pt;margin-right:4pt}
+.tsol .a{display:inline-block;margin-top:2pt;color:#C2362B;font-weight:800;border:1pt solid #C2362B;border-radius:4pt;padding:0 5pt}
+.tsol .t{color:#245641;font-weight:700}
+.tmark{color:#C2362B;font-weight:800;margin-left:6pt;font-size:9pt}
 `;
-const head = (pg) => `<div class="hd"><div class="l">생각이 다른 수학, 채수학<small>${D.META.title}</small></div><div class="r">학생용 · 채수학 편집<br>${D.META.sub}</div></div>
+const head = (pg) => `<div class="hd"><div class="l">생각이 다른 수학, 채수학<small>${D.META.title}</small></div><div class="r">${TEACHER ? '<b style="color:#C2362B">교사용</b>' : '학생용'} · 채수학 편집<br>${D.META.sub}</div></div>
 <div class="ft"><span>채수학교습소 | 수학하는 방법을 가르칩니다</span><b>${pg}</b><span>☎ 010-8677-2263</span></div>`;
 
 let pages = [];
@@ -56,15 +62,15 @@ for (let i = 0; i < D.Q.length; i += 4) {
   const spot = (q, k) => {
     const left = k % 2 ? 260.1 : 5, top = k < 2 ? 0 : 349.4;
     const ch = q.ch ? `<div class="ch ${q.chOne ? 'one' : ''}">${q.ch.map((c, j) => `<span>${CIRC[j]} ${tex(c)}</span>`).join('')}</div>` : '';
-    return `<div class="spot ${k % 2 ? 'r' : ''}" style="left:${left}pt;top:${top}pt"><div class="no">${q.n}${q.tag ? `<span class="src">${q.tag}</span>` : ''}</div><div class="q">${tex(q.q)}</div>${q.fig ? `<div class="fig">${q.fig}</div>` : ''}${ch}</div>`;
+    return `<div class="spot ${k % 2 ? 'r' : ''}" style="left:${left}pt;top:${top}pt"><div class="no">${q.n}${q.tag ? `<span class="src">${q.tag}</span>` : ''}</div><div class="q">${tex(q.q)}</div>${q.fig ? `<div class="fig">${q.fig}</div>` : ''}${ch}${TEACHER ? `<div class="tsol"><span class="k">풀이</span>${q.sol.map((l) => `<div>${tex(l)}</div>`).join('')}<span class="a">답 ${tex(q.ans)}</span></div>` : ''}</div>`;
   };
-  pages.push((i === 0 ? '<div class="nm">이름 <span></span>점수 <span></span></div>' : '') + `<div class="body">${four.map(spot).join('')}</div>`);
+  pages.push((i === 0 && !TEACHER ? '<div class="nm">이름 <span></span>점수 <span></span></div>' : '') + `<div class="body">${four.map(spot).join('')}</div>`);
 }
 // 정답
 pages.push(`<div class="body"><div class="ttl">정답</div><div class="agrid">${D.Q.map((q) => `<div><b>${q.n}</b> ${tex(q.ans)}</div>`).join('')}</div>${D.META.anote ? `<div class="anote">${tex(D.META.anote)}</div>` : ''}</div>`);
 // 해설
 const per = D.META.solPer || 9;
-for (let i = 0; i < D.Q.length; i += per) {
+for (let i = 0; !TEACHER && i < D.Q.length; i += per) {
   pages.push(`<div class="body"><div class="ttl">해설${i ? ' (계속)' : ''}</div><div class="sol">${D.Q.slice(i, i + per).map((q) => `<div class="s"><b class="n">${q.n}</b>${q.sol.map((l) => `<div>${tex(l)}</div>`).join('')}<span class="a">답 ${tex(q.ans)}</span></div>`).join('')}</div></div>`);
 }
 
@@ -79,6 +85,12 @@ const html = `<!doctype html><html lang="ko"><head><meta charset="utf-8"><title>
   const p = await b.newPage();
   await p.goto('file://' + hp, { waitUntil: 'networkidle' });
   await p.evaluate(() => document.fonts.ready);
+  if (TEACHER) await p.evaluate(() => {
+    for (const s of document.querySelectorAll('.spot')) {
+      let z = 1;
+      while (s.scrollHeight > s.clientHeight + 1 && z > 0.72) { z -= 0.04; s.style.fontSize = (9.5 * z) + 'pt'; s.querySelectorAll('.tsol').forEach((t) => t.style.fontSize = (8.8 * z) + 'pt'); }
+    }
+  });
   const over = await p.evaluate(() => [...document.querySelectorAll('.spot')].filter((s) => s.scrollHeight > s.clientHeight + 1).map((s) => s.querySelector('.no').textContent));
   if (over.length) console.log('넘침', over);
   const sol = await p.evaluate(() => [...document.querySelectorAll('.sol')].some((s) => s.scrollWidth > s.clientWidth + 2));
