@@ -894,6 +894,10 @@ def main():
     eng = b"BT 1 0 0 1 304.0264 135 Tm (The  Association  of  Korea  Academic  School) Tj T* ET\n"
     assert cover.count(eng) == 1
     cover = cover.replace(eng, b"")
+    # 바닥 띠 '홈페이지(다음카페)' -> '다음카페'
+    home = b"(\\037\\200\\201\\036\\(\\202\\203\\204\\200\\)) Tj"
+    assert cover.count(home) == 1
+    cover = cover.replace(home, b"(\\202\\203\\204\\200) Tj")
     set_content(writer, cover_page, cover)
     cover_page.merge_page(cover_logo())
     cover_page.merge_page(cover_grid())
