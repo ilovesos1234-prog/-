@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ko"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>채수학 수능 D-30 플래너</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;800;900&family=Noto+Serif+KR:wght@700;900&display=swap" rel="stylesheet">
+<style>
+:root{--g:#1f5c45;--gd:#16432f;--gl:#e6efe9;--gold:#c9a24b;--gs:#f6efdc;--gline:#e4d3a3;
+ --ink:#1f2328;--muted:#6b7280;--line:#d9ddd9;--soft:#f4f6f4;--red:#b23b2e;--redbg:#fbeeeb;}
+@page{size:A4;margin:0;}
+*{box-sizing:border-box;}
+html,body{margin:0;background:#e3e7e4;}
+body{font-family:"Noto Sans KR","Malgun Gothic","WenQuanYi Zen Hei",sans-serif;color:var(--ink);line-height:1.45;
+ -webkit-print-color-adjust:exact;print-color-adjust:exact;}
+.serif{font-family:"Noto Serif KR",serif;}
+.page{width:210mm;height:297mm;background:#fff;margin:0 auto;padding:12mm 13mm 9mm;display:flex;flex-direction:column;
+ overflow:hidden;page-break-after:always;break-after:page;position:relative;}
+.page:last-child{page-break-after:auto;break-after:auto;}
+@media screen{.page{margin:14px auto;box-shadow:0 4px 16px rgba(22,67,47,.14);}}
+@media screen and (max-width:820px){.page{width:100%;height:auto;min-height:0;padding:16px;margin:0 0 10px;overflow:visible;}
+ .cal{grid-template-columns:repeat(2,1fr)!important;} .two,.three,.lanes{grid-template-columns:1fr!important;}}
+@media print{html,body{background:#fff;}.page{margin:0;box-shadow:none;}}
+.ph{border-bottom:2px solid var(--gd);padding-bottom:2.5mm;margin-bottom:3.5mm;display:flex;justify-content:space-between;align-items:flex-end;gap:10px;}
+.kick{font-size:9.5px;font-weight:800;letter-spacing:2px;color:var(--g);}
+.ph h1{margin:1mm 0 0;font-size:24px;font-weight:800;letter-spacing:-.6px;color:var(--gd);}
+.ph .side{font-size:9.5px;color:var(--muted);text-align:right;}
+.blank{display:inline-block;border-bottom:1px solid #9aa39d;min-width:18mm;height:13px;vertical-align:bottom;}
+.lead{font-size:10.4px;color:#3b4150;margin:0 0 3mm;}
+.lead b{color:var(--g);}
+h3{font-size:12.5px;margin:3mm 0 1.8mm;color:var(--gd);font-weight:800;}
+h3 small{font-weight:500;color:var(--muted);font-size:9.5px;}
+table{width:100%;border-collapse:collapse;font-size:10px;}
+th{background:var(--gd);color:#fff;font-weight:700;padding:1.6mm 2mm;text-align:left;font-size:9.6px;}
+td{border-bottom:1px solid var(--line);padding:1.5mm 2mm;height:var(--rh,7.4mm);}
+table.box{border:1px solid var(--line);}
+table.box td{border-right:1px solid #eceeec;}
+td.c,th.c{text-align:center;}
+tr.rest td{color:var(--muted);background:var(--soft);}
+.strong{color:var(--g);font-weight:800;}
+.cb{display:inline-block;width:9.5px;height:9.5px;border:1.3px solid var(--gd);border-radius:2px;vertical-align:-1px;margin-right:3px;background:#fff;}
+.foot{margin-top:auto;display:flex;justify-content:space-between;font-size:8.8px;color:var(--muted);border-top:1px solid var(--line);padding-top:1.8mm;}
+.foot b{color:var(--g);}
+.card{border:1px solid var(--line);border-radius:7px;padding:3mm 3.5mm;font-size:10px;}
+.card.gold{background:var(--gs);border-color:var(--gline);}
+.card.soft{background:var(--soft);border-color:var(--soft);}
+.card.red{background:var(--redbg);border-color:#ecc3bb;}
+.card h4{margin:0 0 1.5mm;font-size:11px;color:var(--gd);}
+.card.red h4{color:var(--red);}
+.card ul{margin:0;padding:0;list-style:none;}
+.card li{margin:1.1mm 0;}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:3mm;}
+.three{display:grid;grid-template-columns:repeat(3,1fr);gap:3mm;}
+
+/* cover */
+.cover{padding:0;}
+.hero{background:var(--gd);color:#fff;padding:15mm 13mm 13mm;position:relative;}
+.hero .top{font-size:11px;letter-spacing:1.5px;font-weight:700;color:#d8e6dd;}
+.hero .row{display:flex;align-items:center;gap:7mm;margin-top:3mm;}
+.hero .big{font-family:"Noto Serif KR",serif;font-weight:900;font-size:100px;line-height:1;letter-spacing:-2px;}
+.hero .t{font-size:27px;font-weight:800;letter-spacing:-.5px;}
+.hero .t em{font-style:normal;color:var(--gold);}
+.hero .d{font-size:12.5px;color:#d8e6dd;margin-top:1.5mm;}
+.hero .d .blank{border-color:#9fbcab;min-width:9mm;}
+.hero .logo{position:absolute;right:13mm;top:10mm;display:flex;align-items:center;gap:6px;font-size:11px;font-weight:800;color:var(--gold);}
+.hero .logo span{width:24px;height:24px;border-radius:6px;background:var(--gold);color:var(--gd);display:flex;align-items:center;justify-content:center;font-size:13px;}
+.cbody{padding:6mm 13mm 9mm;display:flex;flex-direction:column;flex:1;}
+.info{border:1px solid var(--ink);border-radius:6px;padding:3.5mm 5mm;display:grid;grid-template-columns:1fr 1fr 1.25fr;gap:6mm;font-size:9.5px;color:var(--muted);}
+.info .ln{border-bottom:1px solid #9aa39d;height:8mm;}
+.info .opts{color:var(--ink);font-size:11px;margin-top:2.5mm;}
+.ptitle{display:flex;align-items:baseline;gap:8px;margin:6mm 0 1mm;border-bottom:1px solid var(--line);padding-bottom:2mm;}
+.ptitle b{font-size:19px;font-family:"Noto Serif KR",serif;color:var(--gd);}
+.ptitle span{font-size:9.5px;color:var(--muted);}
+.pr{display:grid;grid-template-columns:15mm 1fr auto;gap:3mm;align-items:start;padding:5mm 0;border-bottom:1px solid var(--line);}
+.pr .n{font-family:"Noto Serif KR",serif;font-weight:900;font-size:28px;color:var(--g);line-height:1;}
+.pr h5{margin:0 0 1.5mm;font-size:14.5px;color:var(--ink);}
+.pr p{margin:0;font-size:10.8px;color:#4b5260;}
+.pr .tag{background:var(--gd);color:#fff;font-size:9.5px;font-weight:700;padding:1.2mm 3mm;border-radius:4px;white-space:nowrap;margin-top:1mm;}
+.comp{background:var(--soft);border-radius:7px;padding:3.5mm 5mm;margin-top:5mm;font-size:10px;}
+.comp b{color:var(--gd);}
+.cfoot{margin-top:auto;display:flex;justify-content:space-between;align-items:flex-end;padding-top:4mm;}
+.cfoot .bn{font-size:12px;font-weight:800;color:var(--gd);}
+.cfoot .tel{font-size:10px;color:var(--muted);}
+.cfoot .tel b{color:var(--g);font-size:13px;}
+
+/* calendar */
+.week{display:flex;align-items:center;gap:6px;font-size:9.5px;color:#3b4150;margin:2mm 0 1.2mm;}
+.week b{background:var(--gd);color:#fff;border-radius:4px;padding:.6mm 2.2mm;font-size:9.5px;}
+.cal{display:grid;grid-template-columns:repeat(7,1fr);gap:1.6mm;}
+.cell{border:1px solid #b9c3bd;border-radius:5px;padding:1.4mm 1.8mm;font-size:9.2px;min-height:40mm;}
+.cell .hd{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:.8mm;}
+.cell .dt{font-size:10px;font-weight:800;color:var(--ink);letter-spacing:.5px;}
+.cell .dd{font-size:9px;font-weight:800;color:var(--g);}
+.cell .dd.hot{color:var(--red);}
+.cell .l{display:flex;gap:3px;color:#4b5260;margin:1.4mm 0;}
+.cell .l i{flex:1;border-bottom:1px solid #c7ccc8;font-style:normal;text-align:right;}
+.cell .k{margin-top:1.4mm;color:#3b4150;}
+.cell.day{background:var(--redbg);border:1.5px solid var(--red);display:flex;flex-direction:column;}
+.cell.day .big{margin:auto;text-align:center;font-size:15px;font-weight:900;color:var(--ink);}
+.cell.day .big small{display:block;font-size:9px;font-weight:500;color:#4b5260;margin-top:1mm;}
+.cell.empty{border:1px dashed #d5dad6;background:repeating-linear-gradient(45deg,#fafbfa,#fafbfa 4px,#f2f4f2 4px,#f2f4f2 8px);}
+.targets{font-size:9.5px;color:var(--muted);}
+
+/* lanes */
+.lanes{display:grid;grid-template-columns:repeat(3,1fr);gap:3mm;}
+.lane{border:1px solid var(--line);border-radius:7px;overflow:hidden;font-size:9.8px;}
+.lane .lh{display:flex;justify-content:space-between;align-items:center;padding:2mm 3mm;color:#fff;font-weight:800;font-size:11.5px;}
+.lane .lh span{font-size:9px;font-weight:500;color:#e2ece6;}
+.lane .lb{padding:2.5mm 3mm;}
+.lane .no{color:var(--red);}
+.bl{display:grid;grid-template-columns:1fr 30mm;border:1px solid #b9c3bd;border-radius:6px;overflow:hidden;min-height:var(--bh,27mm);font-size:9.5px;}
+.bl .a{padding:2.5mm 3mm;color:#9aa1ab;}
+.bl .a .blank{min-width:38mm;}
+.bl .b{background:var(--gs);padding:2.5mm 3mm;color:#7a5e1f;border-left:1px solid var(--gline);}
+.bl .b b{color:var(--ink);display:block;}
+
+/* timeline */
+.tl{display:grid;grid-template-columns:repeat(5,1fr);gap:2mm;}
+.tl .s{border-top:3px solid var(--g);padding-top:2mm;font-size:9.4px;color:#4b5260;}
+.tl .s .when{font-size:10.5px;font-weight:800;color:var(--gd);}
+.tl .s .what{font-weight:800;color:var(--ink);font-size:10.5px;margin:.6mm 0 1mm;}
+.book{display:flex;gap:4mm;align-items:center;margin-top:3mm;border:1px dashed var(--g);border-radius:7px;padding:3mm 4mm;font-size:10.5px;}
+.book b{color:var(--gd);}
+.book .tel{margin-left:auto;font-weight:800;color:var(--g);font-size:12px;}
+.memo-l{border-bottom:1px solid #c7ccc8;height:9mm;}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:2mm;margin-bottom:2.5mm;}
+.steps div{background:var(--gl);border-radius:6px;padding:2.2mm 2.5mm;font-size:9.4px;color:#33493e;}
+.steps div b{display:block;color:var(--gd);font-size:10.5px;margin-bottom:.4mm;}
+</style></head><body>
+<section class="page cover">
+<div class="hero">
+ <div class="logo"><span>채</span>채수학교습소</div>
+ <div class="top"><span class="blank" style="min-width:14mm"></span>학년도 대학수학능력시험 · 시험일 <span class="blank" style="min-width:10mm"></span>월 <span class="blank" style="min-width:10mm"></span>일 (  )</div>
+ <div class="row"><div class="big">D-30</div><div><div class="t">수능 <em>마무리</em> 플래너</div>
+ <div class="d">20<span class="blank" style="min-width:8mm"></span>. <span class="blank" style="min-width:8mm"></span>. <span class="blank" style="min-width:8mm"></span> — <span class="blank" style="min-width:8mm"></span>. <span class="blank" style="min-width:8mm"></span></div></div></div>
+</div>
+<div class="cbody">
+ <div class="info"><div>이름<div class="ln"></div></div><div>반 / 담당<div class="ln"></div></div><div>나의 트랙 (해당 칸 체크)<div class="opts"><span class="cb"></span>수시 &nbsp; <span class="cb"></span>정시 &nbsp; <span class="cb"></span>병행</div></div></div>
+ <div class="ptitle"><b>남은 30일, 다섯 가지 원칙</b><span>읽고 끝내지 말고, 표시된 쪽에서 바로 실행하세요</span></div>
+ <div class="pr"><div class="n">01</div><div><h5>취약 과목 몰빵 금지 — 모든 과목을 매일 짧게라도</h5><p>취약 과목에 시간을 더 주되, 강한 과목도 매일 고정 분량을 풀어 감을 유지합니다. 믿던 과목의 실수가 전체 점수를 끌어내리는 경우가 가장 흔합니다.</p></div><div class="tag">4쪽 배분표</div></div><div class="pr"><div class="n">02</div><div><h5>새 교재·새 강의 대신, 했던 것을 다시</h5><p>과목별 핵심 개념을 백지에 써 보고, 막힌 부분만 다시 봅니다. 틀렸거나 찍어서 맞힌 문제는 풀이를 스스로 설명할 수 있을 때까지.</p></div><div class="tag">4쪽 백지 정리</div></div><div class="pr"><div class="n">03</div><div><h5>내 등급에 맞는 문제를 푼다</h5><p>1~2등급은 고난도·실전 모의, 2~4등급은 기출 재분석으로 아는 문제 지키기, 그 이하는 개념 암기로 배점 낮은 문항부터 확보합니다.</p></div><div class="tag">4쪽 분기표</div></div><div class="pr"><div class="n">04</div><div><h5>수능 시간표 그대로, 시간의 70~80%로</h5><p>실제 시간표·OMR 마킹까지 맞춰 풀고, 풀이는 제한시간의 70~80% 안에 끝낸 뒤 남은 시간에 보류 문항과 마킹을 점검합니다.</p></div><div class="tag">3쪽 실전 루틴</div></div><div class="pr"><div class="n">05</div><div><h5>같은 시각에 자고 일어나기</h5><p>무리한 밤샘보다 일정한 기상·취침과 세 끼, 가벼운 운동이 우선입니다. 시험이 가까워질수록 감기 대비도 미리.</p></div><div class="tag">2쪽 달력</div></div>
+ <div class="comp"><b>이 플래너의 구성</b><br>1~4쪽은 모두 공통입니다. 5쪽은 트랙에 따라 받습니다 — <b>5A 수시파</b>(최저 체크·수능 후 판단표) / <b>5B 정시파</b>(수능 후 로드맵·가채점). 병행생은 두 장 모두 받으세요.</div>
+ <div class="cfoot"><div><div class="bn">채수학교습소</div><div class="tel">상담 예약 <b>☎ 010-8677-2263</b></div></div><div class="tel">1 / 5</div></div>
+</div></section>
+<section class="page"><div class="ph"><div><div class="kick">PAGE 2 · 원칙 05</div><h1 class="serif">30일 체크 달력</h1></div><div class="side">매일 밤 기상·취침 시각을 적고, 한 일에 체크<br>목표 기상 <span class="blank" style="min-width:16mm"></span> &nbsp; 목표 취침 <span class="blank" style="min-width:16mm"></span></div></div><p class="lead">날짜 칸에 <b>월/일과 요일</b>을 직접 적어 쓰세요. D-30부터 D-DAY까지 하루 한 칸입니다.</p><div class="week"><b>1주차</b>정리 주간 — 백지 정리·오답 재분석, 기상·취침 시각 고정</div><div class="cal"><div class="cell"><div class="hd"><span class="dt">__/__ (  )</span><span class="dd">D-30</span></div><div class="l">기상<i></i></div><div class="l">취침<i></i></div><div class="l">공부<i>h</i></div><div class="k"><span class="cb"></span>실전 모의</div><div class="k"><span class="cb"></span>백지·오답</div></div><div class="cell"><div class="hd"><span class="dt">__/__ (  )</span><span class="dd">D-29</span></div><div class="l">기상<i></i></div><div class="l">취침<i></i></div><div class="l">공부<i>h</i></div><div class="k"><span class="cb"></span>실전 모의</div><div class="k"><span class="cb"></span>백지·오답</div></div><div class="cell"><div class="hd"><span class="dt">__/__ (  )</span><span class="dd">D-28</span></div><div class="l">기상<i></i></div><div class="l">취침<i></i></div><div class="l">공부<i>h</i></div><div class="k"><span class="cb"></span>실전 모의</div><div class="k"><span class="cb"></span>백지·오답</div></div><div class="cell"><div class="hd"><span class="dt">__/__ (  )</span><span class="dd">D-27</span></div><div class="l">기상<i></i></div><div class="l">취침<i></i></div><div class="l">공부<i>h</i></div><div class="k"><span class="cb"></span>실전 모의</div><div class="k"><span class="cb"></span>백지·오답</div></div><div class="cell"><div class="hd"><span class="dt">__/__ (  )</span><span class="dd">D-26</span></div><div class="l">기상<i></i></div><div class="l">취침<i></i></div><div class="l">공부<i>h</i></div><div class="k"><span class="cb"></span>실전 모의</div><div class="k"><span class="cb"></span>백지·오답</div></div><div class="cell"><div class="hd"><span class="dt">__/__ (  )</span><span class="dd">D-25</span></div><div class="l">기상<i></i></div><div class="l">취침<i></i></div><div class="l">공부<i>h</i></div><div class="k"><span class="cb"></span>실전 모의</div><div class="k"><span class="cb"></span>백지·오답</div></div><div class="cell"><div class="hd"><span class="dt">__/__ (  )</span><span class="dd">D-24</span></div><div class="l">기상<i></i></div><div class="l">취침<i></i></div><div class="l">공부<i>h</i></div><div class="k"><span class="cb"></span>실전 모의</div><div class="k"><span class="cb"></span>백지·오답</div></div></div><div class="week"><b>2주차</b>실전 루틴 정착 — 수능 시간표대로 실전 모의 주 2회</div><div class="cal"><div class="cell"><div class="hd"><span class="dt">__/__ (  )</span><span class="dd">D-23</span></div><div class="l">기상<i></i></div><div class="l">취침<i></i></div><div class="l">공부<i>h</i></div><div class="k"><span class="cb"></span>실전 모의</div><div class="k"><span class="cb"></span>백지·오답</div></div><div class="cell"><div class="hd"><span class="dt">__/__ (  )</span><span class="dd">D-22</span></div><div class="l">기상<i></i></div><div class="l">취침<i></i></div><div class="l">공부<i>h</i></div><div class="k"><span class="cb"></span>실전 모의</div><div class="k"><span class="cb"></span>백지·오답</div></div><div class="cell"><div class="hd"><span class="dt">__/__ (  )</span><span class="dd">D-21</span></div><div class="l">기상<i></i></div><div class="l">취침<i></i></div><div class="l">공부<i>h</i></div><div class="k"><span class="cb"></span>실전 모의</div><div class="k"><span class="cb"></span>백지·오답</div></div><div class="cell"><div class="hd"><span class="dt">__/__ (  )</span><span class="dd">D-20</span></div><div class="l">기상<i></i></div><div class="l">취침<i></i></div><div class="l">공부<i>h</i></div><div class="k"><span class="cb"></span>실전 모의</div><div class="k"><span class="cb"></span>백지·오답</div></div><div class="cell"><div class="hd"><span class="dt">__/__ (  )</span><span class="dd">D-19</span></div><div class="l">기상<i></i></div><div class="l">취침<i></i></div><div class="l">공부<i>h</i></div><div class="k"><span class="cb"></span>실전 모의</div><div class="k"><span class="cb"></span>백지·오답</div></div><div class="cell"><div class="hd"><span class="dt">__/__ (  )</span><span class="dd">D-18</span></div><div class="l">기상<i></i></div><div class="l">취침<i></i></div><div class="l">공부<i>h</i></div><div class="k"><span class="cb"></span>실전 모의</div><div class="k"><span class="cb"></span>백지·오답</div></div><div class="cell"><div class="hd"><span class="dt">__/__ (  )</span><span class="dd">D-17</span></div><div class="l">기상<i></i></div><div class="l">취침<i></i></div><div class="l">공부<i>h</i></div><div class="k"><span class="cb"></span>실전 모의</div><div class="k"><span class="cb"></span>백지·오답</div></div></div><div class="week"><b>3주차</b>실전 + 약점 — 모의 후 틀린 유형만 집중 보완</div><div class="cal"><div class="cell"><div class="hd"><span class="dt">__/__ (  )</span><span class="dd">D-16</span></div><div class="l">기상<i></i></div><div class="l">취침<i></i></div><div class="l">공부<i>h</i></div><div class="k"><span class="cb"></span>실전 모의</div><div class="k"><span class="cb"></span>백지·오답</div></div><div class="cell"><div class="hd"><span class="dt">__/__ (  )</span><span class="dd">D-15</span></div><div class="l">기상<i></i></div><div class="l">취침<i></i></div><div class="l">공부<i>h</i></div><div class="k"><span class="cb"></span>실전 모의</div><div class="k"><span class="cb"></span>백지·오답</div></div><div class="cell"><div class="hd"><span class="dt">__/__ (  )</span><span class="dd">D-14</span></div><div class="l">기상<i></i></div><div class="l">취침<i></i></div><div class="l">공부<i>h</i></div><div class="k"><span class="cb"></span>실전 모의</div><div class="k"><span class="cb"></span>백지·오답</div></div><div class="cell"><div class="hd"><span class="dt">__/__ (  )</span><span class="dd">D-13</span></div><div class="l">기상<i></i></div><div class="l">취침<i></i></div><div class="l">공부<i>h</i></div><div class="k"><span class="cb"></span>실전 모의</div><div class="k"><span class="cb"></span>백지·오답</div></div><div class="cell"><div class="hd"><span class="dt">__/__ (  )</span><span class="dd">D-12</span></div><div class="l">기상<i></i></div><div class="l">취침<i></i></div><div class="l">공부<i>h</i></div><div class="k"><span class="cb"></span>실전 모의</div><div class="k"><span class="cb"></span>백지·오답</div></div><div class="cell"><div class="hd"><span class="dt">__/__ (  )</span><span class="dd">D-11</span></div><div class="l">기상<i></i></div><div class="l">취침<i></i></div><div class="l">공부<i>h</i></div><div class="k"><span class="cb"></span>실전 모의</div><div class="k"><span class="cb"></span>백지·오답</div></div><div class="cell"><div class="hd"><span class="dt">__/__ (  )</span><span class="dd">D-10</span></div><div class="l">기상<i></i></div><div class="l">취침<i></i></div><div class="l">공부<i>h</i></div><div class="k"><span class="cb"></span>실전 모의</div><div class="k"><span class="cb"></span>백지·오답</div></div></div><div class="week"><b>4주차</b>최종 점검 — 새 문제 줄이고 개념 백지 재확인</div><div class="cal"><div class="cell"><div class="hd"><span class="dt">__/__ (  )</span><span class="dd">D-9</span></div><div class="l">기상<i></i></div><div class="l">취침<i></i></div><div class="l">공부<i>h</i></div><div class="k"><span class="cb"></span>실전 모의</div><div class="k"><span class="cb"></span>백지·오답</div></div><div class="cell"><div class="hd"><span class="dt">__/__ (  )</span><span class="dd">D-8</span></div><div class="l">기상<i></i></div><div class="l">취침<i></i></div><div class="l">공부<i>h</i></div><div class="k"><span class="cb"></span>실전 모의</div><div class="k"><span class="cb"></span>백지·오답</div></div><div class="cell"><div class="hd"><span class="dt">__/__ (  )</span><span class="dd">D-7</span></div><div class="l">기상<i></i></div><div class="l">취침<i></i></div><div class="l">공부<i>h</i></div><div class="k"><span class="cb"></span>실전 모의</div><div class="k"><span class="cb"></span>백지·오답</div></div><div class="cell"><div class="hd"><span class="dt">__/__ (  )</span><span class="dd">D-6</span></div><div class="l">기상<i></i></div><div class="l">취침<i></i></div><div class="l">공부<i>h</i></div><div class="k"><span class="cb"></span>실전 모의</div><div class="k"><span class="cb"></span>백지·오답</div></div><div class="cell"><div class="hd"><span class="dt">__/__ (  )</span><span class="dd">D-5</span></div><div class="l">기상<i></i></div><div class="l">취침<i></i></div><div class="l">공부<i>h</i></div><div class="k"><span class="cb"></span>실전 모의</div><div class="k"><span class="cb"></span>백지·오답</div></div><div class="cell"><div class="hd"><span class="dt">__/__ (  )</span><span class="dd">D-4</span></div><div class="l">기상<i></i></div><div class="l">취침<i></i></div><div class="l">공부<i>h</i></div><div class="k"><span class="cb"></span>실전 모의</div><div class="k"><span class="cb"></span>백지·오답</div></div><div class="cell"><div class="hd"><span class="dt">__/__ (  )</span><span class="dd hot">D-3</span></div><div class="l">기상<i></i></div><div class="l">취침<i></i></div><div class="l">공부<i>h</i></div><div class="k"><span class="cb"></span>실전 모의</div><div class="k"><span class="cb"></span>백지·오답</div></div></div><div class="week"><b>마지막</b>컨디션 — 가벼운 기출, 수능 시간대 리듬, 준비물 점검</div><div class="cal"><div class="cell"><div class="hd"><span class="dt">__/__ (  )</span><span class="dd hot">D-2</span></div><div class="l">기상<i></i></div><div class="l">취침<i></i></div><div class="l">공부<i>h</i></div><div class="k"><span class="cb"></span>실전 모의</div><div class="k"><span class="cb"></span>백지·오답</div></div><div class="cell"><div class="hd"><span class="dt">__/__ (  )</span><span class="dd hot">D-1</span></div><div class="l">기상<i></i></div><div class="l">취침<i></i></div><div class="l">공부<i>h</i></div><div class="k"><span class="cb"></span>실전 모의</div><div class="k"><span class="cb"></span><b style="color:var(--red)">시험장 확인</b></div></div><div class="cell day"><div class="hd"><span class="dt">__/__ (  )</span><span class="dd hot">D-DAY</span></div><div class="big">수능<small>08:10 입실</small></div></div><div class="cell empty"></div><div class="cell empty"></div><div class="cell empty"></div><div class="cell empty"></div></div><div class="foot"><span>실전 모의는 <b>수능 시간표 그대로</b>(3쪽) — 2주차부터 주 2회 권장</span><span><b>채수학교습소</b> · ☎ 010-8677-2263 · 2 / 5</span></div></section>
+<section class="page" style="--rh:8.6mm"><div class="ph"><div><div class="kick">PAGE 3 · 원칙 04</div><h1 class="serif">실전 루틴 — 시간표 그대로, 70~80% 안에</h1></div><div class="side"></div></div>
+<p class="lead">실전 모의는 아래 시간표 그대로 풉니다. 점심 50분과 쉬는 시간까지 지키고, OMR 마킹까지 시간 안에 포함하세요. <b>목표 풀이 시간</b> 안에 한 바퀴를 끝내고, 남은 시간은 보류 문항과 마킹 점검에 씁니다.</p>
+<table class="box"><tr><th>교시</th><th>영역</th><th>시간</th><th>시간·문항</th><th>목표 풀이 시간 (70~80%)</th></tr><tr class="rest"><td><b>입실</b></td><td><b>모든 수험생</b></td><td>08:10까지</td><td></td><td class="strong"></td></tr><tr class=""><td><b>1교시</b></td><td><b>국어</b></td><td>08:40 – 10:00</td><td>80분 · 45</td><td class="strong">56 ~ 64분</td></tr><tr class="rest"><td><b>휴식</b></td><td><b></b></td><td>10:00 – 10:20</td><td>20분</td><td class="strong"></td></tr><tr class=""><td><b>2교시</b></td><td><b>수학</b></td><td>10:30 – 12:10</td><td>100분 · 30</td><td class="strong">70 ~ 80분</td></tr><tr class="rest"><td><b>점심</b></td><td><b></b></td><td>12:10 – 13:00</td><td>50분</td><td class="strong"></td></tr><tr class=""><td><b>3교시</b></td><td><b>영어</b></td><td>13:10 – 14:20</td><td>70분 · 45</td><td class="strong">49 ~ 56분 (듣기 포함)</td></tr><tr class=""><td><b>4교시</b></td><td><b>한국사</b></td><td>14:50 – 15:20</td><td>30분 · 20</td><td class="strong">21 ~ 24분</td></tr><tr class="rest"><td><b></b></td><td><b>탐구 배부·정리</b></td><td>15:20 – 15:35</td><td>15분</td><td class="strong"></td></tr><tr class=""><td><b>4교시</b></td><td><b>탐구 1과목</b></td><td>15:35 – 16:05</td><td>30분 · 20</td><td class="strong">21 ~ 24분</td></tr><tr class=""><td><b>4교시</b></td><td><b>탐구 2과목</b></td><td>16:07 – 16:37</td><td>30분 · 20</td><td class="strong">21 ~ 24분</td></tr><tr class="rest"><td><b>휴식</b></td><td><b></b></td><td>16:37 – 16:55</td><td>18분</td><td class="strong"></td></tr><tr class=""><td><b>5교시</b></td><td><b>제2외국어/한문 (선택자)</b></td><td>17:05 – 17:45</td><td>40분 · 30</td><td class="strong">28 ~ 32분</td></tr></table>
+<p style="font-size:8.8px;color:var(--muted);margin:1.2mm 0 0">시간표는 최근 수능 시행기본계획 기준입니다. 해당 학년도 한국교육과정평가원 공고로 꼭 다시 확인하세요. 2~5교시는 시작 10분 전까지 입실.</p>
+<h3>실전 모의 기록표 <small>— 칸마다 "점수 / 남은 시간(분)"</small></h3>
+<table class="box"><tr><th class="c">회</th><th>날짜</th><th class="c">국어</th><th class="c">수학</th><th class="c">영어</th><th class="c">한국사</th><th class="c">탐구1</th><th class="c">탐구2</th><th>마킹 실수 · 아쉬운 점</th></tr><tr><td class="c"><b>1</b></td><td>__/__</td><td class="c" style="color:#aab">/</td><td class="c" style="color:#aab">/</td><td class="c" style="color:#aab">/</td><td class="c" style="color:#aab">/</td><td class="c" style="color:#aab">/</td><td class="c" style="color:#aab">/</td><td></td></tr><tr><td class="c"><b>2</b></td><td>__/__</td><td class="c" style="color:#aab">/</td><td class="c" style="color:#aab">/</td><td class="c" style="color:#aab">/</td><td class="c" style="color:#aab">/</td><td class="c" style="color:#aab">/</td><td class="c" style="color:#aab">/</td><td></td></tr><tr><td class="c"><b>3</b></td><td>__/__</td><td class="c" style="color:#aab">/</td><td class="c" style="color:#aab">/</td><td class="c" style="color:#aab">/</td><td class="c" style="color:#aab">/</td><td class="c" style="color:#aab">/</td><td class="c" style="color:#aab">/</td><td></td></tr><tr><td class="c"><b>4</b></td><td>__/__</td><td class="c" style="color:#aab">/</td><td class="c" style="color:#aab">/</td><td class="c" style="color:#aab">/</td><td class="c" style="color:#aab">/</td><td class="c" style="color:#aab">/</td><td class="c" style="color:#aab">/</td><td></td></tr><tr><td class="c"><b>5</b></td><td>__/__</td><td class="c" style="color:#aab">/</td><td class="c" style="color:#aab">/</td><td class="c" style="color:#aab">/</td><td class="c" style="color:#aab">/</td><td class="c" style="color:#aab">/</td><td class="c" style="color:#aab">/</td><td></td></tr><tr><td class="c"><b>6</b></td><td>__/__</td><td class="c" style="color:#aab">/</td><td class="c" style="color:#aab">/</td><td class="c" style="color:#aab">/</td><td class="c" style="color:#aab">/</td><td class="c" style="color:#aab">/</td><td class="c" style="color:#aab">/</td><td></td></tr></table>
+<div class="two" style="margin-top:4mm">
+<div class="card"><h4>수능 당일 기본 체크</h4><ul>
+<li><span class="cb"></span>08:10까지 입실 (1교시 미응시자도 동일)</li><li><span class="cb"></span>수험표 + 사진 붙은 실물 신분증</li>
+<li><span class="cb"></span>시침·분침(초침)만 있는 아날로그 시계</li><li><span class="cb"></span>휴대폰·스마트워치·태블릿·이어폰·보조배터리 등 반입 금지</li><li><span class="cb"></span>도시락·물 (점심 50분)</li></ul></div>
+<div class="card soft"><h4>꼭 지킬 것</h4><ul>
+<li>· 탐구는 원서에 적은 <b>선택 순서대로</b> 응시, 다른 과목 문제지를 보면 부정행위</li>
+<li>· 한국사 미응시 시 수능 성적 전체 무효</li><li>· 세부 유의사항은 수험표 배부 때 받는 안내문을 최종 기준으로</li></ul></div></div>
+<div class="foot"><span></span><span><b>채수학교습소</b> · ☎ 010-8677-2263 · 3 / 5</span></div></section>
+<section class="page" style="--rh:9.2mm;--bh:34mm"><div class="ph"><div><div class="kick">PAGE 4 · 원칙 01 · 02 · 03</div><h1 class="serif">과목별로, 내 등급에 맞게</h1></div><div class="side"></div></div>
+<h3>① 과목마다 9월 모평 등급을 보고 레인을 고르세요</h3>
+<div class="lanes">
+<div class="lane"><div class="lh" style="background:var(--gd)">A 레인<span>1~2등급 · 92점 안팎</span></div><div class="lb"><b>할 것</b> · 고난도 문항·사설 실전 모의와 기출 변형으로 많이, 빠르게. 100점을 목표로 시간 단축 연습.<br><b class="no">하지 말 것</b> · 쉬운 문제 반복으로 시간 쓰기.</div></div>
+<div class="lane"><div class="lh" style="background:var(--g)">B 레인<span>2~4등급</span></div><div class="lb"><b>할 것</b> · 올해 모평·기출을 다시 분석해 아는 문제를 지키고, 거기서 2~3문제 더. 틀린 문제는 끝까지 오답 정리.<br><b class="no">하지 말 것</b> · 킬러 문항만 붙잡기.</div></div>
+<div class="lane"><div class="lh" style="background:#5f7a6c">C 레인<span>5등급 이하</span></div><div class="lb"><b>할 것</b> · 개념 이해와 기본 암기에 집중해 배점 낮은 문항부터 확실히 확보.<br><b class="no">하지 말 것</b> · 조급하게 문제 양만 늘리기.</div></div></div>
+<h3>② 하루 과목 배분표 <small>— 강한 과목도 매일 고정 분량은 꼭</small></h3>
+<table class="box"><tr><th>과목</th><th>9평 등급</th><th class="c">레인 A·B·C</th><th>하루 시간</th><th>매일 고정 분량 (예: 독서 3지문, 기출 4문항)</th></tr><tr><td><b>국어</b></td><td></td><td class="c" style="color:#888">A B C</td><td style="text-align:right;color:#888">h</td><td></td></tr><tr><td><b>수학</b></td><td></td><td class="c" style="color:#888">A B C</td><td style="text-align:right;color:#888">h</td><td></td></tr><tr><td><b>영어</b></td><td></td><td class="c" style="color:#888">A B C</td><td style="text-align:right;color:#888">h</td><td></td></tr><tr><td><b>한국사</b></td><td></td><td class="c" style="color:#888">A B C</td><td style="text-align:right;color:#888">h</td><td></td></tr><tr><td><b>탐구1</b></td><td></td><td class="c" style="color:#888">A B C</td><td style="text-align:right;color:#888">h</td><td></td></tr><tr><td><b>탐구2</b></td><td></td><td class="c" style="color:#888">A B C</td><td style="text-align:right;color:#888">h</td><td></td></tr></table>
+<h3>③ 백지 정리 <small>— 책 덮고 쓰기 → 못 쓴 것만 다시 보기 → 오른쪽에 기록</small></h3>
+<div class="two"><div class="bl"><div class="a">과목·단원 <span class="blank" style="min-width:38mm"></span><br>핵심 개념·공식·암기 요소를 백지로</div><div class="b"><b>설명 못 한 것</b>→ 다시 볼 곳</div></div><div class="bl"><div class="a">과목·단원 <span class="blank" style="min-width:38mm"></span><br>핵심 개념·공식·암기 요소를 백지로</div><div class="b"><b>설명 못 한 것</b>→ 다시 볼 곳</div></div><div class="bl"><div class="a">과목·단원 <span class="blank" style="min-width:38mm"></span><br>핵심 개념·공식·암기 요소를 백지로</div><div class="b"><b>설명 못 한 것</b>→ 다시 볼 곳</div></div><div class="bl"><div class="a">과목·단원 <span class="blank" style="min-width:38mm"></span><br>핵심 개념·공식·암기 요소를 백지로</div><div class="b"><b>설명 못 한 것</b>→ 다시 볼 곳</div></div><div class="bl"><div class="a">과목·단원 <span class="blank" style="min-width:38mm"></span><br>핵심 개념·공식·암기 요소를 백지로</div><div class="b"><b>설명 못 한 것</b>→ 다시 볼 곳</div></div><div class="bl"><div class="a">과목·단원 <span class="blank" style="min-width:38mm"></span><br>핵심 개념·공식·암기 요소를 백지로</div><div class="b"><b>설명 못 한 것</b>→ 다시 볼 곳</div></div></div>
+<div class="foot"><span>새 교재·새 강의는 지금 시작하지 않습니다. 했던 것을 다시.</span><span><b>채수학교습소</b> · ☎ 010-8677-2263 · 4 / 5</span></div></section>
+<section class="page" style="--rh:9.6mm"><div class="ph"><div><div class="kick">PAGE 5A · 수시 지원자</div><h1 class="serif">내 6장, 최저부터 지킨다</h1></div><div class="side">상담 때 담당 선생님과 함께 채웁니다</div></div>
+<h3>① 내 수시 6장 최저 체크 <small>— 9월 모평 기준 ○ 충족 · △ 1과목 부족 · ✕ 2과목 이상 부족</small></h3>
+<table class="box"><tr><th class="c">#</th><th>대학 · 학과 · 전형</th><th>수능최저 (요강 원문)</th><th>대학별고사</th><th class="c">9평</th><th>부족 → 필요 등급</th></tr><tr><td class="c"><b>1</b></td><td></td><td></td><td style="font-size:9px;line-height:1.7"><span class="cb"></span>수능 전<br><span class="cb"></span>수능 후 ( / )</td><td class="c" style="letter-spacing:3px">○ △ ✕</td><td></td></tr><tr><td class="c"><b>2</b></td><td></td><td></td><td style="font-size:9px;line-height:1.7"><span class="cb"></span>수능 전<br><span class="cb"></span>수능 후 ( / )</td><td class="c" style="letter-spacing:3px">○ △ ✕</td><td></td></tr><tr><td class="c"><b>3</b></td><td></td><td></td><td style="font-size:9px;line-height:1.7"><span class="cb"></span>수능 전<br><span class="cb"></span>수능 후 ( / )</td><td class="c" style="letter-spacing:3px">○ △ ✕</td><td></td></tr><tr><td class="c"><b>4</b></td><td></td><td></td><td style="font-size:9px;line-height:1.7"><span class="cb"></span>수능 전<br><span class="cb"></span>수능 후 ( / )</td><td class="c" style="letter-spacing:3px">○ △ ✕</td><td></td></tr><tr><td class="c"><b>5</b></td><td></td><td></td><td style="font-size:9px;line-height:1.7"><span class="cb"></span>수능 전<br><span class="cb"></span>수능 후 ( / )</td><td class="c" style="letter-spacing:3px">○ △ ✕</td><td></td></tr><tr><td class="c"><b>6</b></td><td></td><td></td><td style="font-size:9px;line-height:1.7"><span class="cb"></span>수능 전<br><span class="cb"></span>수능 후 ( / )</td><td class="c" style="letter-spacing:3px">○ △ ✕</td><td></td></tr></table>
+<div class="two" style="margin-top:3mm">
+<div class="card gold"><h4>최저에 걸린 과목 = 4쪽 배분표 1순위</h4>6장 최저에 들어가는 과목에 체크<br><div style="margin:1.5mm 0"><span class="cb"></span>국어 <span class="cb"></span>수학 <span class="cb"></span>영어 <span class="cb"></span>탐구 <span class="cb"></span>한국사</div>△인 전형을 살릴 과목: <span class="blank" style="min-width:30mm"></span></div>
+<div class="card red"><h4>꼭 알아둘 규칙</h4>수시에 합격하면(충원 합격 포함) 등록하지 않아도 정시·추가모집에 지원할 수 없습니다.<br>최저를 못 맞추면 대학별고사를 잘 봐도 불합격입니다.</div></div>
+<h3>② 수능 당일 가채점 <small>— 시험지에 내 답을 표시해 와서 그날 바로</small></h3><table class="box"><tr><th></th><th class="c">국어</th><th class="c">수학</th><th class="c">영어</th><th class="c">한국사</th><th class="c">탐구1</th><th class="c">탐구2</th></tr><tr><td><b>원점수</b></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td><b>예상 등급</b></td><td></td><td></td><td></td><td></td><td></td><td></td></tr></table>
+<h3>③ 수능 후 판단표 <small>— 혼자 결정하지 말고 가채점표 들고 상담</small></h3>
+<table class="box"><tr><td class="c" style="width:8mm"><b class="strong">1</b></td><td><b>가채점으로 각 전형의 최저 충족 여부부터 다시 표시</b></td><td>①표의 9평 칸 옆에 ○/✕를 새로 적습니다. 최저 미충족이 확실한 전형은 대학별고사 준비에서 뺍니다.</td></tr>
+<tr><td class="c"><b class="strong">2</b></td><td><b>최저 충족 + 수능 후 대학별고사(면접·논술)가 남은 전형</b></td><td>가채점이 그 대학보다 정시로 확실히 높은 곳을 노릴 수준인지 상담에서 확인한 뒤 응시 여부를 정합니다.</td></tr>
+<tr><td class="c"><b class="strong">3</b></td><td><b>애매하면 일단 응시 준비는 계속</b></td><td>성적 통지일(<span class="blank" style="min-width:12mm"></span>) 전에는 가채점에 오차가 있습니다. 포기는 상담 후에 결정합니다.</td></tr></table>
+<div class="book"><b>수능 후 상담 예약</b> <span class="blank" style="min-width:9mm"></span>월 <span class="blank" style="min-width:9mm"></span>일 <span class="blank" style="min-width:9mm"></span>시 &nbsp; 준비물: 가채점표 · 이 장<span class="tel">☎ 010-8677-2263</span></div><div class="foot"><span></span><span><b>채수학교습소</b> · ☎ 010-8677-2263 · 5A / 5</span></div></section>
+<section class="page" style="--rh:9.4mm"><div class="ph"><div><div class="kick">PAGE 5B · 정시 준비생</div><h1 class="serif">수능 끝나고 석 달, 미리 보는 길</h1></div><div class="side">정시는 모든 영역 점수가<br>대학별 환산점수로 그대로 들어갑니다</div></div>
+<h3>① 수능 후 일정 <small>— 해당 학년도 공고를 보고 날짜를 직접 적으세요</small></h3>
+<div class="tl"><div class="s"><div class="when">__/__ ~ __/__</div><div class="what">수능 · 가채점</div>시험지 답 표시 → 저녁에 가채점, ②표 작성</div><div class="s"><div class="when">__/__ ~ __/__</div><div class="what">이의신청 기간</div>가채점 기준으로 대략적인 지원 라인 상담</div><div class="s"><div class="when">__/__ ~ __/__</div><div class="what">정답 확정</div>확정 정답으로 가채점 다시 맞추기</div><div class="s"><div class="when">__/__ ~ __/__</div><div class="what">성적 통지</div>표준점수·백분위로 대학별 환산점수 계산, 지원 후보 압축</div><div class="s"><div class="when">__/__ ~ __/__</div><div class="what">정시 원서 접수</div>가·나·다군 3장. 마감 직전 경쟁률까지 보고 결정</div></div>
+<p style="font-size:9px;color:var(--muted);margin:2mm 0 0">원서 접수 기간·합격자 발표일은 대학별로 다릅니다. 확정 요강으로 다시 확인하세요.</p>
+<h3>② 수능 당일 가채점 <small>— 시험지에 내 답을 표시해 와서 그날 바로</small></h3><table class="box"><tr><th></th><th class="c">국어</th><th class="c">수학</th><th class="c">영어</th><th class="c">한국사</th><th class="c">탐구1</th><th class="c">탐구2</th></tr><tr><td><b>원점수</b></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td><b>예상 등급</b></td><td></td><td></td><td></td><td></td><td></td><td></td></tr></table>
+<h3>③ 지금 알아두면 수능 후가 빨라지는 세 가지</h3>
+<div class="three">
+<div class="card soft"><h4>표준점수 vs 백분위</h4>대학마다 쓰는 점수가 다릅니다. 최상위권은 표준점수 반영, 중간권은 백분위 반영 대학이 유리한 경향이 있습니다.</div>
+<div class="card soft"><h4>영역별 반영 비율</h4>국어·수학 비중은 대학마다 다릅니다. 내가 강한 영역의 비중이 큰 대학을 고르면 같은 점수로 더 앞섭니다.</div>
+<div class="card soft"><h4>탐구 변환표준점수</h4>탐구는 과목마다 만점 점수가 달라 일부 대학이 변환점수로 보정합니다. 지원 대학이 쓰는 방식을 꼭 확인합니다.</div></div>
+<h3>④ 내 성적 구조 메모 <small>— 9월 모평 기준, 상담 때 대학 고르는 출발점</small></h3><table class="box">
+<tr><td style="width:30mm"><b>내 유형</b></td><td><span class="cb"></span>국어 강점 &nbsp; <span class="cb"></span>수학 강점 &nbsp; <span class="cb"></span>국·수 비슷 &nbsp; <span class="cb"></span>탐구 강점</td></tr>
+<tr><td><b>탐구 선택</b></td><td><span class="cb"></span>사탐+사탐 &nbsp; <span class="cb"></span>과탐+과탐 &nbsp; <span class="cb"></span>사탐+과탐 &nbsp; 과목: <span class="blank" style="min-width:30mm"></span></td></tr>
+<tr><td><b>수학 선택</b></td><td><span class="cb"></span>확통 &nbsp; <span class="cb"></span>미적분 &nbsp; <span class="cb"></span>기하</td></tr>
+<tr><td><b>남은 30일 1순위</b></td><td></td></tr><tr><td style="height:16mm"><b>상담 메모</b></td><td></td></tr></table>
+<div class="book"><b>수능 후 상담 예약</b> <span class="blank" style="min-width:9mm"></span>월 <span class="blank" style="min-width:9mm"></span>일 <span class="blank" style="min-width:9mm"></span>시 &nbsp; 준비물: 가채점표 · 이 장<span class="tel">☎ 010-8677-2263</span></div><div class="foot"><span></span><span><b>채수학교습소</b> · ☎ 010-8677-2263 · 5B / 5</span></div></section>
+</body></html>
