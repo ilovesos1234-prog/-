@@ -5,6 +5,7 @@
 3) 1~12월 범례: '세무·행정' <-> '학교시험' 자리 바꾸기
 4) 2월·8월 주요 일정에서 '대구 태권도 …' 항목 삭제
 5) 2월 21일에 '정월대보름' 추가
+8) 표지 가운데에 AKAS 로고를 옅은 워터마크로 추가
 7) 표지에 12작품 모자이크, 매달 달력 앞에 그 달의 작품 쪽 추가 (artworks/01~12.jpg)
 6) 표지 로고를 연합회 공식 로고(akas_logo.png)로 바꾸고 영문을 'Daegu Association of Private Tutoring Centers'로 수정
 
@@ -387,6 +388,28 @@ def thumb(month, w, h):
     return ImageReader(out)
 
 
+def cover_watermark():
+    """표지 작은 달력들 가운데에 AKAS 로고를 옅게 깐다."""
+    from PIL import Image
+    from reportlab.lib.utils import ImageReader
+    im = Image.open(LOGO).convert("RGBA")
+    r, g, b, a = im.split()
+    a = a.point(lambda v: int(v * 0.07))  # 투명도 7%
+    im = Image.merge("RGBA", (r, g, b, a))
+    out = io.BytesIO()
+    im.save(out, "PNG")
+    out.seek(0)
+    buf = io.BytesIO()
+    c = canvas.Canvas(buf, pagesize=(PAGE_W, PAGE_H))
+    w = 440
+    h = w * im.size[1] / im.size[0]
+    c.drawImage(ImageReader(out), (PAGE_W - w) / 2, 322 - h / 2, w, h, mask="auto")
+    c.showPage()
+    c.save()
+    buf.seek(0)
+    return pypdf.PdfReader(buf).pages[0]
+
+
 def cover_mosaic():
     """표지 로고 줄 양옆에 12작품을 3x2 모자이크로 작게 놓는다."""
     buf = io.BytesIO()
@@ -497,6 +520,7 @@ def main():
     set_content(writer, pages[0], cover)
     pages[0].merge_page(cover_logo())
     pages[0].merge_page(cover_mosaic())
+    pages[0].merge_page(cover_watermark())
 
     for month in range(1, 13):
         page = pages[month]
