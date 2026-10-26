@@ -784,8 +784,19 @@ def year_page():
     return page
 
 
-# 3쪽 연혁: (연도, 내용) 순서대로. 비어 있으면 안내 문구만 표시
-HISTORY = []
+# 3쪽 연혁: (연도, 월.일, 내용) 순서대로. 비어 있으면 안내 문구만 표시
+HISTORY = [
+    ("2015", "06.02", "총연합회 이사회에 대구지회 설립 승인"),
+    ("2015", "07.07", "대구지회 발족식 개최 (초대회장 서경도)"),
+    ("2015", "07.30", "대구지회 설립등기"),
+    ("2015", "08.25", "대구지회 고유번호증 발급"),
+    ("2015", "10.05", "제1기 임원진 발표 및 전체 회의"),
+    ("2015", "11.02", "제1차 정기이사회"),
+    ("2015", "12.16", "2015년 대구광역시지회 정기총회"),
+    ("2019", "01.01", "제2대 김혜자 회장 취임"),
+    ("2021", "01.01", "제3대 방순기 회장 취임"),
+    ("2024", "01.01", "제4대 방순기 회장 취임"),
+]
 
 
 def history_page():
@@ -814,26 +825,39 @@ def history_page():
         c.setFont("NG", 11)
         c.drawCentredString(PAGE_W / 2, 280, "연혁 내용이 들어갈 자리입니다")
     else:
-        # 세로 시간선 + 연도 + 내용 (많으면 두 단)
-        per_col = 18
-        cols = 1 if len(HISTORY) <= per_col else 2
-        col_w = (802.205 - 60) / cols
-        for i, (year, text) in enumerate(HISTORY):
-            col, row = i // per_col, i % per_col
-            x = 60 + col * col_w
-            y = 448 - row * 22.5
-            c.setStrokeColor(LINE)
-            c.setLineWidth(1)
-            if row:
-                c.line(x + 52, y + 3.5 + 22.5, x + 52, y + 3.5)
-            c.setFillColor(GOLD)
-            c.circle(x + 52, y + 3.5, 3, stroke=0, fill=1)
-            c.setFillColor(GREEN2)
-            c.setFont("NGB", 10.5)
-            c.drawRightString(x + 42, y, str(year))
+        # 세로 시간선: 연도(바뀔 때만) · 점 · 월.일 · 내용
+        step = min(34, 400 / len(HISTORY))
+        x_year, x_dot, x_date, x_text = 200, 262, 278, 330
+        y0 = 438
+        c.setStrokeColor(LINE)
+        c.setLineWidth(1.2)
+        c.line(x_dot, y0 + 3.5, x_dot, y0 + 3.5 - step * (len(HISTORY) - 1))
+        prev = None
+        for i, (year, date, text) in enumerate(HISTORY):
+            y = y0 - i * step
+            new_year = year != prev
+            prev = year
+            if new_year:
+                if i:
+                    c.setStrokeColor(HexColor("#E3EBE7"))
+                    c.setLineWidth(0.6)
+                    c.line(x_year - 20, y + step / 2 + 3, 802.205 - 60, y + step / 2 + 3)
+                c.setFillColor(GREEN2)
+                c.setFont("NGEB", 15)
+                c.drawRightString(x_year + 40, y - 1, year)
+                c.setFillColor(GOLD)
+                c.circle(x_dot, y + 3.5, 4.2, stroke=0, fill=1)
+            else:
+                c.setFillColor(HexColor("#FFFFFF"))
+                c.setStrokeColor(GOLD)
+                c.setLineWidth(1.2)
+                c.circle(x_dot, y + 3.5, 3, stroke=1, fill=1)
+            c.setFillColor(GRAY)
+            c.setFont("NGB", 10)
+            c.drawString(x_date, y, date)
             c.setFillColor(INK)
-            c.setFont("NG", 9.5)
-            c.drawString(x + 64, y, text)
+            c.setFont("NG", 11)
+            c.drawString(x_text, y, text)
 
     c.setFillColor(LIGHTGRAY)
     c.setFont("NG", 6.5)
