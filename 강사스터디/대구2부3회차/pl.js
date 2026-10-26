@@ -7,6 +7,7 @@ function pl(o) {
   s += `<line x1="${X(0)}" y1="${H - 4}" x2="${X(0)}" y2="4" stroke="#222"/><path d="M${X(0)} 4 l-3 6 h6z" fill="#222"/>`;
   for (const [x, t] of o.xt || []) s += `<text x="${X(x)}" y="${Y(0) + 13}" text-anchor="middle">${t}</text>`;
   for (const [y, t] of o.yt || []) s += `<text x="${X(0) - 4}" y="${Y(y) + 4}" text-anchor="end">${t}</text>`;
+  for (const b of o.box || []) s += `<rect x="${X(b[0])}" y="${Y(b[3])}" width="${X(b[2]) - X(b[0])}" height="${Y(b[1]) - Y(b[3])}" fill="${b[4] || '#F8DCDC'}" opacity=".8"/>`;
   for (const g of o.guide || []) s += `<line x1="${X(g[0])}" y1="${Y(g[1])}" x2="${X(g[2])}" y2="${Y(g[3])}" stroke="#bbb" stroke-dasharray="2 2"/>`;
   for (const se of o.s) {
     let pts = se.pts;
