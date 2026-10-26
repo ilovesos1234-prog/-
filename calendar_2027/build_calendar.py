@@ -793,10 +793,17 @@ HISTORY = [
     ("2015", "10.05", "제1기 임원진 발표 및 전체 회의"),
     ("2015", "11.02", "제1차 정기이사회"),
     ("2015", "12.16", "2015년 대구광역시지회 정기총회"),
-    ("2019", "01.01", "제2대 김혜자 회장 취임"),
-    ("2021", "01.01", "제3대 방순기 회장 취임"),
-    ("2024", "01.01", "제4대 방순기 회장 취임"),
 ]
+# 회장 취임 (연도: 내용)
+PRESIDENTS = {"2019": "제2대 김혜자 회장 취임", "2021": "제3대 방순기 회장 취임",
+              "2024": "제4대 방순기 회장 취임"}
+# 2016년부터 해마다: 회장 취임(있으면) · 교습소총연합회 정기회의(연 1회) · 대구 정기이사회 12회
+for _y in range(2016, 2027):
+    _y = str(_y)
+    if _y in PRESIDENTS:
+        HISTORY.append((_y, "01.01", PRESIDENTS[_y]))
+    HISTORY.append((_y, "", "교습소총연합회 정기회의 (연 1회)"))
+    HISTORY.append((_y, "", "대구교습소연합회 정기이사회 12회"))
 
 
 def history_page():
@@ -825,39 +832,48 @@ def history_page():
         c.setFont("NG", 11)
         c.drawCentredString(PAGE_W / 2, 280, "연혁 내용이 들어갈 자리입니다")
     else:
-        # 세로 시간선: 연도(바뀔 때만) · 점 · 월.일 · 내용
-        step = min(34, 400 / len(HISTORY))
-        x_year, x_dot, x_date, x_text = 200, 262, 278, 330
-        y0 = 438
-        c.setStrokeColor(LINE)
-        c.setLineWidth(1.2)
-        c.line(x_dot, y0 + 3.5, x_dot, y0 + 3.5 - step * (len(HISTORY) - 1))
-        prev = None
-        for i, (year, date, text) in enumerate(HISTORY):
-            y = y0 - i * step
-            new_year = year != prev
-            prev = year
-            if new_year:
-                if i:
-                    c.setStrokeColor(HexColor("#E3EBE7"))
-                    c.setLineWidth(0.6)
-                    c.line(x_year - 20, y + step / 2 + 3, 802.205 - 60, y + step / 2 + 3)
-                c.setFillColor(GREEN2)
-                c.setFont("NGEB", 15)
-                c.drawRightString(x_year + 40, y - 1, year)
-                c.setFillColor(GOLD)
-                c.circle(x_dot, y + 3.5, 4.2, stroke=0, fill=1)
-            else:
-                c.setFillColor(HexColor("#FFFFFF"))
-                c.setStrokeColor(GOLD)
-                c.setLineWidth(1.2)
-                c.circle(x_dot, y + 3.5, 3, stroke=1, fill=1)
-            c.setFillColor(GRAY)
-            c.setFont("NGB", 10)
-            c.drawString(x_date, y, date)
-            c.setFillColor(INK)
-            c.setFont("NG", 11)
-            c.drawString(x_text, y, text)
+        # 두 단 세로 시간선: 연도(바뀔 때만) · 점 · 월.일 · 내용
+        # 단은 연도가 끊기지 않는 곳에서 나눈다
+        half = len(HISTORY) / 2
+        cut = min((i for i in range(1, len(HISTORY)) if HISTORY[i][0] != HISTORY[i - 1][0]),
+                  key=lambda i: abs(i - half))
+        columns = [HISTORY[:cut], HISTORY[cut:]]
+        rows = max(len(col) for col in columns)
+        step = min(30, 405 / rows)
+        y0 = 440
+        for ci, col in enumerate(columns):
+            bx = 60 + ci * 380
+            x_year, x_dot, x_date, x_text = bx + 46, bx + 62, bx + 76, bx + 116
+            c.setStrokeColor(LINE)
+            c.setLineWidth(1.2)
+            c.line(x_dot, y0 + 3.5, x_dot, y0 + 3.5 - step * (len(col) - 1))
+            prev = None
+            for i, (year, date, text) in enumerate(col):
+                y = y0 - i * step
+                new_year = year != prev
+                prev = year
+                if new_year:
+                    if i:
+                        c.setStrokeColor(HexColor("#E3EBE7"))
+                        c.setLineWidth(0.6)
+                        c.line(bx, y + step / 2 + 3, bx + 350, y + step / 2 + 3)
+                    c.setFillColor(GREEN2)
+                    c.setFont("NGEB", 13)
+                    c.drawRightString(x_year, y - 0.5, year)
+                    c.setFillColor(GOLD)
+                    c.circle(x_dot, y + 3.5, 3.8, stroke=0, fill=1)
+                else:
+                    c.setFillColor(HexColor("#FFFFFF"))
+                    c.setStrokeColor(GOLD)
+                    c.setLineWidth(1.1)
+                    c.circle(x_dot, y + 3.5, 2.7, stroke=1, fill=1)
+                if date:
+                    c.setFillColor(GRAY)
+                    c.setFont("NGB", 9)
+                    c.drawString(x_date, y, date)
+                c.setFillColor(INK)
+                c.setFont("NG", 10)
+                c.drawString(x_text, y, text)
 
     c.setFillColor(LIGHTGRAY)
     c.setFont("NG", 6.5)
