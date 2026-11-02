@@ -16,7 +16,7 @@ const tex = (s) => s.replace(/\$([^$]+)\$/g, (_, m) =>
   katex.renderToString(m, { throwOnError: true, displayMode: false, strict: false }));
 const CIRC = ['①', '②', '③', '④', '⑤'];
 const imgTag = (q) => q.img ? `<div class="fig"><img src="data:image/png;base64,${fs.readFileSync(q.img).toString('base64')}" style="width:${q.imgW || 55}mm"></div>` : '';
-const LV = ['', '하', '중', '상', '최상'];
+const LV = D.LV || ['', '하', '중', '상', '최상'];
 
 const fontCss = [
   'katex/dist/katex.min.css',
@@ -259,7 +259,7 @@ tr.sub td{background:#fbfaf4}
 <div class="top"><div><h1>${META.title} 분석표</h1><div class="s">${META.subject} · ${META.units}</div></div>
 <div class="tot">만점<b>${total.toFixed(2)}점</b></div></div>
 <div class="kpi"><div><small>전체 문항</small><b>${Q.length}</b>문항</div><div><small>선택형</small><b>${nObj}</b>문항 · ${ptObj.toFixed(2)}점</div>
-<div><small>서술형</small><b>${nSub}</b>문항 · ${(total - ptObj).toFixed(2)}점</div><div><small>상 · 최상 비율</small><b>${lvs[3] + lvs[4]}</b>문항 (${Math.round((lvPt[3] + lvPt[4]) / total * 100)}%)</div></div>
+<div><small>서술형</small><b>${nSub}</b>문항 · ${(total - ptObj).toFixed(2)}점</div><div><small>${LV[3]} · ${LV[4]} 비율</small><b>${lvs[3] + lvs[4]}</b>문항 (${Math.round((lvPt[3] + lvPt[4]) / total * 100)}%)</div></div>
 <table><thead><tr><th style="width:8mm">번호</th><th style="width:14mm">유형</th><th style="width:34mm">단원</th><th>핵심 개념</th><th style="width:13mm">난이도</th><th style="width:12mm">배점</th><th style="width:24mm">정답</th></tr></thead>
 <tbody>${rows}</tbody></table>
 <div class="row"><div class="panel"><h3>단원별 배점</h3>${bars(subs, (v) => v.p, (v) => `${v.n}문항 ${v.p.toFixed(1)}점`)}</div>
