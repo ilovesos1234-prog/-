@@ -1,4 +1,4 @@
-// 중1-1 누적테스트 상 14회 — 원본: 카카오톡 받은 파일 중1-1_누적테스트_상_14회.hwpx (김병진 수학연구소)
+// 중1-1 누적테스트 상 14회 — 원본: 카카오톡 받은 파일 중1-1_누적테스트_상_14회
 const path = require('path');
 const IMG = path.join(__dirname, '..', 'img_nj', "\uc9111-1_\ub204\uc801\ud14c\uc2a4\ud2b8_\uc0c1_14\ud68c");
 const META = {"year": 2026, "school": "누적테스트", "grade": "중1-1", "term": "상 14회", "subject": "중1-1 수학", "title": "중1-1 누적테스트 상 14회", "units": "3단원 정수와 유리수 ~ 14단원 정비례"};
@@ -25,6 +25,6 @@ const Q = [
 {"n": 19, "pt": "5.00", "ptGuess": true, "type": "객", "ans": "④", "unit": "정비례", "sub": "정비례", "tp": "정비례와 넓이", "key": "직사각형에서 두 삼각형을 빼기", "lv": 4, "q": "그림과 같이 좌표평면 위에 직사각형 $\\mathrm{O} \\mathrm{A} \\mathrm{B} \\mathrm{C}$가 있다. 점 $\\mathrm{B} \\left( 8 , 5 \\right)$이고 정비례 관계 $y = \\dfrac{{5}}{{2}} x$의 그래프와 변 $\\mathrm{B} \\mathrm{C}$가 만나는 점을 $\\mathrm{P}$, 정비례 관계 $y = \\dfrac{{1}}{{4}} x$의 그래프와 변 $\\mathrm{A} \\mathrm{B}$가 만나는 점을 $\\mathrm{Q}$라 할 때, 사각형 $\\mathrm{O} \\mathrm{Q} \\mathrm{B} \\mathrm{P}$의 넓이는? (단, 점 $\\mathrm{O}$는 원점이다.) [$5$점]", "sol": ["P: $5=\\dfrac{5}{2}x$에서 P$(2,\\,5)$", "Q: $y=\\dfrac{1}{4}\\times8=2$에서 Q$(8,\\,2)$", "직사각형 $8\\times5=40$", "$\\triangle\\mathrm{OCP}=\\dfrac{1}{2}\\times2\\times5=5$, $\\triangle\\mathrm{OAQ}=\\dfrac{1}{2}\\times8\\times2=8$", "사각형 OQBP $=40-5-8=27$"], "fin": "④", "ch": ["$21$", "$23$", "$25$", "$27$", "$29$"], "imgW": 55, "img": path.join(IMG, "q19.png")},
 {"n": 20, "pt": "5.00", "ptGuess": true, "type": "서", "ans": "$48$", "unit": "정비례", "sub": "정비례", "tp": "정비례와 넓이", "key": "$y=6$을 대입하여 A, B의 좌표 구하기", "lv": 4, "q": "그림과 같이 두 점 $\\mathrm{A}$, $\\mathrm{B}$가 각각 두 식 $y = - \\dfrac{3}{4} x$, $y = \\dfrac{3}{4} x$의 그래프 위의 점이다. 두 점 $\\mathrm{A}$, $\\mathrm{B}$의 좌표와 삼각형 ${\\mathrm{A} \\mathrm{O} \\mathrm{B}}$의 넓이를 각각 구하고, 그 과정을 서술하시오. (단, ${\\mathrm{O}}$는 원점이다.)", "sol": ["A: $6=-\\dfrac{3}{4}x$, $x=-8$ → A$(-8,\\,6)$", "B: $6=\\dfrac{3}{4}x$, $x=8$ → B$(8,\\,6)$", "$\\overline{\\mathrm{AB}}=16$, 높이 $6$", "$\\triangle\\mathrm{AOB}=\\dfrac{1}{2}\\times16\\times6=48$"], "fin": "$48$", "imgW": 65, "img": path.join(IMG, "q20.png")},
 ];
-META.note = () => "<b>출제 범위</b> &nbsp;3단원 정수와 유리수 ~ 14단원 정비례 · 원본: 김병진 수학연구소 누적테스트(대구 기출 모음) · 배점은 원본에 없어 문항당 5점으로 표시했다(*).<br><b>단원 구성</b> &nbsp;정수와 유리수 1문항, 문자의 사용 1문항, 일차식과 그 계산 1문항, 일차방정식의 풀이 1문항, 일차방정식의 활용 1문항, 순서쌍과 좌표 2문항, 그래프와 그 해석 3문항, 정비례 10문항<br><b>검토 메모</b> &nbsp;17번: 문제 본문에 'P파'가 'P과'로 오타 표기됨(풀이에는 영향 없음).";
+META.note = () => "<b>출제 범위</b> &nbsp;3단원 정수와 유리수 ~ 14단원 정비례 · 채수학 누적테스트(대구 기출 모음) · 배점은 원본에 없어 문항당 5점으로 표시했다(*).<br><b>단원 구성</b> &nbsp;정수와 유리수 1문항, 문자의 사용 1문항, 일차식과 그 계산 1문항, 일차방정식의 풀이 1문항, 일차방정식의 활용 1문항, 순서쌍과 좌표 2문항, 그래프와 그 해석 3문항, 정비례 10문항<br><b>검토 메모</b> &nbsp;17번: 문제 본문에 'P파'가 'P과'로 오타 표기됨(풀이에는 영향 없음).";
 const graphs = () => ({});
 module.exports = { META, Q, graphs, LV };

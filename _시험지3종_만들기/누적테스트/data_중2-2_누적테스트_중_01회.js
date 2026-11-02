@@ -1,4 +1,4 @@
-// 중2-2 누적테스트 중 01회 — 원본: 카카오톡 받은 파일 중2-2_누적테스트_중_01회.hwpx (김병진 수학연구소)
+// 중2-2 누적테스트 중 01회 — 원본: 카카오톡 받은 파일 중2-2_누적테스트_중_01회
 const path = require('path');
 const IMG = path.join(__dirname, '..', 'img_nj', "\uc9112-2_\ub204\uc801\ud14c\uc2a4\ud2b8_\uc911_01\ud68c");
 const META = {"year": 2026, "school": "누적테스트", "grade": "중2-2", "term": "중 01회", "subject": "중2-2 수학", "title": "중2-2 누적테스트 중 01회", "units": "① 이등변삼각형의 성질과 되는 조건 ~ ② 직각삼각형의 합동 조건, 각의 이등분선"};
@@ -25,6 +25,6 @@ const Q = [
 {"n": 19, "pt": "5.00", "ptGuess": true, "type": "서", "ans": "$70^\\circ$", "unit": "직각삼각형의 합동 조건, 각의 이등분선", "sub": "직각삼각형의 합동 조건, 각의 이등분선", "tp": "SAS 합동과 이등변삼각형", "key": "$\\triangle ABD\\equiv\\triangle ACE$", "lv": 3, "q": "$\\triangle ABC$에서 $\\angle B=\\angle C$, $\\overline{BD}=\\overline{CE}$이고, $\\angle DAE=40^\\circ$일 때, $\\angle ADE$를 구하는 과정을 서술하고 답을 구하시오.", "sol": ["$\\angle B=\\angle C$이므로 $\\overline{AB}=\\overline{AC}$", "$\\overline{BD}=\\overline{CE}$이므로 $\\triangle ABD\\equiv\\triangle ACE$ (SAS 합동)", "$\\overline{AD}=\\overline{AE}$", "$\\angle ADE=(180^\\circ-40^\\circ)\\div2=70^\\circ$"], "fin": "$70^\\circ$", "imgW": 50, "img": path.join(IMG, "q19.png")},
 {"n": 20, "pt": "5.00", "ptGuess": true, "type": "서", "ans": "$39$", "unit": "직각삼각형의 합동 조건, 각의 이등분선", "sub": "직각삼각형의 합동 조건, 각의 이등분선", "tp": "직각삼각형의 합동(RHA)", "key": "$\\triangle ABE\\equiv\\triangle ECD$", "lv": 3, "q": "그림에서 $x$와 $y$의 값의 합을 직각삼각형의 합동을 이용하여 구하시오.", "sol": ["$\\angle DEC=90^\\circ-32^\\circ=58^\\circ$, $\\angle AEB=180^\\circ-90^\\circ-58^\\circ=32^\\circ$", "$\\overline{AE}=\\overline{ED}$, $\\angle BAE=58^\\circ=\\angle CED$", "$\\triangle ABE\\equiv\\triangle ECD$ (RHA 합동)", "$x=32$, $y=\\overline{EC}=\\overline{AB}=7$", "$x+y=39$"], "fin": "$39$", "imgW": 60, "img": path.join(IMG, "q20.png")},
 ];
-META.note = () => "<b>출제 범위</b> &nbsp;① 이등변삼각형의 성질과 되는 조건 ~ ② 직각삼각형의 합동 조건, 각의 이등분선 · 원본: 김병진 수학연구소 누적테스트(대구 기출 모음) · 배점은 원본에 없어 문항당 5점으로 표시했다(*).<br><b>단원 구성</b> &nbsp;이등변삼각형의 성질과 되는 조건 10문항, 직각삼각형의 합동 조건, 각의 이등분선 10문항<br><b>검토 메모</b> &nbsp;9번: 원본 정답에 설명이 없어 보충 / 10번: 원본 정답에 설명이 없어 보충 / 13번: 원본 문제의 '점 P에서 의 두 변'에서 빠진 ∠XOY를 보완했고, 원본 정답에 설명이 없어 보충 / 17번: 원본 정답에 설명이 없어 보충 / 19번: 원본 문제의 '△DAE=40°'는 '∠DAE=40°'의 오타로 보여 고쳐 적음";
+META.note = () => "<b>출제 범위</b> &nbsp;① 이등변삼각형의 성질과 되는 조건 ~ ② 직각삼각형의 합동 조건, 각의 이등분선 · 채수학 누적테스트(대구 기출 모음) · 배점은 원본에 없어 문항당 5점으로 표시했다(*).<br><b>단원 구성</b> &nbsp;이등변삼각형의 성질과 되는 조건 10문항, 직각삼각형의 합동 조건, 각의 이등분선 10문항<br><b>검토 메모</b> &nbsp;9번: 원본 정답에 설명이 없어 보충 / 10번: 원본 정답에 설명이 없어 보충 / 13번: 원본 문제의 '점 P에서 의 두 변'에서 빠진 ∠XOY를 보완했고, 원본 정답에 설명이 없어 보충 / 17번: 원본 정답에 설명이 없어 보충 / 19번: 원본 문제의 '△DAE=40°'는 '∠DAE=40°'의 오타로 보여 고쳐 적음";
 const graphs = () => ({});
 module.exports = { META, Q, graphs, LV };

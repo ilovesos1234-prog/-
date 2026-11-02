@@ -1,4 +1,4 @@
-// 중2-2 누적테스트 하 02회 — 원본: 카카오톡 받은 파일 중2-2_누적테스트_하_02회.hwpx (김병진 수학연구소)
+// 중2-2 누적테스트 하 02회 — 원본: 카카오톡 받은 파일 중2-2_누적테스트_하_02회
 const path = require('path');
 const IMG = path.join(__dirname, '..', 'img_nj', "\uc9112-2_\ub204\uc801\ud14c\uc2a4\ud2b8_\ud558_02\ud68c");
 const META = {"year": 2026, "school": "누적테스트", "grade": "중2-2", "term": "하 02회", "subject": "중2-2 수학", "title": "중2-2 누적테스트 하 02회", "units": "① 이등변삼각형의 성질과 되는 조건 ~ ④ 삼각형의 내심"};
@@ -25,6 +25,6 @@ const Q = [
 {"n": 19, "pt": "5.00", "ptGuess": true, "type": "객", "ans": "③", "unit": "삼각형의 내심", "sub": "삼각형의 내심", "tp": "내접원과 접선", "key": "접선의 길이가 같아 생기는 이등변삼각형 이용", "lv": 1, "q": "$\\triangle ABC$에서 $\\angle C=90^\\circ$, $\\angle B=50^\\circ$이고, 점 $D$, $E$, $F$는 $\\triangle ABC$의 내접원의 접점일 때, $\\angle DFE$의 크기는?", "sol": ["$\\angle A=180^\\circ-90^\\circ-50^\\circ=40^\\circ$", "$\\overline{AD}=\\overline{AF}$이므로 $\\angle AFD=\\dfrac{180^\\circ-40^\\circ}{2}=70^\\circ$", "$\\overline{CE}=\\overline{CF}$이므로 $\\angle CFE=\\dfrac{180^\\circ-90^\\circ}{2}=45^\\circ$", "$\\angle DFE=180^\\circ-70^\\circ-45^\\circ=65^\\circ$"], "fin": "③", "ch": ["$55^\\circ$", "$60^\\circ$", "$65^\\circ$", "$70^\\circ$", "$75^\\circ$"], "imgW": 60, "img": path.join(IMG, "q19.png")},
 {"n": 20, "pt": "5.00", "ptGuess": true, "type": "객", "ans": "④", "unit": "삼각형의 내심", "sub": "삼각형의 내심", "tp": "내접원과 접선의 길이", "key": "한 점에서 그은 두 접선의 길이는 같다", "lv": 1, "q": "그림의 점 $I$는 $\\triangle ABC$의 내심이고, $\\overline{AF}=3\\text{cm}$, $\\overline{AB}=7\\text{cm}$, $\\overline{EC}=6\\text{cm}$일 때, $\\triangle ABC$의 둘레의 길이는?", "sol": ["$\\overline{AD}=\\overline{AF}=3$, $\\overline{BD}=7-3=4$", "$\\overline{BE}=\\overline{BD}=4$, $\\overline{CF}=\\overline{CE}=6$", "둘레 $=2\\times(3+4+6)=26\\text{cm}$"], "fin": "④", "ch": ["$20\\text{cm}$", "$22\\text{cm}$", "$24\\text{cm}$", "$26\\text{cm}$", "$29\\text{cm}$"], "imgW": 60, "img": path.join(IMG, "q20.png")},
 ];
-META.note = () => "<b>출제 범위</b> &nbsp;① 이등변삼각형의 성질과 되는 조건 ~ ④ 삼각형의 내심 · 원본: 김병진 수학연구소 누적테스트(대구 기출 모음) · 배점은 원본에 없어 문항당 5점으로 표시했다(*).<br><b>단원 구성</b> &nbsp;이등변삼각형의 성질과 되는 조건 4문항, 직각삼각형의 합동 조건, 각의 이등분선 4문항, 삼각형의 외심 6문항, 삼각형의 내심 6문항<br><b>검토 메모</b> &nbsp;5번: 원본 정답에 각각의 합동 조건이 없어 보충";
+META.note = () => "<b>출제 범위</b> &nbsp;① 이등변삼각형의 성질과 되는 조건 ~ ④ 삼각형의 내심 · 채수학 누적테스트(대구 기출 모음) · 배점은 원본에 없어 문항당 5점으로 표시했다(*).<br><b>단원 구성</b> &nbsp;이등변삼각형의 성질과 되는 조건 4문항, 직각삼각형의 합동 조건, 각의 이등분선 4문항, 삼각형의 외심 6문항, 삼각형의 내심 6문항<br><b>검토 메모</b> &nbsp;5번: 원본 정답에 각각의 합동 조건이 없어 보충";
 const graphs = () => ({});
 module.exports = { META, Q, graphs, LV };
