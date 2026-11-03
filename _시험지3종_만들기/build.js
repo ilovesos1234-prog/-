@@ -98,7 +98,7 @@ function qBlock(q, pos) {
       ? `<span class="c"><span class="pp">${CIRC[i]} ${tex(c.split('##')[0])}</span><span>${tex(c.split('##')[1])}</span></span>`
       : `<span class="c">${CIRC[i]} ${tex(c)}</span>`).join('') + '</div>';
   }
-  return `<div class="q ${pos}"><div class="qh"><span class="no">${String(q.n).padStart(2, '0')}</span><span class="pill">채수학 X ${q.tp || TYPE[q.n]}</span></div>
+  return `<div class="q ${pos}"><div class="qh"><span class="no">${String(q.n).padStart(2, '0')}</span><span class="pill">${(META.year || 0) >= 2026 ? '' : '채수학 X '}${q.tp || TYPE[q.n]}</span></div>
 <div class="qt">${tex(q.q)}</div><div class="pt">[${q.pt}점${q.ptGuess ? '*' : ''}]</div>${q.fig ? `<div class="fig">${GRAPHS[q.fig]()}</div>` : ''}${imgTag(q)}${ch}</div>`;
 }
 
