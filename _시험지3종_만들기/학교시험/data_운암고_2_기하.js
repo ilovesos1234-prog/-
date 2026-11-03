@@ -1,7 +1,7 @@
 // 2026 운암고 2학년 2학기 중간 — 원본: 카카오톡 받은 파일 [운암고][2][기하][26-2-중간](원본)(ace77).pdf
 const path = require('path');
 const IMG = path.join(__dirname, '..', 'img_school', "\uc6b4\uc554\uace0_2_\uae30\ud558");
-const META = {"year": 2026, "school": "운암고", "grade": "고2", "term": "2학기 중간", "subject": "기하", "title": "2026 운암고 2학년 2학기 중간", "units": "Ⅰ. 이차곡선 (포물선·타원·쌍곡선·접선), Ⅱ. 공간도형과 공간좌표 (위치 관계·삼수선·정사영·좌표공간)"};
+const META = {"year": 2026, "school": "운암고", "grade": "고2", "term": "2학기 중간", "subject": "기하", "title": "2026 운암고 2학년 2학기 중간", "units": "Ⅰ. 이차곡선 (포물선·타원·쌍곡선·접선), Ⅱ. 공간도형과 공간좌표 (위치 관계·삼수선·정사영·좌표공간)", "keyNote": "정답은 채수학에서 직접 풀어 확인"};
 const Q = [
 {"n": 1, "pt": "3.00", "type": "객", "ans": "②", "unit": "이차곡선", "sub": "포물선의 정의 – 초점을 지나는 현", "tp": "포물선의 정의", "key": "포물선 위의 점: 초점까지 거리 = 준선까지 거리", "lv": 1, "q": "그림과 같이 포물선의 초점 F를 지나는 직선과 포물선이 만나는 두 점 A, B에서 준선 $l$에 내린 수선의 발을 각각 C, D라 하자. $\\overline{AC}=2$, $\\overline{BD}=5$일 때, 선분 AB의 길이는?", "sol": ["$\\overline{AF}=\\overline{AC}=2$, $\\overline{BF}=\\overline{BD}=5$", "F는 선분 AB 위에 있으므로 $\\overline{AB}=2+5=7$ ⇒ ②"], "fin": "②", "ch": ["6", "7", "8", "9", "10"], "imgW": 32, "img": path.join(IMG, "q1.png")},
 {"n": 2, "pt": "3.00", "type": "객", "ans": "④", "unit": "이차곡선", "sub": "타원의 정의 – 사각형의 둘레", "tp": "타원의 정의", "key": "$\\overline{BF}=a$, 타원 위의 점에서 두 초점까지 거리의 합 $=2a$", "lv": 1, "q": "그림은 장축이 선분 AA$'$이고 단축이 선분 BB$'$이며 두 초점이 F, F$'$인 타원이다. $\\overline{BF}=5$일 때, 사각형 BF$'$CF의 둘레의 길이는?", "sol": ["B는 단축의 끝점이므로 $\\overline{BF}=\\overline{BF'}=a=5$ → $2a=10$", "$\\overline{BF}+\\overline{BF'}=10$, $\\overline{CF}+\\overline{CF'}=10$", "둘레 $=20$ ⇒ ④"], "fin": "④", "ch": ["10", "15", "18", "20", "40"], "imgW": 36, "img": path.join(IMG, "q2.png")},

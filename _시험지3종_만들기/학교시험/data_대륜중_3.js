@@ -1,7 +1,7 @@
 // 2026 대륜중 3학년 2학기 중간 — 원본: 카카오톡 받은 파일 [대륜중][3][26-2-중간] (원본) (몬나니).pdf
 const path = require('path');
 const IMG = path.join(__dirname, '..', 'img_school', "\ub300\ub95c\uc911_3");
-const META = {"year": 2026, "school": "대륜중", "grade": "중3", "term": "2학기 중간", "subject": "수학", "title": "2026 대륜중 3학년 2학기 중간", "units": "Ⅴ. 삼각비, Ⅵ. 원의 성질 (원과 직선·원주각·접선과 현이 이루는 각)"};
+const META = {"year": 2026, "school": "대륜중", "grade": "중3", "term": "2학기 중간", "subject": "수학", "title": "2026 대륜중 3학년 2학기 중간", "units": "Ⅴ. 삼각비, Ⅵ. 원의 성질 (원과 직선·원주각·접선과 현이 이루는 각)", "keyNote": "정답은 채수학에서 직접 풀어 확인"};
 const Q = [
 {"n": 1, "pt": "4", "type": "객", "ans": "③", "unit": "원의 성질", "sub": "원주각과 중심각", "tp": "원주각과 중심각", "key": "원주각 $=\\dfrac12\\times$ 중심각", "lv": 1, "q": "그림에서 $\\angle x$의 크기는?", "sol": ["$\\angle APB$는 호 AB에 대한 원주각", "$\\angle x=\\dfrac12\\times80^\\circ=40^\\circ$ ⇒ ③"], "fin": "③", "ch": ["$30^\\circ$", "$35^\\circ$", "$40^\\circ$", "$45^\\circ$", "$50^\\circ$"], "imgW": 30, "img": path.join(IMG, "q1.png")},
 {"n": 2, "pt": "4", "type": "객", "ans": "①", "unit": "삼각비", "sub": "삼각비 사이의 관계", "tp": "삼각비 사이의 관계", "key": "$\\tan A=\\dfrac{\\sin A}{\\cos A}=\\dfrac34$, $\\sin B=\\cos A$", "lv": 1, "q": "$\\angle C=90^\\circ$인 직각삼각형 ABC에서 $\\sin A:\\cos A=3:4$일 때, $\\tan A\\times\\sin B$의 값은?", "sol": ["$\\tan A=\\dfrac{\\sin A}{\\cos A}=\\dfrac34$", "$\\overline{BC}=3$, $\\overline{AC}=4$, $\\overline{AB}=5$로 놓을 수 있다", "$\\sin B=\\dfrac{\\overline{AC}}{\\overline{AB}}=\\dfrac45$", "$\\tan A\\times\\sin B=\\dfrac34\\times\\dfrac45=\\dfrac35$ ⇒ ①"], "fin": "①", "ch": ["$\\dfrac{3}{5}$", "$\\dfrac{4}{5}$", "$\\dfrac{5}{3}$", "$\\dfrac{3}{4}$", "$\\dfrac{5}{4}$"]},

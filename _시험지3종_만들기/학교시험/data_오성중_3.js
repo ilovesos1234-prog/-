@@ -1,7 +1,7 @@
 // 2026 오성중 3학년 2학기 중간 — 원본: 카카오톡 받은 파일 [오성중][3][26-2-중간](원본)(ace77).pdf
 const path = require('path');
 const IMG = path.join(__dirname, '..', 'img_school', "\uc624\uc131\uc911_3");
-const META = {"year": 2026, "school": "오성중", "grade": "중3", "term": "2학기 중간", "subject": "수학", "title": "2026 오성중 3학년 2학기 중간", "units": "삼각비, 원의 성질 (원과 직선, 원주각·접선과 현이 이루는 각)"};
+const META = {"year": 2026, "school": "오성중", "grade": "중3", "term": "2학기 중간", "subject": "수학", "title": "2026 오성중 3학년 2학기 중간", "units": "삼각비, 원의 성질 (원과 직선, 원주각·접선과 현이 이루는 각)", "keyNote": "정답은 채수학에서 직접 풀어 확인"};
 const Q = [
 {"n": 1, "pt": "3", "type": "객", "ans": "②", "unit": "삼각비", "sub": "삼각비의 값", "tp": "삼각비의 값 구하기", "key": "$\\sin A$로 직각삼각형을 그려 나머지 변 구하기", "lv": 1, "q": "$\\sin A=\\dfrac{2}{5}$일 때, $21\\times\\tan A$의 값은? (단, $0^\\circ\\lt A\\lt 90^\\circ$)", "sol": ["빗변 $5$, 높이 $2$인 직각삼각형을 그리면 밑변은 $\\sqrt{25-4}=\\sqrt{21}$", "$\\tan A=\\dfrac{2}{\\sqrt{21}}=\\dfrac{2\\sqrt{21}}{21}$", "$21\\times\\tan A=2\\sqrt{21}$ ⇒ ②"], "fin": "②", "ch": ["$\\sqrt{21}$", "$2\\sqrt{21}$", "$3\\sqrt{21}$", "$4\\sqrt{21}$", "$5\\sqrt{21}$"]},
 {"n": 2, "pt": "3", "type": "객", "ans": "④", "unit": "삼각비", "sub": "특수각의 삼각비", "tp": "특수각의 삼각비로 각 구하기", "key": "$\\sin(2x-40^\\circ)=\\dfrac{\\sqrt{3}}{2}$", "lv": 2, "q": "$\\dfrac{1}{\\sqrt{3}}\\sin(2x-40^\\circ)=\\dfrac{1}{2}$을 만족시키는 $x$에 대하여 $\\tan(x+10^\\circ)$의 값은? (단, $20^\\circ\\lt x\\lt 65^\\circ$)", "sol": ["양변에 $\\sqrt{3}$을 곱하면 $\\sin(2x-40^\\circ)=\\dfrac{\\sqrt{3}}{2}$", "$20^\\circ\\lt x\\lt 65^\\circ$이므로 $0^\\circ\\lt 2x-40^\\circ\\lt 90^\\circ$", "$2x-40^\\circ=60^\\circ$, $x=50^\\circ$", "$\\tan 60^\\circ=\\sqrt{3}$ ⇒ ④"], "fin": "④", "ch": ["$\\dfrac{\\sqrt{3}}{3}$", "$\\dfrac{\\sqrt{3}}{2}$", "$1$", "$\\sqrt{3}$", "$3$"]},

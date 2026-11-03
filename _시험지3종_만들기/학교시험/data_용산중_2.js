@@ -1,7 +1,7 @@
 // 2026 용산중 2학년 2학기 중간 — 원본: 카카오톡 받은 파일 [용산중][2][26-2-중간](원본)(고구마).pdf
 const path = require('path');
 const IMG = path.join(__dirname, '..', 'img_school', "\uc6a9\uc0b0\uc911_2");
-const META = {"year": 2026, "school": "용산중", "grade": "중2", "term": "2학기 중간", "subject": "수학", "title": "2026 용산중 2학년 2학기 중간", "units": "일차함수와 일차방정식의 관계, Ⅳ. 도형의 성질 (삼각형의 성질 · 평행사변형)"};
+const META = {"year": 2026, "school": "용산중", "grade": "중2", "term": "2학기 중간", "subject": "수학", "title": "2026 용산중 2학년 2학기 중간", "units": "일차함수와 일차방정식의 관계, Ⅳ. 도형의 성질 (삼각형의 성질 · 평행사변형)", "keyNote": "정답은 채수학에서 직접 풀어 확인"};
 const Q = [
 {"n": 1, "pt": "3", "type": "객", "ans": "②", "unit": "도형의 성질", "sub": "이등변삼각형의 꼭지각의 이등분선", "tp": "꼭지각의 이등분선", "key": "꼭지각의 이등분선은 밑변을 수직이등분", "lv": 1, "q": "$\\overline{AB}=\\overline{AC}=7\\,\\mathrm{cm}$이고 둘레의 길이가 $20\\,\\mathrm{cm}$인 삼각형 ABC에서 $\\angle A$의 이등분선과 $\\overline{BC}$의 교점을 D라고 할 때, $\\overline{CD}$의 값은?", "sol": ["$\\overline{BC}=20-7-7=6\\,\\mathrm{cm}$", "$\\angle A$의 이등분선은 $\\overline{BC}$를 이등분하므로 $\\overline{CD}=3\\,\\mathrm{cm}$ ⇒ ②"], "fin": "②", "ch": ["$2\\,\\mathrm{cm}$", "$3\\,\\mathrm{cm}$", "$4\\,\\mathrm{cm}$", "$5\\,\\mathrm{cm}$", "$6\\,\\mathrm{cm}$"]},
 {"n": 2, "pt": "3", "type": "객", "ans": "④", "unit": "도형의 성질", "sub": "외심과 중심각", "tp": "외심과 중심각", "key": "$\\angle BOC=2\\angle A$", "lv": 1, "q": "그림에서 점 O가 삼각형 ABC의 외심일 때, $\\angle BOC$의 크기는?", "sol": ["외심 O에서 $\\angle BOC=2\\angle A$", "$\\angle BOC=2\\times66^\\circ=132^\\circ$ ⇒ ④"], "fin": "④", "ch": ["$123^\\circ$", "$126^\\circ$", "$129^\\circ$", "$132^\\circ$", "$135^\\circ$"], "imgW": 30, "img": path.join(IMG, "q2.png")},

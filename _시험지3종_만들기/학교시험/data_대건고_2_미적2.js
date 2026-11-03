@@ -1,7 +1,7 @@
 // 2026 대건고 2학년 2학기 중간 미적분Ⅱ — 원본: 카카오톡 받은 파일 [대건고][2][미적2][26-2-중간](원본) (수학인).pdf
 const path = require('path');
 const IMG = path.join(__dirname, '..', 'img_school', "\ub300\uac74\uace0_2_\ubbf8\uc8012");
-const META = {"year": 2026, "school": "대건고", "grade": "고2", "term": "2학기 중간", "subject": "미적분Ⅱ", "title": "2026 대건고 2학년 2학기 중간 미적분Ⅱ", "units": "Ⅰ. 수열의 극한 (수열의 극한·급수), Ⅱ. 미분법 (여러 가지 함수의 미분·여러 가지 미분법)"};
+const META = {"year": 2026, "school": "대건고", "grade": "고2", "term": "2학기 중간", "subject": "미적분Ⅱ", "title": "2026 대건고 2학년 2학기 중간 미적분Ⅱ", "units": "Ⅰ. 수열의 극한 (수열의 극한·급수), Ⅱ. 미분법 (여러 가지 함수의 미분·여러 가지 미분법)", "keyNote": "정답은 채수학에서 직접 풀어 확인"};
 const Q = [
 {"n": 1, "pt": "3.30", "type": "객", "ans": "④", "unit": "수열의 극한", "sub": "수열의 극한값의 계산", "tp": "수렴하는 수열의 곱", "key": "$\\dfrac{2}{n}\\to0$, $\\dfrac{3}{n}\\to0$", "lv": 1, "q": "$\\displaystyle\\lim_{n\\to\\infty}\\left(3+\\dfrac{2}{n}\\right)\\left(4-\\dfrac{3}{n}\\right)$의 값은?", "sol": ["$\\displaystyle\\lim_{n\\to\\infty}\\left(3+\\dfrac{2}{n}\\right)=3$, $\\displaystyle\\lim_{n\\to\\infty}\\left(4-\\dfrac{3}{n}\\right)=4$", "두 수열이 수렴하므로 곱의 극한은 극한의 곱: $3\\times4=12$ ⇒ ④"], "fin": "④", "ch": ["$3$", "$6$", "$9$", "$12$", "$15$"]},
 {"n": 2, "pt": "3.40", "type": "객", "ans": "②", "unit": "미분법", "sub": "매개변수로 나타낸 함수의 미분법", "tp": "매개변수 미분", "key": "$\\dfrac{dy}{dx}=\\dfrac{dy/dt}{dx/dt}$", "lv": 1, "q": "매개변수 $t\\,(t\\gt 0)$으로 나타내어진 곡선<br>$x=\\dfrac{1}{t},\\quad y=2+e^{t}$<br>에서 $t=1$일 때, $\\dfrac{dy}{dx}$의 값은?", "sol": ["$\\dfrac{dx}{dt}=-\\dfrac{1}{t^2}$, $\\dfrac{dy}{dt}=e^{t}$", "$\\dfrac{dy}{dx}=\\dfrac{e^{t}}{-1/t^2}=-t^2e^{t}$", "$t=1$을 대입하면 $-e$ ⇒ ②"], "fin": "②", "ch": ["$-1-e$", "$-e$", "$0$", "$e$", "$1+e$"]},

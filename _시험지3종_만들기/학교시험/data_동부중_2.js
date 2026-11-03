@@ -1,7 +1,7 @@
 // 2026 동부중 2학년 2학기 중간 — 원본: 카카오톡 받은 파일 [동부중][2][26-2-중간)(원본)(흐르는물).pdf
 const path = require('path');
 const IMG = path.join(__dirname, '..', 'img_school', "\ub3d9\ubd80\uc911_2");
-const META = {"year": 2026, "school": "동부중", "grade": "중2", "term": "2학기 중간", "subject": "수학", "title": "2026 동부중 2학년 2학기 중간", "units": "Ⅳ-1. 삼각형의 성질 (이등변삼각형, 직각삼각형의 합동, 외심·내심), Ⅵ. 확률 (경우의 수·확률)"};
+const META = {"year": 2026, "school": "동부중", "grade": "중2", "term": "2학기 중간", "subject": "수학", "title": "2026 동부중 2학년 2학기 중간", "units": "Ⅳ-1. 삼각형의 성질 (이등변삼각형, 직각삼각형의 합동, 외심·내심), Ⅵ. 확률 (경우의 수·확률)", "keyNote": "정답은 채수학에서 직접 풀어 확인"};
 const Q = [
 {"n": 1, "pt": "3", "type": "객", "ans": "③", "unit": "확률", "sub": "경우의 수", "tp": "경우의 수", "key": "홀수 눈: 1, 3, 5", "lv": 1, "q": "주사위 한 개를 던질 때, 홀수의 눈이 나오는 경우의 수는?", "sol": ["홀수의 눈은 $1,\\,3,\\,5$", "경우의 수는 $3$"], "fin": "③", "ch": ["$1$", "$2$", "$3$", "$4$", "$5$"]},
 {"n": 2, "pt": "3", "type": "객", "ans": "③", "unit": "도형의 성질", "sub": "이등변삼각형 꼭지각의 이등분선", "tp": "꼭지각의 이등분선", "key": "꼭지각의 이등분선은 밑변을 수직이등분", "lv": 1, "q": "그림과 같이 $\\overline{AB}=\\overline{AC}$인 $\\triangle ABC$에서 $\\angle BAC$의 이등분선과 $\\overline{BC}$의 교점이 D이고, $\\angle DAC=30^\\circ$, $\\overline{BD}=5\\,\\mathrm{cm}$, $\\overline{DC}=x\\,\\mathrm{cm}$, $\\angle B=y^\\circ$일 때, $x+y$의 값은?", "sol": ["$\\overline{AD}$는 밑변을 이등분 → $x=\\overline{BD}=5$", "$\\angle BAC=2\\times30^\\circ=60^\\circ$", "$\\angle B=\\dfrac{180^\\circ-60^\\circ}{2}=60^\\circ$ → $y=60$", "$x+y=65$"], "fin": "③", "ch": ["$55$", "$60$", "$65$", "$70$", "$75$"], "imgW": 30, "img": path.join(IMG, "q2.png")},

@@ -1,7 +1,7 @@
 // 2026 동부고 2학년 2학기 중간 미적분Ⅱ — 원본: 카카오톡 받은 파일 [동부고][2][미적분2][26-2-중간] (원본) (양돌돌이).pdf
 const path = require('path');
 const IMG = path.join(__dirname, '..', 'img_school', "\ub3d9\ubd80\uace0_2_\ubbf8\uc801\ubd842");
-const META = {"year": 2026, "school": "동부고", "grade": "고2", "term": "2학기 중간", "subject": "미적분Ⅱ", "title": "2026 동부고 2학년 2학기 중간 미적분Ⅱ", "units": "Ⅰ. 수열의 극한 (수열의 극한·급수), Ⅱ. 미분법 (여러 가지 함수의 미분·여러 가지 미분법)"};
+const META = {"year": 2026, "school": "동부고", "grade": "고2", "term": "2학기 중간", "subject": "미적분Ⅱ", "title": "2026 동부고 2학년 2학기 중간 미적분Ⅱ", "units": "Ⅰ. 수열의 극한 (수열의 극한·급수), Ⅱ. 미분법 (여러 가지 함수의 미분·여러 가지 미분법)", "keyNote": "정답은 채수학에서 직접 풀어 확인"};
 const Q = [
 {"n": 1, "pt": "3.10", "type": "객", "ans": "④", "unit": "수열의 극한", "sub": "급수의 성질", "tp": "급수의 성질", "key": "수렴하는 급수는 상수배·합으로 나눌 수 있다", "lv": 1, "q": "$\\displaystyle\\sum_{n=1}^{\\infty}a_n=2$이고 $\\displaystyle\\sum_{n=1}^{\\infty}b_n=5$일 때, $\\displaystyle\\sum_{n=1}^{\\infty}(-3a_n+2b_n)$의 값은?", "sol": ["$\\sum(-3a_n+2b_n)=-3\\sum a_n+2\\sum b_n$", "$=-6+10=4$ ⇒ ④"], "fin": "④", "ch": ["$1$", "$2$", "$3$", "$4$", "$5$"]},
 {"n": 2, "pt": "3.20", "type": "객", "ans": "③", "unit": "수열의 극한", "sub": "∞−∞ 꼴의 극한", "tp": "∞−∞ 꼴", "key": "분자 유리화", "lv": 1, "q": "$\\displaystyle\\lim_{n\\to\\infty}\\left(\\sqrt{n^2+3n-1}-n\\right)$의 값은?", "sol": ["$\\sqrt{n^2+3n-1}-n=\\dfrac{3n-1}{\\sqrt{n^2+3n-1}+n}$", "분모·분자를 $n$으로 나누면 $\\dfrac{3-\\frac1n}{\\sqrt{1+\\frac3n-\\frac1{n^2}}+1}\\to\\dfrac32$ ⇒ ③"], "fin": "③", "ch": ["$\\dfrac12$", "$1$", "$\\dfrac32$", "$2$", "$\\dfrac52$"]},

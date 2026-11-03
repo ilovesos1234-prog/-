@@ -1,7 +1,7 @@
 // 2026 용산중 3학년 2학기 중간 — 원본: 카카오톡 받은 파일 [용산중][3][26-2-중간](원본)(고구마).pdf
 const path = require('path');
 const IMG = path.join(__dirname, '..', 'img_school', "\uc6a9\uc0b0\uc911_3");
-const META = {"year": 2026, "school": "용산중", "grade": "중3", "term": "2학기 중간", "subject": "수학", "title": "2026 용산중 3학년 2학기 중간", "units": "삼각비, 통계 (대푯값과 산포도, 상관관계)"};
+const META = {"year": 2026, "school": "용산중", "grade": "중3", "term": "2학기 중간", "subject": "수학", "title": "2026 용산중 3학년 2학기 중간", "units": "삼각비, 통계 (대푯값과 산포도, 상관관계)", "keyNote": "정답은 채수학에서 직접 풀어 확인"};
 const Q = [
 {"n": 1, "pt": "3", "type": "객", "ans": "③", "unit": "통계", "sub": "평균", "tp": "평균 구하기", "key": "(변량의 총합) ÷ (개수)", "lv": 1, "q": "다음 자료의 평균을 구하면?<div style=\"border:1px solid #888;padding:4px 8px;margin:4px 0\">$7,\\ 9,\\ 11,\\ 15,\\ 16$</div>", "sol": ["총합 $=7+9+11+15+16=58$", "평균 $=\\dfrac{58}{5}=11.6$ ⇒ ③"], "fin": "③", "ch": ["$11.2$", "$11.4$", "$11.6$", "$11.8$", "$12.0$"]},
 {"n": 2, "pt": "3", "type": "객", "ans": "①", "unit": "삼각비", "sub": "특수각의 삼각비", "tp": "특수각의 삼각비 계산", "key": "$\\tan 60^\\circ=\\sqrt3$, $\\cos 30^\\circ=\\dfrac{\\sqrt3}{2}$, $\\sin 45^\\circ=\\dfrac{\\sqrt2}{2}$", "lv": 1, "q": "$\\tan 60^\\circ\\div\\cos 30^\\circ\\times\\sin 45^\\circ$의 값은?", "sol": ["$\\sqrt3\\div\\dfrac{\\sqrt3}{2}=2$", "$2\\times\\dfrac{\\sqrt2}{2}=\\sqrt2$ ⇒ ①"], "fin": "①", "ch": ["$\\sqrt{2}$", "$\\dfrac{\\sqrt{2}}{3}$", "$\\dfrac{\\sqrt{6}}{3}$", "$\\dfrac{\\sqrt{6}}{2}$", "$\\dfrac{3\\sqrt{2}}{4}$"]},

@@ -1,7 +1,7 @@
 // 2026 대구동부중 3학년 2학기 중간 — 원본: 카카오톡 받은 파일 [대구동부중][3][26-2-중간](원본)(삼동).pdf
 const path = require('path');
 const IMG = path.join(__dirname, '..', 'img_school', "\ub300\uad6c\ub3d9\ubd80\uc911_3");
-const META = {"year": 2026, "school": "대구동부중", "grade": "중3", "term": "2학기 중간", "subject": "수학", "title": "2026 대구동부중 3학년 2학기 중간", "units": "삼각비, 원의 성질 (원과 직선)"};
+const META = {"year": 2026, "school": "대구동부중", "grade": "중3", "term": "2학기 중간", "subject": "수학", "title": "2026 대구동부중 3학년 2학기 중간", "units": "삼각비, 원의 성질 (원과 직선)", "keyNote": "정답은 채수학에서 직접 풀어 확인"};
 const Q = [
 {"n": 1, "pt": "3", "type": "객", "ans": "④", "unit": "삼각비", "sub": "삼각비의 뜻", "tp": "삼각비의 뜻", "key": "빗변 $\\overline{AB}=5$부터 구하기", "lv": 1, "q": "그림과 같이 $\\angle C=90^\\circ$인 직각삼각형 ABC에서 $\\overline{AC}=3$, $\\overline{BC}=4$일 때, $\\sin A+\\cos B$의 값은?", "sol": ["$\\overline{AB}=\\sqrt{3^2+4^2}=5$", "$\\sin A=\\dfrac{\\overline{BC}}{\\overline{AB}}=\\dfrac{4}{5}$, $\\cos B=\\dfrac{\\overline{BC}}{\\overline{AB}}=\\dfrac{4}{5}$", "합 $=\\dfrac{8}{5}$ ⇒ ④"], "fin": "④", "ch": ["$\\dfrac{4}{5}$", "$\\dfrac{6}{5}$", "$\\dfrac{7}{5}$", "$\\dfrac{8}{5}$", "$\\dfrac{9}{5}$"], "imgW": 30, "img": path.join(IMG, "q1.png")},
 {"n": 2, "pt": "3", "type": "객", "ans": "③", "unit": "원의 성질", "sub": "현의 길이와 중심까지의 거리", "tp": "중심에서 현까지의 거리", "key": "중심에서 같은 거리의 현은 길이가 같다", "lv": 2, "q": "그림과 같이 원 O는 $\\triangle ABC$의 외접원이고, $\\overline{OL}=\\overline{OM}=\\overline{ON}$, $\\overline{BM}=5$일 때, $\\triangle ABC$의 둘레의 길이는?", "sol": ["$\\overline{OL}=\\overline{OM}=\\overline{ON}$ → $\\overline{AB}=\\overline{BC}=\\overline{CA}$", "OM은 현 BC를 수직이등분 → $\\overline{BC}=2\\overline{BM}=10$", "정삼각형이므로 둘레 $=30$ ⇒ ③"], "fin": "③", "ch": ["$20$", "$25$", "$30$", "$35$", "$40$"], "imgW": 30, "img": path.join(IMG, "q2.png")},

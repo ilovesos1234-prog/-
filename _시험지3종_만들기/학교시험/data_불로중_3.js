@@ -1,7 +1,7 @@
 // 2026 불로중 3학년 2학기 중간 — 원본: 카카오톡 받은 파일 [불로중][3][26-3-중간] (원본) (콩).pdf
 const path = require('path');
 const IMG = path.join(__dirname, '..', 'img_school', "\ubd88\ub85c\uc911_3");
-const META = {"year": 2026, "school": "불로중", "grade": "중3", "term": "2학기 중간", "subject": "수학", "title": "2026 불로중 3학년 2학기 중간", "units": "Ⅶ. 통계 (대푯값·산포도·산점도), Ⅴ. 삼각비"};
+const META = {"year": 2026, "school": "불로중", "grade": "중3", "term": "2학기 중간", "subject": "수학", "title": "2026 불로중 3학년 2학기 중간", "units": "Ⅶ. 통계 (대푯값·산포도·산점도), Ⅴ. 삼각비", "keyNote": "정답은 채수학에서 직접 풀어 확인"};
 const Q = [
 {"n": 1, "pt": "3", "type": "객", "ans": "③", "unit": "통계", "sub": "평균과 최빈값", "tp": "평균과 최빈값", "key": "평균 = 합 ÷ 개수, 최빈값 = 가장 많이 나온 값", "lv": 1, "q": "다음 자료의 평균과 최빈값의 합은?<div style=\"border:1px solid #888;padding:4px 8px;margin:4px auto;text-align:center;width:60%\">4&nbsp;&nbsp;&nbsp;&nbsp;5&nbsp;&nbsp;&nbsp;&nbsp;5&nbsp;&nbsp;&nbsp;&nbsp;5&nbsp;&nbsp;&nbsp;&nbsp;6</div>", "sol": ["평균 $=\\dfrac{4+5+5+5+6}{5}=5$", "최빈값 $=5$", "합 $=10$ ⇒ ③"], "fin": "③", "ch": ["$9$", "$9.5$", "$10$", "$10.5$", "$11$"]},
 {"n": 2, "pt": "3", "type": "객", "ans": "②", "unit": "통계", "sub": "중앙값으로 변량 구하기", "tp": "중앙값", "key": "짝수 개 ⇒ 가운데 두 값의 평균", "lv": 1, "q": "6개의 자료를 크기순으로 나열한 것이다. 이 자료의 중앙값이 17일 때, $x$의 값은?<div style=\"border:1px solid #888;padding:4px 8px;margin:4px auto;text-align:center;width:60%\">12&nbsp;&nbsp;&nbsp;&nbsp;15&nbsp;&nbsp;&nbsp;&nbsp;$x$&nbsp;&nbsp;&nbsp;&nbsp;18&nbsp;&nbsp;&nbsp;&nbsp;19&nbsp;&nbsp;&nbsp;&nbsp;20</div>", "sol": ["6개이므로 중앙값 $=\\dfrac{x+18}{2}=17$", "$x=16$ ⇒ ②"], "fin": "②", "ch": ["$15$", "$16$", "$17$", "$18$", "$19$"]},
