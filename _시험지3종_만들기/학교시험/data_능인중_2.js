@@ -1,7 +1,7 @@
 // 2026 능인중 2학년 2학기 중간 — 원본: 카카오톡 받은 파일 [능인중][2][26-2-중간](원본)(구름).pdf
 const path = require('path');
 const IMG = path.join(__dirname, '..', 'img_school', "\ub2a5\uc778\uc911_2");
-const META = {"year": 2026, "school": "능인중", "grade": "중2", "term": "2학기 중간", "subject": "수학", "title": "2026 능인중 2학년 2학기 중간", "units": "Ⅰ. 삼각형의 성질 (이등변삼각형·직각삼각형의 합동·외심·내심), Ⅱ. 사각형의 성질 (평행사변형·평행선과 넓이)"};
+const META = {"year": 2026, "school": "능인중", "grade": "중2", "term": "2학기 중간", "subject": "수학", "title": "2026 능인중 2학년 2학기 중간", "units": "Ⅰ. 삼각형의 성질 (이등변삼각형·직각삼각형의 합동·외심·내심), Ⅱ. 사각형의 성질 (평행사변형·평행선과 넓이)", "keyNote": "정답은 채수학에서 직접 풀어 확인"};
 const Q = [
 {"n": 1, "pt": "3", "type": "객", "ans": "②", "unit": "도형의 성질", "sub": "이등변삼각형의 성질", "tp": "이등변삼각형의 각", "key": "두 밑각이 같다 + 외각", "lv": 1, "q": "그림에서 $\\angle x+\\angle y$의 값은?", "sol": ["두 변의 길이가 같으므로 두 밑각은 모두 $64^\\circ$", "$\\angle y=180^\\circ-2\\times64^\\circ=52^\\circ$", "$\\angle x=180^\\circ-64^\\circ=116^\\circ$", "$\\angle x+\\angle y=168^\\circ$ ⇒ ②"], "fin": "②", "ch": ["$167^\\circ$", "$168^\\circ$", "$169^\\circ$", "$170^\\circ$", "$171^\\circ$"], "imgW": 38, "img": path.join(IMG, "q1.png")},
 {"n": 2, "pt": "3", "type": "객", "ans": "①", "unit": "도형의 성질", "sub": "직각삼각형의 합동 (RHS)", "tp": "RHS 합동", "key": "$\\triangle OAP\\equiv\\triangle OBP$ (RHS)", "lv": 1, "q": "$\\overline{OA}=\\overline{OB}$, $\\angle OAP=\\angle OBP=90^\\circ$이고 $\\angle OPA=63^\\circ$이다. $\\angle POB=x^\\circ$일 때, $x$의 값은?", "sol": ["$\\angle OAP=\\angle OBP=90^\\circ$, $\\overline{OP}$ 공통, $\\overline{OA}=\\overline{OB}$", "따라서 $\\triangle OAP\\equiv\\triangle OBP$ (RHS 합동)", "$\\angle OPB=\\angle OPA=63^\\circ$", "$x=90-63=27$ ⇒ ①"], "fin": "①", "ch": ["$27$", "$30$", "$32$", "$34$", "$37$"], "imgW": 42, "img": path.join(IMG, "q2.png")},

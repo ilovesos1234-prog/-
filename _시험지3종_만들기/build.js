@@ -190,7 +190,7 @@ body{font-family:'Nanum Myeongjo',serif;font-size:10pt}
 .gr{flex:0 0 auto;align-self:center}
 .foot{font-family:'Nanum Gothic';font-size:8pt;color:#888;text-align:center;margin-top:3mm}
 `;
-  let body = `<div class="wrap"><div class="top"><h1>${META.title} · 손풀이</h1><span>${META.subject} · ${Q.length}문항 · 정답은 빠른정답과 대조 완료</span></div>`;
+  let body = `<div class="wrap"><div class="top"><h1>${META.title} · 손풀이</h1><span>${META.subject} · ${Q.length}문항 · ${META.keyNote || '정답은 빠른정답과 대조 완료'}</span></div>`;
   for (const q of Q) {
     const chs = q.ch ? `<div class="chs">${q.ch.map((c, i) => `${CIRC[i]} ${tex(c.replace('##', ', '))}`).join(' &nbsp; ')}</div>` : '';
     body += `<div class="card"><div class="ch"><span class="n">${q.n}</span><span class="tag">${q.sub} · ${tex(q.key)} · ${q.pt}점${q.ptGuess ? '(추정)' : ''} · 난이도 ${LV[q.lv]}</span>

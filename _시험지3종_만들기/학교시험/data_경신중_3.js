@@ -1,7 +1,7 @@
 // 2026 경신중 3학년 2학기 중간 — 원본: 카카오톡 받은 파일 [경신중][3][26-2-중간](원본)(삼동).pdf
 const path = require('path');
 const IMG = path.join(__dirname, '..', 'img_school', "\uacbd\uc2e0\uc911_3");
-const META = {"year": 2026, "school": "경신중", "grade": "중3", "term": "2학기 중간", "subject": "수학", "title": "2026 경신중 3학년 2학기 중간", "units": "Ⅰ. 삼각비, Ⅱ. 원의 성질 (원과 현·원의 접선)"};
+const META = {"year": 2026, "school": "경신중", "grade": "중3", "term": "2학기 중간", "subject": "수학", "title": "2026 경신중 3학년 2학기 중간", "units": "Ⅰ. 삼각비, Ⅱ. 원의 성질 (원과 현·원의 접선)", "keyNote": "정답은 채수학에서 직접 풀어 확인"};
 const Q = [
 {"n": 1, "pt": "3", "type": "객", "ans": "⑤", "unit": "삼각비", "sub": "삼각비의 값", "tp": "삼각비의 값", "key": "$\\overline{AC}=\\sqrt{3^2-2^2}=\\sqrt5$", "lv": 1, "q": "그림과 같이 $\\angle C=90^\\circ$인 직각삼각형 ABC에서 $\\overline{AB}=3$, $\\overline{BC}=2$일 때, 삼각비의 값으로 옳지 <u>않은</u> 것은?", "sol": ["$\\overline{AC}=\\sqrt{9-4}=\\sqrt5$", "$\\sin A=\\dfrac23$, $\\cos A=\\dfrac{\\sqrt5}{3}$, $\\sin B=\\dfrac{\\sqrt5}{3}$, $\\cos B=\\dfrac23$", "$\\tan B=\\dfrac{\\overline{AC}}{\\overline{BC}}=\\dfrac{\\sqrt5}{2}$이므로 ⑤가 틀렸다 ⇒ ⑤"], "fin": "⑤", "ch": ["$\\sin A=\\dfrac{2}{3}$", "$\\cos A=\\dfrac{\\sqrt5}{3}$", "$\\sin B=\\dfrac{\\sqrt5}{3}$", "$\\cos B=\\dfrac{2}{3}$", "$\\tan B=\\dfrac{2\\sqrt5}{5}$"], "imgW": 24, "img": path.join(IMG, "q1.png")},
 {"n": 2, "pt": "3", "type": "객", "ans": "②", "unit": "삼각비", "sub": "특수각의 삼각비", "tp": "특수각의 삼각비", "key": "$\\cos90^\\circ=0$", "lv": 1, "q": "$\\cos45^\\circ\\times\\cos90^\\circ+\\sin60^\\circ\\times\\tan30^\\circ$의 값은?", "sol": ["$\\cos45^\\circ\\times0=0$", "$\\sin60^\\circ\\times\\tan30^\\circ=\\dfrac{\\sqrt3}{2}\\times\\dfrac{\\sqrt3}{3}=\\dfrac12$", "합 $=\\dfrac12$ ⇒ ②"], "fin": "②", "ch": ["$0$", "$\\dfrac12$", "$1$", "$\\dfrac{1+\\sqrt2}{2}$", "$\\dfrac32$"]},
