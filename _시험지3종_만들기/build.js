@@ -275,7 +275,7 @@ tr.sub td{background:#fbfaf4}
     [`${META.title} (손풀이)`, buildSol(), { format: 'A4' }],
     [`${META.title} (분석표)`, buildAna(), { format: 'A4' }],
   ];
-  const browser = await chromium.launch({ executablePath: '/opt/pw-browsers/chromium-1194/chrome-linux/chrome' });
+  const browser = await chromium.launch();
   const pg = await browser.newPage();
   for (const [name, html, fmt] of docs) {
     const hp = path.join(__dirname, name + '.html');
