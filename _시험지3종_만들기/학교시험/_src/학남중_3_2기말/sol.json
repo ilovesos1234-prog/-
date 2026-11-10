@@ -1,0 +1,227 @@
+{
+ "1": {
+  "tp": "피타고라스로 변 구해 삼각비",
+  "key": "$\\overline{AB}=\\sqrt{3^2-2^2}$",
+  "sol": [
+   "$\\overline{AB}=\\sqrt{9-4}=\\sqrt5$",
+   "$\\cos A=\\dfrac{\\overline{AB}}{\\overline{AC}}=\\dfrac{\\sqrt5}{3}$"
+  ],
+  "check": "ok"
+ },
+ "2": {
+  "tp": "특수각 삼각비 값",
+  "key": "$\\tan 90^\\circ$는 정할 수 없다",
+  "sol": [
+   "$\\sin30^\\circ=\\dfrac12$, $\\cos90^\\circ=0$, $\\tan45^\\circ=1$, $\\cos45^\\circ=\\dfrac{\\sqrt2}{2}$ 모두 옳다",
+   "$\\tan 90^\\circ$의 값은 정할 수 없으므로 ③이 옳지 않다"
+  ],
+  "check": "ok"
+ },
+ "3": {
+  "tp": "삼각비 하나로 나머지 구하기",
+  "key": "$\\overline{AB}=1,\\ \\overline{BC}=2,\\ \\overline{AC}=\\sqrt5$",
+  "sol": [
+   "$\\tan A=2$이므로 $\\overline{AB}=1$, $\\overline{BC}=2$, $\\overline{AC}=\\sqrt5$로 놓는다",
+   "$\\sin A\\times\\cos A=\\dfrac{2}{\\sqrt5}\\times\\dfrac{1}{\\sqrt5}=\\dfrac25$"
+  ],
+  "check": "ok"
+ },
+ "4": {
+  "tp": "대각선으로 나눠 넓이 구하기",
+  "key": "두 삼각형으로 나누어 두 변과 끼인각 공식",
+  "sol": [
+   "$\\triangle ABC$는 직각이등변삼각형: $\\overline{AB}=8$, $\\overline{AC}=8\\sqrt2$, 넓이 $32$",
+   "$\\triangle ACD=\\dfrac12\\cdot 8\\sqrt2\\cdot4\\cdot\\sin60^\\circ=8\\sqrt6$",
+   "$\\square ABCD=8\\sqrt6+32\\ \\mathrm{cm^2}$"
+  ],
+  "check": "ok"
+ },
+ "5": {
+  "tp": "닮은 직각삼각형에서 각 옮기기",
+  "key": "$\\angle x=\\angle A$",
+  "sol": [
+   "$\\overline{AB}=\\sqrt{12^2+5^2}=13$",
+   "$\\triangle DBE\\sim\\triangle ABC$이므로 $\\angle BDE=\\angle BAC$, 즉 $x=\\angle A$",
+   "$\\cos x=\\dfrac{5}{13}$, $\\tan x=\\dfrac{12}{5}$",
+   "$\\dfrac{13}{5}+\\dfrac{12}{5}=5$"
+  ],
+  "check": "ok"
+ },
+ "6": {
+  "tp": "평균으로 합 구하기",
+  "key": "합으로 바꾸어 더하고 빼기",
+  "sol": [
+   "A+B=112, B+C=130, C+D=136",
+   "A+D=(A+B)-(B+C)+(C+D)=118",
+   "A와 D의 평균 = 59 kg"
+  ],
+  "check": "ok"
+ },
+ "7": {
+  "tp": "사분원에서 삼각비를 선분으로",
+  "key": "빗변 1 또는 밑변 1인 직각삼각형 고르기",
+  "sol": [
+   "$\\triangle ABC$에서 $\\overline{AC}=1$: $\\sin x=\\overline{BC}$ (ㄱ ○)",
+   "$\\triangle ADE$에서 $\\overline{AD}=1$: $\\tan x=\\overline{DE}$ (ㄴ ○)",
+   "$\\angle ACB=y$: $\\sin y=\\overline{AB}$ (ㄷ ×), $\\cos y=\\overline{BC}$ (ㄹ ○), $\\tan y=\\dfrac{\\overline{AB}}{\\overline{BC}}$ (ㅁ ×)",
+   "옳은 것: ㄱ, ㄴ, ㄹ"
+  ],
+  "check": "ok"
+ },
+ "8": {
+  "tp": "수선을 내려 거리 구하기",
+  "key": "C에서 AB에 수선",
+  "sol": [
+   "$\\angle B=180^\\circ-30^\\circ-105^\\circ=45^\\circ$",
+   "C에서 $\\overline{AB}$에 수선 CH: $\\overline{CH}=500\\sin30^\\circ=250$, $\\overline{AH}=500\\cos30^\\circ=250\\sqrt3$",
+   "$\\angle B=45^\\circ$이므로 $\\overline{BH}=\\overline{CH}=250$",
+   "$\\overline{AB}=250\\sqrt3+250$ m"
+  ],
+  "check": "ok"
+ },
+ "9": {
+  "tp": "넓이를 두 가지로 나타내기",
+  "key": "둔각 A의 외각으로 높이를 구해 BC를 구하고 넓이 비교",
+  "sol": [
+   "$\\triangle ABC=\\dfrac12\\cdot3\\cdot2\\sqrt2\\cdot\\dfrac13=\\sqrt2$",
+   "B에서 CA의 연장선에 수선 BH: $\\overline{BH}=3\\cdot\\dfrac13=1$, $\\overline{AH}=2\\sqrt2$",
+   "$\\overline{CH}=4\\sqrt2$, $\\overline{BC}=\\sqrt{32+1}=\\sqrt{33}$",
+   "$\\sin C=\\dfrac{\\overline{BH}}{\\overline{BC}}=\\dfrac{1}{\\sqrt{33}}$"
+  ],
+  "check": "ok"
+ },
+ "10": {
+  "tp": "현의 수직이등분선과 반지름",
+  "key": "$r^2=6^2+(r-3)^2$",
+  "sol": [
+   "$\\overline{OB}=r$, $\\overline{OM}=r-3$",
+   "$r^2=36+(r-3)^2$에서 $6r=45$",
+   "$r=\\dfrac{15}{2}$ cm"
+  ],
+  "check": "ok"
+ },
+ "11": {
+  "tp": "같은 거리의 현은 길이가 같다",
+  "key": "$\\overline{AB}=\\overline{AC}$",
+  "sol": [
+   "$\\overline{OM}=\\overline{ON}$이므로 $\\overline{AB}=\\overline{AC}$",
+   "$\\angle C=\\angle B=67^\\circ$",
+   "$\\angle BAC=180^\\circ-134^\\circ=46^\\circ$"
+  ],
+  "check": "ok"
+ },
+ "12": {
+  "tp": "원을 접은 현",
+  "key": "중심에서 현까지 거리 = 반지름의 절반",
+  "sol": [
+   "중심에서 $\\overline{AB}$까지 거리 $6$",
+   "$\\dfrac12\\overline{AB}=\\sqrt{12^2-6^2}=6\\sqrt3$",
+   "$\\overline{AB}=12\\sqrt3$ cm"
+  ],
+  "check": "ok"
+ },
+ "13": {
+  "tp": "내접원과 접선의 길이",
+  "key": "$\\overline{AD}=\\dfrac{AB+AC-BC}{2}$",
+  "sol": [
+   "$\\overline{AD}=\\overline{AF}=a$, $\\overline{BD}=\\overline{BE}=10-a$, $\\overline{CF}=\\overline{CE}=9-a$",
+   "$(10-a)+(9-a)=11$에서 $a=4$ cm"
+  ],
+  "check": "ok"
+ },
+ "14": {
+  "tp": "접선의 길이 + 직각삼각형 내접원",
+  "key": "DE를 구한 뒤 내접원 반지름 (a+b-c)/2",
+  "sol": [
+   "원 O의 반지름 6, D에서의 접선의 길이 $18-6=12$",
+   "E에서의 접선의 길이를 $t$라 하면 $\\overline{DE}=12+t$, $\\overline{EC}=12-t$",
+   "$(12+t)^2=(12-t)^2+12^2$에서 $t=3$, $\\overline{DE}=15$, $\\overline{EC}=9$",
+   "직각삼각형 DEC의 내접원 반지름 $=\\dfrac{9+12-15}{2}=3$ cm"
+  ],
+  "check": "ok"
+ },
+ "15": {
+  "tp": "내접사각형과 중심각",
+  "key": "$x=180^\\circ-128^\\circ$, $y=2\\angle BCD$",
+  "sol": [
+   "$\\square ABCD$가 원에 내접하므로 $\\angle x=180^\\circ-128^\\circ=52^\\circ$",
+   "호 BAD에 대한 원주각이 $\\angle BCD=128^\\circ$이므로 $\\angle y=256^\\circ$",
+   "$\\angle x+\\angle y=308^\\circ$"
+  ],
+  "check": "ok"
+ },
+ "16": {
+  "tp": "접선과 현이 이루는 각 + 내접사각형",
+  "key": "$\\angle ACB=\\angle ABT$, $\\angle B+\\angle D=180^\\circ$",
+  "sol": [
+   "$\\angle ADC=180^\\circ-30^\\circ-55^\\circ=95^\\circ$",
+   "$\\square ABCD$가 내접하므로 $\\angle y=180^\\circ-95^\\circ=85^\\circ$",
+   "접선과 현이 이루는 각: $\\angle ACB=\\angle ABT=42^\\circ$",
+   "$\\angle x=180^\\circ-85^\\circ-42^\\circ=53^\\circ$",
+   "$\\angle y-\\angle x=32^\\circ$"
+  ],
+  "check": "ok"
+ },
+ "17": {
+  "tp": "오각형을 내접사각형으로 나누기",
+  "key": "CE를 그어 □ABCE와 원주각",
+  "sol": [
+   "$\\overline{CE}$를 그으면 $\\square ABCE$가 원에 내접: $\\angle AEC=180^\\circ-110^\\circ=70^\\circ$",
+   "$\\angle CED=\\dfrac12\\angle COD=25^\\circ$",
+   "$\\angle AED=70^\\circ+25^\\circ=95^\\circ$"
+  ],
+  "check": "ok"
+ },
+ "18": {
+  "tp": "호의 길이와 원주각",
+  "key": "원주의 1/k인 호의 원주각 = 180°/k",
+  "sol": [
+   "호 AB의 원주각 $=180^\\circ\\times\\dfrac16=30^\\circ$, 호 CD의 원주각 $=180^\\circ\\times\\dfrac14=45^\\circ$",
+   "$\\overline{AD}$를 그으면 $\\angle APB$는 $\\triangle APD$의 외각: $\\angle ADB+\\angle CAD=30^\\circ+45^\\circ=75^\\circ$"
+  ],
+  "check": "ok"
+ },
+ "19": {
+  "tp": "특수각 삼각비 계산",
+  "key": "값을 대입해 비교",
+  "sol": [
+   "(가) $\\dfrac12+\\dfrac12=1$",
+   "(나) $0+1-2=-1$",
+   "(다) $\\dfrac{\\sqrt3}{2}\\cdot\\dfrac12\\cdot\\sqrt3=\\dfrac34$",
+   "(라) $1+\\dfrac{\\sqrt2}{2}$",
+   "가장 작은 값 $-1$, 가장 큰 값 $1+\\dfrac{\\sqrt2}{2}$, 합 $\\dfrac{\\sqrt2}{2}$"
+  ],
+  "check": "ok"
+ },
+ "20": {
+  "tp": "이등변삼각형 찾아 변 구하기",
+  "key": "$\\angle ABD=30^\\circ$이므로 $\\overline{BD}=\\overline{AD}$",
+  "sol": [
+   "$\\angle ABD=60^\\circ-30^\\circ=30^\\circ$이므로 $\\triangle ABD$는 이등변, $\\overline{BD}=10$",
+   "$\\overline{BC}=10\\sin60^\\circ=5\\sqrt3$ cm",
+   "$\\overline{CD}=10\\cos60^\\circ=5$ cm"
+  ],
+  "check": "ok"
+ },
+ "21": {
+  "tp": "반원과 세 접선",
+  "key": "접선의 길이가 같다 + 피타고라스",
+  "sol": [
+   "$\\overline{CB}=x$라 하면 $\\overline{CE}=x$, $\\overline{DE}=10$이므로 $\\overline{CD}=10+x$",
+   "C에서 $\\overline{AD}$에 수선: 높이 12, 밑변 $10-x$",
+   "$(10+x)^2=(10-x)^2+12^2$에서 $40x=144$",
+   "$x=\\dfrac{18}{5}$ cm"
+  ],
+  "check": "ok"
+ },
+ "22": {
+  "tp": "지름 위 원주각으로 각 구하기",
+  "key": "$\\angle ACB=90^\\circ$, $\\angle CBD=\\tfrac12\\angle COD$",
+  "sol": [
+   "$\\overline{BC}$를 그으면 $\\angle CBD=\\dfrac12\\times34^\\circ=17^\\circ$",
+   "$\\overline{AB}$가 지름이므로 $\\angle ACB=90^\\circ$, $\\angle PCB=90^\\circ$",
+   "$\\triangle PCB$에서 $\\angle x=90^\\circ-17^\\circ=73^\\circ$"
+  ],
+  "check": "ok"
+ }
+}
