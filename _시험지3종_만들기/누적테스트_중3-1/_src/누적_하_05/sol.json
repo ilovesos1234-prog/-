@@ -1,0 +1,22 @@
+{
+"1":{"tp":"부호 판단 후 근호 벗기기","key":"xy<0, x<y 이면 x<0<y","sol":["(1) $xy\\lt 0$, $x\\lt y$ → $x\\lt 0,\\ y\\gt 0$","(2) $\\sqrt{(-x)^2}=-x$, $\\sqrt{y^2}=y$, $\\sqrt{(y-x)^2}=y-x$","$-x-y-(y-x)=-2y$"],"check":"text.txt에 소문항 (1)(2)가 없어 정답에 맞춰 '(1) x, y의 부호 (2) 식 간단히'를 보충함"},
+"2":{"tp":"√(a−b)² 간단히","key":"x−4>0, x−6<0","sol":["$(x-4)+(6-x)$","$=2$"],"check":"ok"},
+"3":{"tp":"√(ax)가 자연수","key":"24=2³×3","sol":["$24x=2^3\\times 3\\times x$ 가 제곱수","$x=2\\times 3=6$"],"check":"ok"},
+"4":{"tp":"√x 이하의 자연수","key":"구간별로 N 값이 같다","sol":["$x=1\\sim 3$: $1\\times 3=3$","$x=4\\sim 8$: $2\\times 5=10$","$x=9\\sim 15$: $3\\times 7=21$, $x=16$: $4$","합 $=38$"],"check":"ok"},
+"5":{"tp":"수직선 위의 무리수","key":"AC=CE=√2 로 C 찾기","sol":["$\\overline{CE}=\\sqrt{2}$, $\\mathrm{A}=c-\\sqrt{2}=1-\\sqrt{2}$ → $\\mathrm{C}=1$","$\\mathrm{D}=2$, $\\overline{DF}=\\sqrt{2^2+1^2}=\\sqrt{5}$","$\\mathrm{B}=2+\\sqrt{5}$, $b-a=5-2=3$"],"check":"ok"},
+"6":{"tp":"무리수 찾기","key":"□는 무리수","sol":["ㄱ. $\\sqrt{0.9}=\\sqrt{\\dfrac{9}{10}}$ 무리수","ㄴ 순환소수, ㄷ $-\\dfrac{5}{7}$, ㅁ $\\pm 1.1$, ㅂ $2.5$ : 유리수","ㄹ. $1-2\\sqrt{2}$ 무리수 → ㄱ, ㄹ"],"check":"ok"},
+"7":{"tp":"근호를 포함한 식의 계산","key":"A, B, C 각각 간단히","sol":["$\\mathrm{A}=\\sqrt{\\dfrac{20}{3}\\times\\dfrac{15}{8}\\times\\dfrac{2}{5}}=\\sqrt{5}$","$\\mathrm{B}=5\\sqrt{3}-2\\sqrt{3}-4\\sqrt{3}=-\\sqrt{3}$","$\\mathrm{C}=\\sqrt{5}-\\sqrt{3}$","$\\mathrm{A}+\\mathrm{B}-\\mathrm{C}=\\sqrt{5}-\\sqrt{3}-\\sqrt{5}+\\sqrt{3}=0$"],"check":"ok"},
+"8":{"tp":"분모의 유리화","key":"(2+√3)(2−√3)=1","sol":["$(1-\\sqrt{3})(2-\\sqrt{3})=5-3\\sqrt{3}$","$(3+\\sqrt{3})(2+\\sqrt{3})=9+5\\sqrt{3}$","합 $14+2\\sqrt{3}$, $A-B=14-2=12$"],"check":"ok"},
+"9":{"tp":"근호 안으로 넣기","key":"a√(4b/a)=2√(ab)","sol":["$a\\sqrt{\\dfrac{4b}{a}}=\\sqrt{4ab}=2\\sqrt{ab}=4$","$b\\sqrt{\\dfrac{9a}{b}}=\\sqrt{9ab}=3\\sqrt{ab}=6$","합 $=10$"],"check":"ok"},
+"10":{"tp":"a√b 꼴 변형","key":"√34는 더 간단히 안 됨","sol":["$17\\sqrt{2}=\\sqrt{578}\\ne\\sqrt{34}$","⑤ 옳지 않다"],"check":"ok"},
+"11":{"tp":"근호를 포함한 식의 계산","key":"유리화 후 동류항 정리","sol":["$\\dfrac{7\\sqrt{6}}{6}-6\\sqrt{2}-\\sqrt{6}+\\dfrac{13\\sqrt{2}}{2}$","$=\\dfrac{1}{2}\\sqrt{2}+\\dfrac{1}{6}\\sqrt{6}$","$a+b=\\dfrac{2}{3}$"],"check":"14번과 같은 문제(같은 출처)가 중복 수록됨"},
+"12":{"tp":"실수의 대소","key":"3√7=√63≈7.9","sol":["$a=2+\\sqrt{63}\\gt 2+7=9$","$c=7-\\sqrt{5}\\lt 7-2=5$","$a\\gt b\\gt c$"],"check":"ok"},
+"13":{"tp":"정수 부분과 소수 부분","key":"2<√5<3","sol":["(1) $2\\lt\\sqrt{5}\\lt 3$ → $2\\lt 5-\\sqrt{5}\\lt 3$, $a=2$","(2) $b=(5-\\sqrt{5})-2=3-\\sqrt{5}$","(3) $2\\sqrt{5}+5(3-\\sqrt{5})=15-3\\sqrt{5}$"],"check":"ok"},
+"14":{"tp":"근호를 포함한 식의 계산","key":"유리화 후 동류항 정리","sol":["$\\dfrac{7\\sqrt{6}}{6}-6\\sqrt{2}-\\sqrt{6}+\\dfrac{13\\sqrt{2}}{2}$","$=\\dfrac{1}{2}\\sqrt{2}+\\dfrac{1}{6}\\sqrt{6}$","$a+b=\\dfrac{2}{3}$"],"check":"11번과 같은 문제(같은 출처)가 중복 수록됨"},
+"15":{"tp":"제곱근의 덧셈과 뺄셈","key":"√27=3√3, √20=2√5","sol":["$3\\sqrt{3}+\\sqrt{3}=4\\sqrt{3}$, $a=4$","$2\\sqrt{5}-\\sqrt{5}=\\sqrt{5}$, $b=5$","$a^2+b=21$"],"check":"ok"},
+"16":{"tp":"√(a−b)² 간단히","key":"a−b<0, a<0, b<0","sol":["$\\sqrt{(a-b)^2}=b-a$, $\\sqrt{9a^2}=-3a$, $\\sqrt{(-b)^2}=-b$","$(b-a)+3a+b$","$=2a+2b$"],"check":"ok"},
+"17":{"tp":"실수의 대소","key":"근삿값으로 비교","sol":["$2-\\sqrt{6}\\approx -0.45$, $\\sqrt{6}-\\sqrt{3}\\approx 0.72$, $\\sqrt{2}-\\sqrt{6}\\approx -1.03$","$-1+\\sqrt{6}\\approx 1.45$ 가 최대","$a+b=(-1+\\sqrt{6})+(\\sqrt{2}-\\sqrt{6})=-1+\\sqrt{2}$"],"check":"ok"},
+"18":{"tp":"수직선 위의 무리수","key":"AB=AC=√5","sol":["$\\overline{AB}=\\sqrt{2^2+1^2}=\\sqrt{5}$, $\\overline{AC}=\\sqrt{1^2+2^2}=\\sqrt{5}$","$a=1-\\sqrt{5}$, $b=1+\\sqrt{5}$","$5a+\\sqrt{5}b=5-5\\sqrt{5}+\\sqrt{5}+5=10-4\\sqrt{5}$"],"check":"ok"},
+"19":{"tp":"근호를 포함한 식의 계산","key":"분배 후 유리화","sol":["$\\sqrt{3}\\left(\\dfrac{2}{\\sqrt{6}}+\\dfrac{5}{\\sqrt{12}}\\right)=\\sqrt{2}+\\dfrac{5}{2}$","$\\sqrt{2}\\left(\\dfrac{10}{\\sqrt{32}}-\\dfrac{4}{\\sqrt{6}}+\\dfrac{3}{8}\\right)=\\dfrac{5}{2}-\\dfrac{4\\sqrt{3}}{3}+\\dfrac{3\\sqrt{2}}{8}$","차 $=\\dfrac{5}{8}\\sqrt{2}+\\dfrac{4}{3}\\sqrt{3}$","$ab=\\dfrac{5}{8}\\times\\dfrac{4}{3}=\\dfrac{5}{6}$"],"check":"ok"},
+"20":{"tp":"수직선 위의 무리수","key":"대각선 √2를 반지름으로","sol":["$\\mathrm{A}$: $-1$ 을 중심, 반지름 $\\sqrt{2}$ → $a=-1-\\sqrt{2}$","$\\mathrm{E}$: $-1$ 을 중심 → $e=-1+\\sqrt{2}$","$ae=(-1)^2-(\\sqrt{2})^2=-1$"],"check":"ok"}
+}
