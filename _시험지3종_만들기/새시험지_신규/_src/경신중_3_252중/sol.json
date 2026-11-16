@@ -1,0 +1,173 @@
+{
+"1": {
+"tp": "중심에서 같은 거리의 현",
+"key": "AB=AC → 이등변삼각형",
+"sol": [
+"중심에서 두 현까지의 거리가 같으므로 $\\overline{\\text{AB}}=\\overline{\\text{AC}}$",
+"$\\angle\\text{BCA}=\\frac12(180^\\circ-48^\\circ)=66^\\circ$ → ⑤"
+],
+"check": "ok"
+},
+"2": {
+"tp": "접선 ⊥ 반지름",
+"key": "$\\triangle$OAP는 30°-60°-90° 삼각형",
+"sol": [
+"반지름 $r$: $\\overline{\\text{OA}}=r$, $\\overline{\\text{OP}}=r+6$",
+"$\\overline{\\text{OA}}:\\overline{\\text{OP}}=1:2$ → $2r=r+6$, $r=6$ → ②"
+],
+"check": "ok"
+},
+"3": {
+"tp": "접선과 현이 이루는 각 → 닮음",
+"key": "$\\overline{\\text{PC}}^2=\\overline{\\text{PA}}\\times\\overline{\\text{PB}}$",
+"sol": [
+"$\\triangle$PBC $\\sim$ $\\triangle$PCA (AA 닮음)",
+"$\\overline{\\text{PC}}^2=4\\times9=36$ → $\\overline{\\text{PC}}=6$ → ③"
+],
+"check": "ok"
+},
+"4": {
+"tp": "접선의 길이가 같음",
+"key": "",
+"sol": [
+"$\\overline{\\text{DF}}=\\sqrt{5^2-3^2}=4$",
+"$\\overline{\\text{DC}}=\\overline{\\text{DE}}=x$, $\\overline{\\text{FB}}=\\overline{\\text{FE}}=y$ → $x+y=4$",
+"$\\overline{\\text{AC}}=\\overline{\\text{AB}}$ → $5+x=3+y$ → $y=3$",
+"OEFB는 정사각형이므로 반지름 $=\\overline{\\text{FB}}=3$ → ①"
+],
+"check": "ok"
+},
+"5": {
+"tp": "원주각 → 닮음",
+"key": "$\\triangle$ABH $\\sim$ $\\triangle$ADC",
+"sol": [
+"$\\overline{\\text{AH}}=\\sqrt{8^2-2^2}=2\\sqrt{15}$",
+"$\\angle\\text{ABH}=\\angle\\text{ADC}$, $\\angle\\text{AHB}=\\angle\\text{ACD}=90^\\circ$",
+"$8:\\overline{\\text{AD}}=2\\sqrt{15}:12$ → $\\overline{\\text{AD}}=\\frac{16\\sqrt{15}}{5}$",
+"반지름 $\\frac{8\\sqrt{15}}{5}$ → ②"
+],
+"check": "ok"
+},
+"6": {
+"tp": "내접사각형 대각의 합 180°",
+"key": "보조선 BD",
+"sol": [
+"$\\angle\\text{BDC}=\\frac12\\times42^\\circ=21^\\circ$ → $\\angle\\text{BDE}=81^\\circ$",
+"□ABDE에서 $\\angle\\text{BAE}=180^\\circ-81^\\circ=99^\\circ$ → ③"
+],
+"check": "ok"
+},
+"7": {
+"tp": "현의 수직이등분선",
+"key": "$\\triangle$OBC는 정삼각형",
+"sol": [
+"BO ⊥ AC이므로 BO는 AC를 수직이등분 → $\\overline{\\text{BC}}=\\overline{\\text{BA}}=4$",
+"$\\triangle$OBC는 한 변이 4인 정삼각형, $\\overline{\\text{OH}}=2\\sqrt3$",
+"J는 정삼각형 OBC의 무게중심 → $\\overline{\\text{HJ}}=\\frac13\\overline{\\text{OH}}=\\frac{2\\sqrt3}{3}$ → ③"
+],
+"check": "ok"
+},
+"8": {
+"tp": "접선의 길이 + 피타고라스",
+"key": "",
+"sol": [
+"$\\overline{\\text{BC}}=\\overline{\\text{AD}}=8$, $\\overline{\\text{BE}}=\\sqrt{10^2-8^2}=6$",
+"$\\overline{\\text{IE}}=\\overline{\\text{EF}}=x$, $\\overline{\\text{FC}}=\\overline{\\text{CG}}=10-x$",
+"$\\overline{\\text{BI}}=\\overline{\\text{CG}}$ → $6+x=10-x$ → $x=2$",
+"$\\overline{\\text{AE}}=\\overline{\\text{AI}}+\\overline{\\text{IE}}=4+2=6$ → ①"
+],
+"check": "ok"
+},
+"9": {
+"tp": "정사각형 + 닮음",
+"key": "",
+"sol": [
+"접점과 C로 이루어진 사각형은 한 변 $r$인 정사각형",
+"$\\triangle$AOP $\\sim$ $\\triangle$ABC: $(4-r):4=r:8$",
+"$32-8r=4r$ → $r=\\frac83$",
+"$a+b=3+8=11$ → ④"
+],
+"check": "ok"
+},
+"10": {
+"tp": "같은 호 → 같은 원주각",
+"key": "",
+"sol": [
+"$\\angle\\text{BAD}=\\angle\\text{BCD}=\\angle\\text{CBD}=\\angle\\text{ADB}=x$",
+"$\\angle\\text{PBC}=x-28^\\circ$",
+"$\\triangle$ABD: $x+(x-28^\\circ)+x+x=180^\\circ$ → $x=52^\\circ$",
+"$\\angle\\text{ABC}=52^\\circ-28^\\circ=24^\\circ$ → ④"
+],
+"check": "ok"
+},
+"11": {
+"tp": "원주각과 중심각",
+"key": "",
+"sol": [
+"$\\angle\\text{AOB}=2\\angle\\text{ADB}=42^\\circ$",
+"호 AB = 호 BC → $\\angle\\text{BOC}=42^\\circ$",
+"$\\angle\\text{AOC}=84^\\circ$"
+],
+"check": "ok"
+},
+"12": {
+"tp": "내접원의 접선의 길이",
+"key": "",
+"sol": [
+"$\\overline{\\text{AD}}=\\overline{\\text{AF}}=x$, $\\overline{\\text{BE}}=9-x$, $\\overline{\\text{CE}}=11-x$",
+"$14=(9-x)+(11-x)$ → $x=3$"
+],
+"check": "ok"
+},
+"13": {
+"tp": "한 변을 반지름으로 표현",
+"key": "",
+"sol": [
+"O에서 BC에 수선 OH, $\\overline{\\text{OH}}:\\overline{\\text{HC}}=1:\\sqrt3$ → $\\overline{\\text{HC}}=\\sqrt3x$",
+"$\\overline{\\text{BC}}=2x+2\\sqrt3x=5+5\\sqrt3$",
+"$x=\\frac52$, 원의 둘레 $2\\pi\\times\\frac52=5\\pi$"
+],
+"check": "ok"
+},
+"14": {
+"tp": "접선 + 내접사각형",
+"key": "",
+"sol": [
+"$\\angle\\text{AOB}=180^\\circ-44^\\circ=136^\\circ$",
+"큰 호 위의 점 Q에 대해 $\\angle\\text{AQB}=68^\\circ$",
+"□ACBQ가 원에 내접 → $\\angle\\text{ACB}=180^\\circ-68^\\circ=112^\\circ$",
+"$x=112$ (원본 답지의 해설 기준: 각 C의 크기)"
+],
+"check": "문제는 ∠ABC=x°라 했으나 그림·답지(112°)는 ∠ACB(점 C의 각)를 x로 표시 → 원본 문제 표기 오류로 보임. 답은 그림 기준 112"
+},
+"15": {
+"tp": "접선과 현이 이루는 각",
+"key": "",
+"sol": [
+"$\\angle\\text{ACB}=\\angle\\text{BAT}=60^\\circ$",
+"BC ∥ AT → $\\angle\\text{CBA}=\\angle\\text{BAT}=60^\\circ$ (엇각)",
+"$\\triangle$ABC는 한 변 9인 정삼각형 → 넓이 $\\frac{\\sqrt3}{4}\\times81=\\frac{81\\sqrt3}{4}$"
+],
+"check": "ok"
+},
+"16": {
+"tp": "접선의 길이 + 피타고라스",
+"key": "",
+"sol": [
+"$\\overline{\\text{DC}}=3+5=8$",
+"D에서 BC에 수선 DH → $\\overline{\\text{HC}}=2$, $\\overline{\\text{DH}}=\\sqrt{64-4}=2\\sqrt{15}$",
+"반지름 $\\sqrt{15}$, 반원 넓이 $\\frac12\\times15\\pi=\\frac{15}{2}\\pi$"
+],
+"check": "원본 해설의 DC=18은 오타(DC=3+5=8)"
+},
+"17": {
+"tp": "외접 삼각형 둘레 = 접선 길이 2배",
+"key": "",
+"sol": [
+"O에서 AB에 수선 OQ → $\\overline{\\text{OQ}}=\\overline{\\text{OH}}=8$",
+"$\\overline{\\text{PQ}}=\\sqrt{17^2-8^2}=15$",
+"$\\triangle$PAD의 둘레 $=2\\overline{\\text{PQ}}=30$"
+],
+"check": "ok"
+}
+}

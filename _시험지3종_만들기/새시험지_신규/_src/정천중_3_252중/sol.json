@@ -1,0 +1,240 @@
+{
+ "1": {
+  "tp": "사인으로 변의 길이",
+  "key": "BC = AC sin A",
+  "sol": [
+   "$\\overline{\\mathrm{BC}}=20\\times\\dfrac35=12$",
+   "$\\overline{\\mathrm{AB}}=\\sqrt{400-144}=16$",
+   "둘레 $=20+12+16=48$"
+  ],
+  "check": "ok"
+ },
+ "2": {
+  "tp": "특수각 계산",
+  "key": "특수각 값 대입",
+  "sol": [
+   "$1\\div\\dfrac12-1\\times1=2-1=1$"
+  ],
+  "check": "ok"
+ },
+ "3": {
+  "tp": "삼각비의 표 읽기",
+  "key": "cos 20° = 0.9397",
+  "sol": [
+   "$x=20^\\circ$",
+   "$\\sin20^\\circ+\\tan20^\\circ=0.3420+0.3640=0.7060$"
+  ],
+  "check": "원본 표가 잘려 있어 10°~30° 값으로 표를 다시 만듦"
+ },
+ "4": {
+  "tp": "여각의 삼각비",
+  "key": "90°−A = B",
+  "sol": [
+   "$\\overline{\\mathrm{BC}}=3$, $\\overline{\\mathrm{AC}}=4$, $\\overline{\\mathrm{AB}}=5$로 놓으면",
+   "$\\sin B=\\dfrac45$, $\\cos A=\\dfrac45$, $\\tan B=\\dfrac43$",
+   "$\\dfrac45+\\dfrac45-\\dfrac43=\\dfrac4{15}$"
+  ],
+  "check": "ok"
+ },
+ "5": {
+  "tp": "단위원과 삼각비",
+  "key": "sin 54° = cos 36° = OB, tan 36° = CD",
+  "sol": [
+   "$\\sin54^\\circ=\\cos36^\\circ=\\overline{\\mathrm{OB}}=0.81$",
+   "$\\tan36^\\circ=\\overline{\\mathrm{CD}}=0.73$",
+   "$0.81-0.73=0.08$"
+  ],
+  "check": "ok"
+ },
+ "6": {
+  "tp": "기울기와 tan",
+  "key": "기울기 a = tan A",
+  "sol": [
+   "$\\triangle\\mathrm{AOH}$에서 $\\tan A=\\dfrac{3}{\\overline{\\mathrm{AH}}}=\\dfrac34$ → $\\overline{\\mathrm{AH}}=4$, $\\overline{\\mathrm{OA}}=5$",
+   "$a=\\tan A=\\dfrac34$, $b=\\overline{\\mathrm{OB}}=5\\times\\dfrac34=\\dfrac{15}4$",
+   "$4(a+b)=4\\times\\dfrac{18}{4}=18$"
+  ],
+  "check": "ok"
+ },
+ "7": {
+  "tp": "특수각 조합으로 15°, 75°",
+  "key": "AE=2√3, EF=2, AF=4, ∠DAF=15°",
+  "sol": [
+   "$\\overline{\\mathrm{AE}}=\\dfrac{\\sqrt6}{\\cos45^\\circ}=2\\sqrt3$, $\\overline{\\mathrm{EF}}=2\\sqrt3\\tan30^\\circ=2$, $\\overline{\\mathrm{AF}}=4$ (ㄷ 거짓)",
+   "$\\angle\\mathrm{DAF}=15^\\circ$, $\\overline{\\mathrm{AD}}=\\overline{\\mathrm{BE}}+\\overline{\\mathrm{EC}}=\\sqrt6+\\sqrt2$, $\\cos15^\\circ=\\dfrac{\\sqrt6+\\sqrt2}{4}$ (ㄴ 거짓)",
+   "$\\overline{\\mathrm{DF}}=4\\sin15^\\circ=\\sqrt6-\\sqrt2$, $\\tan75^\\circ=\\dfrac{\\overline{\\mathrm{AD}}}{\\overline{\\mathrm{DF}}}=\\dfrac{\\sqrt6+\\sqrt2}{\\sqrt6-\\sqrt2}=2+\\sqrt3$ (ㄱ 참)",
+   "$\\triangle\\mathrm{ADF}=\\dfrac12(\\sqrt6+\\sqrt2)(\\sqrt6-\\sqrt2)=2$ (ㄹ 참)"
+  ],
+  "check": "ok"
+ },
+ "8": {
+  "tp": "cos30°를 반복해서 곱하기",
+  "key": "OB = OA cos30°, 같은 비율 반복",
+  "sol": [
+   "$\\overline{\\mathrm{OB}}=16\\sqrt3$, $\\overline{\\mathrm{OC}}=24$, $\\overline{\\mathrm{OD}}=12\\sqrt3$",
+   "$\\overline{\\mathrm{OE}}=12\\sqrt3\\cos30^\\circ=18$, $\\overline{\\mathrm{DE}}=12\\sqrt3\\sin30^\\circ=6\\sqrt3$",
+   "$\\triangle\\mathrm{ODE}=\\dfrac12\\times18\\times6\\sqrt3=54\\sqrt3$"
+  ],
+  "check": "원본 문장은 ∠ACB, ∠CAB, AB=32, △AFE 등 그림과 맞지 않는 이름으로 적혀 있어 그림(O, A~E)에 맞게 고쳐 적음. 정답 ③과 일치"
+ },
+ "9": {
+  "tp": "평행사변형의 넓이",
+  "key": "한 꼭짓점에 8개 → 한 각 45°",
+  "sol": [
+   "마름모의 한 내각 $=\\dfrac{360^\\circ}{8}=45^\\circ$",
+   "한 장 넓이 $=3\\times3\\times\\sin45^\\circ=\\dfrac{9\\sqrt2}{2}$",
+   "전체 $=8\\times\\dfrac{9\\sqrt2}2=36\\sqrt2$"
+  ],
+  "check": "ok"
+ },
+ "10": {
+  "tp": "그네의 높이",
+  "key": "올라간 높이 = 2 − 2cos38°",
+  "sol": [
+   "줄 길이 $2\\,\\mathrm{m}$, 가장 낮을 때 높이 $0.5\\,\\mathrm{m}$",
+   "올라간 높이 $=2-2\\times0.79=0.42$",
+   "지면으로부터 $0.5+0.42=0.92\\,(\\mathrm{m})$"
+  ],
+  "check": "ok"
+ },
+ "11": {
+  "tp": "두 각에서 올려본 높이",
+  "key": "높이 h로 AD, AE를 나타내고 DE=120",
+  "sol": [
+   "$\\overline{\\mathrm{BC}}=\\overline{\\mathrm{DE}}=120$, 높이 $h$: $\\overline{\\mathrm{AD}}=\\dfrac h{\\sqrt3}$, $\\overline{\\mathrm{AE}}=\\sqrt3h$",
+   "$\\sqrt3h-\\dfrac{h}{\\sqrt3}=120$ → $h=60\\sqrt3$, $\\overline{\\mathrm{AD}}=60$",
+   "$\\overline{\\mathrm{DF}}=60\\tan30^\\circ=20\\sqrt3$ → $\\overline{\\mathrm{BF}}=40\\sqrt3$",
+   "$\\triangle\\mathrm{AFB}=\\dfrac12\\times40\\sqrt3\\times60=1200\\sqrt3$"
+  ],
+  "check": "원본 그림이 깨져 조건대로 다시 그림"
+ },
+ "12": {
+  "tp": "접기와 이등변삼각형",
+  "key": "EF=ED=5, ∠FGE=∠GED=x → FG=FE=5",
+  "sol": [
+   "$\\overline{\\mathrm{EF}}=5$, 높이 $3$ → E, F의 가로 차 $4$",
+   "엇각·접은 각 → $\\triangle\\mathrm{EFG}$는 $\\overline{\\mathrm{FE}}=\\overline{\\mathrm{FG}}=5$",
+   "E에서 BC에 수선 EH: $\\overline{\\mathrm{HG}}=5-4=1$, $\\overline{\\mathrm{EG}}=\\sqrt{10}$",
+   "$\\sin x^\\circ=\\sin(\\angle\\mathrm{EGF})=\\dfrac{3}{\\sqrt{10}}=\\dfrac{3\\sqrt{10}}{10}$"
+  ],
+  "check": "ok"
+ },
+ "13": {
+  "tp": "둔각을 낀 두 변",
+  "key": "C에서 BA의 연장선에 수선",
+  "sol": [
+   "C에서 BA의 연장선에 수선 CH: $\\angle\\mathrm{CAH}=45^\\circ$ → $\\overline{\\mathrm{CH}}=\\overline{\\mathrm{AH}}=4$",
+   "$\\overline{\\mathrm{BC}}=\\sqrt{7^2+4^2}=\\sqrt{65}$"
+  ],
+  "check": "ok"
+ },
+ "14": {
+  "tp": "무게중심과 넓이",
+  "key": "△AGC = ⅓△ABC",
+  "sol": [
+   "$\\triangle\\mathrm{ABC}=\\dfrac12\\times15\\times6\\times\\sin60^\\circ=\\dfrac{45\\sqrt3}{2}$",
+   "$\\triangle\\mathrm{AGC}=\\dfrac13\\times\\dfrac{45\\sqrt3}2=\\dfrac{15\\sqrt3}{2}$ → ②"
+  ],
+  "check": "빠른 정답은 ①(15√3/4)이지만 △ABC=45√3/2, 무게중심으로 △AGC=⅓△ABC=15√3/2 이므로 ②가 맞음",
+  "fix_ans": "②"
+ },
+ "15": {
+  "tp": "넓이로 변의 길이",
+  "key": "½·AE²·sin30° = 16",
+  "sol": [
+   "$\\dfrac12\\overline{\\mathrm{AE}}^2\\sin30^\\circ=16$ → $\\overline{\\mathrm{AE}}=8$",
+   "$\\triangle\\mathrm{ABE}\\equiv\\triangle\\mathrm{ADF}$ (RHS) → $\\angle\\mathrm{BAE}=30^\\circ$",
+   "$\\overline{\\mathrm{AB}}=8\\cos30^\\circ=4\\sqrt3$"
+  ],
+  "check": "ok"
+ },
+ "16": {
+  "tp": "빗변의 길이와 이동 시간",
+  "key": "AD = 50√2, BC = 100",
+  "sol": [
+   "$\\overline{\\mathrm{AD}}=\\dfrac{50}{\\sin45^\\circ}=50\\sqrt2$, $\\overline{\\mathrm{BC}}=\\dfrac{50}{\\sin30^\\circ}=100$",
+   "P가 D에 도착: $25\\sqrt2$초, Q가 C에 도착: $\\dfrac{100}{2\\sqrt2}=25\\sqrt2$초 (동시)",
+   "이후 $\\overline{\\mathrm{DC}}=50$을 마주 보고 이동: $\\dfrac{50}{2+2\\sqrt2}=25(\\sqrt2-1)$초",
+   "$t=25\\sqrt2+25\\sqrt2-25=-25+50\\sqrt2$"
+  ],
+  "check": "ok"
+ },
+ "17": {
+  "tp": "현의 수직이등분선",
+  "key": "CD 연장선 위에 중심",
+  "sol": [
+   "반지름 $r$: $r^2=(r-3)^2+(3\\sqrt3)^2$",
+   "$6r=36$ → $r=6$"
+  ],
+  "check": "ok"
+ },
+ "18": {
+  "tp": "합동인 삼각형",
+  "key": "△ABO ≡ △ACO",
+  "sol": [
+   "$\\overline{\\mathrm{AC}}=8$, $\\overline{\\mathrm{OM}}\\perp\\overline{\\mathrm{AC}}$",
+   "$\\triangle\\mathrm{ACO}=\\dfrac12\\times8\\times2=8$",
+   "$\\triangle\\mathrm{ABO}\\equiv\\triangle\\mathrm{ACO}$ (SSS) → $8$"
+  ],
+  "check": "ok"
+ },
+ "19": {
+  "tp": "동심원의 접선",
+  "key": "R² − r² = (AB/2)²",
+  "sol": [
+   "$\\pi(R^2-r^2)=36\\pi$",
+   "$\\left(\\dfrac{\\overline{\\mathrm{AB}}}{2}\\right)^2=R^2-r^2=36$ → $\\overline{\\mathrm{AB}}=12$"
+  ],
+  "check": "ok"
+ },
+ "20": {
+  "tp": "같은 거리의 현",
+  "key": "OM=ON → AB=AC, 60° → 정삼각형",
+  "sol": [
+   "(가) $\\overline{\\mathrm{AB}}=\\overline{\\mathrm{AC}}$ (나) 정삼각형",
+   "$\\triangle\\mathrm{AOM}$에서 $\\angle\\mathrm{OAM}=30^\\circ$ → $\\overline{\\mathrm{AM}}=6$, 한 변 $12$",
+   "(다) $\\dfrac{\\sqrt3}{4}\\times144=36\\sqrt3$"
+  ],
+  "check": "원본은 (가)~(다)를 표로만 제시해 과정 문장을 짧게 보충함"
+ },
+ "21": {
+  "tp": "외접사각형의 성질",
+  "key": "대변의 길이의 합이 같다",
+  "sol": [
+   "$\\overline{\\mathrm{AD}}+\\overline{\\mathrm{BC}}=\\overline{\\mathrm{AB}}+\\overline{\\mathrm{CD}}$",
+   "$5+8=(2+y)+x$ → $x+y=11$"
+  ],
+  "check": "ok"
+ },
+ "22": {
+  "tp": "내접원의 반지름",
+  "key": "BD = BE = r",
+  "sol": [
+   "$(6+r)^2+(9+r)^2=15^2$ → $r=3$",
+   "$\\overline{\\mathrm{AB}}=9$, $\\overline{\\mathrm{BC}}=12$",
+   "넓이 $=\\dfrac12\\times9\\times12=54$"
+  ],
+  "check": "ok"
+ },
+ "23": {
+  "tp": "내접원의 접선의 길이",
+  "key": "BP = (AB+BD−AD)/2",
+  "sol": [
+   "$\\overline{\\mathrm{BD}}=13$",
+   "$\\overline{\\mathrm{BP}}=\\dfrac{5+13-12}{2}=3$, 같은 방법으로 $\\overline{\\mathrm{DQ}}=3$",
+   "$\\overline{\\mathrm{PQ}}=13-6=7$"
+  ],
+  "check": "ok"
+ },
+ "24": {
+  "tp": "이등변삼각형의 외접원",
+  "key": "반지름 5, A는 BC의 수직이등분선 위",
+  "sol": [
+   "$r=\\sqrt{3^2+4^2}=5$",
+   "$\\overline{\\mathrm{AB}}=\\overline{\\mathrm{AC}}$ → A는 직선 OH 위, A에서 BC까지 거리 $5+4=9$",
+   "$\\overline{\\mathrm{AB}}=\\sqrt{9^2+3^2}=3\\sqrt{10}$, $\\overline{\\mathrm{AM}}=\\dfrac{3\\sqrt{10}}2$",
+   "$\\overline{\\mathrm{OM}}=\\sqrt{25-\\dfrac{90}{4}}=\\dfrac{\\sqrt{10}}{2}$"
+  ],
+  "check": "ok"
+ }
+}

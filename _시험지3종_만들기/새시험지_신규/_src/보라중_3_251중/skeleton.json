@@ -1,0 +1,440 @@
+{
+"meta": {
+"year": 2025,
+"school": "보라중",
+"grade": "중3",
+"subject": "수학",
+"title": "2025 보라중 3학년 1학기 중간",
+"term": "1학기 중간",
+"range": "제곱근과 실수 ~ 인수분해",
+"has_key": true,
+"note": "편집가능 PDF의 그림이 검게 손상되어 그림·제곱근표는 같은 시험의 원본 HWP([중][2025][3-1-a][경기용인시][보라중]…hwp)에서 가져옴. 정답은 원본 HWP 정답과 대조.",
+"src": "2025 보라중 중3 1학기 중간 (시험지·편집가능).pdf"
+},
+"Q": [
+{
+"n": 1,
+"pt": "3",
+"type": "객",
+"ans": "①",
+"unit": "제곱근과 실수",
+"sub": "실수의 성질",
+"lv": 1,
+"q": "&lt;보기&gt;에서 옳은 것만을 있는 대로 고른 것은?<div style=\"border:1px solid #888;padding:4px 8px;margin:4px 0\">ㄱ. 유리수와 무리수를 통틀어 실수라고 한다.<br>ㄴ. 음이 아닌 $a$의 제곱근은 항상 2개 존재한다.<br>ㄷ. $\\sqrt{2}$와 $\\sqrt{3}$ 사이에는 무수히 많은 무리수가 있다.<br>ㄹ. 무한소수로 나타내어지는 수는 모두 무리수이다.</div>",
+"ch": [
+"ㄱ, ㄷ",
+"ㄷ, ㄹ",
+"ㄱ, ㄴ, ㄷ",
+"ㄴ, ㄷ, ㄹ",
+"ㄱ, ㄷ, ㄹ"
+]
+},
+{
+"n": 2,
+"pt": "3",
+"type": "객",
+"ans": "③",
+"unit": "제곱근과 실수",
+"sub": "제곱근의 뜻",
+"lv": 1,
+"q": "$\\sqrt{81}$의 음의 제곱근을 $a$, $\\frac{49}{9}$의 양의 제곱근을 $b$라고 할 때, $ab$의 값은?",
+"ch": [
+"$-21$",
+"$-14$",
+"$-7$",
+"$7$",
+"$14$"
+]
+},
+{
+"n": 3,
+"pt": "3",
+"type": "객",
+"ans": "②",
+"unit": "근호를 포함한 식의 계산",
+"sub": "근호를 포함한 식의 덧셈과 뺄셈",
+"lv": 1,
+"q": "$6\\sqrt{3}-\\sqrt{125}-\\frac{6}{\\sqrt{3}}+\\sqrt{20}$을 계산하여 $a\\sqrt{3}+b\\sqrt{5}$ 꼴로 나타낼 때, $a+b$의 값은? (단, $a$, $b$는 유리수)",
+"ch": [
+"$0$",
+"$1$",
+"$2$",
+"$3$",
+"$4$"
+]
+},
+{
+"n": 4,
+"pt": "4",
+"type": "객",
+"ans": "⑤",
+"unit": "제곱근과 실수",
+"sub": "근호 안이 제곱수가 될 조건",
+"lv": 1,
+"q": "$\\sqrt{24-n}$이 정수가 되도록 하는 자연수 $n$의 값 중에서 가장 작은 값을 $a$, 가장 큰 값을 $b$라 할 때, $b-a$의 값은?",
+"ch": [
+"$12$",
+"$13$",
+"$14$",
+"$15$",
+"$16$"
+]
+},
+{
+"n": 5,
+"pt": "4",
+"type": "객",
+"ans": "④",
+"unit": "제곱근과 실수",
+"sub": "실수의 대소 관계",
+"lv": 1,
+"q": "세 수 $a$, $b$, $c$의 대소 관계로 옳은 것은?<br>$a=\\sqrt{3}+\\sqrt{7}$, $b=\\sqrt{7}+1$, $c=3+\\sqrt{3}$",
+"ch": [
+"$a\\gt b\\gt c$",
+"$b\\gt a\\gt c$",
+"$b\\gt c\\gt a$",
+"$c\\gt a\\gt b$",
+"$c\\gt b\\gt a$"
+]
+},
+{
+"n": 6,
+"pt": "4",
+"type": "객",
+"ans": "①",
+"unit": "제곱근과 실수",
+"sub": "근호 벗기기(부호 판단)",
+"lv": 1,
+"q": "두 실수 $a$, $b$에 대하여 $a-b\\lt 0$이고 $ab\\lt 0$일 때, $\\sqrt{4a^2}-\\sqrt{(-a)^2}+\\sqrt{b^2}$을 간단히 한 것은?",
+"ch": [
+"$-a+b$",
+"$a+2b$",
+"$3a-b$",
+"$3a$",
+"$3a+b$"
+]
+},
+{
+"n": 7,
+"pt": "4",
+"type": "객",
+"ans": "⑤",
+"unit": "근호를 포함한 식의 계산",
+"sub": "제곱근의 곱셈과 나눗셈",
+"lv": 1,
+"q": "식의 계산 결과가 옳은 것은?",
+"ch": [
+"$2\\sqrt{6}\\times6\\sqrt{2}\\div3=12$",
+"$\\sqrt{28}\\div\\frac{\\sqrt{7}}{\\sqrt{3}}\\times\\frac{\\sqrt{5}}{2}=2\\sqrt{15}$",
+"$\\sqrt{32}+2\\sqrt{18}-\\sqrt{72}=2\\sqrt{2}$",
+"$\\left(\\sqrt{75}+\\frac{1}{\\sqrt{12}}\\right)\\div\\sqrt{3}=\\frac{11}{6}$",
+"$\\sqrt{24}\\times\\sqrt{2}-9\\sqrt{6}\\div3\\sqrt{2}=\\sqrt{3}$"
+]
+},
+{
+"n": 8,
+"pt": "4",
+"type": "객",
+"ans": "④",
+"unit": "제곱근과 실수",
+"sub": "제곱근의 성질",
+"lv": 1,
+"q": "$\\sqrt{30-b}=2\\sqrt{5}$, $2\\sqrt{25+a}=6\\sqrt{5}$를 만족시키는 두 수 $a$, $b$에 대하여 $a-b$의 값은? (단, $a$, $b$는 유리수)",
+"ch": [
+"$4$",
+"$6$",
+"$8$",
+"$10$",
+"$12$"
+]
+},
+{
+"n": 9,
+"pt": "5",
+"type": "객",
+"ans": "③",
+"unit": "제곱근과 실수",
+"sub": "무리수를 수직선 위에 나타내기",
+"lv": 1,
+"q": "그림은 한 칸의 가로와 세로의 길이가 각각 1인 모눈종이 위에 수직선과 정사각형 ABCD를 그린 것이다. $\\overline{\\text{AB}}=\\overline{\\text{AQ}}$, $\\overline{\\text{AD}}=\\overline{\\text{AP}}$이고, 두 점 P, Q에 대응하는 두 수를 각각 $p$, $q$라 할 때, $q-p$의 값은? (단, $p$, $q$는 실수)",
+"ch": [
+"$0$",
+"$2$",
+"$2\\sqrt{5}$",
+"$3+\\sqrt{5}$",
+"$4+\\sqrt{5}$"
+],
+"imgs": [
+"q9"
+],
+"imgW": 50
+},
+{
+"n": 10,
+"pt": "5",
+"type": "객",
+"ans": "③",
+"unit": "근호를 포함한 식의 계산",
+"sub": "근호를 포함한 식의 활용(겉넓이)",
+"lv": 2,
+"q": "그림은 가로의 길이, 세로의 길이, 높이가 각각 $\\sqrt{40}$, $\\sqrt{20}$, $\\sqrt{10}$인 직육면체 모양의 상자이다. 이 상자의 겉넓이를 $a+b\\sqrt{2}$로 나타낼 때, $a+b$의 값은? (단, $a$, $b$는 유리수)",
+"ch": [
+"$70$",
+"$80$",
+"$100$",
+"$110$",
+"$120$"
+],
+"imgs": [
+"q10"
+],
+"imgW": 45
+},
+{
+"n": 11,
+"pt": "5",
+"type": "객",
+"ans": "④",
+"unit": "제곱근과 실수",
+"sub": "제곱근표",
+"lv": 2,
+"q": "주어진 제곱근표를 이용하여 그 값을 구할 수 <b>없는</b> 것은?<table style=\"border-collapse:collapse;margin:4px 0;font-size:90%\"><tr><td style=\"border:1px solid #888;padding:1px 5px;text-align:center\">수</td><td style=\"border:1px solid #888;padding:1px 5px;text-align:center\">0</td><td style=\"border:1px solid #888;padding:1px 5px;text-align:center\">1</td><td style=\"border:1px solid #888;padding:1px 5px;text-align:center\">2</td><td style=\"border:1px solid #888;padding:1px 5px;text-align:center\">3</td><td style=\"border:1px solid #888;padding:1px 5px;text-align:center\">4</td><td style=\"border:1px solid #888;padding:1px 5px;text-align:center\">5</td></tr><tr><td style=\"border:1px solid #888;padding:1px 5px;text-align:center\">3.0</td><td style=\"border:1px solid #888;padding:1px 5px;text-align:center\">1.732</td><td style=\"border:1px solid #888;padding:1px 5px;text-align:center\">1.735</td><td style=\"border:1px solid #888;padding:1px 5px;text-align:center\">1.738</td><td style=\"border:1px solid #888;padding:1px 5px;text-align:center\">1.741</td><td style=\"border:1px solid #888;padding:1px 5px;text-align:center\">1.744</td><td style=\"border:1px solid #888;padding:1px 5px;text-align:center\">1.746</td></tr><tr><td style=\"border:1px solid #888;padding:1px 5px;text-align:center\">3.1</td><td style=\"border:1px solid #888;padding:1px 5px;text-align:center\">1.761</td><td style=\"border:1px solid #888;padding:1px 5px;text-align:center\">1.764</td><td style=\"border:1px solid #888;padding:1px 5px;text-align:center\">1.766</td><td style=\"border:1px solid #888;padding:1px 5px;text-align:center\">1.769</td><td style=\"border:1px solid #888;padding:1px 5px;text-align:center\">1.772</td><td style=\"border:1px solid #888;padding:1px 5px;text-align:center\">1.775</td></tr><tr><td style=\"border:1px solid #888;padding:1px 5px;text-align:center\">3.2</td><td style=\"border:1px solid #888;padding:1px 5px;text-align:center\">1.789</td><td style=\"border:1px solid #888;padding:1px 5px;text-align:center\">1.792</td><td style=\"border:1px solid #888;padding:1px 5px;text-align:center\">1.794</td><td style=\"border:1px solid #888;padding:1px 5px;text-align:center\">1.797</td><td style=\"border:1px solid #888;padding:1px 5px;text-align:center\">1.800</td><td style=\"border:1px solid #888;padding:1px 5px;text-align:center\">1.803</td></tr><tr><td style=\"border:1px solid #888;padding:1px 5px;text-align:center\">3.3</td><td style=\"border:1px solid #888;padding:1px 5px;text-align:center\">1.817</td><td style=\"border:1px solid #888;padding:1px 5px;text-align:center\">1.819</td><td style=\"border:1px solid #888;padding:1px 5px;text-align:center\">1.822</td><td style=\"border:1px solid #888;padding:1px 5px;text-align:center\">1.825</td><td style=\"border:1px solid #888;padding:1px 5px;text-align:center\">1.828</td><td style=\"border:1px solid #888;padding:1px 5px;text-align:center\">1.830</td></tr><tr><td style=\"border:1px solid #888;padding:1px 5px;text-align:center\">3.4</td><td style=\"border:1px solid #888;padding:1px 5px;text-align:center\">1.844</td><td style=\"border:1px solid #888;padding:1px 5px;text-align:center\">1.847</td><td style=\"border:1px solid #888;padding:1px 5px;text-align:center\">1.849</td><td style=\"border:1px solid #888;padding:1px 5px;text-align:center\">1.852</td><td style=\"border:1px solid #888;padding:1px 5px;text-align:center\">1.855</td><td style=\"border:1px solid #888;padding:1px 5px;text-align:center\">1.857</td></tr></table>",
+"ch": [
+"$\\sqrt{0.0003}$",
+"$\\sqrt{0.032}$",
+"$\\sqrt{342}$",
+"$\\sqrt{3150}$",
+"$\\sqrt{34400}$"
+]
+},
+{
+"n": 12,
+"pt": "5",
+"type": "객",
+"ans": "④",
+"unit": "제곱근과 실수",
+"sub": "근호 안이 제곱수가 될 조건",
+"lv": 1,
+"q": "$\\sqrt{108a}=b\\sqrt{3}$을 만족시키는 두 자리의 자연수 $a$, $b$에 대하여 $a+b$의 값 중 가장 작은 값은?",
+"ch": [
+"$28$",
+"$32$",
+"$36$",
+"$40$",
+"$46$"
+]
+},
+{
+"n": 13,
+"pt": "5",
+"type": "객",
+"ans": "③",
+"unit": "제곱근과 실수",
+"sub": "제곱근의 대소와 자연수의 개수",
+"lv": 1,
+"q": "$a\\lt\\sqrt{\\frac{x}{2}}\\lt a+1$을 만족시키는 자연수 $x$의 개수가 13개일 때, 자연수 $a$의 값은?",
+"ch": [
+"$1$",
+"$2$",
+"$3$",
+"$4$",
+"$5$"
+]
+},
+{
+"n": 14,
+"pt": "5",
+"type": "객",
+"ans": "⑤",
+"unit": "근호를 포함한 식의 계산",
+"sub": "근호를 포함한 식의 활용(넓이)",
+"lv": 1,
+"q": "그림은 정사각형 모양의 색종이 A, B, C, D를 이어 붙인 것이다. A, B, C, D의 한 변의 길이의 비가 $1:4:3:2$이고 색종이로 이루어진 도형의 둘레의 길이가 $28\\sqrt{3}$일 때, 색종이로 이루어진 도형의 넓이는?",
+"ch": [
+"$50$",
+"$60$",
+"$70$",
+"$80$",
+"$90$"
+],
+"imgs": [
+"q14"
+],
+"imgW": 50
+},
+{
+"n": 15,
+"pt": "3",
+"type": "객",
+"ans": "③",
+"unit": "다항식의 곱셈",
+"sub": "다항식의 전개",
+"lv": 1,
+"q": "식을 전개했을 때 $xy$의 계수가 5인 것만을 &lt;보기&gt;에서 있는 대로 고른 것은?<div style=\"border:1px solid #888;padding:4px 8px;margin:4px 0\">ㄱ. $(x+5y)^2$<br>ㄴ. $(5x-1)(y+5)$<br>ㄷ. $(x-3)(2y+8)$<br>ㄹ. $(x-1)(5y+3)$</div>",
+"ch": [
+"ㄱ, ㄴ",
+"ㄴ, ㄷ",
+"ㄴ, ㄹ",
+"ㄱ, ㄴ, ㄷ",
+"ㄱ, ㄷ, ㄹ"
+]
+},
+{
+"n": 16,
+"pt": "4",
+"type": "객",
+"ans": "②",
+"unit": "다항식의 곱셈",
+"sub": "곱셈 공식을 이용한 분모의 유리화",
+"lv": 1,
+"q": "$\\frac{\\sqrt{2}}{\\sqrt{3}+\\sqrt{5}}$의 분모를 유리화하면 $a\\sqrt{10}+b\\sqrt{6}$이다. $a+b$의 값은? (단, $a$, $b$는 유리수)",
+"ch": [
+"$-\\frac{1}{2}$",
+"$0$",
+"$\\frac{1}{2}$",
+"$1$",
+"$\\frac{3}{2}$"
+]
+},
+{
+"n": 17,
+"pt": "4",
+"type": "객",
+"ans": "④",
+"unit": "인수분해",
+"sub": "완전제곱식이 될 조건",
+"lv": 1,
+"q": "$(2x+1)(2x-3)+k$가 완전제곱식이 되도록 하는 상수 $k$의 값은?",
+"ch": [
+"$-2$",
+"$0$",
+"$2$",
+"$4$",
+"$6$"
+]
+},
+{
+"n": 18,
+"pt": "4",
+"type": "객",
+"ans": "②",
+"unit": "다항식의 곱셈",
+"sub": "곱셈 공식",
+"lv": 2,
+"q": "$(x+a)(x+3)$의 전개식에서 $x$의 계수가 상수항의 $\\frac{1}{4}$배일 때, 상수 $a$의 값은?",
+"ch": [
+"$-15$",
+"$-12$",
+"$-9$",
+"$-6$",
+"$-3$"
+]
+},
+{
+"n": 19,
+"pt": "5",
+"type": "객",
+"ans": "⑤",
+"unit": "인수분해",
+"sub": "인수분해의 활용(도형)",
+"lv": 2,
+"q": "그림은 두 개의 원 모양으로 만들어진 도형이다. 두 원의 중심은 $\\overline{\\text{AB}}$ 위에 있고 $\\overline{\\text{AC}}$와 $\\overline{\\text{BD}}$의 길이의 합은 $1.8$이다. 색칠한 부분의 둘레의 길이가 $20\\pi$일 때, 색칠한 부분의 넓이는?",
+"ch": [
+"$5\\pi$",
+"$6\\pi$",
+"$7\\pi$",
+"$8\\pi$",
+"$9\\pi$"
+],
+"imgs": [
+"q19"
+],
+"imgW": 30
+},
+{
+"n": 20,
+"pt": "3",
+"type": "객",
+"ans": "④",
+"unit": "인수분해",
+"sub": "공통인수로 묶기",
+"lv": 1,
+"q": "$2a^2b-8ab^2$의 인수가 <b>아닌</b> 것은?",
+"ch": [
+"$2$",
+"$a$",
+"$ab$",
+"$a^2b$",
+"$a-4b$"
+]
+},
+{
+"n": 21,
+"pt": "5",
+"type": "객",
+"ans": "②",
+"unit": "인수분해",
+"sub": "근호 안의 완전제곱식",
+"lv": 1,
+"q": "$0\\lt x\\lt 2$일 때, $\\sqrt{x^2-4x+4}+\\sqrt{x^2+4x+4}-\\sqrt{x^2}$을 간단히 한 식은?",
+"ch": [
+"$4+x$",
+"$4-x$",
+"$2-x$",
+"$2-2x$",
+"$4-2x$"
+]
+},
+{
+"n": 22,
+"pt": "4",
+"type": "객",
+"ans": "①",
+"unit": "인수분해",
+"sub": "계수를 잘못 보고 인수분해한 경우",
+"lv": 1,
+"q": "학생 A가 어떤 이차식의 $x^2$의 계수를 잘못 보고 인수분해 하였더니 $(2x+3)(x-3)$으로 인수분해 되었고, 학생 B가 그 이차식의 $x$항의 계수를 잘못 보고 인수분해 하였더니 $(3x-1)(x+9)$가 되었다. 처음 이차식을 $\\text{A}x^2+\\text{B}x+\\text{C}$라 할 때, $\\text{A}+\\text{B}+\\text{C}$의 값은?",
+"ch": [
+"$-9$",
+"$-3$",
+"$0$",
+"$3$",
+"$9$"
+]
+},
+{
+"n": 23,
+"pt": "4",
+"type": "객",
+"ans": "③",
+"unit": "인수분해",
+"sub": "인수분해 공식을 이용한 수의 계산",
+"lv": 1,
+"q": "$\\frac{120\\times15^2-240\\times15+120}{32^2-28^2}$의 값은?",
+"ch": [
+"$48$",
+"$69$",
+"$98$",
+"$128$",
+"$151$"
+]
+},
+{
+"n": 24,
+"pt": "5",
+"type": "객",
+"ans": "④",
+"unit": "인수분해",
+"sub": "계수가 소수인 이차식의 인수분해",
+"lv": 3,
+"q": "소수 $p$에 대하여 $px^2+26x+15$가 $x$의 계수와 상수항이 모두 자연수인 두 일차식의 곱으로 인수분해된다. 이를 만족하는 모든 $p$의 값의 합은?",
+"ch": [
+"$7$",
+"$11$",
+"$13$",
+"$18$",
+"$23$"
+]
+}
+]
+}

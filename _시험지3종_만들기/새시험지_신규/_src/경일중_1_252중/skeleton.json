@@ -1,0 +1,391 @@
+{
+ "meta": {
+  "year": 2025,
+  "school": "경일중",
+  "grade": "중1",
+  "subject": "수학",
+  "title": "2025 경일중 1학년 2학기 중간",
+  "term": "2학기 중간",
+  "range": "좌표평면과 그래프 ~ 기본 도형 ~ 작도와 합동",
+  "has_key": true,
+  "note": "14번 그림은 원본 파일에서 깨져 조건대로 다시 그림. 17번 두 학생의 발언과 18번 '아래의 조건'이 원본 파일에서 빠져 있어 정답에 맞게 복원함(확인 필요).",
+  "src": "2025 경일중 중1 2학기 중간 (시험지·편집가능).pdf"
+ },
+ "Q": [
+  {
+   "n": 1,
+   "pt": "3",
+   "type": "객",
+   "ans": "②",
+   "unit": "좌표평면과 그래프",
+   "sub": "상황에 맞는 그래프 찾기",
+   "lv": 1,
+   "q": "다음 그래프에 대한 설명으로 가장 적절한 것은?",
+   "ch": [
+    "분당 맥박 수가 $90$회인 사람의 $x$분 동안의 맥박 수 $y$회",
+    "대관람차 어느 한 칸에서 $x$분 후 지면으로부터의 높이 $y\\,\\mathrm{m}$",
+    "시속 $70\\,\\mathrm{km}$로 달리는 자동차가 $x$시간 동안 달리는 거리 $y\\,\\mathrm{km}$",
+    "음료수 $1\\,\\mathrm{L}$를 $x$명이 똑같이 나누어 마실 때, $1$명이 마시는 음료수의 양 $y\\,\\mathrm{L}$",
+    "넓이가 $100\\,\\mathrm{cm}^2$인 직사각형의 가로의 길이를 $x\\,\\mathrm{cm}$라고 할 때, 세로의 길이 $y\\,\\mathrm{cm}$"
+   ],
+   "imgs": [
+    "q1"
+   ],
+   "imgW": 50
+  },
+  {
+   "n": 2,
+   "pt": "3",
+   "type": "객",
+   "ans": "①",
+   "unit": "기본 도형",
+   "sub": "평각",
+   "lv": 1,
+   "q": "그림에서 $\\angle\\mathrm{AOB}$가 평각일 때, $x$의 값을 구하면?",
+   "ch": [
+    "$18$",
+    "$19$",
+    "$20$",
+    "$21$",
+    "$22$"
+   ],
+   "imgs": [
+    "q2"
+   ],
+   "imgW": 45
+  },
+  {
+   "n": 3,
+   "pt": "3",
+   "type": "객",
+   "ans": "④",
+   "unit": "작도와 합동",
+   "sub": "삼각형의 대변과 대각",
+   "lv": 1,
+   "q": "그림과 같은 $\\triangle\\mathrm{ABC}$에 대한 설명으로 옳지 않은 것은?",
+   "ch": [
+    "$a\\lt b+c$",
+    "$\\angle\\mathrm{C}$의 대변은 $\\overline{\\mathrm{AB}}$이다.",
+    "$\\overline{\\mathrm{BC}}$의 대각은 $\\angle\\mathrm{A}$이다.",
+    "$a$는 $\\angle\\mathrm{B}$의 대변의 길이를 나타낸다.",
+    "$a$, $b$, $c$와 길이가 같은 삼각형을 작도하면 삼각형의 모양과 크기는 하나로 정해진다."
+   ],
+   "imgs": [
+    "q3"
+   ],
+   "imgW": 40
+  },
+  {
+   "n": 4,
+   "pt": "4",
+   "type": "객",
+   "ans": "⑤",
+   "unit": "좌표평면과 그래프",
+   "sub": "사분면",
+   "lv": 2,
+   "q": "좌표평면 위의 점에 대한 설명으로 옳은 것만을 &lt;보기&gt;에서 있는 대로 고른 것은?<div style=\"border:1px solid #888;padding:4px 8px;margin:4px 0\">ㄱ. 점 $(-7,\\,0)$은 $y$축 위의 점이다.<br>ㄴ. 점 $(2,\\,-3)$은 제$4$사분면 위의 점이다.<br>ㄷ. 점 $(a,\\,b)$가 제$2$사분면 위의 점이면, 점 $(b,\\,a)$는 제$4$사분면 위의 점이다.</div>",
+   "ch": [
+    "ㄱ",
+    "ㄴ",
+    "ㄱ, ㄴ",
+    "ㄱ, ㄷ",
+    "ㄴ, ㄷ"
+   ]
+  },
+  {
+   "n": 5,
+   "pt": "4",
+   "type": "객",
+   "ans": "①",
+   "unit": "좌표평면과 그래프",
+   "sub": "반비례",
+   "lv": 2,
+   "q": "두 변수 $x$, $y$의 관계를 나타낸 표에서 시속 $y\\,\\mathrm{km}$로 달리는 자동차가 $90\\,\\mathrm{km}$의 거리를 가는 데 걸리는 시간을 $x$시간이라 할 때, $a+b+c+d$의 값은?<table border=1 style=\\\"border-collapse:collapse;text-align:center;margin:4px 0\\\"><tr><td>&nbsp;$x$&nbsp;</td><td>&nbsp;$1$&nbsp;</td><td>&nbsp;$2$&nbsp;</td><td>&nbsp;$3$&nbsp;</td><td>&nbsp;$6$&nbsp;</td></tr><tr><td>$y$</td><td>$a$</td><td>$b$</td><td>$c$</td><td>$d$</td></tr></table>",
+   "ch": [
+    "$180$",
+    "$360$",
+    "$540$",
+    "$720$",
+    "$1080$"
+   ]
+  },
+  {
+   "n": 6,
+   "pt": "4",
+   "type": "객",
+   "ans": "①",
+   "unit": "좌표평면과 그래프",
+   "sub": "정비례와 반비례의 그래프",
+   "lv": 2,
+   "q": "두 식 $y=\\dfrac18x$, $y=\\dfrac2x$의 그래프의 공통점에 대한 설명으로 옳은 것만을 &lt;보기&gt;에서 있는 대로 고른 것은?<div style=\"border:1px solid #888;padding:4px 8px;margin:4px 0\">ㄱ. $\\left(4,\\,\\dfrac12\\right)$을 지난다.<br>ㄴ. 제$1$사분면과 제$3$사분면을 지난다.<br>ㄷ. $x$의 값이 $2$배가 되면 $y$의 값도 $2$배가 된다.<br>ㄹ. 원점을 지나는 한 쌍의 매끄러운 곡선이다.</div>",
+   "ch": [
+    "ㄱ, ㄴ",
+    "ㄴ, ㄷ",
+    "ㄷ, ㄹ",
+    "ㄱ, ㄴ, ㄹ",
+    "ㄱ, ㄷ, ㄹ"
+   ]
+  },
+  {
+   "n": 7,
+   "pt": "4",
+   "type": "객",
+   "ans": "⑤",
+   "unit": "기본 도형",
+   "sub": "입체도형에서의 위치 관계",
+   "lv": 2,
+   "q": "그림은 밑면이 정오각형인 오각기둥이다. 이에 대한 설명으로 옳은 것은?",
+   "ch": [
+    "꼭짓점 $\\mathrm{A}$는 모서리 $\\mathrm{FJ}$ 위에 있다.",
+    "모서리 $\\mathrm{AE}$는 면 $\\mathrm{ABGF}$와 직교한다.",
+    "모서리 $\\mathrm{AB}$는 면 $\\mathrm{BCHG}$에 포함된다.",
+    "모서리 $\\mathrm{AB}$와 모서리 $\\mathrm{DE}$는 꼬인 위치에 있다.",
+    "모서리 $\\mathrm{CD}$와 꼬인 위치에 있는 모서리는 $7$개다."
+   ],
+   "imgs": [
+    "q7"
+   ],
+   "imgW": 35
+  },
+  {
+   "n": 8,
+   "pt": "4",
+   "type": "객",
+   "ans": "④",
+   "unit": "기본 도형",
+   "sub": "공간에서 두 직선의 위치 관계",
+   "lv": 2,
+   "q": "평면 $P$ 위에 평행한 두 직선 $l$, $m$이 있다. 또 다른 직선 $n$에 대해 $n\\perp P$이고 직선 $l$과 $n$은 한 점에서 만날 때, 직선 $m$과 $n$의 위치 관계는?",
+   "ch": [
+    "평행하다.",
+    "직교한다.",
+    "일치한다.",
+    "꼬인 위치에 있다.",
+    "한 점에서 만난다."
+   ]
+  },
+  {
+   "n": 9,
+   "pt": "4",
+   "type": "객",
+   "ans": "③",
+   "unit": "기본 도형",
+   "sub": "평행선과 꺾인 선의 각",
+   "lv": 2,
+   "q": "그림에서 $l\\parallel m$일 때, $\\angle a$의 크기는?",
+   "ch": [
+    "$60^\\circ$",
+    "$65^\\circ$",
+    "$70^\\circ$",
+    "$75^\\circ$",
+    "$80^\\circ$"
+   ],
+   "imgs": [
+    "q9"
+   ],
+   "imgW": 50
+  },
+  {
+   "n": 10,
+   "pt": "4",
+   "type": "객",
+   "ans": "②",
+   "unit": "작도와 합동",
+   "sub": "합동인 삼각형의 성질",
+   "lv": 1,
+   "q": "그림에서 $\\triangle\\mathrm{ABC}\\equiv\\triangle\\mathrm{DEF}$일 때, $\\overline{\\mathrm{DF}}$의 길이와 $\\angle\\mathrm{C}$의 크기로 옳은 것은? (순서대로 $\\overline{\\mathrm{DF}}$의 길이, $\\angle\\mathrm{C}$의 크기)",
+   "ch": [
+    "$5\\,\\mathrm{cm}$, $40^\\circ$",
+    "$5\\,\\mathrm{cm}$, $65^\\circ$",
+    "$5\\,\\mathrm{cm}$, $75^\\circ$",
+    "$7\\,\\mathrm{cm}$, $65^\\circ$",
+    "$7\\,\\mathrm{cm}$, $75^\\circ$"
+   ],
+   "imgs": [
+    "q10"
+   ],
+   "imgW": 55
+  },
+  {
+   "n": 11,
+   "pt": "4",
+   "type": "객",
+   "ans": "③",
+   "unit": "작도와 합동",
+   "sub": "삼각형의 합동 조건",
+   "lv": 2,
+   "q": "그림과 같이 $\\overline{\\mathrm{AD}}\\parallel\\overline{\\mathrm{BC}}$인 사다리꼴 $\\mathrm{ABCD}$에서 $\\overline{\\mathrm{AB}}=\\overline{\\mathrm{DC}}$, $\\angle\\mathrm{ABC}=\\angle\\mathrm{DCB}$일 때, 옳지 않은 것은?",
+   "ch": [
+    "$\\angle\\mathrm{ACB}=\\angle\\mathrm{DAC}$",
+    "$\\angle\\mathrm{AOB}=\\angle\\mathrm{DOC}$",
+    "$\\angle\\mathrm{ADB}=\\angle\\mathrm{DCA}$",
+    "$\\triangle\\mathrm{ABC}\\equiv\\triangle\\mathrm{DCB}$",
+    "$\\triangle\\mathrm{OAB}\\equiv\\triangle\\mathrm{ODC}$"
+   ],
+   "imgs": [
+    "q11"
+   ],
+   "imgW": 45
+  },
+  {
+   "n": 12,
+   "pt": "4",
+   "type": "객",
+   "ans": "⑤",
+   "unit": "작도와 합동",
+   "sub": "정사각형과 삼각형의 넓이",
+   "lv": 3,
+   "q": "그림에서 사각형 $\\mathrm{ABCD}$와 사각형 $\\mathrm{AGEF}$는 한 변의 길이가 각각 $12\\,\\mathrm{cm}$, $14\\,\\mathrm{cm}$인 정사각형이다. 점 $\\mathrm{G}$가 변 $\\mathrm{CD}$ 위의 점일 때 $\\triangle\\mathrm{ADF}$의 넓이는?",
+   "ch": [
+    "$36\\,\\mathrm{cm}^2$",
+    "$42\\,\\mathrm{cm}^2$",
+    "$49\\,\\mathrm{cm}^2$",
+    "$63\\,\\mathrm{cm}^2$",
+    "$72\\,\\mathrm{cm}^2$"
+   ],
+   "imgs": [
+    "q12"
+   ],
+   "imgW": 40
+  },
+  {
+   "n": 13,
+   "pt": "5",
+   "type": "객",
+   "ans": "②",
+   "unit": "기본 도형",
+   "sub": "동위각과 엇각",
+   "lv": 2,
+   "q": "그림에서 $\\angle a$의 동위각의 크기의 합을 $x^\\circ$, $\\angle b$의 엇각의 크기의 합을 $y^\\circ$라 하자. $x$, $y$를 바르게 구한 것은?",
+   "ch": [
+    "$x=140$, $y=210$",
+    "$x=140$, $y=220$",
+    "$x=150$, $y=150$",
+    "$x=150$, $y=220$",
+    "$x=210$, $y=150$"
+   ],
+   "imgs": [
+    "q13"
+   ],
+   "imgW": 50
+  },
+  {
+   "n": 14,
+   "pt": "5",
+   "type": "객",
+   "ans": "④",
+   "unit": "좌표평면과 그래프",
+   "sub": "정비례 그래프와 도형의 넓이",
+   "lv": 3,
+   "q": "그림과 같이 두 식 $y=2x$, $y=ax\\,(0\\lt a\\lt2)$의 그래프가 $x$좌표가 $2$인 점 A, B를 각각 지나고, 식 $y=ax\\,(0\\lt a\\lt2)$의 그래프 위의 점 C는 점 A와 $y$좌표가 같다. 삼각형 AOB의 넓이가 $\\dfrac{14}{5}$일 때, 삼각형 AOC의 넓이는?",
+   "ch": [
+    "$\\dfrac{10}{3}$",
+    "$\\dfrac{14}{3}$",
+    "$\\dfrac{20}{3}$",
+    "$\\dfrac{28}{3}$",
+    "$\\dfrac{40}{3}$"
+   ],
+   "imgs": [
+    "q14"
+   ],
+   "imgW": 45
+  },
+  {
+   "n": 15,
+   "pt": "5",
+   "type": "객",
+   "ans": "③",
+   "unit": "작도와 합동",
+   "sub": "삼각형의 세 변의 길이 사이의 관계",
+   "lv": 3,
+   "q": "표는 가지고 있는 빨대의 길이와 개수를 나타낸 것이다. 세 개의 빨대를 이용하여 삼각형을 만들 때, 만들 수 있는 서로 다른 삼각형의 개수는?<table border=1 style=\\\"border-collapse:collapse;text-align:center;margin:4px 0\\\"><tr><td>&nbsp;빨대의 길이(cm)&nbsp;</td><td>&nbsp;$3$&nbsp;</td><td>&nbsp;$5$&nbsp;</td><td>&nbsp;$9$&nbsp;</td><td>&nbsp;$11$&nbsp;</td></tr><tr><td>개수</td><td>$3$</td><td>$2$</td><td>$1$</td><td>$1$</td></tr></table>",
+   "ch": [
+    "$4$개",
+    "$5$개",
+    "$6$개",
+    "$7$개",
+    "$8$개"
+   ]
+  },
+  {
+   "n": 16,
+   "pt": "6",
+   "type": "서",
+   "ans": "$l\\parallel m$",
+   "unit": "기본 도형",
+   "sub": "평행선이 되기 위한 조건",
+   "lv": 2,
+   "q": "<b>[서술형 1]</b> 그림에서 $l\\parallel m$인지 판단하고 그 이유를 설명하시오.",
+   "imgs": [
+    "q16"
+   ],
+   "imgW": 50
+  },
+  {
+   "n": 17,
+   "pt": "6",
+   "type": "서",
+   "ans": "철수 ○, 영희 ×",
+   "unit": "작도와 합동",
+   "sub": "삼각형이 하나로 정해질 조건",
+   "lv": 3,
+   "q": "<b>[서술형 2]</b> 철수와 영희가 삼각형 모양의 열쇠고리를 똑같이 만들어 나누어 가지려고 한다. $\\overline{\\mathrm{AB}}=4\\,\\mathrm{cm}$, $\\angle\\mathrm{A}=30^\\circ$일 때, $\\triangle\\mathrm{ABC}$의 모양과 크기가 하나로 정해지기 위해 필요한 조건을 다음과 같이 말하였다.<br>철수: $\\overline{\\mathrm{AC}}$의 길이를 알면 돼.<br>영희: $\\overline{\\mathrm{BC}}$의 길이를 알면 돼.<br>바르게 말한 것인지, 잘못 말한 것인지 판단하고 그 이유를 설명하시오. (단, 바르게 말한 경우 ○, 잘못 말한 경우 ×로 작성할 것)"
+  },
+  {
+   "n": 18,
+   "pt": "6",
+   "type": "서",
+   "ans": "$9$",
+   "unit": "기본 도형",
+   "sub": "선분의 중점",
+   "lv": 2,
+   "q": "<b>[서술형 3]</b> 다음 그림은 아래의 조건을 만족한다. $\\overline{\\mathrm{AC}}=12$일 때, 선분 AB의 길이를 구하시오.<div style=\"border:1px solid #888;padding:4px 8px;margin:4px 0\">$\\overline{\\mathrm{AB}}=3\\overline{\\mathrm{BC}}$</div>",
+   "imgs": [
+    "q18"
+   ],
+   "imgW": 55
+  },
+  {
+   "n": 19,
+   "pt": "4",
+   "type": "서",
+   "ans": "(1) 해설 참조 (2) $42$",
+   "unit": "좌표평면과 그래프",
+   "sub": "좌표평면 위의 도형의 넓이",
+   "lv": 1,
+   "q": "<b>[서술형 4]</b> 좌표평면 위의 네 점 $\\mathrm{A}(1,\\,4)$, $\\mathrm{B}(-4,\\,-3)$, $\\mathrm{C}(5,\\,-3)$, $\\mathrm{D}(4,\\,4)$를 꼭짓점으로 하는 사각형 ABCD가 있을 때, 다음 물음에 답하시오.<br>(1) 사각형 ABCD를 좌표평면 위에 나타내시오.<br>(2) 사각형 ABCD의 넓이를 구하시오.",
+   "imgs": [
+    "q19"
+   ],
+   "imgW": 45
+  },
+  {
+   "n": 20,
+   "pt": "7",
+   "type": "서",
+   "ans": "$-10$",
+   "unit": "좌표평면과 그래프",
+   "sub": "정비례와 반비례 그래프의 교점",
+   "lv": 2,
+   "q": "<b>[서술형 5]</b> 그림과 같이 두 식 $y=\\dfrac ax$, $y=-\\dfrac43x$의 그래프가 점 $\\mathrm{A}(-3,\\,b)$에서 만나고, 두 식 $y=\\dfrac ax$, $y=-\\dfrac13x$의 그래프가 점 $\\mathrm{B}(6,\\,c)$에서 만날 때, $a+b+c$의 값을 구하시오.",
+   "imgs": [
+    "q20"
+   ],
+   "imgW": 45
+  },
+  {
+   "n": 21,
+   "pt": "5",
+   "type": "서",
+   "ans": "(1) $\\triangle\\mathrm{ABE}\\equiv\\triangle\\mathrm{CBE}$ (SAS) (2) $20^\\circ$",
+   "unit": "작도와 합동",
+   "sub": "정사각형에서의 합동",
+   "lv": 3,
+   "q": "<b>[서술형 6]</b> 그림과 같이 정사각형 ABCD의 대각선 BD 위에 점 E를 잡고 $\\overline{\\mathrm{AE}}$의 연장선과 $\\overline{\\mathrm{BC}}$의 연장선의 교점을 F라고 하자. $\\angle\\mathrm{AFC}=35^\\circ$일 때, 다음 물음에 답하시오.<br>(1) 합동인 두 삼각형을 찾아 기호로 나타내고 합동 조건을 쓰시오. (단, $\\triangle\\mathrm{ABD}$와 $\\triangle\\mathrm{CBD}$가 합동인 경우는 제외하고 답한다.)<br>(2) $\\angle\\mathrm{CEF}$의 크기를 구하시오.",
+   "imgs": [
+    "q21"
+   ],
+   "imgW": 40
+  }
+ ]
+}

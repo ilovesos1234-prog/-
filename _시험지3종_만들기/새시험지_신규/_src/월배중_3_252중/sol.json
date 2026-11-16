@@ -1,0 +1,215 @@
+{
+ "1": {
+  "tp": "삼각비의 뜻",
+  "key": "빗변 AB=17",
+  "sol": [
+   "$\\sin A=\\dfrac8{17}$, $\\cos A=\\dfrac{15}{17}$, $\\tan A=\\dfrac8{15}$",
+   "$\\sin B=\\dfrac{15}{17}$, $\\cos B=\\dfrac8{17}$",
+   "옳은 것은 ④"
+  ],
+  "check": "ok"
+ },
+ "2": {
+  "tp": "코사인으로 변의 길이",
+  "key": "BC = AC cos C",
+  "sol": [
+   "$\\overline{\\mathrm{BC}}=6\\sqrt2\\times\\dfrac{\\sqrt3}{3}=2\\sqrt6$"
+  ],
+  "check": "ok"
+ },
+ "3": {
+  "tp": "단위원과 삼각비",
+  "key": "sin = 원 위의 점의 y좌표",
+  "sol": [
+   "반지름 $1$이므로 $\\sin55^\\circ$는 원 위의 점의 $y$좌표 $=0.82$"
+  ],
+  "check": "ok"
+ },
+ "4": {
+  "tp": "현의 수직이등분선",
+  "key": "중심에서 현에 내린 수선은 현을 이등분",
+  "sol": [
+   "현의 절반이 $5.5\\,\\mathrm{cm}$ 이므로 $x=2\\times5.5=11$"
+  ],
+  "check": "ok"
+ },
+ "5": {
+  "tp": "접선의 길이",
+  "key": "PA = PB",
+  "sol": [
+   "$3x-2=10$ → $x=4$"
+  ],
+  "check": "ok"
+ },
+ "6": {
+  "tp": "외접사각형의 성질",
+  "key": "두 대변의 길이의 합이 같다",
+  "sol": [
+   "$\\overline{\\mathrm{AB}}+\\overline{\\mathrm{CD}}=\\overline{\\mathrm{AD}}+\\overline{\\mathrm{BC}}$",
+   "$(x+5)+9=7+10$ → $x=3$"
+  ],
+  "check": "ok"
+ },
+ "7": {
+  "tp": "피타고라스 정리와 삼각비",
+  "key": "BC를 먼저 구한다",
+  "sol": [
+   "$\\overline{\\mathrm{BC}}=\\sqrt{36-25}=\\sqrt{11}$",
+   "$\\sin A=\\dfrac{\\sqrt{11}}{6}$, $\\tan B=\\dfrac{5}{\\sqrt{11}}$",
+   "곱 $=\\dfrac56$"
+  ],
+  "check": "ok"
+ },
+ "8": {
+  "tp": "수선과 닮음",
+  "key": "x = ∠C, y = ∠A",
+  "sol": [
+   "$\\overline{\\mathrm{AC}}=5$",
+   "$x=\\angle\\mathrm{C}$ → $\\sin x=\\dfrac35$",
+   "$y=\\angle\\mathrm{A}$ → $\\cos y=\\dfrac35$",
+   "합 $=\\dfrac65$"
+  ],
+  "check": "ok"
+ },
+ "9": {
+  "tp": "특수각 계산",
+  "key": "특수각 값 대입",
+  "sol": [
+   "$\\dfrac{\\sqrt3}2\\cdot\\dfrac{\\sqrt3}2-\\sqrt3\\cdot\\dfrac{\\sqrt3}3\\cdot1-1=\\dfrac34-1-1=-\\dfrac54$"
+  ],
+  "check": "ok"
+ },
+ "10": {
+  "tp": "수선을 내려 특수각 활용",
+  "key": "A에서 BC에 수선 AH",
+  "sol": [
+   "A에서 BC에 수선 AH: $\\overline{\\mathrm{AH}}=\\overline{\\mathrm{BH}}=6\\sin45^\\circ=3\\sqrt2$",
+   "$\\overline{\\mathrm{CH}}=\\dfrac{3\\sqrt2}{\\tan60^\\circ}=\\sqrt6$",
+   "$\\overline{\\mathrm{BC}}=3\\sqrt2+\\sqrt6$"
+  ],
+  "check": "ok"
+ },
+ "11": {
+  "tp": "사각형을 두 삼각형으로",
+  "key": "대각선 BD로 나누어 ½ab sinθ",
+  "sol": [
+   "$\\triangle\\mathrm{BCD}=\\dfrac12\\times16\\times12\\times\\sin60^\\circ=48\\sqrt3$",
+   "$\\triangle\\mathrm{ABD}=\\dfrac12\\times8\\times4\\sqrt3\\times\\sin(180^\\circ-150^\\circ)=8\\sqrt3$",
+   "넓이 $=56\\sqrt3$"
+  ],
+  "check": "원본 파일에서 선택지 ⑤가 비어 있음"
+ },
+ "12": {
+  "tp": "접은 종이의 삼각형",
+  "key": "AB와 종이 가장자리가 이루는 각 30°, 엇각·접은 각이 같다",
+  "sol": [
+   "$\\sin(\\angle\\mathrm{ABC})=\\dfrac24$ → $\\angle\\mathrm{ABC}=30^\\circ$",
+   "엇각과 접은 각에서 $\\angle\\mathrm{BAC}=30^\\circ$ → $\\overline{\\mathrm{CA}}=\\overline{\\mathrm{CB}}$",
+   "$\\overline{\\mathrm{CA}}=\\dfrac{2}{\\cos30^\\circ}=\\dfrac{4\\sqrt3}{3}$",
+   "둘레 $=\\dfrac{8\\sqrt3}{3}+4$"
+  ],
+  "check": "ok"
+ },
+ "13": {
+  "tp": "중심에서 같은 거리의 현",
+  "key": "OP=OQ → AB=AC",
+  "sol": [
+   "$\\overline{\\mathrm{AB}}=\\overline{\\mathrm{AC}}=18$, $\\overline{\\mathrm{AP}}=9$",
+   "$\\angle y=50^\\circ$, $\\angle x=80^\\circ$",
+   "$\\angle\\mathrm{POQ}=360^\\circ-90^\\circ-90^\\circ-80^\\circ=100^\\circ$ → ⑤가 틀림"
+  ],
+  "check": "ok"
+ },
+ "14": {
+  "tp": "정삼각형의 외접원",
+  "key": "AB=AC, ∠C=60° → 정삼각형",
+  "sol": [
+   "$\\overline{\\mathrm{AB}}=\\overline{\\mathrm{AC}}$, $\\angle\\mathrm{C}=60^\\circ$ → 정삼각형",
+   "$\\triangle\\mathrm{OAM}$에서 $\\angle\\mathrm{OAM}=30^\\circ$, $\\overline{\\mathrm{AM}}=\\dfrac{3}{\\tan30^\\circ}=3\\sqrt3$",
+   "한 변 $6\\sqrt3$, 둘레 $18\\sqrt3\\,\\mathrm{cm}$"
+  ],
+  "check": "ok"
+ },
+ "15": {
+  "tp": "내접원의 반지름",
+  "key": "BD = BE = r, 피타고라스",
+  "sol": [
+   "$\\overline{\\mathrm{AB}}=6+r$, $\\overline{\\mathrm{BC}}=9+r$, $\\overline{\\mathrm{AC}}=15$",
+   "$(6+r)^2+(9+r)^2=225$ → $r^2+15r-54=0$ → $r=3$",
+   "지름 $6\\,\\mathrm{cm}$"
+  ],
+  "check": "ok"
+ },
+ "16": {
+  "tp": "반원의 접선과 사다리꼴",
+  "key": "AD = AB + CD, 높이는 피타고라스",
+  "sol": [
+   "$\\overline{\\mathrm{AD}}=4+8=12$",
+   "A에서 CD에 수선: 높이 $\\overline{\\mathrm{BC}}=\\sqrt{12^2-4^2}=8\\sqrt2$",
+   "넓이 $=\\dfrac{(4+8)\\times8\\sqrt2}{2}=48\\sqrt2$"
+  ],
+  "check": "ok"
+ },
+ "17": {
+  "tp": "특수각으로 변의 길이",
+  "key": "AD, AB를 구하고 DF는 닮음으로",
+  "sol": [
+   "$\\triangle\\mathrm{ADE}$: $\\overline{\\mathrm{AD}}=12\\sin45^\\circ=6\\sqrt2$",
+   "$\\triangle\\mathrm{ABC}$: $\\overline{\\mathrm{AB}}=12\\sin60^\\circ=6\\sqrt3$, $\\overline{\\mathrm{BC}}=6$",
+   "$\\triangle\\mathrm{ADF}\\sim\\triangle\\mathrm{ABC}$: $\\overline{\\mathrm{DF}}=6\\times\\dfrac{6\\sqrt2}{6\\sqrt3}=2\\sqrt6$",
+   "$\\triangle\\mathrm{ABF}=\\dfrac12\\times6\\sqrt3\\times2\\sqrt6=18\\sqrt2$"
+  ],
+  "check": "ok"
+ },
+ "18": {
+  "tp": "접선의 길이",
+  "key": "PA = PB, DA = DE, CB = CE",
+  "sol": [
+   "$\\overline{\\mathrm{DE}}=\\overline{\\mathrm{DA}}=p$, $\\overline{\\mathrm{CE}}=\\overline{\\mathrm{CB}}=q$, $p+q=24$",
+   "$30+p=36+q$ → $p=15$, $q=9$",
+   "$a=\\overline{\\mathrm{DE}}+\\overline{\\mathrm{DA}}=30$, $b=9$",
+   "$-a+5b=15$"
+  ],
+  "check": "ok"
+ },
+ "19": {
+  "tp": "삼각비 값의 변화",
+  "key": "단위원에서 sin=AB 높이, cos=OA, tan=CD",
+  "sol": [
+   "(1) $\\sin a^\\circ$는 점 B의 $y$좌표 → 증가하여 $1$에 가까워진다",
+   "(2) $\\cos a^\\circ=\\overline{\\mathrm{OA}}$ → 감소하여 $0$에 가까워진다",
+   "(3) $\\tan a^\\circ=\\overline{\\mathrm{CD}}$ → 한없이 커진다"
+  ],
+  "check": "ok"
+ },
+ "20": {
+  "tp": "원뿔의 높이와 반지름",
+  "key": "AH = 16 sin30°, BH = 16 cos30°",
+  "sol": [
+   "(1) $\\overline{\\mathrm{AH}}=16\\sin30^\\circ=8\\,\\mathrm{cm}$",
+   "(2) $\\overline{\\mathrm{BH}}=16\\cos30^\\circ=8\\sqrt3\\,\\mathrm{cm}$",
+   "(3) $V=\\dfrac13\\times\\pi\\times(8\\sqrt3)^2\\times8=512\\pi\\,\\mathrm{cm}^3$"
+  ],
+  "check": "ok"
+ },
+ "21": {
+  "tp": "현의 수직이등분선과 피타고라스",
+  "key": "OC = OA = x, AM = MB",
+  "sol": [
+   "(1) $\\overline{\\mathrm{OM}}=\\overline{\\mathrm{OC}}-\\overline{\\mathrm{MC}}=x-4$",
+   "(2) $\\overline{\\mathrm{AM}}=\\overline{\\mathrm{MB}}=8\\,\\mathrm{cm}$",
+   "(3) $x^2=(x-4)^2+8^2$ → $8x=80$, $x=10$"
+  ],
+  "check": "ok"
+ },
+ "22": {
+  "tp": "접선과 반지름",
+  "key": "접선 ⊥ 반지름, △OAP ≡ △OBP",
+  "sol": [
+   "(1) 접선과 반지름은 수직 → $\\angle\\mathrm{OAP}=90^\\circ$",
+   "(2) $\\overline{\\mathrm{AP}}=\\sqrt{17^2-8^2}=15\\,\\mathrm{cm}$",
+   "(3) $\\square\\mathrm{APBO}=2\\times\\dfrac12\\times8\\times15=120\\,\\mathrm{cm}^2$"
+  ],
+  "check": "ok"
+ }
+}

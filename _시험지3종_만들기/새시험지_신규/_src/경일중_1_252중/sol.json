@@ -1,0 +1,211 @@
+{
+ "1": {
+  "tp": "그래프 해석",
+  "key": "오르내림이 주기적으로 반복되는 상황",
+  "sol": [
+   "그래프는 $0$이 아닌 값에서 시작해 오르내림이 일정하게 반복된다.",
+   "①③은 직선(정비례), ④⑤는 반비례 곡선이다.",
+   "대관람차 한 칸의 높이는 주기적으로 오르내리므로 ②"
+  ],
+  "check": "ok"
+ },
+ "2": {
+  "tp": "평각의 성질",
+  "key": "평각은 180도",
+  "sol": [
+   "$4x+90+x=180$",
+   "$5x=90$, $x=18$"
+  ],
+  "check": "ok"
+ },
+ "3": {
+  "tp": "대변과 대각",
+  "key": "a는 꼭짓점 A의 맞은편 변 BC의 길이",
+  "sol": [
+   "$a=\\overline{\\mathrm{BC}}$는 $\\angle\\mathrm{A}$의 대변의 길이이다.",
+   "따라서 ④가 옳지 않다."
+  ],
+  "check": "ok"
+ },
+ "4": {
+  "tp": "사분면 판단",
+  "key": "좌표의 부호로 사분면 결정",
+  "sol": [
+   "ㄱ. $y$좌표가 $0$이므로 $x$축 위의 점 (거짓)",
+   "ㄴ. $(+,-)$ → 제4사분면 (참)",
+   "ㄷ. $a\\lt0$, $b\\gt0$ → $(b,a)=(+,-)$ 제4사분면 (참)"
+  ],
+  "check": "ok"
+ },
+ "5": {
+  "tp": "반비례 관계식",
+  "key": "xy = 90",
+  "sol": [
+   "$xy=90$ 이므로 $y=\\dfrac{90}{x}$",
+   "$a=90$, $b=45$, $c=30$, $d=15$",
+   "$a+b+c+d=180$"
+  ],
+  "check": "ok"
+ },
+ "6": {
+  "tp": "정비례·반비례 그래프 비교",
+  "key": "두 그래프가 공통으로 갖는 성질만 고른다",
+  "sol": [
+   "ㄱ. $\\dfrac18\\cdot4=\\dfrac12$, $\\dfrac24=\\dfrac12$ → 둘 다 지남 (참)",
+   "ㄴ. 두 식 모두 계수가 양수 → 제1, 3사분면 (참)",
+   "ㄷ. 반비례는 $y$가 $\\dfrac12$배 (거짓)",
+   "ㄹ. 정비례는 직선, 반비례는 원점을 지나지 않음 (거짓)"
+  ],
+  "check": "ok"
+ },
+ "7": {
+  "tp": "꼬인 위치",
+  "key": "CD와 만나지도 평행하지도 않은 모서리를 센다",
+  "sol": [
+   "①②③④는 모두 거짓 (AB, DE는 같은 밑면 위)",
+   "CD와 꼬인 위치: 아랫면 FG, GH, IJ, JF (HI는 평행) 4개, 옆모서리 AF, BG, EJ 3개",
+   "총 $7$개 → ⑤"
+  ],
+  "check": "ok"
+ },
+ "8": {
+  "tp": "꼬인 위치",
+  "key": "n은 P와 l 위의 한 점에서만 만난다",
+  "sol": [
+   "$n$은 평면 $P$와 $l$ 위의 한 점에서만 만나므로 $m$과는 만나지 않는다.",
+   "$n\\perp P$ 이므로 $m$과 평행하지도 않다.",
+   "따라서 꼬인 위치 ④"
+  ],
+  "check": "ok"
+ },
+ "9": {
+  "tp": "평행선 사이 꺾인 각",
+  "key": "오른쪽으로 꺾인 각의 합 = 왼쪽으로 꺾인 각의 합",
+  "sol": [
+   "꺾인 점마다 평행선을 그어 엇각을 옮기면",
+   "$40^\\circ+\\angle a=90^\\circ+20^\\circ$",
+   "$\\angle a=70^\\circ$"
+  ],
+  "check": "ok"
+ },
+ "10": {
+  "tp": "대응변과 대응각",
+  "key": "DF는 AC에, ∠E는 ∠B에 대응",
+  "sol": [
+   "$\\overline{\\mathrm{DF}}=\\overline{\\mathrm{AC}}=5\\,\\mathrm{cm}$",
+   "$\\angle\\mathrm{B}=\\angle\\mathrm{E}=75^\\circ$",
+   "$\\angle\\mathrm{C}=180^\\circ-40^\\circ-75^\\circ=65^\\circ$"
+  ],
+  "check": "ok"
+ },
+ "11": {
+  "tp": "등변사다리꼴과 합동",
+  "key": "SAS 합동 → 대각선 길이·각이 같다",
+  "sol": [
+   "① 엇각 (참), ② 맞꼭지각 (참)",
+   "④ $\\overline{\\mathrm{AB}}=\\overline{\\mathrm{DC}}$, $\\angle\\mathrm{B}=\\angle\\mathrm{C}$, $\\overline{\\mathrm{BC}}$ 공통 → SAS 합동 (참)",
+   "⑤ ④에서 $\\angle\\mathrm{BAC}=\\angle\\mathrm{CDB}$ 등으로 ASA 합동 (참)",
+   "③ $\\angle\\mathrm{ADB}=\\angle\\mathrm{DAC}$이지만 $\\angle\\mathrm{DCA}$와는 일반적으로 다르다 (거짓)"
+  ],
+  "check": "ok"
+ },
+ "12": {
+  "tp": "정사각형 두 개와 합동",
+  "key": "F에서 직선 AD에 내린 수선 → 합동 직각삼각형",
+  "sol": [
+   "$\\mathrm{F}$에서 직선 $\\mathrm{AD}$에 수선 $\\mathrm{FH}$를 내리면 $\\triangle\\mathrm{AFH}\\equiv\\triangle\\mathrm{GAD}$ (RHA)",
+   "$\\overline{\\mathrm{FH}}=\\overline{\\mathrm{AD}}=12$",
+   "$\\triangle\\mathrm{ADF}=\\dfrac12\\times12\\times12=72\\,(\\mathrm{cm}^2)$"
+  ],
+  "check": "원본 파일의 '사각형 A≥F'는 그림상 '사각형 AGEF'의 깨진 표기로 보고 고쳐 적음"
+ },
+ "13": {
+  "tp": "세 직선에서 동위각·엇각",
+  "key": "각 꼭짓점의 각을 크기 55, 125, 95, 85로 정리",
+  "sol": [
+   "$\\angle a$의 동위각: $55^\\circ$, $180^\\circ-95^\\circ=85^\\circ$ → $x=140$",
+   "$\\angle b$의 엇각: $180^\\circ-55^\\circ=125^\\circ$, $95^\\circ$ → $y=220$"
+  ],
+  "check": "ok"
+ },
+ "14": {
+  "tp": "정비례 그래프 위의 점",
+  "key": "AB를 밑변으로 넓이 → a 결정",
+  "sol": [
+   "$\\mathrm{A}(2,4)$, $\\mathrm{B}(2,2a)$, $\\triangle\\mathrm{AOB}=\\dfrac12(4-2a)\\times2=4-2a=\\dfrac{14}{5}$ → $a=\\dfrac35$",
+   "$\\mathrm{C}$: $\\dfrac35x=4$ → $x=\\dfrac{20}{3}$",
+   "$\\triangle\\mathrm{AOC}=\\dfrac12\\times\\left(\\dfrac{20}{3}-2\\right)\\times4=\\dfrac{28}{3}$"
+  ],
+  "check": "원본 그림이 검게 깨져 조건대로 다시 그림"
+ },
+ "15": {
+  "tp": "삼각형이 될 조건",
+  "key": "가장 긴 변 < 나머지 두 변의 합, 개수 제한 확인",
+  "sol": [
+   "가능: $(3,3,3)$, $(3,3,5)$, $(3,5,5)$, $(5,5,9)$, $(3,9,11)$, $(5,9,11)$",
+   "불가: $(3,3,9)$, $(3,5,9)$, $(5,5,11)$ 등",
+   "모두 $6$개"
+  ],
+  "check": "ok"
+ },
+ "16": {
+  "tp": "동위각으로 평행 판정",
+  "key": "직선 n과 l이 이루는 각을 구해 45도와 비교",
+  "sol": [
+   "직선 $l$과 $p$의 교점에서 $76^\\circ+59^\\circ+\\angle(l,n)=180^\\circ$ 이므로 직선 $n$과 $l$이 이루는 각은 $45^\\circ$",
+   "직선 $n$과 $m$이 이루는 동위각도 $45^\\circ$",
+   "동위각의 크기가 같으므로 $l\\parallel m$"
+  ],
+  "check": "ok"
+ },
+ "17": {
+  "tp": "삼각형의 결정 조건",
+  "key": "두 변과 그 끼인각(SAS) / 끼인각이 아닌 각은 불가",
+  "sol": [
+   "철수: $\\overline{\\mathrm{AB}}$, $\\overline{\\mathrm{AC}}$와 그 끼인각 $\\angle\\mathrm{A}$ → SAS로 하나로 정해짐 (○)",
+   "영희: $\\angle\\mathrm{A}$는 $\\overline{\\mathrm{AB}}$, $\\overline{\\mathrm{BC}}$의 끼인각이 아니므로 삼각형이 하나로 정해지지 않을 수 있음 (×)"
+  ],
+  "check": "원본 파일에 철수·영희의 발언이 빠져 있어, 정답(철수 ○, 영희 ×)에 맞게 발언을 복원함. 원본 확인 필요"
+ },
+ "18": {
+  "tp": "선분의 길이의 비",
+  "key": "AC = AB + BC = 4BC",
+  "sol": [
+   "$\\overline{\\mathrm{AC}}=\\overline{\\mathrm{AB}}+\\overline{\\mathrm{BC}}=4\\overline{\\mathrm{BC}}=12$",
+   "$\\overline{\\mathrm{BC}}=3$, $\\overline{\\mathrm{AB}}=9$"
+  ],
+  "check": "원본 파일에 '아래의 조건'이 빠져 있어 정답 9에 맞게 조건을 복원함(AB=3BC). 원본 확인 필요"
+ },
+ "19": {
+  "tp": "사다리꼴의 넓이",
+  "key": "AD와 BC가 x축에 평행한 사다리꼴",
+  "sol": [
+   "(1) 네 점을 찍어 차례로 이으면 $\\overline{\\mathrm{AD}}\\parallel\\overline{\\mathrm{BC}}$인 사다리꼴",
+   "$\\overline{\\mathrm{AD}}=3$, $\\overline{\\mathrm{BC}}=9$, 높이 $4-(-3)=7$",
+   "(2) 넓이 $=\\dfrac12(3+9)\\times7=42$"
+  ],
+  "check": "ok"
+ },
+ "20": {
+  "tp": "그래프의 교점 좌표",
+  "key": "직선 위의 점 → b, c, 반비례 식 → a",
+  "sol": [
+   "$b=-\\dfrac43\\times(-3)=4$",
+   "$a=xy=-3\\times4=-12$",
+   "$c=-\\dfrac13\\times6=-2$ (확인: $\\dfrac{-12}{6}=-2$)",
+   "$a+b+c=-12+4-2=-10$"
+  ],
+  "check": "ok"
+ },
+ "21": {
+  "tp": "정사각형의 대각선과 합동",
+  "key": "대각선 BD가 ∠B를 이등분 → SAS 합동",
+  "sol": [
+   "(1) $\\overline{\\mathrm{AB}}=\\overline{\\mathrm{CB}}$, $\\angle\\mathrm{ABE}=\\angle\\mathrm{CBE}=45^\\circ$, $\\overline{\\mathrm{BE}}$ 공통 → $\\triangle\\mathrm{ABE}\\equiv\\triangle\\mathrm{CBE}$ (SAS)",
+   "(2) $\\triangle\\mathrm{ABF}$에서 $\\angle\\mathrm{BAF}=90^\\circ-35^\\circ=55^\\circ$, 합동이므로 $\\angle\\mathrm{BCE}=55^\\circ$",
+   "$\\angle\\mathrm{ECF}=180^\\circ-55^\\circ=125^\\circ$",
+   "$\\angle\\mathrm{CEF}=180^\\circ-125^\\circ-35^\\circ=20^\\circ$"
+  ],
+  "check": "ok"
+ }
+}
