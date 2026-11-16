@@ -1,0 +1,330 @@
+{
+ "meta": {
+  "year": 2025,
+  "school": "채수학 강남기출변형",
+  "grade": "고1",
+  "subject": "공통수학2",
+  "title": "강남기출변형 1등급 04회",
+  "term": "2학기 기말",
+  "range": "명제(절대부등식) ~ 함수(서로 같은 함수)",
+  "has_key": true,
+  "note": "25-2 기말 강남 기출 변형 문항 22제",
+  "src": "25-2 기말 강남기출변형 (1등급)"
+ },
+ "Q": [
+  {
+   "n": 1,
+   "pt": "4.00",
+   "type": "객",
+   "ans": "④",
+   "unit": "명제",
+   "sub": "절대부등식의 증명",
+   "lv": 3,
+   "q": "양의 실수 $a$, $b$, $c$ 에 대하여 부등식<br>$\\frac{1}{3a+b}+\\frac{1}{b+3c}+\\frac{1}{3c+3a}\\le \\frac{(3a+b+3c)^{2}}{54abc}$<br>이 성립함을 증명한 것이다.<div style=\"border:1px solid #888;padding:4px 8px;margin:4px 0\">양의 실수 $a$, $b$, $c$ 에 대하여 $(3c+3a)^{2}-36ca=9(c-a)^{2}\\ge 0$ 이므로<br>같은 방법으로 <span style=\"border:1px solid #000;padding:0 4px\">(가)</span> $ab\\le (3a+b)^{2}$ 이고, <span style=\"border:1px solid #000;padding:0 4px\">(가)</span> $bc\\le (b+3c)^{2}$ 이므로<br>$36abc\\left(\\frac{1}{3a+b}+\\frac{1}{b+3c}+\\frac{1}{3c+3a}\\right)$<br>$=\\frac{12ab}{3a+b}\\cdot 3c+\\frac{12bc}{b+3c}\\cdot 3a+\\frac{36ca}{3c+3a}\\cdot b$<br>$\\le$ <span style=\"border:1px solid #000;padding:0 4px\">(나)</span> $(ab+bc+3ca)$ $\\cdots\\cdots$ ㉠<br>이다.<br>한편, $9a^{2}+b^{2}+9c^{2}-3ab-3bc-9ca\\ge 0$ 에서<br>$ab+bc+3ca\\le (3a+b+3c)^{2}\\div$ <span style=\"border:1px solid #000;padding:0 4px\">(다)</span> $\\cdots\\cdots$ ㉡<br>이다. 따라서 ㉠, ㉡으로부터<br>$36abc\\left(\\frac{1}{3a+b}+\\frac{1}{b+3c}+\\frac{1}{3c+3a}\\right)\\le$ <span style=\"border:1px solid #000;padding:0 4px\">(나)</span> $\\times (3a+b+3c)^{2}\\div$ <span style=\"border:1px solid #000;padding:0 4px\">(다)</span> $\\cdots\\cdots$ ㉢<br>이다. 이때, ㉢의 양변을 $36abc$ 로 나누면<br>$\\frac{1}{3a+b}+\\frac{1}{b+3c}+\\frac{1}{3c+3a}\\le \\frac{(3a+b+3c)^{2}}{54abc}$ 이다.</div>위 증명에서 (가), (나), (다)에 알맞은 수를 각각 $\\alpha$, $\\beta$, $\\gamma$ 라 할 때, $\\alpha+\\beta+\\gamma$ 의 값은?",
+   "ch": [
+    "$24$",
+    "$25$",
+    "$26$",
+    "$27$",
+    "$28$"
+   ]
+  },
+  {
+   "n": 2,
+   "pt": "4.00",
+   "type": "객",
+   "ans": "③",
+   "unit": "명제",
+   "sub": "절대부등식의 증명",
+   "lv": 3,
+   "q": "양의 실수 $a$, $b$, $c$ 에 대하여 부등식<br>$\\frac{1}{2a+3b}+\\frac{1}{3b+2c}+\\frac{1}{2c+2a}\\le \\frac{(2a+3b+2c)^{2}}{72abc}$<br>이 성립함을 증명한 것이다.<div style=\"border:1px solid #888;padding:4px 8px;margin:4px 0\">양의 실수 $a$, $b$, $c$ 에 대하여 $(2c+2a)^{2}-16ca=4(c-a)^{2}\\ge 0$ 이므로<br>같은 방법으로 <span style=\"border:1px solid #000;padding:0 4px\">(가)</span> $ab\\le (2a+3b)^{2}$ 이고, <span style=\"border:1px solid #000;padding:0 4px\">(가)</span> $bc\\le (3b+2c)^{2}$ 이므로<br>$48abc\\left(\\frac{1}{2a+3b}+\\frac{1}{3b+2c}+\\frac{1}{2c+2a}\\right)$<br>$=\\frac{24ab}{2a+3b}\\cdot 2c+\\frac{24bc}{3b+2c}\\cdot 2a+\\frac{16ca}{2c+2a}\\cdot 3b$<br>$\\le$ <span style=\"border:1px solid #000;padding:0 4px\">(나)</span> $(3ab+3bc+2ca)$ $\\cdots\\cdots$ ㉠<br>이다.<br>한편, $4a^{2}+9b^{2}+4c^{2}-6ab-6bc-4ca\\ge 0$ 에서<br>$3ab+3bc+2ca\\le (2a+3b+2c)^{2}\\div$ <span style=\"border:1px solid #000;padding:0 4px\">(다)</span> $\\cdots\\cdots$ ㉡<br>이다. 따라서 ㉠, ㉡으로부터<br>$48abc\\left(\\frac{1}{2a+3b}+\\frac{1}{3b+2c}+\\frac{1}{2c+2a}\\right)\\le$ <span style=\"border:1px solid #000;padding:0 4px\">(나)</span> $\\times (2a+3b+2c)^{2}\\div$ <span style=\"border:1px solid #000;padding:0 4px\">(다)</span> $\\cdots\\cdots$ ㉢<br>이다. 이때, ㉢의 양변을 $48abc$ 로 나누면<br>$\\frac{1}{2a+3b}+\\frac{1}{3b+2c}+\\frac{1}{2c+2a}\\le \\frac{(2a+3b+2c)^{2}}{72abc}$ 이다.</div>위 증명에서 (가), (나), (다)에 알맞은 수를 각각 $\\alpha$, $\\beta$, $\\gamma$ 라 할 때, $\\alpha+\\beta+\\gamma$ 의 값은?",
+   "ch": [
+    "$32$",
+    "$33$",
+    "$34$",
+    "$35$",
+    "$36$"
+   ]
+  },
+  {
+   "n": 3,
+   "pt": "4.00",
+   "type": "객",
+   "ans": "③",
+   "unit": "명제",
+   "sub": "절대부등식",
+   "lv": 2,
+   "q": "$x$ 에 대한 부등식 $(k-2)\\{x^{2}+2(k+1)x+16\\}\\le 0$ 이 절대부등식이 되도록 하는 모든 정수 $k$ 의 값의 합은?",
+   "ch": [
+    "$-14$",
+    "$-13$",
+    "$-12$",
+    "$-11$",
+    "$-10$"
+   ]
+  },
+  {
+   "n": 4,
+   "pt": "4.00",
+   "type": "객",
+   "ans": "④",
+   "unit": "명제",
+   "sub": "절대부등식",
+   "lv": 2,
+   "q": "$x$ 에 대한 부등식 $(k-4)\\{x^{2}+2(k-3)x+4\\}\\le 0$ 이 절대부등식이 되도록 하는 모든 정수 $k$ 의 값의 합은?",
+   "ch": [
+    "$7$",
+    "$8$",
+    "$9$",
+    "$10$",
+    "$11$"
+   ]
+  },
+  {
+   "n": 5,
+   "pt": "4.00",
+   "type": "객",
+   "ans": "④",
+   "unit": "명제",
+   "sub": "명제의 부정과 산술·기하평균",
+   "lv": 3,
+   "q": "$n$ 에 대한 조건 ‘어떤 실수 $x$ 에 대하여 $x^{2}-4+\\frac{n}{x^{2}+1}\\le 0$ 이다.’가 거짓인 명제가 되도록 하는 정수 $n$ 에 대하여 $n^{2}+\\frac{100}{n^{2}-10n+26}+\\frac{40}{n-6}$ 의 최솟값은?",
+   "ch": [
+    "$64$",
+    "$74$",
+    "$84$",
+    "$94$",
+    "$104$"
+   ]
+  },
+  {
+   "n": 6,
+   "pt": "4.00",
+   "type": "객",
+   "ans": "③",
+   "unit": "명제",
+   "sub": "명제의 부정과 산술·기하평균",
+   "lv": 3,
+   "q": "$n$ 에 대한 조건 ‘어떤 실수 $x$ 에 대하여 $x^{2}-3+\\frac{n}{x^{2}+1}\\le 0$ 이다.’가 거짓인 명제가 되도록 하는 정수 $n$ 에 대하여 $n^{2}+\\frac{25}{n^{2}-8n+17}+\\frac{72}{n-3}$ 의 최솟값은?",
+   "ch": [
+    "$45$",
+    "$55$",
+    "$65$",
+    "$75$",
+    "$85$"
+   ]
+  },
+  {
+   "n": 7,
+   "pt": "5.00",
+   "type": "서",
+   "ans": "$11$",
+   "unit": "명제",
+   "sub": "산술평균과 기하평균",
+   "lv": 3,
+   "q": "<b>[서술형]</b> $x\\gt -2$ 인 $x$ 에 대하여 $\\frac{3x^{4}+24x^{3}+72x^{2}+96x+60}{x^{2}+4x+4}$ 은 $x=k$ 일 때 최솟값 $m$ 을 갖는다. $k+m=a+b\\sqrt{2}$ 일 때, $a+b$ 의 값을 구하시오. (단, $a$, $b$ 는 자연수)"
+  },
+  {
+   "n": 8,
+   "pt": "5.00",
+   "type": "서",
+   "ans": "$13$",
+   "unit": "명제",
+   "sub": "산술평균과 기하평균",
+   "lv": 3,
+   "q": "<b>[서술형]</b> $x\\gt 2$ 인 $x$ 에 대하여 $\\frac{x^{4}-8x^{3}+24x^{2}-32x+41}{x^{2}-4x+4}$ 은 $x=k$ 일 때 최솟값 $m$ 을 갖는다. $k+m=a+b\\sqrt{5}$ 일 때, $a+b$ 의 값을 구하시오. (단, $a$, $b$ 는 자연수)"
+  },
+  {
+   "n": 9,
+   "pt": "5.00",
+   "type": "서",
+   "ans": "$\\frac{49}{9}$",
+   "unit": "명제",
+   "sub": "코시-슈바르츠 부등식",
+   "lv": 3,
+   "q": "<b>[서술형]</b> $a\\gt 2$, $b\\gt -3$ 이고, $3a+4b=3$ 을 만족할 때, $\\frac{3}{a-2}+\\frac{4}{b+3}$ 의 최솟값을 구하시오."
+  },
+  {
+   "n": 10,
+   "pt": "5.00",
+   "type": "서",
+   "ans": "$\\frac{81}{17}$",
+   "unit": "명제",
+   "sub": "코시-슈바르츠 부등식",
+   "lv": 3,
+   "q": "<b>[서술형]</b> $a\\gt -2$, $b\\gt -1$ 이고, $4a+5b=4$ 를 만족할 때, $\\frac{4}{a+2}+\\frac{5}{b+1}$ 의 최솟값을 구하시오."
+  },
+  {
+   "n": 11,
+   "pt": "5.00",
+   "type": "서",
+   "ans": "$A=2$, $B=\\sqrt{2}$, $m=14$",
+   "unit": "명제",
+   "sub": "산술평균과 기하평균",
+   "lv": 3,
+   "q": "<b>[서술형]</b> 양의 실수 $x$ 와 $y$ 에 대하여<br>$4x^{2}+y^{2}-12x+13+\\frac{49}{x^{2}+y^{2}+1}$<br>가 $x=A$, $y=B$ 에서 최솟값 $m$ 을 가진다. 이때, $A$, $B$, $m$ 의 값을 모두 구하시오."
+  },
+  {
+   "n": 12,
+   "pt": "5.00",
+   "type": "서",
+   "ans": "$A=1$, $B=\\sqrt{5}$, $m=16$",
+   "unit": "명제",
+   "sub": "산술평균과 기하평균",
+   "lv": 3,
+   "q": "<b>[서술형]</b> 양의 실수 $x$ 와 $y$ 에 대하여<br>$3x^{2}+y^{2}-4x+4+\\frac{64}{x^{2}+y^{2}+2}$<br>가 $x=A$, $y=B$ 에서 최솟값 $m$ 을 가진다. 이때, $A$, $B$, $m$ 의 값을 모두 구하시오."
+  },
+  {
+   "n": 13,
+   "pt": "4.00",
+   "type": "객",
+   "ans": "③",
+   "unit": "명제",
+   "sub": "산술평균과 기하평균의 활용",
+   "lv": 3,
+   "q": "그림과 같이 $\\overline{\\mathrm{AB}}=4$, $\\overline{\\mathrm{BC}}=9$ 인 직사각형 $\\mathrm{ABCD}$ 가 있다. 두 점 $\\mathrm{P}$, $\\mathrm{Q}$ 는 각각 변 $\\mathrm{AB}$, 변 $\\mathrm{BC}$ 위를 움직이고 점 $\\mathrm{R}$ 은 변 $\\mathrm{CD}$ 를 $1:3$ 으로 내분한다. 삼각형 $\\mathrm{PQR}$ 의 넓이가 삼각형 $\\mathrm{PBQ}$ 의 넓이의 $5$ 배일 때, 삼각형 $\\mathrm{PQR}$ 의 넓이의 최솟값은?",
+   "ch": [
+    "$\\frac{3}{2}$",
+    "$2$",
+    "$\\frac{5}{2}$",
+    "$3$",
+    "$\\frac{7}{2}$"
+   ],
+   "imgs": [
+    "aimage16"
+   ],
+   "imgW": 50
+  },
+  {
+   "n": 14,
+   "pt": "4.00",
+   "type": "객",
+   "ans": "④",
+   "unit": "명제",
+   "sub": "산술평균과 기하평균의 활용",
+   "lv": 3,
+   "q": "그림과 같이 $\\overline{\\mathrm{AB}}=6$, $\\overline{\\mathrm{BC}}=9$ 인 직사각형 $\\mathrm{ABCD}$ 가 있다. 두 점 $\\mathrm{P}$, $\\mathrm{Q}$ 는 각각 변 $\\mathrm{AB}$, 변 $\\mathrm{BC}$ 위를 움직이고 점 $\\mathrm{R}$ 은 변 $\\mathrm{CD}$ 를 $2:1$ 로 내분한다. 삼각형 $\\mathrm{PQR}$ 의 넓이가 삼각형 $\\mathrm{PBQ}$ 의 넓이의 $3$ 배일 때, 삼각형 $\\mathrm{PQR}$ 의 넓이의 최솟값은?",
+   "ch": [
+    "$12$",
+    "$\\frac{25}{2}$",
+    "$13$",
+    "$\\frac{27}{2}$",
+    "$14$"
+   ],
+   "imgs": [
+    "aimage18"
+   ],
+   "imgW": 50
+  },
+  {
+   "n": 15,
+   "pt": "5.00",
+   "type": "서",
+   "ans": "$12$",
+   "unit": "명제",
+   "sub": "산술평균과 기하평균의 활용",
+   "lv": 2,
+   "q": "<b>[서술형]</b> 준호는 그림과 같이 넓이가 $120$ 인 화단을 만들기 위해 직사각형 $\\mathrm{ABCD}$ 모양의 울타리를 설치하려고 한다. 울타리 설치비용 중 영희네와 이웃한 $\\mathrm{B}$ 지점에서 $\\mathrm{C}$ 지점까지는 영희네가 $\\frac{1}{3}$, 준호가 $\\frac{2}{3}$ 를 나누어 지불하고, 나머지는 준호가 지불한다. 울타리를 설치하는 데 준호가 지불해야 하는 총비용이 최소일 때, $\\mathrm{B}$ 지점에서 $\\mathrm{C}$ 지점까지 설치할 울타리의 길이를 구하시오. (단, 울타리의 설치비용은 높이와 두께에 관계없이 둘레의 길이에 비례한다.)",
+   "imgs": [
+    "aimage19"
+   ],
+   "imgW": 55
+  },
+  {
+   "n": 16,
+   "pt": "5.00",
+   "type": "서",
+   "ans": "$16$",
+   "unit": "명제",
+   "sub": "산술평균과 기하평균의 활용",
+   "lv": 2,
+   "q": "<b>[서술형]</b> 준호는 그림과 같이 넓이가 $224$ 인 화단을 만들기 위해 직사각형 $\\mathrm{ABCD}$ 모양의 울타리를 설치하려고 한다. 울타리 설치비용 중 영희네와 이웃한 $\\mathrm{B}$ 지점에서 $\\mathrm{C}$ 지점까지는 영희네가 $\\frac{1}{4}$, 준호가 $\\frac{3}{4}$ 을 나누어 지불하고, 나머지는 준호가 지불한다. 울타리를 설치하는 데 준호가 지불해야 하는 총비용이 최소일 때, $\\mathrm{B}$ 지점에서 $\\mathrm{C}$ 지점까지 설치할 울타리의 길이를 구하시오. (단, 울타리의 설치비용은 높이와 두께에 관계없이 둘레의 길이에 비례한다.)",
+   "imgs": [
+    "aimage20"
+   ],
+   "imgW": 55
+  },
+  {
+   "n": 17,
+   "pt": "4.00",
+   "type": "객",
+   "ans": "③",
+   "unit": "명제",
+   "sub": "산술평균과 기하평균의 활용",
+   "lv": 3,
+   "q": "임의의 두 양의 실수 $a$, $b$ 에 대하여 한 변의 길이가 $a+b$ 인 정사각형 $\\mathrm{ABCD}$ 의 네 변 $\\mathrm{AB}$, $\\mathrm{BC}$, $\\mathrm{DC}$, $\\mathrm{DA}$ 를 각각 $a:b$ 로 내분하는 점을 $\\mathrm{E}$, $\\mathrm{F}$, $\\mathrm{G}$, $\\mathrm{H}$ 라 하고 선분 $\\mathrm{FH}$ 의 중점을 $\\mathrm{M}$ 이라 하자. 다음의 그림은 위의 설명과 같이 그린 한 예이다. &lt;보기&gt;에서 옳은 것만을 있는 대로 고른 것은?<div style=\"border:1px solid #888;padding:4px 8px;margin:4px 0\">ㄱ. $\\overline{\\mathrm{FG}}+\\overline{\\mathrm{GH}}=\\sqrt{2}\\,\\overline{\\mathrm{EG}}$<br>ㄴ. ($\\triangle\\mathrm{EFM}$ 의 넓이) $\\gt$ ($\\triangle\\mathrm{FGM}$ 의 넓이)<br>ㄷ. $\\overline{\\mathrm{FH}}=4\\sqrt{5}$ 일 때, 삼각형 $\\mathrm{FGH}$ 의 넓이의 최댓값은 $20$ 이다.</div>",
+   "ch": [
+    "ㄱ",
+    "ㄷ",
+    "ㄱ, ㄷ",
+    "ㄴ, ㄷ",
+    "ㄱ, ㄴ, ㄷ"
+   ],
+   "imgs": [
+    "aimage22"
+   ],
+   "imgW": 50
+  },
+  {
+   "n": 18,
+   "pt": "4.00",
+   "type": "객",
+   "ans": "③",
+   "unit": "명제",
+   "sub": "산술평균과 기하평균의 활용",
+   "lv": 3,
+   "q": "임의의 두 양의 실수 $a$, $b$ 에 대하여 한 변의 길이가 $a+b$ 인 정사각형 $\\mathrm{ABCD}$ 의 네 변 $\\mathrm{AB}$, $\\mathrm{BC}$, $\\mathrm{DC}$, $\\mathrm{DA}$ 를 각각 $a:b$ 로 내분하는 점을 $\\mathrm{E}$, $\\mathrm{F}$, $\\mathrm{G}$, $\\mathrm{H}$ 라 하고 선분 $\\mathrm{FH}$ 의 중점을 $\\mathrm{M}$ 이라 하자. 다음의 그림은 위의 설명과 같이 그린 한 예이다. &lt;보기&gt;에서 옳은 것만을 있는 대로 고른 것은?<div style=\"border:1px solid #888;padding:4px 8px;margin:4px 0\">ㄱ. $\\overline{\\mathrm{FM}}=\\overline{\\mathrm{GM}}$<br>ㄴ. ($\\triangle\\mathrm{EFM}$ 의 넓이) $\\gt$ ($\\triangle\\mathrm{FGM}$ 의 넓이)<br>ㄷ. $\\overline{\\mathrm{EF}}=6$ 일 때, 삼각형 $\\mathrm{FGH}$ 의 넓이의 최댓값은 $18$ 이다.</div>",
+   "ch": [
+    "ㄱ",
+    "ㄷ",
+    "ㄱ, ㄷ",
+    "ㄴ, ㄷ",
+    "ㄱ, ㄴ, ㄷ"
+   ],
+   "imgs": [
+    "aimage24"
+   ],
+   "imgW": 50
+  },
+  {
+   "n": 19,
+   "pt": "5.00",
+   "type": "서",
+   "ans": "$-\\frac{6}{7}$",
+   "unit": "함수",
+   "sub": "서로 같은 함수",
+   "lv": 3,
+   "q": "<b>[서술형]</b> $n(X)=8$ 인 집합 $X$ 에서 정의된 두 함수<br>$f(x)=|x+1|+|x|+|x-1|-3$, $g(x)=x^{2}+k$<br>가 다음 조건을 만족시킨다.<div style=\"border:1px solid #888;padding:4px 8px;margin:4px 0\">(가) 두 함수 $f$ 와 $g$ 는 서로 같다.<br>(나) 집합 $X$ 의 모든 원소의 곱은 $\\frac{225}{2401}$ 이다.</div>상수 $k$ 의 값을 구하시오."
+  },
+  {
+   "n": 20,
+   "pt": "5.00",
+   "type": "서",
+   "ans": "$\\frac{7}{6}$",
+   "unit": "함수",
+   "sub": "서로 같은 함수",
+   "lv": 3,
+   "q": "<b>[서술형]</b> $n(X)=8$ 인 집합 $X$ 에서 정의된 두 함수<br>$f(x)=|x+1|+|x|+|x-1|-1$, $g(x)=x^{2}+k$<br>가 다음 조건을 만족시킨다.<div style=\"border:1px solid #888;padding:4px 8px;margin:4px 0\">(가) 두 함수 $f$ 와 $g$ 는 서로 같다.<br>(나) 집합 $X$ 의 모든 원소의 곱은 $\\frac{169}{1296}$ 이다.</div>상수 $k$ 의 값을 구하시오."
+  },
+  {
+   "n": 21,
+   "pt": "5.00",
+   "type": "서",
+   "ans": "정의역: $\\{-1, 2, 3\\}$, 치역: $\\{-6, -5, -2\\}$",
+   "unit": "함수",
+   "sub": "서로 같은 함수",
+   "lv": 2,
+   "q": "<b>[서술형]</b> $n(X)=3$ 인 집합 $X$ 를 정의역으로 하는 두 함수<br>$f(x)=x^{4}-15x^{2}+9x+21$, $g(x)=x^{3}-4x^{2}+3$<br>에 대하여 $f=g$ 이다. 함수 $g$ 의 치역의 모든 원소의 합이 최대가 되도록 하는 함수 $g$ 의 정의역과 치역을 각각 구하고 그 과정을 서술하시오."
+  },
+  {
+   "n": 22,
+   "pt": "5.00",
+   "type": "서",
+   "ans": "정의역: $\\{-1, 1, 4\\}$, 치역: $\\{-2, 0, 18\\}$",
+   "unit": "함수",
+   "sub": "서로 같은 함수",
+   "lv": 2,
+   "q": "<b>[서술형]</b> $n(X)=3$ 인 집합 $X$ 를 정의역으로 하는 두 함수<br>$f(x)=x^{4}-16x^{2}+x+14$, $g(x)=x^{3}-3x^{2}+2$<br>에 대하여 $f=g$ 이다. 함수 $g$ 의 치역의 모든 원소의 합이 최대가 되도록 하는 함수 $g$ 의 정의역과 치역을 각각 구하고 그 과정을 서술하시오."
+  }
+ ]
+}
