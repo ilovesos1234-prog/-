@@ -1,0 +1,434 @@
+{
+ "meta": {
+  "year": 2026,
+  "school": "학남중",
+  "grade": "중3",
+  "subject": "수학",
+  "title": "2026 학남중 3학년 2학기 기말",
+  "term": "2학기 기말",
+  "range": "Ⅴ. 삼각비 ~ Ⅵ. 원의 성질, Ⅶ. 통계(대푯값)",
+  "has_key": true,
+  "note": "그림은 원본 스캔에서 잘라 옅은 비침 자국만 지웠다.",
+  "src": "[학남중][3][26-2-기말](원본+답안).pdf"
+ },
+ "Q": [
+  {
+   "n": 1,
+   "pt": "3",
+   "type": "객",
+   "ans": "③",
+   "unit": "삼각비",
+   "sub": "삼각비의 뜻",
+   "lv": 1,
+   "q": "오른쪽 직각삼각형에서 $\\cos A$의 값은?",
+   "ch": [
+    "$\\dfrac{1}{3}$",
+    "$\\dfrac{2}{3}$",
+    "$\\dfrac{\\sqrt{5}}{3}$",
+    "$\\dfrac{2}{\\sqrt{5}}$",
+    "$\\dfrac{\\sqrt{5}}{2}$"
+   ],
+   "imgs": [
+    "q1"
+   ],
+   "imgW": 40
+  },
+  {
+   "n": 2,
+   "pt": "2",
+   "type": "객",
+   "ans": "③",
+   "unit": "삼각비",
+   "sub": "특수각의 삼각비",
+   "lv": 1,
+   "q": "삼각비의 값이 옳지 <u>않은</u> 것은?",
+   "ch": [
+    "$\\sin 30^\\circ=\\dfrac{1}{2}$",
+    "$\\cos 90^\\circ=0$",
+    "$\\tan 90^\\circ=1$",
+    "$\\tan 45^\\circ=1$",
+    "$\\cos 45^\\circ=\\dfrac{\\sqrt{2}}{2}$"
+   ]
+  },
+  {
+   "n": 3,
+   "pt": "3",
+   "type": "객",
+   "ans": "④",
+   "unit": "삼각비",
+   "sub": "삼각비의 뜻",
+   "lv": 1,
+   "q": "$\\angle B=90^\\circ$인 직각삼각형 ABC에서 $\\tan A=2$일 때, $\\sin A\\times\\cos A$의 값은?",
+   "ch": [
+    "$\\dfrac{1}{3}$",
+    "$\\dfrac{2}{3}$",
+    "$\\dfrac{1}{5}$",
+    "$\\dfrac{2}{5}$",
+    "$\\dfrac{3}{5}$"
+   ]
+  },
+  {
+   "n": 4,
+   "pt": "3",
+   "type": "객",
+   "ans": "④",
+   "unit": "삼각비의 활용",
+   "sub": "사각형의 넓이",
+   "lv": 2,
+   "q": "오른쪽 $\\square ABCD$의 넓이는?",
+   "ch": [
+    "$32\\sqrt{3}\\ \\mathrm{cm^2}$",
+    "$8\\sqrt{2}+32\\ \\mathrm{cm^2}$",
+    "$8\\sqrt{3}+32\\ \\mathrm{cm^2}$",
+    "$8\\sqrt{6}+32\\ \\mathrm{cm^2}$",
+    "$16\\sqrt{6}+32\\ \\mathrm{cm^2}$"
+   ],
+   "imgs": [
+    "q4"
+   ],
+   "imgW": 36
+  },
+  {
+   "n": 5,
+   "pt": "4",
+   "type": "객",
+   "ans": "②",
+   "unit": "삼각비",
+   "sub": "닮은 직각삼각형과 삼각비",
+   "lv": 2,
+   "q": "오른쪽 삼각형에서 $\\dfrac{1}{\\cos x}+\\tan x$의 값은?",
+   "ch": [
+    "3",
+    "5",
+    "$\\dfrac{27}{5}$",
+    "$\\dfrac{169}{60}$",
+    "$\\dfrac{181}{65}$"
+   ],
+   "imgs": [
+    "q5"
+   ],
+   "imgW": 42
+  },
+  {
+   "n": 6,
+   "pt": "3",
+   "type": "객",
+   "ans": "①",
+   "unit": "통계",
+   "sub": "평균",
+   "lv": 2,
+   "q": "A, B, C, D 네 명의 학생의 몸무게를 조사했더니, A와 B의 평균이 56 kg, B와 C의 평균이 65 kg, C와 D의 평균이 68 kg일 때, A와 D의 평균은?",
+   "ch": [
+    "59 kg",
+    "60 kg",
+    "61 kg",
+    "62 kg",
+    "63 kg"
+   ]
+  },
+  {
+   "n": 7,
+   "pt": "4",
+   "type": "객",
+   "ans": "①",
+   "unit": "삼각비",
+   "sub": "사분원과 삼각비",
+   "lv": 2,
+   "q": "그림과 같이 반지름의 길이가 1인 사분원에 대하여 &lt;보기&gt;에서 옳은 것을 고른 것은?<div style=\"border:1px solid #888;padding:4px 8px;margin:4px 0\">ㄱ. $\\sin x=\\overline{BC}$ &nbsp;&nbsp; ㄴ. $\\tan x=\\overline{DE}$ &nbsp;&nbsp; ㄷ. $\\sin y=\\overline{AC}$<br>ㄹ. $\\cos y=\\overline{BC}$ &nbsp;&nbsp; ㅁ. $\\tan y=\\overline{AB}$</div>",
+   "ch": [
+    "ㄱ, ㄴ, ㄹ",
+    "ㄱ, ㄴ, ㅁ",
+    "ㄱ, ㄷ, ㅁ",
+    "ㄴ, ㄷ, ㄹ",
+    "ㄷ, ㄹ, ㅁ"
+   ],
+   "imgs": [
+    "q7"
+   ],
+   "imgW": 30
+  },
+  {
+   "n": 8,
+   "pt": "4",
+   "type": "객",
+   "ans": "④",
+   "unit": "삼각비의 활용",
+   "sub": "한 변과 양 끝 각으로 거리 구하기",
+   "lv": 2,
+   "q": "그림은 학남이와 두 기지국 A, B의 위치를 나타낸 것이다. 학남이의 위치를 C라고 하면 $\\overline{AC}=500$ m, $\\angle A=30^\\circ$, $\\angle C=105^\\circ$일 때, 두 기지국 A, B 사이의 거리는?",
+   "ch": [
+    "$500\\sqrt{2}$ m",
+    "$500\\sqrt{3}$ m",
+    "$250\\sqrt{2}+250$ m",
+    "$250\\sqrt{3}+250$ m",
+    "$500\\sqrt{2}+250$ m"
+   ],
+   "imgs": [
+    "q8"
+   ],
+   "imgW": 55
+  },
+  {
+   "n": 9,
+   "pt": "5",
+   "type": "객",
+   "ans": "⑤",
+   "unit": "삼각비의 활용",
+   "sub": "둔각삼각형의 넓이와 삼각비",
+   "lv": 3,
+   "q": "그림과 같이 $\\angle A$가 둔각인 삼각형에서 $\\overline{AB}=3$ cm, $\\overline{AC}=2\\sqrt{2}$ cm, $\\sin A=\\dfrac{1}{3}$일 때, $\\sin C$의 값은?",
+   "ch": [
+    "$\\dfrac{1}{\\sqrt{17}}$",
+    "$\\dfrac{1}{\\sqrt{19}}$",
+    "$\\dfrac{1}{\\sqrt{21}}$",
+    "$\\dfrac{1}{\\sqrt{29}}$",
+    "$\\dfrac{1}{\\sqrt{33}}$"
+   ],
+   "imgs": [
+    "q9"
+   ],
+   "imgW": 55
+  },
+  {
+   "n": 10,
+   "pt": "3",
+   "type": "객",
+   "ans": "②",
+   "unit": "원의 성질",
+   "sub": "현의 수직이등분선",
+   "lv": 2,
+   "q": "그림의 원 O에서 $\\overline{AB}\\perp\\overline{OC}$이고 $\\overline{BM}=6$ cm, $\\overline{CM}=3$ cm일 때, 원 O의 반지름의 길이는?",
+   "ch": [
+    "7 cm",
+    "$\\dfrac{15}{2}$ cm",
+    "8 cm",
+    "$\\dfrac{17}{2}$ cm",
+    "9 cm"
+   ],
+   "imgs": [
+    "q10"
+   ],
+   "imgW": 28
+  },
+  {
+   "n": 11,
+   "pt": "2",
+   "type": "객",
+   "ans": "⑤",
+   "unit": "원의 성질",
+   "sub": "중심에서 같은 거리의 현",
+   "lv": 1,
+   "q": "그림과 같이 원 O에 $\\triangle ABC$가 내접하고 있다. $\\overline{OM}=\\overline{ON}$이고, $\\angle ABC=67^\\circ$일 때, $\\angle BAC$의 크기는?",
+   "ch": [
+    "$42^\\circ$",
+    "$43^\\circ$",
+    "$44^\\circ$",
+    "$45^\\circ$",
+    "$46^\\circ$"
+   ],
+   "imgs": [
+    "q11"
+   ],
+   "imgW": 28
+  },
+  {
+   "n": 12,
+   "pt": "3",
+   "type": "객",
+   "ans": "④",
+   "unit": "원의 성질",
+   "sub": "원을 접은 현의 길이",
+   "lv": 2,
+   "q": "그림과 같이 반지름의 길이가 12 cm인 원 O의 원주 위의 한 점이 원의 중심 O에 겹쳐지도록 $\\overline{AB}$를 접는 선으로 하여 접었을 때, $\\overline{AB}$의 길이는?",
+   "ch": [
+    "$3\\sqrt{6}$ cm",
+    "$6\\sqrt{3}$ cm",
+    "$6\\sqrt{6}$ cm",
+    "$12\\sqrt{3}$ cm",
+    "$12\\sqrt{6}$ cm"
+   ],
+   "imgs": [
+    "q12"
+   ],
+   "imgW": 30
+  },
+  {
+   "n": 13,
+   "pt": "3",
+   "type": "객",
+   "ans": "③",
+   "unit": "원의 성질",
+   "sub": "삼각형의 내접원과 접선의 길이",
+   "lv": 2,
+   "q": "원 O는 삼각형 ABC의 내접원이고, 점 D, E, F는 접점이다. $\\overline{AB}=10$ cm, $\\overline{BC}=11$ cm, $\\overline{AC}=9$ cm일 때, $\\overline{AD}$의 길이는?",
+   "ch": [
+    "3 cm",
+    "3.5 cm",
+    "4 cm",
+    "4.5 cm",
+    "5 cm"
+   ],
+   "imgs": [
+    "q13"
+   ],
+   "imgW": 36
+  },
+  {
+   "n": 14,
+   "pt": "5",
+   "type": "객",
+   "ans": "②",
+   "unit": "원의 성질",
+   "sub": "직사각형에 내접하는 원과 접선",
+   "lv": 3,
+   "q": "그림과 같이 원 O는 직사각형 ABCD의 세 변에 내접하고, $\\overline{DE}$는 원 O의 접선이다. 원 O'은 삼각형 DEC의 내접원이다. $\\overline{AB}=12$ cm, $\\overline{BC}=18$ cm일 때, 원 O'의 반지름의 길이는?",
+   "ch": [
+    "2.5 cm",
+    "3 cm",
+    "3.5 cm",
+    "4 cm",
+    "4.5 cm"
+   ],
+   "imgs": [
+    "q14"
+   ],
+   "imgW": 45
+  },
+  {
+   "n": 15,
+   "pt": "2",
+   "type": "객",
+   "ans": "⑤",
+   "unit": "원의 성질",
+   "sub": "내접사각형과 중심각",
+   "lv": 2,
+   "q": "그림에서 $\\angle BCD=128^\\circ$, $\\angle BAD=\\angle x$, $\\angle BOD=\\angle y$라고 할 때, $\\angle x+\\angle y$의 크기는? (단, $\\angle y$는 호 BAD의 중심각)",
+   "ch": [
+    "$292^\\circ$",
+    "$298^\\circ$",
+    "$302^\\circ$",
+    "$304^\\circ$",
+    "$308^\\circ$"
+   ],
+   "imgs": [
+    "q15"
+   ],
+   "imgW": 30
+  },
+  {
+   "n": 16,
+   "pt": "3",
+   "type": "객",
+   "ans": "②",
+   "unit": "원의 성질",
+   "sub": "접선과 현이 이루는 각",
+   "lv": 3,
+   "q": "그림에서 직선 TB가 원의 접선이고, $\\angle DAC=30^\\circ$, $\\angle DCA=55^\\circ$, $\\angle ABT=42^\\circ$, $\\angle CAB=\\angle x$, $\\angle ABC=\\angle y$일 때, $\\angle y-\\angle x$의 크기는?",
+   "ch": [
+    "$31^\\circ$",
+    "$32^\\circ$",
+    "$33^\\circ$",
+    "$34^\\circ$",
+    "$35^\\circ$"
+   ],
+   "imgs": [
+    "q16"
+   ],
+   "imgW": 40
+  },
+  {
+   "n": 17,
+   "pt": "4",
+   "type": "객",
+   "ans": "①",
+   "unit": "원의 성질",
+   "sub": "원에 내접하는 다각형",
+   "lv": 3,
+   "q": "그림과 같이 원 O에 내접하는 오각형 ABCDE에서 $\\angle ABC=110^\\circ$, $\\angle COD=50^\\circ$일 때, $\\angle AED$의 크기는?",
+   "ch": [
+    "$95^\\circ$",
+    "$100^\\circ$",
+    "$105^\\circ$",
+    "$110^\\circ$",
+    "$115^\\circ$"
+   ],
+   "imgs": [
+    "q17"
+   ],
+   "imgW": 34
+  },
+  {
+   "n": 18,
+   "pt": "4",
+   "type": "객",
+   "ans": "③",
+   "unit": "원의 성질",
+   "sub": "원주각과 호의 길이",
+   "lv": 2,
+   "q": "그림에서 호 AB, 호 CD의 길이가 각각 원주의 $\\dfrac{1}{6}$, $\\dfrac{1}{4}$일 때, $\\angle APB$의 크기는?",
+   "ch": [
+    "$65^\\circ$",
+    "$70^\\circ$",
+    "$75^\\circ$",
+    "$80^\\circ$",
+    "$85^\\circ$"
+   ],
+   "imgs": [
+    "q18"
+   ],
+   "imgW": 34
+  },
+  {
+   "n": 19,
+   "pt": "10",
+   "type": "서",
+   "ans": "$\\dfrac{\\sqrt{2}}{2}$",
+   "unit": "삼각비",
+   "sub": "특수각의 삼각비 계산",
+   "lv": 1,
+   "q": "<b>[서술형 1]</b> 다음 식 (가)~(라)의 값을 각각 구하고, 그 결과가 가장 작은 값과 가장 큰 값의 합을 구하시오.<div style=\"border:1px solid #888;padding:4px 8px;margin:4px 0\">(가) $\\sin 30^\\circ+\\cos 60^\\circ$<br>(나) $\\tan 0^\\circ+\\tan 45^\\circ-2\\cos 0^\\circ$<br>(다) $\\sin 60^\\circ\\times\\cos 60^\\circ\\times\\tan 60^\\circ$<br>(라) $\\tan 30^\\circ\\times\\tan 60^\\circ+\\sin 45^\\circ\\times\\sin 90^\\circ$</div>"
+  },
+  {
+   "n": 20,
+   "pt": "10",
+   "type": "서",
+   "ans": "$\\overline{BC}=5\\sqrt{3}$ cm, $\\overline{CD}=5$ cm",
+   "unit": "삼각비의 활용",
+   "sub": "직각삼각형의 변의 길이",
+   "lv": 2,
+   "q": "<b>[서술형 2]</b> 그림과 같은 직각삼각형 ABC에서 $\\angle A=30^\\circ$, $\\angle BDC=60^\\circ$, $\\overline{AD}=10$ cm일 때, 선분 BC와 선분 CD의 길이를 구하시오. (단, 풀이 과정을 자세하게 서술할 것)",
+   "imgs": [
+    "s2"
+   ],
+   "imgW": 50
+  },
+  {
+   "n": 21,
+   "pt": "10",
+   "type": "서",
+   "ans": "$\\dfrac{18}{5}$ cm",
+   "unit": "원의 성질",
+   "sub": "반원과 세 접선",
+   "lv": 3,
+   "q": "<b>[서술형 3]</b> 그림에서 $\\overline{AB}$는 반원 O의 지름이고 $\\overline{AD}$, $\\overline{BC}$, $\\overline{CD}$는 반원 O의 접선이다. $\\overline{AD}=10$ cm, $\\overline{AB}=12$ cm일 때, $\\overline{CB}$의 길이를 구하시오. (단, 풀이 과정을 자세하게 서술할 것)",
+   "imgs": [
+    "s3"
+   ],
+   "imgW": 40
+  },
+  {
+   "n": 22,
+   "pt": "10",
+   "type": "서",
+   "ans": "$73^\\circ$",
+   "unit": "원의 성질",
+   "sub": "원주각",
+   "lv": 3,
+   "q": "<b>[서술형 4]</b> 그림에서 $\\overline{AB}$는 반원 O의 지름이고, $\\angle COD=34^\\circ$일 때, $\\angle x$의 크기를 구하시오. (단, 풀이 과정을 자세하게 서술할 것)",
+   "imgs": [
+    "s4"
+   ],
+   "imgW": 38
+  }
+ ]
+}

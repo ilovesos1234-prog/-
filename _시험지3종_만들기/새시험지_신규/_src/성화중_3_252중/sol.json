@@ -1,0 +1,210 @@
+{
+ "1": {
+  "tp": "삼각비의 뜻",
+  "key": "빗변 AB=5, BC=3, AC=4",
+  "sol": [
+   "$\\sin A=\\dfrac35$, $\\tan A=\\dfrac34$",
+   "$\\sin B=\\dfrac45$, $\\cos B=\\dfrac35$, $\\tan B=\\dfrac43$",
+   "옳은 것은 ③"
+  ],
+  "check": "ok"
+ },
+ "2": {
+  "tp": "삼각비의 표 읽기",
+  "key": "표에서 값이 같은 각을 찾는다",
+  "sol": [
+   "$\\cos17^\\circ=0.9563$ → $x=17$",
+   "$\\tan18^\\circ=0.3249$ → $y=18$",
+   "$2x+y=52$"
+  ],
+  "check": "원본 표가 깨져 있어 16°~18°의 삼각비 값으로 표를 다시 만듦"
+ },
+ "3": {
+  "tp": "특수각의 삼각비",
+  "key": "tan 60° = √3",
+  "sol": [
+   "$\\tan60^\\circ=\\sqrt3$ 이므로 ⑤가 옳지 않다."
+  ],
+  "check": "ok"
+ },
+ "4": {
+  "tp": "단위원과 삼각비",
+  "key": "빗변 OD=1인 직각삼각형 ODA",
+  "sol": [
+   "$\\triangle\\mathrm{ODA}$에서 $\\overline{\\mathrm{OD}}=1$",
+   "$\\sin x^\\circ=\\dfrac{\\overline{\\mathrm{DA}}}{\\overline{\\mathrm{OD}}}=\\overline{\\mathrm{DA}}$"
+  ],
+  "check": "ok"
+ },
+ "5": {
+  "tp": "두 변과 끼인각으로 넓이",
+  "key": "넓이 = ½ab sinC",
+  "sol": [
+   "$\\dfrac12\\times4\\times4\\times\\sin60^\\circ=4\\sqrt3\\,(\\mathrm{cm}^2)$"
+  ],
+  "check": "ok"
+ },
+ "6": {
+  "tp": "현의 수직이등분선",
+  "key": "중심에서 현에 내린 수선은 현을 이등분",
+  "sol": [
+   "현의 절반 $=\\sqrt{4^2-2^2}=2\\sqrt3$",
+   "$x=2\\times2\\sqrt3=4\\sqrt3$"
+  ],
+  "check": "ok"
+ },
+ "7": {
+  "tp": "RHS 합동",
+  "key": "반지름 OA=OB, 직각, 공통변",
+  "sol": [
+   "(가) 반지름이므로 $\\overline{\\mathrm{OA}}=\\overline{\\mathrm{OB}}$",
+   "(나) $\\angle\\mathrm{OMA}=\\angle\\mathrm{OMB}=90^\\circ$",
+   "(다) RHS 합동이므로 $\\overline{\\mathrm{AM}}=\\overline{\\mathrm{BM}}$"
+  ],
+  "check": "원본은 '∠OAM = (나) = 90°'로 적혀 있으나 내용상 ∠OMA = (나) 이므로 그렇게 고쳐 적음"
+ },
+ "8": {
+  "tp": "사각형을 두 삼각형으로",
+  "key": "대각선 AC로 나누어 각각 ½ab sinθ",
+  "sol": [
+   "$\\triangle\\mathrm{ABC}=\\dfrac12\\times4\\times6\\times\\sin60^\\circ=6\\sqrt3$",
+   "$\\triangle\\mathrm{ACD}=\\dfrac12\\times4\\times1\\times\\sin(180^\\circ-120^\\circ)=\\sqrt3$",
+   "넓이 $=7\\sqrt3\\,(\\mathrm{cm}^2)$"
+  ],
+  "check": "주어진 길이·각은 실제로 동시에 성립하지 않음(AC²이 28과 21로 다름). 출제 의도대로 두 삼각형 넓이의 합 7√3으로 답함"
+ },
+ "9": {
+  "tp": "이등변삼각형과 삼각비",
+  "key": "각을 구한 뒤 D에서 수선을 내려 특수각 활용",
+  "sol": [
+   "$\\angle\\mathrm{C}=75^\\circ$, $\\triangle\\mathrm{BCD}$에서 $\\angle\\mathrm{BDC}=75^\\circ$, $\\angle\\mathrm{ABD}=75^\\circ-30^\\circ=45^\\circ$",
+   "$\\mathrm{D}$에서 $\\overline{\\mathrm{AB}}$에 수선 $\\mathrm{DH}$: $\\angle\\mathrm{DBH}=45^\\circ$ → $\\overline{\\mathrm{BH}}=\\overline{\\mathrm{DH}}=2$",
+   "$\\angle\\mathrm{A}=30^\\circ$ → $\\overline{\\mathrm{AH}}=\\dfrac{2}{\\tan30^\\circ}=2\\sqrt3$",
+   "$\\overline{\\mathrm{AB}}=2+2\\sqrt3=2(\\sqrt3+1)$"
+  ],
+  "check": "ok"
+ },
+ "10": {
+  "tp": "접선의 길이",
+  "key": "BD=BE, CF=CE, AD=AF",
+  "sol": [
+   "$\\overline{\\mathrm{BD}}=\\overline{\\mathrm{BE}}=x$, $\\overline{\\mathrm{CF}}=\\overline{\\mathrm{CE}}=6-x$",
+   "$\\overline{\\mathrm{AD}}=\\overline{\\mathrm{AF}}$ → $9+x=7+(6-x)$",
+   "$2x=4$, $x=2$"
+  ],
+  "check": "ok"
+ },
+ "11": {
+  "tp": "보조선으로 특수각 만들기",
+  "key": "∠BCD=45°, D에서 BC에 수선",
+  "sol": [
+   "$\\angle\\mathrm{BDC}=75^\\circ$, $\\angle\\mathrm{BCD}=45^\\circ$",
+   "D에서 BC에 수선 DH: $\\overline{\\mathrm{BH}}=4\\sqrt2\\cos60^\\circ=2\\sqrt2$, $\\overline{\\mathrm{DH}}=2\\sqrt6=\\overline{\\mathrm{HC}}$",
+   "한 변 $=2\\sqrt2+2\\sqrt6$, $\\triangle\\mathrm{ABC}=\\dfrac{\\sqrt3}{4}(2\\sqrt2+2\\sqrt6)^2=12+8\\sqrt3$",
+   "$\\triangle\\mathrm{DBC}=\\dfrac12(2\\sqrt2+2\\sqrt6)\\times2\\sqrt6=12+4\\sqrt3$",
+   "$\\triangle\\mathrm{ADC}=4\\sqrt3$"
+  ],
+  "check": "ok"
+ },
+ "12": {
+  "tp": "겹친 테이프 넓이",
+  "key": "겹친 부분은 마름모, 한 변 = 3/sin60°",
+  "sol": [
+   "한 변 $=\\dfrac{3}{\\sin60^\\circ}=2\\sqrt3$",
+   "넓이 $=2\\sqrt3\\times3=6\\sqrt3\\,(\\mathrm{cm}^2)$"
+  ],
+  "check": "ok"
+ },
+ "13": {
+  "tp": "한 변과 양 끝 각",
+  "key": "C에서 AB에 수선 CH",
+  "sol": [
+   "$\\angle\\mathrm{A}=65^\\circ$, C에서 AB에 수선 CH: $\\overline{\\mathrm{CH}}=5\\sin53^\\circ$",
+   "$\\overline{\\mathrm{AC}}=\\dfrac{\\overline{\\mathrm{CH}}}{\\sin65^\\circ}=\\dfrac{5\\sin53^\\circ}{\\sin65^\\circ}$"
+  ],
+  "check": "ok"
+ },
+ "14": {
+  "tp": "넓이의 최대",
+  "key": "높이 최대 = 중심거리 + 반지름",
+  "sol": [
+   "중심에서 AB까지 거리 $=\\sqrt{10^2-8^2}=6$",
+   "최대 높이 $=6+10=16$",
+   "넓이 $=\\dfrac12\\times16\\times16=128\\,(\\mathrm{cm}^2)$"
+  ],
+  "check": "ok"
+ },
+ "15": {
+  "tp": "직육면체의 단면 삼각형",
+  "key": "높이 DH=6tan30°, BF=FG",
+  "sol": [
+   "$\\overline{\\mathrm{DH}}=6\\tan30^\\circ=2\\sqrt3$, $\\overline{\\mathrm{BF}}=\\overline{\\mathrm{FG}}=2\\sqrt3$",
+   "$\\overline{\\mathrm{BG}}=2\\sqrt6$, $\\overline{\\mathrm{DG}}=4\\sqrt3$, $\\overline{\\mathrm{BD}}=\\sqrt{12+36}=4\\sqrt3$",
+   "이등변삼각형: 높이 $=\\sqrt{48-6}=\\sqrt{42}$",
+   "넓이 $=\\dfrac12\\times2\\sqrt6\\times\\sqrt{42}=6\\sqrt7$"
+  ],
+  "check": "ok"
+ },
+ "16": {
+  "tp": "공통접선과 닮음",
+  "key": "△PAO ∽ △PBO′ (닮음비 2:1)",
+  "sol": [
+   "$\\triangle\\mathrm{PAO}\\sim\\triangle\\mathrm{PBO'}$, 닮음비 $10:5=2:1$",
+   "$\\overline{\\mathrm{PO}}=2\\overline{\\mathrm{PO'}}$ → $\\overline{\\mathrm{PO'}}=13$, $\\overline{\\mathrm{PO}}=26$",
+   "$\\overline{\\mathrm{AP}}=\\sqrt{26^2-10^2}=24\\,(\\mathrm{cm})$"
+  ],
+  "check": "ok"
+ },
+ "17": {
+  "tp": "각의 합을 한 각으로 옮기기",
+  "key": "DE=1로 놓으면 x+y = ∠AEC",
+  "sol": [
+   "$\\overline{\\mathrm{DE}}=1$: $\\overline{\\mathrm{EC}}=1$, $\\overline{\\mathrm{AC}}=2$, $\\overline{\\mathrm{BD}}=4$, $\\overline{\\mathrm{BC}}=6$",
+   "$\\overline{\\mathrm{DC}}=\\overline{\\mathrm{AC}}=2$ → $y=45$",
+   "$\\tan x=\\dfrac13$, $\\tan y=1$, $\\tan\\angle\\mathrm{AEC}=2$ 이고 $\\tan(x+y)=\\dfrac{\\frac13+1}{1-\\frac13}=2$ 이므로 $x+y=\\angle\\mathrm{AEC}$",
+   "$\\overline{\\mathrm{AE}}=\\sqrt5$ → $\\cos(x+y)=\\dfrac{\\overline{\\mathrm{EC}}}{\\overline{\\mathrm{AE}}}=\\dfrac{1}{\\sqrt5}=\\dfrac{\\sqrt5}{5}$"
+  ],
+  "check": "풀이에 탄젠트 덧셈 관계를 확인용으로 사용함(중학 범위 밖). 답은 정답과 일치"
+ },
+ "18": {
+  "tp": "접선의 회전각",
+  "key": "∠APB와 ∠APC를 tan으로 구한다",
+  "sol": [
+   "$\\tan\\angle\\mathrm{APO}=\\dfrac66=1$ → $\\angle\\mathrm{APB}=90^\\circ$",
+   "$\\tan\\angle\\mathrm{APO'}=\\dfrac{6\\sqrt3}{6}=\\sqrt3$ → $\\angle\\mathrm{APC}=120^\\circ$",
+   "$\\angle\\mathrm{BPC}=30^\\circ$, $\\overline{\\mathrm{PB}}=\\overline{\\mathrm{PA}}=6$",
+   "넓이 $=\\pi\\times6^2\\times\\dfrac{30}{360}=3\\pi$"
+  ],
+  "check": "ok"
+ },
+ "19": {
+  "tp": "특수각의 삼각비",
+  "key": "x = BC sin45°, y = BC tan30°",
+  "sol": [
+   "$x=\\overline{\\mathrm{AB}}=3\\sqrt2\\sin45^\\circ=3$",
+   "$y=\\overline{\\mathrm{CD}}=3\\sqrt2\\tan30^\\circ=\\sqrt6$",
+   "$x^2+y^2=9+6=15$"
+  ],
+  "check": "ok"
+ },
+ "20": {
+  "tp": "두 지점에서 올려본 높이",
+  "key": "A에서 BC에 수선 AH, BH + HC = 80",
+  "sol": [
+   "$\\overline{\\mathrm{AH}}=h$라 하면 $\\overline{\\mathrm{BH}}=\\dfrac{h}{\\tan45^\\circ}=h$, $\\overline{\\mathrm{CH}}=\\dfrac{h}{\\tan60^\\circ}=\\dfrac{h}{\\sqrt3}$",
+   "$h+\\dfrac{h}{\\sqrt3}=80$ → $h=\\dfrac{80\\sqrt3}{\\sqrt3+1}=40\\sqrt3(\\sqrt3-1)$",
+   "$h=40(3-\\sqrt3)\\,\\mathrm{m}$"
+  ],
+  "check": "빠른 정답의 20번이 '40(3−√'에서 잘려 있음. 풀이 결과 40(3−√3)"
+ },
+ "21": {
+  "tp": "넓이 공식 ½ab sinA",
+  "key": "∠A 공통, 두 변의 곱 비교",
+  "sol": [
+   "$S=\\dfrac12\\cdot\\overline{\\mathrm{AD}}\\cdot\\overline{\\mathrm{AE}}\\sin A$, $\\triangle\\mathrm{ABC}=\\dfrac12\\cdot\\overline{\\mathrm{AB}}\\cdot\\overline{\\mathrm{AC}}\\sin A$",
+   "$\\dfrac{S}{\\triangle\\mathrm{ABC}}=\\dfrac{7}{12}\\times\\dfrac45=\\dfrac{7}{15}$",
+   "$T=\\dfrac{8}{15}\\triangle\\mathrm{ABC}$ → $\\dfrac TS=\\dfrac87$"
+  ],
+  "check": "ok"
+ }
+}
