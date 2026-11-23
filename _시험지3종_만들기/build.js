@@ -262,7 +262,7 @@ tr.sub td{background:#fbfaf4}
 <div><small>서술형</small><b>${nSub}</b>문항 · ${(total - ptObj).toFixed(2)}점</div><div><small>${LV[3]} · ${LV[4]} 비율</small><b>${lvs[3] + lvs[4]}</b>문항 (${Math.round((lvPt[3] + lvPt[4]) / total * 100)}%)</div></div>
 <table><thead><tr><th style="width:8mm">번호</th><th style="width:14mm">유형</th><th style="width:34mm">단원</th><th>핵심 개념</th><th style="width:13mm">난이도</th><th style="width:12mm">배점</th><th style="width:24mm">정답</th></tr></thead>
 <tbody>${rows}</tbody></table>
-<div class="row"><div class="panel"><h3>단원별 배점</h3>${bars(subs, (v) => v.p, (v) => `${v.n}문항 ${v.p.toFixed(1)}점`)}</div>
+<div class="row"><div class="panel"><h3>단원별 배점</h3>${Object.keys(subs).length > 6 ? bars(Object.fromEntries(Object.entries(units).map(([k, p]) => [k, { n: Q.filter((q) => q.unit === k).length, p }])), (v) => v.p, (v) => `${v.n}문항 ${v.p.toFixed(1)}점`) : bars(subs, (v) => v.p, (v) => `${v.n}문항 ${v.p.toFixed(1)}점`)}</div>
 <div class="panel"><h3>난이도별 배점</h3>${bars(Object.fromEntries(Object.entries(lvs).map(([k, n]) => [LV[k], { n, p: lvPt[k] }])), (v) => v.p, (v) => `${v.n}문항 ${v.p.toFixed(1)}점`)}</div></div>
 <div class="note">${META.note(units, total)}</div>
 </div>`;
@@ -285,6 +285,16 @@ tr.sub td{background:#fbfaf4}
     await pg.waitForFunction(() => window.__done !== false);
     const w = await pg.evaluate(() => window.__warn);
     if (w && w.length) console.log('경고', w);
+    if (name.endsWith('(분석표)')) {
+      // A4 한 장에 맞추기: 넘치면 비율을 줄여 한 쪽에 넣는다
+      await pg.evaluate(() => {
+        const w = document.querySelector('.wrap'); if (!w) return;
+        const H = 297 * 96 / 25.4; w.style.height = 'auto';
+        let z = 1;
+        while (w.getBoundingClientRect().height * 1 > H - 1 && z > 0.55) { z -= 0.02; w.style.zoom = z; }
+        w.style.height = (297 / z) + 'mm'; w.style.overflow = 'hidden';
+      });
+    }
     await pg.pdf({ path: path.join(OUT, name + '.pdf'), printBackground: true, preferCSSPageSize: true, ...fmt });
     console.log('ok', name);
   }
