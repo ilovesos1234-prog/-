@@ -1,0 +1,193 @@
+{
+ "1": {
+  "tp": "벡터의 평행",
+  "key": "계수의 비가 같음",
+  "sol": [
+   "$\\dfrac k3=\\dfrac26$, $k=1$"
+  ],
+  "check": "ok"
+ },
+ "2": {
+  "tp": "쌍곡선의 주축",
+  "key": "표준형으로",
+  "sol": [
+   "$\\dfrac{x^2}4-\\dfrac{y^2}5=1$, 주축 $2\\cdot2=4$"
+  ],
+  "check": "ok"
+ },
+ "3": {
+  "tp": "꼬인 위치",
+  "key": "만나지도 평행하지도 않은 모서리",
+  "sol": [
+   "A, G를 지나는 모서리 6개를 제외한 6개 모두 꼬인 위치",
+   "답 6"
+  ],
+  "check": "ok"
+ },
+ "4": {
+  "tp": "벡터의 덧셈",
+  "key": "평행사변형법",
+  "sol": [
+   "$\\overrightarrow{AB}+\\overrightarrow{AD}=\\overrightarrow{AC}$",
+   "$|2\\overrightarrow{AC}|=2\\cdot4=8$"
+  ],
+  "check": "ok"
+ },
+ "5": {
+  "tp": "벡터의 각",
+  "key": "내적 $=0$",
+  "sol": [
+   "$\\vec a\\cdot\\vec b=4-4=0$, $\\cos\\theta=0$"
+  ],
+  "check": "ok"
+ },
+ "6": {
+  "tp": "기울기 주어진 접선",
+  "key": "$n^2=a^2m^2+b^2$",
+  "sol": [
+   "$y=x+n$, $n^2=2+1=3$, $n=\\pm\\sqrt3$",
+   "두 평행선 거리 $\\dfrac{2\\sqrt3}{\\sqrt2}=\\sqrt6$"
+  ],
+  "check": "ok"
+ },
+ "7": {
+  "tp": "포물선의 접선",
+  "key": "기울기 $\\dfrac{6}{b}$",
+  "sol": [
+   "$(3,6)$에서 기울기 $1$",
+   "$(a,b)$에서 기울기 $\\dfrac6b=-1$ → $b=-6$, $a=3$",
+   "$a-b=9$"
+  ],
+  "check": "ok"
+ },
+ "8": {
+  "tp": "내적의 계산",
+  "key": "제곱해서 $\\vec a\\cdot\\vec b$",
+  "sol": [
+   "$4-4\\vec a\\cdot\\vec b+36=36$ → $\\vec a\\cdot\\vec b=1$",
+   "$\\vec b\\cdot(\\vec a+\\vec b)=1+9=10$"
+  ],
+  "check": "사이트 난이도 태그 없음(하로 추정)"
+ },
+ "9": {
+  "tp": "직선의 수직",
+  "key": "방향벡터 내적 $0$",
+  "sol": [
+   "방향벡터 $(k+1,-k^2)$, $(2k,3)$",
+   "$2k(k+1)-3k^2=0$ → $k=2$"
+  ],
+  "check": "ok"
+ },
+ "10": {
+  "tp": "타원의 정의",
+  "key": "$\\overline{AF}+\\overline{AF'}=2a$",
+  "sol": [
+   "둘레 $=(\\overline{AF}+\\overline{AF'})+(\\overline{BF}+\\overline{BF'})=4a=16$"
+  ],
+  "check": "사이트 난이도 태그 없음(중으로 추정)"
+ },
+ "11": {
+  "tp": "직선과 평면의 각",
+  "key": "$y$ 성분과 길이",
+  "sol": [
+   "$\\overrightarrow{AB}=(-4,a-1,3)$",
+   "$\\sin45^\\circ=\\dfrac{|a-1|}{\\sqrt{25+(a-1)^2}}$ → $(a-1)^2=25$, $a=6$"
+  ],
+  "check": "ok"
+ },
+ "12": {
+  "tp": "구 위의 점과 거리",
+  "key": "중심까지 거리 ± 반지름",
+  "sol": [
+   "구: 중심 $(2,3,-1)$, 반지름 $2$",
+   "중심까지 거리 $\\sqrt{17}$",
+   "$Mm=17-4=13$"
+  ],
+  "check": "ok"
+ },
+ "13": {
+  "tp": "삼수선의 정리",
+  "key": "$\\overline{EI}\\perp\\overline{FH}$",
+  "sol": [
+   "$\\overline{EI}=\\dfrac{1\\cdot2}{\\sqrt5}$",
+   "$\\overline{AI}=\\sqrt{1+\\dfrac45}=\\dfrac{3\\sqrt5}5$"
+  ],
+  "check": "ok"
+ },
+ "14": {
+  "tp": "포물선 초점현",
+  "key": "$\\dfrac1{AF}+\\dfrac1{BF}=\\dfrac1p$ ($p=2$)",
+  "sol": [
+   "$\\overline{AF}=t$, $\\overline{BF}=2t$: $\\dfrac1t+\\dfrac1{2t}=\\dfrac12$",
+   "$t=3$, $\\overline{AB}=9$"
+  ],
+  "check": "ok"
+ },
+ "15": {
+  "tp": "거리와 내분·외분",
+  "key": "공식 대입",
+  "sol": [
+   "(1) $\\sqrt{1+4+49}=3\\sqrt6$",
+   "(2) $\\dfrac{2A+B}3=\\left(\\dfrac53,-\\dfrac{11}3,\\dfrac{10}3\\right)$",
+   "(3) $\\dfrac{3B-A}2=\\left(\\dfrac12,-6,\\dfrac{23}2\\right)$"
+  ],
+  "check": "ok"
+ },
+ "16": {
+  "tp": "위치벡터와 내적",
+  "key": "$\\overrightarrow{CD}=\\vec a$",
+  "sol": [
+   "(1) $\\overrightarrow{NM}=\\dfrac12\\vec a-\\dfrac13\\vec b$",
+   "$\\vec a\\cdot\\vec b=4\\cdot6\\cdot\\dfrac12=12$",
+   "(2) $\\left(\\dfrac12\\vec a-\\dfrac13\\vec b\\right)\\cdot\\vec a=8-4=4$"
+  ],
+  "check": "ok"
+ },
+ "17": {
+  "tp": "포물선의 방정식",
+  "key": "$y^2=4px$",
+  "sol": [
+   "$36=12p$, $p=3$ → $y^2=12x$"
+  ],
+  "check": "ok"
+ },
+ "18": {
+  "tp": "일차결합",
+  "key": "성분 비교",
+  "sol": [
+   "$2k-l=8$, $k+3l=-3$",
+   "$k=3$, $l=-2$"
+  ],
+  "check": "ok"
+ },
+ "19": {
+  "tp": "타원의 초점",
+  "key": "표준형으로 평행이동",
+  "sol": [
+   "$\\dfrac{(x+1)^2}{3}+\\dfrac{(y-4)^2}{9}=1$, $c^2=6$",
+   "초점 $(-1,4\\pm\\sqrt6)$, $\\overline{FF'}=2\\sqrt6$",
+   "넓이 $\\dfrac12\\cdot2\\sqrt6\\cdot1=\\sqrt6$"
+  ],
+  "check": "ok"
+ },
+ "20": {
+  "tp": "쌍곡선의 점근선",
+  "key": "초점 공유, $a=1$",
+  "sol": [
+   "타원 초점 $(\\pm2\\sqrt2,0)$, 단축 $2$",
+   "쌍곡선 $a=1$, $b^2=8-1=7$",
+   "점근선 $y=\\pm\\sqrt7x$"
+  ],
+  "check": "ok"
+ },
+ "21": {
+  "tp": "평면의 결정",
+  "key": "세 직선은 한 평면 ABFD 위",
+  "sol": [
+   "$AB$, $AD$, $DF$, $G$는 모두 평면 $ABFD$ 위 → 1개",
+   "직선 $AB$, $AD$, $DF$ 각각과 점 $C$, $E$: 6개",
+   "세 점 $C$, $E$, $G$: 1개 → 합 8"
+  ],
+  "check": "ok"
+ }
+}

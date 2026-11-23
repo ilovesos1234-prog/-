@@ -1,0 +1,206 @@
+{
+ "1": {
+  "tp": "∞-∞ 꼴",
+  "key": "분자 유리화",
+  "sol": [
+   "$\\dfrac{2n}{\\sqrt{n^2+2n}+n}=\\dfrac{2}{\\sqrt{1+\\frac2n}+1}\\to1$"
+  ],
+  "check": "ok"
+ },
+ "2": {
+  "tp": "등비수열의 극한",
+  "key": "$|r|$의 범위로 나누기",
+  "sol": [
+   "$|r|\\lt1$: $0$, $r=1$: $\\dfrac12$, $r=-1$: $-\\dfrac12$",
+   "$|r|\\gt1$: $\\dfrac{r}{r^{-2n}+1}\\to r$ ($|r|\\gt1$)",
+   "극한값은 $0,\\ \\pm\\dfrac12$ 또는 $|r|\\gt1$인 값 → $1$은 불가"
+  ],
+  "check": "ok"
+ },
+ "3": {
+  "tp": "급수와 일반항",
+  "key": "급수 수렴 → $a_n-2\\to0$",
+  "sol": [
+   "$a_n\\to2$",
+   "$\\dfrac{6-4}{2+2}=\\dfrac12$"
+  ],
+  "check": "ok"
+ },
+ "4": {
+  "tp": "가우스 기호와 극한",
+  "key": "$2n\\lt\\sqrt{4n^2+3n+1}\\lt2n+1$",
+  "sol": [
+   "$(2n)^2\\lt4n^2+3n+1\\lt(2n+1)^2$이므로 $a_n=2n$",
+   "$\\sqrt{4n^2+3n+1}-2n=\\dfrac{3n+1}{\\sqrt{4n^2+3n+1}+2n}\\to\\dfrac34$"
+  ],
+  "check": "ok"
+ },
+ "5": {
+  "tp": "합성함수의 미분",
+  "key": "극한 $=(g\\circ f)'\\left(\\dfrac\\pi6\\right)$",
+  "sol": [
+   "$g(f(\\tfrac\\pi6))=e^{1/2}=\\sqrt e$",
+   "$(e^{\\cos2x})'=-2\\sin2x\\,e^{\\cos2x}$",
+   "$x=\\dfrac\\pi6$: $-2\\cdot\\dfrac{\\sqrt3}2\\sqrt e=-\\sqrt{3e}$"
+  ],
+  "check": "ok"
+ },
+ "6": {
+  "tp": "음함수 미분",
+  "key": "양변을 $x$로 미분",
+  "sol": [
+   "⑤: $\\dfrac x2-\\dfrac{2y}{9}y'=0$에서 $y'=\\dfrac{9x}{4y}$",
+   "①~④는 옳다 → 옳지 않은 것은 ⑤"
+  ],
+  "check": "ok"
+ },
+ "7": {
+  "tp": "덧셈정리",
+  "key": "$\\tan105^\\circ=\\tan(60^\\circ+45^\\circ)$",
+  "sol": [
+   "$\\tan\\dfrac7{12}\\pi=\\dfrac{\\sqrt3+1}{1-\\sqrt3}=-2-\\sqrt3$",
+   "나머지는 모두 옳다 → ⑤"
+  ],
+  "check": "ok"
+ },
+ "8": {
+  "tp": "로그·지수 극한",
+  "key": "$g(x)=e^{-x}-1$",
+  "sol": [
+   "$y=x$ 대칭: $y=e^x-1$, $y$축 대칭: $g(x)=e^{-x}-1$",
+   "P$(e^t-1,t)$, Q$(-\\ln(1+t),t)$",
+   "$\\overline{PQ}=e^t-1+\\ln(1+t)\\approx2t$, $g(t)\\approx-t$",
+   "극한 $=-2$"
+  ],
+  "check": "ok"
+ },
+ "9": {
+  "tp": "접선과 두 직선의 각",
+  "key": "접점 $a$로 접선 세우기",
+  "sol": [
+   "접선 $y=(-2a+1)(x-a)-a^2+a+3$이 $(1,4)$ 지남 → $a^2-2a=0$",
+   "$a=0,2$ → 기울기 $1$, $-3$",
+   "$\\tan\\theta=\\left|\\dfrac{1-(-3)}{1+1\\cdot(-3)}\\right|=2$",
+   "$\\csc^2\\theta=1+\\cot^2\\theta=\\dfrac54$"
+  ],
+  "check": "ok"
+ },
+ "10": {
+  "tp": "매개변수 미분",
+  "key": "$\\dfrac{dy/dt}{dx/dt}$",
+  "sol": [
+   "$\\dfrac{dx}{dt}=\\dfrac{3t^2-8t-3}{(t^2+1)^2}=\\dfrac{(3t+1)(t-3)}{(t^2+1)^2}$",
+   "$\\dfrac{dy}{dt}=\\dfrac{2-2t^2}{(t^2+1)^2}$",
+   "$\\dfrac{dy}{dx}=\\dfrac{-2(t+1)(t-1)}{(3t+1)(t-3)}$"
+  ],
+  "check": "ok"
+ },
+ "11": {
+  "tp": "등비급수 도형",
+  "key": "닮음비 $1-\\dfrac1{\\sqrt3}$",
+  "sol": [
+   "$\\overline{A_1B}=2\\sqrt3$, $\\overline{A_2B}=2\\sqrt3-2$, 닮음비 $r=1-\\dfrac1{\\sqrt3}$",
+   "$\\overline{A_2C_2}=2r$, $\\overline{C_1C_2}=2-2r=\\dfrac2{\\sqrt3}$, 호 $=\\dfrac\\pi3$",
+   "첫째 둘레 $=2+\\dfrac\\pi3$",
+   "$\\lim l_n=\\dfrac{2+\\frac\\pi3}{1/\\sqrt3}=\\sqrt3\\cdot\\dfrac{6+\\pi}3$, $k=\\dfrac{6+\\pi}3$"
+  ],
+  "check": "ok"
+ },
+ "12": {
+  "tp": "삼각함수 선분 표현",
+  "key": "접선 길이",
+  "sol": [
+   "$\\overline{PQ}=\\tan\\theta$, $\\overline{PR}=\\cot\\theta$, $\\overline{QR}=\\tan\\theta+\\cot\\theta$",
+   "$\\overline{QR}\\tan\\theta=\\tan^2\\theta+1=\\sec^2\\theta$",
+   "답 ⑤"
+  ],
+  "check": "ok"
+ },
+ "13": {
+  "tp": "여러 극한 판정",
+  "key": "미분계수, 로그 합치기, e의 정의",
+  "sol": [
+   "ⓐ 미분계수 $2\\ln2+3=\\ln4e^3$ (참)",
+   "ⓑ $\\log_2(1-x^3)/x^3\\to-\\dfrac1{\\ln2}$ (거짓)",
+   "ⓒ $\\dfrac{1-\\cos2\\sqrt2x}{(e^{2x}-1)^2}\\to\\dfrac{4x^2}{4x^2}=1$ (거짓)",
+   "ⓓ $e^5\\cdot e^3=e^8$ (거짓), ⓔ $\\dfrac{(x^2/2)^2}{2x^4}=\\dfrac18$ (거짓)",
+   "옳은 것 1개"
+  ],
+  "check": "ok"
+ },
+ "14": {
+  "tp": "교점 개수와 부분분수",
+  "key": "$a_n=4n+2$, $b_n=4n-1$",
+  "sol": [
+   "$x\\gt0$에서 $|\\cos\\pi x|$와 $2n+1$번 → $a_n=4n+2$",
+   "$|\\sin\\pi x|$: 원점 포함 $b_n=2(2n-1)+1=4n-1$",
+   "$\\sum\\dfrac1{(4n+2)(4n+10)}=\\dfrac18\\left(\\dfrac16+\\dfrac1{10}\\right)=\\dfrac1{30}$",
+   "$\\sum\\dfrac1{(4n-1)(4n+7)}=\\dfrac18\\left(\\dfrac13+\\dfrac17\\right)=\\dfrac5{84}$",
+   "합 $\\dfrac{13}{140}$, $p+q=153$"
+  ],
+  "check": "ok"
+ },
+ "15": {
+  "tp": "미분가능성",
+  "key": "$x=0,\\pi$에서 연속·미분계수",
+  "sol": [
+   "$x=0$: $d=0$, $c=1$",
+   "$x=\\pi$: $a\\pi^2+b\\pi=-2$, $3a\\pi^2+2b\\pi=-2$",
+   "$a=\\dfrac2{\\pi^2}$, $b=-\\dfrac4\\pi$",
+   "$\\dfrac{e^{at}-1}{-bt}\\to-\\dfrac ab=\\dfrac1{2\\pi}$"
+  ],
+  "check": "ok"
+ },
+ "16": {
+  "tp": "극한으로 정의된 함수",
+  "key": "$|x|$와 $1$의 대소로 나누기",
+  "sol": [
+   "$|x|\\lt1$: $-2$, $|x|\\gt1$: $\\dfrac1{3x}$, $f(1)=-\\dfrac14$, $f(-1)=-\\dfrac34$",
+   "$u=f(a)$: $f(u)+u^2+\\dfrac{31}{16}=0$",
+   "$|u|\\lt1$이면 $u^2=\\dfrac1{16}$, $u=\\pm\\dfrac14$",
+   "$a=\\pm\\dfrac43$, $1$ → 차 $\\dfrac83$"
+  ],
+  "check": "ok"
+ },
+ "17": {
+  "tp": "삼각함수 극한 도형",
+  "key": "$\\varphi=\\dfrac\\pi2-\\theta$로 치환",
+  "sol": [
+   "$\\overline{OQ}=\\cot\\theta$, $\\overline{BM}=\\cos\\theta$",
+   "$\\overline{OQ}-\\overline{BM}=\\dfrac{\\sin\\varphi(1-\\cos\\varphi)}{\\cos\\varphi}\\approx\\dfrac{\\varphi^3}2$ → 첫 극한 $-\\dfrac12$",
+   "$r=\\sin\\theta+\\cos\\theta-1$, $\\dfrac{2r}{\\varphi}\\to2$",
+   "합 $\\dfrac32$"
+  ],
+  "check": "ok"
+ },
+ "18": {
+  "tp": "삼각함수 사이의 관계",
+  "key": "$1+\\tan^2=\\sec^2$, $1+\\cot^2=\\csc^2$",
+  "sol": [
+   "$\\sec^2\\theta=1+4=5$",
+   "$\\csc^2\\theta=1+\\dfrac14=\\dfrac54$",
+   "합 $\\dfrac{25}4$"
+  ],
+  "check": "ok"
+ },
+ "19": {
+  "tp": "등비급수",
+  "key": "홀수항·짝수항 분리",
+  "sol": [
+   "$\\sum\\dfrac1{3^{2n-1}}=\\dfrac{1/3}{1-1/9}=\\dfrac38$",
+   "$\\sum\\dfrac2{3^{2n}}=\\dfrac{2/9}{8/9}=\\dfrac14$",
+   "합 $\\dfrac58$"
+  ],
+  "check": "ok"
+ },
+ "20": {
+  "tp": "삼각함수 미분과 연립",
+  "key": "제3사분면 부호",
+  "sol": [
+   "(1) $\\cos\\alpha=-\\sqrt{1-\\frac15}=-\\dfrac{2\\sqrt5}5$",
+   "(2) $-a-2b=5$, $-2a+b=5$ → $a=-3$, $b=-1$",
+   "(3) $f'(x)=-3\\cos x+\\sin x$, $f'\\left(\\dfrac74\\pi\\right)=-\\dfrac{3\\sqrt2}2-\\dfrac{\\sqrt2}2=-2\\sqrt2$"
+  ],
+  "check": "ok"
+ }
+}

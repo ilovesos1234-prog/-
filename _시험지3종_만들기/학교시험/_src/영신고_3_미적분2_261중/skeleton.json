@@ -1,0 +1,347 @@
+{
+ "meta": {
+  "year": 2026,
+  "school": "영신고",
+  "grade": "고3",
+  "subject": "미적분Ⅱ",
+  "title": "2026 영신고 3학년 1학기 중간 (미적분Ⅱ)",
+  "term": "1학기 중간",
+  "range": "Ⅰ. 수열의 극한 ~ Ⅱ. 미분법 (여러 가지 미분법, 접선의 방정식)",
+  "has_key": true,
+  "note": "채수학 사이트 정리본(20문항: 선택형 17, 서술형 3, 인쇄 배점 합계 100점). 정답은 사이트의 빠른 정답과 풀이로 확인했다.",
+  "src": "영신고_3_미적분2_261중.pdf"
+ },
+ "Q": [
+  {
+   "n": 1,
+   "pt": "3",
+   "type": "객",
+   "ans": "②",
+   "unit": "수열의 극한",
+   "sub": "∞-∞ 꼴의 극한",
+   "lv": 1,
+   "q": "극한값 $\\displaystyle\\lim_{n\\to\\infty}\\left(\\sqrt{n^2+2n}-n\\right)$의 값은?",
+   "ch": [
+    "$0$",
+    "$1$",
+    "$2$",
+    "$3$",
+    "$4$"
+   ]
+  },
+  {
+   "n": 2,
+   "pt": "3",
+   "type": "객",
+   "ans": "④",
+   "unit": "수열의 극한",
+   "sub": "등비수열의 극한",
+   "lv": 2,
+   "q": "수열 $\\left\\{\\dfrac{r^{2n+1}}{1+r^{2n}}\\right\\}$이 수렴할 때, 극한값이 될 수 없는 것은?",
+   "ch": [
+    "$-\\dfrac{1}{2}$",
+    "$0$",
+    "$\\dfrac{1}{2}$",
+    "$1$",
+    "$\\dfrac{3}{2}$"
+   ]
+  },
+  {
+   "n": 3,
+   "pt": "3",
+   "type": "객",
+   "ans": "②",
+   "unit": "수열의 극한",
+   "sub": "급수와 수열의 극한",
+   "lv": 1,
+   "q": "수열 $\\{a_n\\}$에 대하여 $\\displaystyle\\sum_{n=1}^{\\infty}(a_n-2)=3$일 때, $\\displaystyle\\lim_{n\\to\\infty}\\dfrac{3a_n-4}{a_n+2}$의 값은?",
+   "ch": [
+    "$\\dfrac{1}{3}$",
+    "$\\dfrac{1}{2}$",
+    "$1$",
+    "$\\dfrac{11}{7}$",
+    "$\\dfrac{13}{5}$"
+   ]
+  },
+  {
+   "n": 4,
+   "pt": "3",
+   "type": "객",
+   "ans": "④",
+   "unit": "수열의 극한",
+   "sub": "∞-∞ 꼴의 극한",
+   "lv": 2,
+   "q": "자연수 $n$에 대하여 $\\sqrt{4n^2+3n+1}$보다 크지 않은 최대 정수를 $a_n$이라고 할 때, $\\displaystyle\\lim_{n\\to\\infty}\\left(\\sqrt{4n^2+3n+1}-a_n\\right)$의 값은?",
+   "ch": [
+    "$\\dfrac{1}{8}$",
+    "$\\dfrac{1}{4}$",
+    "$\\dfrac{1}{2}$",
+    "$\\dfrac{3}{4}$",
+    "$1$"
+   ]
+  },
+  {
+   "n": 5,
+   "pt": "3",
+   "type": "객",
+   "ans": "③",
+   "unit": "미분법",
+   "sub": "합성함수의 미분법",
+   "lv": 1,
+   "q": "두 함수 $f(x)=\\cos2x$, $g(x)=e^x$에 대하여 $\\displaystyle\\lim_{x\\to\\frac{\\pi}{6}}\\dfrac{g(f(x))-\\sqrt e}{x-\\frac{\\pi}{6}}$의 값은?",
+   "ch": [
+    "$-3e$",
+    "$-\\sqrt3\\,e$",
+    "$-\\sqrt{3e}$",
+    "$-\\sqrt2\\,e$",
+    "$-\\sqrt{2e}$"
+   ]
+  },
+  {
+   "n": 6,
+   "pt": "3",
+   "type": "객",
+   "ans": "⑤",
+   "unit": "미분법",
+   "sub": "음함수의 미분법",
+   "lv": 1,
+   "q": "다음 방정식으로 주어진 $x$의 함수 $y$와 그 $\\dfrac{dy}{dx}$를 짝지어 놓은 것 중 옳지 않은 것은?",
+   "ch": [
+    "$xy-1=0$, $-\\dfrac{y}{x}\\ (x\\ne0)$",
+    "$x^2+2x+y^2=0$, $\\dfrac{-x-1}{y}\\ (y\\ne0)$",
+    "$y^2-4x=0$, $\\dfrac{2}{y}\\ (y\\ne0)$",
+    "$x^2+\\dfrac{y^2}{4}=1$, $\\dfrac{-4x}{y}\\ (y\\ne0)$",
+    "$\\dfrac{x^2}{4}-\\dfrac{y^2}{9}=1$, $\\dfrac{4x}{9y}\\ (y\\ne0)$"
+   ]
+  },
+  {
+   "n": 7,
+   "pt": "3",
+   "type": "객",
+   "ans": "⑤",
+   "unit": "미분법",
+   "sub": "삼각함수의 덧셈정리",
+   "lv": 1,
+   "q": "다음 삼각함수의 값을 구한 것 중 옳지 않은 것은?",
+   "ch": [
+    "$\\sin\\dfrac{\\pi}{12}=\\dfrac{\\sqrt6-\\sqrt2}{4}$",
+    "$\\cos\\dfrac{7}{12}\\pi=\\dfrac{\\sqrt2-\\sqrt6}{4}$",
+    "$\\sin\\dfrac{5}{12}\\pi=\\dfrac{\\sqrt2+\\sqrt6}{4}$",
+    "$\\cos\\dfrac{\\pi}{12}=\\dfrac{\\sqrt2+\\sqrt6}{4}$",
+    "$\\tan\\dfrac{7}{12}\\pi=-2+\\sqrt3$"
+   ]
+  },
+  {
+   "n": 8,
+   "pt": "4",
+   "type": "객",
+   "ans": "①",
+   "unit": "미분법",
+   "sub": "지수·로그함수의 극한",
+   "lv": 3,
+   "q": "함수 $f(x)=\\ln(x+1)$에 대하여 곡선 $y=f(x)$를 직선 $y=x$에 대하여 대칭이동한 후, 다시 $y$축에 대하여 대칭이동한 곡선을 $y=g(x)$라 하자. 양수 $t$에 대하여 직선 $y=t$가 두 곡선 $y=f(x)$, $y=g(x)$와 만나는 점을 각각 P, Q라 할 때, $\\displaystyle\\lim_{t\\to0+}\\dfrac{\\overline{PQ}}{g(t)}$의 값은?",
+   "ch": [
+    "$-2$",
+    "$-1$",
+    "$1$",
+    "$2$",
+    "$3$"
+   ]
+  },
+  {
+   "n": 9,
+   "pt": "4",
+   "type": "객",
+   "ans": "③",
+   "unit": "미분법",
+   "sub": "곡선 밖의 점에서 그은 접선",
+   "lv": 2,
+   "q": "점 $(1,4)$에서 곡선 $y=-x^2+x+3$에 그은 두 접선을 각각 $l$, $m$이라 하자. 두 직선 $l$, $m$이 이루는 예각의 크기를 $\\theta$라 할 때, $\\csc^2\\theta$의 값은?",
+   "ch": [
+    "$\\dfrac{3}{2}$",
+    "$\\dfrac{4}{3}$",
+    "$\\dfrac{5}{4}$",
+    "$\\dfrac{13}{9}$",
+    "$\\dfrac{25}{16}$"
+   ]
+  },
+  {
+   "n": 10,
+   "pt": "4",
+   "type": "객",
+   "ans": "④",
+   "unit": "미분법",
+   "sub": "매개변수로 나타낸 함수의 미분법",
+   "lv": 2,
+   "q": "매개변수 $t$로 나타낸 곡선 $x=\\dfrac{4-3t}{t^2+1}$, $y=\\dfrac{2t}{t^2+1}$에 대하여 $\\dfrac{dy}{dx}$를 구하면?",
+   "ch": [
+    "$\\dfrac{-(t+1)(t-1)}{(3t+2)(t-3)}\\left(t\\ne-\\dfrac23,\\,3\\right)$",
+    "$\\dfrac{-2(t+1)(t-1)}{(3t+2)(t-3)}\\left(t\\ne-\\dfrac23,\\,3\\right)$",
+    "$\\dfrac{-2(t+1)(t-1)}{(2t+3)(t-1)}\\left(t\\ne-\\dfrac32,\\,1\\right)$",
+    "$\\dfrac{-2(t+1)(t-1)}{(3t+1)(t-3)}\\left(t\\ne-\\dfrac13,\\,3\\right)$",
+    "$\\dfrac{-2(t+1)(t-1)}{(3t+2)(t-1)}\\left(t\\ne-\\dfrac23,\\,1\\right)$"
+   ]
+  },
+  {
+   "n": 11,
+   "pt": "4",
+   "type": "객",
+   "ans": "③",
+   "unit": "수열의 극한",
+   "sub": "등비급수의 도형 활용",
+   "lv": 3,
+   "q": "그림과 같이 $\\overline{A_1C_1}=\\overline{BC_1}=2$, $\\angle C_1A_1B=\\dfrac{\\pi}{6}$인 삼각형 $A_1C_1B$가 있다. $\\overline{A_1C_1}=\\overline{A_1A_2}$가 되도록 선분 $A_1B$ 위의 점 $A_2$를 잡고, 중심이 $A_1$, 반지름의 길이가 $\\overline{A_1C_1}$이고 중심각의 크기가 $\\dfrac{\\pi}{6}$인 부채꼴 $A_1C_1A_2$를 그린다. $\\angle C_2A_2B=\\dfrac{\\pi}{6}$가 되도록 선분 $BC_1$ 위의 점 $C_2$를 잡고, 두 선분 $A_2C_2$, $C_1C_2$와 호 $C_1A_2$로 둘러싸인 부분인 ▷ 모양의 도형에 색칠하여 얻은 그림을 $R_1$이라 하자. 그림 $R_1$에서 $\\overline{A_2C_2}=\\overline{A_2A_3}$이 되도록 선분 $A_2B$ 위의 점 $A_3$을 잡고, 중심이 $A_2$, 반지름의 길이가 $\\overline{A_2C_2}$이고 중심각의 크기가 $\\dfrac{\\pi}{6}$인 부채꼴 $A_2C_2A_3$을 그린다. $\\angle C_3A_3B=\\dfrac{\\pi}{6}$가 되도록 선분 $BC_2$ 위의 점 $C_3$을 잡고, 두 선분 $A_3C_3$, $C_2C_3$과 호 $C_2A_3$으로 둘러싸인 부분인 ▷ 모양의 도형에 색칠하여 얻은 그림을 $R_2$라 하자. 이와 같은 과정을 계속하여 $n$번째 얻은 그림 $R_n$에 색칠되어 있는 부분의 둘레의 길이를 $l_n$이라 할 때, $\\displaystyle\\lim_{n\\to\\infty}l_n=\\sqrt3k$이다. 실수 $k$의 값은?",
+   "ch": [
+    "$\\dfrac{4+\\pi}{3}$",
+    "$\\dfrac{4+2\\pi}{3}$",
+    "$\\dfrac{6+\\pi}{3}$",
+    "$\\dfrac{6+2\\pi}{3}$",
+    "$\\dfrac{8+2\\pi}{3}$"
+   ],
+   "imgs": [
+    "q11"
+   ],
+   "imgW": 70
+  },
+  {
+   "n": 12,
+   "pt": "4",
+   "type": "객",
+   "ans": "⑤",
+   "unit": "미분법",
+   "sub": "sec·csc·cot의 뜻과 관계",
+   "lv": 2,
+   "q": "아래 그림과 같이 중심이 원점 O이고 반지름의 길이가 $1$인 원의 제1사분면 위의 점 $\\mathrm{P}(\\cos\\theta,\\,\\sin\\theta)$에서의 접선이 $x$축과 만나는 점을 Q, $y$축과 만나는 점을 R이라고 하자. $\\sec^2\\theta$의 값과 항상 같은 것은?",
+   "ch": [
+    "$1+\\overline{PR}^2$",
+    "$\\cot\\theta\\times\\overline{QR}$",
+    "$\\overline{OR}\\times\\overline{OQ}$",
+    "$\\csc^2\\theta-\\overline{PR}^2$",
+    "$\\overline{QR}\\times\\tan\\theta$"
+   ],
+   "imgs": [
+    "q12"
+   ],
+   "imgW": 45
+  },
+  {
+   "n": 13,
+   "pt": "4",
+   "type": "객",
+   "ans": "①",
+   "unit": "미분법",
+   "sub": "지수·로그·삼각함수의 극한",
+   "lv": 3,
+   "q": "다음 〈보기〉의 ⓐ ~ ⓔ 5개의 극한값을 구한 결과 중 옳은 것의 개수는?<div style=\"border:1px solid #888;padding:4px 8px;margin:4px 0\">ⓐ $\\displaystyle\\lim_{x\\to-1}\\dfrac{2^{x+2}+x^3-1}{x+1}=\\ln4e^3$<br>ⓑ $\\displaystyle\\lim_{x\\to0}\\dfrac{\\log_2(x^2+x+1)+\\log_2(1-x)}{x^3}=\\dfrac{1}{\\ln2}$<br>ⓒ $\\displaystyle\\lim_{x\\to0}\\dfrac{1-\\cos2\\sqrt2x}{1-2e^{2x}+e^{4x}}=\\sqrt2$<br>ⓓ $\\displaystyle\\lim_{x\\to\\infty}\\left\\{\\left(\\dfrac{3x+1}{3x}\\right)\\left(\\dfrac{5x+1}{5x}\\right)\\right\\}^{15x}=e^{15}$<br>ⓔ $\\displaystyle\\lim_{x\\to0+}\\dfrac{(1-\\cos x)^2}{2x^4}=\\dfrac14$</div>",
+   "ch": [
+    "$1$",
+    "$2$",
+    "$3$",
+    "$4$",
+    "$5$"
+   ]
+  },
+  {
+   "n": 14,
+   "pt": "5",
+   "type": "객",
+   "ans": "①",
+   "unit": "수열의 극한",
+   "sub": "급수의 합 (부분분수)",
+   "lv": 4,
+   "q": "자연수 $n$에 대하여 함수 $y=\\dfrac{|x|}{n}$와 $y=|\\cos\\pi x|$의 그래프의 교점의 개수를 $a_n$이라 하고, 함수 $y=\\dfrac{|x|}{n}$와 $y=|\\sin\\pi x|$의 그래프의 교점의 개수를 $b_n$이라고 할 때, $\\displaystyle\\sum_{n=1}^{\\infty}\\left(\\dfrac{1}{a_na_{n+2}}+\\dfrac{1}{b_nb_{n+2}}\\right)=\\dfrac{q}{p}$이다. $p+q$의 값은? (단, $p$, $q$는 서로소인 자연수)",
+   "ch": [
+    "$153$",
+    "$189$",
+    "$270$",
+    "$311$",
+    "$459$"
+   ]
+  },
+  {
+   "n": 15,
+   "pt": "5",
+   "type": "객",
+   "ans": "②",
+   "unit": "미분법",
+   "sub": "미분가능성과 극한",
+   "lv": 3,
+   "q": "삼차함수 $f(x)=ax^3+bx^2+cx+d$에 대하여 함수 $g(x)$를 $g(x)=\\begin{cases}f(x) & (x\\lt0\\ \\text{또는}\\ x\\gt\\pi)\\\\ x\\cos x & (0\\le x\\le\\pi)\\end{cases}$라 하자. 함수 $g(x)$가 실수 전체의 집합에서 미분가능할 때, $\\displaystyle\\lim_{t\\to0}\\dfrac{e^{at}-c}{d-bt}$의 값은? (단, $a$, $b$, $c$, $d$는 상수)",
+   "ch": [
+    "$\\dfrac{1}{2\\pi^2}$",
+    "$\\dfrac{1}{2\\pi}$",
+    "$\\pi$",
+    "$2\\pi$",
+    "$2\\pi^2$"
+   ]
+  },
+  {
+   "n": 16,
+   "pt": "5",
+   "type": "객",
+   "ans": "⑤",
+   "unit": "수열의 극한",
+   "sub": "등비수열의 극한으로 정의된 함수",
+   "lv": 4,
+   "q": "함수 $f(x)=\\displaystyle\\lim_{n\\to\\infty}\\dfrac{x^{2n-1}-2}{3x^{2n}+1}$에 대하여 $(f\\circ f)(a)+\\{f(a)\\}^2+\\dfrac{31}{16}=0$을 만족시키는 모든 실수 $a$의 값들 중 최댓값과 최솟값의 차는?",
+   "ch": [
+    "$\\dfrac{1}{3}$",
+    "$1$",
+    "$\\dfrac{4}{3}$",
+    "$2$",
+    "$\\dfrac{8}{3}$"
+   ]
+  },
+  {
+   "n": 17,
+   "pt": "5",
+   "type": "객",
+   "ans": "④",
+   "unit": "미분법",
+   "sub": "삼각함수의 극한의 활용",
+   "lv": 4,
+   "q": "그림과 같이 좌표평면에서 두 점 $\\mathrm{A}(-1,0)$, $\\mathrm{B}(1,0)$과 원 $x^2+y^2=1$ 위의 제1사분면에 있는 점 P에 대하여 직선 AP와 $y$축이 만나는 점을 Q, 선분 BP의 중점을 M이라 하고, $\\angle PBA=\\theta$라 하자. 삼각형 ABP에 내접하는 원의 반지름의 길이를 $r(\\theta)$라 할 때, $\\displaystyle\\lim_{\\theta\\to\\frac{\\pi}{2}-}\\dfrac{\\overline{OQ}-\\overline{BM}}{\\left(\\theta-\\frac{\\pi}{2}\\right)^3}+\\lim_{\\theta\\to\\frac{\\pi}{2}-}\\left(\\dfrac{2r(\\theta)}{\\frac{\\pi}{2}-\\theta}\\right)$의 값은?",
+   "ch": [
+    "$\\dfrac{1}{4}$",
+    "$\\dfrac{1}{2}$",
+    "$1$",
+    "$\\dfrac{3}{2}$",
+    "$2$"
+   ],
+   "imgs": [
+    "q17"
+   ],
+   "imgW": 45
+  },
+  {
+   "n": 18,
+   "pt": "10",
+   "type": "서",
+   "ans": "$\\dfrac{25}{4}$",
+   "unit": "미분법",
+   "sub": "sec·csc·cot의 뜻과 관계",
+   "lv": 1,
+   "q": "<b>[서술형 1]</b> $\\tan\\theta=2$일 때, $\\csc^2\\theta+\\sec^2\\theta$의 값을 구하고, 그 풀이과정을 서술하시오."
+  },
+  {
+   "n": 19,
+   "pt": "10",
+   "type": "서",
+   "ans": "$\\dfrac{5}{8}$",
+   "unit": "수열의 극한",
+   "sub": "등비급수",
+   "lv": 2,
+   "q": "<b>[서술형 2]</b> 급수 $\\dfrac13+\\dfrac{2}{3^2}+\\dfrac{1}{3^3}+\\dfrac{2}{3^4}+\\dfrac{1}{3^5}+\\dfrac{2}{3^6}+\\cdots+\\dfrac{1}{3^{2n-1}}+\\dfrac{2}{3^{2n}}+\\cdots$의 합을 구하고, 그 풀이과정을 서술하시오."
+  },
+  {
+   "n": 20,
+   "pt": "15",
+   "type": "서",
+   "ans": "(1) $-\\dfrac{2\\sqrt5}{5}$ (2) $a=-3$, $b=-1$ (3) $-2\\sqrt2$",
+   "unit": "미분법",
+   "sub": "삼각함수의 도함수",
+   "lv": 3,
+   "q": "<b>[서술형 3]</b> 함수 $f(x)=a\\sin x+b\\cos x$에 대하여 $\\pi\\lt\\alpha\\lt\\dfrac32\\pi$인 실수 $\\alpha$가 $\\sin\\alpha=-\\dfrac{\\sqrt5}{5}$, $f(\\alpha)=f'(\\alpha)=\\sqrt5$를 만족시킬 때, 다음 물음에 답하시오. (단, $a$, $b$는 상수) [총 15점]<br>(1) $\\cos\\alpha$의 값을 구하고 그 풀이과정을 서술하시오. [3점]<br>(2) 상수 $a$, $b$의 값을 각각 구하고 그 풀이과정을 서술하시오. [8점]<br>(3) $f'\\left(\\dfrac74\\pi\\right)$의 값을 구하고 그 풀이과정을 서술하시오. [4점]"
+  }
+ ]
+}
