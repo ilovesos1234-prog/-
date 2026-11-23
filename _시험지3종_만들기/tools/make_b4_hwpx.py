@@ -51,6 +51,42 @@ g3lib.HEAD_INLINE = True      # 번호 옆에 유형 알약
 g3lib.FIG_NATURAL = True
 g3lib.use_paper("B4")         # AVAIL·CPH·K 등을 B4 값으로 (높이 어림에 필요)
 
+# ---- 꼬리말 (2026.11 원장님 확정): 모든 쪽 맨 아래 "수학하는 방법을 가르칩니다!!! 채수학교습소 010-8677-2263" ----
+# g3lib.build_exam 은 d.set_footer("채수학교습소 · 채미정T", "B4 · ☎ …") 를 부른다. g3lib 은 고치지 않고
+# hwpxlib.Doc.set_footer 를 감싸서 글자만 바꾼다 (왼쪽 칸: 문구+교습소·전화, 가운데: 쪽 번호, 오른쪽: 시험 이름·종이).
+FOOT_LEFT = "수학하는 방법을 가르칩니다!!! 채수학교습소 010-8677-2263"
+FOOT_RIGHT = {"text": "B4"}
+_orig_set_footer = hwpxlib.Doc.set_footer
+FOOT_SPLIT = (0.74, 0.08)      # 왼쪽 칸이 문구 한 줄(11.5pt 약 116mm)을 다 담도록 넓힌다 (원래 0.42/0.16/0.42)
+
+
+def _set_footer(self, left, right, charpr=7):
+    """hwpxlib.Doc.set_footer 와 같은 3칸 꼬리말 — 글자와 칸 너비만 바꾼다."""
+    _orig_set_footer(self, FOOT_LEFT, FOOT_RIGHT["text"], charpr)
+    W = hwpxlib.body_w()
+    o1 = int(W * 0.42); o3 = int(W * 0.42); o2 = W - o1 - o3
+    n1 = int(W * FOOT_SPLIT[0]); n2 = int(W * FOOT_SPLIT[1]); n3 = W - n1 - n2
+    x = self.footer_xml_str
+    for col, (ow, nw) in enumerate(((o1, n1), (o2, n2), (o3, n3))):
+        x = x.replace('<hp:cellAddr colAddr="%d" rowAddr="0"/><hp:cellSpan colSpan="1" rowSpan="1"/>'
+                      '<hp:cellSz width="%d" height="1400"/>' % (col, ow),
+                      '<hp:cellAddr colAddr="%d" rowAddr="0"/><hp:cellSpan colSpan="1" rowSpan="1"/>'
+                      '<hp:cellSz width="%d" height="1400"/>' % (col, nw))
+    # 칸 안 글자 폭(textWidth)도 함께
+    parts = x.split('<hp:tc ')
+    for k, nw in zip(range(1, 4), (n1, n2, n3)):
+        parts[k] = re.sub(r'textWidth="\d+"', 'textWidth="%d"' % max(nw - 300, 500), parts[k], count=1)
+    self.footer_xml_str = '<hp:tc '.join(parts)
+
+
+hwpxlib.Doc.set_footer = _set_footer
+
+
+def exam_title(t):
+    """'2026 강북중 3학년 2학기 기말' → '… 기말시험' (PDF 시험지 제목과 같게)."""
+    t = str(t).strip()
+    return t + "시험" if re.search(r"(중간|기말)$", t) else t
+
 # ---- 수식 크기표: 띄어쓰기·한 글자 중괄호만 다른 것도 찾게 한다 ----
 def _norm(s):
     s = re.sub(r"\s+", "", s)
@@ -344,7 +380,7 @@ def build(folder, out):
     # g3lib 은 파일 이름의 '중3'·'고1' 글자로 학교급 색을 고른다 → 이름에 넣어 만든 뒤 옮긴다
     grade = re.search(r"[초중고]\d", str(meta.get("grade", "")))
     fname = "build (%s).hwpx" % (grade.group(0) if grade else lev + "1")
-    title = meta.get("title") or code
+    title = exam_title(meta.get("title") or code)
     info = "날짜 ____.____      이름 ____________      점수 ________"
     path = g3lib.build_exam(P, UNIT, nums, "", fname, per_page=2, title=title, info=info)
     os.makedirs(os.path.dirname(out), exist_ok=True)
@@ -372,6 +408,10 @@ def validate(out):
     hpf = z.read("Contents/content.hpf").decode("utf-8")
     man = dict(re.findall(r'<opf:item id="([^"]+)" href="([^"]+)"', hpf))
     sec = z.read("Contents/section0.xml").decode("utf-8")
+    if FOOT_LEFT not in sec:
+        errs.append("꼬리말 문구 없음")
+    if "logo.png" not in hpf:
+        errs.append("로고 그림 없음")
     refs = set(re.findall(r'binaryItemIDRef="([^"]+)"', sec))
     names = set(z.namelist())
     for r in refs:

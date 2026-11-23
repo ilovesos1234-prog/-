@@ -18,6 +18,23 @@ const CIRC = ['①', '②', '③', '④', '⑤'];
 const imgTag = (q) => q.img ? `<div class="fig"><img src="data:image/png;base64,${fs.readFileSync(q.img).toString('base64')}" style="width:${q.imgW || 55}mm"></div>` : '';
 const LV = D.LV || ['', '하', '중', '상', '최상'];
 
+// ---------- 채수학 브랜드(2026.11 원장님 확정): 모든 파일에 로고 + 모든 쪽 맨 아래 꼬리말 ----------
+const LOGO_FILE = [path.join(__dirname, 'tools', 'g3', 'logo_trim.png'),
+  '/home/user/-/_시험지3종_만들기/tools/g3/logo_trim.png'].find((f) => fs.existsSync(f));
+const LOGO = LOGO_FILE ? `data:image/png;base64,${fs.readFileSync(LOGO_FILE).toString('base64')}` : '';
+const SLOGAN = '수학하는 방법을 가르칩니다!!!';
+const BRAND = '채수학교습소 010-8677-2263';
+const logoImg = (h) => LOGO ? `<img class="logo" src="${LOGO}" style="height:${h}mm;width:auto;display:block">` : '<b>채수학</b>';
+// 꼬리말 한 줄: [로고] 수학하는 방법을 가르칩니다!!! 채수학교습소 010-8677-2263 ……… 오른쪽(쪽 번호 등)
+const brandFoot = (right) => `<div class="bfoot"><span class="bl">${LOGO ? `<img src="${LOGO}">` : ''}<span><b>${SLOGAN}</b> &nbsp;${BRAND}</span></span><span class="br">${right}</span></div>`;
+const BFOOT_CSS = `
+.bfoot{display:flex;align-items:center;justify-content:space-between;gap:4mm;font-family:'Nanum Gothic',sans-serif;font-size:8.5pt;line-height:1.2;color:#444;border-top:.6px solid #bbb;padding-top:1.2mm;white-space:nowrap}
+.bfoot .bl{display:flex;align-items:center;gap:2mm}.bfoot .bl img{height:5.5mm;width:auto;display:block}
+.bfoot .bl b{color:#1b2a5a;font-weight:800}.bfoot .br{color:#666}.bfoot .br b{color:#111}
+`;
+// 시험지 제목: "2026 강북중 3학년 2학기 기말" → "… 기말시험"
+const examTitle = (t) => /(중간|기말)$/.test(t) ? t + '시험' : t;
+
 const fontCss = [
   'katex/dist/katex.min.css',
   '@fontsource/nanum-myeongjo/400.css', '@fontsource/nanum-myeongjo/700.css', '@fontsource/nanum-myeongjo/800.css',
@@ -25,12 +42,13 @@ const fontCss = [
   '@fontsource/nanum-pen-script/400.css',
 ].map((f) => `<link rel="stylesheet" href="file://${path.join(NM, f)}">`).join('\n');
 
-const page = (title, size, css, body) => `<!doctype html><html lang="ko"><head><meta charset="utf-8">
+const page = (title, size, css, body, margin) => `<!doctype html><html lang="ko"><head><meta charset="utf-8">
 <title>${title}</title>${fontCss}<style>
-@page{size:${size};margin:${size.startsWith('210') ? '12mm 13mm' : '0'}}
+@page{size:${size};margin:${margin || (size.startsWith('210') ? '12mm 13mm' : '0')}}
 *{box-sizing:border-box}
 html,body{margin:0;padding:0;background:#fff;color:#111;-webkit-print-color-adjust:exact;print-color-adjust:exact}
 .katex{font-size:1.06em}
+${BFOOT_CSS}
 ${css}</style></head><body>${body}</body></html>`;
 
 // ---------- 그래프(SVG) ----------
@@ -128,14 +146,23 @@ body{font-family:'Nanum Gothic',sans-serif;font-size:11.5pt;line-height:165%}
 .ind{margin:.5mm 0 .5mm 8mm}
 .box{border:1px solid #111;padding:1.5mm 3.5mm;margin:1.5mm 0}
 .fig{text-align:center;margin:0}
-.title{position:absolute;top:12mm;left:18mm;right:18mm}
-.foot{position:absolute;bottom:8mm;left:18mm;right:18mm;height:14mm;display:flex;align-items:flex-end;justify-content:space-between;font-size:8.5pt;color:#555;border-top:.6px solid #bbb;padding-bottom:1mm}
-.foot b{color:#111}
+.sheet.first .body{top:44mm}
+.tb{position:absolute;top:9mm;left:18mm;right:18mm;height:31mm;display:grid;grid-template-columns:40mm 1fr 62mm;align-items:center;gap:3mm;border-bottom:2.2px solid #1b2a5a}
+.tb .lg{display:flex;align-items:center;height:100%}
+.tb .tt{text-align:center;line-height:1.25;min-width:0;overflow:hidden}
+.tb h1{margin:0;font-weight:800;font-size:21pt;color:#1b2a5a;letter-spacing:-.3px;white-space:nowrap}
+.tb .ts{font-size:9.5pt;color:#555;margin-top:2mm;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.tb table{border-collapse:collapse;width:100%;font-size:9.5pt}
+.tb th{background:#eef1f8;color:#1b2a5a;font-weight:800;border:1px solid #1b2a5a;padding:.8mm 0;line-height:1.3}
+.tb td{border:1px solid #1b2a5a;height:13mm}
+.tb td.sc{background:#fff}
+.foot{position:absolute;bottom:7mm;left:18mm;right:18mm}
 `;
   // 선택지: 가장 넓은 선택지가 (칸 너비 − 3mm) 안에 드는 가장 큰 수 5→3→2→1
   // 아래 문제: 단 149mm에서 시작, 위 문제가 넘으면 20mm까지만 내림, 문항 사이 최소 22mm
   const script = `<script>window.__done=false;document.fonts.ready.then(()=>{
 const mm=96/25.4, warn=[];
+document.querySelectorAll('.tb h1').forEach(h=>{let f=21;while(h.scrollWidth>h.clientWidth&&f>13){f-=.5;h.style.fontSize=f+'pt';}});
 document.querySelectorAll('.chs').forEach(g=>{
   const cs=[...g.children]; const W=g.clientWidth;
   const need=Math.max(...cs.map(c=>c.scrollWidth));
@@ -144,74 +171,131 @@ document.querySelectorAll('.chs').forEach(g=>{
 });
 document.querySelectorAll('.col').forEach(col=>{
   const top=col.querySelector('.q.top'), bot=col.querySelector('.q.bot'); if(!bot)return;
-  if(!top)return; const topEnd=top.offsetTop+top.offsetHeight; let y=149*mm;
-  if(topEnd+22*mm>y) y=Math.min(topEnd+22*mm,169*mm);
-  if(topEnd+22*mm>169*mm) warn.push('간격부족 '+bot.querySelector('.no').textContent);
+  // 아래 문제 시작: 단 높이의 149/330 (제목 있는 1쪽은 단이 짧아 그만큼 위로), 최대 +20mm
+  if(!top)return; const topEnd=top.offsetTop+top.offsetHeight; const y0=col.clientHeight*149/330; let y=y0;
+  if(topEnd+22*mm>y) y=Math.min(topEnd+22*mm,y0+20*mm);
+  if(topEnd+22*mm>y0+20*mm) warn.push('간격부족 '+bot.querySelector('.no').textContent);
   bot.style.top=y+'px';
   if(y+bot.offsetHeight>col.clientHeight) warn.push('넘침 '+bot.querySelector('.no').textContent);
 });
+document.querySelectorAll('.col').forEach(col=>{const qs=col.querySelectorAll('.q'); const q=qs[qs.length-1];
+  if(q&&!q.classList.contains('bot')&&q.offsetTop+q.offsetHeight>col.clientHeight) warn.push('넘침 '+q.querySelector('.no').textContent);});
 window.__warn=warn; window.__done=true;});</script>`;
   let body = '';
   LAYOUT.forEach((pg, pi) => {
-    body += `<section class="sheet"><div class="head"><span>채수학 · ${META.title}</span><span>${META.subject} · ${Q.length}문항 · 만점 ${total.toFixed(2)}점</span></div><div class="body">`;
+    const info = `${META.subject} · ${Q.length}문항 · 만점 ${total.toFixed(2)}점`;
+    body += pi === 0
+      ? `<section class="sheet first"><div class="tb"><div class="lg">${logoImg(25)}</div><div class="tt"><h1>${examTitle(META.title)}</h1><div class="ts">${info}${META.units ? ' · ' + META.units : ''}</div></div>
+<table><tr><th>날짜</th><th>이름</th><th>점수</th></tr><tr><td></td><td></td><td class="sc"></td></tr></table></div><div class="body">`
+      : `<section class="sheet"><div class="head"><span>채수학 · ${META.title}</span><span>${info}</span></div><div class="body">`;
     body += pg.map((col, ci) => `<div class="col ${ci ? 'r' : 'l'}">` +
       col.map((n, k) => qBlock(byN[n], k ? 'bot' : 'top')).join('') + '</div>').join('');
-    body += `</div><div class="foot"><span>${META.title} · ${META.subject} &nbsp; <b>${pi + 1}</b> / ${LAYOUT.length}</span><span><b>B4</b> · ☎ 010-8677-2263</span></div></section>`;
+    body += `</div><div class="foot">${brandFoot(`${META.title} · ${META.subject} &nbsp; <b>${pi + 1}</b> / ${LAYOUT.length} &nbsp; <b>B4</b>`)}</div></section>`;
   });
   return page(`${META.title} (시험지 B4)`, '257mm 364mm', css, body + script);
 }
 
 // ---------- 2) 손풀이 A4 ----------
+// 2026.11: 한 쪽 2단, 단마다 1~2문제(쪽당 2~4문제). 카드 높이를 재서 브라우저에서 쪽을 짠다.
 function buildSol() {
   const css = `
 body{font-family:'Nanum Myeongjo',serif;font-size:10pt}
-.wrap{padding:0}
-.top{display:flex;justify-content:space-between;align-items:flex-end;border-bottom:2.5px solid #1b2a5a;padding-bottom:2mm;margin-bottom:5mm}
-.top h1{margin:0;font-family:'Nanum Gothic';font-weight:800;font-size:17pt;color:#1b2a5a}
-.top span{font-family:'Nanum Gothic';font-size:9pt;color:#555}
-.card{break-inside:avoid;border:1px solid #cfd5e3;border-radius:2.5mm;margin-bottom:5mm;overflow:hidden}
-.ch{display:flex;align-items:center;gap:3mm;background:#eef1f8;padding:1.8mm 4mm;font-family:'Nanum Gothic'}
+.sp{width:210mm;height:297mm;padding:10mm 12mm 0;display:flex;flex-direction:column;page-break-after:always;overflow:hidden;position:relative}
+.sp:last-child{page-break-after:auto}
+.top{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;border-bottom:2.5px solid #1b2a5a;padding-bottom:2mm;margin-bottom:4mm;gap:1mm 4mm}
+.top .tl{display:flex;align-items:flex-end;gap:3mm}
+.top h1{margin:0;font-family:'Nanum Gothic';font-weight:800;font-size:17pt;color:#1b2a5a;line-height:1.1;white-space:nowrap}
+.top span{margin-left:auto}
+.top span{font-family:'Nanum Gothic';font-size:9pt;color:#555;white-space:nowrap}
+.top.small{border-bottom-width:1.5px;padding-bottom:1.2mm;margin-bottom:3.5mm}
+.top.small h1{font-size:10.5pt}
+.cols{flex:1;display:grid;grid-template-columns:1fr 1fr;gap:6mm;min-height:0}
+.col{display:flex;flex-direction:column;gap:4mm;min-height:0}
+.col+.col{border-left:.6px dashed #cfd5e3;padding-left:6mm;margin-left:-3mm}
+.col.wide{grid-column:1/3}
+.pf{height:13mm;padding-top:2.5mm}
+#meas{position:absolute;left:-1000mm;top:0}
+.card{border:1px solid #cfd5e3;border-radius:2.5mm;overflow:hidden;flex:0 0 auto}
+.ch{display:flex;align-items:center;flex-wrap:wrap;gap:1mm 2.5mm;background:#eef1f8;padding:1.6mm 3mm;font-family:'Nanum Gothic'}
 .ch .n{font-weight:800;font-size:13pt;color:#1b2a5a}
-.ch .tag{font-size:8.5pt;color:#555}
-.ch .ans{margin-left:auto;font-size:9.5pt;font-weight:700;color:#c0392b}
-.prob{padding:2.5mm 4mm;font-size:9.2pt;line-height:1.7;color:#333;border-bottom:1px dashed #cfd5e3;word-break:keep-all}
+.ch .tag{font-size:8pt;color:#555;flex:1 1 40mm}
+.ch .ans{margin-left:auto;font-size:9.5pt;font-weight:700;color:#c0392b;white-space:nowrap}
+.prob{padding:2.2mm 3.5mm;font-size:9pt;line-height:1.65;color:#333;border-bottom:1px dashed #cfd5e3;word-break:keep-all}
 .prob .box{border:1px solid #888;padding:1.5mm 3mm;margin:1.5mm 0}
 .prob .cen{text-align:center}
-.prob .ind{margin-left:8mm}
-.prob .chs{margin-top:1mm;color:#555}
-.prob .fig{text-align:center}.prob .fig img{max-width:45mm}
-.body{display:flex;gap:4mm;padding:3mm 5mm 4mm}
-.hand{flex:1;font-family:'Nanum Pen Script',cursive;font-size:17.5pt;line-height:1.5;color:#1a3c8f}
-.hand .katex{font-size:.66em;color:#1a3c8f}
+.prob .ind{margin-left:6mm}
+.prob .chs{margin-top:1mm;color:#555;display:flex;flex-wrap:wrap;gap:.5mm 4mm}.prob .chs>span{white-space:nowrap}
+.prob .fig{text-align:center}.prob .fig img{max-width:42mm;height:auto}
+.prob table{max-width:100%}
+.body{display:flex;flex-wrap:wrap;gap:3mm;padding:2.5mm 4mm 3.5mm}
+.hand{flex:1 1 50mm;font-family:'Nanum Pen Script',cursive;font-size:16pt;line-height:1.45;color:#1a3c8f;word-break:keep-all}
+.hand .katex{font-size:.7em;color:#1a3c8f}
 .hand li{margin:0 0 1mm}
 .hand ol{margin:0;padding-left:6mm}
 .hand .fin{margin-top:1.5mm;display:inline-block;border:2px solid #c0392b;color:#c0392b;border-radius:2mm;padding:0 3mm}
 .hand .fin .katex{color:#c0392b}
-.gr{flex:0 0 auto;align-self:center}
-.foot{font-family:'Nanum Gothic';font-size:8pt;color:#888;text-align:center;margin-top:3mm}
+.gr{flex:0 0 auto;margin:0 auto}.gr svg{max-width:80mm;height:auto}
 `;
-  let body = `<div class="wrap"><div class="top"><h1>${META.title} · 손풀이</h1><span>${META.subject} · ${Q.length}문항 · ${META.keyNote || '정답은 빠른정답과 대조 완료'}</span></div>`;
+  const sub = `${META.subject} · ${Q.length}문항 · ${META.keyNote || '정답은 빠른정답과 대조 완료'}`;
+  let cards = '';
   for (const q of Q) {
-    const chs = q.ch ? `<div class="chs">${q.ch.map((c, i) => `${CIRC[i]} ${tex(c.replace('##', ', '))}`).join(' &nbsp; ')}</div>` : '';
-    body += `<div class="card"><div class="ch"><span class="n">${q.n}</span><span class="tag">${q.sub} · ${tex(q.key)} · ${q.pt}점${q.ptGuess ? '(추정)' : ''} · 난이도 ${LV[q.lv]}</span>
+    const chs = q.ch ? `<div class="chs">${q.ch.map((c, i) => `<span>${CIRC[i]} ${tex(c.replace('##', ', '))}</span>`).join('')}</div>` : '';
+    cards += `<div class="card"><div class="ch"><span class="n">${q.n}</span><span class="tag">${q.sub} · ${tex(q.key)} · ${q.pt}점${q.ptGuess ? '(추정)' : ''} · 난이도 ${LV[q.lv]}</span>
 <span class="ans">정답 ${tex(q.ans)}</span></div>
 <div class="prob">${tex(q.q)}${imgTag(q)}${chs}</div>
 <div class="body"><div class="hand"><ol>${q.sol.map((l) => `<li>${tex(l)}</li>`).join('')}</ol>
 <span class="fin">답 ${tex(q.fin)}</span></div>${q.graph ? `<div class="gr">${GRAPHS[q.graph]()}</div>` : ''}</div></div>`;
   }
-  body += '</div>';
-  return page(`${META.title} (손풀이)`, '210mm 297mm', css, body);
+  const head1 = `<div class="top"><div class="tl">${logoImg(12)}<h1>${META.title} · 손풀이</h1></div><span>${sub}</span></div>`;
+  const headN = `<div class="top small"><div class="tl">${logoImg(6.5)}<h1>${META.title} · 손풀이</h1></div><span>${sub}</span></div>`;
+  const tpl = (h) => `<section class="sp">${h}<div class="cols"><div class="col"></div><div class="col"></div></div><div class="pf">${brandFoot('<b>__P__</b> / __N__')}</div></section>`;
+  const script = `<script>window.__done=false;document.fonts.ready.then(()=>{
+const warn=[]; const meas=document.getElementById('meas'); const cards=[...meas.children];
+const T1=${JSON.stringify(tpl(head1))}, TN=${JSON.stringify(tpl(headN))};
+const newPage=(first)=>{const d=document.createElement('div');d.innerHTML=first?T1:TN;const s=d.firstElementChild;document.body.insertBefore(s,meas);return s;};
+let pg=newPage(true), cols=[...pg.querySelectorAll('.col')], H=cols[0].clientHeight, W=cols[0].clientWidth;
+meas.style.width=W+'px';
+const GAP=4*96/25.4;
+const hs=cards.map(c=>c.getBoundingClientRect().height);
+let ci=0, used=0, cnt=0, fresh=true;
+const next=()=>{pg=newPage(false); cols=[...pg.querySelectorAll('.col')]; ci=0; used=0; cnt=0; H=cols[0].clientHeight; fresh=true;};
+cards.forEach((c,i)=>{
+  let h=hs[i];
+  if(h>H && (H-2)/h<0.8){
+    // 아주 긴 풀이: 두 단을 합친 넓은 칸에 홀로 (그래도 넘치면 줄인다)
+    if(!fresh) next();
+    const cs=pg.querySelector('.cols'); cs.innerHTML='<div class="col wide"></div>'; const w=cs.firstChild;
+    w.appendChild(c); const hw=c.getBoundingClientRect().height;
+    if(hw>H-2){c.style.zoom=(H-2)/hw; warn.push('손풀이 '+(i+1)+'번째 카드 넓은 칸+축소 '+((H-2)/hw).toFixed(2));}
+    next(); return;
+  }
+  if(h>H){c.style.zoom=(H-2)/h; h=H-2; warn.push('손풀이 '+(i+1)+'번째 카드 축소 '+((H-2)/hs[i]).toFixed(2));}
+  if(cnt>=2 || (cnt>0 && used+GAP+h>H)){ci++; used=0; cnt=0;}
+  if(ci>1) next();
+  cols[ci].appendChild(c); used+=(cnt?GAP:0)+h; cnt++; fresh=false;
+});
+// 마지막에 빈 쪽이 남으면 지운다
+if(fresh && document.querySelectorAll('.sp').length>1) pg.remove();
+meas.remove();
+const ps=[...document.querySelectorAll('.sp')];
+ps.forEach((p,i)=>{p.innerHTML=p.innerHTML.replace('__P__',i+1).replace('__N__',ps.length);});
+window.__warn=warn; window.__done=true;});</script>`;
+  return page(`${META.title} (손풀이)`, '210mm 297mm', css, `<div id="meas">${cards}</div>` + script, '0');
 }
 
 // ---------- 3) 분석표 A4 ----------
 function buildAna() {
   const css = `
 body{font-family:'Nanum Gothic',sans-serif;font-size:8.6pt;color:#1d2433}
-.wrap{width:210mm;height:297mm;padding:11mm 12mm;display:flex;flex-direction:column}
-.top{background:#1b2a5a;color:#fff;border-radius:2.5mm;padding:4mm 6mm;display:flex;justify-content:space-between;align-items:center}
+.page{width:210mm;height:297mm;position:relative;overflow:hidden}
+.wrap{width:210mm;padding:10mm 12mm 0;display:flex;flex-direction:column}
+.pf{position:absolute;left:12mm;right:12mm;bottom:6mm}
+.top{background:#1b2a5a;color:#fff;border-radius:2.5mm;padding:3.5mm 6mm 3.5mm 4mm;display:flex;justify-content:space-between;align-items:center;gap:4mm}
+.top .tl{display:flex;align-items:center;gap:4mm}
+.top .lgb{background:#fff;border-radius:1.5mm;padding:1mm}
 .top h1{margin:0;font-size:16pt;font-weight:800}
 .top .s{font-size:9pt;opacity:.85;margin-top:1mm}
-.top .tot{text-align:right;font-size:9pt}
+.top .tot{text-align:right;font-size:9pt;white-space:nowrap}
 .top .tot b{font-size:15pt;display:block}
 .kpi{display:grid;grid-template-columns:repeat(4,1fr);gap:3mm;margin:4mm 0}
 .kpi div{border:1px solid #d7dceb;border-radius:2mm;padding:2.5mm 3.5mm}
@@ -227,10 +311,10 @@ tr.sub td{background:#fbfaf4}
 .row{display:grid;grid-template-columns:1fr 1fr;gap:4mm;margin-top:4mm}
 .panel{border:1px solid #d7dceb;border-radius:2mm;padding:3mm 4mm}
 .panel h3{margin:0 0 2mm;font-size:9.5pt;color:#1b2a5a}
-.bar{display:grid;grid-template-columns:30mm 1fr 18mm;align-items:center;gap:2mm;margin:1.4mm 0}
+.bar{display:grid;grid-template-columns:30mm 1fr 22mm;align-items:center;gap:2mm;margin:1.4mm 0}
 .bar .t{height:4mm;background:#eef1f8;border-radius:1mm;overflow:hidden}
 .bar .t i{display:block;height:100%;background:#1b2a5a}
-.bar .v{text-align:right;color:#444}
+.bar .v{text-align:right;color:#444;white-space:nowrap}
 .note{margin-top:4mm;border-left:3px solid #c9a24b;background:#fbf7ec;padding:3mm 4mm;line-height:1.65}
 .note b{color:#1b2a5a}
 .many td{padding:.75mm 1.5mm}
@@ -255,8 +339,8 @@ tr.sub td{background:#fbfaf4}
     `<div class="bar"><span>${k}</span><span class="t"><i style="width:${(val(v) / total * 100).toFixed(1)}%"></i></span><span class="v">${lab(v)}</span></div>`).join('');
   const rows = Q.map((q) => `<tr class="${q.type === '서' ? 'sub' : ''}"><td><b>${q.n}</b></td><td>${q.type === '객' ? '선택형' : '서술형'}</td>
 <td class="l">${q.sub}</td><td class="l">${tex(q.key)}</td><td><span class="lv lv${q.lv}">${LV[q.lv]}</span></td><td>${q.pt}${q.ptGuess ? '*' : ''}</td><td><b>${tex(q.ans)}</b></td></tr>`).join('');
-  const body = `<div class="wrap${Q.length > 20 ? ' many' : ''}">
-<div class="top"><div><h1>${META.title} 분석표</h1><div class="s">${META.subject} · ${META.units}</div></div>
+  const body = `<div class="page"><div class="wrap${Q.length > 20 ? ' many' : ''}">
+<div class="top"><div class="tl"><div class="lgb">${logoImg(12)}</div><div><h1>${META.title} 분석표</h1><div class="s">${META.subject} · ${META.units}</div></div></div>
 <div class="tot">만점<b>${total.toFixed(2)}점</b></div></div>
 <div class="kpi"><div><small>전체 문항</small><b>${Q.length}</b>문항</div><div><small>선택형</small><b>${nObj}</b>문항 · ${ptObj.toFixed(2)}점</div>
 <div><small>서술형</small><b>${nSub}</b>문항 · ${(total - ptObj).toFixed(2)}점</div><div><small>${LV[3]} · ${LV[4]} 비율</small><b>${lvs[3] + lvs[4]}</b>문항 (${Math.round((lvPt[3] + lvPt[4]) / total * 100)}%)</div></div>
@@ -265,8 +349,8 @@ tr.sub td{background:#fbfaf4}
 <div class="row"><div class="panel"><h3>단원별 배점</h3>${Object.keys(subs).length > 6 ? bars(Object.fromEntries(Object.entries(units).map(([k, p]) => [k, { n: Q.filter((q) => q.unit === k).length, p }])), (v) => v.p, (v) => `${v.n}문항 ${v.p.toFixed(1)}점`) : bars(subs, (v) => v.p, (v) => `${v.n}문항 ${v.p.toFixed(1)}점`)}</div>
 <div class="panel"><h3>난이도별 배점</h3>${bars(Object.fromEntries(Object.entries(lvs).map(([k, n]) => [LV[k], { n, p: lvPt[k] }])), (v) => v.p, (v) => `${v.n}문항 ${v.p.toFixed(1)}점`)}</div></div>
 <div class="note">${META.note(units, total)}</div>
-</div>`;
-  return page(`${META.title} (분석표)`, 'A4', css, tex(body));
+</div><div class="pf">${brandFoot(`${META.title} 분석표 · A4 1쪽`)}</div></div>`;
+  return page(`${META.title} (분석표)`, 'A4', css, tex(body), '0');
 }
 
 (async () => {
@@ -286,14 +370,15 @@ tr.sub td{background:#fbfaf4}
     const w = await pg.evaluate(() => window.__warn);
     if (w && w.length) console.log('경고', w);
     if (name.endsWith('(분석표)')) {
-      // A4 한 장에 맞추기: 넘치면 비율을 줄여 한 쪽에 넣는다
-      await pg.evaluate(() => {
-        const w = document.querySelector('.wrap'); if (!w) return;
-        const H = 297 * 96 / 25.4; w.style.height = 'auto';
+      // A4 한 장에 맞추기: 넘치면 본문 비율을 줄여 꼬리말 위 한 쪽에 넣는다 (꼬리말은 그대로)
+      const z = await pg.evaluate(() => {
+        const w = document.querySelector('.wrap'); if (!w) return 1;
+        const H = (297 - 17) * 96 / 25.4;   // 꼬리말 자리 17mm
         let z = 1;
-        while (w.getBoundingClientRect().height * 1 > H - 1 && z > 0.55) { z -= 0.02; w.style.zoom = z; }
-        w.style.height = (297 / z) + 'mm'; w.style.overflow = 'hidden';
+        while (w.getBoundingClientRect().height > H && z > 0.55) { z -= 0.02; w.style.zoom = z; w.style.width = (210 / z) + 'mm'; }
+        return z;
       });
+      if (z < 1) console.log('분석표 축소', z.toFixed(2));
     }
     await pg.pdf({ path: path.join(OUT, name + '.pdf'), printBackground: true, preferCSSPageSize: true, ...fmt });
     console.log('ok', name);

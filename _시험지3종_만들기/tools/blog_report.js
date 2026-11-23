@@ -30,6 +30,9 @@ const imgOf = (q) => (q.imgs || []).map((i) => {
   const f = fs.readdirSync(path.join(dir, 'x', 'BinData')).find((x) => x.startsWith(i + '.'));
   return f ? `<img class="ex" src="${b64(path.join(dir, 'x', 'BinData', f))}" style="width:${Math.min(q.imgW || 55, 70)}mm">` : '';
 }).join('');
+// 채수학 로고 + 모든 쪽 꼬리말 (2026.11 원장님 확정)
+const LOGO_F = path.join(__dirname, 'g3', 'logo_trim.png');
+const LOGO = fs.existsSync(LOGO_F) ? b64(LOGO_F) : '';
 const bookName = (b) => b.replace('_', ' ').replace(/([ⅠⅡⅢⅣⅤⅥⅦ])/, '$1. ').replace(/\.\s+/, '. ');
 
 for (const [n, hs] of Object.entries(M)) for (const h of hs) {
@@ -68,7 +71,8 @@ ${BOOKCSS.replace(/@page[^}]*}/g, '').replace(/(^|})\s*(body|\*|html)[^{]*{[^}]*
 *{box-sizing:border-box}
 body{margin:0;font-family:'Nanum Gothic',sans-serif;color:#1c2b24;-webkit-print-color-adjust:exact;print-color-adjust:exact;word-break:keep-all}
 :root{--g:#2E6B4F;--gd:#245641;--line:#BFD6C9;--R:#E60012;--O:#E08A00}
-.hero{border-radius:10px;background:linear-gradient(135deg,#245641,#2E6B4F);color:#fff;padding:7mm 8mm 6mm}
+.hero{border-radius:10px;background:linear-gradient(135deg,#245641,#2E6B4F);color:#fff;padding:7mm 8mm 6mm;display:flex;align-items:center;gap:6mm}
+.hero .lgb{background:#fff;border-radius:6px;padding:1.2mm;flex:0 0 auto}.hero .lgb img{height:19mm;width:auto;display:block}
 .hero .k{font-size:10pt;opacity:.85;font-weight:700}
 .hero h1{margin:1.5mm 0 1mm;font-size:21pt;font-weight:800;letter-spacing:-.5px}
 .hero .s{font-size:10.5pt;opacity:.92}
@@ -100,7 +104,7 @@ img.ex{display:block;margin:2mm auto;max-width:100%}
 .note{font-size:8.6pt;color:#7A4A2A;background:#FFF6E5;border-radius:4px;padding:1mm 2mm;margin-top:1.5mm}
 .end{margin-top:5mm;border-top:2px solid var(--g);padding-top:3mm;font-size:9.5pt;color:#245641;line-height:1.7}
 </style></head><body>
-<div class="hero"><div class="k">채수학 교재 적중 리포트</div><h1>${m.title}</h1><div class="s">${m.subject ? m.subject + ' · ' : ''}시험 범위 ${m.range || ''}</div></div>
+<div class="hero">${LOGO ? `<div class="lgb"><img src="${LOGO}"></div>` : ''}<div><div class="k">채수학 교재 적중 리포트</div><h1>${m.title}</h1><div class="s">${m.subject ? m.subject + ' · ' : ''}시험 범위 ${m.range || ''}</div></div></div>
 <div class="sum"><div class="box"><div class="v">${rows.length}</div><div class="t">전체 문항</div></div>
 <div class="box"><div class="v">${hitRows.length}</div><div class="t">교재 적중 문항</div></div>
 <div class="box r"><div class="v">${nSame}</div><div class="t">일치 (같은 문제·숫자만 다름)</div></div>
@@ -120,7 +124,9 @@ ${hitRows.map(card).join('\n')}
   const b = await chromium.launch(); const p = await b.newPage();
   await p.goto('file://' + H, { waitUntil: 'networkidle' });
   await p.pdf({ path: OUT, format: 'A4', printBackground: true, displayHeaderFooter: true, headerTemplate: '<span></span>',
-    footerTemplate: `<div style="width:100%;font-size:7.5pt;color:#6b7a72;text-align:center;font-family:sans-serif">채수학교습소 · ${m.school} 적중 리포트 · <span class="pageNumber"></span>/<span class="totalPages"></span></div>`,
+    footerTemplate: `<div style="width:100%;margin:0 12mm;padding-top:1mm;border-top:.6px solid #BFD6C9;display:flex;align-items:center;justify-content:space-between;font-size:8pt;color:#4a5a52;font-family:'Nanum Gothic',sans-serif;-webkit-print-color-adjust:exact">
+<span style="display:flex;align-items:center;gap:2mm">${LOGO ? `<img src="${LOGO}" style="height:5mm;width:auto">` : ''}<b style="color:#245641">수학하는 방법을 가르칩니다!!!</b>&nbsp;채수학교습소 010-8677-2263</span>
+<span style="color:#6b7a72">${m.school} 적중 리포트 · <span class="pageNumber"></span>/<span class="totalPages"></span></span></div>`,
     margin: { top: '12mm', bottom: '14mm', left: '12mm', right: '12mm' } });
   await b.close(); fs.unlinkSync(H);
   if (texErr) { console.error('FAIL KaTeX 오류', texErr); process.exit(1); }
