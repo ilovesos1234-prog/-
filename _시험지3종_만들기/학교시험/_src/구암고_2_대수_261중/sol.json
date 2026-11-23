@@ -1,0 +1,237 @@
+{
+ "1": {
+  "tp": "지수법칙",
+  "key": "밑을 3으로",
+  "sol": [
+   "$9^{\\frac14}=3^{\\frac12}$",
+   "$3^{\\frac12}\\times3^{-\\frac12}=3^0=1$"
+  ],
+  "check": "ok"
+ },
+ "2": {
+  "tp": "등비수열 일반항",
+  "key": "ar, ar⁴",
+  "sol": [
+   "$ar=6$, $ar^4=48$ ⇒ $r^3=8$, $r=2$",
+   "$a=3$ ⇒ $a+r=5$"
+  ],
+  "check": "ok"
+ },
+ "3": {
+  "tp": "코사인법칙",
+  "key": "cos C 공식",
+  "sol": [
+   "$\\cos C=\\dfrac{3+16-25}{2\\cdot\\sqrt3\\cdot4}=\\dfrac{-6}{8\\sqrt3}$",
+   "$=-\\dfrac{\\sqrt3}{4}$"
+  ],
+  "check": "ok"
+ },
+ "4": {
+  "tp": "로그 계산",
+  "key": "계수를 지수로",
+  "sol": [
+   "$\\log_35-\\log_310+\\log_318=\\log_3\\dfrac{5\\times18}{10}$",
+   "$=\\log_39=2$"
+  ],
+  "check": "ok"
+ },
+ "5": {
+  "tp": "곱셈공식",
+  "key": "제곱하여 x+1/x",
+  "sol": [
+   "제곱: $x+2+x^{-1}=9$ ⇒ $x+x^{-1}=7$",
+   "$x^3+x^{-3}=7^3-3\\cdot7=322$"
+  ],
+  "check": "ok"
+ },
+ "6": {
+  "tp": "각 변환 후 통분",
+  "key": "분모 1−sin²θ",
+  "sol": [
+   "식 $=\\dfrac{\\cos\\theta}{1-\\sin\\theta}-\\dfrac{\\cos\\theta}{1+\\sin\\theta}$",
+   "$=\\dfrac{2\\sin\\theta\\cos\\theta}{\\cos^2\\theta}=2\\tan\\theta=-\\dfrac12$"
+  ],
+  "check": "ok"
+ },
+ "7": {
+  "tp": "등차수열의 합",
+  "key": "S₅, S₁₁ 연립",
+  "sol": [
+   "$S_5=5a+10d=5$ ⇒ $a+2d=1$",
+   "$S_{11}=11a+55d=110$ ⇒ $a+5d=10$",
+   "$d=3$, $a=-5$ ⇒ $a_{15}=-5+42=37$"
+  ],
+  "check": "ok"
+ },
+ "8": {
+  "tp": "등비수열의 합",
+  "key": "S₆=S₃(1+r³)",
+  "sol": [
+   "$1+r^3=\\dfrac{147}{-21}=-7$ ⇒ $r=-2$",
+   "$S_3=a(1-2+4)=3a=-21$ ⇒ $a=-7$",
+   "$a_3=-7\\times4=-28$"
+  ],
+  "check": "ok"
+ },
+ "9": {
+  "tp": "사인법칙",
+  "key": "2R = a/sin A",
+  "sol": [
+   "$2R=\\dfrac{6}{\\sin30^\\circ}=12$ ⇒ $R=6$",
+   "$b=2R\\sin45^\\circ=6\\sqrt2$",
+   "$\\dfrac{72\\times6}{24}=18$"
+  ],
+  "check": "ok"
+ },
+ "10": {
+  "tp": "사인함수의 성질",
+  "key": "주기·최대최소·평행이동",
+  "sol": [
+   "ㄱ. 주기 $\\frac{2\\pi}{4}=\\frac\\pi2$ (참)",
+   "ㄴ. $-1\\le y\\le3$ (참)",
+   "ㄷ. $-2\\sin\\left\\{-4\\left(x-\\frac\\pi{12}\\right)\\right\\}+1=-2\\sin\\left(\\frac\\pi3-4x\\right)+1$ (참)"
+  ],
+  "check": "ok"
+ },
+ "11": {
+  "tp": "그래프로 상수 결정",
+  "key": "최댓값과 주기, 최고점",
+  "sol": [
+   "최댓값 $2$, $a\\lt0$ ⇒ $a=-2$",
+   "최고점 $x=\\frac\\pi2$, $\\frac52\\pi$ ⇒ 주기 $2\\pi$ ⇒ $b=1$",
+   "$-2\\cos\\left(\\frac\\pi2+c\\right)=2$ ⇒ $\\frac\\pi2+c=-\\pi$ ⇒ $c=-\\frac32\\pi$",
+   "$abc=(-2)(1)\\left(-\\frac32\\pi\\right)=3\\pi$"
+  ],
+  "check": "ok"
+ },
+ "12": {
+  "tp": "이차식 꼴 최대·최소",
+  "key": "cos x = t",
+  "sol": [
+   "$y=-3t^2+t+1=-3\\left(t-\\frac16\\right)^2+\\frac{13}{12}$, $-1\\le t\\le1$",
+   "$M=\\frac{13}{12}$, $m=-3$ ($t=-1$)",
+   "$M-m=\\frac{49}{12}$"
+  ],
+  "check": "ok"
+ },
+ "13": {
+  "tp": "거듭제곱근 실수 개수",
+  "key": "f=1, g는 부호로",
+  "sol": [
+   "$f(a)=1$ (항상)",
+   "$g(x)=2\\,(x\\gt0)$, $1\\,(x=0)$, $0\\,(x\\lt0)$",
+   "$g(b)g(c)=2$: $b=0$, $c=1\\sim5$ (5개) 또는 $c=0$, $b=1\\sim4$ (4개)",
+   "$a$는 7가지 ⇒ $9\\times7=63$"
+  ],
+  "check": "ok"
+ },
+ "14": {
+  "tp": "외분점과 로그",
+  "key": "외분점 공식",
+  "sol": [
+   "$L=\\log_32$, $\\mathrm Q=4L$",
+   "$\\dfrac{m\\cdot4L-(1+m)L}{m-(1+m)}=-(3m-1)L=-1$",
+   "$3m-1=\\log_23$ ⇒ $3m=\\log_26$ ⇒ $2^m=\\sqrt[3]6$"
+  ],
+  "check": "ok"
+ },
+ "15": {
+  "tp": "항상 성립하는 이차부등식",
+  "key": "판별식 < 0",
+  "sol": [
+   "$\\frac D4=2\\cos^2\\theta+\\sqrt3\\sin\\theta+1\\lt0$",
+   "$2\\sin^2\\theta-\\sqrt3\\sin\\theta-3\\gt0$ ⇒ $(2\\sin\\theta+\\sqrt3)(\\sin\\theta-\\sqrt3)\\gt0$",
+   "$\\sin\\theta\\lt-\\frac{\\sqrt3}2$ ⇒ $\\frac43\\pi\\lt\\theta\\lt\\frac53\\pi$",
+   "$\\cos\\left(\\frac43\\pi+\\frac{10}3\\pi\\right)=\\cos\\frac23\\pi=-\\frac12$"
+  ],
+  "check": "ok"
+ },
+ "16": {
+  "tp": "주기성과 정수 조건",
+  "key": "θ 결정 후 한 주기 조사",
+  "sol": [
+   "(가), (나) ⇒ $\\sin\\theta\\gt0$, $\\cos\\theta\\lt0$",
+   "$2\\cos^2\\theta+5\\cos\\theta+2=0$ ⇒ $\\cos\\theta=-\\frac12$, $\\tan\\theta=-\\sqrt3$",
+   "$f(n)=2\\sin\\frac{n\\pi}3-\\sqrt3\\cos\\frac{n\\pi}2$, 주기 $12$",
+   "정수: $n=3,8,9,10$ (한 주기 4개), $50=12\\times4+2$ ⇒ $16$"
+  ],
+  "check": "ok"
+ },
+ "17": {
+  "tp": "거듭제곱근 계산",
+  "key": "유리수 지수",
+  "sol": [
+   "$\\dfrac{\\sqrt8}{\\sqrt[4]2}=2^{\\frac32-\\frac14}=2\\sqrt[4]2$",
+   "$\\sqrt[3]{\\sqrt[4]8}=8^{\\frac1{12}}=\\sqrt[4]2$, $(\\sqrt[6]{27})^2=3$",
+   "$2\\sqrt[4]2-\\sqrt[4]2+3=\\sqrt[4]2+3$"
+  ],
+  "check": "ok"
+ },
+ "18": {
+  "tp": "밑변환",
+  "key": "log 5 = 1 − log 2",
+  "sol": [
+   "$\\log_512=\\dfrac{\\log12}{\\log5}$",
+   "$\\log12=2a+b$, $\\log5=\\log\\frac{10}2=1-a$",
+   "$\\dfrac{2a+b}{1-a}$"
+  ],
+  "check": "ok"
+ },
+ "19": {
+  "tp": "부채꼴",
+  "key": "S = ½rl",
+  "sol": [
+   "$\\frac12r\\cdot2\\pi=3\\pi$ ⇒ $r=3$",
+   "$\\theta=\\frac lr=\\frac23\\pi$"
+  ],
+  "check": "ok"
+ },
+ "20": {
+  "tp": "코사인법칙",
+  "key": "두 변과 끼인각",
+  "sol": [
+   "$\\overline{BC}^2=16+36-2\\cdot4\\cdot6\\cos120^\\circ=76$",
+   "$\\overline{BC}=2\\sqrt{19}$"
+  ],
+  "check": "ok"
+ },
+ "21": {
+  "tp": "sin±cos",
+  "key": "제곱 후 부호 판단",
+  "sol": [
+   "$1-2\\sin\\theta\\cos\\theta=\\frac34$ ⇒ $\\sin\\theta\\cos\\theta=\\frac18$",
+   "$(\\sin\\theta+\\cos\\theta)^2=1+\\frac14=\\frac54$",
+   "제3사분면 ⇒ $\\sin\\theta+\\cos\\theta=-\\frac{\\sqrt5}2$"
+  ],
+  "check": "ok"
+ },
+ "22": {
+  "tp": "상용로그 활용",
+  "key": "양변에 log",
+  "sol": [
+   "$1.05^n=3$ ⇒ $n\\log1.05=\\log3$",
+   "$n=\\frac{0.48}{0.02}=24$ ⇒ $24$년 후"
+  ],
+  "check": "ok"
+ },
+ "23": {
+  "tp": "Sn과 an, 절댓값 합",
+  "key": "부호가 바뀌는 항",
+  "sol": [
+   "$a_1=S_1=-15$, $n\\ge2$: $a_n=4n-17$",
+   "$n\\le4$이면 음수, $n\\ge5$이면 양수",
+   "합 $=-S_4+(S_{10}-S_4)=S_{10}-2S_4=48+60=108$"
+  ],
+  "check": "ok"
+ },
+ "24": {
+  "tp": "탄젠트 부등식",
+  "key": "u=3x−π/2 치환",
+  "sol": [
+   "$-\\frac\\pi2\\lt u\\lt\\frac32\\pi$, $\\tan u\\lt-\\sqrt3$",
+   "$-\\frac\\pi2\\lt u\\lt-\\frac\\pi3$ 또는 $\\frac\\pi2\\lt u\\lt\\frac23\\pi$",
+   "$x=\\frac13\\left(u+\\frac\\pi2\\right)$ ⇒ $0\\lt x\\lt\\frac\\pi{18}$ 또는 $\\frac\\pi3\\lt x\\lt\\frac7{18}\\pi$"
+  ],
+  "check": "ok"
+ }
+}
