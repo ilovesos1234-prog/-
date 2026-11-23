@@ -60,6 +60,43 @@ _orig_set_footer = hwpxlib.Doc.set_footer
 FOOT_SPLIT = (0.74, 0.08)      # 왼쪽 칸이 문구 한 줄(11.5pt 약 116mm)을 다 담도록 넓힌다 (원래 0.42/0.16/0.42)
 
 
+# ---- 유형 알약의 "채수학  X  " 머리 빼기 (2026.11 원장님: 모든 곳에서 뺀다) ----
+# g3lib.type_pill / head_row 가 글자 앞에 "채수학  X  " 를 붙이고 그 길이로 알약 너비를 잡는다.
+# g3lib 은 고치지 않고 Doc._tbl_in_p 를 감싸서, 그 글자를 빼고 알약 너비를 같은 식(글자수×700K+1500K)으로 다시 잡는다.
+PILL_PREFIX = "채수학  X  "
+_orig_tbl_in_p = hwpxlib.Doc._tbl_in_p
+
+
+def _pill_w(txt, cap):
+    K = g3lib.K
+    return min(int(len(txt) * 700 * K) + int(1500 * K), cap)
+
+
+def _tbl_in_p(self, rows, widths, row_h, *a, **kw):
+    try:
+        if len(rows) == 1:
+            cells = rows[0]
+            hit = [i for i, c in enumerate(cells)
+                   if len(c) == 1 and c[0][0] == 'p' and isinstance(c[0][1], str) and c[0][1].startswith(PILL_PREFIX)]
+            if hit:
+                i = hit[0]
+                old = cells[i][0][1]; new = old[len(PILL_PREFIX):]
+                cells = list(cells); cells[i] = [(cells[i][0][0], new) + tuple(cells[i][0][2:])]
+                widths = list(widths)
+                if len(widths) == 1:            # type_pill: 알약 하나
+                    widths[0] = min(widths[0], _pill_w(new, widths[0]))
+                elif len(widths) == 3 and i == 1:  # head_row: [번호, 알약, 빈칸] — 줄 전체 너비는 그대로
+                    tot = sum(widths); pw = min(widths[1], _pill_w(new, widths[1]))
+                    widths = [widths[0], pw, tot - widths[0] - pw]
+                rows = [cells]
+    except Exception:
+        pass
+    return _orig_tbl_in_p(self, rows, widths, row_h, *a, **kw)
+
+
+hwpxlib.Doc._tbl_in_p = _tbl_in_p
+
+
 def _set_footer(self, left, right, charpr=7):
     """hwpxlib.Doc.set_footer 와 같은 3칸 꼬리말 — 글자와 칸 너비만 바꾼다."""
     _orig_set_footer(self, FOOT_LEFT, FOOT_RIGHT["text"], charpr)
