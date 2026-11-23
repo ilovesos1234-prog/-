@@ -1,0 +1,215 @@
+{
+ "1": {
+  "tp": "꼭지각의 이등분선",
+  "key": "밑변을 수직이등분",
+  "sol": [
+   "이등변삼각형의 꼭지각의 이등분선은 밑변을 수직이등분한다",
+   "$\\overline{\\text{BC}}=2\\times4=8\\,\\text{cm}$"
+  ],
+  "check": "ok"
+ },
+ "2": {
+  "tp": "두 내각이 같은 삼각형",
+  "key": "∠B = ∠C",
+  "sol": [
+   "$\\angle\\text{B}=180^\\circ-66^\\circ-57^\\circ=57^\\circ=\\angle\\text{C}$",
+   "따라서 $\\overline{\\text{AC}}=\\overline{\\text{AB}}=10$, $x=10$"
+  ],
+  "check": "ok"
+ },
+ "3": {
+  "tp": "직각삼각형의 합동",
+  "key": "RHA, RHS, SAS, ASA",
+  "sol": [
+   "① SAS 합동, ② RHS 합동, ④ ASA 합동, ⑤ RHA 합동",
+   "③ 세 각만 같으면 크기가 다를 수 있다"
+  ],
+  "check": "ok"
+ },
+ "4": {
+  "tp": "외심과 중심각",
+  "key": "∠A = ∠BOC/2",
+  "sol": [
+   "$\\angle\\text{BOC}=360^\\circ-120^\\circ-100^\\circ=140^\\circ$",
+   "$\\angle\\text{A}=\\frac{1}{2}\\times140^\\circ=70^\\circ$"
+  ],
+  "check": "그림의 120°는 ∠AOB, 100°는 ∠AOC로 판독"
+ },
+ "5": {
+  "tp": "접선과 반지름",
+  "key": "OB ⊥ AB",
+  "sol": [
+   "접선은 접점을 지나는 반지름에 수직: $\\angle\\text{OBA}=90^\\circ$",
+   "$\\angle\\text{A}=90^\\circ-53^\\circ=37^\\circ$"
+  ],
+  "check": "ok"
+ },
+ "6": {
+  "tp": "평행사변형의 대각선",
+  "key": "두 대각선은 서로를 이등분",
+  "sol": [
+   "$\\overline{\\text{AO}}=\\overline{\\text{CO}}$, $\\overline{\\text{BO}}=\\overline{\\text{DO}}$, $\\angle$AOB $=\\angle$COD",
+   "$\\triangle$ABO ≡ $\\triangle$CDO (SAS 합동) → ③"
+  ],
+  "check": "ok"
+ },
+ "7": {
+  "tp": "평행사변형과 닮음",
+  "key": "DF:FB = 1:2",
+  "sol": [
+   "$\\triangle$FDE ∽ $\\triangle$FBA (AA 닮음), $\\overline{\\text{DE}}:\\overline{\\text{BA}}=1:2$",
+   "$\\overline{\\text{DF}}=\\frac{1}{3}\\overline{\\text{BD}}$",
+   "$\\triangle$ABD $=3\\times\\triangle$AFD $=18$",
+   "$\\square$ABCD $=2\\times18=36\\,\\text{cm}^2$"
+  ],
+  "check": "ok"
+ },
+ "8": {
+  "tp": "직사각형의 대각선",
+  "key": "OC = OD",
+  "sol": [
+   "직사각형의 두 대각선은 길이가 같고 서로를 이등분하므로 $\\overline{\\text{OC}}=\\overline{\\text{OD}}$",
+   "$\\angle\\text{ODC}=53^\\circ$",
+   "$\\angle\\text{ADO}=90^\\circ-53^\\circ=37^\\circ$"
+  ],
+  "check": "ok"
+ },
+ "9": {
+  "tp": "직사각형 속 마름모",
+  "key": "∠ABE=∠EBD=∠DBF=30°",
+  "sol": [
+   "마름모의 대각선 BD는 $\\angle$EBF를 이등분하므로 $\\angle$EBD $=\\angle$DBF",
+   "$\\angle$ABE $=\\angle$EBD이므로 $\\angle$ABC가 삼등분되어 각각 $30^\\circ$",
+   "$\\angle$FDC $=90^\\circ-60^\\circ=30^\\circ$이므로 $\\overline{\\text{FD}}=2\\overline{\\text{FC}}=2A$",
+   "$\\overline{\\text{BF}}=\\overline{\\text{FD}}=2A$, 넓이 $=2A\\times5=10A\\,\\text{cm}^2$"
+  ],
+  "check": "ok"
+ },
+ "10": {
+  "tp": "등변사다리꼴의 각",
+  "key": "엇각과 이등변삼각형",
+  "sol": [
+   "AD∥BC이므로 $\\angle\\text{DAC}=\\angle\\text{ACB}=24^\\circ$",
+   "$\\overline{\\text{AD}}=\\overline{\\text{CD}}$이므로 $\\angle\\text{DCA}=24^\\circ$",
+   "$\\angle\\text{B}=\\angle\\text{BCD}=48^\\circ$",
+   "$\\angle\\text{BAC}=180^\\circ-48^\\circ-24^\\circ=108^\\circ$"
+  ],
+  "check": "ok"
+ },
+ "11": {
+  "tp": "사각형의 대각선",
+  "key": "평행사변형 계열은 서로 이등분",
+  "sol": [
+   "마름모, 정사각형, 직사각형은 모두 평행사변형이므로 대각선이 서로를 이등분",
+   "등변사다리꼴은 대각선의 길이만 같다 → ⑤"
+  ],
+  "check": "ok"
+ },
+ "12": {
+  "tp": "평행선과 넓이",
+  "key": "밑변과 높이가 같다",
+  "sol": [
+   "$l\\,/\\!/\\,m$이므로 두 삼각형의 높이가 같고 밑변 BC를 공유",
+   "$\\triangle$DBC $=\\triangle$ABC $=24\\,\\text{cm}^2$"
+  ],
+  "check": "ok"
+ },
+ "13": {
+  "tp": "항상 닮은 도형",
+  "key": "모양이 하나로 정해진다",
+  "sol": [
+   "원은 항상 닮은 도형",
+   "직사각형, 직각삼각형, 등변사다리꼴, 이등변삼각형은 모양이 달라질 수 있다"
+  ],
+  "check": "ok"
+ },
+ "14": {
+  "tp": "모래시계 꼴",
+  "key": "AD:AB = 1:2",
+  "sol": [
+   "$\\triangle$ADE ∽ $\\triangle$ABC, 닮음비 $5:10=1:2$",
+   "$x=\\overline{\\text{AE}}=\\frac{1}{2}\\times8=4$, $y=\\overline{\\text{DE}}=\\frac{1}{2}\\times12=6$",
+   "$x+y=10$"
+  ],
+  "check": "x는 AE, y는 DE로 판독"
+ },
+ "15": {
+  "tp": "평행선과 선분의 비",
+  "key": "l~m : m~n = 6:3 = 2:1",
+  "sol": [
+   "세 평행선 사이 선분의 비는 $2:1$",
+   "$x:4=2:1$에서 $x=8$",
+   "9cm를 l~m 부분으로 보면 m~n 부분은 4.5, $y=9+4.5=13.5$",
+   "$x+y=21.5$"
+  ],
+  "check": "원본 그림에서 9cm와 y cm가 같은 직선 위에 있고, y cm는 l에서 n까지 전체 길이로 판독(그래야 보기와 맞음). 학생 풀이도 같은 해석"
+ },
+ "16": {
+  "tp": "중점연결정리",
+  "key": "각 변의 절반",
+  "sol": [
+   "$\\overline{\\text{DE}}=\\frac{1}{2}\\overline{\\text{AC}}=4$, $\\overline{\\text{EF}}=\\frac{1}{2}\\overline{\\text{AB}}=6$, $\\overline{\\text{FD}}=\\frac{1}{2}\\overline{\\text{BC}}=5$",
+   "$4+6-5=5\\,\\text{cm}$"
+  ],
+  "check": "ok"
+ },
+ "17": {
+  "tp": "사다리꼴과 넓이의 비",
+  "key": "넓이비 = 닮음비의 제곱",
+  "sol": [
+   "$\\triangle$ODA ∽ $\\triangle$OBC, 닮음비 $6:15=2:5$",
+   "넓이의 비 $4:25$",
+   "$\\triangle$OBC $=20\\times\\frac{25}{4}=125\\,\\text{cm}^2$"
+  ],
+  "check": "ok"
+ },
+ "18": {
+  "tp": "닮은 입체의 부피",
+  "key": "부피비 8:27",
+  "sol": [
+   "부피의 비 $2^3:3^3=8:27$",
+   "$A=81\\times\\frac{8}{27}=24\\,\\text{cm}^3$"
+  ],
+  "check": "ok"
+ },
+ "19": {
+  "tp": "겹쳐진 정사각형",
+  "key": "△OHC ≡ △OID (ASA)",
+  "sol": [
+   "$\\overline{\\text{OC}}=\\overline{\\text{OD}}$, $\\angle\\text{OCH}=\\angle\\text{ODI}=45^\\circ$",
+   "$\\angle\\text{HOC}=90^\\circ-\\angle\\text{COI}=\\angle\\text{IOD}$",
+   "따라서 $\\triangle$OHC ≡ $\\triangle$OID (ASA 합동)",
+   "겹친 부분 $=\\square$OHCI $=\\triangle$OCD $=\\frac{1}{4}\\times60=15\\,\\text{cm}^2$"
+  ],
+  "check": "ok"
+ },
+ "20": {
+  "tp": "직각삼각형의 닮음",
+  "key": "△ABH ∽ △BCH (AA)",
+  "sol": [
+   "$\\angle$AHB $=\\angle$BHC $=90^\\circ$, $\\angle$BAH $=\\angle$CBH이므로 $\\triangle$ABH ∽ $\\triangle$BCH (AA 닮음)",
+   "$\\overline{\\text{AH}}:\\overline{\\text{BH}}=\\overline{\\text{BH}}:\\overline{\\text{CH}}$",
+   "$9:12=12:\\overline{\\text{CH}}$, $\\overline{\\text{CH}}=16\\,\\text{cm}$"
+  ],
+  "check": "ok"
+ },
+ "21": {
+  "tp": "평행선과 AA 닮음",
+  "key": "동위각",
+  "sol": [
+   "$\\angle$A는 공통",
+   "BC∥DE이므로 $\\angle$ADE $=\\angle$ABC (동위각)",
+   "따라서 $\\triangle$ABC ∽ $\\triangle$ADE (AA 닮음)"
+  ],
+  "check": "ok"
+ },
+ "22": {
+  "tp": "무게중심과 넓이",
+  "key": "AG:GD = 2:1",
+  "sol": [
+   "AD는 중선이므로 $\\triangle$ABD $=\\frac{1}{2}\\times60=30$",
+   "$\\overline{\\text{AG}}:\\overline{\\text{GD}}=2:1$이므로 $\\triangle$GAB $=\\frac{2}{3}\\times30=20\\,\\text{cm}^2$"
+  ],
+  "check": "ok"
+ }
+}
