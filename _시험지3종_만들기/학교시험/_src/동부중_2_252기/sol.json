@@ -1,0 +1,200 @@
+{
+ "1": {
+  "tp": "가위바위보 경우의 수",
+  "key": "곱의 법칙",
+  "sol": [
+   "$3\\times3=9$"
+  ],
+  "check": "ok"
+ },
+ "2": {
+  "tp": "이등변삼각형과 이등분선",
+  "key": "∠ADB=90°+∠B/2",
+  "sol": [
+   "$\\angle\\text{A}=180^\\circ-2\\angle\\text{B}$",
+   "$\\angle\\text{ADB}=180^\\circ-\\dfrac12\\angle\\text{A}-\\dfrac12\\angle\\text{B}=90^\\circ+\\dfrac12\\angle\\text{B}=123^\\circ$",
+   "$\\angle\\text{B}=66^\\circ=\\angle\\text{C}$"
+  ],
+  "check": "ok"
+ },
+ "3": {
+  "tp": "외접원과 내접원",
+  "key": "빗변의 중점이 외심, r=(a+b-c)/2",
+  "sol": [
+   "$\\overline{\\text{AC}}=20$ → 외접원 반지름 $10$, 넓이 $100\\pi$",
+   "내접원 반지름 $\\dfrac{16+12-20}2=4$, 넓이 $16\\pi$",
+   "차: $84\\pi\\,(\\text{cm}^2)$"
+  ],
+  "check": "ok"
+ },
+ "4": {
+  "tp": "각의 이등분선의 성질",
+  "key": "BD:DC=AB:AC",
+  "sol": [
+   "$\\overline{\\text{BC}}=\\sqrt{15^2-9^2}=12$",
+   "$\\overline{\\text{BD}}:\\overline{\\text{DC}}=9:15=3:5$",
+   "$\\overline{\\text{BD}}=12\\times\\dfrac38=4.5\\,(\\text{cm})$"
+  ],
+  "check": "ok"
+ },
+ "5": {
+  "tp": "직각삼각형의 합동(RHA)",
+  "key": "△ABD≡△BCE",
+  "sol": [
+   "$\\overline{\\text{AB}}=\\overline{\\text{BC}}$, $\\angle\\text{BAD}=\\angle\\text{CBE}$ → $\\triangle\\text{ADB}\\equiv\\triangle\\text{BEC}$",
+   "$\\overline{\\text{DB}}=12$ → $\\overline{\\text{AB}}^2=5^2+12^2=169$",
+   "$\\triangle\\text{ABC}=\\dfrac{169}2\\,(\\text{cm}^2)$"
+  ],
+  "check": "ok"
+ },
+ "6": {
+  "tp": "평행사변형이 되는 조건",
+  "key": "두 대각선이 서로 이등분",
+  "sol": [
+   "② 두 대각선이 서로 다른 것을 이등분 → 평행사변형",
+   "①③④⑤는 반례가 있다"
+  ],
+  "check": "ok"
+ },
+ "7": {
+  "tp": "평행사변형의 대변",
+  "key": "두 쌍의 대각이 같으면 평행사변형",
+  "sol": [
+   "$x-y=x+y-4$ → $y=2$",
+   "$2x-y=x+3y-2$ → $x=6$",
+   "변: $10,\\ 4$ → 둘레 $2(10+4)=28$"
+  ],
+  "check": "ok"
+ },
+ "8": {
+  "tp": "평행사변형의 성질",
+  "key": "대변·엇각·마름모",
+  "sol": [
+   "ㄱ 참, ㄴ $\\overline{\\text{BD}}=2\\overline{\\text{BO}}$이므로 거짓",
+   "ㄷ 엇각 참, ㄹ $\\angle\\text{BOA}=\\angle\\text{DOC}$이므로 거짓",
+   "ㅁ 이웃한 변이 같으면 마름모 → 대각선 수직, 참"
+  ],
+  "check": "ok"
+ },
+ "9": {
+  "tp": "AA 닮음과 이등변",
+  "key": "△DAE∽△BCA",
+  "sol": [
+   "$\\angle\\text{DAE}=\\angle\\text{BCA}$ (엇각), $\\angle\\text{AED}=\\angle\\text{CAB}$ (엇각)",
+   "$\\triangle\\text{DAE}\\sim\\triangle\\text{BCA}$, $\\overline{\\text{AD}}=\\overline{\\text{AE}}$ → $\\overline{\\text{CB}}=\\overline{\\text{CA}}=10$",
+   "$\\overline{\\text{EC}}=10-5=5\\,(\\text{cm})$"
+  ],
+  "check": "ok"
+ },
+ "10": {
+  "tp": "무게중심과 넓이",
+  "key": "6등분, 12등분",
+  "sol": [
+   "첫째: $\\triangle\\text{AFG}=\\dfrac16\\times48=8$",
+   "둘째: $\\square\\text{GDCE}=\\dfrac26\\times48=16$",
+   "셋째: $\\triangle\\text{GDE}=\\dfrac1{12}\\times48=4$",
+   "합 $28$"
+  ],
+  "check": "스캔의 색칠 부분이 흐리고 학생 필기가 겹쳐 있다. 첫째 △AFG, 둘째 □GDCE, 셋째 △GDE로 읽었고 합 28이 선택지에 있다."
+ },
+ "11": {
+  "tp": "닮은 입체의 성질",
+  "key": "닮음비 3:4",
+  "sol": [
+   "$\\overline{\\text{BC}}:\\overline{\\text{B'C'}}=4.5:6=3:4$",
+   "ㄱ $\\overline{\\text{AD}}=12\\times\\dfrac34=9$ 참, ㄴ 거짓, ㄷ $9:16$ 거짓",
+   "ㄹ $54\\times\\dfrac{64}{27}=128$ 참, ㅁ 참"
+  ],
+  "check": "ok"
+ },
+ "12": {
+  "tp": "사다리꼴과 평행선",
+  "key": "△DBC에서 GF",
+  "sol": [
+   "$\\overline{\\text{DF}}:\\overline{\\text{DC}}=\\overline{\\text{AE}}:\\overline{\\text{AB}}=6:18=1:3$",
+   "$\\overline{\\text{GF}}=30\\times\\dfrac13=10\\,(\\text{cm})$"
+  ],
+  "check": "ok"
+ },
+ "13": {
+  "tp": "평행선 사이 높이",
+  "key": "높이 = ab/(a+b)",
+  "sol": [
+   "$\\overline{\\text{AB}}/\\!/\\overline{\\text{DC}}$, $\\overline{\\text{AE}}:\\overline{\\text{EC}}=4:8=1:2$",
+   "E의 높이 $=4\\times\\dfrac23=\\dfrac83$",
+   "$\\triangle\\text{BCE}=\\dfrac12\\times12\\times\\dfrac83=16\\,(\\text{cm}^2)$"
+  ],
+  "check": "ok"
+ },
+ "14": {
+  "tp": "정사각형과 닮음",
+  "key": "△BCH∽△BGF",
+  "sol": [
+   "한 변: $3,\\ 9$, $\\overline{\\text{BG}}=12$, $\\overline{\\text{BF}}=\\sqrt{12^2+9^2}=15$",
+   "$\\overline{\\text{BH}}:\\overline{\\text{BF}}=\\overline{\\text{BC}}:\\overline{\\text{BG}}=1:4$ → $\\overline{\\text{BH}}=\\dfrac{15}4$",
+   "$x=15-\\dfrac{15}4=\\dfrac{45}4=11.25$"
+  ],
+  "check": "ok"
+ },
+ "15": {
+  "tp": "평행사변형과 닮음",
+  "key": "△FAE∽△FBC",
+  "sol": [
+   "$\\overline{\\text{AE}}=14-8=6$, $\\overline{\\text{FA}}:\\overline{\\text{FB}}=6:14=3:7$ → $\\overline{\\text{FA}}:\\overline{\\text{AB}}=3:4$",
+   "F에서 AD까지의 높이 $=12\\times\\dfrac34=9$",
+   "$\\triangle\\text{FED}=\\dfrac12\\times8\\times9=36\\,(\\text{cm}^2)$"
+  ],
+  "check": "ok"
+ },
+ "16": {
+  "tp": "원뿔 그릇의 부피비",
+  "key": "닮음비 2:3 → 부피비 8:27",
+  "sol": [
+   "$4$분 동안 전체의 $\\dfrac8{27}$",
+   "전체 $4\\times\\dfrac{27}8=\\dfrac{27}2$분",
+   "더 걸리는 시간 $\\dfrac{27}2-4=\\dfrac{19}2$분 $=9$분 $30$초"
+  ],
+  "check": "ok"
+ },
+ "17": {
+  "tp": "배수의 개수",
+  "key": "합의 법칙",
+  "sol": [
+   "(1) $3,6,\\cdots,18$ → $6$",
+   "(2) $7,14$ → $2$",
+   "(3) 겹치지 않으므로 $6+2=8$"
+  ],
+  "check": "ok"
+ },
+ "18": {
+  "tp": "직각삼각형의 내접원",
+  "key": "접선의 길이, r=(a+b-c)/2",
+  "sol": [
+   "(1) $\\overline{\\text{AC}}=\\sqrt{10^2-8^2}=6\\,(\\text{cm})$",
+   "(2) $r=\\dfrac{6+8-10}2=2\\,(\\text{cm})$",
+   "(3) B쪽 접선 길이 $6$, A쪽 접선 길이 $4$ → $\\dfrac12\\times6\\times2+\\dfrac12\\times4\\times2=10\\,(\\text{cm}^2)$"
+  ],
+  "check": "색칠한 두 부분은 B, A 쪽의 (꼭짓점, 내심, 접점) 직각삼각형으로 읽었다. 스캔에서 원 안쪽까지 색칠되었는지는 분명하지 않다."
+ },
+ "19": {
+  "tp": "엇각과 AA 닮음",
+  "key": "△ABC∽△ADE, 닮음비 2:1",
+  "sol": [
+   "(1) ED∥BC → 엇각, 맞꼭지각 → $\\triangle\\text{ABC}\\sim\\triangle\\text{ADE}$",
+   "(2) $\\overline{\\text{AB}}:\\overline{\\text{AD}}=6:3=2:1$ → $x=2\\times3=6$",
+   "(3) $y=2\\times4=8$"
+  ],
+  "check": "ok"
+ },
+ "20": {
+  "tp": "회전체와 직각삼각형의 닮음",
+  "key": "빗변에 내린 수선",
+  "sol": [
+   "B에서 AC에 내린 수선의 발을 M, $\\overline{\\text{AC}}=5$",
+   "(1) $\\overline{\\text{BM}}=\\dfrac{3\\times4}5=\\dfrac{12}5$",
+   "(2) $\\overline{\\text{AM}}=\\dfrac{3^2}5=\\dfrac95$, (3) $\\overline{\\text{CM}}=\\dfrac{4^2}5=\\dfrac{16}5$",
+   "(4) $\\dfrac13\\pi\\left(\\dfrac{12}5\\right)^2\\times5=\\dfrac{48}5\\pi$"
+  ],
+  "check": "ok"
+ }
+}

@@ -1,0 +1,197 @@
+{
+ "1": {
+  "tp": "직각삼각형 판별",
+  "key": "가장 긴 변의 제곱 = 나머지 제곱의 합",
+  "sol": [
+   "ㄱ $16\\ne13$ ㄴ $169=25+144$ ㄷ $100=36+64$ ㄹ $225\\ne250$",
+   "ㄴ, ㄷ"
+  ],
+  "check": "ok"
+ },
+ "2": {
+  "tp": "평행사변형 각의 이등분선",
+  "key": "엇각과 이등분선으로 이등변",
+  "sol": [
+   "$\\angle\\text{DFC}=180^\\circ-150^\\circ=30^\\circ=\\angle\\text{ADF}$ (엇각)",
+   "$\\angle\\text{D}=2\\times30^\\circ=60^\\circ$ → $\\angle\\text{C}=120^\\circ$",
+   "$\\angle\\text{DEC}=\\angle\\text{ECB}=60^\\circ$ (엇각) → $\\angle\\text{AEC}=180^\\circ-60^\\circ=120^\\circ$"
+  ],
+  "check": "ok"
+ },
+ "3": {
+  "tp": "평행사변형 조건",
+  "key": "한 쌍의 대변이 평행하고 길이가 같음 / 두 쌍의 대각",
+  "sol": [
+   "ㄱ: 세 변만 같으면 평행사변형이라 할 수 없다",
+   "ㄴ: 한 쌍의 대변이 평행하고 길이가 같다 ✓",
+   "ㄷ: 두 쌍의 대각의 크기가 각각 같다 ✓"
+  ],
+  "check": "ok"
+ },
+ "4": {
+  "tp": "직사각형의 성질",
+  "key": "∠A=∠B인 평행사변형 = 직사각형",
+  "sol": [
+   "$\\angle\\text{A}+\\angle\\text{B}=180^\\circ$ → 네 각이 $90^\\circ$, 직사각형",
+   "대각선은 길이가 같고 서로 이등분 → ①②③⑤ 참",
+   "$\\triangle\\text{AOB}$와 $\\triangle\\text{BOC}$는 밑변 AB, BC가 달라 합동이 아니다"
+  ],
+  "check": "ok"
+ },
+ "5": {
+  "tp": "마름모의 성질",
+  "key": "대각선이 수직이등분",
+  "sol": [
+   "$\\angle\\text{BAO}=90^\\circ-35^\\circ=55^\\circ$, AB∥DC → $x=\\angle\\text{OCD}=\\angle\\text{OAB}=55$",
+   "네 삼각형이 모두 합동 → $y=3$",
+   "$x+y=58$"
+  ],
+  "check": "ok"
+ },
+ "6": {
+  "tp": "사각형의 대각선 성질",
+  "key": "포함 관계 정리",
+  "sol": [
+   "$a$: 평행사변형, 직사각형, 마름모, 정사각형 → $4$",
+   "$b$: 마름모, 정사각형 → $2$",
+   "$c$: 등변사다리꼴, 직사각형, 정사각형 → $3$",
+   "$4+4+9=17$"
+  ],
+  "check": "ok"
+ },
+ "7": {
+  "tp": "평행선과 삼각형 넓이",
+  "key": "A를 y절편 (0,2)로 옮겨도 넓이 같음",
+  "sol": [
+   "$\\text{B}\\left(\\dfrac16,0\\right)$, $\\text{C}\\left(0,-\\dfrac12\\right)$",
+   "두 직선이 평행 → A를 $(0,2)$로 옮겨도 넓이 불변",
+   "$\\dfrac12\\times\\dfrac52\\times\\dfrac16=\\dfrac5{24}$"
+  ],
+  "check": "ok"
+ },
+ "8": {
+  "tp": "x절편과 넓이의 비",
+  "key": "높이가 같으면 밑변의 비",
+  "sol": [
+   "$\\text{B}(2,0)$, $\\overline{\\text{AB}}:\\overline{\\text{BC}}=1:2$ → $\\overline{\\text{AB}}=5$, $\\overline{\\text{BC}}=10$",
+   "$\\text{A}(-3,0)$ → $a=2$, $\\ \\text{C}(12,0)$ → $b=-\\dfrac12$",
+   "$ab=-1$"
+  ],
+  "check": "ok"
+ },
+ "9": {
+  "tp": "닮음의 성질",
+  "key": "SSS 닮음은 세 쌍",
+  "sol": [
+   "⑤ 두 쌍의 대응변의 비가 같고 그 끼인각이 같아야 닮음 → 틀림"
+  ],
+  "check": "ok"
+ },
+ "10": {
+  "tp": "닮은 입체의 부피비",
+  "key": "닮음비 2:3 → 부피비 8:27",
+  "sol": [
+   "$16\\times\\dfrac{27}8=54\\,(\\text{cm}^3)$"
+  ],
+  "check": "ok"
+ },
+ "11": {
+  "tp": "직각삼각형의 닮음",
+  "key": "AC² = CD × CB",
+  "sol": [
+   "$\\overline{\\text{BC}}=5$",
+   "$4^2=\\overline{\\text{CD}}\\times5$ → $\\overline{\\text{CD}}=\\dfrac{16}5$"
+  ],
+  "check": "ok"
+ },
+ "12": {
+  "tp": "거울과 닮음",
+  "key": "△ABC∽△DEC",
+  "sol": [
+   "$1.5:\\overline{\\text{DE}}=3.6:12$",
+   "$\\overline{\\text{DE}}=5\\,(\\text{m})$"
+  ],
+  "check": "ok"
+ },
+ "13": {
+  "tp": "SAS 닮음",
+  "key": "AB:AC=AD:AB=2:3",
+  "sol": [
+   "$\\overline{\\text{AC}}=18$, $\\overline{\\text{AB}}:\\overline{\\text{AC}}=12:18=2:3$, $\\overline{\\text{AD}}:\\overline{\\text{AB}}=8:12=2:3$",
+   "$\\angle\\text{A}$ 공통 → $\\triangle\\text{ABD}\\sim\\triangle\\text{ACB}$",
+   "$\\overline{\\text{BD}}=22\\times\\dfrac23=\\dfrac{44}3$"
+  ],
+  "check": "ok"
+ },
+ "14": {
+  "tp": "닮음과 평행선",
+  "key": "동위각 → AB∥DC",
+  "sol": [
+   "$\\triangle\\text{ABC}\\sim\\triangle\\text{DCE}$, 닮음비 $3:5$ → $\\overline{\\text{DC}}=10$",
+   "$\\angle\\text{ABC}=\\angle\\text{DCE}$ → $\\overline{\\text{AB}}/\\!/\\overline{\\text{DC}}$",
+   "$\\overline{\\text{CF}}=6\\times\\dfrac58=\\dfrac{15}4$ → $\\overline{\\text{DF}}=10-\\dfrac{15}4=\\dfrac{25}4$"
+  ],
+  "check": "ok"
+ },
+ "15": {
+  "tp": "사다리꼴 중점연결",
+  "key": "EP=BC/2, PF=AD/2",
+  "sol": [
+   "$\\overline{\\text{EP}}=\\dfrac12\\times10=5$, $\\overline{\\text{PF}}=7-5=2$ → $\\overline{\\text{AD}}=4$",
+   "$\\square\\text{AEFD}=\\dfrac12(4+7)\\times4=22$",
+   "$\\square\\text{APFD}=22-\\dfrac12\\times4\\times5=12$"
+  ],
+  "check": "그림의 7은 EF의 길이로 보았다(EP로 보면 BC=10과 맞지 않음)."
+ },
+ "16": {
+  "tp": "합동과 평행선",
+  "key": "△ABC≡△ADC (RHA)",
+  "sol": [
+   "$\\triangle\\text{ABC}\\equiv\\triangle\\text{ADC}$ → $\\overline{\\text{DC}}=\\overline{\\text{BC}}=15$",
+   "$\\overline{\\text{DE}}=\\sqrt{15^2-12^2}=9$",
+   "$\\overline{\\text{FE}}/\\!/\\overline{\\text{AB}}$: $\\overline{\\text{FE}}=5\\times\\dfrac{12}{15}=4$ → $\\overline{\\text{DF}}=9-4=5$"
+  ],
+  "check": "ok"
+ },
+ "17": {
+  "tp": "사다리꼴 넓이",
+  "key": "높이가 같은 삼각형의 넓이비",
+  "sol": [
+   "(1) 밑변 BC가 공통이고, AD∥BC이므로 높이가 같다",
+   "(2) $\\triangle\\text{BOC}=6\\times\\dfrac32=9$",
+   "(3) $\\triangle\\text{DOC}=\\triangle\\text{DBC}-\\triangle\\text{OBC}=\\triangle\\text{ABC}-\\triangle\\text{OBC}=\\triangle\\text{ABO}=6$"
+  ],
+  "check": "ok"
+ },
+ "18": {
+  "tp": "수직이등분선과 합동",
+  "key": "ASA 합동, 수직이등분선 위의 점",
+  "sol": [
+   "(1) $\\overline{\\text{OD}}=\\overline{\\text{OB}}$, $\\angle\\text{DOE}=\\angle\\text{BOF}=90^\\circ$, $\\angle\\text{EDO}=\\angle\\text{FBO}$(엇각) → ASA 합동",
+   "(2) $x^2=3^2+4^2=25$ → $x=5$",
+   "(3) F는 BD의 수직이등분선 위의 점 → $\\overline{\\text{BF}}=\\overline{\\text{DF}}=5$, $y=5$"
+  ],
+  "check": "ok"
+ },
+ "19": {
+  "tp": "AA 닮음",
+  "key": "∠ABD=∠DBC, ∠BDA=∠BCD",
+  "sol": [
+   "(1) $\\triangle\\text{ABD}\\sim\\triangle\\text{DBC}$ (AA 닮음)",
+   "(2) $4:x=x:9$ → $x^2=36$, $x=6$",
+   "(3) $4:6=2:3$",
+   "(4) $3:y=2:3$ → $y=\\dfrac92$"
+  ],
+  "check": "ok"
+ },
+ "20": {
+  "tp": "삼등분점과 중점연결",
+  "key": "FP=GQ=DE/2",
+  "sol": [
+   "$\\overline{\\text{FG}}=2\\overline{\\text{DE}}=28$",
+   "$\\triangle\\text{BDE}$에서 F는 BD의 중점, FP∥DE → $\\overline{\\text{FP}}=7$",
+   "같은 방법으로 $\\overline{\\text{QG}}=7$ → $\\overline{\\text{PQ}}=28-14=14$"
+  ],
+  "check": "ok"
+ }
+}
