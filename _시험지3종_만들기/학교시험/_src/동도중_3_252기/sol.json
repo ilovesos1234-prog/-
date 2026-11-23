@@ -1,0 +1,216 @@
+{
+"1": {
+"tp": "전체 평균",
+"key": "전체 평균 = 전체 합 ÷ 전체 인원",
+"sol": [
+"$\\dfrac{9\\times22+11\\times20}{20}=\\dfrac{418}{20}=20.9$ → ②"
+],
+"check": "ok"
+},
+"2": {
+"tp": "변량을 포함한 대푯값",
+"key": "$x$ 값에 따라 정렬 위치를 확인",
+"sol": [
+"$x$를 뺀 합 40, $x=2$: 평균 4.2, 정렬 1,2,2,3,4,5,5,5,7,8 → 중앙값 4.5, 최빈값 5 (①②③ 옳음)",
+"$x=4$: 평균 4.4, 중앙값 4.5 → 같지 않음 (④ 틀림)",
+"$x\\ge5$이면 중앙값 5 = 최빈값 (⑤ 옳음)",
+"답 ④"
+],
+"check": "ok"
+},
+"3": {
+"tp": "편차와 표준편차",
+"key": "편차의 합은 0",
+"sol": [
+"$x=3$",
+"분산 $=\\dfrac{16+4+9+1+4}{5}=6.8$ → $\\sqrt{6.8}$ → ①"
+],
+"check": "ok"
+},
+"4": {
+"tp": "잘못 본 변량의 수정",
+"key": "평균으로 $a+b$, 분산으로 $a^2+b^2$",
+"sol": [
+"$6+7+a+b=24$ → $a+b=11$",
+"$36+49+a^2+b^2=4(2+36)=152$ → $a^2+b^2=67$",
+"원래: 평균 $\\dfrac{16}{4}=4$, 제곱평균 $\\dfrac{4+9+67}{4}=20$",
+"분산 $20-16=4$, 표준편차 $2$ → ③"
+],
+"check": "ok"
+},
+"5": {
+"tp": "산점도 읽기",
+"key": "1차 $\\lt7$, 2차 $\\ge7$인 점",
+"sol": [
+"(6,7), (6,8), (6,9) → 3명 → ③"
+],
+"check": "ok"
+},
+"6": {
+"tp": "산점도에서 조건 만족 학생",
+"key": "2차 − 1차 ≥ 2",
+"sol": [
+"(2,4), (3,5), (4,6), (6,8), (6,9), (8,10)",
+"2차 평균 $=\\dfrac{4+5+6+8+9+10}{6}=7$ → ④"
+],
+"check": "ok"
+},
+"7": {
+"tp": "산점도에서 하위 30%",
+"key": "30명의 30% = 9명",
+"sol": [
+"합이 작은 순: 5, 6, 6, 6, 7, 8, 8, 8, 9 (9번째 (4,5))",
+"합 9 이하 → 평균 4.5 이하 → ①"
+],
+"check": "ok"
+},
+"8": {
+"tp": "최솟값·최댓값 제외 평균",
+"key": "$S-m=270$, $S-M=252$",
+"sol": [
+"$2S-(m+M)=522$ → $2S=584$, $S=292$",
+"평균 $29.2$ → ①"
+],
+"check": "ok"
+},
+"9": {
+"tp": "산점도 해석",
+"key": "대각선 위쪽: 월급에 비해 저축 많음",
+"sol": [
+"ㄱ 옳음, ㄴ 옳음(A가 추세선보다 가장 위), ㄷ 옳음(D는 월급 많고 저축 적음)",
+"ㄹ: 월급-저축은 양의 상관, 컴퓨터 사용 시간-성적은 음의 상관 → 틀림",
+"답 ③"
+],
+"check": "ok — ㄷ은 그래프 위치로 판단(D가 월급은 크고 저축은 적음)."
+},
+"10": {
+"tp": "특수각 계산",
+"key": "각 값을 대입",
+"sol": [
+"① 1 ② $\\dfrac{2\\sqrt3}{3}$ ③ 3 ④ $\\dfrac{\\sqrt3}{3}$",
+"⑤ $0+1\\times\\dfrac{\\sqrt3}{2}=\\dfrac{\\sqrt3}{2}$ → ⑤"
+],
+"check": "ok"
+},
+"11": {
+"tp": "한 삼각비로 나머지 구하기",
+"key": "빗변 9, 밑변 7, 높이 $4\\sqrt2$",
+"sol": [
+"$\\cos B=\\sin A=\\dfrac{4\\sqrt2}{9}$ (ㄱ)",
+"$\\tan A=\\dfrac{4\\sqrt2}{7}\\lt1\\lt\\tan B$ (ㄴ)",
+"$\\overline{AC}=7$이면 빗변 9 = 외접원 지름 → 원주 $9\\pi$ (ㄷ)",
+"내접원 반지름 $=\\dfrac{7+4\\sqrt2-9}{2}=2\\sqrt2-1$ (ㄹ)",
+"모두 옳음 → ⑤"
+],
+"check": "ok"
+},
+"12": {
+"tp": "사분원과 삼각비, 여각",
+"key": "$\\cos48^\\circ=\\sin42^\\circ$",
+"sol": [
+"$\\sin42^\\circ=\\overline{AB}=0.6691$ → ㄱ 틀림",
+"$\\cos48^\\circ=\\sin42^\\circ=0.6691$ → ㄴ 옳음",
+"$\\tan42^\\circ=\\overline{PQ}=0.9004$ → ㄷ 옳음",
+"ㄴ, ㄷ → ④"
+],
+"check": "정답표는 ②(ㄷ)이나 cos48°=sin42°=0.6691(실제값 0.66913)이므로 ㄴ도 옳다. 정답을 ④(ㄴ, ㄷ)로 고침.",
+"fix_ans": "④"
+},
+"13": {
+"tp": "내려다본 각과 거리",
+"key": "$\\overline{BC}=\\dfrac{30\\sqrt3}{\\tan60^\\circ}$, $\\overline{BD}=\\dfrac{30\\sqrt3}{\\tan30^\\circ}$",
+"sol": [
+"$\\overline{BC}=30$, $\\overline{BD}=90$",
+"이동거리 60 m ÷ 분속 6 m → $t=10$ → ①"
+],
+"check": "ok"
+},
+"14": {
+"tp": "접은 도형과 삼각비",
+"key": "$\\overline{AE}=\\overline{AD}=13$, $\\overline{EF}=\\overline{DF}$",
+"sol": [
+"$\\overline{BE}=12$, $\\overline{EC}=1$",
+"$\\overline{EF}^2=1+(5-\\overline{EF})^2$ → $\\overline{EF}=\\dfrac{13}{5}$",
+"$\\sin x=\\dfrac{1}{13/5}=\\dfrac{5}{13}$, $\\tan y=\\dfrac{13/5}{13}=\\dfrac15$ → $\\sin y=\\dfrac{1}{\\sqrt{26}}$",
+"합 $=\\dfrac{10+\\sqrt{26}}{26}$ → ②"
+],
+"check": "ok"
+},
+"15": {
+"tp": "움직이는 점과 넓이",
+"key": "사다리꼴 PRSQ의 넓이를 $t$로 표현",
+"sol": [
+"$\\overline{PR}=\\dfrac{\\sqrt3}{2}(6-3t)$, $\\overline{QS}=\\dfrac{\\sqrt3}{2}(6-t)$, $\\overline{RS}=2t$",
+"$\\square PRSQ=\\sqrt3t(6-2t)$, $\\triangle APQ=\\dfrac{3\\sqrt3}{4}t^2$",
+"$\\sqrt3t(6-2t)=\\dfrac{3\\sqrt3}{2}t^2$ → $t=\\dfrac{12}{7}$ → ③"
+],
+"check": "ok"
+},
+"16": {
+"tp": "접선과 현, 닮음",
+"key": "$\\angle ACP=\\angle ABC$ → $\\triangle APC\\sim\\triangle ACB$",
+"sol": [
+"$\\overline{AC}^2=\\overline{AP}\\times\\overline{AB}=108$",
+"$\\overline{AC}=6\\sqrt3$ → ②"
+],
+"check": "ok"
+},
+"17": {
+"tp": "접선의 길이와 피타고라스",
+"key": "BA, PD도 반원의 접선 → $\\overline{BP}=4+\\overline{PD}$",
+"sol": [
+"$\\overline{PD}=d$라 하면 $16+(4-d)^2=(4+d)^2$ → $d=1$",
+"$\\overline{PQ}=\\sqrt{2^2+1^2}=\\sqrt5$ → ⑤"
+],
+"check": "ok"
+},
+"18": {
+"tp": "좌표로 중심 찾기",
+"key": "현의 수직이등분선의 교점이 중심",
+"sol": [
+"H를 원점: A(−3,0), B(15,0), C(0,5), D(0,−9)",
+"중심 O(6,−2)",
+"$\\overrightarrow{DC}=(0,14)$, $\\overrightarrow{DO}=(6,7)$, $\\overline{OD}=\\sqrt{85}$",
+"$\\sin x=\\dfrac{6}{\\sqrt{85}}=\\dfrac{6\\sqrt{85}}{85}$ → ②"
+],
+"check": "ok"
+},
+"19": {
+"tp": "수심과 원에 내접하는 사각형",
+"key": "B, C, E, F가 한 원 위 → $\\angle AEF=\\angle ABC$",
+"sol": [
+"$\\angle BAC=90^\\circ-35^\\circ=55^\\circ$, $\\angle ABC=90^\\circ-18^\\circ=72^\\circ$, $\\angle C=53^\\circ$",
+"$\\angle AEF=72^\\circ$, $\\angle EAI=90^\\circ-53^\\circ=37^\\circ$",
+"$\\angle x=180^\\circ-72^\\circ-37^\\circ=71^\\circ$ → ④"
+],
+"check": "ok"
+},
+"20": {
+"tp": "두 원에 감은 끈",
+"key": "공통외접선 길이와 호의 중심각",
+"sol": [
+"$\\overline{OO'}=12$, 반지름 차 6 → 공통외접선 $\\sqrt{144-36}=6\\sqrt3$, $\\angle AOO'=60^\\circ$",
+"큰 원 호 $240^\\circ$: $12\\pi$, 작은 원 호 $120^\\circ$: $2\\pi$",
+"끈 $=14\\pi+12\\sqrt3+10$ → ②"
+],
+"check": "ok"
+},
+"21": {
+"tp": "원 밖의 교점과 중심각",
+"key": "$\\angle P=\\dfrac12(\\angle DOC-\\angle AOB)$",
+"sol": [
+"$42^\\circ=\\dfrac{110^\\circ-x}{2}$ → $x=26^\\circ$ → ①"
+],
+"check": "ok"
+},
+"22": {
+"tp": "접선의 길이와 직각삼각형",
+"key": "$\\overline{EB}=\\overline{ED}$ → E는 BC의 중점",
+"sol": [
+"$\\angle ADB=90^\\circ$, $\\overline{AC}=8\\sqrt5$, $\\overline{BD}=\\dfrac{16}{\\sqrt5}$, $\\overline{DC}=\\dfrac{32}{\\sqrt5}$",
+"$\\triangle DBC=\\dfrac12\\times\\dfrac{512}{5}=\\dfrac{256}{5}$",
+"$\\triangle DEC=\\dfrac12\\triangle DBC=\\dfrac{128}{5}$ → ⑤"
+],
+"check": "ok"
+}
+}

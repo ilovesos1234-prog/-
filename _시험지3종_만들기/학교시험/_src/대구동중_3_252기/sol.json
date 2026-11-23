@@ -1,0 +1,242 @@
+{
+"1": {
+"tp": "반지름 1인 사분원과 삼각비",
+"key": "빗변이 1이면 대변·밑변이 곧 sin·cos, 밑변이 1이면 대변이 tan",
+"sol": [
+"$\\overline{BD}=1$이므로 $\\tan x^\\circ=\\dfrac{\\overline{DE}}{\\overline{BD}}=\\overline{DE}$ (ㄱ 옳음)",
+"$\\overline{AB}=1$이므로 $\\cos x^\\circ=\\overline{BC}$ (ㄴ 틀림)",
+"$x$가 작아지면 $\\tan x^\\circ$도 작아진다 (ㄷ 옳음)",
+"$x$가 커지면 $\\cos x^\\circ$는 작아진다 (ㄹ 틀림)",
+"따라서 ㄱ, ㄷ → ①"
+],
+"check": "ok"
+},
+"2": {
+"tp": "특수각과 제곱근의 성질",
+"key": "$\\sqrt{a^2}=|a|$, $45^\\circ\\lt x\\lt 90^\\circ$이면 $\\tan x\\gt 1$",
+"sol": [
+"$2\\sin30^\\circ=1$, $\\tan45^\\circ=1$",
+"$\\tan x\\gt1$이므로 $|1-\\tan x|-|\\tan x-1|=(\\tan x-1)-(\\tan x-1)=0$",
+"답 ③"
+],
+"check": "ok"
+},
+"3": {
+"tp": "정사면체에서 코사인",
+"key": "H는 정삼각형 BCD의 무게중심 → $\\overline{DH}=\\dfrac{2}{3}\\times$(중선)",
+"sol": [
+"$\\triangle BCD$의 중선 $\\overline{DM}=\\dfrac{\\sqrt3}{2}\\times6=3\\sqrt3$",
+"$\\overline{DH}=\\dfrac23\\times3\\sqrt3=2\\sqrt3$",
+"$\\cos x^\\circ=\\dfrac{\\overline{DH}}{\\overline{AD}}=\\dfrac{2\\sqrt3}{6}=\\dfrac{\\sqrt3}{3}$ → ①"
+],
+"check": "ok"
+},
+"4": {
+"tp": "정오각형의 넓이",
+"key": "중심각 $72^\\circ$인 이등변삼각형 5개, 높이 $=2\\tan54^\\circ$",
+"sol": [
+"밑각이 $54^\\circ$이므로 높이 $=2\\tan54^\\circ=2.76$",
+"삼각형 한 개 넓이 $=\\dfrac12\\times4\\times2.76=5.52$",
+"정오각형 넓이 $=5\\times5.52=27.6\\,\\text{cm}^2$ → ③"
+],
+"check": "ok"
+},
+"5": {
+"tp": "사인법칙형 높이 측정",
+"key": "$\\triangle ABH$에서 수선을 그어 $\\overline{AH}$를 구한 뒤 $\\tan60^\\circ$",
+"sol": [
+"$\\triangle ABH$에서 $\\angle AHB=180^\\circ-75^\\circ-60^\\circ=45^\\circ$",
+"A에서 $\\overline{BH}$에 수선 AK: $\\overline{AK}=60\\sin60^\\circ=30\\sqrt3$",
+"$\\overline{AH}=\\dfrac{\\overline{AK}}{\\sin45^\\circ}=30\\sqrt6$",
+"$\\overline{PH}=\\overline{AH}\\tan60^\\circ=30\\sqrt6\\times\\sqrt3=90\\sqrt2\\,\\text{m}$ → ⑤"
+],
+"check": "ok"
+},
+"6": {
+"tp": "두 직각삼각형으로 높이 구하기",
+"key": "$\\overline{AG}=\\overline{CD}=120$, 나무 꼭대기 E로 아파트 높이를 먼저 구함",
+"sol": [
+"$\\angle EAG=45^\\circ$, E까지 수평거리 60 → A와 E의 높이 차 60, $\\overline{AC}=45+60=105$",
+"$\\overline{BG}=120\\tan30^\\circ=40\\sqrt3$",
+"$\\overline{BD}=105+40\\sqrt3$ → ④"
+],
+"check": "ok"
+},
+"7": {
+"tp": "직각삼각형의 수선과 삼각비",
+"key": "$\\overline{AH}=\\dfrac{12}{5}$, $\\overline{BH}=\\dfrac95$로 각 선분을 계산",
+"sol": [
+"$\\overline{BC}=5$, $\\overline{AH}=\\dfrac{12}{5}$, $\\overline{BH}=\\dfrac95$",
+"$\\tan(\\angle ADH)=2$ → $\\overline{HD}=\\dfrac65$, $\\overline{AD}=\\sqrt{\\dfrac{144}{25}+\\dfrac{36}{25}}=\\dfrac{6\\sqrt5}{5}$ (ㄱ 옳음)",
+"$\\overline{BD}=\\dfrac95+\\dfrac65=3$ (ㄴ 틀림)",
+"$\\tan(\\angle BAD)=\\dfrac{\\frac34+\\frac12}{1-\\frac38}=2$ (ㄷ 옳음; $\\overline{AB}=\\overline{BD}=3$이라 $\\angle BAD=\\angle BDA$로도 확인)",
+"$\\cos(\\angle ABD)=\\dfrac35$ (ㄹ 틀림) → ㄱ, ㄷ ②"
+],
+"check": "ok"
+},
+"8": {
+"tp": "부채꼴 속 삼각형의 넓이",
+"key": "반지름 $r$을 $\\overline{BE}$로 구한 뒤 $\\triangle OCA-\\triangle ODA$",
+"sol": [
+"O를 원점, $A(r,0)$, $B(0,r)$로 두면 $\\overline{AB}:x+y=r$",
+"$\\overline{OD}=r(\\sqrt3-1)$, D의 높이 $=\\dfrac{r(3-\\sqrt3)}{2}$, $\\overline{BE}=\\dfrac{r(\\sqrt3-1)}{2}=2\\sqrt6$",
+"$r=2\\sqrt6(\\sqrt3+1)$, $r^2=96+48\\sqrt3$",
+"$\\triangle CDA=\\dfrac{\\sqrt3}{4}r^2-\\dfrac{3-\\sqrt3}{4}r^2=\\dfrac{2\\sqrt3-3}{4}r^2=12\\sqrt3$ → ②"
+],
+"check": "ok"
+},
+"9": {
+"tp": "현의 수직이등분선",
+"key": "중심에서 현에 내린 수선은 현을 이등분",
+"sol": [
+"$\\overline{AM}=12$",
+"$\\overline{OM}=\\sqrt{16^2-12^2}=\\sqrt{112}=4\\sqrt7$ → ④"
+],
+"check": "ok"
+},
+"10": {
+"tp": "원의 접선의 길이",
+"key": "접선 ⊥ 반지름",
+"sol": [
+"$\\angle OBP=90^\\circ$",
+"$x=\\sqrt{5^2-3^2}=4$ → ⑤"
+],
+"check": "ok"
+},
+"11": {
+"tp": "두 원과 현의 이등분",
+"key": "$\\overline{AP}=2\\overline{MP}$, $\\overline{PB}=2\\overline{PN}$",
+"sol": [
+"M은 $\\overline{AP}$의 중점, N은 $\\overline{PB}$의 중점",
+"$\\overline{MN}=\\dfrac12(\\overline{AP}+\\overline{PB})=\\dfrac12\\times8=4$ → ②"
+],
+"check": "ok"
+},
+"12": {
+"tp": "같은 거리의 현",
+"key": "$\\overline{OM}=\\overline{ON}$ → $\\overline{AB}=\\overline{BC}$",
+"sol": [
+"$\\overline{AB}=\\overline{BC}=8$",
+"사각형 MBNO에서 $\\angle B=360^\\circ-90^\\circ-90^\\circ-120^\\circ=60^\\circ$",
+"정삼각형이므로 넓이 $=\\dfrac{\\sqrt3}{4}\\times64=16\\sqrt3$ → ③"
+],
+"check": "ok"
+},
+"13": {
+"tp": "방접원과 접선의 길이",
+"key": "$\\overline{BF}=\\overline{BD}$, $\\overline{CF}=\\overline{CE}$ → 둘레 $=2\\overline{AD}$",
+"sol": [
+"$\\overline{AD}=\\sqrt{18^2-6^2}=12\\sqrt2$",
+"둘레 $=\\overline{AD}+\\overline{AE}=24\\sqrt2$ → ③"
+],
+"check": "ok"
+},
+"14": {
+"tp": "현에서 가장 먼 점",
+"key": "높이의 최댓값 = 반지름 + 중심에서 현까지 거리",
+"sol": [
+"중심에서 현까지 거리 $=\\sqrt{13^2-12^2}=5$",
+"최대 높이 $=13+5=18$",
+"넓이 최댓값 $=\\dfrac12\\times24\\times18=216$ → ⑤"
+],
+"check": "ok"
+},
+"15": {
+"tp": "접선의 길이와 피타고라스",
+"key": "$\\overline{CQ}=\\overline{CA}=3$, $\\overline{CQ}\\perp\\overline{OP}$",
+"sol": [
+"$\\overline{QP}=\\sqrt{5^2-3^2}=4$, $\\overline{PA}=8$",
+"$(r+4)^2=r^2+8^2$ → $r=6$",
+"넓이 $36\\pi$ → ①"
+],
+"check": "ok"
+},
+"16": {
+"tp": "외접사각형과 접선의 길이",
+"key": "색칠한 네 삼각형의 밑변 합 = $\\overline{AB}+\\overline{CD}$",
+"sol": [
+"$\\overline{AP}+\\overline{BQ}+\\overline{CR}+\\overline{DS}=\\overline{AP}+\\overline{PB}+\\overline{CR}+\\overline{RD}=20$",
+"넓이 $=\\dfrac12\\times4\\times20=40$ → ②"
+],
+"check": "ok"
+},
+"17": {
+"tp": "중심각과 원주각",
+"key": "$\\angle BAC=\\dfrac12\\angle BOC$, $\\triangle OAC$는 이등변",
+"sol": [
+"$\\angle OAC=20^\\circ$, $\\overline{OA}=\\overline{OC}$이므로 $\\angle ACO=20^\\circ$ → ①"
+],
+"check": "ok"
+},
+"18": {
+"tp": "호의 길이와 중심각",
+"key": "같은 호 → 같은 중심각",
+"sol": [
+"$\\angle AOC=100^\\circ$",
+"$\\angle APC=50^\\circ$ → ③"
+],
+"check": "ok"
+},
+"19": {
+"tp": "호의 중점과 원주각",
+"key": "호의 중심각을 모두 구해 원주각으로",
+"sol": [
+"$\\overset{\\frown}{AC}$의 중심각 $70^\\circ$ = $\\overset{\\frown}{CB}$, $\\overset{\\frown}{BD}$의 중심각 $40^\\circ$",
+"$\\angle BAD=20^\\circ$",
+"$\\angle CPA=\\dfrac{70^\\circ+40^\\circ}{2}=55^\\circ$",
+"합 $75^\\circ$ → ①"
+],
+"check": "ok"
+},
+"20": {
+"tp": "접선과 현이 이루는 각",
+"key": "$\\angle PBC=\\angle BAC=40^\\circ$",
+"sol": [
+"$\\angle APB=90^\\circ-40^\\circ=50^\\circ$, $\\angle EPB=25^\\circ$",
+"$\\angle PBE=\\angle BAC=40^\\circ$",
+"$\\angle PEB=180^\\circ-25^\\circ-40^\\circ=115^\\circ$ → ④"
+],
+"check": "ok"
+},
+"21": {
+"tp": "평행한 현과 접선",
+"key": "$\\overline{BC}\\parallel$ 접선 → D는 $\\overset{\\frown}{BC}$의 중점",
+"sol": [
+"$\\angle DAC=\\angle BAD=40^\\circ$",
+"$\\angle AEC=180^\\circ-40^\\circ-80^\\circ=60^\\circ$",
+"$\\angle BED=\\angle AEC=60^\\circ$ → ⑤"
+],
+"check": "ok"
+},
+"22": {
+"tp": "두 현의 교각",
+"key": "교각 = 마주보는 두 호의 원주각의 합",
+"sol": [
+"$\\overset{\\frown}{AB}$: $72^\\circ$, $\\overset{\\frown}{CD}$: $90^\\circ$ (중심각)",
+"$\\angle x=\\dfrac{72^\\circ+90^\\circ}{2}=81^\\circ$ → ④"
+],
+"check": "ok"
+},
+"23": {
+"tp": "공통접선과 접선의 길이",
+"key": "큰 원: 접선-현 각, 작은 원: 두 접선이 만드는 이등변삼각형",
+"sol": [
+"큰 원에서 $\\angle ACB=\\angle ABT=60^\\circ$",
+"$\\angle ABD=a$라 하면 두 접선(BT, AC)의 교점 X에서 $\\angle XBD=\\angle XDB$",
+"$60^\\circ+a=180^\\circ-50^\\circ-a$ → $a=35^\\circ$",
+"$\\angle CDB=50^\\circ+35^\\circ=85^\\circ$, 합 $120^\\circ$ → ⑤"
+],
+"check": "ok"
+},
+"24": {
+"tp": "접선과 현이 이루는 각, 호의 길이",
+"key": "$\\angle EDB=\\angle DCB$, 반지름과 접선의 수직",
+"sol": [
+"큰 원 반지름 $R$: $\\pi R=54\\pi$ → $R=54$",
+"$\\angle EAB=\\theta$라 하면 작은 반원 중심 M에서 $\\angle DMB=90^\\circ+\\theta$, $\\angle DCB=45^\\circ+\\dfrac{\\theta}{2}$",
+"$\\angle EDB=\\angle DCB=50^\\circ$ → $\\theta=10^\\circ$",
+"호 EB의 중심각 $20^\\circ$, 길이 $=54\\times\\dfrac{\\pi}{9}=6\\pi$ → ②"
+],
+"check": "ok — ∠EDB=50°는 그림에만 표시되어 있어 문제 끝에 괄호로 적어 넣었다."
+}
+}
