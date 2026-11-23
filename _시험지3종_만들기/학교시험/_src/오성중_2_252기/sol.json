@@ -1,0 +1,221 @@
+{
+ "1": {
+  "tp": "연결된 닮은 사각형",
+  "key": "대응변의 비를 차례로 이용",
+  "sol": [
+   "$\\square\\text{HIJA}\\sim\\square\\text{AEFG}$에서 $\\overline{\\text{HI}}:\\overline{\\text{AE}}=\\overline{\\text{HA}}:\\overline{\\text{AG}}$",
+   "$\\overline{\\text{HA}}=4+8=12$, $\\overline{\\text{AG}}=12+8=20$이므로 $9:\\overline{\\text{AE}}=12:20$, $\\overline{\\text{AE}}=15$",
+   "$\\square\\text{ABCD}\\sim\\square\\text{AEFG}$에서 $\\overline{\\text{AB}}:15=4:20$, $\\overline{\\text{AB}}=3$",
+   "$\\overline{\\text{BE}}=15-3=12$"
+  ],
+  "check": "ok"
+ },
+ "2": {
+  "tp": "선분의 비로 평행 판별",
+  "key": "AD:AB=AE:AC (또는 AD:DB=AE:EC)이면 평행",
+  "sol": [
+   "ㄱ. $12:16=9:12=3:4$ → 평행",
+   "ㄴ. $\\overline{\\text{AE}}:\\overline{\\text{AC}}=1:2$이지만 $\\overline{\\text{AD}},\\overline{\\text{AB}}$를 모름 → 판단 불가",
+   "ㄷ. $3:5\\ne4:6$ → 평행 아님",
+   "ㄹ. $4:3\\ne5:4$ → 평행 아님",
+   "ㅁ. $9:3=6:2$ → 평행",
+   "ㅂ. $20:8=15:6$ → 평행"
+  ],
+  "check": "ㄴ, ㅂ의 길이 배치는 원본 그림을 보고 다시 그렸다."
+ },
+ "3": {
+  "tp": "정사각형 속 직각 닮음",
+  "key": "$\\triangle\\text{ABM}\\sim\\triangle\\text{MCN}$",
+  "sol": [
+   "$\\angle\\text{BAM}=\\angle\\text{CMN}$이므로 $\\triangle\\text{ABM}\\sim\\triangle\\text{MCN}$",
+   "$4:2=2:\\overline{\\text{CN}}$, $\\overline{\\text{CN}}=1$, $\\overline{\\text{DN}}=3$",
+   "$\\triangle\\text{DMN}=\\dfrac12\\times3\\times2=3$"
+  ],
+  "check": "ok"
+ },
+ "4": {
+  "tp": "닮은 깃발",
+  "key": "대응각은 같고, 대응변의 비는 일정",
+  "sol": [
+   "중간 깃발은 ∠D=∠E=70°, ∠F=40°인 이등변삼각형(DF=EF=50)",
+   "큰 깃발: $\\overline{\\text{CA}}=\\overline{\\text{CB}}=75$, 닮음비 $3:2$, ∠C=40°, ∠A=70°",
+   "작은 깃발: ∠I=40°이므로 I↔F, $\\overline{\\text{GI}}=25$ → 닮음비(중간:작은) $2:1$",
+   "ㄱ. $\\overline{\\text{HI}}=25$ (참)  ㄴ. $\\overline{\\text{GH}}$는 DE에 대응하므로 25가 아님 (거짓)",
+   "ㄷ. ∠G=70° (거짓)  ㄹ. ∠C=40° (참)  ㅁ. ∠A=70° (거짓)"
+  ],
+  "check": "ok"
+ },
+ "5": {
+  "tp": "평행선의 연쇄 닮음",
+  "key": "$\\overline{\\text{FC}}^2=\\overline{\\text{AB}}\\times\\overline{\\text{ED}}$",
+  "sol": [
+   "두 직선 AE, BD의 교점을 O라 하면 $\\overline{\\text{AB}}/\\!/\\overline{\\text{FC}}$에서 $\\overline{\\text{OA}}:\\overline{\\text{OF}}=\\overline{\\text{OB}}:\\overline{\\text{OC}}$",
+   "$\\overline{\\text{FB}}/\\!/\\overline{\\text{EC}}$에서 $\\overline{\\text{OF}}:\\overline{\\text{OE}}=\\overline{\\text{OB}}:\\overline{\\text{OC}}$",
+   "따라서 $\\overline{\\text{AB}}:\\overline{\\text{FC}}=\\overline{\\text{FC}}:\\overline{\\text{ED}}$, $\\overline{\\text{FC}}^2=5\\times20=100$",
+   "$\\overline{\\text{FC}}=10$"
+  ],
+  "check": "ok"
+ },
+ "6": {
+  "tp": "원뿔대의 부피의 비",
+  "key": "잘린 원뿔들의 닮음비 2:4:5 → 부피의 비 8:64:125",
+  "sol": [
+   "원뿔 전체 높이를 $5h$라 하면 반지름 4인 단면까지 높이 $4h$, 원뿔대 C의 높이 $h$",
+   "B의 높이 $2h$ → 원뿔 A의 높이 $2h$, 반지름 $2$",
+   "닮음비 $2:4:5$ → 부피의 비 $8:64:125$",
+   "B $=64-8=56$, C $=125-64=61$ → $56:61$"
+  ],
+  "check": "ok"
+ },
+ "7": {
+  "tp": "중점연결과 넓이",
+  "key": "$\\overline{\\text{RP}}=\\dfrac12\\overline{\\text{BC}}$ (R은 AE와 DP의 교점)",
+  "sol": [
+   "$\\overline{\\text{DF}}=\\dfrac12\\overline{\\text{BC}}$, $\\overline{\\text{FP}}=\\dfrac12\\overline{\\text{DF}}$이므로 $\\overline{\\text{DP}}=\\dfrac34\\overline{\\text{BC}}$",
+   "DP와 AE의 교점을 R이라 하면 R은 AE의 중점, $\\overline{\\text{DR}}=\\dfrac12\\overline{\\text{BE}}=\\dfrac14\\overline{\\text{BC}}$",
+   "$\\overline{\\text{RP}}=\\dfrac34\\overline{\\text{BC}}-\\dfrac14\\overline{\\text{BC}}=\\dfrac12\\overline{\\text{BC}}$",
+   "A, E에서 직선 DP까지의 거리의 합은 $\\triangle\\text{ABC}$의 높이 $h$ → $\\triangle\\text{AEP}=\\dfrac12\\times\\dfrac12\\overline{\\text{BC}}\\times h=\\dfrac12\\triangle\\text{ABC}=6\\,(\\text{cm}^2)$"
+  ],
+  "check": "ok"
+ },
+ "8": {
+  "tp": "AA 닮음과 엇각",
+  "key": "$\\triangle\\text{ABE}\\sim\\triangle\\text{CBA}$, $\\overline{\\text{AB}}/\\!/\\overline{\\text{DE}}$",
+  "sol": [
+   "∠B 공통, ∠BAE=∠BCA → $\\triangle\\text{ABE}\\sim\\triangle\\text{CBA}$, 닮음비 $\\overline{\\text{AE}}:\\overline{\\text{CA}}=1:2$",
+   "$\\overline{\\text{BC}}=2\\times6=12$, $\\overline{\\text{BE}}=\\dfrac62=3$, $\\overline{\\text{EC}}=9$",
+   "∠BAE=∠AED(엇각) → $\\overline{\\text{AB}}/\\!/\\overline{\\text{ED}}$",
+   "$\\overline{\\text{DE}}=6\\times\\dfrac{9}{12}=4.5$"
+  ],
+  "check": "ok"
+ },
+ "9": {
+  "tp": "사다리꼴과 두 무게중심",
+  "key": "$\\overline{\\text{GG}'}=\\dfrac13\\overline{\\text{AD}}$",
+  "sol": [
+   "$\\overline{\\text{MN}}=\\dfrac12(\\overline{\\text{AD}}+\\overline{\\text{BC}})$ → $\\overline{\\text{AD}}=6$",
+   "G, G$'$은 각각 $\\overline{\\text{HA}}$, $\\overline{\\text{HD}}$를 $1:2$로 나눔(H 쪽에서 1)",
+   "$\\overline{\\text{GG}'}=\\dfrac13\\overline{\\text{AD}}=2$"
+  ],
+  "check": "ok"
+ },
+ "10": {
+  "tp": "평행사변형 속 넓이 분할",
+  "key": "연장선의 닮음으로 BE:EF:FQ 구하기",
+  "sol": [
+   "BQ의 연장선과 AD의 연장선을 이용하면 $\\overline{\\text{BE}}:\\overline{\\text{EQ}}$, $\\overline{\\text{BF}}:\\overline{\\text{FQ}}$를 구할 수 있다",
+   "좌표(평행사변형을 단위정사각형으로 변환): E$=\\left(\\dfrac4{11},\\dfrac3{11}\\right)$, F$=\\left(\\dfrac45,\\dfrac35\\right)$, P$=\\left(\\dfrac12,0\\right)$",
+   "$\\triangle\\text{EPF}=\\dfrac{9}{110}\\times(\\text{평행사변형})$",
+   "$330\\times\\dfrac{9}{110}=27$"
+  ],
+  "check": "ok"
+ },
+ "11": {
+  "tp": "닮은 도형과 피타고라스",
+  "key": "넓이는 변의 길이의 제곱에 비례 → 빗변 위 넓이 = 나머지 합",
+  "sol": [
+   "∠C=90°이므로 빗변은 AB, $16=4+x$",
+   "$x=12$"
+  ],
+  "check": "ok"
+ },
+ "12": {
+  "tp": "각의 이등분선 정리",
+  "key": "$\\overline{\\text{BD}}:\\overline{\\text{DC}}=\\overline{\\text{AB}}:\\overline{\\text{AC}}$",
+  "sol": [
+   "$\\overline{\\text{AB}}=\\sqrt{12^2+16^2}=20$",
+   "$\\overline{\\text{BD}}:\\overline{\\text{DC}}=20:12=5:3$ → $\\overline{\\text{DC}}=6$",
+   "$\\overline{\\text{AD}}^2=12^2+6^2=180$"
+  ],
+  "check": "ok"
+ },
+ "13": {
+  "tp": "유한소수 조건",
+  "key": "분모의 소인수가 2, 5뿐이 되도록",
+  "sol": [
+   "$110=2\\times5\\times11$ → 11의 배수 9개",
+   "$170=2\\times5\\times17$ → 17의 배수 5개",
+   "둘 다(187의 배수)는 없음 → $9+5=14$"
+  ],
+  "check": "ok"
+ },
+ "14": {
+  "tp": "가위바위보",
+  "key": "A는 가위, B·C는 보",
+  "sol": [
+   "$\\dfrac13\\times\\dfrac13\\times\\dfrac13=\\dfrac1{27}$"
+  ],
+  "check": "ok"
+ },
+ "15": {
+  "tp": "원판의 확률",
+  "key": "소수가 아닌 칸 세기",
+  "sol": [
+   "칸의 수: 1, 3, 5, 7, 9, 11, 13, 15",
+   "소수가 아닌 수: 1, 9, 15 → 3칸",
+   "$\\dfrac38$"
+  ],
+  "check": "ok"
+ },
+ "16": {
+  "tp": "삼각형 결정 조건과 확률",
+  "key": "가장 긴 변 < 나머지 두 변의 합",
+  "sol": [
+   "전체 $\\dfrac{6\\times5\\times4}{6}=20$",
+   "삼각형이 되지 않는 경우: (5,6,15),(5,6,17),(5,8,15),(5,8,17),(5,10,17),(6,8,15),(6,8,17),(6,10,17),(5,10,15) → 9가지, $a=\\dfrac{11}{20}$",
+   "직각삼각형: (6,8,10),(8,15,17) → $b=\\dfrac2{20}$",
+   "$a+b=\\dfrac{13}{20}$"
+  ],
+  "check": "ok"
+ },
+ "17": {
+  "tp": "공통각 AA 닮음",
+  "key": "$\\triangle\\text{ABC}\\sim\\triangle\\text{DAC}$, $\\overline{\\text{CA}}^2=\\overline{\\text{CD}}\\times\\overline{\\text{CB}}$",
+  "sol": [
+   "∠C 공통, ∠ABC=∠DAC → $\\triangle\\text{ABC}\\sim\\triangle\\text{DAC}$ (AA 닮음)",
+   "$\\overline{\\text{BC}}:\\overline{\\text{AC}}=\\overline{\\text{AC}}:\\overline{\\text{DC}}$, $25:20=20:\\overline{\\text{DC}}$",
+   "$\\overline{\\text{DC}}=16$, $\\overline{\\text{BD}}=25-16=9$"
+  ],
+  "check": "ok"
+ },
+ "18": {
+  "tp": "피타고라스 정리의 역",
+  "key": "$15^2+20^2=25^2$ → ∠CAD=90°",
+  "sol": [
+   "$\\overline{\\text{AC}}^2=17^2-8^2=225$, $\\overline{\\text{AC}}=15$",
+   "$\\triangle\\text{ACD}$에서 $15^2+20^2=625=25^2$ → ∠CAD=90°",
+   "∠ACB=∠CAD=90°(엇각이 같음) → $\\overline{\\text{AD}}/\\!/\\overline{\\text{BC}}$"
+  ],
+  "check": "ok"
+ },
+ "19": {
+  "tp": "삼각형과 평행선",
+  "key": "AD:AB=DE:BC, AD:DB=AE:EC",
+  "sol": [
+   "$5:9=x:15$ → $x=\\dfrac{25}{3}$",
+   "$5:4=6:y$ → $y=\\dfrac{24}{5}$",
+   "$xy=\\dfrac{25}3\\times\\dfrac{24}5=40$"
+  ],
+  "check": "ok"
+ },
+ "20": {
+  "tp": "확률로 개수 구하기",
+  "key": "딸기 5k개, 전체 8k개",
+  "sol": [
+   "딸기 $5k$개, 전체 $8k$개라 하면 $\\dfrac{5k+1}{8k+1}=\\dfrac{11}{17}$",
+   "$85k+17=88k+11$, $k=2$",
+   "딸기 맛 사탕 $10$개"
+  ],
+  "check": "ok"
+ },
+ "21": {
+  "tp": "비복원 추출과 순서",
+  "key": "몇 번째에 꺼내든 노란 구슬일 확률은 같다",
+  "sol": [
+   "(노,노,노) 불가. 셋째가 노랑인 경우: (흰,흰,노) $\\dfrac{12}{14}\\cdot\\dfrac{11}{13}\\cdot\\dfrac2{12}=\\dfrac{22}{182}$",
+   "(노,흰,노) $\\dfrac2{14}\\cdot\\dfrac{12}{13}\\cdot\\dfrac1{12}=\\dfrac{2}{182}$, (흰,노,노) $\\dfrac{12}{14}\\cdot\\dfrac2{13}\\cdot\\dfrac1{12}=\\dfrac{2}{182}$",
+   "합 $\\dfrac{26}{182}=\\dfrac17$"
+  ],
+  "check": "ok"
+ }
+}

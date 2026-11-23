@@ -1,0 +1,410 @@
+{
+ "meta": {
+  "year": 2025,
+  "school": "소선여중",
+  "grade": "중2",
+  "subject": "수학",
+  "title": "2025 소선여중 2학년 2학기 기말",
+  "term": "2학기 기말",
+  "range": "Ⅴ. 도형의 닮음과 피타고라스 정리 ~ Ⅵ. 확률",
+  "has_key": false,
+  "note": "원본은 학생 필기가 많은 촬영본이다. 서술형 2번의 삼각형 그림만 원본에서 잘라 썼고, 나머지 그림은 원본과 같은 조건으로 다시 그렸다(12번 지도 그림은 도형만 남긴 약도로 바꿈). 답안이 없어 정답은 채수학에서 직접 풀어 확인했다.",
+  "src": "[소선여중][2][25-2-기말] (원본) (허니).pdf"
+ },
+ "Q": [
+  {
+   "n": 1,
+   "pt": "3",
+   "type": "객",
+   "ans": "④",
+   "unit": "도형의 닮음",
+   "sub": "닮은 도형의 성질",
+   "lv": 1,
+   "q": "다음 그림에서 $\\triangle\\text{ABC}\\sim\\triangle\\text{DEF}$이고 닮음비가 $3:2$일 때, 옳지 <b>않은</b> 것은?",
+   "ch": [
+    "$\\angle\\text{B}=60^\\circ$",
+    "$\\angle\\text{A}=75^\\circ$",
+    "$\\overline{\\text{EF}}=6\\text{cm}$",
+    "$\\angle\\text{C}:\\angle\\text{F}=3:2$",
+    "$\\triangle\\text{ABC}=27\\text{cm}^2$"
+   ],
+   "imgs": [
+    "q1"
+   ],
+   "imgW": 60
+  },
+  {
+   "n": 2,
+   "pt": "3",
+   "type": "객",
+   "ans": "②",
+   "unit": "평행선과 선분의 길이의 비",
+   "sub": "무게중심의 성질",
+   "lv": 1,
+   "q": "다음 그림에서 점 G가 $\\triangle$ABC의 무게중심이고, $\\overline{\\text{CN}}$$=9\\text{cm}$, $\\overline{\\text{BM}}$$=5\\text{cm}$, $\\overline{\\text{GN}}$$=x\\text{cm}$, $\\overline{\\text{BC}}$$=y\\text{cm}$일 때, $x+y$의 값은?",
+   "ch": [
+    "$12$",
+    "$13$",
+    "$14$",
+    "$15$",
+    "$16$"
+   ],
+   "imgs": [
+    "q2"
+   ],
+   "imgW": 35
+  },
+  {
+   "n": 3,
+   "pt": "4",
+   "type": "객",
+   "ans": "④",
+   "unit": "평행선과 선분의 길이의 비",
+   "sub": "무게중심과 평행선",
+   "lv": 3,
+   "q": "다음 그림에서 점 G가 $\\triangle$ABC의 무게중심일 때, $\\overline{\\text{AG}}$의 연장선과 $\\overline{\\text{BC}}$의 교점을 D, $\\overline{\\text{BG}}$의 연장선과 $\\overline{\\text{AC}}$의 교점을 E라고 하자. 점 D를 지나고 $\\overline{\\text{BE}}$에 평행한 직선과 $\\overline{\\text{AC}}$의 교점은 F이고 $\\overline{\\text{GE}}$$=4\\text{cm}$일 때, 다음 중 옳지 <b>않은</b> 것은?",
+   "ch": [
+    "$\\overline{\\text{AF}}$$:$$\\overline{\\text{FC}}$$=3:1$",
+    "$\\triangle\\text{GBD}=\\triangle\\text{GAE}$",
+    "$\\overline{\\text{EF}}$$=$$\\overline{\\text{FC}}$",
+    "$\\overline{\\text{DF}}$$=8\\text{cm}$",
+    "$\\triangle\\text{GAB}=\\dfrac{1}{3}\\triangle\\text{ABC}$"
+   ],
+   "imgs": [
+    "q3"
+   ],
+   "imgW": 35
+  },
+  {
+   "n": 4,
+   "pt": "4",
+   "type": "객",
+   "ans": "①",
+   "unit": "도형의 닮음",
+   "sub": "직각삼각형의 닮음",
+   "lv": 2,
+   "q": "다음 그림과 같이 $\\angle\\text{A}=90^\\circ$인 직각삼각형 ABC의 꼭짓점 A에서 변 BC에 내린 수선의 발을 D라 하자. $\\overline{\\text{AB}}$$=12\\text{cm}$, $\\overline{\\text{BD}}$$=8\\text{cm}$일 때, $\\overline{\\text{DC}}$의 길이는?",
+   "ch": [
+    "$10\\text{cm}$",
+    "$12\\text{cm}$",
+    "$14\\text{cm}$",
+    "$16\\text{cm}$",
+    "$18\\text{cm}$"
+   ],
+   "imgs": [
+    "q4"
+   ],
+   "imgW": 40
+  },
+  {
+   "n": 5,
+   "pt": "4",
+   "type": "객",
+   "ans": "①",
+   "unit": "평행선과 선분의 길이의 비",
+   "sub": "평행사변형과 무게중심",
+   "lv": 2,
+   "q": "다음 그림과 같은 평행사변형 ABCD에서 $\\overline{\\text{BC}}$, $\\overline{\\text{CD}}$의 중점을 각각 M, N이라 하고 $\\overline{\\text{BD}}$와 $\\overline{\\text{AM}}$, $\\overline{\\text{AN}}$의 교점을 각각 P, Q라 하자. $\\overline{\\text{MN}}$$=9\\text{cm}$일 때, $\\overline{\\text{PQ}}$의 길이는?",
+   "ch": [
+    "$6\\text{cm}$",
+    "$7\\text{cm}$",
+    "$8\\text{cm}$",
+    "$9\\text{cm}$",
+    "$10\\text{cm}$"
+   ],
+   "imgs": [
+    "q5"
+   ],
+   "imgW": 42
+  },
+  {
+   "n": 6,
+   "pt": "4",
+   "type": "객",
+   "ans": "③",
+   "unit": "평행선과 선분의 길이의 비",
+   "sub": "평행선 사이의 선분의 길이의 비",
+   "lv": 3,
+   "q": "다음 그림에서 $l\\,/\\!/\\,m\\,/\\!/\\,n$일 때, $x+y$의 값은?",
+   "ch": [
+    "$21$",
+    "$22$",
+    "$23$",
+    "$24$",
+    "$25$"
+   ],
+   "imgs": [
+    "q6"
+   ],
+   "imgW": 45
+  },
+  {
+   "n": 7,
+   "pt": "5",
+   "type": "객",
+   "ans": "③",
+   "unit": "평행선과 선분의 길이의 비",
+   "sub": "평행선과 선분의 길이의 비",
+   "lv": 3,
+   "q": "오른쪽 그림과 같은 $\\triangle$ABC와 $\\triangle$DBE에서 점 F는 $\\overline{\\text{BC}}$와 $\\overline{\\text{DE}}$의 교점이고 $\\overline{\\text{AC}}$$\\,/\\!/\\,$$\\overline{\\text{GF}}$$\\,/\\!/\\,$$\\overline{\\text{BE}}$이다. $\\overline{\\text{AC}}$$=14\\text{cm}$, $\\overline{\\text{AD}}$$=5\\text{cm}$, $\\overline{\\text{DB}}$$=30\\text{cm}$, $\\overline{\\text{BE}}$$=24\\text{cm}$일 때, $\\overline{\\text{GF}}$의 길이는?",
+   "ch": [
+    "$6\\text{cm}$",
+    "$7\\text{cm}$",
+    "$8\\text{cm}$",
+    "$9\\text{cm}$",
+    "$10\\text{cm}$"
+   ],
+   "imgs": [
+    "q7"
+   ],
+   "imgW": 25
+  },
+  {
+   "n": 8,
+   "pt": "4",
+   "type": "객",
+   "ans": "⑤",
+   "unit": "평행선과 선분의 길이의 비",
+   "sub": "중점연결과 넓이",
+   "lv": 3,
+   "q": "다음 그림과 같이 $\\triangle$ABC에서 $\\overline{\\text{BC}}$ 위에 $\\overline{\\text{BD}}$$=4\\text{cm}$, $\\overline{\\text{DC}}$$=6\\text{cm}$이 되는 점 D를 잡고 $\\overline{\\text{AB}}$의 중점 E에서 $\\overline{\\text{BC}}$와 평행한 직선을 그어 $\\overline{\\text{AD}}$와 만나는 점을 F, $\\overline{\\text{AD}}$와 $\\overline{\\text{EC}}$의 교점을 P라 하자. $\\triangle$EFP의 넓이가 $a$일 때, $\\triangle$ABC의 넓이는?",
+   "ch": [
+    "$20a$",
+    "$25a$",
+    "$30a$",
+    "$35a$",
+    "$40a$"
+   ],
+   "imgs": [
+    "q8"
+   ],
+   "imgW": 35
+  },
+  {
+   "n": 9,
+   "pt": "4",
+   "type": "객",
+   "ans": "②",
+   "unit": "평행선과 선분의 길이의 비",
+   "sub": "사다리꼴과 평행선",
+   "lv": 3,
+   "q": "다음 그림과 같은 사다리꼴 ABCD에서 $\\overline{\\text{AD}}$$\\,/\\!/\\,$$\\overline{\\text{EF}}$$\\,/\\!/\\,$$\\overline{\\text{GH}}$$\\,/\\!/\\,$$\\overline{\\text{BC}}$, $\\overline{\\text{AE}}$$:$$\\overline{\\text{EG}}$$:$$\\overline{\\text{GB}}$$=1:3:2$이고 $\\overline{\\text{RS}}$$=3\\text{cm}$, $\\overline{\\text{BC}}$$=12\\text{cm}$일 때, $\\overline{\\text{PQ}}$의 길이는?",
+   "ch": [
+    "$5\\text{cm}$",
+    "$6\\text{cm}$",
+    "$7\\text{cm}$",
+    "$8\\text{cm}$",
+    "$9\\text{cm}$"
+   ],
+   "imgs": [
+    "q9"
+   ],
+   "imgW": 40
+  },
+  {
+   "n": 10,
+   "pt": "3",
+   "type": "객",
+   "ans": "③",
+   "unit": "피타고라스 정리",
+   "sub": "직사각형의 대각선",
+   "lv": 1,
+   "q": "다음 그림과 같이 가로, 세로의 길이가 각각 $20\\text{cm}$, $15\\text{cm}$인 직사각형 ABCD에 외접하는 원의 둘레의 길이는?",
+   "ch": [
+    "$15\\pi\\text{cm}$",
+    "$21\\pi\\text{cm}$",
+    "$25\\pi\\text{cm}$",
+    "$27\\pi\\text{cm}$",
+    "$32\\pi\\text{cm}$"
+   ],
+   "imgs": [
+    "q10"
+   ],
+   "imgW": 28
+  },
+  {
+   "n": 11,
+   "pt": "4",
+   "type": "객",
+   "ans": "④",
+   "unit": "피타고라스 정리",
+   "sub": "유클리드의 증명",
+   "lv": 2,
+   "q": "다음 그림은 $\\angle\\text{A}=90^\\circ$인 직각삼각형 ABC에서 $\\overline{\\text{BC}}$를 한 변으로 하는 정사각형 BDEC를 그린 것이다. 점 A에서 $\\overline{\\text{DE}}$에 내린 수선의 발을 F, $\\overline{\\text{AF}}$와 $\\overline{\\text{BC}}$의 교점을 G라 할 때, 색칠한 $\\square$GFEC의 넓이를 구한 것은?",
+   "ch": [
+    "$12\\text{cm}^2$",
+    "$13\\text{cm}^2$",
+    "$24\\text{cm}^2$",
+    "$25\\text{cm}^2$",
+    "$28\\text{cm}^2$"
+   ],
+   "imgs": [
+    "q11"
+   ],
+   "imgW": 28
+  },
+  {
+   "n": 12,
+   "pt": "4",
+   "type": "객",
+   "ans": "⑤",
+   "unit": "피타고라스 정리",
+   "sub": "직각삼각형에서 빗변에 내린 수선",
+   "lv": 2,
+   "q": "다음 그림과 같이 어느 도로의 지점 A와 B사이에 휴게소가 세워지고, 이 휴게소와 주변 마을을 연결하는 도로가 생긴다고 한다. 도로와 마을의 거리가 최단거리가 되는 위치에 휴게소를 만들 때, 휴게소와 마을 사이의 거리는? (단, 마을과 A, B지점을 연결하는 선은 서로 수직)",
+   "ch": [
+    "$20\\text{km}$",
+    "$21\\text{km}$",
+    "$22\\text{km}$",
+    "$23\\text{km}$",
+    "$24\\text{km}$"
+   ],
+   "imgs": [
+    "q12"
+   ],
+   "imgW": 32
+  },
+  {
+   "n": 13,
+   "pt": "3",
+   "type": "객",
+   "ans": "④",
+   "unit": "경우의 수",
+   "sub": "주사위의 경우의 수",
+   "lv": 1,
+   "q": "한 개의 주사위를 던질 때, 다음 중 그 값이 나머지와 <b>다른</b> 것은?",
+   "ch": [
+    "소수의 눈이 나올 경우의 수",
+    "홀수의 눈이 나올 경우의 수",
+    "$2$의 배수의 눈이 나올 경우의 수",
+    "$6$의 약수의 눈이 나올 경우의 수",
+    "$15$의 약수의 눈이 나올 경우의 수"
+   ]
+  },
+  {
+   "n": 14,
+   "pt": "5",
+   "type": "객",
+   "ans": "④",
+   "unit": "경우의 수",
+   "sub": "직선의 개수(한 직선 위의 점)",
+   "lv": 3,
+   "q": "다음 그림과 같이 반원 위에 $8$개의 점이 있다. 이 중에서 두 점을 잇는 직선의 개수는?",
+   "ch": [
+    "$14$개",
+    "$15$개",
+    "$22$개",
+    "$23$개",
+    "$42$개"
+   ],
+   "imgs": [
+    "q14"
+   ],
+   "imgW": 32
+  },
+  {
+   "n": 15,
+   "pt": "4",
+   "type": "객",
+   "ans": "⑤",
+   "unit": "확률",
+   "sub": "하나만 맞힐 확률",
+   "lv": 2,
+   "q": "과녁에 명중할 확률이 각각 $\\dfrac{2}{3}$, $\\dfrac{3}{4}$인 두 양궁 선수가 하나의 과녁을 향하여 활을 $1$발씩 쏘았다. 이 때, 과녁에 명중한 화살이 $1$개일 확률은?",
+   "ch": [
+    "$\\dfrac{1}{2}$",
+    "$\\dfrac{2}{3}$",
+    "$\\dfrac{3}{4}$",
+    "$\\dfrac{5}{6}$",
+    "$\\dfrac{5}{12}$"
+   ]
+  },
+  {
+   "n": 16,
+   "pt": "4",
+   "type": "객",
+   "ans": "⑤",
+   "unit": "확률",
+   "sub": "연속으로 비가 올 확률",
+   "lv": 3,
+   "q": "대구 기상청 예보에 따르면 이번 주 목요일에 비가 올 확률은 $50\\%$, 금요일에 비가 올 확률은 $25\\%$, 토요일에 비가 올 확률은 $20\\%$이다. 이 $3$일 중에서 이틀만 연속으로 비가 올 확률은?",
+   "ch": [
+    "$\\dfrac{1}{3}$",
+    "$\\dfrac{2}{3}$",
+    "$\\dfrac{1}{5}$",
+    "$\\dfrac{3}{5}$",
+    "$\\dfrac{1}{8}$"
+   ]
+  },
+  {
+   "n": 17,
+   "pt": "3",
+   "type": "객",
+   "ans": "④",
+   "unit": "경우의 수",
+   "sub": "한 줄로 세우기",
+   "lv": 1,
+   "q": "부모를 포함하여 가족 $5$명이 한 줄로 서서 사진을 찍으려고 할 때, 부모가 양 끝에 서게 되는 경우의 수는?",
+   "ch": [
+    "$6$",
+    "$8$",
+    "$10$",
+    "$12$",
+    "$14$"
+   ]
+  },
+  {
+   "n": 18,
+   "pt": "9",
+   "type": "서",
+   "ans": "$\\dfrac{7}{4}\\text{cm}$",
+   "unit": "도형의 닮음",
+   "sub": "직각삼각형의 닮음(직사각형)",
+   "lv": 2,
+   "q": "<b>[서술형 1]</b> 다음 직사각형 ABCD에서 대각선 BD의 중점을 O라 하고, 점 O에서 $\\overline{\\text{BD}}$에 수직인 직선과 $\\overline{\\text{AD}}$, $\\overline{\\text{BC}}$의 교점을 각각 E, F라고 하자. $\\overline{\\text{BC}}$$=8\\text{cm}$, $\\overline{\\text{DC}}$$=6\\text{cm}$일 때, $\\overline{\\text{AE}}$의 길이를 구하는 풀이 과정과 답을 조건에 맞게 쓰시오.<br>&lt;조건&gt; 삼각형의 닮음에 대한 구체적인 이유를 작성할 것",
+   "imgs": [
+    "q18"
+   ],
+   "imgW": 40
+  },
+  {
+   "n": 19,
+   "pt": "9",
+   "type": "서",
+   "ans": "(1) $\\overline{\\text{MN}}$ (2) $\\overline{\\text{MN}}=\\dfrac12\\overline{\\text{BC}}$ (3) $22\\text{cm}$",
+   "unit": "평행선과 선분의 길이의 비",
+   "sub": "삼각형의 중점연결정리",
+   "lv": 2,
+   "q": "<b>[서술형 2]</b> 오른쪽 $\\triangle$ABC에서 $\\overline{\\text{AB}}$와 $\\overline{\\text{AC}}$의 중점을 각각 M, N이라고 할 때, 다음은 $\\overline{\\text{BC}}$와 $\\overline{\\text{MN}}$사이의 관계를 설명한 것이다. 다음 물음에 답하시오.<br>(1) $\\overline{\\text{BC}}$와 평행한 선분을 쓰고 그 이유를 설명하시오. [2점]<br>(2) $\\overline{\\text{BC}}$와 $\\overline{\\text{MN}}$의 길이 사이의 관계식을 쓰고 그 이유를 설명하시오. [2점]<br>(3) 위의 관계를 이용하여 다음 그림의 $\\square$PQRS의 둘레의 길이를 구하는 풀이과정과 답을 쓰시오. (단, $\\square$ABCD에서 $\\overline{\\text{AB}}$, $\\overline{\\text{BC}}$, $\\overline{\\text{CD}}$, $\\overline{\\text{DA}}$의 중점이 각각 P, Q, R, S이다.) [5점]",
+   "imgs": [
+    "q19a",
+    "q19b"
+   ],
+   "imgW": 70
+  },
+  {
+   "n": 20,
+   "pt": "8",
+   "type": "서",
+   "ans": "$\\dfrac{11}{15}$",
+   "unit": "확률",
+   "sub": "서로 다른 색이 나올 확률",
+   "lv": 2,
+   "q": "<b>[서술형 3]</b> 노란 공 $4$개, 빨간 공 $3$개, 파란공 $3$개가 들어 있는 주머니에서 임의로 공을 한 개씩 두 번 꺼낼 때, 모두 다른 색의 공이 나올 확률은? (단, 꺼낸 공은 다시 넣지 않는다.)"
+  },
+  {
+   "n": 21,
+   "pt": "9",
+   "type": "서",
+   "ans": "(1) $\\triangle\\text{BEC}$, $\\triangle\\text{ADC}$ (AA 닮음) (2) $8\\text{cm}$ (3) $80$",
+   "unit": "도형의 닮음",
+   "sub": "직각삼각형의 닮음과 피타고라스",
+   "lv": 3,
+   "q": "<b>[서술형 4]</b> 오른쪽 그림과 같이 $\\overline{\\text{AB}}$$=$$\\overline{\\text{AC}}$인 이등변 삼각형 ABC에서 $\\overline{\\text{AD}}$$\\perp$$\\overline{\\text{BC}}$, $\\overline{\\text{BE}}$$\\perp$$\\overline{\\text{AC}}$이고 $\\overline{\\text{FD}}$$=2\\text{cm}$, $\\overline{\\text{BD}}$$=4\\text{cm}$이다. $\\overline{\\text{AB}}$의 길이를 $k$라 할 때, $k^2$의 값을 구하는 과정이다. 다음 물음에 답하시오.<br>(1) $\\triangle$BDF와 닮음인 삼각형을 두 개 찾고, 닮음인 이유(닮음조건)를 쓰시오. [4점]<br>(2) $\\overline{\\text{AD}}$의 길이를 구하는 풀이 과정과 답을 쓰시오. [3점]<br>(3) $\\overline{\\text{AB}}$의 길이를 $k$라 할 때, $k^2$의 값을 구하는 풀이 과정과 답을 쓰시오. [2점]",
+   "imgs": [
+    "q21"
+   ],
+   "imgW": 32
+  }
+ ]
+}

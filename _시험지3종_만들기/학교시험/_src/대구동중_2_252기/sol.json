@@ -1,0 +1,212 @@
+{
+ "1": {
+  "tp": "항상 닮은 도형",
+  "key": "모양이 하나로 정해지는 도형",
+  "sol": [
+   "원, 구, 반구, 정다각형, 직각이등변삼각형 등은 항상 닮음",
+   "마름모, 부채꼴, 직사각형, 직육면체는 각의 크기나 변의 비가 달라질 수 있음 → ㄱ, ㄴ"
+  ],
+  "check": "ok"
+ },
+ "2": {
+  "tp": "등간격 평행선",
+  "key": "다리 길이가 일정하게 늘어남",
+  "sol": [
+   "다리 $4$개가 같은 간격 → 길이도 같은 차로 늘어남",
+   "$7$, $9$, $11$, $13$이므로 파손된 셋째 다리는 $11\\text{m}$"
+  ],
+  "check": "ok"
+ },
+ "3": {
+  "tp": "내각·외각 이등분선",
+  "key": "BD:DC=BE:EC=AB:AC=2:1",
+  "sol": [
+   "내각: $\\overline{\\text{BD}}:\\overline{\\text{DC}}=12:6=2:1$ → $\\overline{\\text{DC}}=3$",
+   "외각: $\\overline{\\text{BE}}:\\overline{\\text{CE}}=2:1$ → $\\overline{\\text{CE}}=\\overline{\\text{BC}}=9$",
+   "$\\overline{\\text{DE}}=3+9=12\\,(\\text{cm})$"
+  ],
+  "check": "ok"
+ },
+ "4": {
+  "tp": "공통각 AA 닮음",
+  "key": "$\\triangle\\text{ADE}\\sim\\triangle\\text{ACD}$",
+  "sol": [
+   "$\\overline{\\text{AD}}\\perp\\overline{\\text{BC}}$, $\\overline{\\text{AD}}=\\sqrt{13^2-5^2}=12$",
+   "∠A 공통, ∠ADE=∠ACD → $\\overline{\\text{AE}}:\\overline{\\text{AD}}=\\overline{\\text{AD}}:\\overline{\\text{AC}}$",
+   "$\\overline{\\text{AE}}=\\dfrac{144}{13}$, $\\overline{\\text{EC}}=13-\\dfrac{144}{13}=\\dfrac{25}{13}\\,(\\text{cm})$"
+  ],
+  "check": "ok"
+ },
+ "5": {
+  "tp": "평행선 두 번 쓰기",
+  "key": "△BDG에서 FE∥DG, △CAE에서 DG∥AE",
+  "sol": [
+   "$\\triangle\\text{BDG}$에서 $\\overline{\\text{BE}}:\\overline{\\text{EG}}=5:3$",
+   "$\\triangle\\text{CAE}$에서 $\\overline{\\text{EG}}:\\overline{\\text{GC}}=2:3$",
+   "$\\overline{\\text{EG}}=6k$로 두면 $\\overline{\\text{BE}}=10k$, $\\overline{\\text{GC}}=9k$ → $\\overline{\\text{BG}}:\\overline{\\text{GC}}=16:9$",
+   "$\\triangle\\text{BFE}\\sim\\triangle\\text{BDG}$(닮음비 $5:8$) → $\\triangle\\text{BDG}=50\\times\\dfrac{64}{25}=128$",
+   "$\\triangle\\text{DGC}=128\\times\\dfrac{9}{16}=72\\,(\\text{cm}^2)$"
+  ],
+  "check": "ok"
+ },
+ "6": {
+  "tp": "무게중심에서의 거리",
+  "key": "G는 밑변에서 높이의 1/3",
+  "sol": [
+   "$\\triangle$ABC의 높이를 $h$라 하면 G에서 BC까지 $\\dfrac h3$",
+   "G에서 EF까지 $\\dfrac h3-\\dfrac h5=\\dfrac{2h}{15}$",
+   "닮음비 $=\\dfrac h3:\\dfrac{2h}{15}=5:2$"
+  ],
+  "check": "ok"
+ },
+ "7": {
+  "tp": "평행사변형의 대각선 삼등분",
+  "key": "P, Q는 각각 △ABC, △ACD의 무게중심 → BP=PQ=QD",
+  "sol": [
+   "$\\overline{\\text{BP}}=\\overline{\\text{PQ}}=\\overline{\\text{QD}}=\\dfrac13\\overline{\\text{BD}}$, $\\overline{\\text{MN}}=\\dfrac12\\overline{\\text{BD}}$ → ㄴ 참",
+   "ㄷ: $\\triangle\\text{CMN}=\\dfrac14\\triangle\\text{BCD}=\\dfrac{15}{4}$ (거짓)",
+   "ㄹ: $\\triangle\\text{PBM}=\\triangle\\text{QDN}=\\dfrac16\\times15=\\dfrac52$, $\\square\\text{PMNQ}=15-5-\\dfrac{15}4=\\dfrac{25}4$ (참)",
+   "ㅁ: $\\triangle\\text{APQ}=\\dfrac13\\triangle\\text{ABD}=5=\\dfrac52+\\dfrac52$ (참)",
+   "ㄱ: AP=AQ는 일반적으로 성립하지 않음"
+  ],
+  "check": "ok"
+ },
+ "8": {
+  "tp": "무게중심의 비",
+  "key": "BG:GD=CG:GE=2:1",
+  "sol": [
+   "$\\overline{\\text{BE}}=12$, $\\overline{\\text{BG}}=\\dfrac23\\times18=12$, $\\overline{\\text{GE}}=\\dfrac12\\times14=7$",
+   "둘레 $=12+12+7=31\\,(\\text{cm})$"
+  ],
+  "check": "ok"
+ },
+ "9": {
+  "tp": "합동과 직각이등변삼각형",
+  "key": "∠AED=90°, AE=ED",
+  "sol": [
+   "합동이므로 ∠AEB+∠DEC=90° → ∠AED=90°, $\\overline{\\text{AE}}=\\overline{\\text{ED}}$",
+   "$\\dfrac12\\overline{\\text{AE}}^2=112.5$ → $\\overline{\\text{AE}}=15$, $\\overline{\\text{AB}}=\\sqrt{15^2-12^2}=9$",
+   "$\\overline{\\text{BC}}=12+9=21$, 넓이 $=\\dfrac12(9+12)\\times21=220.5\\,(\\text{cm}^2)$"
+  ],
+  "check": "ok"
+ },
+ "10": {
+  "tp": "빗변 위 반원과 삼각형",
+  "key": "색칠한 부분 = 빗변 AC를 지름으로 하는 반원 − △ABC",
+  "sol": [
+   "$\\overline{\\text{AC}}^2=10^2+6^2=136$",
+   "AC 위 반원 $=\\dfrac12\\pi\\times\\dfrac{136}{4}=17\\pi$",
+   "색칠한 부분 $=17\\pi-\\dfrac12\\times10\\times6=17\\pi-30$"
+  ],
+  "check": "ok"
+ },
+ "11": {
+  "tp": "넓이가 같은 삼각형",
+  "key": "BD를 밑변으로 보면 높이는 BH (H는 A에서 BC에 내린 수선의 발)",
+  "sol": [
+   "A에서 BC에 내린 수선의 발을 H라 하면 $\\overline{\\text{BH}}=\\dfrac{36}{10}$, $\\overline{\\text{CH}}=\\dfrac{64}{10}$",
+   "$\\triangle\\text{ABD}=\\dfrac12\\times10\\times\\overline{\\text{BH}}=18$, $\\triangle\\text{ACE}=\\dfrac12\\times10\\times\\overline{\\text{CH}}=32$",
+   "합 $=50\\,(\\text{cm}^2)$ (정사각형 넓이의 절반)"
+  ],
+  "check": "ok"
+ },
+ "12": {
+  "tp": "정삼각형 조건으로 높이 구하기",
+  "key": "AE=AM=EM",
+  "sol": [
+   "높이를 $h$라 하면 $\\overline{\\text{AE}}^2=49+h^2$, $\\overline{\\text{AM}}^2=196+\\dfrac{h^2}4$",
+   "$49+h^2=196+\\dfrac{h^2}4$ → $h^2=196$, $h=14$",
+   "$\\overline{\\text{EM}}^2=\\overline{\\text{BC}}^2+49=\\overline{\\text{AE}}^2=245$ → $\\overline{\\text{BC}}=14$",
+   "옆넓이 $=(7+14+14)\\times14=490\\,(\\text{cm}^2)$"
+  ],
+  "check": "ok"
+ },
+ "13": {
+  "tp": "대표 2명 뽑기",
+  "key": "순서 없이 2명",
+  "sol": [
+   "$\\dfrac{5\\times4}{2}=10$"
+  ],
+  "check": "ok"
+ },
+ "14": {
+  "tp": "서로소",
+  "key": "(10−k, k)가 서로소 ⇔ k와 10이 서로소",
+  "sol": [
+   "옮긴 수 k가 1, 3, 7, 9일 때 서로소",
+   "4가지"
+  ],
+  "check": "ok"
+ },
+ "15": {
+  "tp": "확률의 기본 성질",
+  "key": "p+q=1, 0≤p,q≤1",
+  "sol": [
+   "ㄱ 거짓, ㄴ 참, ㄷ 참",
+   "ㄹ: q=0이면 p=1 → 반드시 일어남 (거짓)"
+  ],
+  "check": "ok"
+ },
+ "16": {
+  "tp": "직렬 회로",
+  "key": "두 스위치가 모두 닫혀야 불이 켜짐",
+  "sol": [
+   "불이 켜질 확률 $\\dfrac34\\times\\dfrac13=\\dfrac14$",
+   "켜지지 않을 확률 $1-\\dfrac14=\\dfrac34$"
+  ],
+  "check": "ok"
+ },
+ "17": {
+  "tp": "피자 부피 비교",
+  "key": "부피 = 밑넓이 × 두께",
+  "sol": [
+   "S 한 판 $\\pi\\times20^2\\times2=800\\pi$, 4판 $3200\\pi$",
+   "L 한 판 $\\pi\\times25^2\\times2.5=1562.5\\pi$, 2판 $3125\\pi$",
+   "$3200\\pi\\gt3125\\pi$ → S피자 4판이 더 유리"
+  ],
+  "check": "ok"
+ },
+ "18": {
+  "tp": "내심·무게중심과 평행",
+  "key": "BI:ID=2:1=BG:GE → IG∥DE",
+  "sol": [
+   "$\\overline{\\text{AB}}=\\sqrt{20^2-16^2}=12$",
+   "D는 ∠B의 이등분선과 AC의 교점: $\\overline{\\text{AD}}:\\overline{\\text{DC}}=12:20$ → $\\overline{\\text{AD}}=6$; E는 AC의 중점 → $\\overline{\\text{AE}}=8$",
+   "(1) $\\triangle\\text{BDE}=\\dfrac12\\times2\\times12=12\\,(\\text{cm}^2)$",
+   "(2) $\\overline{\\text{BI}}:\\overline{\\text{ID}}=(\\overline{\\text{BA}}+\\overline{\\text{BC}}):\\overline{\\text{AC}}=32:16=2:1$, $\\overline{\\text{BG}}:\\overline{\\text{GE}}=2:1$",
+   "$\\overline{\\text{IG}}/\\!/\\overline{\\text{DE}}$, $\\overline{\\text{IG}}=\\dfrac23\\times2=\\dfrac43\\,(\\text{cm})$"
+  ],
+  "check": "ok"
+ },
+ "19": {
+  "tp": "대칭이동과 회전체",
+  "key": "A를 x축에 대칭한 A'(0,−3)",
+  "sol": [
+   "(1) $\\overline{\\text{PA}}+\\overline{\\text{PB}}\\ge\\overline{\\text{A'B}}=\\sqrt{12^2+9^2}=15$",
+   "(2) 직선 A$'$B: $y=\\dfrac34x-3$ → P의 $x$좌표 $4$",
+   "(3) 꼭짓점이 P인 두 원뿔: 반지름 3, 모선 5 / 반지름 6, 모선 10",
+   "겉넓이 $=\\pi\\cdot3\\cdot5+\\pi\\cdot6\\cdot10+\\pi\\cdot3^2+\\pi\\cdot6^2=120\\pi$"
+  ],
+  "check": "(3)은 두 원뿔의 밑면까지 포함한 겉넓이로 풀었다."
+ },
+ "20": {
+  "tp": "평행 조건",
+  "key": "기울기 같고 y절편 다름",
+  "sol": [
+   "두 번째 직선 $y=(b+2)x+a$",
+   "$a=b+2$이고 $a\\ne3$: $(4,2),(5,3),(6,4)$ → $3$가지",
+   "확률 $\\dfrac{3}{36}=\\dfrac1{12}$"
+  ],
+  "check": "ok"
+ },
+ "21": {
+  "tp": "골턴 보드",
+  "key": "각 못에서 좌우 1/2, 경로 수 세기(파스칼 삼각형)",
+  "sol": [
+   "(1) 셋째 줄 못: 경로 1, 2, 1 (총 4) → A $\\dfrac14$, B $\\dfrac24=\\dfrac12$",
+   "(2) 넷째 줄 못: 1, 3, 3, 1 (총 8) → C $\\dfrac38$, D $\\dfrac18$, 합 $\\dfrac12$",
+   "(3) 칸막이: 1, 4, 6, 4, 1 (총 16) → E $\\dfrac1{16}$, F $\\dfrac6{16}=\\dfrac38$"
+  ],
+  "check": "A, B, C, D의 위치는 그림의 라벨 바로 아래 못으로 읽었다."
+ }
+}
