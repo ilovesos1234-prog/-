@@ -1,0 +1,193 @@
+{
+ "1": {
+  "tp": "로그의 값을 문자로 나타내기",
+  "key": "$\\log_53=\\frac1b$",
+  "sol": [
+   "$\\log_524=3\\log_52+\\log_53=3a+\\dfrac1b$"
+  ],
+  "check": "ok"
+ },
+ "2": {
+  "tp": "로그함수의 성질",
+  "key": "정의역 양수, 점근선 $y$축",
+  "sol": [
+   "① 정의역은 양의 실수 ② $0\\lt a\\lt1$이면 감소, $f(2)\\gt f(3)$",
+   "④ 점근선은 $y$축 ⑤ 점 $(1,0)$을 지난다.",
+   "③ $a\\gt1$이면 증가함수이므로 옳다."
+  ],
+  "check": "ok"
+ },
+ "3": {
+  "tp": "지수법칙",
+  "key": "밑 $2$의 지수로",
+  "sol": [
+   "$2^{\\frac12}\\times2^{\\frac13}\\div2^{-\\frac14}=2^{\\frac12+\\frac13+\\frac14}=2^{\\frac{13}{12}}$",
+   "$k=\\dfrac{13}{12}$"
+  ],
+  "check": "ok"
+ },
+ "4": {
+  "tp": "삼각함수의 정의",
+  "key": "$r=13$",
+  "sol": [
+   "$\\sin\\theta=\\dfrac5{13}$, $\\cos\\theta=-\\dfrac{12}{13}$, $\\tan\\theta=-\\dfrac5{12}$",
+   "$\\dfrac{-\\frac{12}{13}}{8\\cdot\\frac5{13}\\cdot\\left(-\\frac5{12}\\right)}=\\dfrac{12}{13}\\cdot\\dfrac{39}{50}=\\dfrac{18}{25}$"
+  ],
+  "check": "ok"
+ },
+ "5": {
+  "tp": "로그의 대소 비교",
+  "key": "각각 계산",
+  "sol": [
+   "$A=\\log_2\\left(\\dfrac{2\\sqrt3}{3}\\times2\\sqrt3\\right)=\\log_24=2$",
+   "$B=\\log\\dfrac{5\\sqrt2}{\\sqrt5}=\\log\\sqrt{10}=\\dfrac12$",
+   "$C=\\dfrac{\\log_23\\times3\\log_35}{\\log_25}=3$",
+   "$B\\lt A\\lt C$"
+  ],
+  "check": "ok"
+ },
+ "6": {
+  "tp": "상용로그의 지표와 가수",
+  "key": "가수 $0.7566$",
+  "sol": [
+   "$\\log5.71=0.7566$",
+   "$\\log\\sqrt{5.71}=\\dfrac12\\times0.7566=0.3783$ (④)",
+   "① $2.7566$ ② $0.7566$ ③ $-0.2434$ ⑤ $1.8783$"
+  ],
+  "check": "ok"
+ },
+ "7": {
+  "tp": "삼각함수의 주기",
+  "key": "$\\cos bx$: $\\frac{2\\pi}{|b|}$, $\\tan bx$: $\\frac{\\pi}{|b|}$",
+  "sol": [
+   "① $\\dfrac{2\\pi}{2}=\\pi$ ② $2\\pi$ ③ $\\dfrac{\\pi}{2}$ ④ $\\dfrac{\\pi}{2}$ ⑤ $4\\pi$"
+  ],
+  "check": "ok"
+ },
+ "8": {
+  "tp": "곱셈공식의 지수 변형",
+  "key": "$a^3-b^3=(a-b)(a^2+ab+b^2)$",
+  "sol": [
+   "(좌변) $=a^{2x}+1+a^{-2x}=6$, $a^{2x}+a^{-2x}=5$",
+   "$(a^x+a^{-x})^2=5+2=7$, $a^x+a^{-x}=\\sqrt7$"
+  ],
+  "check": "ok"
+ },
+ "9": {
+  "tp": "지수법칙의 문자식 활용",
+  "key": "$abc$로 나누기",
+  "sol": [
+   "$a\\log_7x=b\\log_7y=c$이므로 $\\dfrac1a=\\dfrac{\\log_7x}{c}$, $\\dfrac1b=\\dfrac{\\log_7y}{c}$",
+   "$3ab=2bc-ca$를 $abc$로 나누면 $\\dfrac3c=\\dfrac2a-\\dfrac1b$",
+   "$3=2\\log_7x-\\log_7y=\\log_7\\dfrac{x^2}{y}$, $\\dfrac{x^2}{y}=7^3$"
+  ],
+  "check": "ok"
+ },
+ "10": {
+  "tp": "탄젠트함수의 점근선",
+  "key": "$2x+\\frac{\\pi}{2}=n\\pi+\\frac{\\pi}{2}$",
+  "sol": [
+   "$2x=n\\pi$, $x=\\dfrac{n\\pi}{2}$"
+  ],
+  "check": "ok"
+ },
+ "11": {
+  "tp": "역함수 관계",
+  "key": "$g(x-3)$의 역함수 구하기",
+  "sol": [
+   "$g(x-3)=-2-\\log_2(x-3)$의 역함수: $y=2^{-x-2}+3$",
+   "$2^{-(x-a)}+b=2^{-(x+2)}+3$이므로 $a=-2$, $b=3$",
+   "$g(1)=\\log_{\\frac12}4=-2$"
+  ],
+  "check": "ok"
+ },
+ "12": {
+  "tp": "지수함수의 그래프와 사분면",
+  "key": "증가함수: $x=0$에서 $y\\le0$",
+  "sol": [
+   "$y$는 증가함수이므로 $x=0$에서 $-2^k+2^{1+\\frac1n}\\le0$",
+   "$k\\ge1+\\dfrac1n$, $f(n)=\\dfrac{n+1}{n}$",
+   "분자 $=\\log\\dfrac21\\cdot\\dfrac32\\cdots\\dfrac{27}{26}=\\log27$, 분모 $=\\log3$",
+   "값 $=3$"
+  ],
+  "check": "ok"
+ },
+ "13": {
+  "tp": "삼각방정식",
+  "key": "$u=\\frac x2-\\frac{\\pi}{4}$로 치환",
+  "sol": [
+   "$\\sin\\left(u+\\dfrac{\\pi}{2}\\right)=\\cos u=\\sqrt3\\sin u$, $\\tan u=\\dfrac{1}{\\sqrt3}$",
+   "$-\\dfrac{\\pi}{4}\\le u\\le\\dfrac{\\pi}{4}$이므로 $u=\\dfrac{\\pi}{6}$",
+   "$x=2\\left(\\dfrac{\\pi}{6}+\\dfrac{\\pi}{4}\\right)=\\dfrac56\\pi$"
+  ],
+  "check": "ok"
+ },
+ "14": {
+  "tp": "거듭제곱근 중 실수의 개수",
+  "key": "$n(P_a)=1$ 항상",
+  "sol": [
+   "세제곱근 중 실수는 항상 $1$개 → $n(Q_b)\\le1$ → $b\\le0$",
+   "$a$: $-4$~$4$의 $9$개, $b$: $-3$~$0$의 $4$개",
+   "$9\\times4=36$"
+  ],
+  "check": "ok"
+ },
+ "15": {
+  "tp": "그래프와 격자점 세기",
+  "key": "$0\\le y\\le3$, $|x|\\le2^{\\frac y2}$",
+  "sol": [
+   "영역: $0\\le y\\le3$, $|x|\\le2^{\\frac y2}$",
+   "$y=0$: $3$개, $y=1$: $|x|\\le\\sqrt2$ $3$개, $y=2$: $5$개, $y=3$: $|x|\\le2\\sqrt2$ $5$개",
+   "합 $16$"
+  ],
+  "check": "ok"
+ },
+ "16": {
+  "tp": "치환을 이용한 지수함수의 최대·최소",
+  "key": "$t=3^x\\gt1$에서 증가",
+  "sol": [
+   "$f=2t^2-2t+1$, 꼭짓점 $t=\\dfrac12$이고 $t\\ge3^a\\gt1$이므로 증가",
+   "$f(a)=\\dfrac52$: $9^a-3^a=\\dfrac34$, $3^a=\\dfrac32$",
+   "최댓값 $f(2a)$: $t=\\dfrac94$, $2\\left(\\dfrac{81}{16}-\\dfrac94\\right)+1=\\dfrac{53}{8}$"
+  ],
+  "check": "ok"
+ },
+ "17": {
+  "tp": "부채꼴의 호의 길이와 넓이",
+  "key": "$S=\\frac12r^2\\theta$",
+  "sol": [
+   "$\\dfrac12r^2\\cdot\\dfrac{\\pi}{3}=6\\pi$, $r=6$",
+   "$l=6\\cdot\\dfrac{\\pi}{3}=2\\pi$, 합 $6+2\\pi$"
+  ],
+  "check": "ok"
+ },
+ "18": {
+  "tp": "거듭제곱이 자연수가 될 조건",
+  "key": "$3^{\\frac4k}$, $\\frac{10}{k+1}$",
+  "sol": [
+   "$81^{\\frac1k}=3^{\\frac4k}$ 자연수 → $k=1,2,4$",
+   "$\\dfrac{10}{k+1}$ 자연수 → $k+1=1,2,5,10$ → $k=1,4,9$ ($k\\ne0$)",
+   "공통 $k=1,4$, 합 $5$"
+  ],
+  "check": "ok"
+ },
+ "19": {
+  "tp": "지수함수의 최대·최소",
+  "key": "$a\\gt1$, $0\\lt a\\lt1$ 나누기",
+  "sol": [
+   "$a\\gt1$: 최솟값 $f(-1)=\\dfrac1a=\\dfrac14$, $a=4$",
+   "$0\\lt a\\lt1$: 최솟값 $f(2)=a^2=\\dfrac14$, $a=\\dfrac12$"
+  ],
+  "check": "ok"
+ },
+ "20": {
+  "tp": "삼각함수 사이의 관계",
+  "key": "$\\cos\\theta\\tan\\theta=\\sin\\theta$",
+  "sol": [
+   "$\\sin\\theta=-\\dfrac{\\sqrt3}{2}$, $\\pi\\lt\\theta\\lt\\dfrac32\\pi$이므로 $\\theta=\\dfrac43\\pi$",
+   "$\\tan\\theta=\\sqrt3$, $\\cos\\theta=-\\dfrac12$",
+   "$\\tan\\theta+\\cos\\theta=\\dfrac{2\\sqrt3-1}{2}$"
+  ],
+  "check": "ok"
+ }
+}

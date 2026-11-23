@@ -1,0 +1,172 @@
+{
+ "1": {
+  "tp": "거듭제곱근의 계산",
+  "key": "홀수 거듭제곱근은 부호 유지",
+  "sol": [
+   "$\\sqrt[3]{(-3)^3}=-3$이므로 ⑤가 옳지 않다.",
+   "(나머지: $3$, $-2$, $2^{\\frac16}$, $-(-4)=4$ 모두 참)"
+  ],
+  "check": "ok"
+ },
+ "2": {
+  "tp": "로그의 성질",
+  "key": "$a=b^{\\frac52}$",
+  "sol": [
+   "$a^2=b^5$에서 $\\log_ba=\\dfrac52$",
+   "$\\log_b\\sqrt{ab^2}=\\dfrac12\\left(\\dfrac52+2\\right)=\\dfrac94$"
+  ],
+  "check": "ok"
+ },
+ "3": {
+  "tp": "로그함수의 최대·최소",
+  "key": "진수의 최댓값",
+  "sol": [
+   "$y=\\log_5\\{(x-3)(7-x)\\}$, $(x-3)(7-x)=-(x-5)^2+4$",
+   "$x=5$에서 최댓값 $\\log_54$: $a=5$, $b=\\log_54$",
+   "$a^b=5^{\\log_54}=4$"
+  ],
+  "check": "ok"
+ },
+ "4": {
+  "tp": "거듭제곱근 중 실수인 것",
+  "key": "홀수 제곱근 하나, 짝수 제곱근 둘",
+  "sol": [
+   "$5^{28}$의 일곱제곱근 중 실수 $a=5^4=625$",
+   "$625$의 네제곱근 중 음의 실수 $-\\sqrt[4]{625}=-5$"
+  ],
+  "check": "ok"
+ },
+ "5": {
+  "tp": "지수법칙",
+  "key": "유리수 지수로 통일",
+  "sol": [
+   "좌변 $=\\left(a^{1+\\frac12+\\frac14}\\right)^{\\frac13}=a^{\\frac7{12}}$",
+   "우변 $=\\left(a^{\\frac n4-\\frac12}\\right)^{\\frac13}$",
+   "$\\dfrac n4-\\dfrac12=\\dfrac74$, $n=9$"
+  ],
+  "check": "ok"
+ },
+ "6": {
+  "tp": "로그와 판별식",
+  "key": "$D\\lt0$",
+  "sol": [
+   "$D=9-4\\left(\\dfrac{25}{4}-2\\log_3a\\right)\\lt0$",
+   "$8\\log_3a\\lt16$, $\\log_3a\\lt2$, $0\\lt a\\lt9$",
+   "정수 $a=1,\\cdots,8$: $8$개"
+  ],
+  "check": "ok"
+ },
+ "7": {
+  "tp": "상용로그의 활용",
+  "key": "$\\text{pH}=-\\log(8\\times10^{-8})$",
+  "sol": [
+   "$[\\text{H}^+]=8\\times10^{-8}$",
+   "$\\text{pH}=8-3\\log2=8-0.9=7.1$"
+  ],
+  "check": "ok"
+ },
+ "8": {
+  "tp": "삼각함수 사이의 관계",
+  "key": "근과 계수의 관계, $|\\sin\\theta\\cos\\theta|\\le\\frac12$ 확인",
+  "sol": [
+   "$\\sin\\theta+\\cos\\theta=-\\dfrac k2$, $\\sin\\theta\\cos\\theta=\\dfrac{k-1}{2}$",
+   "$\\dfrac{k^2}{4}=1+(k-1)=k$, $k=0$ 또는 $4$",
+   "$k=4$이면 $\\sin\\theta\\cos\\theta=\\dfrac32$로 불가능 → $k=0$"
+  ],
+  "check": "ok"
+ },
+ "9": {
+  "tp": "삼각함수의 주기",
+  "key": "$\\tan2x$의 주기 $\\frac{\\pi}{2}$",
+  "sol": [
+   "①②④⑤의 주기는 $\\dfrac{\\pi}{2}$",
+   "③ $\\cos2x+1\\ge0$이므로 $|\\cos2x+1|=\\cos2x+1$, 주기 $\\pi$"
+  ],
+  "check": "ok"
+ },
+ "10": {
+  "tp": "로그부등식과 삼각함수",
+  "key": "밑 $\\lt1$: $\\cos\\gt\\sin\\gt0$",
+  "sol": [
+   "진수 조건과 밑 $\\dfrac12$에서 $\\cos\\dfrac{\\pi x}{5}\\gt\\sin\\dfrac{\\pi x}{5}\\gt0$",
+   "$\\dfrac{\\pi x}{5}$가 $\\left(0,\\dfrac{\\pi}{4}\\right)$에 있어야 함 → $x=1$뿐",
+   "합 $1$"
+  ],
+  "check": "ok"
+ },
+ "11": {
+  "tp": "로그의 정수 조건",
+  "key": "$N=2^{2m}3^{2n}$",
+  "sol": [
+   "$\\log N=\\log(2^{2m}3^{2n})$, $N=4^m9^n\\le36$",
+   "$N=1,4,16,9,36$",
+   "곱 $=2^8\\times3^4$, $ab=32$"
+  ],
+  "check": "ok"
+ },
+ "12": {
+  "tp": "합성함수의 최대·최소",
+  "key": "$s=b\\sin x$ 치환",
+  "sol": [
+   "$(g\\circ f)=2s^2+s+2a$ ($-b\\le s\\le b$): 최댓값 $M=2b^2+b+2a$",
+   "$(f\\circ g)=b\\sin(2x^2+x+2a)$: 최솟값 $m=-b$",
+   "$M+m=0$에서 $a=-b^2$, $a+b=b-b^2\\in\\left[0,\\dfrac14\\right]$",
+   "$\\tan(a+b)\\pi$의 최댓값 $\\tan\\dfrac{\\pi}{4}=1$"
+  ],
+  "check": "ok"
+ },
+ "13": {
+  "tp": "로그부등식",
+  "key": "밑을 $\\frac13$로 통일",
+  "sol": [
+   "진수 조건: $1\\lt x\\lt13$",
+   "$\\log_{\\frac19}(13-x)=\\log_{\\frac13}\\sqrt{13-x}$, 밑 $\\lt1$이므로 $x-1\\lt\\sqrt{13-x}$",
+   "$(x-1)^2\\lt13-x$, $x^2-x-12\\lt0$, $-3\\lt x\\lt4$",
+   "$x=2,3$, 합 $5$"
+  ],
+  "check": "ok"
+ },
+ "14": {
+  "tp": "로그함수의 최대·최소",
+  "key": "양 끝값의 차",
+  "sol": [
+   "$x+2$는 $3$~$9$, 최대·최소는 양 끝에서",
+   "$|\\log_a9-\\log_a3|=|\\log_a3|=2$",
+   "$a=\\sqrt3$ 또는 $\\dfrac1{\\sqrt3}$, 합 $\\dfrac{4}{\\sqrt3}=\\dfrac{4\\sqrt3}{3}$"
+  ],
+  "check": "ok"
+ },
+ "15": {
+  "tp": "삼각함수의 성질",
+  "key": "각 변환 후 $\\tan\\theta$",
+  "sol": [
+   "$\\dfrac{-\\sin\\theta}{-\\cos\\theta}+\\dfrac{-\\sin\\theta}{-\\cos\\theta}=2\\tan\\theta=\\sqrt2$",
+   "$\\tan\\theta=\\dfrac{\\sqrt2}{2}\\gt0$, $\\sin\\theta\\lt0$이므로 제$3$사분면",
+   "$\\cos\\theta=-\\sqrt{\\dfrac{1}{1+\\frac12}}=-\\dfrac{\\sqrt6}{3}$",
+   "$\\sin\\left(\\dfrac{\\pi}{2}+\\theta\\right)=\\cos\\theta=-\\dfrac{\\sqrt6}{3}$"
+  ],
+  "check": "ok"
+ },
+ "16": {
+  "tp": "두 그래프의 교점",
+  "key": "B, C의 $x$좌표를 $k$로",
+  "sol": [
+   "B: $x=\\log_3\\dfrac k4$, C: $x=-\\log_3k$",
+   "$\\overline{\\text{BC}}=\\log_3\\dfrac{k^2}{4}=2$, $k=6$",
+   "A: $4\\cdot3^x=3^{-x}$에서 $3^x=\\dfrac12$, A의 $y$좌표 $2$",
+   "넓이 $=\\dfrac12\\times2\\times(6-2)=4$"
+  ],
+  "check": "ok"
+ },
+ "17": {
+  "tp": "삼각부등식",
+  "key": "두 근이 음수: 합$\\lt0$, 곱$\\gt0$, $D\\ge0$",
+  "sol": [
+   "합 $2\\sin\\theta\\lt0$ → $\\pi\\lt\\theta\\lt2\\pi$",
+   "곱 $\\cos^2\\theta-\\cos\\theta+1\\gt0$ 항상 성립",
+   "$\\dfrac D4=\\sin^2\\theta-\\cos^2\\theta+\\cos\\theta-1=\\cos\\theta(1-2\\cos\\theta)\\ge0$ → $0\\le\\cos\\theta\\le\\dfrac12$",
+   "$\\dfrac32\\pi\\le\\theta\\le\\dfrac53\\pi$"
+  ],
+  "check": "사이트 긴 정답 누락, 직접 풀이로 확정(두 근이 같은 경우 포함)"
+ }
+}
