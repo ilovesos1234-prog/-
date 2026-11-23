@@ -1,0 +1,170 @@
+{
+ "1": {
+  "tp": "포물선의 초점",
+  "key": "y²=4px",
+  "sol": [
+   "$4p=\\dfrac12$ → $p=\\dfrac18$",
+   "초점 $\\left(\\dfrac18,0\\right)$, $a=\\dfrac18$"
+  ],
+  "check": "ok"
+ },
+ "2": {
+  "tp": "타원의 단축",
+  "key": "작은 분모",
+  "sol": [
+   "$\\dfrac{x^2}{3^2}+\\dfrac{y^2}{4^2}=1$",
+   "단축의 길이 $2\\cdot3=6$"
+  ],
+  "check": "ok"
+ },
+ "3": {
+  "tp": "쌍곡선의 주축",
+  "key": "우변 −1이면 y축 위의 주축",
+  "sol": [
+   "$\\dfrac{y^2}{16}-\\dfrac{x^2}{25}=1$",
+   "주축의 길이 $2\\cdot4=8$"
+  ],
+  "check": "ok"
+ },
+ "4": {
+  "tp": "벡터의 덧셈",
+  "key": "끝점과 시작점 잇기",
+  "sol": [
+   "$(\\overrightarrow{\\text{AC}}+\\overrightarrow{\\text{CE}})+(\\overrightarrow{\\text{EB}}+\\overrightarrow{\\text{BD}})$",
+   "$=\\overrightarrow{\\text{AE}}+\\overrightarrow{\\text{ED}}=\\overrightarrow{\\text{AD}}$"
+  ],
+  "check": "ok"
+ },
+ "5": {
+  "tp": "수직 조건",
+  "key": "내적 0",
+  "sol": [
+   "$2n-n^2=0$",
+   "자연수 $n=2$"
+  ],
+  "check": "ok"
+ },
+ "6": {
+  "tp": "일차결합의 계수",
+  "key": "성분 비교",
+  "sol": [
+   "$k-l=5,\\ k+3l=-3$",
+   "$l=-2,\\ k=3$",
+   "$kl=-6$"
+  ],
+  "check": "ok"
+ },
+ "7": {
+  "tp": "두 벡터가 이루는 각",
+  "key": "cos = 내적/크기 곱",
+  "sol": [
+   "$\\vec a\\cdot\\vec b=\\dfrac32+\\dfrac32=3$",
+   "$|\\vec a|=\\sqrt3,\\ |\\vec b|=2$",
+   "$\\cos\\theta=\\dfrac{3}{2\\sqrt3}=\\dfrac{\\sqrt3}{2}$"
+  ],
+  "check": "ok"
+ },
+ "8": {
+  "tp": "포물선의 정의",
+  "key": "PF = x+1",
+  "sol": [
+   "F$(1,0)$, $x_P+1=3$ → P$(2,2\\sqrt2)$",
+   "Q $=2$P$-$F $=(3,4\\sqrt2)$",
+   "$a^2+b^2=9+32=41$"
+  ],
+  "check": "ok"
+ },
+ "9": {
+  "tp": "포물선의 정의와 무게중심",
+  "key": "거리 = y+4",
+  "sol": [
+   "F$(0,4)$, 준선 $y=-4$",
+   "무게중심의 $y$좌표 $4$ → $y_A+y_B+y_C=12$",
+   "합 $=(y_A+y_B+y_C)+12=24$"
+  ],
+  "check": "ok"
+ },
+ "10": {
+  "tp": "타원의 정의",
+  "key": "둘레 = 4a",
+  "sol": [
+   "$\\dfrac{x^2}{16}+\\dfrac{y^2}{9}=1$, $a=4$",
+   "$(\\overline{\\text{AF}}+\\overline{\\text{AF'}})+(\\overline{\\text{BF}}+\\overline{\\text{BF'}})=4a=16$"
+  ],
+  "check": "ok"
+ },
+ "11": {
+  "tp": "외부의 점에서 그은 접선의 접점",
+  "key": "접점을 지나는 직선(극선)",
+  "sol": [
+   "두 접점을 지나는 직선: $\\dfrac{3y}{3}=1$ → $y=1$",
+   "P, Q $=(\\pm\\sqrt6,1)$, 초점 $(\\pm\\sqrt6,0)$",
+   "넓이 $=\\tfrac12\\cdot2\\sqrt6\\cdot1=\\sqrt6$"
+  ],
+  "check": "ok"
+ },
+ "12": {
+  "tp": "정사영 벡터",
+  "key": "OH = (OA·OB/|OB|²)OB",
+  "sol": [
+   "$\\overrightarrow{\\text{OA}}\\cdot\\overrightarrow{\\text{OB}}=18+12=30$, $|\\overrightarrow{\\text{OB}}|^2=45$",
+   "$\\overrightarrow{\\text{OH}}=\\dfrac23(6,3)=(4,2)$",
+   "$2mn=16$"
+  ],
+  "check": "ok"
+ },
+ "13": {
+  "tp": "수직·평행·내분점",
+  "key": "성분 계산",
+  "sol": [
+   "ㄱ. $6-6=0$ (참)",
+   "ㄴ. $(2,-6)$과 $(6,2)$는 평행 아님 (거짓)",
+   "ㄷ. $\\dfrac{2\\vec q+\\vec p}{3}=\\left(\\dfrac73,-\\dfrac{11}{3}\\right)$ (참)"
+  ],
+  "check": "ok"
+ },
+ "14": {
+  "tp": "쌍곡선의 정의와 최솟값",
+  "key": "PA = PF − 10",
+  "sol": [
+   "$\\dfrac{x^2}{25}-\\dfrac{y^2}{11}=1$, $c=6$, A는 초점, 다른 초점 F$(6,0)$",
+   "$\\overline{\\text{PF}}-\\overline{\\text{PA}}=10$",
+   "$\\overline{\\text{PA}}+\\overline{\\text{PB}}=\\overline{\\text{PF}}+\\overline{\\text{PB}}-10\\ge\\overline{\\text{BF}}-10$",
+   "$=\\sqrt{169+1}-10=\\sqrt{170}-10$"
+  ],
+  "check": "ok"
+ },
+ "15": {
+  "tp": "수직으로 만나는 타원과 쌍곡선",
+  "key": "초점을 공유(공초점)",
+  "sol": [
+   "쌍곡선 $c^2=11$ → 타원도 $a^2-b^2=11$",
+   "$\\dfrac{16}{a^2}+\\dfrac{3}{a^2-11}=1$ → $a^4-30a^2+176=0$",
+   "$a^2=22$ ($\\gt11$), $b^2=11$",
+   "$a^2+b^2=33$"
+  ],
+  "check": "ok"
+ },
+ "16": {
+  "tp": "정육각형에서 벡터 분해",
+  "key": "좌표로 계수 비교",
+  "sol": [
+   "한 변 $1$, 첫 정육각형 중심을 원점: B$\\left(-\\tfrac{\\sqrt3}{2},\\tfrac12\\right)$, I$\\left(\\tfrac{5\\sqrt3}{2},-\\tfrac12\\right)$",
+   "$\\vec a=\\left(\\tfrac{\\sqrt3}{2},\\tfrac12\\right)$, $\\vec b=\\left(\\tfrac{\\sqrt3}{2},-\\tfrac32\\right)$, $\\overrightarrow{\\text{BI}}=(3\\sqrt3,-1)$",
+   "$x+y=6,\\ x-3y=-2$ → $x=4,\\ y=2$",
+   "$4\\vec a+2\\vec b$"
+  ],
+  "check": "ok"
+ },
+ "17": {
+  "tp": "정육각형 벡터의 합",
+  "key": "AB+AF=AO, AC+AE=3AO",
+  "sol": [
+   "중심 O, 반지름 $r$: $\\overrightarrow{\\text{AB}}+\\overrightarrow{\\text{AF}}=\\overrightarrow{\\text{AO}}$",
+   "$\\overrightarrow{\\text{AC}}+\\overrightarrow{\\text{AE}}=2\\overrightarrow{\\text{AM}}$ (M은 CE 중점, $\\overline{\\text{AM}}=\\tfrac32r$) $=3\\overrightarrow{\\text{AO}}$",
+   "$4r=24$ → $r=6$",
+   "넓이 $=\\dfrac{3\\sqrt3}{2}\\cdot36=54\\sqrt3$"
+  ],
+  "check": "ok"
+ }
+}

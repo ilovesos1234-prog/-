@@ -1,0 +1,144 @@
+{
+ "1": {
+  "tp": "포물선의 방정식",
+  "key": "초점 (0,p), 준선 y=−p → x²=4py",
+  "sol": [
+   "$p=-3$",
+   "$x^2=4(-3)y=-12y$"
+  ],
+  "check": "ok"
+ },
+ "2": {
+  "tp": "포물선의 성질",
+  "key": "y²=4px에서 p=1/2",
+  "sol": [
+   "$y^2=4\\cdot\\dfrac12x$ → 초점 $\\left(\\dfrac12,0\\right)$, 준선 $x=-\\dfrac12$",
+   "④의 준선 $x=\\dfrac12$가 틀림",
+   "⑤ $x,y$를 바꾸면 $x^2=2y$ (옳음)"
+  ],
+  "check": "ok"
+ },
+ "3": {
+  "tp": "타원의 방정식",
+  "key": "초점이 y축 위: b²−a²=c²",
+  "sol": [
+   "$2b=8$ → $b=4$",
+   "$a^2=16-4=12$, $a=2\\sqrt3$",
+   "$\\dfrac ba=\\dfrac{4}{2\\sqrt3}=\\dfrac{2\\sqrt3}{3}$"
+  ],
+  "check": "ok"
+ },
+ "4": {
+  "tp": "타원의 장축·단축",
+  "key": "표준형으로",
+  "sol": [
+   "$\\dfrac{x^2}{9}+\\dfrac{y^2}{4}=1$",
+   "$a=3,\\ b=2$, $a-b=1$"
+  ],
+  "check": "ok"
+ },
+ "5": {
+  "tp": "쌍곡선의 방정식",
+  "key": "2a = 거리의 차, c² = a²+b²",
+  "sol": [
+   "$2a=4$ → $a=2$",
+   "$b^2=9-4=5$",
+   "$ab=2\\sqrt5$"
+  ],
+  "check": "ok"
+ },
+ "6": {
+  "tp": "쌍곡선의 성질",
+  "key": "y축 위에 주축",
+  "sol": [
+   "$y^2-\\dfrac{x^2}{8}=1$",
+   "꼭짓점 $(0,\\pm1)$, 주축의 길이 $2$",
+   "$c^2=1+8=9$ → 초점 $(0,\\pm3)$, 점근선 $y=\\pm\\dfrac{1}{2\\sqrt2}x$",
+   "①이 틀림"
+  ],
+  "check": "ok"
+ },
+ "7": {
+  "tp": "평행이동한 포물선",
+  "key": "(x−1)²=2(y−1)",
+  "sol": [
+   "$(x-1)^2=2(y-1)$, $4p=2$ → $p=\\dfrac12$",
+   "초점 $\\left(1,\\dfrac32\\right)$, 준선 $y=\\dfrac12$",
+   "$a+b+c=1+\\dfrac32+\\dfrac12=3$"
+  ],
+  "check": "ok"
+ },
+ "8": {
+  "tp": "벡터의 크기",
+  "key": "대각선 길이",
+  "sol": [
+   "$|\\overrightarrow{\\text{AC}}|=\\sqrt{1^2+2^2}=\\sqrt5$"
+  ],
+  "check": "ok"
+ },
+ "9": {
+  "tp": "벡터의 연산",
+  "key": "분배 후 정리",
+  "sol": [
+   "$8\\vec a-4\\vec b-2\\vec a+6\\vec b=6\\vec a+2\\vec b$"
+  ],
+  "check": "ok"
+ },
+ "10": {
+  "tp": "평행 조건",
+  "key": "계수의 비",
+  "sol": [
+   "$k\\vec a+2\\vec b=t(3\\vec a+6\\vec b)$",
+   "$2=6t$ → $t=\\dfrac13$, $k=1$"
+  ],
+  "check": "ok"
+ },
+ "11": {
+  "tp": "타원의 정의와 벡터",
+  "key": "OP+OF = 2OM, OM = PF′/2",
+  "sol": [
+   "$a=5$, $c=3$; PF의 중점 M에 대해 $\\overrightarrow{\\text{OP}}+\\overrightarrow{\\text{OF}}=2\\overrightarrow{\\text{OM}}$",
+   "$|\\overrightarrow{\\text{OM}}|=\\dfrac32$, 중점연결정리로 $\\overline{\\text{PF'}}=3$",
+   "$\\overline{\\text{PF}}=10-3=7$"
+  ],
+  "check": "ok"
+ },
+ "12": {
+  "tp": "벡터 방정식",
+  "key": "x에 대해 정리",
+  "sol": [
+   "$6\\vec b-3\\vec x+2\\vec x-6\\vec a=5\\vec b$",
+   "$\\vec x=-6\\vec a+\\vec b$"
+  ],
+  "check": "ok"
+ },
+ "13": {
+  "tp": "계수 비교",
+  "key": "평행하지 않은 두 벡터의 일차결합",
+  "sol": [
+   "$(2m+n)\\vec a+(3m-n)\\vec b=8\\vec a+7\\vec b$",
+   "$2m+n=8,\\ 3m-n=7$ → $m=3,\\ n=2$",
+   "$m+n=5$"
+  ],
+  "check": "ok"
+ },
+ "14": {
+  "tp": "포물선의 초점과 준선",
+  "key": "y²=4px에 점 대입",
+  "sol": [
+   "$y^2=4px$에 $(-3,6)$ 대입: $36=-12p$ → $p=-3$",
+   "초점 $(-3,0)$, 준선 $x=3$"
+  ],
+  "check": "ok"
+ },
+ "15": {
+  "tp": "분점과 벡터",
+  "key": "BM=½BA, BN=⅓BC",
+  "sol": [
+   "M은 AB의 중점: $\\overrightarrow{\\text{BM}}=\\dfrac12\\vec a$ → $m=\\dfrac12$",
+   "N은 BC를 $1:2$로 내분: $\\overrightarrow{\\text{BN}}=\\dfrac13\\vec b$ → $n=\\dfrac13$",
+   "$\\overrightarrow{\\text{NM}}=\\overrightarrow{\\text{BM}}-\\overrightarrow{\\text{BN}}=\\dfrac12\\vec a-\\dfrac13\\vec b$"
+  ],
+  "check": "ok"
+ }
+}
