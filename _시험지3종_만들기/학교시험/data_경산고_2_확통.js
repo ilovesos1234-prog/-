@@ -1,7 +1,7 @@
 // 2026 경산고 2학년 2학기 중간 — 원본: 카카오톡 받은 파일 [경산고][2][확통][26-2-중간]_(원본)_(도시어부).pdf
 const path = require('path');
 const IMG = path.join(__dirname, '..', 'img_school', "\uacbd\uc0b0\uace0_2_\ud655\ud1b5");
-const META = {"year": 2026, "school": "경산고", "grade": "고2", "term": "2학기 중간", "subject": "확률과 통계", "title": "2026 경산고 2학년 2학기 중간", "units": "Ⅰ. 경우의 수 (중복순열·중복조합, 이항정리), Ⅱ. 확률 (확률의 뜻과 활용, 조건부확률)", "keyNote": "정답은 채수학에서 직접 풀어 확인"};
+const META = {"year": 2026, "school": "경산고", "grade": "고2", "term": "2학기 중간", "subject": "확률과 통계", "title": "2026 경산고 2학년 2학기 중간 (확률과 통계)", "units": "Ⅰ. 경우의 수 (중복순열·중복조합, 이항정리), Ⅱ. 확률 (확률의 뜻과 활용, 조건부확률)", "keyNote": "정답은 채수학에서 직접 풀어 확인"};
 const Q = [
 {"n": 1, "pt": "3.50", "type": "객", "ans": "⑤", "unit": "확률", "sub": "확률의 덧셈정리와 여사건", "tp": "덧셈정리·여사건", "key": "$\\mathrm{P}(A\\cap B)=1-\\dfrac56$", "lv": 1, "q": "두 사건 $A$, $B$에 대하여 $\\mathrm{P}(A)=\\dfrac13$, $\\mathrm{P}(B)=\\dfrac14$, $\\mathrm{P}((A\\cap B)^C)=\\dfrac56$일 때, $\\mathrm{P}((A\\cup B)^C)$의 값은?", "sol": ["$\\mathrm{P}(A\\cap B)=1-\\dfrac56=\\dfrac16$", "$\\mathrm{P}(A\\cup B)=\\dfrac13+\\dfrac14-\\dfrac16=\\dfrac{5}{12}$", "$\\mathrm{P}((A\\cup B)^C)=1-\\dfrac5{12}=\\dfrac7{12}$ ⇒ ⑤"], "fin": "⑤", "ch": ["$\\dfrac14$", "$\\dfrac13$", "$\\dfrac{5}{12}$", "$\\dfrac12$", "$\\dfrac{7}{12}$"]},
 {"n": 2, "pt": "3.50", "type": "객", "ans": "①", "unit": "경우의 수", "sub": "중복순열·중복조합의 계산", "tp": "중복순열·중복조합", "key": "${}_n\\mathrm{\\Pi}_2=n^2$, ${}_n\\mathrm{H}_2={}_{n+1}\\mathrm{C}_2$", "lv": 1, "q": "${}_n\\mathrm{\\Pi}_2+{}_n\\mathrm{H}_2=77$일 때, 자연수 $n$의 값은?", "sol": ["$n^2+\\dfrac{(n+1)n}{2}=77$", "$3n^2+n-154=0$ ⇒ $(n-7)(3n+22)=0$", "$n=7$ ⇒ ①"], "fin": "①", "ch": ["$7$", "$8$", "$9$", "$10$", "$11$"]},

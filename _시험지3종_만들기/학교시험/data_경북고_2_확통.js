@@ -1,7 +1,7 @@
 // 2026 경북고 2학년 2학기 중간 — 원본: 카카오톡 받은 파일 [경북고][2][확통][26-2-중간](원본).pdf
 const path = require('path');
 const IMG = path.join(__dirname, '..', 'img_school', "\uacbd\ubd81\uace0_2_\ud655\ud1b5");
-const META = {"year": 2026, "school": "경북고", "grade": "고2", "term": "2학기 중간", "subject": "확률과 통계", "title": "2026 경북고 2학년 2학기 중간", "units": "Ⅰ. 경우의 수 (순열과 조합, 중복조합, 이항정리), Ⅱ. 확률 (확률의 뜻과 활용, 조건부확률, 독립시행)", "keyNote": "정답은 채수학에서 직접 풀어 확인"};
+const META = {"year": 2026, "school": "경북고", "grade": "고2", "term": "2학기 중간", "subject": "확률과 통계", "title": "2026 경북고 2학년 2학기 중간 (확률과 통계)", "units": "Ⅰ. 경우의 수 (순열과 조합, 중복조합, 이항정리), Ⅱ. 확률 (확률의 뜻과 활용, 조건부확률, 독립시행)", "keyNote": "정답은 채수학에서 직접 풀어 확인"};
 const Q = [
 {"n": 1, "pt": "3.00", "type": "객", "ans": "④", "unit": "확률", "sub": "확률의 덧셈정리 (배반사건)", "tp": "배반사건의 확률", "key": "배반이면 $\\mathrm{P}(A\\cup B)=\\mathrm{P}(A)+\\mathrm{P}(B)$", "lv": 1, "q": "두 사건 $A$와 $B$는 서로 배반사건이고 $\\mathrm{P}(A\\cup B)=1$, $\\mathrm{P}(B)=\\dfrac{1}{3}$일 때, $\\mathrm{P}(A)$의 값은?", "sol": ["$A\\cap B=\\varnothing$이므로 $\\mathrm{P}(A\\cup B)=\\mathrm{P}(A)+\\mathrm{P}(B)$", "$1=\\mathrm{P}(A)+\\dfrac{1}{3}$", "$\\mathrm{P}(A)=\\dfrac{2}{3}$ ⇒ ④"], "fin": "④", "ch": ["$\\dfrac{1}{6}$", "$\\dfrac{1}{3}$", "$\\dfrac{1}{2}$", "$\\dfrac{2}{3}$", "$\\dfrac{5}{6}$"]},
 {"n": 2, "pt": "3.00", "type": "객", "ans": "③", "unit": "경우의 수", "sub": "같은 것이 있는 순열", "tp": "같은 것이 있는 순열", "key": "$\\dfrac{6!}{3!\\,2!}$", "lv": 1, "q": "6개의 문자 $a,\\,a,\\,a,\\,b,\\,b,\\,c$를 모두 일렬로 나열하는 경우의 수는?", "sol": ["$a$ 3개, $b$ 2개, $c$ 1개", "$\\dfrac{6!}{3!\\,2!\\,1!}=\\dfrac{720}{12}=60$ ⇒ ③"], "fin": "③", "ch": ["50", "55", "60", "65", "70"]},

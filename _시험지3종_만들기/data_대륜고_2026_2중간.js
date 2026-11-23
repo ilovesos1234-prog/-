@@ -3,7 +3,7 @@ const path = require('path');
 const IMG = path.join(__dirname, 'img_daeryun26');
 const META = {
   year: 2026, school: '대륜고', grade: '고1', term: '2학기 중간', subject: '공통수학2',
-  title: '2026 대륜고 고1 2학기 중간',
+  title: "2026 대륜고 1학년 2학기 중간 (공통수학2)",
   units: '도형의 방정식 / 집합과 명제',
 };
 const Q = [

@@ -1,7 +1,7 @@
 // 2026 사대부고 2학년 2학기 중간 확률과 통계 — 원본: 카카오톡 받은 파일 [사대부고][2][확통][26-2-중간](원본)[준희T].pdf
 const path = require('path');
 const IMG = path.join(__dirname, '..', 'img_school', "\uc0ac\ub300\ubd80\uace0_2_\ud655\ud1b5");
-const META = {"year": 2026, "school": "사대부고", "grade": "고2", "term": "2학기 중간", "subject": "확률과 통계", "title": "2026 사대부고 2학년 2학기 중간 확률과 통계", "units": "Ⅰ. 경우의 수 (중복순열·중복조합·이항정리), Ⅱ. 확률 (확률의 뜻과 활용·조건부확률)", "keyNote": "정답은 채수학에서 직접 풀어 확인"};
+const META = {"year": 2026, "school": "사대부고", "grade": "고2", "term": "2학기 중간", "subject": "확률과 통계", "title": "2026 사대부고 2학년 2학기 중간 (확률과 통계)", "units": "Ⅰ. 경우의 수 (중복순열·중복조합·이항정리), Ⅱ. 확률 (확률의 뜻과 활용·조건부확률)", "keyNote": "정답은 채수학에서 직접 풀어 확인"};
 const Q = [
 {"n": 1, "pt": "3.30", "type": "객", "ans": "⑤", "unit": "경우의 수", "sub": "중복순열과 중복조합의 계산", "tp": "중복순열·중복조합", "key": "${}_n\\Pi_r=n^r$, ${}_n\\mathrm{H}_r={}_{n+r-1}\\mathrm{C}_r$", "lv": 1, "q": "${}_2\\Pi_3+{}_2\\mathrm{H}_3$의 값은?", "sol": ["${}_2\\Pi_3=2^3=8$", "${}_2\\mathrm{H}_3={}_4\\mathrm{C}_3=4$", "합 $=12$ ⇒ ⑤"], "fin": "⑤", "ch": ["$8$", "$9$", "$10$", "$11$", "$12$"]},
 {"n": 2, "pt": "3.50", "type": "객", "ans": "③", "unit": "확률", "sub": "여사건의 확률", "tp": "여사건의 확률", "key": "$\\mathrm{P}(A^C)=1-\\mathrm{P}(A)$", "lv": 1, "q": "두 사건 $A$, $B$에 대하여 $\\mathrm{P}(A)=\\dfrac14$, $\\mathrm{P}(B)=\\dfrac15$일 때, $\\mathrm{P}(A^C)\\times\\mathrm{P}(B^C)$의 값은?", "sol": ["$\\mathrm{P}(A^C)=\\dfrac34$, $\\mathrm{P}(B^C)=\\dfrac45$", "곱 $=\\dfrac35$ ⇒ ③"], "fin": "③", "ch": ["$\\dfrac15$", "$\\dfrac25$", "$\\dfrac35$", "$\\dfrac45$", "$1$"]},

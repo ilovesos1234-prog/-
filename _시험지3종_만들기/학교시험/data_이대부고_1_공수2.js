@@ -1,7 +1,7 @@
 // 2026 이대부고 1학년 2학기 중간 — 원본: 카카오톡 받은 파일 이대부고 2026년 고1 2학기중간 공통수학2.pdf
 const path = require('path');
 const IMG = path.join(__dirname, '..', 'img_school', "\uc774\ub300\ubd80\uace0_1_\uacf5\uc2182");
-const META = {"year": 2026, "school": "이대부고", "grade": "고1", "term": "2학기 중간", "subject": "공통수학2", "title": "2026 이대부고 1학년 2학기 중간", "units": "평면좌표 ~ 도형의 이동", "keyNote": "정답은 학교 답안과 대조 완료"};
+const META = {"year": 2026, "school": "이대부고", "grade": "고1", "term": "2학기 중간", "subject": "공통수학2", "title": "2026 이대부고 1학년 2학기 중간 (공통수학2)", "units": "평면좌표 ~ 도형의 이동", "keyNote": "정답은 학교 답안과 대조 완료"};
 const Q = [
 {"n": 1, "pt": "3.50", "type": "객", "ans": "④", "unit": "도형의 방정식", "sub": "두 직선의 수직 조건", "tp": "두 직선의 수직", "key": "기울기의 곱 $=-1$", "lv": 1, "q": "두 직선 $y=-2x+5$, $y=ax+1$이 서로 수직일 때, 상수 $a$의 값은?", "sol": ["$-2\\times a=-1$", "$a=\\dfrac12$"], "fin": "④", "ch": ["$-\\dfrac{1}{2}$", "$-\\dfrac{1}{3}$", "$\\dfrac{1}{3}$", "$\\dfrac{1}{2}$", "$\\dfrac{2}{3}$"]},
 {"n": 2, "pt": "3.50", "type": "객", "ans": "⑤", "unit": "도형의 방정식", "sub": "두 점 사이의 거리", "tp": "두 점 사이의 거리", "key": "$\\sqrt{(\\Delta x)^2+(\\Delta y)^2}$", "lv": 1, "q": "두 점 $\\mathrm{A}(2,-1)$, $\\mathrm{B}(-3,1)$ 사이의 거리는?", "sol": ["$\\overline{AB}=\\sqrt{(-3-2)^2+(1+1)^2}=\\sqrt{25+4}=\\sqrt{29}$"], "fin": "⑤", "ch": ["5", "$\\sqrt{26}$", "$3\\sqrt{3}$", "$2\\sqrt{7}$", "$\\sqrt{29}$"]},

@@ -1,7 +1,7 @@
 // 2026 군위고 3학년 1학기 중간 — 원본: 2026년_1학기_중간_미적분_대구시 군위군_군위고.pdf
 const path = require('path');
 const IMG = path.join(__dirname, '..', 'img_school', "\uad70\uc704\uace0_2_\ubbf8\uc801\ubd84_261\uc911");
-const META = {"year": 2026, "school": "군위고", "grade": "고3", "term": "1학기 중간", "subject": "미적분", "title": "2026 군위고 3학년 1학기 중간", "units": "Ⅰ. 수열의 극한 ~ Ⅱ. 미분법", "keyNote": "정답은 채수학에서 직접 풀어 확인"};
+const META = {"year": 2026, "school": "군위고", "grade": "고3", "term": "1학기 중간", "subject": "미적분", "title": "2026 군위고 3학년 1학기 중간 (미적분Ⅱ)", "units": "Ⅰ. 수열의 극한 ~ Ⅱ. 미분법", "keyNote": "정답은 채수학에서 직접 풀어 확인"};
 const Q = [
 {"n": 1, "pt": "3.10", "type": "객", "ans": "⑤", "unit": "수열의 극한", "sub": "수열의 극한의 성질", "tp": "수열의 극한의 성질", "key": "수렴하는 수열의 극한값을 그대로 대입", "lv": 1, "q": "두 수열 $\\{a_n\\}$, $\\{b_n\\}$에 대하여 $\\lim\\limits_{n\\to\\infty}a_n=3$, $\\lim\\limits_{n\\to\\infty}b_n=-2$일 때, $\\lim\\limits_{n\\to\\infty}\\dfrac{2a_n+5b_n}{a_nb_n}$의 값은? (단, 모든 자연수 $n$에 대하여 $a_n\\ne0$, $b_n\\ne0$이다.)", "sol": ["$\\lim\\dfrac{2a_n+5b_n}{a_nb_n}=\\dfrac{2\\cdot3+5\\cdot(-2)}{3\\cdot(-2)}=\\dfrac{-4}{-6}=\\dfrac{2}{3}$"], "fin": "⑤", "ch": ["$-\\dfrac{7}{3}$", "$-\\dfrac{5}{3}$", "$-1$", "$-\\dfrac{2}{3}$", "$\\dfrac{2}{3}$"]},
 {"n": 2, "pt": "3.20", "type": "객", "ans": "③", "unit": "수열의 극한", "sub": "수열의 극한의 성질", "tp": "새 수열로 치환", "key": "b_n=(2a_n+9)/(a_n+5)로 놓고 a_n을 b_n으로 나타낸다", "lv": 2, "q": "수열 $\\{a_n\\}$에 대하여 $\\lim\\limits_{n\\to\\infty}\\dfrac{2a_n+9}{a_n+5}=1$일 때, $\\lim\\limits_{n\\to\\infty}(2a_n+11)$의 값은? (단, 모든 자연수 $n$에 대하여 $a_n\\ne5$이다.)", "sol": ["$b_n=\\dfrac{2a_n+9}{a_n+5}$로 놓으면 $a_n=\\dfrac{9-5b_n}{b_n-2}$, $\\lim b_n=1$", "$\\lim a_n=\\dfrac{9-5}{1-2}=-4$", "$\\lim(2a_n+11)=-8+11=3$"], "fin": "③", "ch": ["$1$", "$2$", "$3$", "$4$", "$5$"]},

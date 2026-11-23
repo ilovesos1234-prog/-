@@ -1,7 +1,7 @@
 // 2026 시지고 2학년 2학기 중간 — 원본: 카카오톡 받은 파일 [시지고][2학년][미적분1][26-2-중간][동아]_(원본)(박카스).pdf
 const path = require('path');
 const IMG = path.join(__dirname, '..', 'img_school', "\uc2dc\uc9c0\uace0_2_\ubbf8\uc801\ubd841");
-const META = {"year": 2026, "school": "시지고", "grade": "고2", "term": "2학기 중간", "subject": "미적분Ⅰ", "title": "2026 시지고 2학년 2학기 중간", "units": "Ⅰ. 함수의 극한과 연속, Ⅱ. 미분 (미분계수와 도함수, 접선의 방정식)", "keyNote": "정답은 채수학에서 직접 풀어 확인"};
+const META = {"year": 2026, "school": "시지고", "grade": "고2", "term": "2학기 중간", "subject": "미적분Ⅰ", "title": "2026 시지고 2학년 2학기 중간 (미적분Ⅰ)", "units": "Ⅰ. 함수의 극한과 연속, Ⅱ. 미분 (미분계수와 도함수, 접선의 방정식)", "keyNote": "정답은 채수학에서 직접 풀어 확인"};
 const Q = [
 {"n": 1, "pt": "3.60", "type": "객", "ans": "②", "unit": "함수의 극한과 연속", "sub": "0/0 꼴 극한 (인수분해)", "tp": "0/0 꼴 극한", "key": "분자·분모 인수분해 후 약분", "lv": 1, "q": "$\\displaystyle\\lim_{x\\to1}\\frac{3x^2-2x-1}{x^2-1}$의 값은?", "sol": ["$\\dfrac{(3x+1)(x-1)}{(x+1)(x-1)}=\\dfrac{3x+1}{x+1}$", "$x\\to1$: $\\dfrac{4}{2}=2$ ⇒ ②"], "fin": "②", "ch": ["$1$", "$2$", "$3$", "$4$", "$5$"]},
 {"n": 2, "pt": "3.60", "type": "객", "ans": "⑤", "unit": "함수의 극한과 연속", "sub": "함수의 극한의 대소 관계", "tp": "극한의 대소 관계", "key": "양쪽에 $(3x-1)$을 곱해 같은 극한으로 조이기", "lv": 1, "q": "$x\\gt 1$에서 함수 $f(x)$가 $\\dfrac{2x-1}{4x^2+2}\\le f(x)\\le\\dfrac{2x+3}{4x^2+2}$을 만족시킬 때, $\\displaystyle\\lim_{x\\to\\infty}(3x-1)f(x)$의 값은?", "sol": ["$x\\gt1$이면 $3x-1\\gt0$이므로 부등식에 곱해도 방향 유지", "$\\displaystyle\\lim_{x\\to\\infty}\\frac{(3x-1)(2x-1)}{4x^2+2}=\\frac{6}{4}=\\frac32$", "$\\displaystyle\\lim_{x\\to\\infty}\\frac{(3x-1)(2x+3)}{4x^2+2}=\\frac32$", "따라서 구하는 값은 $\\dfrac32$ ⇒ ⑤"], "fin": "⑤", "ch": ["$0$", "$\\dfrac14$", "$\\dfrac12$", "$1$", "$\\dfrac32$"]},

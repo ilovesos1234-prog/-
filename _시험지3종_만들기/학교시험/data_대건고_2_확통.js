@@ -1,7 +1,7 @@
 // 2026 대건고 2학년 2학기 중간 확률과 통계 — 원본: 카카오톡 받은 파일 [대건고][2][확통][26-2-중간]_(원본)_(놉2).pdf
 const path = require('path');
 const IMG = path.join(__dirname, '..', 'img_school', "\ub300\uac74\uace0_2_\ud655\ud1b5");
-const META = {"year": 2026, "school": "대건고", "grade": "고2", "term": "2학기 중간", "subject": "확률과 통계", "title": "2026 대건고 2학년 2학기 중간 확률과 통계", "units": "Ⅰ. 경우의 수 (순열과 조합, 이항정리), Ⅱ. 확률 (확률의 뜻과 활용, 조건부확률)", "keyNote": "정답은 채수학에서 직접 풀어 확인"};
+const META = {"year": 2026, "school": "대건고", "grade": "고2", "term": "2학기 중간", "subject": "확률과 통계", "title": "2026 대건고 2학년 2학기 중간 (확률과 통계)", "units": "Ⅰ. 경우의 수 (순열과 조합, 이항정리), Ⅱ. 확률 (확률의 뜻과 활용, 조건부확률)", "keyNote": "정답은 채수학에서 직접 풀어 확인"};
 const Q = [
 {"n": 1, "pt": "3.60", "type": "객", "ans": "④", "unit": "확률", "sub": "배반사건과 확률의 덧셈정리", "tp": "배반사건 확률", "key": "배반이면 $\\mathrm{P}(A\\cup B)=\\mathrm{P}(A)+\\mathrm{P}(B)$", "lv": 1, "q": "두 사건 $A$, $B$는 서로 배반사건이고 $\\mathrm{P}(A\\cup B)=1$, $\\mathrm{P}(A^C)=4\\mathrm{P}(A)$일 때, $\\mathrm{P}(B)$의 값은?", "sol": ["$1-\\mathrm{P}(A)=4\\mathrm{P}(A)$에서 $\\mathrm{P}(A)=\\dfrac15$", "$\\mathrm{P}(B)=1-\\dfrac15=\\dfrac45$, 답 ④"], "fin": "④", "ch": ["$\\dfrac12$", "$\\dfrac35$", "$\\dfrac7{10}$", "$\\dfrac45$", "$\\dfrac9{10}$"]},
 {"n": 2, "pt": "3.70", "type": "객", "ans": "①", "unit": "경우의 수", "sub": "이항정리 – 이항계수의 합", "tp": "이항정리 활용", "key": "$(1-3)^5$의 전개와 비교", "lv": 2, "q": "${}_5\\mathrm{C}_1\\times3-{}_5\\mathrm{C}_2\\times3^2+{}_5\\mathrm{C}_3\\times3^3-{}_5\\mathrm{C}_4\\times3^4+{}_5\\mathrm{C}_5\\times3^5$의 값은?", "sol": ["$(1-3)^5=1-{}_5\\mathrm{C}_1 3+{}_5\\mathrm{C}_2 3^2-\\cdots-{}_5\\mathrm{C}_5 3^5=-32$", "구하는 식을 $S$라 하면 $1-S=-32$", "$S=33$, 답 ①"], "fin": "①", "ch": ["$33$", "$34$", "$35$", "$36$", "$37$"]},

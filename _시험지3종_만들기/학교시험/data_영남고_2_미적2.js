@@ -1,7 +1,7 @@
 // 2026 영남고 2학년 2학기 중간 — 원본: 카카오톡 받은 파일 [영남고][2][미적분2][26-2-중간](원본)(백천인) (1).pdf
 const path = require('path');
 const IMG = path.join(__dirname, '..', 'img_school', "\uc601\ub0a8\uace0_2_\ubbf8\uc8012");
-const META = {"year": 2026, "school": "영남고", "grade": "고2", "term": "2학기 중간", "subject": "미적분Ⅱ", "title": "2026 영남고 2학년 2학기 중간", "units": "Ⅰ. 수열의 극한 (수열의 극한·급수), Ⅱ. 미분법 (지수·로그·삼각함수의 극한과 미분, 여러 가지 미분법)", "keyNote": "정답은 채수학에서 직접 풀어 확인"};
+const META = {"year": 2026, "school": "영남고", "grade": "고2", "term": "2학기 중간", "subject": "미적분Ⅱ", "title": "2026 영남고 2학년 2학기 중간 (미적분Ⅱ)", "units": "Ⅰ. 수열의 극한 (수열의 극한·급수), Ⅱ. 미분법 (지수·로그·삼각함수의 극한과 미분, 여러 가지 미분법)", "keyNote": "정답은 채수학에서 직접 풀어 확인"};
 const Q = [
 {"n": 1, "pt": "3.00", "type": "객", "ans": "④", "unit": "수열의 극한", "sub": "수열의 극한의 성질", "tp": "수열의 극한의 성질", "key": "수렴하는 꼴로 쪼개어 곱하기", "lv": 1, "q": "두 수열 $\\{a_n\\}$, $\\{b_n\\}$이 $\\displaystyle\\lim_{n\\to\\infty}\\dfrac{4n^2+5}{a_n}=4$, $\\displaystyle\\lim_{n\\to\\infty}\\dfrac{b_n}{2n^2+5n}=8$을 만족시킬 때, $\\displaystyle\\lim_{n\\to\\infty}\\dfrac{b_n}{a_n}$의 값은? (단, 모든 자연수 $n$에 대하여 $a_n\\neq0$이다.)", "sol": ["$\\dfrac{b_n}{a_n}=\\dfrac{b_n}{2n^2+5n}\\times\\dfrac{2n^2+5n}{4n^2+5}\\times\\dfrac{4n^2+5}{a_n}$", "극한: $8\\times\\dfrac{2}{4}\\times4=16$"], "fin": "④", "ch": ["$2$", "$4$", "$8$", "$16$", "$24$"]},
 {"n": 2, "pt": "3.00", "type": "객", "ans": "④", "unit": "수열의 극한", "sub": "∞−∞ 꼴의 극한 (무리식)", "tp": "무리식의 극한", "key": "분자 유리화", "lv": 1, "q": "$\\displaystyle\\lim_{n\\to\\infty}\\left(\\sqrt{n^2+an+3}-\\sqrt{n^2-bn+1}\\right)=2$를 만족시키는 상수 $a$, $b$에 대하여 $a+b$의 값은?", "sol": ["분자를 유리화하면 $\\dfrac{(a+b)n+2}{\\sqrt{n^2+an+3}+\\sqrt{n^2-bn+1}}$", "극한값 $\\dfrac{a+b}{2}=2$ → $a+b=4$"], "fin": "④", "ch": ["$1$", "$2$", "$3$", "$4$", "$5$"]},

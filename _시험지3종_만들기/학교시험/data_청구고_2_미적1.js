@@ -1,7 +1,7 @@
 // 2026 청구고 2학년 2학기 중간 — 원본: 카카오톡 받은 파일 [청구고][2][미적분1][26-2-중간](원본)(도로시).pdf
 const path = require('path');
 const IMG = path.join(__dirname, '..', 'img_school', "\uccad\uad6c\uace0_2_\ubbf8\uc8011");
-const META = {"year": 2026, "school": "청구고", "grade": "고2", "term": "2학기 중간", "subject": "미적분Ⅰ", "title": "2026 청구고 2학년 2학기 중간", "units": "Ⅰ. 함수의 극한과 연속, Ⅱ. 미분 (미분계수, 도함수, 접선, 평균값 정리)", "keyNote": "정답은 채수학에서 직접 풀어 확인"};
+const META = {"year": 2026, "school": "청구고", "grade": "고2", "term": "2학기 중간", "subject": "미적분Ⅰ", "title": "2026 청구고 2학년 2학기 중간 (미적분Ⅰ)", "units": "Ⅰ. 함수의 극한과 연속, Ⅱ. 미분 (미분계수, 도함수, 접선, 평균값 정리)", "keyNote": "정답은 채수학에서 직접 풀어 확인"};
 const Q = [
 {"n": 1, "pt": "4.00", "type": "객", "ans": "⑤", "unit": "함수의 극한과 연속", "sub": "그래프에서 극한값과 함숫값", "tp": "그래프에서 극한값 읽기", "key": "좌극한·우극한은 다가가는 쪽의 $y$값, 함숫값은 채워진 점", "lv": 1, "q": "함수 $f(x)$의 그래프가 아래 그림과 같을 때, $\\displaystyle\\lim_{x\\to1-}f(x)+f(2)+\\lim_{x\\to3+}f(x)$의 값은?", "sol": ["$\\lim_{x\\to1-}f(x)=1$", "$f(2)=1$ (채워진 점)", "$\\lim_{x\\to3+}f(x)=3$", "합: $1+1+3=5$"], "fin": "⑤", "ch": ["$1$", "$2$", "$3$", "$4$", "$5$"], "imgW": 40, "img": path.join(IMG, "q1.png")},
 {"n": 2, "pt": "4.00", "type": "객", "ans": "③", "unit": "함수의 극한과 연속", "sub": "무리식의 극한 (0×∞ 꼴)", "tp": "무리식 극한", "key": "괄호를 통분한 뒤 $x-9=(\\sqrt{x}-3)(\\sqrt{x}+3)$", "lv": 2, "q": "$\\displaystyle\\lim_{x\\to9}(\\sqrt{x}-3)\\left(1+\\dfrac{15}{x-9}\\right)$의 값은?", "sol": ["$1+\\dfrac{15}{x-9}=\\dfrac{x+6}{x-9}$", "$(\\sqrt{x}-3)\\cdot\\dfrac{x+6}{(\\sqrt{x}-3)(\\sqrt{x}+3)}=\\dfrac{x+6}{\\sqrt{x}+3}$", "$x\\to9$: $\\dfrac{15}{6}=\\dfrac{5}{2}$"], "fin": "③", "ch": ["$\\dfrac{3}{2}$", "$2$", "$\\dfrac{5}{2}$", "$3$", "$\\dfrac{7}{2}$"]},
