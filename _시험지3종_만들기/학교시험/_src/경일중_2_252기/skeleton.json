@@ -1,0 +1,344 @@
+{
+ "meta": {
+  "year": 2025,
+  "school": "경일중",
+  "grade": "중2",
+  "subject": "수학",
+  "title": "2025 경일중 2학년 2학기 기말",
+  "term": "2학기 기말",
+  "range": "Ⅴ. 도형의 닮음과 피타고라스 정리 ~ Ⅵ. 확률",
+  "has_key": false,
+  "note": "선택형 14문항(60점), 서답형 5문항(40점). 원본에 답안이 없어 채수학에서 모든 문항을 직접 풀었다. 7번은 스캔에서 색칠이 보이지 않아, 보기(9의 배수인 넓이는 36뿐)에 맞게 △GBG'과 △GG'C를 색칠한 그림으로 다시 그렸다.",
+  "src": "경일중_2_252기.pdf"
+ },
+ "Q": [
+  {
+   "n": 1,
+   "pt": "4",
+   "type": "객",
+   "ans": "①",
+   "unit": "도형의 닮음",
+   "sub": "닮은 도형의 성질",
+   "lv": 1,
+   "q": "그림과 같이 $\\triangle\\text{ABC}\\sim\\triangle\\text{DEF}$일 때, &lt;보기&gt;에서 옳은 것만을 있는 대로 고른 것은?<div style=\"border:1px solid #888;padding:4px 8px;margin:4px 0\">ㄱ. $\\angle\\text{E}=50^\\circ$ &nbsp;&nbsp;&nbsp; ㄴ. $\\overline{\\text{EF}}$$=9\\text{cm}$<br>ㄷ. $\\triangle$ABC와 $\\triangle$DEF의 닮음비는 $2:3$이다.</div>",
+   "ch": [
+    "ㄱ",
+    "ㄴ",
+    "ㄱ, ㄷ",
+    "ㄴ, ㄷ",
+    "ㄱ, ㄴ, ㄷ"
+   ],
+   "imgs": [
+    "q1"
+   ],
+   "imgW": 40
+  },
+  {
+   "n": 2,
+   "pt": "4",
+   "type": "객",
+   "ans": "⑤",
+   "unit": "도형의 닮음",
+   "sub": "SAS 닮음(맞꼭지각)",
+   "lv": 2,
+   "q": "그림과 같이 $\\overline{\\text{AD}}$와 $\\overline{\\text{BE}}$의 교점을 C라고 할 때, $\\overline{\\text{DE}}$의 길이를 구하는 과정이다. 괄호 속의 내용으로 옳지 <u>않은</u> 것은?<div style=\"border:1px solid #888;padding:4px 8px;margin:4px 0\">$\\triangle$ABC와 $\\triangle$DEC에서 $\\angle\\text{ACB}=$ ①(&nbsp;&nbsp;&nbsp;&nbsp;)<br>$\\overline{\\text{AC}}$$:$$\\overline{\\text{DC}}$$=$$\\overline{\\text{BC}}$$:$$\\overline{\\text{EC}}$$=$ ②(&nbsp;&nbsp;&nbsp;)이므로<br>$\\triangle\\text{ABC}\\sim\\triangle\\text{DEC}$ ③(&nbsp;&nbsp;&nbsp;&nbsp;닮음)이다.<br>따라서 $\\overline{\\text{AC}}$$:$$\\overline{\\text{DC}}$$=$$\\overline{\\text{AB}}$$:$$\\overline{\\text{DE}}$이므로<br>②(&nbsp;&nbsp;&nbsp;)$=$ ④(&nbsp;&nbsp;&nbsp;)$:$$\\overline{\\text{DE}}$<br>$\\overline{\\text{DE}}$$=$ ⑤(&nbsp;&nbsp;&nbsp;&nbsp;)$(\\text{cm})$</div>",
+   "ch": [
+    "$\\angle\\text{DCE}$",
+    "$2:3$",
+    "SAS",
+    "$5$",
+    "$10$"
+   ],
+   "imgs": [
+    "q2"
+   ],
+   "imgW": 40
+  },
+  {
+   "n": 3,
+   "pt": "4",
+   "type": "객",
+   "ans": "④",
+   "unit": "도형의 닮음",
+   "sub": "항상 닮은 도형",
+   "lv": 1,
+   "q": "항상 서로 닮은 도형이 <u>아닌</u> 것은?",
+   "ch": [
+    "두 원",
+    "두 반구",
+    "두 정사각형",
+    "두 정사각기둥",
+    "두 직각이등변삼각형"
+   ]
+  },
+  {
+   "n": 4,
+   "pt": "4",
+   "type": "객",
+   "ans": "②",
+   "unit": "평행선과 선분의 길이의 비",
+   "sub": "사다리꼴의 중점 연결",
+   "lv": 1,
+   "q": "그림에서 $\\overline{\\text{AD}}$$\\,/\\!/\\,$$\\overline{\\text{BC}}$$\\,/\\!/\\,$$\\overline{\\text{MN}}$이고, $\\overline{\\text{AM}}$$=$$\\overline{\\text{BM}}$, $\\overline{\\text{DN}}$$=$$\\overline{\\text{CN}}$일 때, $\\overline{\\text{PQ}}$의 길이는?",
+   "ch": [
+    "$1\\text{cm}$",
+    "$2\\text{cm}$",
+    "$3\\text{cm}$",
+    "$4\\text{cm}$",
+    "$5\\text{cm}$"
+   ],
+   "imgs": [
+    "q4"
+   ],
+   "imgW": 30
+  },
+  {
+   "n": 5,
+   "pt": "4",
+   "type": "객",
+   "ans": "①",
+   "unit": "피타고라스 정리",
+   "sub": "직각삼각형의 닮음(사영 정리)",
+   "lv": 1,
+   "q": "그림과 같이 $\\angle\\text{A}=90^\\circ$인 직각삼각형 ABC에 대하여 $x$의 값은?",
+   "ch": [
+    "$24$",
+    "$28$",
+    "$32$",
+    "$36$",
+    "$40$"
+   ],
+   "imgs": [
+    "q5"
+   ],
+   "imgW": 34
+  },
+  {
+   "n": 6,
+   "pt": "5",
+   "type": "객",
+   "ans": "③",
+   "unit": "평행선과 선분의 길이의 비",
+   "sub": "평행선과 선분의 길이의 비",
+   "lv": 3,
+   "q": "그림에서 $\\overline{\\text{AB}}$$\\,/\\!/\\,$$\\overline{\\text{PQ}}$$\\,/\\!/\\,$$\\overline{\\text{CD}}$, $\\overline{\\text{PM}}$$=$$\\overline{\\text{MC}}$, $\\overline{\\text{QN}}$$=$$\\overline{\\text{ND}}$라 할 때, &lt;보기&gt;에서 옳은 것만을 있는 대로 고른 것은?<div style=\"border:1px solid #888;padding:4px 8px;margin:4px 0\">ㄱ. $\\overline{\\text{BP}}$$=$$\\overline{\\text{PM}}$<br>ㄴ. $\\overline{\\text{MN}}$$=42\\text{cm}$<br>ㄷ. $\\triangle$ABP와 $\\triangle$DCP의 넓이의 비는 $1:4$이다.</div>",
+   "ch": [
+    "ㄱ",
+    "ㄴ",
+    "ㄱ, ㄷ",
+    "ㄴ, ㄷ",
+    "ㄱ, ㄴ, ㄷ"
+   ],
+   "imgs": [
+    "q6"
+   ],
+   "imgW": 36
+  },
+  {
+   "n": 7,
+   "pt": "5",
+   "type": "객",
+   "ans": "①",
+   "unit": "평행선과 선분의 길이의 비",
+   "sub": "무게중심을 두 번",
+   "lv": 2,
+   "q": "그림에서 두 점 G, G$'$은 각각 $\\triangle$ABC와 $\\triangle$GBC의 무게중심이다. $\\triangle$ABC의 넓이가 $162\\text{cm}^2$일 때, 색칠한 부분의 넓이는?",
+   "ch": [
+    "$36\\text{cm}^2$",
+    "$40\\text{cm}^2$",
+    "$44\\text{cm}^2$",
+    "$48\\text{cm}^2$",
+    "$52\\text{cm}^2$"
+   ],
+   "imgs": [
+    "q7"
+   ],
+   "imgW": 30
+  },
+  {
+   "n": 8,
+   "pt": "3",
+   "type": "객",
+   "ans": "④",
+   "unit": "경우의 수",
+   "sub": "가위바위보의 경우의 수",
+   "lv": 1,
+   "q": "두 사람이 가위바위보를 할 때, 일어나는 모든 경우의 수는?",
+   "ch": [
+    "$6$",
+    "$7$",
+    "$8$",
+    "$9$",
+    "$10$"
+   ]
+  },
+  {
+   "n": 9,
+   "pt": "4",
+   "type": "객",
+   "ans": "⑤",
+   "unit": "경우의 수",
+   "sub": "주사위 한 개의 경우의 수",
+   "lv": 1,
+   "q": "주사위 한 개를 던질 때, 다음과 같은 수의 눈이 나오는 경우의 수 중 가장 큰 것은?",
+   "ch": [
+    "짝수",
+    "$3$의 배수",
+    "$4$의 약수",
+    "$2$보다 큰 수",
+    "$7$보다 작은 수"
+   ]
+  },
+  {
+   "n": 10,
+   "pt": "4",
+   "type": "객",
+   "ans": "③",
+   "unit": "경우의 수",
+   "sub": "홀수인 세 자리 자연수",
+   "lv": 2,
+   "q": "숫자 $1,\\ 2,\\ 3,\\ 4,\\ 5$가 각각 하나씩 적힌 $5$장의 카드 중에서 세 장을 동시에 뽑아 만들 수 있는 세 자리의 자연수 중 홀수가 나올 경우의 수는?",
+   "ch": [
+    "$20$",
+    "$24$",
+    "$36$",
+    "$48$",
+    "$60$"
+   ]
+  },
+  {
+   "n": 11,
+   "pt": "4",
+   "type": "객",
+   "ans": "⑤",
+   "unit": "확률",
+   "sub": "적어도 한 개일 확률",
+   "lv": 1,
+   "q": "서로 다른 세 개의 동전을 동시에 한번 던질 때, 적어도 한 개는 앞면이 나올 확률은?",
+   "ch": [
+    "$\\dfrac{1}{8}$",
+    "$\\dfrac{1}{4}$",
+    "$\\dfrac{1}{2}$",
+    "$\\dfrac{3}{4}$",
+    "$\\dfrac{7}{8}$"
+   ]
+  },
+  {
+   "n": 12,
+   "pt": "5",
+   "type": "객",
+   "ans": "④",
+   "unit": "확률",
+   "sub": "서로 다른 색일 확률",
+   "lv": 2,
+   "q": "흰 구슬 $3$개, 검은 구슬 $2$개가 들어 있는 상자 A와 흰 구슬 $3$개, 검은 구슬 $4$개가 들어 있는 상자 B가 있다. 두 상자에서 각각 구슬을 한 개씩 임의로 꺼낼 때, 꺼낸 두 구슬이 서로 다른 색일 확률은?",
+   "ch": [
+    "$\\dfrac{9}{35}$",
+    "$\\dfrac{3}{7}$",
+    "$\\dfrac{17}{35}$",
+    "$\\dfrac{18}{35}$",
+    "$\\dfrac{4}{7}$"
+   ]
+  },
+  {
+   "n": 13,
+   "pt": "5",
+   "type": "객",
+   "ans": "④",
+   "unit": "확률",
+   "sub": "규칙에 따른 확률",
+   "lv": 4,
+   "q": "체육 시간에 다음과 같은 &lt;규칙&gt;으로 실기 평가를 할 때, 자유투 성공률이 $\\dfrac15$인 학생이 이 실기 평가에서 $4$점 이상을 받을 확률은? (단, 자유투 성공률은 던질 때마다 동일하다.)<div style=\"border:1px solid #888;padding:4px 8px;margin:4px 0\">○ 학생당 자유투 기회는 총 $3$번이다.<br>○ 자유투를 $2$번 연속으로 성공하면 던지는 것을 멈추고 $5$점을 준다.<br>○ 자유투를 $2$번 연속으로 성공하지 못하면 성공한 자유투 한 개당 $2$점을 준다.</div>",
+   "ch": [
+    "$\\dfrac{7}{125}$",
+    "$\\dfrac{9}{125}$",
+    "$\\dfrac{11}{125}$",
+    "$\\dfrac{13}{125}$",
+    "$\\dfrac{3}{25}$"
+   ]
+  },
+  {
+   "n": 14,
+   "pt": "5",
+   "type": "객",
+   "ans": "②",
+   "unit": "평행선과 선분의 길이의 비",
+   "sub": "평행사변형 속 넓이의 비",
+   "lv": 4,
+   "q": "그림과 같은 평행사변형 ABCD에서 점 M, N은 각각 $\\overline{\\text{BC}}$, $\\overline{\\text{CD}}$의 중점이고, 점 P, Q는 각각 $\\overline{\\text{BN}}$과 $\\overline{\\text{AM}}$, $\\overline{\\text{DM}}$의 교점이다. $\\square\\text{ABCD}=720\\text{cm}^2$일 때, $\\triangle$PMQ의 넓이는?",
+   "ch": [
+    "$20\\text{cm}^2$",
+    "$24\\text{cm}^2$",
+    "$30\\text{cm}^2$",
+    "$36\\text{cm}^2$",
+    "$42\\text{cm}^2$"
+   ],
+   "imgs": [
+    "q14"
+   ],
+   "imgW": 34
+  },
+  {
+   "n": 15,
+   "pt": "7",
+   "type": "서",
+   "ans": "$250\\text{cm}^3$",
+   "unit": "도형의 닮음",
+   "sub": "닮은 입체도형의 부피",
+   "lv": 2,
+   "q": "<b>[서답형 1]</b> 두 정사면체 A와 B는 서로 닮은 도형이고, 정사면체 A의 부피가 $54\\text{cm}^3$일 때, 정사면체 B의 부피를 구하고 그 풀이 과정을 쓰시오.",
+   "imgs": [
+    "s1"
+   ],
+   "imgW": 40
+  },
+  {
+   "n": 16,
+   "pt": "8",
+   "type": "서",
+   "ans": "$30\\text{cm}$",
+   "unit": "평행선과 선분의 길이의 비",
+   "sub": "삼각형의 중점연결정리",
+   "lv": 1,
+   "q": "<b>[서답형 2]</b> 그림과 같은 $\\triangle$ABC에서 세 변 AB, BC, CA의 중점을 각각 D, E, F라고 하자. 이때 $\\triangle$DEF의 둘레의 길이를 구하고 그 풀이 과정을 쓰시오.",
+   "imgs": [
+    "s2"
+   ],
+   "imgW": 28
+  },
+  {
+   "n": 17,
+   "pt": "8",
+   "type": "서",
+   "ans": "$x=10$, $y=15$",
+   "unit": "평행선과 선분의 길이의 비",
+   "sub": "무게중심과 중선",
+   "lv": 1,
+   "q": "<b>[서답형 3]</b> 그림에서 점 G가 $\\triangle$ABC의 무게중심일 때, $x$, $y$의 값을 구하고 그 풀이 과정을 각각 쓰시오.",
+   "imgs": [
+    "s3"
+   ],
+   "imgW": 32
+  },
+  {
+   "n": 18,
+   "pt": "8",
+   "type": "서",
+   "ans": "(1) $11$ (2) $44$",
+   "unit": "경우의 수",
+   "sub": "합의 법칙과 곱의 법칙",
+   "lv": 1,
+   "q": "<b>[서답형 4]</b> &lt;차림표&gt;를 보고 디저트를 주문하려고 할 때, 물음에 답하시오.<table style=\"border-collapse:collapse;text-align:center;margin:4px 0\"><tr><th style=\"padding:2px 10px;border:1px solid #888;vertical-align:middle\">생과일 주스</th><th style=\"padding:2px 10px;border:1px solid #888;vertical-align:middle\">차</th><th style=\"padding:2px 10px;border:1px solid #888;vertical-align:middle\">수제쿠키</th></tr><tr><td style=\"padding:2px 10px;border:1px solid #888;vertical-align:middle\">딸기주스<br>키위주스<br>수박주스<br>망고주스<br>바나나주스<br>오렌지주스</td><td style=\"padding:2px 10px;border:1px solid #888;vertical-align:middle\">녹차<br>말차<br>홍차<br>유자차<br>인삼차</td><td style=\"padding:2px 10px;border:1px solid #888;vertical-align:middle\">버터 쿠키<br>아몬드 쿠키<br>스모어 쿠키<br>초콜릿칩 쿠키</td></tr></table>(1) 생과일 주스 또는 차 중에서 한 가지를 골라 주문하는 경우의 수를 구하고 그 풀이과정을 쓰시오. [4점]<br>(2) 음료 중에서 한 가지와 수제쿠키 중에서 한 가지를 동시에 골라 주문하는 경우의 수를 구하고 그 풀이과정을 쓰시오. [4점]"
+  },
+  {
+   "n": 19,
+   "pt": "9",
+   "type": "서",
+   "ans": "$\\dfrac13$",
+   "unit": "확률",
+   "sub": "두 자리 수가 3의 배수일 확률",
+   "lv": 2,
+   "q": "<b>[서답형 5]</b> $3,\\ 4,\\ 5,\\ 6$의 수가 적힌 $4$장의 카드에서 임의로 $2$장을 뽑아 두 자리의 정수를 만들 때, 그 수가 $3$의 배수가 될 확률을 구하고 &lt;조건&gt;에 맞게 풀이과정을 쓰시오.<div style=\"border:1px solid #888;padding:4px 8px;margin:4px 0\">○ 두 자리의 정수를 만드는 모든 경우의 수를 구할 것<br>○ $3$의 배수가 되는 두 자리의 정수를 모두 나열할 것<br>○ 그 수가 $3$의 배수가 될 확률을 구할 것</div>"
+  }
+ ]
+}

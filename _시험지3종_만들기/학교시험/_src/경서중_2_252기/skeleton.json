@@ -1,0 +1,442 @@
+{
+ "meta": {
+  "year": 2025,
+  "school": "경서중",
+  "grade": "중2",
+  "subject": "수학",
+  "title": "2025 경서중 2학년 2학기 기말",
+  "term": "2학기 기말",
+  "range": "삼각형의 성질 ~ 삼각형의 무게중심",
+  "has_key": false,
+  "note": "선택형 18문항(65점), 서답형 4문항(35점). 채점 표시와 학생 필기가 많아 1, 2, 4, 6~10, 12, 14~17번과 서답형 2, 4번 그림은 같은 조건으로 다시 그렸다.",
+  "src": "경서중_2_252기.pdf"
+ },
+ "Q": [
+  {
+   "n": 1,
+   "pt": "3",
+   "type": "객",
+   "ans": "②",
+   "unit": "삼각형의 성질",
+   "sub": "이등변삼각형의 꼭지각의 이등분선",
+   "lv": 1,
+   "q": "그림과 같이 $\\overline{\\text{AB}}$$=$$\\overline{\\text{AC}}$인 이등변삼각형 ABC에서 $\\angle$A의 이등분선과 $\\overline{\\text{BC}}$의 교점을 D라고 하자. $\\overline{\\text{BD}}$$=4\\,\\text{cm}$일 때, $\\overline{\\text{BC}}$의 길이는?",
+   "ch": [
+    "$6\\,\\text{cm}$",
+    "$8\\,\\text{cm}$",
+    "$10\\,\\text{cm}$",
+    "$12\\,\\text{cm}$",
+    "$14\\,\\text{cm}$"
+   ],
+   "imgs": [
+    "q1"
+   ],
+   "imgW": 22
+  },
+  {
+   "n": 2,
+   "pt": "3",
+   "type": "객",
+   "ans": "①",
+   "unit": "삼각형의 성질",
+   "sub": "두 내각의 크기가 같은 삼각형",
+   "lv": 1,
+   "q": "그림에서 $x$의 값은?",
+   "ch": [
+    "$10$",
+    "$11$",
+    "$12$",
+    "$13$",
+    "$14$"
+   ],
+   "imgs": [
+    "q2"
+   ],
+   "imgW": 28
+  },
+  {
+   "n": 3,
+   "pt": "4",
+   "type": "객",
+   "ans": "③",
+   "unit": "삼각형의 성질",
+   "sub": "직각삼각형의 합동 조건",
+   "lv": 1,
+   "q": "다음 중 그림의 두 직각삼각형 ABC, DEF가 합동이 되는 경우가 <b>아닌</b> 것은?",
+   "ch": [
+    "$\\overline{\\text{AC}}$$=$$\\overline{\\text{DF}}$, $\\overline{\\text{BC}}$$=$$\\overline{\\text{EF}}$",
+    "$\\overline{\\text{AB}}$$=$$\\overline{\\text{DE}}$, $\\overline{\\text{BC}}$$=$$\\overline{\\text{EF}}$",
+    "$\\angle\\text{A}=\\angle\\text{D}$, $\\angle\\text{B}=\\angle\\text{E}$",
+    "$\\overline{\\text{BC}}$$=$$\\overline{\\text{EF}}$, $\\angle\\text{A}=\\angle\\text{D}$",
+    "$\\overline{\\text{AB}}$$=$$\\overline{\\text{DE}}$, $\\angle\\text{A}=\\angle\\text{D}$"
+   ],
+   "imgs": [
+    "q3"
+   ],
+   "imgW": 30
+  },
+  {
+   "n": 4,
+   "pt": "4",
+   "type": "객",
+   "ans": "②",
+   "unit": "삼각형의 성질",
+   "sub": "외심과 중심각",
+   "lv": 1,
+   "q": "그림에서 점 O가 $\\triangle$ABC의 외심일 때, $\\angle$A의 크기는?",
+   "ch": [
+    "$65^\\circ$",
+    "$70^\\circ$",
+    "$75^\\circ$",
+    "$80^\\circ$",
+    "$85^\\circ$"
+   ],
+   "imgs": [
+    "q4"
+   ],
+   "imgW": 24
+  },
+  {
+   "n": 5,
+   "pt": "3",
+   "type": "객",
+   "ans": "④",
+   "unit": "삼각형의 성질",
+   "sub": "원의 접선과 반지름",
+   "lv": 1,
+   "q": "그림에서 $\\overline{\\text{AB}}$는 원 O의 접선이고, 점 B는 그 접점이다. $\\angle\\text{AOB}=53^\\circ$일 때, $\\angle$A의 크기는?",
+   "ch": [
+    "$30^\\circ$",
+    "$32^\\circ$",
+    "$35^\\circ$",
+    "$37^\\circ$",
+    "$39^\\circ$"
+   ],
+   "imgs": [
+    "q5"
+   ],
+   "imgW": 24
+  },
+  {
+   "n": 6,
+   "pt": "4",
+   "type": "객",
+   "ans": "③",
+   "unit": "사각형의 성질",
+   "sub": "평행사변형의 대각선",
+   "lv": 1,
+   "q": "그림의 평행사변형 ABCD에서 점 O가 두 대각선의 교점일 때, 다음 중 옳은 것은?",
+   "ch": [
+    "$\\overline{\\text{AB}}$$=$$\\overline{\\text{BC}}$",
+    "$\\overline{\\text{AO}}$$=$$\\overline{\\text{BO}}$",
+    "$\\triangle\\text{ABO}\\equiv\\triangle\\text{CDO}$",
+    "$\\triangle\\text{ABO}\\equiv\\triangle\\text{ADO}$",
+    "$\\angle\\text{BAO}=\\angle\\text{OCB}$"
+   ],
+   "imgs": [
+    "q6"
+   ],
+   "imgW": 26
+  },
+  {
+   "n": 7,
+   "pt": "5",
+   "type": "객",
+   "ans": "⑤",
+   "unit": "도형의 닮음",
+   "sub": "평행사변형에서 닮음과 넓이",
+   "lv": 3,
+   "q": "그림의 평행사변형 ABCD에서 점 O는 두 대각선의 교점이다. $\\overline{\\text{CD}}$의 중점을 E, $\\overline{\\text{AE}}$와 $\\overline{\\text{BD}}$의 교점을 F라고 하자. $\\triangle$AFD$=6\\,\\text{cm}^2$일 때, $\\square$ABCD의 넓이는?",
+   "ch": [
+    "$28\\,\\text{cm}^2$",
+    "$30\\,\\text{cm}^2$",
+    "$32\\,\\text{cm}^2$",
+    "$34\\,\\text{cm}^2$",
+    "$36\\,\\text{cm}^2$"
+   ],
+   "imgs": [
+    "q7"
+   ],
+   "imgW": 34
+  },
+  {
+   "n": 8,
+   "pt": "3",
+   "type": "객",
+   "ans": "①",
+   "unit": "사각형의 성질",
+   "sub": "직사각형의 대각선",
+   "lv": 1,
+   "q": "그림의 직사각형 ABCD에서 $\\angle\\text{OCD}=53^\\circ$일 때, $\\angle$ADO의 크기는?",
+   "ch": [
+    "$37^\\circ$",
+    "$38^\\circ$",
+    "$39^\\circ$",
+    "$40^\\circ$",
+    "$41^\\circ$"
+   ],
+   "imgs": [
+    "q8"
+   ],
+   "imgW": 28
+  },
+  {
+   "n": 9,
+   "pt": "5",
+   "type": "객",
+   "ans": "②",
+   "unit": "사각형의 성질",
+   "sub": "직사각형 안의 마름모",
+   "lv": 4,
+   "q": "그림의 직사각형 ABCD에서 $\\angle$ABD, $\\angle$CDB의 이등분선이 $\\overline{\\text{AD}}$, $\\overline{\\text{BC}}$와 만나는 점을 각각 E, F라고 하자. $\\overline{\\text{DC}}$$=5\\,\\text{cm}$, $\\overline{\\text{FC}}$$=A\\,\\text{cm}$이고 $\\square$EBFD가 마름모가 될 때, $\\square$EBFD의 넓이는?",
+   "ch": [
+    "$5A\\,\\text{cm}^2$",
+    "$10A\\,\\text{cm}^2$",
+    "$15A\\,\\text{cm}^2$",
+    "$20A\\,\\text{cm}^2$",
+    "$25A\\,\\text{cm}^2$"
+   ],
+   "imgs": [
+    "q9"
+   ],
+   "imgW": 28
+  },
+  {
+   "n": 10,
+   "pt": "4",
+   "type": "객",
+   "ans": "⑤",
+   "unit": "사각형의 성질",
+   "sub": "등변사다리꼴의 각",
+   "lv": 2,
+   "q": "그림과 같이 $\\overline{\\text{AD}}$$\\,/\\!/\\,$$\\overline{\\text{BC}}$인 등변사다리꼴 ABCD에서 $\\overline{\\text{AD}}$$=$$\\overline{\\text{CD}}$이고 $\\angle\\text{ACB}=24^\\circ$일 때, $\\angle$BAC의 크기는? (단, $0^\\circ\\lt\\angle\\text{BAC}\\lt180^\\circ$)",
+   "ch": [
+    "$100^\\circ$",
+    "$102^\\circ$",
+    "$104^\\circ$",
+    "$106^\\circ$",
+    "$108^\\circ$"
+   ],
+   "imgs": [
+    "q10"
+   ],
+   "imgW": 34
+  },
+  {
+   "n": 11,
+   "pt": "3",
+   "type": "객",
+   "ans": "⑤",
+   "unit": "사각형의 성질",
+   "sub": "여러 가지 사각형의 대각선",
+   "lv": 1,
+   "q": "다음 중에서 두 대각선이 서로 다른 것을 이등분하지 <b>않는</b> 것은?",
+   "ch": [
+    "마름모",
+    "정사각형",
+    "직사각형",
+    "평행사변형",
+    "등변사다리꼴"
+   ]
+  },
+  {
+   "n": 12,
+   "pt": "3",
+   "type": "객",
+   "ans": "③",
+   "unit": "사각형의 성질",
+   "sub": "평행선과 넓이",
+   "lv": 1,
+   "q": "그림에서 $l\\,/\\!/\\,m$이고 $\\triangle$ABC의 넓이가 $24\\,\\text{cm}^2$일 때, $\\triangle$DBC의 넓이는?",
+   "ch": [
+    "$20\\,\\text{cm}^2$",
+    "$22\\,\\text{cm}^2$",
+    "$24\\,\\text{cm}^2$",
+    "$26\\,\\text{cm}^2$",
+    "$28\\,\\text{cm}^2$"
+   ],
+   "imgs": [
+    "q12"
+   ],
+   "imgW": 28
+  },
+  {
+   "n": 13,
+   "pt": "3",
+   "type": "객",
+   "ans": "①",
+   "unit": "도형의 닮음",
+   "sub": "항상 닮은 도형",
+   "lv": 1,
+   "q": "다음 중 두 도형이 항상 서로 닮은 도형인 것은?",
+   "ch": [
+    "두 원",
+    "두 직사각형",
+    "두 직각삼각형",
+    "두 등변사다리꼴",
+    "두 이등변삼각형"
+   ]
+  },
+  {
+   "n": 14,
+   "pt": "4",
+   "type": "객",
+   "ans": "④",
+   "unit": "평행선과 선분의 길이의 비",
+   "sub": "모래시계 꼴(BC∥DE)",
+   "lv": 2,
+   "q": "그림에서 $\\overline{\\text{BC}}$$\\,/\\!/\\,$$\\overline{\\text{DE}}$일 때, $x+y$의 값은?",
+   "ch": [
+    "$8.5$",
+    "$9$",
+    "$9.5$",
+    "$10$",
+    "$11$"
+   ],
+   "imgs": [
+    "q14"
+   ],
+   "imgW": 26
+  },
+  {
+   "n": 15,
+   "pt": "4",
+   "type": "객",
+   "ans": "④",
+   "unit": "평행선과 선분의 길이의 비",
+   "sub": "평행선 사이의 선분의 길이의 비",
+   "lv": 2,
+   "q": "그림에서 $l\\,/\\!/\\,m\\,/\\!/\\,n$일 때, $x+y$의 값은?",
+   "ch": [
+    "$20$",
+    "$20.5$",
+    "$21$",
+    "$21.5$",
+    "$22$"
+   ],
+   "imgs": [
+    "q15"
+   ],
+   "imgW": 34
+  },
+  {
+   "n": 16,
+   "pt": "3",
+   "type": "객",
+   "ans": "②",
+   "unit": "평행선과 선분의 길이의 비",
+   "sub": "삼각형의 중점연결정리",
+   "lv": 1,
+   "q": "그림에서 $\\triangle$ABC에서 세 변 AB, BC, CA의 중점을 각각 D, E, F라고 할 때, $\\overline{\\text{DE}}$$+$$\\overline{\\text{EF}}$$-$$\\overline{\\text{FD}}$의 값은?",
+   "ch": [
+    "$3\\,\\text{cm}$",
+    "$5\\,\\text{cm}$",
+    "$7\\,\\text{cm}$",
+    "$11\\,\\text{cm}$",
+    "$15\\,\\text{cm}$"
+   ],
+   "imgs": [
+    "q16"
+   ],
+   "imgW": 30
+  },
+  {
+   "n": 17,
+   "pt": "4",
+   "type": "객",
+   "ans": "⑤",
+   "unit": "도형의 닮음",
+   "sub": "사다리꼴에서 닮음과 넓이의 비",
+   "lv": 2,
+   "q": "그림과 같이 $\\overline{\\text{AD}}$$\\,/\\!/\\,$$\\overline{\\text{BC}}$인 사다리꼴 ABCD에서 $\\triangle$ODA의 넓이가 $20\\,\\text{cm}^2$일 때, $\\triangle$OBC의 넓이는?",
+   "ch": [
+    "$100\\,\\text{cm}^2$",
+    "$105\\,\\text{cm}^2$",
+    "$115\\,\\text{cm}^2$",
+    "$120\\,\\text{cm}^2$",
+    "$125\\,\\text{cm}^2$"
+   ],
+   "imgs": [
+    "q17"
+   ],
+   "imgW": 26
+  },
+  {
+   "n": 18,
+   "pt": "3",
+   "type": "객",
+   "ans": "②",
+   "unit": "도형의 닮음",
+   "sub": "닮은 입체도형의 부피의 비",
+   "lv": 1,
+   "q": "그림에서 서로 닮은 두 삼각기둥 A와 B의 닮음비가 $2:3$이다. 삼각기둥 B의 부피가 $81\\,\\text{cm}^3$일 때, 삼각기둥 A의 부피는?",
+   "ch": [
+    "$8\\,\\text{cm}^3$",
+    "$24\\,\\text{cm}^3$",
+    "$32\\,\\text{cm}^3$",
+    "$40\\,\\text{cm}^3$",
+    "$48\\,\\text{cm}^3$"
+   ],
+   "imgs": [
+    "q18"
+   ],
+   "imgW": 26
+  },
+  {
+   "n": 19,
+   "pt": "10",
+   "type": "서",
+   "ans": "$15\\,\\text{cm}^2$",
+   "unit": "사각형의 성질",
+   "sub": "겹쳐진 두 정사각형(ASA 합동)",
+   "lv": 2,
+   "q": "<b>[서답형 1]</b> 그림과 같이 정사각형 ABCD의 두 대각선의 교점을 O라고 하자. 정사각형 ABCD의 넓이가 $60\\,\\text{cm}^2$일 때, 정사각형 ABCD와 정사각형 OEFG가 겹쳐진 부분의 넓이를 구하는 과정을 상세히 서술하시오. (단, $\\overline{\\text{OD}}$$\\lt$$\\overline{\\text{OG}}$, 삼각형의 합동조건을 반드시 사용할 것.)",
+   "imgs": [
+    "s1"
+   ],
+   "imgW": 34
+  },
+  {
+   "n": 20,
+   "pt": "8",
+   "type": "서",
+   "ans": "$16\\,\\text{cm}$",
+   "unit": "도형의 닮음",
+   "sub": "직각삼각형의 닮음",
+   "lv": 2,
+   "q": "<b>[서답형 2]</b> 그림과 같이 $\\angle\\text{B}=90^\\circ$인 직각삼각형 ABC에서 $\\overline{\\text{BH}}$$\\perp$$\\overline{\\text{AC}}$일 때, $\\overline{\\text{CH}}$의 길이를 구하는 과정을 상세히 서술하시오. (단, 삼각형의 닮음조건을 반드시 사용할 것.)",
+   "imgs": [
+    "s2"
+   ],
+   "imgW": 28
+  },
+  {
+   "n": 21,
+   "pt": "7",
+   "type": "서",
+   "ans": "AA 닮음",
+   "unit": "도형의 닮음",
+   "sub": "평행선과 AA 닮음",
+   "lv": 1,
+   "q": "<b>[서답형 3]</b> 그림의 $\\triangle$ABC에서 $\\overline{\\text{BC}}$$\\,/\\!/\\,$$\\overline{\\text{DE}}$일 때, $\\triangle$ABC ∽ $\\triangle$ADE임을 설명하는 과정을 상세히 서술하시오. (단, 삼각형의 닮음조건을 반드시 사용할 것.)",
+   "imgs": [
+    "s3"
+   ],
+   "imgW": 28
+  },
+  {
+   "n": 22,
+   "pt": "10",
+   "type": "서",
+   "ans": "$20\\,\\text{cm}^2$",
+   "unit": "평행선과 선분의 길이의 비",
+   "sub": "무게중심과 넓이",
+   "lv": 1,
+   "q": "<b>[서답형 4]</b> 그림에서 점 G가 $\\triangle$ABC의 무게중심이고 $\\triangle$ABC의 넓이가 $60\\,\\text{cm}^2$일 때, $\\triangle$GAB의 넓이를 구하는 과정을 상세히 서술하시오. (단, $\\triangle$GAB의 넓이를 구하는 과정에서 사용된 선분의 길이 비를 반드시 사용할 것.)",
+   "imgs": [
+    "s4"
+   ],
+   "imgW": 24
+  }
+ ]
+}

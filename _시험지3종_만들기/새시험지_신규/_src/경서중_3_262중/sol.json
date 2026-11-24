@@ -1,0 +1,23 @@
+{
+"1":{"tp":"삼각비의 값","key":"피타고라스로 빗변을 구한 뒤 각 삼각비 계산","sol":["$\\overline{AB}=\\sqrt{2^2+(2\\sqrt3)^2}=4$","$\\sin B=\\dfrac{2\\sqrt3}{4}=\\dfrac{\\sqrt3}{2}$, $\\tan A=\\dfrac{2}{2\\sqrt3}=\\dfrac{1}{\\sqrt3}$","$\\sin B\\div\\tan A=\\dfrac{\\sqrt3}{2}\\times\\sqrt3=\\dfrac{3}{2}$"],"check":"ok"},
+"2":{"tp":"닮음과 삼각비","key":"$\\angle DAH=\\angle ABD$","sol":["$\\angle DAH$와 $\\angle ABD$는 모두 $90^\\circ-\\angle ADB$이므로 같다","$\\overline{BD}=\\sqrt{6^2+8^2}=10$","$\\sin x=\\sin(\\angle ABD)=\\dfrac{\\overline{AD}}{\\overline{BD}}=\\dfrac{6}{10}=\\dfrac{3}{5}$"],"check":"ok"},
+"3":{"tp":"삼각비로 변의 길이","key":"$\\cos B=\\dfrac{\\overline{BC}}{\\overline{AB}}$","sol":["$\\cos B=\\sqrt{1-\\dfrac{7}{16}}=\\dfrac{3}{4}$","$\\overline{AB}=\\dfrac{6}{3/4}=8$"],"check":"원본에 그림 없음(학생이 그린 그림은 제외)"},
+"4":{"tp":"특수각의 삼각비 계산","key":"각 값을 직접 계산해 비교","sol":["① $\\dfrac{1}{\\sqrt3}\\div\\sqrt3=\\dfrac13$","② $\\dfrac{\\sqrt2}{\\sqrt3\\times\\sqrt2}=\\dfrac{\\sqrt3}{3}$","③ $\\dfrac{\\sqrt3}{2}\\times\\dfrac12\\times\\sqrt3=\\dfrac34$","④ $2\\times1\\times\\dfrac{\\sqrt3}{2}=\\sqrt3$","⑤ $0\\times1-1\\times0=0$ → 가장 작다"],"check":"ok"},
+"5":{"tp":"사분원과 삼각비","key":"$\\sin50^\\circ=\\cos40^\\circ$","sol":["$\\angle OAB=90^\\circ-40^\\circ=50^\\circ$","$\\triangle AOB$에서 $\\sin50^\\circ=\\dfrac{\\overline{OB}}{\\overline{OA}}=\\overline{OB}$"],"check":"ok"},
+"6":{"tp":"삼각비의 표","key":"$\\overline{AC}=10\\sin48^\\circ$","sol":["$\\angle A=90^\\circ$이므로 $\\overline{AC}=\\overline{BC}\\sin48^\\circ$","$=10\\times0.7431=7.431$"],"check":"ok"},
+"7":{"tp":"삼각비의 활용(높이)","key":"높이 차 $=3-3\\cos60^\\circ$","sol":["B에서 OA에 내린 수선까지 O로부터의 거리 $=3\\cos60^\\circ=1.5$","높이 차 $=3-1.5=1.5$ (m)"],"check":"ok"},
+"8":{"tp":"내려다본 각과 거리","key":"내려다본 각 = $\\angle ABC$ (엇각)","sol":["$\\tan27^\\circ=\\dfrac{\\overline{AC}}{\\overline{BC}}=\\dfrac{10}{\\overline{BC}}$","$\\overline{BC}=\\dfrac{10}{0.5}=20$ (m)"],"check":"원본 사진이 어두워 그림을 다시 그림"},
+"9":{"tp":"수선으로 나누어 길이 구하기","key":"$\\overline{AH}=h$로 두고 $\\overline{BH}+\\overline{HC}=6$","sol":["$\\overline{HC}=h$, $\\overline{BH}=\\sqrt3 h$","$(\\sqrt3+1)h=6$ → $h=3(\\sqrt3-1)$","$\\overline{BH}=\\sqrt3\\times3(\\sqrt3-1)=9-3\\sqrt3$"],"check":"ok"},
+"10":{"tp":"원에 내접하는 정다각형의 넓이","key":"중심각 $30^\\circ$인 이등변삼각형 $12$개","sol":["한 삼각형 넓이 $=\\dfrac12\\times\\sqrt3\\times\\sqrt3\\times\\sin30^\\circ=\\dfrac34$","전체 $=12\\times\\dfrac34=9$ (cm$^2$)"],"check":"원본 그림이 어두워 다시 그림"},
+"11":{"tp":"두 변과 끼인각으로 넓이","key":"$S=\\dfrac12ab\\sin A$","sol":["$\\triangle ABC=\\dfrac12\\overline{AB}\\cdot\\overline{AC}\\sin A$","$\\triangle ADE=\\dfrac12\\cdot\\dfrac32\\overline{AB}\\cdot\\dfrac12\\overline{AC}\\sin A$","비 $=\\dfrac32\\times\\dfrac12=\\dfrac34$"],"check":"원본 그림이 어두워 다시 그림"},
+"12":{"tp":"평균으로 미지의 값 → 중앙값·최빈값","key":"합 $=78\\times8$","sol":["$544+x=624$ → $x=80$","크기순: $66,70,70,80,80,80,83,95$","중앙값 $=\\dfrac{80+80}{2}=80$, 최빈값 $=80$"],"check":"ok"},
+"13":{"tp":"자료 추가 후 중앙값","key":"4번째 값을 먼저 구한다","sol":["$\\dfrac{a_4+85}{2}=83.5$ → $a_4=82$","$81\\lt82$이므로 $81$은 $a_4$ 앞에 들어간다","$9$개 중 $5$번째 값 $=82$점"],"check":"ok"},
+"14":{"tp":"이차함수 그래프의 성질","key":"$y=-\\dfrac32(x-2)^2+6$","sol":["꼭짓점 $(2,6)$, 위로 볼록, $y$절편 $0$, $x$절편 $0,4$","ㄱ: $x\\lt0$이면 $y\\lt0$ → 제2사분면을 지나지 않음(거짓)","ㄴ 거짓, ㄷ 거짓, ㄹ·ㅁ·ㅂ 참"],"check":"ok"},
+"15":{"tp":"증가 구간","key":"꼭짓점의 $x$좌표 기준","sol":["$y=-3(x-2)^2+4$, 위로 볼록","축 $x=2$의 왼쪽에서 증가 → $x\\lt2$"],"check":"ok"},
+"16":{"tp":"x절편·꼭짓점과 삼각형 넓이","key":"인수분해와 완전제곱식","sol":["$y=-(x-3)(x+1)$ → A$(-1,0)$, B$(3,0)$","$y=-(x-1)^2+4$ → C$(1,4)$","넓이 $=\\dfrac12\\times4\\times4=8$"],"check":"ok"},
+"17":{"tp":"평행이동","key":"꼭짓점을 옮긴다","sol":["$y=-2(x+1)^2+1$, 꼭짓점 $(-1,1)$","이동 후 꼭짓점 $(0,-2)$ → $y=-2x^2-2$","$a=0$, $b=-2$ → $a+b=-2$"],"check":"ok"},
+"18":{"tp":"x절편으로 식 세우기","key":"$y=a(x+2)(x-3)$","sol":["$y$절편: $-6a=12$ → $a=-2$","$y=-2(x^2-x-6)=-2x^2+2x+12$"],"check":"ok"},
+"19":{"tp":"직선과 삼각비","key":"절편으로 직각삼각형 AOB를 만든다","sol":["$y=2x+6$: A$(-3,0)$, B$(0,6)$","(1) $\\overline{OA}=3$, $\\overline{OB}=6$, $\\overline{AB}=\\sqrt{9+36}=3\\sqrt5$","(2) $\\sin a=\\dfrac{6}{3\\sqrt5}=\\dfrac{2\\sqrt5}{5}$, $\\cos a=\\dfrac{3}{3\\sqrt5}=\\dfrac{\\sqrt5}{5}$, $\\tan a=\\dfrac63=2$"],"check":"ok"},
+"20":{"tp":"줄기와 잎 그림과 대푯값","key":"극단값이 있으면 중앙값","sol":["자료: $1,1,2,2,3,5,7,10,11,58$","(1) 평균 $=\\dfrac{100}{10}=10$(권), 중앙값 $=\\dfrac{3+5}{2}=4$(권)","(2) 중앙값. $58$권이라는 극단적인 값이 있어 평균이 대부분의 자료보다 크게 나오므로 중앙값이 자료를 더 잘 대표한다"],"check":"ok"},
+"21":{"tp":"조건에 맞는 이차함수의 식","key":"꼭짓점형 / 대입해 연립","sol":["(1) $y=a(x+2)^2-1$에 $(0,-5)$ 대입: $4a-1=-5$, $a=-1$","$y=-(x+2)^2-1=-x^2-4x-5$","(2) $y=ax^2+bx-3$: $(2,-3)$ → $4a+2b=0$, $(-1,0)$ → $a-b=3$","$a=1$, $b=-2$ → $y=x^2-2x-3$"],"check":"ok"}
+}

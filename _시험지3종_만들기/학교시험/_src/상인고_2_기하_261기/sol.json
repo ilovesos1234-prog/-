@@ -1,0 +1,197 @@
+{
+ "1": {
+  "tp": "대칭인 점",
+  "key": "xy평면 대칭: z 부호, z축 대칭: x, y 부호",
+  "sol": [
+   "$(a,b,c)=(5,-3,-2)$",
+   "$(d,e,f)=(-5,3,2)$",
+   "합 $=0$"
+  ],
+  "check": "ok"
+ },
+ "2": {
+  "tp": "구 위의 점과 원점 거리",
+  "key": "중심까지 거리 ± 반지름",
+  "sol": [
+   "중심 $(2,-4,4)$까지 거리 $\\sqrt{4+16+16}=6$, 반지름 $5$",
+   "최댓값 $11$, 최솟값 $1$",
+   "합 $12$"
+  ],
+  "check": "ok"
+ },
+ "3": {
+  "tp": "무게중심",
+  "key": "좌표의 평균",
+  "sol": [
+   "$\\dfrac{3+a}{3}=2,\\ \\dfrac{1+b}{3}=-2,\\ \\dfrac{10+c}{3}=3$",
+   "$a=3,\\ b=-7,\\ c=-1$",
+   "$a+b+c=-5$"
+  ],
+  "check": "ok"
+ },
+ "4": {
+  "tp": "공간벡터의 수직",
+  "key": "내적 0",
+  "sol": [
+   "$-x+4(x+1)-6x=0$",
+   "$-3x+4=0$ → $x=\\dfrac43$"
+  ],
+  "check": "ok"
+ },
+ "5": {
+  "tp": "벡터의 합으로 거리",
+  "key": "수직인 막대 방향으로 좌표화",
+  "sol": [
+   "윗줄 고리를 원점, $l$ 방향을 $x$축, $m$ 방향을 $y$축으로",
+   "로켓 $(-6,0,-7)$",
+   "$l$의 끝 $(2,0,0)$ → $m$의 고리 $(2,0,-2)$ → 행성 $(2,6,-7)$",
+   "거리 $=\\sqrt{8^2+6^2}=10$"
+  ],
+  "check": "ok"
+ },
+ "6": {
+  "tp": "공간벡터의 크기",
+  "key": "서로 수직인 세 벡터",
+  "sol": [
+   "$\\vec a,\\vec b,\\vec c$는 서로 수직",
+   "$|\\vec a-\\vec b-\\vec c|^2=16+9+4=29$",
+   "$\\sqrt{29}$"
+  ],
+  "check": "ok"
+ },
+ "7": {
+  "tp": "두 평면이 이루는 각",
+  "key": "법선벡터의 각",
+  "sol": [
+   "$\\vec n_1=(2,2,-1)$, $\\vec n_2=(1,4,1)$",
+   "$\\cos\\theta=\\dfrac{|2+8-1|}{3\\cdot3\\sqrt2}=\\dfrac{1}{\\sqrt2}$",
+   "$\\theta=\\dfrac{\\pi}{4}$"
+  ],
+  "check": "ok"
+ },
+ "8": {
+  "tp": "직선과 좌표평면의 교점",
+  "key": "x=0",
+  "sol": [
+   "$(x,y,z)=(2-2t,\\,3+3t,\\,1-4t)$",
+   "$x=0$ → $t=1$",
+   "$y=6$"
+  ],
+  "check": "ok"
+ },
+ "9": {
+  "tp": "벡터식과 넓이",
+  "key": "AP를 BC 위 내분점으로",
+  "sol": [
+   "$\\overrightarrow{\\text{AP}}=\\dfrac{7}{12}\\cdot\\dfrac{3\\overrightarrow{\\text{AB}}+4\\overrightarrow{\\text{AC}}}{7}$",
+   "Q는 BC를 $4:3$으로 내분, $\\overrightarrow{\\text{AP}}=\\dfrac{7}{12}\\overrightarrow{\\text{AQ}}$",
+   "△ACQ $=36\\cdot\\dfrac37$, △ACP $=\\dfrac{7}{12}\\cdot\\dfrac{108}{7}=9$"
+  ],
+  "check": "ok"
+ },
+ "10": {
+  "tp": "점과 직선 사이 거리",
+  "key": "수선의 발",
+  "sol": [
+   "$l: (3+t,\\,2-3t,\\,1-t)$, 방향 $(1,-3,-1)$",
+   "$\\overrightarrow{\\text{AH}}=(-3+t,1-3t,5-t)$와 방향벡터 내적 $11t-11=0$ → $t=1$",
+   "$\\overrightarrow{\\text{AH}}=(-2,-2,4)$, 거리 $2\\sqrt6$"
+  ],
+  "check": "ok"
+ },
+ "11": {
+  "tp": "교선과 평면이 이루는 각",
+  "key": "방향벡터 = 법선벡터의 외적",
+  "sol": [
+   "교선 방향 $(2,1,-1)\\times(1,2,-1)=(1,1,3)$",
+   "평면 법선 $(3,-1,1)$: $\\sin\\varphi=\\dfrac{|3-1+3|}{\\sqrt{11}\\sqrt{11}}=\\dfrac{5}{11}$",
+   "$\\cos\\varphi=\\dfrac{4\\sqrt6}{11}$",
+   "$\\overline{\\text{AB}}=8\\sqrt6\\cdot\\dfrac{11}{4\\sqrt6}=22$"
+  ],
+  "check": "ok"
+ },
+ "12": {
+  "tp": "구와 직선이 만나는 현",
+  "key": "중심과 직선 사이 거리",
+  "sol": [
+   "직선 $(3+t,\\,3-t,\\,-2-4t)$, 방향 $(1,-1,-4)$",
+   "중심 $(1,2,0)$과의 거리 $=\\dfrac{|(-2,-1,2)\\times(1,-1,-4)|}{3\\sqrt2}=\\dfrac{9}{3\\sqrt2}=\\dfrac{3}{\\sqrt2}$",
+   "현의 길이 $2\\sqrt{9-\\dfrac92}=3\\sqrt2$"
+  ],
+  "check": "ok"
+ },
+ "13": {
+  "tp": "사다리꼴과 벡터",
+  "key": "AD ∥ BC, 계수 비교",
+  "sol": [
+   "$t(\\overrightarrow{\\text{AB}}+\\overrightarrow{\\text{BC}})=3\\overrightarrow{\\text{AB}}+4k\\overrightarrow{\\text{BC}}$",
+   "$t=3$, $4k=3$ → $k=\\dfrac34$",
+   "$\\overline{\\text{AD}}=\\dfrac34\\overline{\\text{BC}}$인 사다리꼴",
+   "넓이 $=16\\cdot\\dfrac{1+3/4}{1}=28$"
+  ],
+  "check": "ok"
+ },
+ "14": {
+  "tp": "벡터 조건의 자취",
+  "key": "(나)는 직선 BX가 원 |Y|=4와 만남",
+  "sol": [
+   "$\\overrightarrow{\\text{OB}}+k\\overrightarrow{\\text{BX}}$의 종점은 직선 BX 위 → 직선 BX가 원 $x^2+y^2=16$과 만나야 함",
+   "원 $|\\overrightarrow{\\text{AX}}|=3$에서 $x$좌표 최소 점 $(6,0)$: 직선 $x+2y-6=0$과 원점 거리 $\\dfrac{6}{\\sqrt5}\\lt4$ → 조건 만족, P$(6,0)$",
+   "$\\overrightarrow{\\text{OP}}=(6,0)$, $\\overrightarrow{\\text{BP}}=(-2,1)$",
+   "$\\cos\\theta=\\dfrac{-12}{6\\sqrt5}=-\\dfrac{2\\sqrt5}{5}$"
+  ],
+  "check": "ok"
+ },
+ "15": {
+  "tp": "벡터의 크기",
+  "key": "내적 구하기",
+  "sol": [
+   "$25=4+16+2\\vec a\\cdot\\vec b$ → $\\vec a\\cdot\\vec b=\\dfrac52$",
+   "$|\\vec a-2\\vec b|^2=4+64-4\\cdot\\dfrac52=58$",
+   "$\\sqrt{58}$"
+  ],
+  "check": "ok"
+ },
+ "16": {
+  "tp": "두 직선의 교점",
+  "key": "매개변수로 연립",
+  "sol": [
+   "$(2t,\\,5-2t,\\,t)$, $(s-1,\\,2s-3,\\,2s-5)$",
+   "$2t=s-1,\\ t=2s-5$ → $s=3,\\ t=1$",
+   "$y$: $5-2=3=2\\cdot3-3$ 확인",
+   "교점 $(2,3,1)$"
+  ],
+  "check": "ok"
+ },
+ "17": {
+  "tp": "거리의 합의 최소",
+  "key": "xy평면에 대칭",
+  "sol": [
+   "B의 대칭점 B$'(-2,4,-2)$",
+   "최솟값 $\\overline{\\text{AB'}}=\\sqrt{25+4+36}=\\sqrt{65}$",
+   "P는 AB$'$을 $4:2=2:1$로 내분: $\\left(-\\dfrac13,\\dfrac{10}{3},0\\right)$"
+  ],
+  "check": "ok"
+ },
+ "18": {
+  "tp": "도형의 내적",
+  "key": "좌표 잡기",
+  "sol": [
+   "B$(0,0)$, C$(2,0)$, A$(1,\\sqrt3)$, D$(0,-2)$, E$(2,-2)$",
+   "$\\overrightarrow{\\text{AD}}=(-1,-2-\\sqrt3)$, $\\overrightarrow{\\text{AE}}=(1,-2-\\sqrt3)$",
+   "내적 $=-1+(2+\\sqrt3)^2=6+4\\sqrt3$"
+  ],
+  "check": "ok"
+ },
+ "19": {
+  "tp": "정사영 넓이의 최댓값",
+  "key": "단위법선벡터 성분 = 정사영 넓이비",
+  "sol": [
+   "단위법선 $\\vec n$의 성분 크기 $\\left(\\dfrac{9}{21},\\dfrac{6}{21},\\dfrac{18}{21}\\right)$",
+   "평면의 단위법선 $\\dfrac13(2,2,1)$",
+   "$\\cos\\theta$ 최대 $=\\dfrac{18+12+18}{63}=\\dfrac{16}{21}$",
+   "최댓값 $21\\cdot\\dfrac{16}{21}=16$"
+  ],
+  "check": "ok"
+ }
+}

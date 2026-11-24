@@ -1,0 +1,176 @@
+{
+ "1": {
+  "tp": "내적의 정의",
+  "key": "|a||b|cos θ",
+  "sol": [
+   "$\\vec a\\cdot\\vec b=3\\cdot4\\cos30^\\circ=6\\sqrt3$"
+  ],
+  "check": "ok"
+ },
+ "2": {
+  "tp": "벡터의 상등",
+  "key": "성분 비교",
+  "sol": [
+   "$1+l=2$ → $l=1$",
+   "$k-l=-k+1$ → $k=1$ ($l+2=1+2l$도 성립)",
+   "$k+l=2$"
+  ],
+  "check": "ok"
+ },
+ "3": {
+  "tp": "벡터 방정식",
+  "key": "x에 대해 정리",
+  "sol": [
+   "$2\\vec x+6\\vec a=3\\vec b-\\vec x$",
+   "$3\\vec x=-6\\vec a+3\\vec b$ → $\\vec x=-2\\vec a+\\vec b$"
+  ],
+  "check": "ok"
+ },
+ "4": {
+  "tp": "벡터식 정리",
+  "key": "b = a + c",
+  "sol": [
+   "$\\vec b=\\vec a+\\vec c$",
+   "$3(\\vec a-\\vec b)+2\\vec c=-3\\vec c+2\\vec c=-\\vec c$",
+   "크기 $1$"
+  ],
+  "check": "ok"
+ },
+ "5": {
+  "tp": "직육면체 대각선 벡터",
+  "key": "세 모서리의 제곱합",
+  "sol": [
+   "$|\\overrightarrow{\\text{DF}}|=\\sqrt{4^2+2^2+3^2}=\\sqrt{29}$"
+  ],
+  "check": "ok"
+ },
+ "6": {
+  "tp": "벡터가 같을 조건으로 점 찾기",
+  "key": "좌표 잡기",
+  "sol": [
+   "B$(0,0)$, A$(0,1)$, C$(2,0)$, D$(2,1)$",
+   "P $=$ D $+\\overrightarrow{\\text{AC}}=(4,0)$",
+   "Q $=$ A $-\\overrightarrow{\\text{DC}}=(0,2)$",
+   "넓이 $=\\tfrac12\\cdot4\\cdot2=4$"
+  ],
+  "check": "ok"
+ },
+ "7": {
+  "tp": "두 직선의 수직",
+  "key": "방향벡터 내적 0",
+  "sol": [
+   "$\\vec u_1=(-2,\\sqrt5,3)$, $\\vec u_2=(2,-\\sqrt5,k)$",
+   "$-4-5+3k=0$ → $k=3$"
+  ],
+  "check": "l₂의 y항이 (−y+1)/√5이므로 방향벡터의 y성분은 −√5."
+ },
+ "8": {
+  "tp": "두 벡터가 이루는 각",
+  "key": "크기의 제곱에서 내적",
+  "sol": [
+   "$7=4+1-2\\vec a\\cdot\\vec b$ → $\\vec a\\cdot\\vec b=-1$",
+   "$\\cos\\theta=\\dfrac{-1}{2}$ → $120^\\circ$"
+  ],
+  "check": "ok"
+ },
+ "9": {
+  "tp": "구의 현과 삼각형 넓이",
+  "key": "중심에서 현까지 거리",
+  "sol": [
+   "$(x+2)^2+(y-3)^2+(z+5)^2=36$, 반지름 $6$",
+   "중심에서 AB까지 거리 $\\sqrt{36-16}=2\\sqrt5$",
+   "넓이 $=\\tfrac12\\cdot8\\cdot2\\sqrt5=8\\sqrt5$"
+  ],
+  "check": "ok"
+ },
+ "10": {
+  "tp": "벡터 크기의 최솟값",
+  "key": "이차식의 최솟값",
+  "sol": [
+   "$t\\vec a-\\vec b=(t+1,t+3)$",
+   "$|t\\vec a-\\vec b|^2=2t^2+8t+10=2(t+2)^2+2$",
+   "최솟값 $\\sqrt2$"
+  ],
+  "check": "ok"
+ },
+ "11": {
+  "tp": "벡터의 차의 크기",
+  "key": "좌표 잡기",
+  "sol": [
+   "한 변 $s$: $\\overrightarrow{\\text{DB}}=(-s,-s)$, $\\overrightarrow{\\text{MC}}=\\left(0,-\\dfrac s2\\right)$",
+   "$\\overrightarrow{\\text{DB}}-\\overrightarrow{\\text{MC}}=\\left(-s,-\\dfrac s2\\right)$, 크기 $\\dfrac{\\sqrt5}{2}s=3\\sqrt5$",
+   "$s=6$, 넓이 $36$"
+  ],
+  "check": "ok"
+ },
+ "12": {
+  "tp": "평행 조건",
+  "key": "성분의 비",
+  "sol": [
+   "$\\vec a-\\vec b=(1,2)$, $\\vec a+m\\vec c=(3m-1,\\,m+3)$",
+   "$2(3m-1)=m+3$ → $m=1$"
+  ],
+  "check": "ok"
+ },
+ "13": {
+  "tp": "중점과 벡터",
+  "key": "AD + BC = 2MN",
+  "sol": [
+   "$\\overrightarrow{\\text{MN}}=\\overrightarrow{\\text{MA}}+\\overrightarrow{\\text{AD}}+\\overrightarrow{\\text{DN}}=\\overrightarrow{\\text{MB}}+\\overrightarrow{\\text{BC}}+\\overrightarrow{\\text{CN}}$",
+   "더하면 $2\\overrightarrow{\\text{MN}}=\\overrightarrow{\\text{AD}}+\\overrightarrow{\\text{BC}}$",
+   "$|\\overrightarrow{\\text{MN}}|=4$"
+  ],
+  "check": "ok"
+ },
+ "14": {
+  "tp": "두 직선이 이루는 각",
+  "key": "방향벡터의 각",
+  "sol": [
+   "$\\vec u_1=(1,2,3)$, $\\vec u_2=(2,-3,-1)$",
+   "$\\cos\\theta=\\dfrac{|2-6-3|}{\\sqrt{14}\\sqrt{14}}=\\dfrac12$",
+   "$\\theta=60^\\circ$"
+  ],
+  "check": "ok"
+ },
+ "15": {
+  "tp": "대각선 위의 점과 벡터",
+  "key": "P는 OD를 3:1로 내분",
+  "sol": [
+   "(1) $\\overrightarrow{\\text{AP}}=\\dfrac{1\\cdot\\overrightarrow{\\text{AO}}+3\\overrightarrow{\\text{AD}}}{4}$ → P는 OD를 $3:1$로 내분",
+   "(2) $\\overrightarrow{\\text{AP}}-\\overrightarrow{\\text{AB}}=\\overrightarrow{\\text{BP}}$, $\\overline{\\text{BP}}=\\overline{\\text{BO}}+\\tfrac34\\overline{\\text{OD}}=\\tfrac12\\overline{\\text{BD}}+\\tfrac38\\overline{\\text{BD}}$ → $k=\\dfrac78$",
+   "(3) $\\overline{\\text{BD}}=\\sqrt{96+100}=14$ → $\\dfrac78\\cdot14=\\dfrac{49}{4}$"
+  ],
+  "check": "ok"
+ },
+ "16": {
+  "tp": "두 직선의 각과 정사영 길이",
+  "key": "AH = AB cos θ",
+  "sol": [
+   "$\\vec u_1=(1,1,-1)$, $\\vec u_2=(1,a,2)$: $\\dfrac{|a-1|}{\\sqrt3\\sqrt{a^2+5}}=\\dfrac{\\sqrt{10}}{5}$",
+   "$5(a-1)^2=6(a^2+5)$ → $(a+5)^2=0$, $a=-5$",
+   "교점 $(t,t,-t)$를 $l_2$에 대입: $t+2=\\dfrac{t-4}{-5}$ → $t=-1$, A$(-1,-1,1)$ ($b=1$)",
+   "$\\overline{\\text{AB}}=3\\sqrt3$, $\\overline{\\text{AH}}=3\\sqrt3\\cdot\\dfrac{\\sqrt{10}}{5}=\\dfrac{3\\sqrt{30}}{5}$"
+  ],
+  "check": "ok"
+ },
+ "17": {
+  "tp": "구의 접선과 단면",
+  "key": "AC² = AP² + r²",
+  "sol": [
+   "$(x-4)^2+(y+1)^2+(z-2)^2=21-k$, 중심 C$(4,-1,2)$",
+   "$\\overline{\\text{AC}}^2=36+16+4=56$, $r^2=56-36=20$",
+   "$xy$평면 단면: $20-2^2=16$ → 넓이 $16\\pi$"
+  ],
+  "check": "ok"
+ },
+ "18": {
+  "tp": "선분 위 점의 내적 최솟값",
+  "key": "매개변수 s로 이차식",
+  "sol": [
+   "D$(2,3,0)$, E$(0,2,4)$, P$=(2-2s,\\,3-s,\\,4s)$ $(0\\le s\\le1)$",
+   "$\\overrightarrow{\\text{OP}}\\cdot\\overrightarrow{\\text{AP}}=|\\text{P}|^2-4x_P=21s^2-6s+5$",
+   "$s=\\dfrac17$에서 최솟값 $\\dfrac{3}{7}-\\dfrac67+5=\\dfrac{32}{7}$"
+  ],
+  "check": "ok"
+ }
+}

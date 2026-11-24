@@ -1,0 +1,209 @@
+{
+ "1": {
+  "tp": "닮음의 성질 판단",
+  "key": "대응각은 같고 넓이의 비는 닮음비의 제곱",
+  "sol": [
+   "∠B=∠E=60°, ∠A=180°−60°−45°=75°",
+   "$\\overline{\\text{EF}}=9\\times\\dfrac23=6$",
+   "∠C=∠F이므로 ∠C:∠F=1:1 (④ 거짓)",
+   "$\\triangle\\text{DEF}=\\dfrac12\\times6\\times4=12$, $\\triangle\\text{ABC}=12\\times\\dfrac94=27$"
+  ],
+  "check": "ok"
+ },
+ "2": {
+  "tp": "무게중심",
+  "key": "CG:GN=2:1, M은 BC의 중점",
+  "sol": [
+   "$x=\\dfrac13\\times9=3$, $y=2\\times5=10$",
+   "$x+y=13$"
+  ],
+  "check": "ok"
+ },
+ "3": {
+  "tp": "무게중심과 평행선",
+  "key": "D는 BC의 중점 → F는 EC의 중점",
+  "sol": [
+   "△CBE에서 D가 BC의 중점, DF∥BE → F는 EC의 중점, $\\overline{\\text{DF}}=\\dfrac12\\overline{\\text{BE}}$",
+   "$\\overline{\\text{BE}}=3\\overline{\\text{GE}}=12$ → $\\overline{\\text{DF}}=6\\ne8$ (④ 거짓)",
+   "①: $\\overline{\\text{AF}}:\\overline{\\text{FC}}=3:1$ (참), ③ 참",
+   "②: 두 삼각형 모두 $\\dfrac16\\triangle\\text{ABC}$ (참), ⑤ 참"
+  ],
+  "check": "ok"
+ },
+ "4": {
+  "tp": "직각삼각형의 닮음",
+  "key": "$\\overline{\\text{AB}}^2=\\overline{\\text{BD}}\\times\\overline{\\text{BC}}$",
+  "sol": [
+   "$144=8\\times\\overline{\\text{BC}}$ → $\\overline{\\text{BC}}=18$",
+   "$\\overline{\\text{DC}}=18-8=10\\,(\\text{cm})$"
+  ],
+  "check": "ok"
+ },
+ "5": {
+  "tp": "대각선의 삼등분",
+  "key": "P, Q는 각각 △ABC, △ACD의 무게중심",
+  "sol": [
+   "$\\overline{\\text{MN}}=\\dfrac12\\overline{\\text{BD}}$ → $\\overline{\\text{BD}}=18$",
+   "$\\overline{\\text{BP}}=\\overline{\\text{PQ}}=\\overline{\\text{QD}}$ → $\\overline{\\text{PQ}}=6\\,(\\text{cm})$"
+  ],
+  "check": "ok"
+ },
+ "6": {
+  "tp": "평행선과 세 직선",
+  "key": "l, m, n 사이의 간격의 비 = 18:10 = 9:5",
+  "sol": [
+   "오른쪽 직선에서 $18:10=9:5$",
+   "가운데 직선: $(12+15):x=9:5$ → $x=15$",
+   "교점은 l과 m 사이를 $12:15=4:5$로 나눔 → 왼쪽 직선의 l~m 길이 $18$ ($=10\\times\\dfrac95$)",
+   "$y=18\\times\\dfrac49=8$, $x+y=23$"
+  ],
+  "check": "ok"
+ },
+ "7": {
+  "tp": "평행선과 교점",
+  "key": "F의 높이를 두 닮음으로 표현",
+  "sol": [
+   "△BAC에서 $\\overline{\\text{GF}}/\\!/\\overline{\\text{AC}}$에서 $\\overline{\\text{GF}}=14\\times\\dfrac{\\overline{\\text{BG}}}{35}$",
+   "△DBE에서 $\\overline{\\text{GF}}/\\!/\\overline{\\text{BE}}$이므로 $\\overline{\\text{GF}}=24\\times\\dfrac{\\overline{\\text{DG}}}{30}$",
+   "$\\overline{\\text{BG}}=30-\\overline{\\text{DG}}$이므로 $\\dfrac{14(30-\\overline{\\text{DG}})}{35}=\\dfrac{24\\overline{\\text{DG}}}{30}$ → $\\overline{\\text{DG}}=10$",
+   "$\\overline{\\text{GF}}=24\\times\\dfrac{10}{30}=8\\,(\\text{cm})$"
+  ],
+  "check": "ok"
+ },
+ "8": {
+  "tp": "중점연결과 넓이의 비",
+  "key": "EF=2, FP:PD=EF:DC=1:3",
+  "sol": [
+   "$\\overline{\\text{EF}}=\\dfrac12\\overline{\\text{BD}}=2$, F는 AD의 중점",
+   "$\\triangle\\text{PEF}\\sim\\triangle\\text{PCD}$ → $\\overline{\\text{FP}}:\\overline{\\text{PD}}=1:3$",
+   "$\\triangle\\text{EFD}=4a$, $\\triangle\\text{AEF}=\\triangle\\text{EFD}=4a$ → $\\triangle\\text{ABD}=16a$",
+   "$\\triangle\\text{ABC}=16a\\times\\dfrac{10}{4}=40a$"
+  ],
+  "check": "ok"
+ },
+ "9": {
+  "tp": "사다리꼴 속 대각선",
+  "key": "각 평행선 위에서 두 대각선 사이의 길이",
+  "sol": [
+   "$\\overline{\\text{AD}}=a$라 하면 위에서 $\\dfrac16$ 지점의 $\\overline{\\text{RS}}=a\\times\\dfrac56-12\\times\\dfrac16$",
+   "$\\dfrac{5a}6-2=3$ → $a=6$",
+   "위에서 $\\dfrac46$ 지점: $\\overline{\\text{PQ}}=12\\times\\dfrac46-6\\times\\dfrac26=8-2=6\\,(\\text{cm})$"
+  ],
+  "check": "ok"
+ },
+ "10": {
+  "tp": "외접원의 지름 = 대각선",
+  "key": "대각선 25",
+  "sol": [
+   "$\\overline{\\text{BD}}=\\sqrt{20^2+15^2}=25$",
+   "둘레 $=25\\pi\\,(\\text{cm})$"
+  ],
+  "check": "ok"
+ },
+ "11": {
+  "tp": "유클리드 증명",
+  "key": "$\\square\\text{GFEC}=\\overline{\\text{AC}}^2$",
+  "sol": [
+   "$\\overline{\\text{AC}}=\\sqrt{13^2-12^2}=5$",
+   "$\\square\\text{GFEC}=\\overline{\\text{AC}}^2=25\\,(\\text{cm}^2)$"
+  ],
+  "check": "ok"
+ },
+ "12": {
+  "tp": "빗변에 내린 수선",
+  "key": "AB×h = 30×40",
+  "sol": [
+   "$\\overline{\\text{AB}}=\\sqrt{30^2+40^2}=50$",
+   "$50h=30\\times40$ → $h=24\\,(\\text{km})$"
+  ],
+  "check": "ok"
+ },
+ "13": {
+  "tp": "주사위 경우의 수",
+  "key": "각각 세어 비교",
+  "sol": [
+   "① 2,3,5 → 3 ② 1,3,5 → 3 ③ 2,4,6 → 3",
+   "④ 1,2,3,6 → 4 ⑤ 1,3,5 → 3",
+   "답 ④"
+  ],
+  "check": "ok"
+ },
+ "14": {
+  "tp": "직선의 개수",
+  "key": "지름 위 4점은 한 직선",
+  "sol": [
+   "8개 중 2개를 고르는 경우 $\\dfrac{8\\times7}{2}=28$",
+   "지름 위 4점끼리 $\\dfrac{4\\times3}2=6$을 빼고 1을 더함",
+   "$28-6+1=23$"
+  ],
+  "check": "ok"
+ },
+ "15": {
+  "tp": "한 명만 명중",
+  "key": "(A○,B×)+(A×,B○)",
+  "sol": [
+   "$\\dfrac23\\times\\dfrac14+\\dfrac13\\times\\dfrac34=\\dfrac2{12}+\\dfrac3{12}=\\dfrac5{12}$"
+  ],
+  "check": "ok"
+ },
+ "16": {
+  "tp": "이틀만 연속",
+  "key": "(목,금,×토)+(×목,금,토)",
+  "sol": [
+   "$\\dfrac12\\times\\dfrac14\\times\\dfrac45=\\dfrac1{10}$",
+   "$\\dfrac12\\times\\dfrac14\\times\\dfrac15=\\dfrac1{40}$",
+   "합 $\\dfrac{5}{40}=\\dfrac18$"
+  ],
+  "check": "ok"
+ },
+ "17": {
+  "tp": "양 끝 고정",
+  "key": "부모 자리 바꾸기 × 나머지 3명",
+  "sol": [
+   "$2\\times3\\times2\\times1=12$"
+  ],
+  "check": "ok"
+ },
+ "18": {
+  "tp": "직사각형 속 닮음",
+  "key": "$\\triangle\\text{DOE}\\sim\\triangle\\text{DAB}$ (AA)",
+  "sol": [
+   "$\\overline{\\text{BD}}=\\sqrt{8^2+6^2}=10$, $\\overline{\\text{DO}}=5$",
+   "∠D 공통, ∠DOE=∠DAB=90° → $\\triangle\\text{DOE}\\sim\\triangle\\text{DAB}$ (AA 닮음)",
+   "$\\overline{\\text{DE}}:\\overline{\\text{DB}}=\\overline{\\text{DO}}:\\overline{\\text{DA}}$ → $\\overline{\\text{DE}}=\\dfrac{10\\times5}{8}=\\dfrac{25}4$",
+   "$\\overline{\\text{AE}}=8-\\dfrac{25}4=\\dfrac74\\,(\\text{cm})$"
+  ],
+  "check": "ok"
+ },
+ "19": {
+  "tp": "중점연결정리",
+  "key": "△AMN∽△ABC (SAS, 닮음비 1:2)",
+  "sol": [
+   "(1) $\\overline{\\text{AM}}:\\overline{\\text{AB}}=\\overline{\\text{AN}}:\\overline{\\text{AC}}=1:2$, ∠A 공통 → $\\triangle\\text{AMN}\\sim\\triangle\\text{ABC}$, ∠AMN=∠ABC(동위각) → $\\overline{\\text{MN}}/\\!/\\overline{\\text{BC}}$",
+   "(2) 닮음비 $1:2$이므로 $\\overline{\\text{MN}}=\\dfrac12\\overline{\\text{BC}}$",
+   "(3) $\\overline{\\text{PS}}=\\overline{\\text{QR}}=\\dfrac12\\overline{\\text{BD}}=5$, $\\overline{\\text{PQ}}=\\overline{\\text{SR}}=\\dfrac12\\overline{\\text{AC}}=6$",
+   "둘레 $=\\overline{\\text{AC}}+\\overline{\\text{BD}}=12+10=22\\,(\\text{cm})$"
+  ],
+  "check": "ok"
+ },
+ "20": {
+  "tp": "서로 다른 색",
+  "key": "1 − (같은 색)",
+  "sol": [
+   "같은 색: $\\dfrac{4\\cdot3+3\\cdot2+3\\cdot2}{10\\cdot9}=\\dfrac{24}{90}$",
+   "$1-\\dfrac{24}{90}=\\dfrac{66}{90}=\\dfrac{11}{15}$"
+  ],
+  "check": "ok"
+ },
+ "21": {
+  "tp": "수선 두 개와 닮음",
+  "key": "$\\triangle\\text{BDF}\\sim\\triangle\\text{ADC}$",
+  "sol": [
+   "(1) $\\triangle\\text{BEC}$: ∠CBE 공통, ∠BDF=∠BEC=90° (AA)",
+   "$\\triangle\\text{ADC}$: ∠FBD=90°−∠C=∠CAD, ∠BDF=∠ADC=90° (AA) (또는 $\\triangle\\text{AEF}$)",
+   "(2) $\\overline{\\text{DC}}=\\overline{\\text{BD}}=4$, $\\overline{\\text{BD}}:\\overline{\\text{AD}}=\\overline{\\text{FD}}:\\overline{\\text{DC}}$ → $4:\\overline{\\text{AD}}=2:4$, $\\overline{\\text{AD}}=8\\,(\\text{cm})$",
+   "(3) $k^2=8^2+4^2=80$"
+  ],
+  "check": "(1)은 △BEC, △ADC, △AEF 중 두 개면 정답으로 보았다."
+ }
+}

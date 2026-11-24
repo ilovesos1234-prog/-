@@ -1,0 +1,209 @@
+{
+ "1": {
+  "tp": "수열의 극한의 성질",
+  "key": "수렴하는 수열의 극한값을 그대로 대입",
+  "sol": [
+   "$\\lim\\dfrac{2a_n+5b_n}{a_nb_n}=\\dfrac{2\\cdot3+5\\cdot(-2)}{3\\cdot(-2)}=\\dfrac{-4}{-6}=\\dfrac{2}{3}$"
+  ],
+  "check": "ok"
+ },
+ "2": {
+  "tp": "새 수열로 치환",
+  "key": "b_n=(2a_n+9)/(a_n+5)로 놓고 a_n을 b_n으로 나타낸다",
+  "sol": [
+   "$b_n=\\dfrac{2a_n+9}{a_n+5}$로 놓으면 $a_n=\\dfrac{9-5b_n}{b_n-2}$, $\\lim b_n=1$",
+   "$\\lim a_n=\\dfrac{9-5}{1-2}=-4$",
+   "$\\lim(2a_n+11)=-8+11=3$"
+  ],
+  "check": "조건 'a_n≠5'는 원문 그대로(a_n≠−5의 오타로 보임). 답에는 영향 없음"
+ },
+ "3": {
+  "tp": "샌드위치 정리",
+  "key": "각 변에 n을 곱하고 양 끝의 극한 비교",
+  "sol": [
+   "$\\dfrac{n}{3n+1}\\lt na_n\\lt\\dfrac{n}{3n-1}$",
+   "양 끝의 극한이 모두 $\\dfrac{1}{3}$이므로 $\\lim na_n=\\dfrac{1}{3}$"
+  ],
+  "check": "ok"
+ },
+ "4": {
+  "tp": "로그함수의 극한",
+  "key": "1+3/x+2/x² = (1+1/x)(1+2/x)로 인수분해",
+  "sol": [
+   "$x\\ln\\left(1+\\dfrac1x\\right)+x\\ln\\left(1+\\dfrac2x\\right)$",
+   "$\\lim x\\ln(1+\\tfrac1x)=1$, $\\lim x\\ln(1+\\tfrac2x)=2$",
+   "따라서 극한값은 $3$"
+  ],
+  "check": "ok"
+ },
+ "5": {
+  "tp": "0/0 꼴 극한의 미정계수",
+  "key": "분자→0이므로 분모→0에서 b=2, 분모는 완전제곱 (e^(ax)−1)²",
+  "sol": [
+   "분자 $\\to0$, 극한이 존재하므로 분모 $\\to0$: $1-b+1=0$, $b=2$",
+   "분모 $=(e^{ax}-1)^2$, 분자 $=2\\sin^2x$",
+   "$c=\\lim\\dfrac{2\\sin^2x}{(e^{ax}-1)^2}=\\dfrac{2}{a^2}$",
+   "$a^2bc=a^2\\cdot2\\cdot\\dfrac{2}{a^2}=4$"
+  ],
+  "check": "ok"
+ },
+ "6": {
+  "tp": "코사인 덧셈정리",
+  "key": "둔각이므로 코사인은 음수",
+  "sol": [
+   "$\\sin\\alpha=\\dfrac23$, $\\cos\\alpha=-\\dfrac{\\sqrt5}{3}$; $\\sin\\beta=\\dfrac{1}{\\sqrt5}$, $\\cos\\beta=-\\dfrac{2}{\\sqrt5}$",
+   "$\\cos(\\alpha+\\beta)=\\dfrac{2}{3}-\\dfrac{2}{3\\sqrt5}=\\dfrac{10-2\\sqrt5}{15}$",
+   "$\\sec(\\alpha+\\beta)=\\dfrac{15}{10-2\\sqrt5}=\\dfrac{15(10+2\\sqrt5)}{80}=\\dfrac{15+3\\sqrt5}{8}$"
+  ],
+  "check": "ok"
+ },
+ "7": {
+  "tp": "도형과 삼각함수의 극한",
+  "key": "원주각 θ → 중심각 2θ, P(cos2θ, sin2θ)",
+  "sol": [
+   "직선 DP와 $x$축의 교점: $\\overline{\\mathrm{OQ}}=q=\\dfrac{\\cos2\\theta}{1+\\sin2\\theta}$",
+   "$f(\\theta)=\\dfrac12(1-q)\\sin2\\theta$, $g(\\theta)=\\dfrac q2$ 이므로 $\\dfrac12-g(\\theta)=\\dfrac{1-q}{2}$",
+   "구하는 식 $=\\dfrac{2\\sin2\\theta}{1-q}$, $1-q=\\dfrac{1+\\sin2\\theta-\\cos2\\theta}{1+\\sin2\\theta}\\approx2\\theta$",
+   "$\\lim=\\dfrac{2\\cdot2\\theta}{2\\theta}=2$"
+  ],
+  "check": "ok"
+ },
+ "8": {
+  "tp": "이계도함수",
+  "key": "(ln|g|)' = g'/g",
+  "sol": [
+   "$f'(x)=\\dfrac{-\\sin x}{\\cos x}=-\\tan x$, $f''(x)=-\\sec^2x$",
+   "$\\cos\\dfrac{7\\pi}{6}=-\\dfrac{\\sqrt3}{2}$ 이므로 $f''=-\\dfrac{4}{3}$"
+  ],
+  "check": "ok"
+ },
+ "9": {
+  "tp": "역함수의 미분과 함수 이어 붙이기",
+  "key": "(가)에서 (h−f)(h−g)=0, 정수계수이므로 이음점은 x=1",
+  "sol": [
+   "(가) $\\Rightarrow(h-f)(h-g)=0$, 즉 각 $x$에서 $h=f$ 또는 $h=g$, $g(x)=e^{-(x-1)^2}$",
+   "$h$는 미분가능·역함수 존재 → 단조. $g$는 $x=1$에서 증감이 바뀌므로 $f,g$를 한 점 $\\alpha$에서 이어 붙임",
+   "이음점에서 $f(\\alpha)=g(\\alpha)$인데 $f(\\alpha)$는 정수, $g(\\alpha)=e^{-(\\alpha-1)^2}$가 정수이려면 $\\alpha=1$",
+   "$f(1)=1$, $f'(1)=g'(1)=0$, (나)에서 $f''(1)=-g''(1)=2$ → $f(x)=a(x-1)^3+(x-1)^2+1$",
+   "$h(0)=g(0)=e^{-1}$은 정수가 아니므로 $x\\le1$에서 $h=f$, $x\\ge1$에서 $h=g$ (감소). $f$ 감소 조건 $a\\lt0$, $h(0)=2-a\\lt4$ → $a=-1$",
+   "$h(x)=\\dfrac1e$ → $x=2$, $h'(2)=g'(2)=-\\dfrac2e$ → $(h^{-1})'(\\tfrac1e)=-\\dfrac e2$",
+   "$h(x)=13$ → $-(x-1)^3+(x-1)^2+1=13$, $x=-1$, $h'(-1)=-16$ → $(h^{-1})'(13)=-\\dfrac1{16}$",
+   "곱 $=\\dfrac{e}{32}$"
+  ],
+  "check": "ok"
+ },
+ "10": {
+  "tp": "미분계수",
+  "key": "(1/x)' = −1/x²",
+  "sol": [
+   "$f'(x)=6-\\dfrac{3}{x^2}$, $f'(1)=3$"
+  ],
+  "check": "ok"
+ },
+ "11": {
+  "tp": "음함수의 접선",
+  "key": "양변을 x로 미분 (음함수 미분)",
+  "sol": [
+   "$y+xy'-2y^2-4xyy'=e^{x+y}(1+y')$",
+   "$(-1,1)$ 대입: $1-y'-2+4y'=1+y'$ → $y'=1$",
+   "접선 $y=x+2$, A$(-2,0)$, B$(0,2)$, 넓이 $=2$"
+  ],
+  "check": "ok"
+ },
+ "12": {
+  "tp": "합성함수의 미분",
+  "key": "m=f'(e^t), f'은 이차함수",
+  "sol": [
+   "$\\dfrac{dm}{dt}=f''(e^t)e^t$, $t=\\ln2$ 에서 $2f''(2)$",
+   "$f'$은 이차함수이므로 $f''(2)=\\dfrac{f'(4)-f'(0)}{4-0}=1$ (구간 중점의 성질)",
+   "$\\dfrac{dm}{dt}=2$"
+  ],
+  "check": "ok"
+ },
+ "13": {
+  "tp": "매개변수 미분",
+  "key": "dy/dx = (dy/dt)/(dx/dt)",
+  "sol": [
+   "$\\dfrac{dx}{dt}=\\dfrac{t+1}{t}$, $\\dfrac{dy}{dt}=\\dfrac{t^3-t^2+t+3}{t}$",
+   "$\\dfrac{dy}{dx}=\\dfrac{(t+1)(t^2-2t+3)}{t+1}=t^2-2t+3=(t-1)^2+2$",
+   "최솟값 $2$"
+  ],
+  "check": "ok"
+ },
+ "14": {
+  "tp": "합성함수의 미분",
+  "key": "√x=u로 놓으면 f(g(u))=u²",
+  "sol": [
+   "$f(2)=e^{8-a}+8=9$ → $a=8$",
+   "$f(g(u))=u^2$ ($u\\gt0$), 양변 미분 $f'(g(u))g'(u)=2u$",
+   "$f(g(3))=9=f(2)$, $f$ 증가 → $g(3)=2$",
+   "$f'(x)=3x^2e^{x^3-8}+3x^2$, $f'(2)=24$",
+   "$g'(3)=\\dfrac{6}{24}=\\dfrac14$"
+  ],
+  "check": "ok"
+ },
+ "15": {
+  "tp": "로그함수의 도함수",
+  "key": "g(|x|) 미분가능 → g'(0)=0 → f'(0)=0",
+  "sol": [
+   "$f(x)\\gt0$, $f'(0)=0$ → $f(x)=ax^2+c$ ($a,c\\gt0$)",
+   "$g'(x)=\\dfrac{2ax}{ax^2+c}$, $g'(2)=\\dfrac{4a}{4a+c}=\\dfrac23$ → $c=2a$",
+   "$g'(x)=\\dfrac{2x}{x^2+2}$, $g''(x)=\\dfrac{4-2x^2}{(x^2+2)^2}$",
+   "$g''(1)=\\dfrac{2}{9}$"
+  ],
+  "check": "ok"
+ },
+ "16": {
+  "tp": "미분계수의 정의",
+  "key": "lim{f(a+2h)−f(a)}/h = 2f'(a)",
+  "sol": [
+   "$f'(x)=-\\csc^2x$",
+   "$\\lim\\dfrac{f(\\frac\\pi2+2h)-f(\\frac\\pi2)}{2h}\\times2=2f'\\left(\\dfrac\\pi2\\right)$",
+   "$\\csc\\dfrac\\pi2=1$ 이므로 $2\\times(-1)=-2$"
+  ],
+  "check": "ok"
+ },
+ "17": {
+  "tp": "연속성과 미분계수의 정의",
+  "key": "x≠0에서 f(x)=sinx/x, 연속성으로 f(0), 우함수 성질로 f'(0)",
+  "sol": [
+   "$x\\ne0$: $f(x)=\\dfrac{\\sin x}{x}$. $f$는 연속이므로 $f(0)=\\lim\\limits_{x\\to0}\\dfrac{\\sin x}{x}=1$",
+   "$f(-x)=\\dfrac{\\sin(-x)}{-x}=f(x)$ 이므로 $f$는 우함수",
+   "$f'(0)=\\lim\\limits_{h\\to0}\\dfrac{f(h)-f(0)}{h}$에서 $h\\to-h$로 바꾸면 $f'(0)=\\lim\\dfrac{f(-h)-f(0)}{-h}=-f'(0)$",
+   "따라서 $f'(0)=0$"
+  ],
+  "check": "ok"
+ },
+ "18": {
+  "tp": "도함수의 정의",
+  "key": "덧셈정리로 전개 / log의 성질로 (1+h/x)^(x/h) 꼴",
+  "sol": [
+   "$(\\cos x)'=\\lim\\dfrac{\\cos x\\cos h-\\sin x\\sin h-\\cos x}{h}=\\cos x\\cdot\\lim\\dfrac{\\cos h-1}{h}-\\sin x\\cdot\\lim\\dfrac{\\sin h}{h}$",
+   "$\\lim\\dfrac{\\cos h-1}{h}=-\\lim h\\cdot\\dfrac{1-\\cos h}{h^2}=0$ 이므로 $(\\cos x)'=-\\sin x$",
+   "$(\\log_ax)'=\\lim\\dfrac{\\log_a(1+\\frac hx)}{h}=\\dfrac1x\\lim\\log_a\\left(1+\\dfrac hx\\right)^{\\frac xh}=\\dfrac1x\\log_ae=\\dfrac{1}{x\\ln a}$"
+  ],
+  "check": "ok"
+ },
+ "19": {
+  "tp": "합성함수의 이계도함수",
+  "key": "{f(g(x))}' = f'(g(x))g'(x), f=e^x, g=sinx",
+  "sol": [
+   "$h'(x)=e^{\\sin x}\\cos x$",
+   "$h''(x)=e^{\\sin x}(\\cos^2x-\\sin x)$",
+   "$h(\\pi)=1$, $h''(\\pi)=1\\cdot(1-0)=1$, 따라서 값은 $1$"
+  ],
+  "check": "ok"
+ },
+ "20": {
+  "tp": "도함수를 이용한 그래프와 최솟값",
+  "key": "f'(x)=x(x−1)(x+1)e^x로 증감표",
+  "sol": [
+   "$f'(x)=(3x^2-6x+5+x^3-3x^2+5x-5)e^x=x(x+1)(x-1)e^x$",
+   "$x=-1$ 극소 $f(-1)=-\\dfrac{14}{e}\\approx-5.15$, $x=0$ 극대 $f(0)=-5$, $x=1$ 극소 $f(1)=-2e\\approx-5.44$",
+   "변곡점 $x=\\alpha,\\beta,\\gamma$; $x\\lt\\alpha$ 위로 볼록, $(\\alpha,\\beta)$ 아래로 볼록, $(\\beta,\\gamma)$ 위로 볼록, $x\\gt\\gamma$ 아래로 볼록",
+   "$x\\to-\\infty$일 때 $f(x)\\to0$, $x\\to\\infty$일 때 $f(x)\\to\\infty$",
+   "$-2e\\lt-\\dfrac{14}{e}$ ($2e^2\\gt14$) 이므로 최솟값은 $f(1)=-2e$"
+  ],
+  "check": "ok"
+ }
+}

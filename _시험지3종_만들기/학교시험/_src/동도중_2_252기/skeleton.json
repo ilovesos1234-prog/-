@@ -1,0 +1,462 @@
+{
+ "meta": {
+  "year": 2025,
+  "school": "동도중",
+  "grade": "중2",
+  "subject": "수학",
+  "title": "2025 동도중 2학년 2학기 기말",
+  "term": "2학기 기말",
+  "range": "Ⅴ. 도형의 닮음과 피타고라스 정리 ~ Ⅵ. 확률",
+  "has_key": true,
+  "note": "객관식 20문항, 서술형 2문항. 원본에 배점 표시가 없어 배점은 추정(객관식 4점, 서술형 10점)이다. 정답은 채수학 빠른 정답과 대조했다.",
+  "src": "2025 동도중 중2 2학기 기말 (시험지).pdf"
+ },
+ "Q": [
+  {
+   "n": 1,
+   "pt": "4",
+   "ptGuess": true,
+   "type": "객",
+   "ans": "③",
+   "unit": "도형의 닮음",
+   "sub": "SAS 닮음",
+   "lv": 2,
+   "q": "$\\triangle$ABC에서 $\\overline{\\text{AD}}$$=15$, $\\overline{\\text{BD}}$$=12$, $\\overline{\\text{AC}}$$=21$, $\\overline{\\text{BC}}$$=18$이다. $\\overline{\\text{CD}}$$=x$라 할 때 $x$의 값은?",
+   "ch": [
+    "$12$",
+    "$13$",
+    "$14$",
+    "$15$",
+    "$16$"
+   ],
+   "imgs": [
+    "q1"
+   ],
+   "imgW": 32
+  },
+  {
+   "n": 2,
+   "pt": "4",
+   "ptGuess": true,
+   "type": "객",
+   "ans": "②",
+   "unit": "도형의 닮음",
+   "sub": "종이접기와 닮음",
+   "lv": 3,
+   "q": "한 변의 길이가 $8$인 정사각형 ABCD를 $\\overline{\\text{EH}}$를 접는 선으로 하여 꼭짓점 B가 $\\overline{\\text{AD}}$ 위의 점 F에 오도록 접을 때, $\\overline{\\text{DG}}$$+$$\\overline{\\text{HI}}$의 값은?",
+   "ch": [
+    "$6$",
+    "$\\dfrac{19}{3}$",
+    "$\\dfrac{20}{3}$",
+    "$7$",
+    "$\\dfrac{22}{3}$"
+   ],
+   "imgs": [
+    "q2"
+   ],
+   "imgW": 36
+  },
+  {
+   "n": 3,
+   "pt": "4",
+   "ptGuess": true,
+   "type": "객",
+   "ans": "②",
+   "unit": "평행선과 선분의 길이의 비",
+   "sub": "평행사변형과 닮음(넓이의 비)",
+   "lv": 3,
+   "q": "$\\square$ABCD는 평행사변형이고 점 F는 $\\overline{\\text{OC}}$의 중점이다. $\\overline{\\text{DF}}$의 연장선이 $\\overline{\\text{BC}}$와 만나는 점을 E라고 할 때, $\\triangle$AOD와 $\\triangle$CFE의 넓이의 비는? (단, 점 O는 $\\square$ABCD의 두 대각선의 교점이다.)",
+   "ch": [
+    "$5:1$",
+    "$6:1$",
+    "$7:1$",
+    "$8:1$",
+    "$9:1$"
+   ],
+   "imgs": [
+    "q3"
+   ],
+   "imgW": 45
+  },
+  {
+   "n": 4,
+   "pt": "4",
+   "ptGuess": true,
+   "type": "객",
+   "ans": "③",
+   "unit": "평행선과 선분의 길이의 비",
+   "sub": "삼각형의 내각·외각의 이등분선",
+   "lv": 2,
+   "q": "$\\triangle$ABC에서 $\\overline{\\text{AD}}$는 $\\angle\\text{A}$의 이등분선이고 $\\overline{\\text{AE}}$는 $\\angle\\text{A}$의 외각의 이등분선이다. $\\overline{\\text{AB}}$$=15$, $\\overline{\\text{AC}}$$=10$, $\\overline{\\text{CE}}$$=18$일 때, $\\overline{\\text{CD}}$의 길이는?",
+   "ch": [
+    "$\\dfrac{16}{5}$",
+    "$\\dfrac{17}{5}$",
+    "$\\dfrac{18}{5}$",
+    "$\\dfrac{19}{5}$",
+    "$4$"
+   ],
+   "imgs": [
+    "q4"
+   ],
+   "imgW": 42
+  },
+  {
+   "n": 5,
+   "pt": "4",
+   "ptGuess": true,
+   "type": "객",
+   "ans": "①",
+   "unit": "평행선과 선분의 길이의 비",
+   "sub": "사다리꼴에서 중점연결정리",
+   "lv": 2,
+   "q": "$\\overline{\\text{AD}}$$\\,/\\!/\\,$$\\overline{\\text{BC}}$인 사다리꼴 ABCD에서 $\\overline{\\text{AB}}$와 $\\overline{\\text{DC}}$의 중점을 각각 M, N이라 하자. $\\overline{\\text{AD}}$와 $\\overline{\\text{BC}}$의 길이의 합이 $30$이고 $\\overline{\\text{MP}}$$:$$\\overline{\\text{PQ}}$$=3:4$일 때, $\\overline{\\text{PQ}}$의 길이는?",
+   "ch": [
+    "$6$",
+    "$7$",
+    "$8$",
+    "$9$",
+    "$10$"
+   ],
+   "imgs": [
+    "q5"
+   ],
+   "imgW": 42
+  },
+  {
+   "n": 6,
+   "pt": "4",
+   "ptGuess": true,
+   "type": "객",
+   "ans": "③",
+   "unit": "평행선과 선분의 길이의 비",
+   "sub": "삼각형의 무게중심의 성질",
+   "lv": 1,
+   "q": "점 G가 $\\triangle$ABC의 무게중심일 때, 옳은 것은?",
+   "ch": [
+    "$\\overline{\\text{AF}}$$=$$\\overline{\\text{AE}}$",
+    "$\\overline{\\text{GF}}$$=$$\\overline{\\text{GD}}$",
+    "$\\triangle\\text{ABG}=\\triangle\\text{BCG}$",
+    "$\\overline{\\text{AG}}$$:$$\\overline{\\text{GF}}$$=2:1$",
+    "$\\triangle\\text{AFG}\\sim\\triangle\\text{ADB}$"
+   ],
+   "imgs": [
+    "q6"
+   ],
+   "imgW": 32
+  },
+  {
+   "n": 7,
+   "pt": "4",
+   "ptGuess": true,
+   "type": "객",
+   "ans": "⑤",
+   "unit": "평행선과 선분의 길이의 비",
+   "sub": "삼각형의 무게중심과 넓이",
+   "lv": 2,
+   "q": "점 G는 $\\triangle$ABC의 무게중심이고, $\\triangle\\text{AGC}=80$일 때, $\\triangle$DBE의 넓이는?",
+   "ch": [
+    "$30$",
+    "$40$",
+    "$45$",
+    "$50$",
+    "$60$"
+   ],
+   "imgs": [
+    "q7"
+   ],
+   "imgW": 32
+  },
+  {
+   "n": 8,
+   "pt": "4",
+   "ptGuess": true,
+   "type": "객",
+   "ans": "②",
+   "unit": "평행선과 선분의 길이의 비",
+   "sub": "무게중심과 평행선",
+   "lv": 2,
+   "q": "점 G는 $\\triangle$ABC의 무게중심이고, $\\overline{\\text{BE}}$$\\,/\\!/\\,$$\\overline{\\text{DF}}$이다. $\\overline{\\text{DF}}$$=21$일 때, $\\overline{\\text{BG}}$의 길이는?",
+   "ch": [
+    "$25$",
+    "$28$",
+    "$30$",
+    "$32$",
+    "$33$"
+   ],
+   "imgs": [
+    "q8"
+   ],
+   "imgW": 36
+  },
+  {
+   "n": 9,
+   "pt": "4",
+   "ptGuess": true,
+   "type": "객",
+   "ans": "①",
+   "unit": "평행선과 선분의 길이의 비",
+   "sub": "무게중심과 높이",
+   "lv": 2,
+   "q": "$\\triangle$ABC의 무게중심이 G이고 $\\triangle\\text{ABC}=60$, $\\overline{\\text{BC}}$$=12$이다. 점 G에서 $\\overline{\\text{BC}}$에 내린 수선의 발을 E라 할 때, $x$의 값은?",
+   "ch": [
+    "$\\dfrac{10}{3}$",
+    "$4$",
+    "$5$",
+    "$6$",
+    "$\\dfrac{20}{3}$"
+   ],
+   "imgs": [
+    "q9"
+   ],
+   "imgW": 32
+  },
+  {
+   "n": 10,
+   "pt": "4",
+   "ptGuess": true,
+   "type": "객",
+   "ans": "②",
+   "unit": "평행선과 선분의 길이의 비",
+   "sub": "중점연결정리와 넓이",
+   "lv": 3,
+   "q": "$\\triangle$ABC에서 $\\overline{\\text{AE}}$와 $\\overline{\\text{CD}}$는 중선이고, 점 F와 H는 각각 $\\overline{\\text{AE}}$, $\\overline{\\text{CD}}$의 중점이다. $\\square\\text{DEHF}=18$일 때, $\\triangle$AEC의 넓이는?",
+   "ch": [
+    "$45$",
+    "$48$",
+    "$51$",
+    "$54$",
+    "$57$"
+   ],
+   "imgs": [
+    "q10"
+   ],
+   "imgW": 40
+  },
+  {
+   "n": 11,
+   "pt": "4",
+   "ptGuess": true,
+   "type": "객",
+   "ans": "④",
+   "unit": "피타고라스 정리",
+   "sub": "직각삼각형의 세 정사각형",
+   "lv": 2,
+   "q": "사각형 P, Q, R은 $\\angle\\text{C}=90^\\circ$인 직각삼각형 ABC의 세 변 AB, BC, CA를 각각 한 변으로 하는 정사각형이다. $\\overline{\\text{AB}}$$:$$\\overline{\\text{BC}}$$=5:3$이고 Q의 넓이가 $81$일 때, P와 R의 넓이의 합은?",
+   "ch": [
+    "$144$",
+    "$225$",
+    "$256$",
+    "$369$",
+    "$380$"
+   ],
+   "imgs": [
+    "q11"
+   ],
+   "imgW": 30
+  },
+  {
+   "n": 12,
+   "pt": "4",
+   "ptGuess": true,
+   "type": "객",
+   "ans": "①",
+   "unit": "피타고라스 정리",
+   "sub": "피타고라스 정리",
+   "lv": 1,
+   "q": "$\\angle\\text{B}=90^\\circ$인 직각삼각형 ABC의 넓이는?",
+   "ch": [
+    "$270$",
+    "$280$",
+    "$290$",
+    "$300$",
+    "$310$"
+   ],
+   "imgs": [
+    "q12"
+   ],
+   "imgW": 40
+  },
+  {
+   "n": 13,
+   "pt": "4",
+   "ptGuess": true,
+   "type": "객",
+   "ans": "④",
+   "unit": "피타고라스 정리",
+   "sub": "유클리드의 증명",
+   "lv": 2,
+   "q": "$\\angle\\text{A}=90^\\circ$이고 $\\overline{\\text{AB}}$$=8$, $\\overline{\\text{BC}}$$=10$인 직각삼각형 ABC의 세 변 AB, BC, CA를 각각 한 변으로 하는 세 정사각형을 만들었을 때, 옳은 것은?",
+   "ch": [
+    "$\\triangle\\text{EBC}=36$",
+    "$\\square\\text{BFGC}=64$",
+    "$\\square\\text{ABFJ}=64$",
+    "$\\triangle\\text{EBC}\\equiv\\triangle\\text{ABF}$",
+    "$\\triangle\\text{EBA}=\\triangle\\text{ABC}$"
+   ],
+   "imgs": [
+    "q13"
+   ],
+   "imgW": 32
+  },
+  {
+   "n": 14,
+   "pt": "4",
+   "ptGuess": true,
+   "type": "객",
+   "ans": "⑤",
+   "unit": "피타고라스 정리",
+   "sub": "피타고라스 정리(두 번)",
+   "lv": 1,
+   "q": "$\\triangle$ABC에서 $\\overline{\\text{AD}}$$\\perp$$\\overline{\\text{BC}}$일 때, $\\overline{\\text{AC}}$의 길이는?",
+   "ch": [
+    "$15$",
+    "$18$",
+    "$20$",
+    "$24$",
+    "$26$"
+   ],
+   "imgs": [
+    "q14"
+   ],
+   "imgW": 36
+  },
+  {
+   "n": 15,
+   "pt": "4",
+   "ptGuess": true,
+   "type": "객",
+   "ans": "③",
+   "unit": "피타고라스 정리",
+   "sub": "삼등분점과 피타고라스 정리",
+   "lv": 3,
+   "q": "점 D와 E, 점 F와 G는 각각 $\\angle\\text{B}=90^\\circ$인 직각삼각형 ABC의 두 변 AB와 BC의 삼등분점이다. $\\overline{\\text{DF}}$$^2+$$\\overline{\\text{EG}}$$^2=4205$일 때, $\\overline{\\text{AC}}$$^2-$$\\overline{\\text{EF}}$$^2$의 값은?",
+   "ch": [
+    "$4205$",
+    "$5046$",
+    "$6728$",
+    "$7569$",
+    "$8410$"
+   ],
+   "imgs": [
+    "q15"
+   ],
+   "imgW": 32
+  },
+  {
+   "n": 16,
+   "pt": "4",
+   "ptGuess": true,
+   "type": "객",
+   "ans": "④",
+   "unit": "경우의 수",
+   "sub": "배수의 개수(또는)",
+   "lv": 1,
+   "q": "$1$부터 $100$까지 수가 각각 적힌 카드 $100$장 중에서 임의로 한 장을 뽑을 때, $3$의 배수 또는 $4$의 배수가 적힌 카드가 나오는 경우의 수는?",
+   "ch": [
+    "$25$",
+    "$33$",
+    "$42$",
+    "$50$",
+    "$58$"
+   ]
+  },
+  {
+   "n": 17,
+   "pt": "4",
+   "ptGuess": true,
+   "type": "객",
+   "ans": "④",
+   "unit": "경우의 수",
+   "sub": "지불할 수 있는 금액의 수",
+   "lv": 2,
+   "q": "$10$원짜리 동전 $5$개, $50$원짜리 동전 $2$개, $100$원짜리 동전 $1$개로 지불할 수 있는 금액의 모든 경우의 수는? (단, $0$원도 지불한 것으로 한다.)",
+   "ch": [
+    "$23$",
+    "$24$",
+    "$25$",
+    "$26$",
+    "$27$"
+   ]
+  },
+  {
+   "n": 18,
+   "pt": "4",
+   "ptGuess": true,
+   "type": "객",
+   "ans": "③",
+   "unit": "경우의 수",
+   "sub": "사전식 배열",
+   "lv": 2,
+   "q": "C, E, L, O, R, V $6$개의 알파벳을 CELORV, CELOVR, $\\cdots$, VROLEC와 같이 사전식으로 차례대로 나열할 때, CLOVER은 몇 번째 나열되는가?",
+   "ch": [
+    "$33$",
+    "$34$",
+    "$35$",
+    "$36$",
+    "$37$"
+   ]
+  },
+  {
+   "n": 19,
+   "pt": "4",
+   "ptGuess": true,
+   "type": "객",
+   "ans": "⑤",
+   "unit": "확률",
+   "sub": "세 자리 짝수가 될 확률",
+   "lv": 2,
+   "q": "$0$, $1$, $2$, $3$, $4$, $5$, $6$의 수가 각각 적힌 카드 $7$장 중에서 $3$장을 뽑아 세 자리 자연수를 만들 때, $2$의 배수일 확률은?",
+   "ch": [
+    "$\\dfrac{1}{6}$",
+    "$\\dfrac{5}{12}$",
+    "$\\dfrac{1}{2}$",
+    "$\\dfrac{4}{7}$",
+    "$\\dfrac{7}{12}$"
+   ]
+  },
+  {
+   "n": 20,
+   "pt": "4",
+   "ptGuess": true,
+   "type": "객",
+   "ans": "④",
+   "unit": "확률",
+   "sub": "적어도 한 번 이길 확률",
+   "lv": 1,
+   "q": "어떤 게임에서 A가 B를 이길 확률이 $\\dfrac34$이다. A와 B가 이 게임을 $3$번 할 때, 적어도 B가 한 번은 이길 확률은? (단, 게임에서 비기는 경우는 없다.)",
+   "ch": [
+    "$\\dfrac{3}{64}$",
+    "$\\dfrac{9}{64}$",
+    "$\\dfrac{27}{64}$",
+    "$\\dfrac{37}{64}$",
+    "$\\dfrac{63}{64}$"
+   ]
+  },
+  {
+   "n": 21,
+   "pt": "10",
+   "ptGuess": true,
+   "type": "서",
+   "ans": "(1) $\\triangle\\text{GDA}\\sim\\triangle\\text{CAB}$ (AA 닮음) (2) $\\dfrac{40}{3}$",
+   "unit": "도형의 닮음",
+   "sub": "무게중심과 AA 닮음",
+   "lv": 4,
+   "q": "<b>[서술형 1]</b> $\\triangle$ABC에서 $\\overline{\\text{AB}}$$=24$, $\\overline{\\text{AC}}$$=10$, $\\overline{\\text{BC}}$$=26$이다. 점 G는 $\\triangle$ABC의 무게중심이고, 점 D는 점 G에서 $\\overline{\\text{AB}}$에 내린 수선의 발이다. 물음에 답하시오.<br>(1) $\\triangle$GDA와 서로 닮음인 삼각형을 찾고, 그 이유를 삼각형의 닮음 조건을 포함하여 구체적으로 설명하시오.<br>(2) (1)에서 찾은 $\\triangle$GDA와 서로 닮음인 삼각형을 이용하여 $\\triangle$GDA의 넓이를 구하고 풀이 과정을 쓰시오.",
+   "imgs": [
+    "q21"
+   ],
+   "imgW": 45
+  },
+  {
+   "n": 22,
+   "pt": "10",
+   "ptGuess": true,
+   "type": "서",
+   "ans": "(1) $\\dfrac{80}{243}$ (2) $\\dfrac{32}{81}$",
+   "unit": "확률",
+   "sub": "꺼낸 것을 다시 넣는/넣지 않는 확률",
+   "lv": 3,
+   "q": "<b>[서술형 2]</b> 모양과 크기가 같은 흰 공 $5$개와 검은 공 $4$개가 들어 있는 주머니가 있다. 물음에 답하시오.<br>(1) 주머니에서 한 개의 공을 꺼내 색을 확인한 후 다시 주머니에 넣는 과정을 $3$번 반복할 때, 확인한 공의 색이 흰 색이 한 번, 검은 색이 두 번일 확률을 구하고 풀이 과정을 쓰시오.<br>(2) 주머니에서 한 개의 공을 꺼내고, 꺼낸 공과 색이 다른 공 한 개를 주머니에 넣은 후 다시 한 개의 공을 꺼냈다. 꺼낸 두 공의 색이 서로 같을 확률을 구하고 풀이과정을 쓰시오. (단, 꺼낸 공은 다시 넣지 않으며, 흰 공과 검은 공 외에 다른 색의 공은 없다.)"
+  }
+ ]
+}

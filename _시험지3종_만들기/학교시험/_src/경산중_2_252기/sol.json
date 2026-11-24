@@ -1,0 +1,256 @@
+{
+ "1": {
+  "tp": "항상 닮은 도형",
+  "key": "모양이 하나로 정해지는 도형",
+  "sol": [
+   "반구, 정다각형, 정다면체는 항상 닮음",
+   "직각삼각형, 이등변삼각형, 마름모는 각이나 변의 비가 달라질 수 있다",
+   "ㄱ, ㄹ, ㅂ"
+  ],
+  "check": "ok"
+ },
+ "2": {
+  "tp": "SAS 닮음",
+  "key": "AD:AC = AC:AB = 2:3",
+  "sol": [
+   "$\\overline{\\text{AB}}=9$, $\\overline{\\text{AD}}:\\overline{\\text{AC}}=4:6=\\overline{\\text{AC}}:\\overline{\\text{AB}}=6:9$, $\\angle$A 공통 → $\\triangle$ABC ∽ $\\triangle$ACD (SAS 닮음)",
+   "닮음비 $3:2$이므로 $\\overline{\\text{BC}}=\\frac{3}{2}\\times8=12$ → ③",
+   "① $\\angle$ABC $=\\angle$ACD, ② AB의 대응변은 AC, ④ $3:2$, ⑤ SAS 닮음"
+  ],
+  "check": "ok"
+ },
+ "3": {
+  "tp": "수선과 AA 닮음",
+  "key": "△ADC ∽ △BEC",
+  "sol": [
+   "$\\overline{\\text{CD}}=18-12=6$",
+   "$\\angle$C 공통, 직각 → $\\triangle$ADC ∽ $\\triangle$BEC",
+   "$\\overline{\\text{CE}}:\\overline{\\text{CD}}=\\overline{\\text{BC}}:\\overline{\\text{AC}}$, $\\overline{\\text{CE}}=6\\times\\frac{18}{12}=9$",
+   "$\\overline{\\text{AE}}=12-9=3\\,\\text{cm}$"
+  ],
+  "check": "ok"
+ },
+ "4": {
+  "tp": "직각삼각형의 닮음",
+  "key": "BD² = AD·DC",
+  "sol": [
+   "$\\angle$B $=90^\\circ$, $\\overline{\\text{BD}}\\perp\\overline{\\text{AC}}$이므로 $\\overline{\\text{BD}}^2=\\overline{\\text{AD}}\\times\\overline{\\text{DC}}$",
+   "$16=2\\times\\overline{\\text{DC}}$, $\\overline{\\text{DC}}=8$, $\\overline{\\text{AC}}=10$",
+   "빗변이 외접원의 지름이므로 반지름 5, 넓이 $25\\pi\\,\\text{cm}^2$"
+  ],
+  "check": "ok"
+ },
+ "5": {
+  "tp": "맞닿은 두 삼각형",
+  "key": "BQ:QC = AB:DC",
+  "sol": [
+   "$\\triangle$PAB ∽ $\\triangle$PCD에서 $\\overline{\\text{BP}}:\\overline{\\text{PD}}=3:5$",
+   "PQ∥DC이므로 $\\overline{\\text{BQ}}:\\overline{\\text{QC}}=3:5$",
+   "$\\overline{\\text{QC}}=8\\times\\frac{5}{8}=5$"
+  ],
+  "check": "ok"
+ },
+ "6": {
+  "tp": "사다리꼴에서 평행선",
+  "key": "대각선 AD로 두 삼각형으로 나눈다",
+  "sol": [
+   "$\\triangle$ACD에서 $x:18=10:14$, $x=\\frac{90}{7}$",
+   "$\\triangle$DAB에서 $\\overline{\\text{DG}}:\\overline{\\text{DA}}=\\overline{\\text{CE}}:\\overline{\\text{CA}}=4:14$",
+   "$2:y=4:14$, $y=7$",
+   "$x+y=\\frac{139}{7}$"
+  ],
+  "check": "ok"
+ },
+ "7": {
+  "tp": "평행선 판별",
+  "key": "AD:AB = AE:AC 확인",
+  "sol": [
+   "① $6:15=4:10$ ○",
+   "② $4:12=3:9$ ○ (E는 CA 연장선, D는 BA 연장선 위)",
+   "③ $6:3=8:4$ ○",
+   "④ $\\overline{\\text{AD}}:\\overline{\\text{AB}}=4:9$인데 $\\overline{\\text{DE}}:\\overline{\\text{BC}}=8:10$ ✕",
+   "⑤ $4:10=2:5$ ○"
+  ],
+  "check": "④의 그림은 AD=4, DB=5, DE=8, BC=10으로 판독"
+ },
+ "8": {
+  "tp": "내각·외각의 이등분선",
+  "key": "BD:CD = AB:AC, AE:ED = BA:BD",
+  "sol": [
+   "외각의 이등분선: $\\overline{\\text{BD}}:\\overline{\\text{CD}}=10:8$, $(3+x):x=5:4$, $x=12$",
+   "$\\overline{\\text{BD}}=15$",
+   "$\\angle$B의 이등분선: $\\overline{\\text{AE}}:\\overline{\\text{ED}}=\\overline{\\text{BA}}:\\overline{\\text{BD}}=10:15=2:3$",
+   "넓이의 비 $2:3$"
+  ],
+  "check": "그림의 8cm는 AC로 판독"
+ },
+ "9": {
+  "tp": "무게중심을 두 번",
+  "key": "GD = AD/3, GG' = GD·2/3",
+  "sol": [
+   "$\\overline{\\text{GD}}=\\frac{1}{3}\\times27=9$",
+   "G'은 △GBC의 무게중심이므로 $\\overline{\\text{GG'}}=\\frac{2}{3}\\times9=6\\,\\text{cm}$"
+  ],
+  "check": "ok"
+ },
+ "10": {
+  "tp": "무게중심과 중점연결",
+  "key": "EF = DC/2",
+  "sol": [
+   "CD는 중선, $\\overline{\\text{GD}}=\\frac{1}{2}\\overline{\\text{GC}}=2$, $\\overline{\\text{CD}}=6$",
+   "BF도 중선이므로 F는 AC의 중점",
+   "E는 AD의 중점이므로 $\\overline{\\text{EF}}=\\frac{1}{2}\\overline{\\text{DC}}=3\\,\\text{cm}$"
+  ],
+  "check": "ok"
+ },
+ "11": {
+  "tp": "세 중선과 넓이",
+  "key": "6개 삼각형의 넓이는 각 8",
+  "sol": [
+   "① $\\frac{1}{2}\\times48=24$ ○, ② $\\frac{1}{3}\\times48=16$ ○, ③ $\\frac{1}{6}\\times48=8$ ○",
+   "④ $\\square$AFGE $=2\\times8=16$ ✕",
+   "⑤ $\\triangle$AFE $=\\frac{1}{4}\\times48=12$, $\\triangle$EFG $=16-12=4$ ○"
+  ],
+  "check": "ok"
+ },
+ "12": {
+  "tp": "직사각형 안의 닮음",
+  "key": "AF를 연장해 BC 연장선과 만나게 한다",
+  "sol": [
+   "AF의 연장선과 BC의 연장선의 교점을 R이라 하면 △AFD ≡ △RFC이므로 $\\overline{\\text{CR}}=\\overline{\\text{AD}}=2\\overline{\\text{AE}}$",
+   "AE∥BR이므로 $\\overline{\\text{EP}}:\\overline{\\text{PB}}=\\overline{\\text{AE}}:\\overline{\\text{BR}}=1:4$",
+   "$\\overline{\\text{EQ}}:\\overline{\\text{QC}}=\\overline{\\text{AE}}:\\overline{\\text{CR}}=1:2$",
+   "$\\triangle$EPQ $=\\frac{1}{5}\\times\\frac{1}{3}\\times\\triangle$EBC",
+   "따라서 15배"
+  ],
+  "check": "좌표로 확인: 직사각형 가로 2, 세로 h에서 P=(4/5, 4h/5), Q=(4/3, 2h/3), △EPQ=h/15, △EBC=h"
+ },
+ "13": {
+  "tp": "닮은 입체의 비",
+  "key": "닮음비 2:3, 부피비 8:27",
+  "sol": [
+   "ㄱ ○ ($12:18$)",
+   "ㄴ ✕ 높이비도 $2:3$",
+   "ㄷ ✕ 겉넓이비 $4:9$이므로 $900\\,\\text{cm}^2$",
+   "ㄹ ○",
+   "ㅁ ○ 큰 병의 빈 부분 $27\\times\\frac{8}{9}=24=8\\times3$",
+   "ㅂ ✕ 같은 값에 작은 병 3개는 24, 큰 병은 27로 큰 병이 낫다",
+   "옳은 것 3개"
+  ],
+  "check": "ok"
+ },
+ "14": {
+  "tp": "방정식과 주사위",
+  "key": "y를 기준으로",
+  "sol": [
+   "$y=2$일 때 $x=4$, $y=3$일 때 $x=1$",
+   "2가지"
+  ],
+  "check": "ok"
+ },
+ "15": {
+  "tp": "일부만 제자리",
+  "key": "나머지 3명은 모두 바뀜",
+  "sol": [
+   "자기 음료를 받을 2명: $\\frac{5\\times4}{2}=10$",
+   "나머지 3명이 모두 바뀌는 경우: 2",
+   "$10\\times2=20$"
+  ],
+  "check": "ok"
+ },
+ "16": {
+  "tp": "곱의 법칙",
+  "key": "자음 × 모음",
+  "sol": [
+   "$5\\times4=20$"
+  ],
+  "check": "ok"
+ },
+ "17": {
+  "tp": "이웃하여 서기",
+  "key": "A, B를 한 묶음",
+  "sol": [
+   "묶음 포함 4명을 세우기 $4\\times3\\times2\\times1=24$",
+   "A, B 자리 바꾸기 2",
+   "$24\\times2=48$"
+  ],
+  "check": "ok"
+ },
+ "18": {
+  "tp": "삼각형의 개수",
+  "key": "세 점 고르기",
+  "sol": [
+   "$\\frac{5\\times4\\times3}{3\\times2\\times1}=10$"
+  ],
+  "check": "ok"
+ },
+ "19": {
+  "tp": "눈의 대소",
+  "key": "같은 경우 6가지를 뺀다",
+  "sol": [
+   "전체 36가지 중 같은 눈 6가지",
+   "나머지 30가지의 절반: 15"
+  ],
+  "check": "ok"
+ },
+ "20": {
+  "tp": "확률의 성질",
+  "key": "0≤p≤1, 여사건 1−p",
+  "sol": [
+   "ㄱ ○, ㄷ ○, ㅁ ○",
+   "ㄴ ✕ $0\\le p\\le1$, ㄹ ✕ $1-p$",
+   "3개"
+  ],
+  "check": "ㄱ은 각 경우가 일어날 가능성이 같다는 전제에서 옳다고 봄"
+ },
+ "21": {
+  "tp": "약수가 나올 확률",
+  "key": "20의 약수 중 15 이하",
+  "sol": [
+   "1, 2, 4, 5, 10 → 5장",
+   "$\\frac{5}{15}=\\frac{1}{3}$"
+  ],
+  "check": "ok"
+ },
+ "22": {
+  "tp": "비복원 추출",
+  "key": "흰흰 + 검검",
+  "sol": [
+   "흰 공 두 개: $\\frac{5}{11}\\times\\frac{4}{10}=\\frac{2}{11}$",
+   "검은 공 두 개: $\\frac{6}{11}\\times\\frac{5}{10}=\\frac{3}{11}$",
+   "$\\frac{5}{11}$"
+  ],
+  "check": "ok"
+ },
+ "23": {
+  "tp": "번갈아 던지기",
+  "key": "6의 약수가 나올 확률 2/3",
+  "sol": [
+   "한 번에 이길 확률 $\\frac{2}{3}$, 실패 $\\frac{1}{3}$",
+   "2회에 B 승: $\\frac{1}{3}\\times\\frac{2}{3}=\\frac{2}{9}$",
+   "4회에 B 승: $(\\frac{1}{3})^3\\times\\frac{2}{3}=\\frac{2}{81}$",
+   "$\\frac{18}{81}+\\frac{2}{81}=\\frac{20}{81}$"
+  ],
+  "check": "ok"
+ },
+ "24": {
+  "tp": "가위바위보",
+  "key": "모두 같거나 모두 다름",
+  "sol": [
+   "전체 $3^3=27$",
+   "모두 같음 3, 모두 다름 $3\\times2\\times1=6$",
+   "$\\frac{9}{27}=\\frac{1}{3}$"
+  ],
+  "check": "ok"
+ },
+ "25": {
+  "tp": "수직선 위의 이동",
+  "key": "오른쪽 1번, 왼쪽 3번",
+  "sol": [
+   "$-2$에 오려면 홀수 1번, 짝수 3번",
+   "순서 4가지, 각 확률 $(\\frac{1}{2})^4$",
+   "$\\frac{4}{16}=\\frac{1}{4}$"
+  ],
+  "check": "ok"
+ }
+}

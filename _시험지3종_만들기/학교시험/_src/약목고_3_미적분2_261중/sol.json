@@ -1,0 +1,232 @@
+{
+ "1": {
+  "tp": "극한값 판정",
+  "key": "분모의 차수가 더 높으면 0",
+  "sol": [
+   "④: 분자 1차, 분모 2차이므로 극한은 $0$",
+   "①, ②, ③, ⑤는 모두 옳다",
+   "옳지 않은 것은 ④"
+  ],
+  "check": "ok"
+ },
+ "2": {
+  "tp": "극한의 대소 관계",
+  "key": "양쪽 극한이 같으면 샌드위치",
+  "sol": [
+   "$\\dfrac{3n+2}n\\to3$, $\\dfrac{3n+5}n\\to3$",
+   "$\\therefore \\displaystyle\\lim_{n\\to\\infty}a_n=3$"
+  ],
+  "check": "ok"
+ },
+ "3": {
+  "tp": "급수의 성질",
+  "key": "수렴하는 급수의 선형성",
+  "sol": [
+   "$5\\cdot2+\\sum b_n=20$",
+   "$\\sum b_n=10$"
+  ],
+  "check": "ok"
+ },
+ "4": {
+  "tp": "코사인 덧셈정리",
+  "key": "$105^\\circ=60^\\circ+45^\\circ$",
+  "sol": [
+   "$\\cos60^\\circ\\cos45^\\circ-\\sin60^\\circ\\sin45^\\circ$",
+   "$=\\dfrac{\\sqrt2}4-\\dfrac{\\sqrt6}4=\\dfrac{\\sqrt2-\\sqrt6}4$"
+  ],
+  "check": "ok"
+ },
+ "5": {
+  "tp": "삼각함수의 극한",
+  "key": "$\\dfrac{\\tan x}x\\to1$, $\\dfrac{\\sin x}x\\to1$",
+  "sol": [
+   "$\\dfrac{\\tan2x}{2x}\\cdot\\dfrac{3x}{\\sin3x}\\cdot\\dfrac23\\to\\dfrac23$"
+  ],
+  "check": "ok"
+ },
+ "6": {
+  "tp": "거듭제곱 미분",
+  "key": "$(x^n)'=nx^{n-1}$",
+  "sol": [
+   "$f'(x)=-2x^{-3}$, $f'(1)=-2$"
+  ],
+  "check": "ok"
+ },
+ "7": {
+  "tp": "cot의 도함수",
+  "key": "$(\\cot x)'=-\\csc^2x$",
+  "sol": [
+   "$f'(x)=-2\\csc^2x$",
+   "$f'\\left(\\dfrac\\pi4\\right)=-2\\cdot2=-4$"
+  ],
+  "check": "ok"
+ },
+ "8": {
+  "tp": "음함수 미분",
+  "key": "양변을 $x$로 미분",
+  "sol": [
+   "$y=1$이면 $x=2$",
+   "$\\ln y+\\dfrac xy\\,y'+2=0$",
+   "$0+2y'+2=0$, $y'=-1$"
+  ],
+  "check": "ok"
+ },
+ "9": {
+  "tp": "∞-∞ 꼴",
+  "key": "분자 유리화",
+  "sol": [
+   "$\\dfrac{-n}{\\sqrt{9n^2-n}+3n}=\\dfrac{-1}{\\sqrt{9-\\frac1n}+3}\\to-\\dfrac16$"
+  ],
+  "check": "ok"
+ },
+ "10": {
+  "tp": "극한의 성질",
+  "key": "$\\dfrac{a_n}{n}$ 꼴로 변형",
+  "sol": [
+   "$5\\left(\\dfrac{a_n}n\\right)^2+\\dfrac2n\\cdot\\dfrac{a_n}n\\to5\\cdot9+0=45$"
+  ],
+  "check": "ok"
+ },
+ "11": {
+  "tp": "등비수열 수렴 조건",
+  "key": "$x=3$ 또는 $-1\\lt r\\le1$",
+  "sol": [
+   "$x=3$이면 모든 항이 $0$ → 수렴",
+   "$-1\\lt x^2-5x+5\\le1$: $x\\lt2$ 또는 $x\\gt3$, 그리고 $1\\le x\\le4$",
+   "정수 $x=1,4$, 합 $1+3+4=8$"
+  ],
+  "check": "ok"
+ },
+ "12": {
+  "tp": "등비급수",
+  "key": "홀수항만 남음",
+  "sol": [
+   "$n$ 짝수: $0$, $n$ 홀수: $\\left(\\dfrac23\\right)^n$",
+   "$\\dfrac{2/3}{1-4/9}=\\dfrac65$",
+   "$a=5$, $b=6$, $a+b=11$"
+  ],
+  "check": "ok"
+ },
+ "13": {
+  "tp": "지수·로그 극한, 덧셈정리",
+  "key": "e의 정의, 로그 성질",
+  "sol": [
+   "ㄱ: $\\{(1+2x)^{\\frac1{2x}}\\}^6\\to e^6$ (참)",
+   "ㄴ: $\\log_3\\dfrac{15x^2+5}{5x^2+x+1}\\to\\log_33=1$ (거짓)",
+   "ㄷ: $\\sin\\dfrac43\\pi=-\\dfrac{\\sqrt3}2$ (거짓)",
+   "옳은 것은 ㄱ"
+  ],
+  "check": "ok"
+ },
+ "14": {
+  "tp": "미분가능성",
+  "key": "연속 + 미분계수 일치",
+  "sol": [
+   "연속: $a=b\\log_31+\\ln3=\\ln3$",
+   "미분계수: $a=\\dfrac{b}{\\ln3}$, $b=(\\ln3)^2$",
+   "$ab=(\\ln3)^3$"
+  ],
+  "check": "ok"
+ },
+ "15": {
+  "tp": "e의 정의",
+  "key": "곱이 망원곱",
+  "sol": [
+   "$\\displaystyle\\prod_{k=n}^{2n}\\dfrac{k+1}{k}=\\dfrac{2n+1}{n}$",
+   "$\\dfrac12\\cdot\\dfrac{2n+1}n=1+\\dfrac1{2n}$",
+   "$\\left\\{\\left(1+\\dfrac1{2n}\\right)^{2n}\\right\\}^{\\frac12}\\to\\sqrt e$"
+  ],
+  "check": "ok"
+ },
+ "16": {
+  "tp": "미분계수의 정의",
+  "key": "극한 $=2f'\\left(\\dfrac\\pi3\\right)$",
+  "sol": [
+   "$f'(x)=\\cos x-x\\sin x$",
+   "$f'\\left(\\dfrac\\pi3\\right)=\\dfrac12-\\dfrac{\\sqrt3\\pi}6$",
+   "$2f'=1-\\dfrac{\\sqrt3\\pi}3=\\dfrac{3-\\sqrt3\\pi}3$"
+  ],
+  "check": "ok"
+ },
+ "17": {
+  "tp": "변화율",
+  "key": "농도를 시간의 함수로",
+  "sol": [
+   "소금 $200\\,\\text{g}$, $t$분 후 소금물 $1000-2t$",
+   "$C(t)=\\dfrac{20000}{1000-2t}$ (%)",
+   "$C'(t)=\\dfrac{40000}{(1000-2t)^2}$, $C'(200)=\\dfrac{40000}{600^2}=\\dfrac19$",
+   "$a+b=10$"
+  ],
+  "check": "ok"
+ },
+ "18": {
+  "tp": "매개변수 미분",
+  "key": "$\\dfrac{dy}{dx}=\\dfrac{dy/dt}{dx/dt}$",
+  "sol": [
+   "$\\dfrac{dy}{dx}=\\dfrac{\\cos t-\\sin t}{\\sin t+\\cos t}$",
+   "$t=\\dfrac\\pi3$: $\\dfrac{1-\\sqrt3}{1+\\sqrt3}=-2+\\sqrt3$"
+  ],
+  "check": "ok"
+ },
+ "19": {
+  "tp": "역함수의 미분",
+  "key": "$g'(1)=\\dfrac1{f'(a)}$, $f(a)=1$",
+  "sol": [
+   "$\\ln(e^a+1)=1$, $e^a=e-1$",
+   "$f'(a)=\\dfrac{e^a}{e^a+1}=\\dfrac{e-1}e$",
+   "$g'(1)=\\dfrac e{e-1}$"
+  ],
+  "check": "ok"
+ },
+ "20": {
+  "tp": "접선의 방정식",
+  "key": "접점을 $(t,e^{-2t})$로",
+  "sol": [
+   "$y=-2e^{-2t}(x-t)+e^{-2t}$가 $(1,0)$을 지남",
+   "$1=2-2t$, $t=\\dfrac12$",
+   "$y=-\\dfrac2ex+\\dfrac2e$, $a-b=-\\dfrac4e$"
+  ],
+  "check": "ok"
+ },
+ "21": {
+  "tp": "등비수열 극한",
+  "key": "$5r=3$이어야 유한한 극한",
+  "sol": [
+   "분자 $=\\dfrac1r(5r)^n+3$",
+   "$5r\\lt3$이면 $0$, $5r\\gt3$이면 발산 → $5r=3$, 극한 $\\dfrac1r=\\dfrac53$",
+   "$s=\\dfrac{r}{1-r}=\\dfrac32$, $r+s=\\dfrac{21}{10}$"
+  ],
+  "check": "ok"
+ },
+ "22": {
+  "tp": "삼각함수 극한 활용",
+  "key": "직각삼각형 닮음 $AB^2=AH\\cdot AC$",
+  "sol": [
+   "$\\overline{AB}=3\\tan\\theta$, $\\overline{AC}=\\dfrac3{\\cos\\theta}$",
+   "$\\overline{AH}=\\dfrac{\\overline{AB}^2}{\\overline{AC}}=3\\tan^2\\theta\\cos\\theta$",
+   "$\\dfrac{\\overline{AH}}{2\\theta^2}=\\dfrac32\\left(\\dfrac{\\tan\\theta}\\theta\\right)^2\\cos\\theta\\to\\dfrac32$"
+  ],
+  "check": "ok"
+ },
+ "23": {
+  "tp": "로그미분법",
+  "key": "$\\ln f=x\\ln x$",
+  "sol": [
+   "$\\dfrac{f'}{f}=\\ln x+1$",
+   "$f'(2)=4(\\ln2+1)=4+4\\ln2$",
+   "$a+b=8$"
+  ],
+  "check": "ok"
+ },
+ "24": {
+  "tp": "이계도함수",
+  "key": "로그를 취해 $f$ 구하기",
+  "sol": [
+   "$f(x)=\\dfrac12\\{\\ln(2+\\sin x)-\\ln(2-\\sin x)\\}$",
+   "$f'(x)=\\dfrac{2\\cos x}{4-\\sin^2x}$",
+   "$f''(x)=\\dfrac{-2\\sin x(4-\\sin^2x)+4\\sin x\\cos^2x}{(4-\\sin^2x)^2}$",
+   "$x=\\dfrac\\pi6$: $\\dfrac{-\\frac{15}4+\\frac32}{\\frac{225}{16}}=-\\dfrac4{25}$"
+  ],
+  "check": "ok"
+ }
+}

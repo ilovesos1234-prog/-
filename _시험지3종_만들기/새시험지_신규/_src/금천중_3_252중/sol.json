@@ -1,0 +1,230 @@
+{
+"1": {
+"tp": "직각삼각형의 사인",
+"key": "$\\sin A=\\dfrac{\\text{대변}}{\\text{빗변}}$",
+"sol": [
+"$4^2=(\\sqrt5)^2+(\\sqrt{11})^2$이므로 $\\angle C=90^\\circ$",
+"$\\sin A=\\dfrac{\\overline{BC}}{\\overline{AB}}=\\dfrac{\\sqrt5}{4}$"
+],
+"check": "ok"
+},
+"2": {
+"tp": "평행사변형의 넓이",
+"key": "넓이 $=ab\\sin B$",
+"sol": [
+"$6\\times10\\times\\sin B=30\\sqrt3$ → $\\sin B=\\dfrac{\\sqrt3}{2}$",
+"$\\angle ABC=60^\\circ$"
+],
+"check": "ok"
+},
+"3": {
+"tp": "특수각의 삼각비",
+"key": "$\\sin30^\\circ=\\cos60^\\circ=\\frac12$",
+"sol": [
+"$\\dfrac12+\\dfrac12=1$"
+],
+"check": "ok"
+},
+"4": {
+"tp": "같은 거리의 현",
+"key": "중심에서 같은 거리의 두 현은 길이가 같다",
+"sol": [
+"$\\overline{AB}=\\overline{AC}$",
+"$\\angle C=\\dfrac{180^\\circ-54^\\circ}{2}=63^\\circ$"
+],
+"check": "ok"
+},
+"5": {
+"tp": "접선의 길이",
+"key": "반지름과 접선은 수직, $\\overline{PA}=\\overline{PB}$",
+"sol": [
+"$\\overline{PA}=\\sqrt{9^2-4^2}=\\sqrt{65}$",
+"$x=\\overline{PB}=\\sqrt{65}$"
+],
+"check": "ok"
+},
+"6": {
+"tp": "현의 수직이등분선",
+"key": "중심에서 현에 내린 수선은 중심각을 이등분",
+"sol": [
+"$\\overline{OM}\\perp\\overline{AB}$이므로 $\\angle AOM=\\angle BOM$",
+"$\\angle x=\\dfrac{96^\\circ}{2}=48^\\circ$"
+],
+"check": "그림이 깨져 x의 위치는 라벨 위치와 정답(48°)으로 추정"
+},
+"7": {
+"tp": "접선과 현이 이루는 각",
+"key": "접선과 현이 이루는 각 = 그 호에 대한 원주각",
+"sol": [
+"접선과 현 AC가 이루는 각 $62^\\circ$",
+"$\\angle x=\\angle ABC=62^\\circ$"
+],
+"check": "ok"
+},
+"8": {
+"tp": "원에 내접하는 사각형",
+"key": "대각의 합 $180^\\circ$, 같은 호의 원주각",
+"sol": [
+"사각형이 원에 내접하므로 $\\angle y=180^\\circ-115^\\circ=65^\\circ$",
+"$\\angle x$와 같은 호에 대한 원주각은 $\\angle y-39^\\circ=26^\\circ$",
+"$\\angle x+\\angle y=26^\\circ+65^\\circ=91^\\circ$"
+],
+"check": "원본 그림이 깨져 각의 위치를 알 수 없어, 주어진 39°, 115°와 정답 91°가 성립하도록 원에 내접하는 사각형으로 그림을 새로 구성함"
+},
+"9": {
+"tp": "양의 상관관계",
+"key": "한 변량이 커지면 다른 변량도 커지는 관계",
+"sol": [
+"ㄱ, ㄴ: 양의 상관관계",
+"ㄷ, ㄹ: 음의 상관관계"
+],
+"check": "ok"
+},
+"10": {
+"tp": "기울기와 tan",
+"key": "$\\tan a=$ 기울기",
+"sol": [
+"$y=3x+9$의 $x$절편 $-3$, $y$절편 $9$",
+"$\\tan a=\\dfrac93=3$"
+],
+"check": "ok"
+},
+"11": {
+"tp": "사분원에서 삼각비",
+"key": "분모가 1이 되는 직각삼각형을 찾는다",
+"sol": [
+"ㄱ $\\tan x^\\circ=\\dfrac{\\overline{DE}}{\\overline{AD}}=\\overline{DE}$ (○)",
+"ㄴ $y=90-x$, $\\cos y^\\circ=\\sin x^\\circ=\\overline{BC}$ (×)",
+"ㄷ $\\tan z^\\circ=\\dfrac{\\overline{AD}}{\\overline{DE}}=\\dfrac{1}{\\overline{DE}}$ (×)",
+"ㄹ $\\sin z^\\circ=\\cos x^\\circ=\\overline{AB}$ (○) → 2개"
+],
+"check": "ok"
+},
+"12": {
+"tp": "두 각으로 높이 구하기",
+"key": "$\\overline{AH}=\\overline{CH}$ ($45^\\circ$)",
+"sol": [
+"$\\overline{CH}=h$라 하면 $\\overline{AH}=h$, $\\overline{BH}=12+h$",
+"$\\tan30^\\circ=\\dfrac{h}{12+h}$ → $\\sqrt3h=12+h$",
+"$h=\\dfrac{12}{\\sqrt3-1}=6(\\sqrt3+1)\\text{ cm}$"
+],
+"check": "ok"
+},
+"13": {
+"tp": "넓이로 변의 길이, 코사인",
+"key": "넓이 $=\\dfrac12ac\\sin B$",
+"sol": [
+"$\\dfrac12\\times8\\times\\overline{BC}\\times\\dfrac{\\sqrt3}{2}=24\\sqrt3$ → $\\overline{BC}=12$",
+"$\\overline{AC}^2=64+144-2\\cdot8\\cdot12\\cdot\\dfrac12=112$ → $\\overline{AC}=4\\sqrt7$",
+"A에서 BC에 수선: $\\overline{BH}=4$, $\\overline{CH}=8$ → $\\cos C=\\dfrac{8}{4\\sqrt7}=\\dfrac{2\\sqrt7}{7}$"
+],
+"check": "ok"
+},
+"14": {
+"tp": "접힌 종이의 이등변삼각형",
+"key": "$\\overline{BA}=\\overline{BC}$, $\\sin(\\angle C)=\\dfrac{9}{18}$",
+"sol": [
+"$\\angle BCA=\\angle BAC=30^\\circ$",
+"AC의 중점까지 높이 $9\\tan30^\\circ=3\\sqrt3$",
+"넓이 $=\\dfrac12\\times18\\times3\\sqrt3=27\\sqrt3\\text{ cm}^2$"
+],
+"check": "ok"
+},
+"15": {
+"tp": "내접원과 접선의 길이",
+"key": "한 점에서 그은 두 접선의 길이는 같다",
+"sol": [
+"$\\overline{AF}=3$, $\\overline{CE}=\\overline{CF}=6$",
+"$2(3+\\overline{BD}+6)=36$ → $\\overline{BD}=9\\text{ cm}$"
+],
+"check": "ok"
+},
+"16": {
+"tp": "접선의 길이와 피타고라스",
+"key": "$\\overline{DF}=\\overline{DG}$, $\\overline{EF}=\\overline{EI}$",
+"sol": [
+"반지름 8, $\\overline{DG}=20-8=12$",
+"$\\overline{BE}=e$라 하면 $\\overline{DE}=12+(e-8)=e+4$",
+"$(e+4)^2=(20-e)^2+16^2$ → $e=\\dfrac{40}{3}$",
+"$\\overline{FE}=\\dfrac{40}{3}-8=\\dfrac{16}{3}$"
+],
+"check": "ok"
+},
+"17": {
+"tp": "지름과 원주각",
+"key": "지름에 대한 원주각은 $90^\\circ$",
+"sol": [
+"$\\angle x=\\angle ADB=90^\\circ-25^\\circ=65^\\circ$",
+"$\\angle ACB=\\angle ADB=65^\\circ$",
+"$\\angle y=\\angle BPC=180^\\circ-39^\\circ-65^\\circ=76^\\circ$",
+"$\\angle y-\\angle x=11^\\circ$"
+],
+"check": "ok"
+},
+"18": {
+"tp": "지름과 원주각",
+"key": "$\\angle ADB=90^\\circ$, $\\angle CAD=24^\\circ$",
+"sol": [
+"$\\angle CAD=\\dfrac12\\angle COD=24^\\circ$",
+"$\\triangle APD$에서 $\\angle ADP=90^\\circ$",
+"$\\angle CPD=90^\\circ-24^\\circ=66^\\circ$"
+],
+"check": "ok"
+},
+"19": {
+"tp": "반원의 접선과 닮음",
+"key": "$\\overline{AD}\\parallel\\overline{TV}\\parallel\\overline{BC}$",
+"sol": [
+"$\\overline{DC}=8+5=13$, $\\overline{AB}=\\sqrt{13^2-3^2}=4\\sqrt{10}$",
+"$\\triangle UAD\\sim\\triangle UCB$에서 $\\overline{AV}:\\overline{VB}=8:5$",
+"$\\overline{VB}=\\dfrac{5}{13}\\times4\\sqrt{10}=\\dfrac{20}{13}\\sqrt{10}$ → $a+b=33$"
+],
+"check": "ok"
+},
+"20": {
+"tp": "호의 길이와 원주각",
+"key": "두 현이 만나는 각 = 두 호에 대한 원주각의 합",
+"sol": [
+"원주 $36\\pi$, 호 $11\\pi$에 대한 중심각 $110^\\circ$",
+"$\\angle BPD=\\dfrac12\\times110^\\circ=55^\\circ$"
+],
+"check": "ok"
+},
+"21": {
+"tp": "접선과 특수각",
+"key": "$\\angle COB=60^\\circ$, $\\overline{OC}\\perp\\overline{CP}$",
+"sol": [
+"$\\overline{OC}=4$, $\\angle COP=60^\\circ$ → $\\overline{OP}=8$, $\\overline{CP}=4\\sqrt3$",
+"$\\overline{AP}=4+8=12$, $\\angle ACB=90^\\circ$이므로 $\\overline{AC}=8\\cos30^\\circ=4\\sqrt3$",
+"둘레 $12+4\\sqrt3+4\\sqrt3=12+8\\sqrt3$"
+],
+"check": "ok"
+},
+"22": {
+"tp": "호의 비와 원주각",
+"key": "호의 비 → 중심각 $36^\\circ$, $132^\\circ$, $192^\\circ$",
+"sol": [
+"$\\angle A=66^\\circ$이므로 $\\sin A\\gt\\cos A$ (ㄱ ○)",
+"호 AB의 원주각 $18^\\circ$, $\\angle ADB=20^\\circ\\gt18^\\circ$이면 D는 원의 내부 (ㄴ ×)",
+"ㄷ: 점 E의 위치에 따라 원 위에 있지 않을 수 있다 (×)"
+],
+"check": "ㄷ은 E가 어느 쪽에 있는지에 따라 달라지는 진술이라 답안(①, ㄷ 거짓)을 따름"
+},
+"23": {
+"tp": "직각삼각형의 둘레",
+"key": "(조건 누락)",
+"sol": [
+"<조건>이 편집본에 없어 풀이 불가. 학교 답안: $3(7+\\sqrt7)\\text{ cm}$"
+],
+"check": "<조건> 내용이 편집본에서 누락됨. 원본 확인 필요(답안의 'cmto'는 오타로 보고 cm로 옮김)"
+},
+"24": {
+"tp": "현의 수직이등분선과 반지름",
+"key": "$\\overline{OM}=r-2$",
+"sol": [
+"$r^2=5^2+(r-2)^2$",
+"$4r=29$ → $\\overline{OA}=\\dfrac{29}{4}\\text{ cm}$"
+],
+"check": "ok"
+}
+}

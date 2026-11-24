@@ -1,0 +1,184 @@
+{
+ "1": {
+  "tp": "평행선과 선분의 비",
+  "key": "평행선 사이 선분의 비는 같다",
+  "sol": [
+   "$l\\,/\\!/\\,m\\,/\\!/\\,n$이므로 $3:7=4:x$",
+   "$3x=28$, $x=\\dfrac{28}{3}$"
+  ],
+  "check": "ok"
+ },
+ "2": {
+  "tp": "확률의 덧셈",
+  "key": "동시에 일어나지 않는 두 사건",
+  "sol": [
+   "노란 공 $\\dfrac{4}{12}$, 파란 공 $\\dfrac{5}{12}$",
+   "$\\dfrac{4}{12}+\\dfrac{5}{12}=\\dfrac{9}{12}=\\dfrac34$"
+  ],
+  "check": "ok"
+ },
+ "3": {
+  "tp": "AA 닮음",
+  "key": "$\\triangle\\text{ABC}\\sim\\triangle\\text{EBD}$",
+  "sol": [
+   "$\\angle\\text{B}$ 공통, $\\angle\\text{A}=\\angle\\text{BED}$ → $\\triangle\\text{ABC}\\sim\\triangle\\text{EBD}$",
+   "$\\overline{\\text{AB}}=32$, 닮음비 $\\overline{\\text{AB}}:\\overline{\\text{EB}}=32:16=2:1$",
+   "$\\overline{\\text{AC}}=2\\times\\overline{\\text{ED}}=20\\,(\\text{cm})$"
+  ],
+  "check": "ok"
+ },
+ "4": {
+  "tp": "여사건의 확률",
+  "key": "차가 0 또는 1인 경우를 뺀다",
+  "sol": [
+   "차가 $0$: $6$가지, 차가 $1$: $10$가지",
+   "$1-\\dfrac{16}{36}=\\dfrac{20}{36}=\\dfrac59$"
+  ],
+  "check": "ok"
+ },
+ "5": {
+  "tp": "직각삼각형의 닮음",
+  "key": "$\\overline{\\text{AD}}^2=\\overline{\\text{BD}}\\times\\overline{\\text{DC}}$, $\\overline{\\text{EF}}^2=\\overline{\\text{FG}}\\times\\overline{\\text{FC}}$",
+  "sol": [
+   "$8^2=4x$ → $x=16$",
+   "$20^2=16\\times\\overline{\\text{FC}}$ → $\\overline{\\text{FC}}=25$, $y=25-16=9$",
+   "$2x+y=32+9=41$"
+  ],
+  "check": "ok"
+ },
+ "6": {
+  "tp": "경우의 수 비교",
+  "key": "각각 계산",
+  "sol": [
+   "① $\\dfrac{5\\times4}{2}=10$ ② $4\\times3=12$ ③ $8-1=7$",
+   "④ $11$~$50$의 소수: 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47 → $11$",
+   "⑤ 합이 9, 10, 11, 12: $4+3+2+1=10$ → 가장 큰 것은 ②"
+  ],
+  "check": "ok"
+ },
+ "7": {
+  "tp": "둔각삼각형 조건",
+  "key": "가장 긴 변 $x$: $x^2\\gt4^2+7^2$",
+  "sol": [
+   "삼각형 조건: $7\\lt x\\lt11$ → $x=8,9,10$",
+   "둔각: $x^2\\gt65$ → $x=9,10$",
+   "합 $=19$"
+  ],
+  "check": "ok"
+ },
+ "8": {
+  "tp": "같은 종류를 뽑을 확률",
+  "key": "각 운동별로 2명 뽑는 경우의 합",
+  "sol": [
+   "전체 $\\dfrac{40\\times39}{2}=780$",
+   "같은 운동: $120+91+45=256$",
+   "$\\dfrac{256}{780}=\\dfrac{64}{195}$"
+  ],
+  "check": "ok"
+ },
+ "9": {
+  "tp": "삼각형 넓이 조건의 확률",
+  "key": "PQ는 세로 선분, 길이 3b, 높이 2a",
+  "sol": [
+   "넓이 $=\\dfrac12\\times3b\\times2a=3ab=48$ → $ab=16$",
+   "$(a,b)=(2,8),(4,4),(8,2)$ → $3$가지",
+   "$\\dfrac{3}{64}$"
+  ],
+  "check": "ok"
+ },
+ "10": {
+  "tp": "중점연결정리의 응용",
+  "key": "M을 지나 BC에 평행한 선을 긋는다",
+  "sol": [
+   "M을 지나 $\\overline{\\text{BC}}$에 평행한 직선과 $\\overline{\\text{AC}}$의 교점을 N이라 하면 $\\overline{\\text{MN}}=\\dfrac12\\overline{\\text{BC}}$",
+   "$\\overline{\\text{DE}}=\\overline{\\text{EM}}$이므로 $\\triangle\\text{ECD}\\equiv\\triangle\\text{ENM}$(ASA) → $\\overline{\\text{CD}}=\\overline{\\text{MN}}=\\dfrac12\\overline{\\text{BC}}$",
+   "$\\overline{\\text{BD}}=\\dfrac32\\overline{\\text{BC}}=21$ → $\\overline{\\text{BC}}=14\\,(\\text{cm})$"
+  ],
+  "check": "ok"
+ },
+ "11": {
+  "tp": "여사건(약수·배수)",
+  "key": "a가 b의 약수이거나 b가 a의 약수인 경우를 센다",
+  "sol": [
+   "$a\\mid b$ 또는 $b\\mid a$인 순서쌍: $a=1$:6, $a=2$:4, $a=3$:3, $a=4$:3, $a=5$:2, $a=6$:4, $a=7$:1 → $23$가지",
+   "모두 자연수가 아닐 확률 $=\\dfrac{42-23}{42}=\\dfrac{19}{42}$"
+  ],
+  "check": "ok"
+ },
+ "12": {
+  "tp": "정사각형과 삼각형 넓이",
+  "key": "∠GCH=180°−∠ACB",
+  "sol": [
+   "$\\overline{\\text{AB}}=\\sqrt{17^2-8^2}=15$",
+   "$\\triangle\\text{ABC}$를 점 C를 중심으로 $90^\\circ$ 회전하면 B는 G로, A는 직선 HC 위의 점 A'($\\overline{\\text{CA'}}=\\overline{\\text{CH}}=8$)으로 간다",
+   "$\\triangle\\text{CGH}$와 $\\triangle\\text{CGA'}$은 밑변과 높이가 같으므로 $\\triangle\\text{CGH}=\\triangle\\text{ABC}$",
+   "$\\triangle\\text{ABC}=\\dfrac12\\times15\\times8=60\\,(\\text{cm}^2)$"
+  ],
+  "check": "ok"
+ },
+ "13": {
+  "tp": "무게중심과 둘레",
+  "key": "GG' ∥ MC, AG:GM=2:1",
+  "sol": [
+   "$\\overline{\\text{AG}}=4$ → $\\overline{\\text{GM}}=2$",
+   "$\\overline{\\text{GG'}}=\\dfrac23\\times\\dfrac12\\overline{\\text{MC}}=\\dfrac23\\times4=\\dfrac83$",
+   "$\\overline{\\text{MG'}}=\\dfrac23\\times\\dfrac12\\overline{\\text{AB}}=\\dfrac23\\times6=4$",
+   "둘레 $=2+\\dfrac83+4=\\dfrac{26}{3}\\,(\\text{cm})$"
+  ],
+  "check": "ok"
+ },
+ "14": {
+  "tp": "지불 방법과 금액의 수",
+  "key": "500원 1개 = 100원 5개로 겹치는 금액",
+  "sol": [
+   "방법의 수 $x=5\\times9\\times3-1=134$",
+   "100원·500원으로 만드는 금액: 0~1800원 중 100원 단위 $19$가지",
+   "금액의 수 $y=19\\times5-1=94$",
+   "$x+y=228$"
+  ],
+  "check": "ok"
+ },
+ "15": {
+  "tp": "세 주사위의 확률",
+  "key": "c의 홀짝이 반반이므로 p=1/2",
+  "sol": [
+   "$c$가 홀수·짝수일 확률이 각각 $\\dfrac12$ → $p=\\dfrac12=\\dfrac{288}{576}$",
+   "$a+b=c\\le12$: $(a,b)$ 48가지 중 $a+b\\ge13$인 3가지 제외 → $45$가지, $q=\\dfrac{45}{576}$",
+   "$p+q=\\dfrac{333}{576}=\\dfrac{37}{64}$"
+  ],
+  "check": "ok"
+ },
+ "16": {
+  "tp": "정사각형 속 교점과 넓이",
+  "key": "좌표 또는 닮음으로 G, H 위치 구하기",
+  "sol": [
+   "B(0,0), C(6,0), A(0,6), D(6,6)로 두면 E(0,3), F(3,6)",
+   "BF: $y=2x$, AC: $x+y=6$ → G(2,4); EC: $y=3-\\dfrac x2$ → H$\\left(\\dfrac65,\\dfrac{12}5\\right)$",
+   "신발끈 공식: $\\square\\text{AEHG}=\\dfrac{21}{5}$"
+  ],
+  "check": "ok"
+ },
+ "17": {
+  "tp": "0을 포함한 세 자리 수",
+  "key": "백의 자리에 0 불가, 3의 배수는 각 자리 숫자의 합",
+  "sol": [
+   "(1) $5\\times5\\times4=100$",
+   "(2) 합이 3의 배수인 숫자 조합: 0을 포함 {0,1,2},{0,1,5},{0,2,4},{0,4,5} → 각 $4$개씩 $16$개",
+   "0 미포함 {1,2,3},{1,3,5},{2,3,4},{3,4,5} → 각 $6$개씩 $24$개",
+   "$\\dfrac{40}{100}=\\dfrac25$"
+  ],
+  "check": "ok"
+ },
+ "18": {
+  "tp": "무게중심과 넓이 / 닮음과 각",
+  "key": "(1) AN:AD=1:2 (2) △OBD∽△OCE → △ODE∽△OBC",
+  "sol": [
+   "(1) $\\triangle\\text{ANC}=\\dfrac{\\overline{\\text{AN}}}{\\overline{\\text{AD}}}\\times\\dfrac12\\triangle\\text{ABC}=\\dfrac14\\triangle\\text{ABC}$ → $\\overline{\\text{AN}}=27$",
+   "$\\overline{\\text{AG}}=\\dfrac23\\times54=36$ → $\\overline{\\text{GN}}=9\\,(\\text{cm})$",
+   "(2) $\\overline{\\text{BC}}=\\overline{\\text{BE}}$, $\\angle\\text{EBC}=36^\\circ$ → $\\angle\\text{BEC}=72^\\circ=\\angle\\text{BDC}$",
+   "$\\triangle\\text{OBD}\\sim\\triangle\\text{OCE}$(AA) → $\\overline{\\text{OD}}:\\overline{\\text{OE}}=\\overline{\\text{OB}}:\\overline{\\text{OC}}$ → $\\triangle\\text{ODE}\\sim\\triangle\\text{OBC}$ → $\\angle\\text{ODE}=\\angle\\text{OBC}=36^\\circ$",
+   "$\\angle\\text{ADE}=180^\\circ-\\angle\\text{BDC}-\\angle\\text{ODE}=180^\\circ-72^\\circ-36^\\circ=72^\\circ$"
+  ],
+  "check": "ok"
+ }
+}

@@ -1,0 +1,196 @@
+{
+ "1": {
+  "tp": "원뿔 그릇의 수면",
+  "key": "물이 채워진 부분은 그릇과 닮음, 닮음비 $3:4$",
+  "sol": [
+   "$x=20\\times\\dfrac34=15$",
+   "수면의 지름 $y=16\\times\\dfrac34=12$",
+   "$x+y=27$"
+  ],
+  "check": "ok"
+ },
+ "2": {
+  "tp": "내각의 이등분선과 넓이",
+  "key": "$\\overline{\\text{BD}}:\\overline{\\text{DC}}=\\overline{\\text{AB}}:\\overline{\\text{AC}}=3:2$",
+  "sol": [
+   "$\\triangle\\text{ABD}:\\triangle\\text{ADC}=3:2$이므로 $\\triangle\\text{ADC}=20$",
+   "$\\triangle\\text{ABC}=30+20=50\\,(\\text{cm}^2)$"
+  ],
+  "check": "ok"
+ },
+ "3": {
+  "tp": "내각의 이등분선과 평행선",
+  "key": "$\\overline{\\text{BD}}:\\overline{\\text{DC}}=15:9=5:3$, $\\overline{\\text{ED}}/\\!/\\overline{\\text{AC}}$",
+  "sol": [
+   "$\\triangle\\text{ABD}=24\\times\\dfrac53=40$",
+   "$\\overline{\\text{BE}}:\\overline{\\text{EA}}=\\overline{\\text{BD}}:\\overline{\\text{DC}}=5:3$",
+   "$\\triangle\\text{AED}=40\\times\\dfrac38=15\\,(\\text{cm}^2)$"
+  ],
+  "check": "ok"
+ },
+ "4": {
+  "tp": "중점연결과 대각선",
+  "key": "$\\overline{\\text{HG}}=\\dfrac12\\overline{\\text{AC}}$, 높이 $=\\overline{\\text{HF}}=4$",
+  "sol": [
+   "등변사다리꼴이므로 HF는 높이, $\\overline{\\text{HF}}=4$",
+   "A에서 BC에 내린 수선의 발을 A'이라 하면 $\\overline{\\text{A'C}}=8-2=6$",
+   "$\\overline{\\text{AC}}^2=6^2+4^2=52$",
+   "$\\overline{\\text{HG}}^2=\\dfrac{52}{4}=13$"
+  ],
+  "check": "ok"
+ },
+ "5": {
+  "tp": "닮은 구의 부피",
+  "key": "닮음비 $2:3$ → 부피의 비 $8:27$",
+  "sol": [
+   "지름의 비 $16:24=2:3$, 부피의 비 $8:27$",
+   "가격 $=16000\\times\\dfrac{27}{8}=54000$(원)"
+  ],
+  "check": "ok"
+ },
+ "6": {
+  "tp": "부채꼴로 만든 원뿔",
+  "key": "호의 길이 = 밑면의 둘레",
+  "sol": [
+   "호의 길이 $2\\pi\\times6\\times\\dfrac{120}{360}=4\\pi=2\\pi r$, $r=2$",
+   "$h^2=6^2-2^2=32$"
+  ],
+  "check": "ok"
+ },
+ "7": {
+  "tp": "곱의 법칙",
+  "key": "상의 3 × 하의 4",
+  "sol": [
+   "$3\\times4=12$(가지)"
+  ],
+  "check": "ok"
+ },
+ "8": {
+  "tp": "적어도 하나",
+  "key": "1 − (모두 뒷면)",
+  "sol": [
+   "$1-\\dfrac14=\\dfrac34$"
+  ],
+  "check": "ok"
+ },
+ "9": {
+  "tp": "독립 사건의 곱",
+  "key": "두 확률을 곱한다",
+  "sol": [
+   "$0.7\\times0.8=0.56$ → $56\\,\\%$, $x=56$"
+  ],
+  "check": "ok"
+ },
+ "10": {
+  "tp": "합의 법칙",
+  "key": "합이 4, 7인 경우를 따로 세어 더함",
+  "sol": [
+   "합 4: (1,3),(2,2),(3,1) → 3가지",
+   "합 7: (4,3),(5,2),(6,1) → 3가지",
+   "$3+3=6$(가지)"
+  ],
+  "check": "ok"
+ },
+ "11": {
+  "tp": "교란순열",
+  "key": "제자리 1명 선택 × 나머지 3명이 모두 자리 바꾸기",
+  "sol": [
+   "제자리에 남을 1명 선택: 4가지",
+   "나머지 3명이 모두 다른 곳: 2가지",
+   "$4\\times2=8$(가지)"
+  ],
+  "check": "ok"
+ },
+ "12": {
+  "tp": "두 주사위 확률 판단",
+  "key": "각 보기의 경우를 직접 센다",
+  "sol": [
+   "① $1-\\dfrac{6}{36}=\\dfrac56$ (참)",
+   "② 합 5: 4가지, 합 10: 3가지 → $\\dfrac{7}{36}\\ne\\dfrac16$ (거짓)",
+   "③ 합은 항상 12 이하 → 1 (참)",
+   "④ 37의 배수 37, 74는 만들 수 없음 → 0 (참)",
+   "⑤ 두 직선이 일치하는 $b=2a$: (1,2),(2,4),(3,6) → $1-\\dfrac{3}{36}=\\dfrac{11}{12}$ (참)"
+  ],
+  "check": "ok"
+ },
+ "13": {
+  "tp": "방향 전환 4번",
+  "key": "최단경로는 방향 전환이 2번 이하 → 위·오른쪽·아래·오른쪽·위로 가는 길",
+  "sol": [
+   "오른쪽·위로만 가는 길은 방향을 최대 2번 바꾼다.",
+   "4번 바꾸려면 위 → 오른쪽 → 아래 → 오른쪽 → 위 순서로 가야 한다.",
+   "아래로 내려오는 세로 도로는 가운데 3개 중 하나 → 3가지"
+  ],
+  "check": "ok"
+ },
+ "14": {
+  "tp": "사다리꼴 속 평행선",
+  "key": "$\\overline{\\text{AO}}:\\overline{\\text{OC}}=5:8$, $\\triangle\\text{PEO}\\sim\\triangle\\text{PCB}$",
+  "sol": [
+   "$\\overline{\\text{AO}}:\\overline{\\text{OC}}=10:16=5:8$, $\\overline{\\text{EO}}=10\\times\\dfrac{8}{13}=\\dfrac{80}{13}$",
+   "$\\overline{\\text{EP}}:\\overline{\\text{PC}}=\\overline{\\text{EO}}:\\overline{\\text{BC}}=\\dfrac{80}{13}:16=5:13$",
+   "P의 높이는 EF 높이의 $\\dfrac{13}{18}$ → 사다리꼴 높이의 $\\dfrac{8}{13}\\times\\dfrac{13}{18}=\\dfrac49$",
+   "$\\triangle\\text{CAD}$에서 $\\overline{\\text{CQ}}:\\overline{\\text{CA}}=4:9$이므로 $\\overline{\\text{QH}}=10\\times\\dfrac49=\\dfrac{40}{9}$"
+  ],
+  "check": "ok"
+ },
+ "15": {
+  "tp": "단계별 닮음비",
+  "key": "단계마다 한 변이 절반",
+  "sol": [
+   "2단계 색칠한 삼각형의 한 변 $\\dfrac12$, 5단계는 $\\dfrac1{16}$",
+   "닮음비 $\\dfrac12:\\dfrac1{16}=8:1$"
+  ],
+  "check": "ok"
+ },
+ "16": {
+  "tp": "중점과 평행선",
+  "key": "D를 지나 BE에 평행한 선을 긋는다",
+  "sol": [
+   "D를 지나 $\\overline{\\text{BE}}$에 평행한 직선이 AC와 만나는 점을 G라 하면 $\\overline{\\text{AG}}=\\overline{\\text{GE}}$, $\\overline{\\text{DG}}=5$",
+   "$\\overline{\\text{GE}}:\\overline{\\text{EC}}=1:1$이므로 $\\overline{\\text{FE}}=\\dfrac12\\overline{\\text{DG}}=\\dfrac52$",
+   "$\\overline{\\text{BF}}=10-\\dfrac52=7.5\\,(\\text{cm})$"
+  ],
+  "check": "ok"
+ },
+ "17": {
+  "tp": "좌석 번호의 차",
+  "key": "두 좌석을 고르는 28가지 중 차가 10 미만인 쌍",
+  "sol": [
+   "좌석 2개를 고르는 경우 $\\dfrac{8\\times7}{2}=28$",
+   "같은 줄: 3+1+3=7, 다른 줄: (13,22),(14,22),(24,32),(24,33) 4쌍",
+   "$\\dfrac{11}{28}$"
+  ],
+  "check": "ok"
+ },
+ "18": {
+  "tp": "외각과 AA 닮음",
+  "key": "삼각형의 외각 = 이웃하지 않는 두 내각의 합",
+  "sol": [
+   "$\\angle\\text{EDF}=\\angle\\text{DAC}+\\angle\\text{ACD}=\\angle\\text{DAC}+\\angle\\text{BAE}=\\angle\\text{BAC}$",
+   "같은 방법으로 $\\angle\\text{DEF}=\\angle\\text{ABC}$",
+   "(1) $\\triangle\\text{ABC}\\sim\\triangle\\text{DEF}$ (AA 닮음)",
+   "(2) $\\overline{\\text{EF}}$에 대응하는 변은 $\\overline{\\text{BC}}=8$, 닮음비 $2:1$",
+   "둘레 $=(6+7+8)\\times\\dfrac12=10.5\\,(\\text{cm})$"
+  ],
+  "check": "ok"
+ },
+ "19": {
+  "tp": "세 반원의 넓이",
+  "key": "P+Q=R (피타고라스 정리)",
+  "sol": [
+   "$a^2=b^2+c^2$이므로 $P+Q=\\dfrac12\\pi(b^2+c^2)=\\dfrac12\\pi a^2=R$",
+   "$P+Q+R=2R=\\pi a^2$"
+  ],
+  "check": "ok"
+ },
+ "20": {
+  "tp": "동전과 계단 이동",
+  "key": "앞면 횟수 h로 위치 식 세우기",
+  "sol": [
+   "(1) $2h-(4-h)=2$ → $h=2$, $\\dfrac{6}{16}=\\dfrac38$",
+   "(2) $2h-(5-h)=-2$ → $h=1$, $\\dfrac{5}{32}$"
+  ],
+  "check": "ok"
+ }
+}

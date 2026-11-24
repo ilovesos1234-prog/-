@@ -1,0 +1,226 @@
+{
+ "1": {
+  "tp": "지수법칙·거듭제곱근 계산",
+  "key": "같은 밑·같은 근호로 묶기",
+  "sol": [
+   "$3^{2\\sqrt3+2-2\\sqrt3}=9$",
+   "$\\sqrt[3]{27}=3$, $\\sqrt[3]{64}=4$",
+   "$9+3-4=8$"
+  ],
+  "check": "ok"
+ },
+ "2": {
+  "tp": "실수인 거듭제곱근",
+  "key": "$2^{12}$의 네제곱근 $\\pm8$",
+  "sol": [
+   "$-\\sqrt{64}=-8$, $a=-2$",
+   "$b=\\pm8$, 최소 $b=-8$",
+   "$a+b=-10$"
+  ],
+  "check": "ok"
+ },
+ "3": {
+  "tp": "밑에 따른 최솟값",
+  "key": "$f=(1/a)^x$ 증가, $g$ 감소",
+  "sol": [
+   "$f$의 최솟값 $f(-1)=a$",
+   "$g$의 최솟값 $g(2)=a$",
+   "$a^2=\\dfrac14$ → $a=\\dfrac12$"
+  ],
+  "check": "ok"
+ },
+ "4": {
+  "tp": "평행이동과 역함수",
+  "key": "역함수 구해 비교",
+  "sol": [
+   "$f(x)=\\log_5(x-m)+3$",
+   "$f^{-1}(x)=5^{x-3}+m$",
+   "$m=7$"
+  ],
+  "check": "ok"
+ },
+ "5": {
+  "tp": "그래프와 로그부등식",
+  "key": "밑 $\\dfrac15\\lt1$ → 부등호 반대",
+  "sol": [
+   "$f(x)=\\dfrac13(x-3)(x-5)$",
+   "$0\\lt f(x)\\le5$",
+   "$x\\lt3$ 또는 $x\\gt5$, 그리고 $0\\le x\\le8$",
+   "정수 $0,1,2,6,7,8$ → $6$개"
+  ],
+  "check": "ok"
+ },
+ "6": {
+  "tp": "그래프로 a, b, c",
+  "key": "최댓값·주기·최대 위치",
+  "sol": [
+   "$a=2$, 주기 $2\\pi$ → $b=1$",
+   "$x=\\dfrac{\\pi}{2}$에서 최대 → $c=\\dfrac{\\pi}{2}$",
+   "$g(x)=2\\sin\\left(x-\\dfrac{\\pi}{2}\\right)+1$의 최댓값 $3$"
+  ],
+  "check": "ok"
+ },
+ "7": {
+  "tp": "밑·진수 조건 판별",
+  "key": "모든 $x$에서 밑 $\\gt0$, $\\ne1$, 진수 $\\gt0$",
+  "sol": [
+   "ㄱ. $x=0$이면 밑 $1$ (X)",
+   "ㄴ. 밑 $\\left(x-\\frac12\\right)^2+\\frac74$, $=1$인 실근 없음, 진수 $\\gt0$ (O)",
+   "ㄷ. $x=0$이면 진수 음수 (X)",
+   "ㄹ. $x=2$이면 진수 $0$ (X)"
+  ],
+  "check": "ok"
+ },
+ "8": {
+  "tp": "반원 접선과 둘레",
+  "key": "중심에서 OB까지 거리 $=r$",
+  "sol": [
+   "$(4-r)\\sin\\dfrac{\\pi}{6}=r$ → $r=\\dfrac43$, $\\overline{OP}=\\dfrac43$",
+   "둘레 $=\\overline{OP}+\\overline{OB}+\\overset{\\frown}{AB}+\\pi r$",
+   "$\\dfrac43+4+\\dfrac23\\pi+\\dfrac43\\pi=2\\pi+\\dfrac{16}{3}$"
+  ],
+  "check": "ok"
+ },
+ "9": {
+  "tp": "기울기와 각 변환",
+  "key": "$\\tan\\theta=-\\dfrac15$",
+  "sol": [
+   "식 $=\\dfrac{\\cos\\theta}{1+\\sin\\theta}-\\dfrac{\\cos\\theta}{1-\\sin\\theta}$",
+   "$=\\dfrac{-2\\sin\\theta\\cos\\theta}{\\cos^2\\theta}=-2\\tan\\theta$",
+   "$=\\dfrac25$"
+  ],
+  "check": "ok"
+ },
+ "10": {
+  "tp": "역수를 로그로",
+  "key": "밑 $3$ 로그를 취함",
+  "sol": [
+   "$\\dfrac3x=\\log_345$, $\\dfrac1y=\\log_35$",
+   "$\\dfrac3x-\\dfrac1y=\\log_39=2$",
+   "$\\dfrac1z=1$, $z=1$, $a=9$"
+  ],
+  "check": "ok"
+ },
+ "11": {
+  "tp": "부호로 절댓값 정리",
+  "key": "제$2$사분면",
+  "sol": [
+   "$\\sin\\theta\\tan\\theta\\lt0$ → $\\cos\\theta\\lt0$, 그러면 $\\sin\\theta\\gt0$",
+   "$(1-\\sin\\theta)+(\\sin\\theta-\\cos\\theta)+(\\cos\\theta+1)=2$"
+  ],
+  "check": "ok"
+ },
+ "12": {
+  "tp": "동경 위의 점과 삼각비",
+  "key": "$r=\\sqrt{a^2+1}$",
+  "sol": [
+   "$\\dfrac{1+2a}{r}=-1$",
+   "제곱: $3a^2+4a=0$, $a=-\\dfrac43$",
+   "$1+2a\\lt0$ 확인"
+  ],
+  "check": "ok"
+ },
+ "13": {
+  "tp": "sin 그래프와 내접 직사각형",
+  "key": "대칭축 $x=\\dfrac{\\pi}{2k}$",
+  "sol": [
+   "$\\overline{AB}=\\sqrt3$",
+   "B의 $x$좌표 $\\dfrac{\\pi}{2k}-1$",
+   "$2\\sin\\left(\\dfrac{\\pi}{2}-k\\right)=2\\cos k=\\sqrt3$ → $k=\\dfrac{\\pi}{6}$"
+  ],
+  "check": "ok"
+ },
+ "14": {
+  "tp": "지수·로그 연립부등식",
+  "key": "정수해 개수 조건",
+  "sol": [
+   "$3^x\\lt3^{13x-k}$ → $x\\gt\\dfrac{k}{12}$",
+   "$(x-2)^2\\le x+10$, $x\\gt2$ → $2\\lt x\\le6$",
+   "정수 $4,5,6$ → $3\\le\\dfrac{k}{12}\\lt4$",
+   "$k$의 최댓값 $47$"
+  ],
+  "check": "ok"
+ },
+ "15": {
+  "tp": "로그 관계식 비",
+  "key": "$P=a^k\\cdot\\dfrac{ST}{L}$",
+  "sol": [
+   "$P_B=a^k\\cdot\\dfrac{1.2S\\cdot T}{1.35L}$",
+   "$\\dfrac{P_B}{P_A}=\\dfrac{1.2}{1.35}=\\dfrac89$"
+  ],
+  "check": "ok"
+ },
+ "16": {
+  "tp": "cos 방정식의 해",
+  "key": "$\\sin\\dfrac{\\pi}{8}=\\cos\\dfrac{3\\pi}{8}$",
+  "sol": [
+   "$\\alpha=\\dfrac{3\\pi}{8}$, $\\beta=\\dfrac{13\\pi}{8}$, $\\gamma=\\dfrac{19\\pi}{8}$",
+   "$\\alpha+\\beta+2\\gamma=\\dfrac{27\\pi}{4}$",
+   "$\\cos\\dfrac{27\\pi}{4}=\\cos\\dfrac{3\\pi}{4}=-\\dfrac{\\sqrt2}{2}$"
+  ],
+  "check": "ok"
+ },
+ "17": {
+  "tp": "로그 그래프 교점 삼각형",
+  "key": "$|3x|=x+4$",
+  "sol": [
+   "$A(-1,\\log_23)$, $B(2,\\log_26)$",
+   "AB 기울기 $\\dfrac13$, $\\overline{AB}=\\sqrt{10}$",
+   "AC 기울기 $-3$, $\\overline{AC}=\\sqrt{10}$",
+   "넓이 $\\dfrac12\\cdot10=5$"
+  ],
+  "check": "ok"
+ },
+ "18": {
+  "tp": "주기함수 실근 개수",
+  "key": "$g=f+1$의 그래프",
+  "sol": [
+   "$g$: 극댓값 $1$ ($x=\\frac{\\pi}{4}$), $\\sqrt2$ ($x=\\frac{3\\pi}{4}$)",
+   "$g(t)=1$일 때만 실근 $6$개",
+   "$[0,\\pi]$에서 $t=\\dfrac{\\pi}{4},\\dfrac{5\\pi}{8},\\dfrac{7\\pi}{8}$",
+   "합 $2\\cdot\\dfrac{7\\pi}{4}+3\\pi=\\dfrac{13}{2}\\pi$ → $pq=26$"
+  ],
+  "check": "ok"
+ },
+ "19": {
+  "tp": "사다리꼴 넓이",
+  "key": "$A(0,1)$, $B(5,a^5)$",
+  "sol": [
+   "$\\dfrac12(1+a^5)\\cdot5=3$",
+   "$a^5=\\dfrac15$",
+   "$a=5^{-\\frac15}$"
+  ],
+  "check": "ok"
+ },
+ "20": {
+  "tp": "공통값 놓고 치환",
+  "key": "$t=\\log_ab\\gt1$",
+  "sol": [
+   "공통값 $k$: $5a=kt$, $b=\\dfrac{4k}{t}$, $5a+b=5k$",
+   "$t+\\dfrac4t=5$ → $t=4$",
+   "$3\\log_ab=12$"
+  ],
+  "check": "ok"
+ },
+ "21": {
+  "tp": "치환 방정식",
+  "key": "$t=3^x$, $u=\\log_3x$",
+  "sol": [
+   "(1) $t^2-9t-36=0$, $t=12$ → $x=\\log_312$",
+   "(2) $(2+u)(1-u)+4=0$, $u^2+u-6=0$",
+   "$u=-3$ 또는 $2$ → $x=\\dfrac{1}{27}$ 또는 $9$"
+  ],
+  "check": "ok"
+ },
+ "22": {
+  "tp": "판별식과 cos 부등식",
+  "key": "$D/4\\le0$",
+  "sol": [
+   "$3\\sin^2\\theta+\\cos^2\\theta-3\\cos\\theta-1\\le0$",
+   "$2\\cos^2\\theta+3\\cos\\theta-2\\ge0$, $(2\\cos\\theta-1)(\\cos\\theta+2)\\ge0$",
+   "$\\cos\\theta\\ge\\dfrac12$",
+   "$0\\le\\theta\\le\\dfrac{\\pi}{3}$ 또는 $\\dfrac{5\\pi}{3}\\le\\theta\\lt2\\pi$"
+  ],
+  "check": "ok"
+ }
+}

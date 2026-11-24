@@ -1,0 +1,167 @@
+{
+ "1": {
+  "tp": "포물선의 표준형",
+  "key": "완전제곱으로 평행이동",
+  "sol": [
+   "$(y-3)^2=8(x-2)$, $p=2$",
+   "초점 $(4,3)$, 준선 $x=0$",
+   "$a+b+c=7$"
+  ],
+  "check": "ok"
+ },
+ "2": {
+  "tp": "타원의 방정식",
+  "key": "$a^2-b^2=c^2$",
+  "sol": [
+   "초점이 $y$축 위: $a^2-b^2=4$, $a^2=10$",
+   "$b=\\sqrt6$, 단축 $2\\sqrt6$"
+  ],
+  "check": "ok"
+ },
+ "3": {
+  "tp": "쌍곡선의 점근선",
+  "key": "기울기 $=\\dfrac ab$",
+  "sol": [
+   "$\\dfrac{y^2}{16}-\\dfrac{x^2}{b^2}=1$, $\\dfrac4b=\\dfrac23$, $b=6$",
+   "$c=\\sqrt{16+36}=2\\sqrt{13}$"
+  ],
+  "check": "ok"
+ },
+ "4": {
+  "tp": "두 점 사이 거리",
+  "key": "근과 계수의 관계",
+  "sol": [
+   "$16+(a+4)^2+a^2=57$",
+   "$2a^2+8a-25=0$, 두 근의 합 $-4$"
+  ],
+  "check": "ok"
+ },
+ "5": {
+  "tp": "두 직선의 각",
+  "key": "좌표로 내적",
+  "sol": [
+   "A 원점: $\\overrightarrow{AC}=(3,4,0)$, $\\overrightarrow{AF}=(3,0,-3)$",
+   "$\\cos\\theta=\\dfrac{9}{5\\cdot3\\sqrt2}=\\dfrac{3\\sqrt2}{10}$"
+  ],
+  "check": "ok"
+ },
+ "6": {
+  "tp": "정사영의 넓이",
+  "key": "내분점의 정사영도 같은 비",
+  "sol": [
+   "밑면 중심 원점: $E'(-1,-1)$, $H'(-1,1)$, $F'(2,-2)$, $G'(2,2)$",
+   "사다리꼴 넓이 $\\dfrac12(2+4)\\cdot3=9$"
+  ],
+  "check": "ok"
+ },
+ "7": {
+  "tp": "구와 평면의 교선",
+  "key": "중심에서 평면까지 거리",
+  "sol": [
+   "중심 $(4,-1,6)$, $r^2=11$",
+   "$xz$평면까지 거리 $1$, 단면 반지름$^2=10$",
+   "넓이 $10\\pi$"
+  ],
+  "check": "ok"
+ },
+ "8": {
+  "tp": "포물선의 접선",
+  "key": "판별식, 기울기 곱 $-1$",
+  "sol": [
+   "$y=mx+n$: $x^2+12mx+12n=0$, $D=0$ → $n=3m^2$",
+   "$(4,a)$ 지남: $3m^2+4m-a=0$",
+   "$m_1m_2=-\\dfrac a3=-1$, $a=3$"
+  ],
+  "check": "ok"
+ },
+ "9": {
+  "tp": "타원·포물선의 정의",
+  "key": "준선까지 거리 = $\\overline{PF}$",
+  "sol": [
+   "포물선 $y^2=4cx$: $x_P+c=5$",
+   "$\\overline{PF'}=7$, $(x_P+c)^2+y_P^2=49$ → $y_P^2=24$",
+   "$4c(5-c)=24$, $c=2$ 또는 $3$; $5-c\\gt c$ → $c=2$"
+  ],
+  "check": "ok"
+ },
+ "10": {
+  "tp": "타원의 접선과 넓이",
+  "key": "산술·기하평균",
+  "sol": [
+   "넓이 $=\\dfrac{225}{x_1y_1}$, $x_1y_1$ 최대일 때 $\\dfrac{x_1^2}{30}=\\dfrac{y_1^2}{15}=\\dfrac12$",
+   "$x_1^2=15$, $y_1^2=\\dfrac{15}2$, $c^2=15$",
+   "$\\overline{PF}\\cdot\\overline{PF'}=a^2-\\dfrac{c^2}{a^2}x_1^2=30-\\dfrac{15}2=\\dfrac{45}2$"
+  ],
+  "check": "ok"
+ },
+ "11": {
+  "tp": "삼수선의 정리",
+  "key": "$H$는 $CM$ 위",
+  "sol": [
+   "$\\overline{OM}=\\sqrt5$, $\\triangle ABC=\\dfrac12\\cdot2\\sqrt5\\cdot\\overline{CM}=6$ → $\\overline{CM}=\\dfrac6{\\sqrt5}$",
+   "$\\overline{OC}^2=\\dfrac{36}5-5=\\dfrac{11}5$",
+   "$\\overline{OH}=\\dfrac{\\overline{OM}\\cdot\\overline{OC}}{\\overline{CM}}=\\dfrac{\\sqrt{55}}6$, $a=55$"
+  ],
+  "check": "ok"
+ },
+ "12": {
+  "tp": "증명 순서",
+  "key": "점 P를 먼저 잡기",
+  "sol": [
+   "(나) 점 P를 정함 → (가) 평행선 $n$이 $\\\\alpha$에 포함",
+   "→ (라) $l\\perp n$ → (다) $n\\parallel m$이므로 $l\\perp m$"
+  ],
+  "check": "ok"
+ },
+ "13": {
+  "tp": "구의 접선과 거리",
+  "key": "접점 원 C: $z=9$, 반지름 $12$",
+  "sol": [
+   "접선 길이 $\\sqrt{25^2-15^2}=20$, $\\overline{OO'}=\\dfrac{15^2}{25}=9$, 반지름 $12$",
+   "$B'(6,8,9)$, $\\overline{O'B'}=10$ → $\\overline{B'P}$는 $2\\sim22$",
+   "$\\overline{BP}^2=81+\\overline{B'P}^2$: 최댓값 $\\sqrt{565}$, 최솟값 $\\sqrt{85}$"
+  ],
+  "check": "ok"
+ },
+ "14": {
+  "tp": "이차곡선의 접선",
+  "key": "판별식 / 접점 공식",
+  "sol": [
+   "(1) $5x^2+3(3x+n)^2=15$, $D/4=81n^2-32(3n^2-15)=0$ → $n=\\pm4\\sqrt2$",
+   "(2) 접선 $\\dfrac{x_1x}{16}-\\dfrac{y_1y}9=1$이 $(4,-1)$ 지남: $y_1=9-\\dfrac94x_1$",
+   "쌍곡선에 대입: $x_1^2-9x_1+20=0$, $x_1=4,5$",
+   "$x=4$, $y=-\\dfrac54x+4$"
+  ],
+  "check": "ok"
+ },
+ "15": {
+  "tp": "쌍곡선 접선의 성질",
+  "key": "각의 이등분선 정리의 역",
+  "sol": [
+   "접선 $l$: $\\dfrac25x-\\dfrac{\\sqrt3}{12}y=1$, $x$절편 D$\\left(\\dfrac52,0\\right)$",
+   "$\\overline{PF'}=31$, $\\overline{PF}=21$",
+   "$\\overline{F'D}=\\dfrac{31}2$, $\\overline{FD}=\\dfrac{21}2$ → 비가 같으므로 $l$은 이등분선"
+  ],
+  "check": "ok"
+ },
+ "16": {
+  "tp": "꺾인 선분의 최솟값",
+  "key": "단위벡터와의 내적 합",
+  "sol": [
+   "각 벡터와 단위벡터 $\\vec u_i$의 내적으로 하한: 합 $\\ge\\dfrac{28}{\\sqrt{14}}=2\\sqrt{14}$",
+   "P, Q, R이 모두 원점일 때 $\\overline{AO}+\\overline{OB}=2\\sqrt{14}$로 등호"
+  ],
+  "check": "ok"
+ },
+ "17": {
+  "tp": "정사영의 길이",
+  "key": "수선 조건으로 P",
+  "sol": [
+   "E 원점: $M\\left(0,3,\\dfrac32\\right)$, $N\\left(0,\\dfrac32,0\\right)$",
+   "$\\overrightarrow{NP}\\perp\\overrightarrow{FM}$ → $t=\\dfrac23$, $\\overline{NP}=\\dfrac32$",
+   "N에서 평면 FHM까지 거리 $=\\dfrac{3\\sqrt2}4$",
+   "정사영 $\\sqrt{\\dfrac94-\\dfrac98}=\\dfrac{3\\sqrt2}4$"
+  ],
+  "check": "ok"
+ }
+}

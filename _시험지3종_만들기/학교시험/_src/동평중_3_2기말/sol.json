@@ -1,0 +1,206 @@
+{
+ "1": {
+  "tp": "특수각으로 각 구하기",
+  "key": "범위에서 $2x-30^\\circ=30^\\circ$",
+  "sol": [
+   "$15^\\circ\\le x\\le60^\\circ$이므로 $0^\\circ\\le 2x-30^\\circ\\le 90^\\circ$",
+   "$\\cos 30^\\circ=\\dfrac{\\sqrt3}{2}$이므로 $2x-30^\\circ=30^\\circ$, $x=30^\\circ$",
+   "$\\sin 30^\\circ=\\dfrac12$"
+  ],
+  "check": "ok"
+ },
+ "2": {
+  "tp": "사분원에서 삼각비를 선분으로",
+  "key": "빗변이 1인 직각삼각형, 밑변이 1인 직각삼각형을 고른다",
+  "sol": [
+   "$\\triangle AOB$에서 $\\overline{OA}=1$: $\\sin x=\\overline{AB}$, $\\cos x=\\overline{OB}$ (ㄴ ×)",
+   "$\\angle OAB=y$이므로 $\\cos y=\\overline{AB}$ (ㄷ ○), $\\sin y=\\overline{OB}$ (ㄹ ×)",
+   "$\\triangle DOC$에서 $\\overline{OC}=1$: $\\tan x=\\overline{CD}$ (ㅁ ○)",
+   "$z=90^\\circ-x$이므로 $\\tan x\\tan z=\\tan x\\cdot\\dfrac{1}{\\tan x}=1$ (ㅂ ○)",
+   "옳은 것: ㄱ, ㄷ, ㅁ, ㅂ"
+  ],
+  "check": "ok"
+ },
+ "3": {
+  "tp": "특수각 삼각비 계산",
+  "key": "값을 대입해 하나씩 확인",
+  "sol": [
+   "① $1\\div\\dfrac{\\sqrt2}{2}=\\sqrt2=\\dfrac{1}{\\sin45^\\circ}$ (옳음)",
+   "② $\\dfrac{\\sqrt3}{2}\\times\\sqrt3\\div\\dfrac{\\sqrt2}{2}=\\dfrac{3}{\\sqrt2}=\\dfrac{3\\sqrt2}{2}$ (옳음)",
+   "③ $\\sqrt3-1+\\dfrac{\\sqrt3}{3}=\\dfrac{4\\sqrt3}{3}-1$ (틀림)",
+   "④ $\\sqrt3-\\dfrac12\\cdot\\dfrac{\\sqrt2}{2}=\\sqrt3-\\dfrac{\\sqrt2}{4}$ (옳음)",
+   "⑤ $\\dfrac{\\sqrt3}{2}\\cdot\\dfrac{\\sqrt3+3}{2}=\\dfrac{3+3\\sqrt3}{4}$ (옳음)"
+  ],
+  "check": "ok"
+ },
+ "4": {
+  "tp": "삼각비로 세 변 놓기",
+  "key": "$\\overline{AC}=4k,\\ \\overline{BC}=3k,\\ \\overline{AB}=5k$",
+  "sol": [
+   "$\\cos A=\\dfrac45$이므로 $\\overline{AC}=4k$, $\\overline{AB}=5k$, $\\overline{BC}=3k$",
+   "넓이 $\\dfrac12\\cdot4k\\cdot3k=6k^2=150$, $k=5$",
+   "둘레 $12k=60$"
+  ],
+  "check": "ok"
+ },
+ "5": {
+  "tp": "두 변과 끼인각으로 넓이",
+  "key": "삼각형 $\\tfrac12ab\\sin\\theta$, 평행사변형 $ab\\sin\\theta$",
+  "sol": [
+   "$\\triangle ABC=\\dfrac12ab\\sin60^\\circ=\\dfrac{\\sqrt3}{4}ab$",
+   "$\\square DEFG=bc\\sin(180^\\circ-150^\\circ)=\\dfrac12bc$",
+   "$\\dfrac{\\sqrt3}{4}ab=\\dfrac12bc$에서 $\\sqrt3a=2c$",
+   "$a:c=2:\\sqrt3$"
+  ],
+  "check": "ok"
+ },
+ "6": {
+  "tp": "접선과 현이 이루는 각",
+  "key": "$\\angle CAT=\\angle ABC$",
+  "sol": [
+   "접선과 현이 이루는 각의 성질로 $\\angle CAT=\\angle ABC=102^\\circ$",
+   "$\\triangle CTA$에서 $\\angle CTA=180^\\circ-102^\\circ-30^\\circ=48^\\circ$"
+  ],
+  "check": "ok"
+ },
+ "7": {
+  "tp": "같은 길이의 현",
+  "key": "중심에서 수선이 현을 이등분",
+  "sol": [
+   "$2\\pi r=18\\pi$, $r=9$",
+   "$\\overline{AM}=\\sqrt{9^2-5^2}=2\\sqrt{14}$, $\\overline{AB}=4\\sqrt{14}=\\overline{CD}$",
+   "$\\triangle OCD$의 둘레 $=9+9+4\\sqrt{14}=18+4\\sqrt{14}$"
+  ],
+  "check": "ok"
+ },
+ "8": {
+  "tp": "동심원과 접선",
+  "key": "$\\overline{AP}^2=R^2-r^2$",
+  "sol": [
+   "$\\pi R^2-\\pi r^2=32\\pi$에서 $R^2-r^2=32$",
+   "$\\overline{OP}\\perp\\overline{AB}$이므로 $\\overline{AP}=\\sqrt{R^2-r^2}=4\\sqrt2$",
+   "$\\overline{AB}=2\\overline{AP}=8\\sqrt2$"
+  ],
+  "check": "ok"
+ },
+ "9": {
+  "tp": "반원과 세 접선",
+  "key": "접선의 길이가 같다 → 사다리꼴 높이",
+  "sol": [
+   "$\\overline{DT}=\\overline{DA}=5$, $\\overline{CT}=\\overline{CB}=2$이므로 $\\overline{DC}=7$",
+   "$\\overline{AB}^2=7^2-(5-2)^2=40$, $\\overline{AB}=2\\sqrt{10}$, 반지름 $\\sqrt{10}$",
+   "사다리꼴 $ABCD=\\dfrac12(5+2)\\cdot2\\sqrt{10}=7\\sqrt{10}$",
+   "색칠한 부분 $=7\\sqrt{10}-\\dfrac12\\pi(\\sqrt{10})^2=7\\sqrt{10}-5\\pi$"
+  ],
+  "check": "ok"
+ },
+ "10": {
+  "tp": "이등변삼각형과 호의 길이",
+  "key": "호의 길이는 중심각에 비례",
+  "sol": [
+   "$\\overline{CO}=\\overline{CP}$이므로 $\\angle COA=\\angle P=16^\\circ$",
+   "$\\angle OCB=16^\\circ+16^\\circ=32^\\circ$, $\\overline{OB}=\\overline{OC}$이므로 $\\angle OBC=32^\\circ$",
+   "$\\angle BOD=\\angle OBP+\\angle P=32^\\circ+16^\\circ=48^\\circ$",
+   "호 AC : 호 BD $=16:48=1:3$이므로 호 AC $=20$"
+  ],
+  "check": "ok"
+ },
+ "11": {
+  "tp": "원을 접은 현",
+  "key": "중심에서 현까지 거리가 반지름의 절반",
+  "sol": [
+   "반지름 $r$, 중심에서 현까지 거리 $\\dfrac r2$, 현의 절반 $7\\sqrt3$",
+   "$\\left(\\dfrac r2\\right)^2+(7\\sqrt3)^2=r^2$에서 $r^2=196$, $r=14$",
+   "$\\cos\\dfrac{\\theta}{2}=\\dfrac12$이므로 중심각 $\\theta=120^\\circ$",
+   "호 AB $=2\\pi\\cdot14\\cdot\\dfrac{120}{360}=\\dfrac{28}{3}\\pi$"
+  ],
+  "check": "ok"
+ },
+ "12": {
+  "tp": "원주각과 중심각",
+  "key": "같은 호의 원주각은 같고 중심각은 2배",
+  "sol": [
+   "$\\angle x=\\angle AQB=\\angle APB=36^\\circ$",
+   "$\\angle y=\\angle AOB=2\\times36^\\circ=72^\\circ$",
+   "$\\angle x+\\angle y=108^\\circ$"
+  ],
+  "check": "ok"
+ },
+ "13": {
+  "tp": "네 점이 한 원 위에 있을 조건",
+  "key": "같은 쪽 각이 같거나 대각의 합이 180°",
+  "sol": [
+   "① $\\angle ADB=\\angle ACB=45^\\circ$ → 한 원 위",
+   "② $\\angle B=180^\\circ-60^\\circ-40^\\circ=80^\\circ$, $\\angle B+\\angle D=180^\\circ$ → 한 원 위",
+   "③ $\\angle C=180^\\circ-48^\\circ-52^\\circ=80^\\circ=\\angle EAB$(외각) → 한 원 위",
+   "④ 직사각형 → 한 원 위",
+   "⑤ $\\angle C$의 외각 $105^\\circ\\ne\\angle A=75^\\circ$ → 한 원 위에 있지 않다"
+  ],
+  "check": "ok"
+ },
+ "14": {
+  "tp": "접선과 현이 이루는 각 + 지름",
+  "key": "$\\angle ADC=\\angle ACT$, 지름의 원주각 $90^\\circ$",
+  "sol": [
+   "$\\overline{BD}$가 지름이므로 $\\angle BCD=90^\\circ$, $\\angle CBD=58^\\circ$",
+   "$\\angle CAD=\\angle CBD=58^\\circ$",
+   "접선과 현이 이루는 각: $\\angle ADC=\\angle ACT=85^\\circ$",
+   "$\\triangle ACD$에서 $\\angle ACD=180^\\circ-85^\\circ-58^\\circ=37^\\circ$"
+  ],
+  "check": "ok"
+ },
+ "15": {
+  "tp": "접선의 길이와 피타고라스",
+  "key": "$\\overline{DH}=\\overline{DE}$, $\\overline{IH}=\\overline{IG}$",
+  "sol": [
+   "반지름 4이므로 $\\overline{DE}=10-4=6=\\overline{DH}$",
+   "$\\overline{IG}=\\overline{IH}=x$라 하면 $\\overline{IC}=6-x$, $\\overline{DI}=6+x$",
+   "$(6+x)^2=8^2+(6-x)^2$에서 $24x=64$, $x=\\dfrac83$",
+   "$\\overline{DI}=6+\\dfrac83=\\dfrac{26}{3}$ cm"
+  ],
+  "check": "ok"
+ },
+ "16": {
+  "tp": "두 변과 끼인각으로 거리",
+  "key": "A에서 수선 또는 B에서 수선을 내려 직각삼각형 만들기",
+  "sol": [
+   "B에서 $\\overline{AC}$에 수선 BH: $\\overline{BH}=30\\sin30^\\circ=15$, $\\overline{CH}=30\\cos30^\\circ=15\\sqrt3$",
+   "$\\overline{AH}=25\\sqrt3-15\\sqrt3=10\\sqrt3$",
+   "$\\overline{AB}=\\sqrt{(10\\sqrt3)^2+15^2}=\\sqrt{525}=5\\sqrt{21}$ (m)"
+  ],
+  "check": "ok"
+ },
+ "17": {
+  "tp": "대각선과 끼인각으로 사각형 넓이",
+  "key": "$\\square=\\tfrac12\\overline{AC}\\cdot\\overline{BD}\\sin\\theta$",
+  "sol": [
+   "$\\angle BOC=180^\\circ-120^\\circ=60^\\circ$",
+   "$\\triangle OBC=\\dfrac12\\cdot\\overline{OB}\\cdot5\\sin60^\\circ=10\\sqrt3$에서 $\\overline{OB}=8$",
+   "$\\overline{BD}=13$, $\\overline{AC}=25-13=12$",
+   "$\\square ABCD=\\dfrac12\\cdot12\\cdot13\\cdot\\sin60^\\circ=39\\sqrt3$"
+  ],
+  "check": "ok"
+ },
+ "18": {
+  "tp": "지름 위 원주각으로 각 구하기",
+  "key": "$\\angle DAE=\\tfrac12\\angle DOE$, $\\angle AEB=90^\\circ$",
+  "sol": [
+   "$\\overline{AE}$를 그으면 $\\angle DAE=\\dfrac12\\times58^\\circ=29^\\circ$",
+   "$\\overline{AB}$가 지름이므로 $\\angle AEB=90^\\circ$, $\\angle AEC=90^\\circ$",
+   "$\\triangle ACE$에서 $\\angle DCE=180^\\circ-90^\\circ-29^\\circ=61^\\circ$"
+  ],
+  "check": "ok"
+ },
+ "19": {
+  "tp": "외심과 수선으로 닮음 찾기",
+  "key": "$\\angle ADB=\\tfrac12\\angle APB$, $\\angle ABC=90^\\circ-\\angle PAB$",
+  "sol": [
+   "P는 외심이므로 $\\overline{PA}=\\overline{PB}$, $\\angle PAB=\\angle PBA=a$라 하자",
+   "$\\overline{AP}\\perp\\overline{BC}$이므로 $\\angle ABC=90^\\circ-a$",
+   "$\\angle APB=180^\\circ-2a$이고 $\\angle ADB$는 호 AB의 원주각이므로 $\\angle ADB=90^\\circ-a$",
+   "$\\angle ADB=\\angle ABC$, $\\angle A$는 공통",
+   "$\\therefore\\triangle ADB\\sim\\triangle ABC$ (AA 닮음)"
+  ],
+  "check": "ok"
+ }
+}

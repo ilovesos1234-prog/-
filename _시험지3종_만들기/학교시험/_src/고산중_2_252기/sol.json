@@ -1,0 +1,202 @@
+{
+ "1": {
+  "tp": "닮은 사각형의 대응",
+  "key": "A↔E, B↔F, C↔G, D↔H",
+  "sol": [
+   "닮음비 $=\\overline{\\text{AB}}:\\overline{\\text{EF}}=6:10=3:5$ → ⑤ 참, ② 거짓",
+   "$\\angle\\text{D}=\\angle\\text{H}=130^\\circ$, $\\angle\\text{F}=\\angle\\text{B}=360^\\circ-90^\\circ-70^\\circ-130^\\circ=70^\\circ$ → ① 거짓",
+   "$\\overline{\\text{CD}}$의 대응변은 $\\overline{\\text{GH}}$, B의 대응점은 F → ③, ④ 거짓"
+  ],
+  "check": "ok"
+ },
+ "2": {
+  "tp": "맞꼭지각 + 평행선",
+  "key": "△AFG∽△ACB, △ABC∽△ADE",
+  "sol": [
+   "$\\triangle\\text{AGF}\\sim\\triangle\\text{ABC}$: $\\overline{\\text{AF}}:\\overline{\\text{AC}}=2:4=1:2$ → $x=2\\times3=6$, $y=\\dfrac12\\times6=3$",
+   "$\\triangle\\text{ABC}\\sim\\triangle\\text{ADE}$: $6:9=6:z$ → $z=9$",
+   "$x+y+z=6+3+9=18$"
+  ],
+  "check": "ok"
+ },
+ "3": {
+  "tp": "평행선과 비",
+  "key": "△AGC에서 FE, △BFD에서 GC",
+  "sol": [
+   "$\\triangle$AGC에서 $\\overline{\\text{FE}}\\,/\\!/\\,\\overline{\\text{GC}}$ → $\\overline{\\text{FE}}:\\overline{\\text{GC}}=2:3$ → $\\overline{\\text{GC}}=12$",
+   "$\\triangle$BDF에서 G는 $\\overline{\\text{BF}}$의 중점 → $\\overline{\\text{FD}}=2\\overline{\\text{GC}}=24$",
+   "$\\overline{\\text{DE}}=24-8=16$"
+  ],
+  "check": "ok"
+ },
+ "4": {
+  "tp": "피타고라스 + 사영 정리",
+  "key": "AD²=BD×DC",
+  "sol": [
+   "$\\overline{\\text{AD}}=\\sqrt{15^2-9^2}=12$",
+   "$\\overline{\\text{AD}}^2=\\overline{\\text{BD}}\\times\\overline{\\text{DC}}$ → $144=9\\,\\overline{\\text{BD}}$, $\\overline{\\text{BD}}=16$",
+   "넓이 $=\\dfrac12\\times25\\times12=150$"
+  ],
+  "check": "ok"
+ },
+ "5": {
+  "tp": "중선 위의 무게중심",
+  "key": "D는 AB의 중점, DM=AB/6",
+  "sol": [
+   "$\\triangle\\text{ABC}=\\dfrac12\\times9\\times12=54$, 중선 $\\overline{\\text{CD}}$ (D는 $\\overline{\\text{AB}}$의 중점)",
+   "$\\overline{\\text{DM}}=\\dfrac12\\overline{\\text{AB}}-\\dfrac13\\overline{\\text{AB}}=\\dfrac16\\overline{\\text{AB}}$ → $\\triangle\\text{DCM}=\\dfrac16\\times54=9$",
+   "$\\overline{\\text{CG}}:\\overline{\\text{GD}}=2:1$ → $\\triangle\\text{GCM}=\\dfrac23\\times9=6$"
+  ],
+  "check": "ok"
+ },
+ "6": {
+  "tp": "직각삼각형의 빗변의 중점",
+  "key": "D는 BC의 중점 → DF=DB=DC",
+  "sol": [
+   "$\\overline{\\text{AD}}$, $\\overline{\\text{BF}}$는 중선 (G를 지남) → D, F는 각각 $\\overline{\\text{BC}}$, $\\overline{\\text{AC}}$의 중점",
+   "$\\triangle$BFC는 직각삼각형, D는 빗변의 중점 → $\\overline{\\text{DC}}=\\overline{\\text{DF}}=8$",
+   "$\\overline{\\text{EF}}\\,/\\!/\\,\\overline{\\text{AD}}$, F는 $\\overline{\\text{AC}}$의 중점 → E는 $\\overline{\\text{DC}}$의 중점",
+   "$\\overline{\\text{DE}}=4$"
+  ],
+  "check": "ok"
+ },
+ "7": {
+  "tp": "접힌 점의 위치",
+  "key": "FG=4, DG=8, GH와 IG를 미지수로",
+  "sol": [
+   "$\\overline{\\text{FG}}=\\overline{\\text{FC}}=4$, $\\overline{\\text{DG}}=\\overline{\\text{DC}}=8$. B를 원점으로 G$(a,\\,b)$라 하면",
+   "$(a-4)^2+b^2=16$, $(a-8)^2+(b-8)^2=64$",
+   "두 식을 빼면 $a=8-2b$ → $b=3.2$, $a=1.6$",
+   "$\\overline{\\text{IG}}=8-3.2=4.8$"
+  ],
+  "check": "ok"
+ },
+ "8": {
+  "tp": "합동인 직각삼각형",
+  "key": "EFGH는 정사각형",
+  "sol": [
+   "$\\overline{\\text{EH}}^2=4^2+5^2=41$",
+   "$\\square\\text{EFGH}=41$"
+  ],
+  "check": "ok"
+ },
+ "9": {
+  "tp": "직각삼각형의 높이",
+  "key": "AH=AB×AC/BC",
+  "sol": [
+   "$\\overline{\\text{BC}}=\\sqrt{6^2+8^2}=10$, $\\overline{\\text{AH}}=\\dfrac{6\\times8}{10}=\\dfrac{24}5$",
+   "$\\overline{\\text{DA}}\\perp$ 밑면 → $\\angle\\text{DAH}=90^\\circ$, $\\overline{\\text{DA}}=10$",
+   "$\\triangle\\text{DAH}=\\dfrac12\\times10\\times\\dfrac{24}5=24$"
+  ],
+  "check": "ok"
+ },
+ "10": {
+  "tp": "AA 닮음",
+  "key": "△COE ∽ △CBA",
+  "sol": [
+   "$\\overline{\\text{AC}}=10$, $\\overline{\\text{BC}}=\\sqrt{10^2-6^2}=8$",
+   "$\\triangle\\text{COE}\\sim\\triangle\\text{CBA}$ (AA) → $\\overline{\\text{EO}}:\\overline{\\text{AB}}=\\overline{\\text{CO}}:\\overline{\\text{CB}}$",
+   "$\\overline{\\text{EO}}=\\dfrac{6\\times5}{8}=\\dfrac{15}4$"
+  ],
+  "check": "ok"
+ },
+ "11": {
+  "tp": "접은 도형 = 원래 도형",
+  "key": "□FEMH ≡ □FEAD",
+  "sol": [
+   "$\\overline{\\text{AE}}=16-6=10$ ($\\overline{\\text{EM}}=10$, $6^2+8^2=10^2$ 확인)",
+   "$\\overline{\\text{DF}}=x$라 하면 $\\overline{\\text{FM}}=\\overline{\\text{FA}}$: $16^2+x^2=8^2+(16-x)^2$ → $x=2$",
+   "$\\square\\text{FEMH}=\\square\\text{FEAD}=\\dfrac12\\times(10+2)\\times16=96$"
+  ],
+  "check": "ok"
+ },
+ "12": {
+  "tp": "삼각형의 결정 조건",
+  "key": "가장 긴 변 < 나머지 두 변의 합",
+  "sol": [
+   "모든 경우 $10$가지",
+   "삼각형: $(2,3,4),(2,4,5),(2,5,6),(3,4,5),(3,4,6),(3,5,6),(4,5,6)$ → $7$가지",
+   "$\\dfrac7{10}$"
+  ],
+  "check": "ok"
+ },
+ "13": {
+  "tp": "0이 있는 카드",
+  "key": "일의 자리 0, 2, 4로 나눔",
+  "sol": [
+   "모든 경우 $5\\times5=25$",
+   "일의 자리 $0$: $5$, $2$: $4$, $4$: $4$ → $13$",
+   "$\\dfrac{13}{25}$"
+  ],
+  "check": "ok"
+ },
+ "14": {
+  "tp": "나머지로 분류",
+  "key": "각 꼭짓점에 놓일 확률 1/3씩",
+  "sol": [
+   "눈 $1,4$ → B, $2,5$ → C, $3,6$ → A: 각각 확률 $\\dfrac13$",
+   "같은 꼭짓점: $3\\times\\dfrac13\\times\\dfrac13=\\dfrac13$"
+  ],
+  "check": "ok"
+ },
+ "15": {
+  "tp": "여사건",
+  "key": "평행 ⇔ 기울기 같고 y절편 다름",
+  "sol": [
+   "평행: $\\dfrac{3b}a=3$ → $a=b$, $6$가지 → $\\dfrac16$",
+   "평행하지 않을 확률 $1-\\dfrac16=\\dfrac56$"
+  ],
+  "check": "ok"
+ },
+ "16": {
+  "tp": "확률의 덧셈과 곱셈",
+  "key": "(토○,일×)+(토×,일○)",
+  "sol": [
+   "$0.8\\times0.7+0.2\\times0.3=0.56+0.06=0.62$",
+   "$=\\dfrac{31}{50}$"
+  ],
+  "check": "ok"
+ },
+ "17": {
+  "tp": "공통각 AA 닮음",
+  "key": "∠C 공통, ∠B=∠CAD",
+  "sol": [
+   "(1) $\\triangle$ABC와 $\\triangle$DAC에서 $\\angle\\text{C}$는 공통, $\\angle\\text{B}=\\angle\\text{CAD}$ → $\\triangle\\text{ABC}\\sim\\triangle\\text{DAC}$ (AA 닮음)",
+   "(2) 닮음비 $\\overline{\\text{BC}}:\\overline{\\text{AC}}=8:4=2:1$",
+   "$\\overline{\\text{AD}}=\\dfrac12\\overline{\\text{AB}}=3$, $\\overline{\\text{DC}}=\\dfrac12\\overline{\\text{AC}}=2$ → $\\overline{\\text{BD}}=6$",
+   "$\\overline{\\text{AD}}+\\overline{\\text{BD}}=9$"
+  ],
+  "check": "ok"
+ },
+ "18": {
+  "tp": "평행선과 비를 여러 번",
+  "key": "AO:OC=2:3, EO=6",
+  "sol": [
+   "$\\overline{\\text{AO}}:\\overline{\\text{OC}}=10:15=2:3$ → $\\overline{\\text{EO}}=\\dfrac35\\times10=6$, $\\overline{\\text{AE}}:\\overline{\\text{EB}}=2:3$",
+   "$\\triangle$GEO$\\sim\\triangle$GCB → $\\overline{\\text{EG}}:\\overline{\\text{GC}}=6:15=2:5$",
+   "$\\triangle$CEO에서 $\\overline{\\text{GH}}\\,/\\!/\\,\\overline{\\text{EO}}$ → $\\overline{\\text{GH}}=\\dfrac57\\times6=\\dfrac{30}7$"
+  ],
+  "check": "ok"
+ },
+ "19": {
+  "tp": "꺼낸 것을 넣지 않는 확률",
+  "key": "C 당첨인 4가지 경우",
+  "sol": [
+   "(A, B, C)=(○,○,○): $\\dfrac3{10}\\cdot\\dfrac29\\cdot\\dfrac18=\\dfrac6{720}$",
+   "(○,×,○): $\\dfrac3{10}\\cdot\\dfrac79\\cdot\\dfrac28=\\dfrac{42}{720}$, (×,○,○): $\\dfrac7{10}\\cdot\\dfrac39\\cdot\\dfrac28=\\dfrac{42}{720}$",
+   "(×,×,○): $\\dfrac7{10}\\cdot\\dfrac69\\cdot\\dfrac38=\\dfrac{126}{720}$",
+   "합 $=\\dfrac{216}{720}=\\dfrac3{10}$"
+  ],
+  "check": "ok"
+ },
+ "20": {
+  "tp": "합을 4로 나눈 나머지",
+  "key": "a = 2, 6, 10",
+  "sol": [
+   "A→B→C→D 방향 → C에 놓이려면 $a=2,\\ 6,\\ 10$",
+   "$a=2$: $(1,1)$ / $a=6$: $(1,5),(2,4),(3,3),(4,2),(5,1)$ / $a=10$: $(4,6),(5,5),(6,4)$ → $9$가지",
+   "$\\dfrac9{36}=\\dfrac14$"
+  ],
+  "check": "ok"
+ }
+}

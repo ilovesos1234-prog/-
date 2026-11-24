@@ -1,0 +1,201 @@
+{
+ "1": {
+  "tp": "닮은 기둥의 대응변",
+  "key": "닮음비 3:6=1:2",
+  "sol": [
+   "$\\overline{\\text{AC}}:\\overline{\\text{A'C'}}=3:6=1:2$",
+   "$x:4=1:2$에서 $x=2$, $2:y=1:2$에서 $y=4$",
+   "$x+y=6$"
+  ],
+  "check": "ok"
+ },
+ "2": {
+  "tp": "평행선과 선분의 비",
+  "key": "한 직선 위 두 선분의 비가 같다",
+  "sol": [
+   "두 직선이 교차하므로 같은 직선 위의 선분끼리 짝짓는다",
+   "$3:4=3.5:x$",
+   "$3x=14$, $x=\\frac{14}{3}$"
+  ],
+  "check": "교차하는 두 직선 중 3cm와 4cm가 같은 직선, 3.5cm와 x cm가 같은 직선 위에 있다고 그림에서 판독"
+ },
+ "3": {
+  "tp": "무게중심과 중선",
+  "key": "D는 BC의 중점",
+  "sol": [
+   "AD는 중선이므로 $\\overline{\\text{BC}}=2\\overline{\\text{BD}}=4$",
+   "$x=4$"
+  ],
+  "check": "ok"
+ },
+ "4": {
+  "tp": "닮은 입체의 부피비",
+  "key": "부피비 = 닮음비의 세제곱",
+  "sol": [
+   "부피의 비는 $2^3:3^3=8:27$",
+   "$16:V=8:27$이므로 $V=54\\,\\text{cm}^3$"
+  ],
+  "check": "ok"
+ },
+ "5": {
+  "tp": "피타고라스 정리",
+  "key": "$x^2+12^2=15^2$",
+  "sol": [
+   "$x^2=225-144=81$",
+   "$x=9$"
+  ],
+  "check": "ok"
+ },
+ "6": {
+  "tp": "한 주사위의 경우의 수",
+  "key": "6의 약수 1, 2, 3, 6",
+  "sol": [
+   "6의 약수의 눈은 1, 2, 3, 6",
+   "경우의 수 4"
+  ],
+  "check": "ok"
+ },
+ "7": {
+  "tp": "AB∥CD∥EF",
+  "key": "CD = AB·EF/(AB+EF)",
+  "sol": [
+   "$\\triangle$CAB ∽ $\\triangle$CFE에서 $\\overline{\\text{BC}}:\\overline{\\text{CE}}=14:10=7:5$",
+   "$\\triangle$BEF에서 $\\overline{\\text{CD}}:\\overline{\\text{EF}}=\\overline{\\text{BC}}:\\overline{\\text{BE}}=7:12$",
+   "$\\overline{\\text{CD}}=10\\times\\frac{7}{12}=\\frac{35}{6}\\,\\text{cm}$"
+  ],
+  "check": "ok"
+ },
+ "8": {
+  "tp": "평행사변형과 AA 닮음",
+  "key": "△FBE ∽ △FDA",
+  "sol": [
+   "$\\overline{\\text{AD}}\\,/\\!/\\,\\overline{\\text{BE}}$이므로 $\\triangle$FBE ∽ $\\triangle$FDA (AA 닮음)",
+   "$\\overline{\\text{BE}}:\\overline{\\text{DA}}=9:12$이므로 $\\overline{\\text{BE}}=12$",
+   "$\\overline{\\text{BC}}=16$이므로 $\\overline{\\text{CE}}=16-12=4\\,\\text{cm}$"
+  ],
+  "check": "ok"
+ },
+ "9": {
+  "tp": "무게중심과 넓이",
+  "key": "△ABG=△BCG=12",
+  "sol": [
+   "$\\triangle$ABG $=\\triangle$BCG $=\\frac{1}{3}\\times36=12$",
+   "D는 AG의 중점이므로 $\\triangle$BDG $=\\frac{1}{2}\\times12=6$",
+   "E는 GC의 중점이므로 $\\triangle$BGE $=\\frac{1}{2}\\times12=6$",
+   "색칠한 부분 $=6+6=12\\,\\text{cm}^2$"
+  ],
+  "check": "ok"
+ },
+ "10": {
+  "tp": "닮음의 뜻과 성질",
+  "key": "넓이가 같아도 모양이 다를 수 있다",
+  "sol": [
+   "직각삼각형은 넓이가 같아도 두 변의 비가 다를 수 있으므로 항상 닮은 것은 아니다",
+   "따라서 ③"
+  ],
+  "check": "ok"
+ },
+ "11": {
+  "tp": "피타고라스 정리 두 번",
+  "key": "AD를 먼저 구한다",
+  "sol": [
+   "$\\overline{\\text{AD}}^2=20^2-16^2=144$, $\\overline{\\text{AD}}=12$",
+   "$\\overline{\\text{AB}}^2=5^2+12^2=169$, $\\overline{\\text{AB}}=13$"
+  ],
+  "check": "ok"
+ },
+ "12": {
+  "tp": "직각삼각형의 높이",
+  "key": "AB·CD = AC·BC",
+  "sol": [
+   "$\\overline{\\text{AC}}=\\sqrt{10^2-6^2}=8$",
+   "$10\\times\\overline{\\text{CD}}=6\\times8$",
+   "$\\overline{\\text{CD}}=4.8\\,\\text{cm}$"
+  ],
+  "check": "ok"
+ },
+ "13": {
+  "tp": "두 주사위 눈의 합",
+  "key": "합의 법칙",
+  "sol": [
+   "합이 4: (1,3), (2,2), (3,1) → 3가지",
+   "합이 8: (2,6), (3,5), (4,4), (5,3), (6,2) → 5가지",
+   "$3+5=8$"
+  ],
+  "check": "ok"
+ },
+ "14": {
+  "tp": "사다리꼴과 넓이의 비",
+  "key": "AE:EC=1:3, EF∥AB",
+  "sol": [
+   "$\\triangle$AED : $\\triangle$DEC $=4:12$이므로 $\\overline{\\text{AE}}:\\overline{\\text{EC}}=1:3$",
+   "$\\triangle$ABE $=\\triangle$DEC $=12$ (∵ $\\triangle$ABD $=\\triangle$ACD)",
+   "$\\triangle$EBC $=3\\times\\triangle$ABE $=36$",
+   "EF∥AB이므로 $\\overline{\\text{FC}}:\\overline{\\text{BC}}=\\overline{\\text{EC}}:\\overline{\\text{AC}}=3:4$",
+   "$\\triangle$EFC $=36\\times\\frac{3}{4}=27\\,\\text{cm}^2$"
+  ],
+  "check": "ok"
+ },
+ "15": {
+  "tp": "직각삼각형의 닮음",
+  "key": "AO² = AH·AD",
+  "sol": [
+   "$\\triangle$AOH에서 $\\overline{\\text{AH}}=\\sqrt{25-16}=3$",
+   "$\\triangle$AOD에서 $\\overline{\\text{AO}}^2=\\overline{\\text{AH}}\\times\\overline{\\text{AD}}$, $\\overline{\\text{AD}}=\\frac{25}{3}$",
+   "$\\overline{\\text{OD}}=\\sqrt{\\frac{625}{9}-25}=\\frac{20}{3}$",
+   "넓이 $=\\frac{1}{2}\\times10\\times\\frac{40}{3}=\\frac{200}{3}$"
+  ],
+  "check": "ok"
+ },
+ "16": {
+  "tp": "정사각형과 원",
+  "key": "BF² = 12² + 8²",
+  "sol": [
+   "두 정사각형의 한 변은 4, 8",
+   "$\\overline{\\text{BE}}=12$, $\\overline{\\text{EF}}=8$이므로 $\\overline{\\text{BF}}^2=144+64=208$",
+   "원의 넓이 $=\\pi\\times\\frac{\\overline{\\text{BF}}^2}{4}=52\\pi\\,\\text{cm}^2$"
+  ],
+  "check": "ok"
+ },
+ "17": {
+  "tp": "한 명만 제자리",
+  "key": "나머지 3명은 모두 다른 자리",
+  "sol": [
+   "제자리에 앉을 1명을 고르는 방법 4가지",
+   "나머지 3명이 모두 남의 자리에 앉는 방법 2가지",
+   "$4\\times2=8$"
+  ],
+  "check": "ok"
+ },
+ "18": {
+  "tp": "직사각형 안의 닮음",
+  "key": "MH∥AD",
+  "sol": [
+   "(1) $\\angle$C는 공통, $\\angle$CHM $=\\angle$CDA $=90^\\circ$이므로 $\\triangle$CHM ∽ $\\triangle$CDA (AA 닮음)",
+   "(2) $\\overline{\\text{CM}}=\\frac{1}{2}\\overline{\\text{OC}}=\\frac{1}{4}\\overline{\\text{CA}}$이므로 닮음비 $1:4$",
+   "(3) $\\triangle$CDA $=\\frac{1}{2}\\times3\\times4=6$, 넓이의 비 $1:16$",
+   "$\\triangle$CHM $=\\frac{6}{16}=\\frac{3}{8}\\,\\text{cm}^2$"
+  ],
+  "check": "(1)은 엇각을 이용해 △ABC(AA 닮음)로 답해도 맞다"
+ },
+ "19": {
+  "tp": "직각삼각형의 외심과 무게중심",
+  "key": "빗변의 중점은 외심",
+  "sol": [
+   "(1) $\\overline{\\text{BC}}=\\sqrt{16^2+12^2}=20\\,\\text{cm}$",
+   "(2) D는 빗변의 중점(외심)이므로 $\\overline{\\text{AD}}=\\frac{1}{2}\\overline{\\text{BC}}=10\\,\\text{cm}$",
+   "(3) $\\overline{\\text{AG}}=\\frac{2}{3}\\overline{\\text{AD}}=\\frac{20}{3}\\,\\text{cm}$"
+  ],
+  "check": "ok"
+ },
+ "20": {
+  "tp": "0을 포함한 카드",
+  "key": "십의 자리에 0은 올 수 없다",
+  "sol": [
+   "(1) 십의 자리 4가지, 일의 자리 4가지 → $16$",
+   "(2) 일의 자리 0: 4개, 2: 3개, 4: 3개 → $10$",
+   "(3) 큰 수부터 43, 42, 41, 40, 34, 32 → 6번째는 $32$"
+  ],
+  "check": "ok"
+ }
+}

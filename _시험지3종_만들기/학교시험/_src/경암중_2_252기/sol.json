@@ -1,0 +1,180 @@
+{
+ "1": {
+  "tp": "모래시계 꼴",
+  "key": "BA:AD=BC:DE=1:2",
+  "sol": [
+   "$\\triangle\\text{ABC}\\sim\\triangle\\text{ADE}$ → $\\overline{\\text{BA}}:\\overline{\\text{AD}}=4:8=1:2$",
+   "$\\overline{\\text{BA}}=\\dfrac52$ → $a=\\overline{\\text{BD}}=\\dfrac52+5=7.5$"
+  ],
+  "check": "그림의 학생 필기가 많아 a를 BD 전체 길이, 5cm를 AD로 읽었다(보기와 맞음)."
+ },
+ "2": {
+  "tp": "정사각형 넓이로 직각 판별",
+  "key": "49+36=85 → ∠A=90°",
+  "sol": [
+   "$49+36=85$이므로 $\\angle\\text{A}=90^\\circ$인 직각삼각형",
+   "$\\overline{\\text{AB}}=7$, $\\overline{\\text{AC}}=6$ → 넓이 $=\\dfrac12\\times7\\times6=21$"
+  ],
+  "check": "ok"
+ },
+ "3": {
+  "tp": "확률의 곱셈",
+  "key": "각 주머니에서 독립",
+  "sol": [
+   "$\\dfrac47\\times\\dfrac26=\\dfrac8{42}=\\dfrac4{21}$"
+  ],
+  "check": "⑤ 보기의 분모가 필기에 가려 6/7로 읽었다(정답과 무관)."
+ },
+ "4": {
+  "tp": "닮음비 → 넓이의 비",
+  "key": "1:2 → 1:4",
+  "sol": [
+   "$\\triangle\\text{ADE}\\sim\\triangle\\text{ABC}$, 닮음비 $1:2$ → 넓이의 비 $1:4$",
+   "$\\triangle\\text{ABC}=20$ → $\\square\\text{DBCE}=20-5=15\\,(\\text{cm}^2)$"
+  ],
+  "check": "ok"
+ },
+ "5": {
+  "tp": "1, 2의 합으로 나누기",
+  "key": "2를 몇 번 쓰는지로 분류",
+  "sol": [
+   "$1+1+1+1+1$: $1$가지",
+   "$2$ 한 번 + $1$ 세 번: $4$가지",
+   "$2$ 두 번 + $1$ 한 번: $3$가지",
+   "$1+4+3=8$"
+  ],
+  "check": "ok"
+ },
+ "6": {
+  "tp": "평행사변형의 대각선 삼등분",
+  "key": "P, Q는 △ABC, △ACD의 무게중심",
+  "sol": [
+   "$\\overline{\\text{BP}}=\\overline{\\text{PQ}}=\\overline{\\text{QD}}$ → $\\overline{\\text{BD}}=18$",
+   "$\\triangle$CBD에서 중점연결정리 → $\\overline{\\text{MN}}=\\dfrac12\\times18=9\\,(\\text{cm})$"
+  ],
+  "check": "ok"
+ },
+ "7": {
+  "tp": "무게중심과 6등분",
+  "key": "△BDG=1/6 △ABC",
+  "sol": [
+   "$\\triangle\\text{ABC}=6\\times4=24$",
+   "$\\triangle\\text{ABD}=\\dfrac12\\times24=12$"
+  ],
+  "check": "ok"
+ },
+ "8": {
+  "tp": "확률의 뜻",
+  "key": "4/(9+x)=1/3",
+  "sol": [
+   "$\\dfrac4{9+x}=\\dfrac13$ → $9+x=12$, $x=3$"
+  ],
+  "check": "ok"
+ },
+ "9": {
+  "tp": "경우의 수 확인",
+  "key": "각각 직접 계산",
+  "sol": [
+   "(ㄱ) $3\\times2\\times1=6$ (거짓)",
+   "(ㄴ) $2\\times2\\times2=8$ (참)",
+   "(ㄷ) $(1,4),(2,5),(3,6),(4,1),(5,2),(6,3)$ → $6$ (거짓)",
+   "(ㄹ) $13+10-3=20$ (참)"
+  ],
+  "check": "(ㄴ)의 숫자가 필기에 일부 가려 '8'로 읽었다."
+ },
+ "10": {
+  "tp": "닮음비 → 겉넓이의 비",
+  "key": "2:3 → 4:9",
+  "sol": [
+   "겉넓이의 비 $4:9$",
+   "$108\\times\\dfrac49=48\\,(\\text{cm}^2)$"
+  ],
+  "check": "ok"
+ },
+ "11": {
+  "tp": "여사건",
+  "key": "1 − (둘 다 실패)",
+  "sol": [
+   "둘 다 실패: $\\dfrac13\\times\\dfrac35=\\dfrac15$",
+   "$1-\\dfrac15=\\dfrac45$"
+  ],
+  "check": "ok"
+ },
+ "12": {
+  "tp": "넓이 두 번 쓰기",
+  "key": "AB×AD=BD×AH",
+  "sol": [
+   "$\\overline{\\text{BD}}=\\sqrt{16^2+12^2}=20$",
+   "$16\\times12=20\\times\\overline{\\text{AH}}$ → $\\overline{\\text{AH}}=\\dfrac{48}5$"
+  ],
+  "check": "ok"
+ },
+ "13": {
+  "tp": "사다리꼴에 수선 긋기",
+  "key": "밑변 차 5",
+  "sol": [
+   "A에서 $\\overline{\\text{BC}}$에 수선을 그으면 밑변 차 $16-11=5$",
+   "$\\overline{\\text{CD}}=\\sqrt{13^2-5^2}=12\\,(\\text{cm})$"
+  ],
+  "check": "ok"
+ },
+ "14": {
+  "tp": "반지름 = 대각선",
+  "key": "OC=13",
+  "sol": [
+   "$\\overline{\\text{OC}}=13$ (반지름), $\\overline{\\text{CD}}=\\overline{\\text{OE}}=12$",
+   "$\\overline{\\text{OD}}=\\sqrt{13^2-12^2}=5$",
+   "넓이 $=12\\times5=60$"
+  ],
+  "check": "ok"
+ },
+ "15": {
+  "tp": "무게중심의 비 두 번",
+  "key": "AG=18, GM=9, GG'=6",
+  "sol": [
+   "$\\overline{\\text{AG}}=\\dfrac23\\times27=18$, $\\overline{\\text{GM}}=9$",
+   "$\\overline{\\text{GG'}}=\\dfrac23\\times9=6$",
+   "$\\overline{\\text{AG'}}=18+6=24$"
+  ],
+  "check": "ok"
+ },
+ "16": {
+  "tp": "피타고라스 정리",
+  "key": "빗변을 정확히 찾기",
+  "sol": [
+   "아래 직각삼각형: $x^2+9^2=15^2$ → $x=12$",
+   "위 직각삼각형: $15^2+y^2=17^2$ → $y=8$"
+  ],
+  "check": "ok"
+ },
+ "17": {
+  "tp": "보조선(평행선) 긋기",
+  "key": "A를 지나 DC에 평행한 선",
+  "sol": [
+   "A를 지나 $\\overline{\\text{DC}}$에 평행한 직선이 $\\overline{\\text{EF}}$, $\\overline{\\text{BC}}$와 만나는 점을 G, H라 하면 $\\overline{\\text{GF}}=\\overline{\\text{HC}}=8$, $\\overline{\\text{BH}}=5$",
+   "$\\overline{\\text{EG}}:\\overline{\\text{BH}}=\\overline{\\text{AE}}:\\overline{\\text{AB}}=4:10$ → $\\overline{\\text{EG}}=2$",
+   "$\\overline{\\text{EF}}=2+8=10\\,(\\text{cm})$"
+  ],
+  "check": "ok"
+ },
+ "18": {
+  "tp": "0이 있는 카드의 배수",
+  "key": "일의 자리 0 / 5로 나눔",
+  "sol": [
+   "일의 자리 $0$: 백의 자리 $6$가지, 십의 자리 $5$가지 → $30$",
+   "일의 자리 $5$: 백의 자리 $5$가지($0$, $5$ 제외), 십의 자리 $5$가지 → $25$",
+   "$30+25=55$(개)"
+  ],
+  "check": "ok"
+ },
+ "19": {
+  "tp": "합을 6으로 나눈 나머지",
+  "key": "A→B→C→D→E: 4칸",
+  "sol": [
+   "E에 놓이려면 두 눈의 합이 $4$ 또는 $10$",
+   "합 $4$: $(1,3),(2,2),(3,1)$ / 합 $10$: $(4,6),(5,5),(6,4)$ → $6$가지",
+   "$\\dfrac6{36}=\\dfrac16$"
+  ],
+  "check": "ok"
+ }
+}

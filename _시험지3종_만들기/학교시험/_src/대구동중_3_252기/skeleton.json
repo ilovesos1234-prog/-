@@ -1,0 +1,540 @@
+{
+ "meta": {
+  "year": 2025,
+  "school": "대구동중",
+  "grade": "중3",
+  "subject": "수학",
+  "title": "2025 대구동중 3학년 2학기 기말",
+  "term": "2학기 기말",
+  "range": "Ⅴ. 삼각비 ~ Ⅵ. 원의 성질",
+  "has_key": true,
+  "note": "배점이 인쇄되어 있지 않아 총점 100점에 맞춰 4점(16문항)·4.5점(8문항)으로 추정했다.",
+  "src": "2025 대구동중 중3 2학기 기말 (시험지).pdf"
+ },
+ "Q": [
+  {
+   "n": 1,
+   "pt": "4",
+   "ptGuess": true,
+   "type": "객",
+   "ans": "①",
+   "unit": "삼각비",
+   "sub": "닮은 직각삼각형에서 삼각비의 값",
+   "lv": 1,
+   "q": "그림에서 $\\angle ABD=x^\\circ$일 때, $x^\\circ$의 삼각비에 대한 설명으로 옳은 것만을 &lt;보기&gt;에서 있는 대로 고른 것은? (단, $0^\\circ\\le x^\\circ\\le 90^\\circ$이다.)<div style=\"border:1px solid #888;padding:4px 8px;margin:4px 0\">ㄱ. $\\tan x^\\circ=\\overline{DE}$<br>ㄴ. $\\cos x^\\circ=\\overline{AC}$<br>ㄷ. $x$의 값이 작아지면 $\\tan x^\\circ$의 값도 작아진다.<br>ㄹ. $x$의 값이 커지면 $\\sin x^\\circ$, $\\cos x^\\circ$의 값도 커진다.</div>",
+   "ch": [
+    "ㄱ, ㄷ",
+    "ㄱ, ㄹ",
+    "ㄴ, ㄷ",
+    "ㄱ, ㄷ, ㄹ",
+    "ㄴ, ㄷ, ㄹ"
+   ],
+   "imgs": [
+    "q1"
+   ],
+   "imgW": 40
+  },
+  {
+   "n": 2,
+   "pt": "4",
+   "ptGuess": true,
+   "type": "객",
+   "ans": "③",
+   "unit": "삼각비",
+   "sub": "30°, 45°, 60°의 삼각비의 값",
+   "lv": 1,
+   "q": "$\\sqrt{(2\\sin 30^\\circ-\\tan x)^2}-\\sqrt{(\\tan x-\\tan 45^\\circ)^2}$을 간단히 하면? (단, $45^\\circ\\lt x\\lt 90^\\circ$이다.)",
+   "ch": [
+    "$-2\\tan x$",
+    "$2-2\\tan x$",
+    "$0$",
+    "$2$",
+    "$2\\tan x$"
+   ]
+  },
+  {
+   "n": 3,
+   "pt": "4",
+   "ptGuess": true,
+   "type": "객",
+   "ans": "①",
+   "unit": "삼각비",
+   "sub": "입체도형에서 직각삼각형의 변의 길이",
+   "lv": 1,
+   "q": "그림과 같이 한 모서리의 길이가 $6$인 정사면체의 꼭짓점 A에서 밑면에 내린 수선의 발 H는 $\\triangle BCD$의 무게중심이다. $\\angle ADH=x^\\circ$라 할 때, $\\cos x^\\circ$의 값은?",
+   "ch": [
+    "$\\dfrac{\\sqrt{3}}{3}$",
+    "$\\dfrac{\\sqrt{2}}{2}$",
+    "$\\dfrac{\\sqrt{5}}{3}$",
+    "$\\dfrac{\\sqrt{3}}{2}$",
+    "$\\dfrac{\\sqrt{6}}{3}$"
+   ],
+   "imgs": [
+    "q3"
+   ],
+   "imgW": 42
+  },
+  {
+   "n": 4,
+   "pt": "4",
+   "ptGuess": true,
+   "type": "객",
+   "ans": "③",
+   "unit": "삼각비",
+   "sub": "다각형의 넓이",
+   "lv": 2,
+   "q": "5개의 합동인 이등변삼각형을 모아서 만든 정오각형 ABCDE의 한 변의 길이가 $4\\,\\text{cm}$일 때, 정오각형 ABCDE의 넓이는? (단, $\\tan 54^\\circ=1.38$로 계산한다.)",
+   "ch": [
+    "$5.52\\,\\text{cm}^2$",
+    "$25.4\\,\\text{cm}^2$",
+    "$27.6\\,\\text{cm}^2$",
+    "$32.4\\,\\text{cm}^2$",
+    "$34.6\\,\\text{cm}^2$"
+   ],
+   "imgs": [
+    "q4"
+   ],
+   "imgW": 42
+  },
+  {
+   "n": 5,
+   "pt": "4",
+   "ptGuess": true,
+   "type": "객",
+   "ans": "⑤",
+   "unit": "삼각비",
+   "sub": "일반 삼각형의 변의 길이",
+   "lv": 3,
+   "q": "그림은 건물의 높이 $\\overline{PH}$를 구하기 위해 측정한 결과이다. A, B, H는 평면 위의 세 점이고, 건물은 평면과 수직이다. A 지점에서 건물을 올려본 각은 $60^\\circ$, $\\overline{AB}=60\\,\\text{m}$일 때, 건물의 높이는? (단, 눈높이는 무시한다.)",
+   "ch": [
+    "$45\\sqrt{2}\\,\\text{m}$",
+    "$60\\sqrt{3}\\,\\text{m}$",
+    "$75\\sqrt{2}\\,\\text{m}$",
+    "$75\\sqrt{3}\\,\\text{m}$",
+    "$90\\sqrt{2}\\,\\text{m}$"
+   ],
+   "imgs": [
+    "q5"
+   ],
+   "imgW": 38
+  },
+  {
+   "n": 6,
+   "pt": "4.5",
+   "ptGuess": true,
+   "type": "객",
+   "ans": "④",
+   "unit": "삼각비",
+   "sub": "실생활에서 직각삼각형의 변의 길이 활용",
+   "lv": 3,
+   "q": "아파트 옥상의 한 지점을 A, 고층 빌딩 옥상의 한 지점을 B라 하고, 두 점 A, B에서 평평한 지면에 내린 수선의 발을 각각 C, D라 하자. 또, 나무의 꼭대기 지점을 E라 하고, 점 E에서 지면에 내린 수선의 발을 F라 하면 $\\overline{CF}=\\overline{FD}=60\\,\\text{m}$, $\\overline{EF}=45\\,\\text{m}$이다. 점 A에서 선분 BD에 내린 수선의 발을 G라 하면 $\\angle BAG=30^\\circ$, $\\angle EAG=45^\\circ$일 때, 선분 BD의 길이는 $a\\,\\text{m}$이다. $a$의 값은? (단, 세 점 C, F, D는 일직선 위에 있다.)",
+   "ch": [
+    "$90+40\\sqrt{6}$",
+    "$90+120\\sqrt{3}$",
+    "$105+40\\sqrt{2}$",
+    "$105+40\\sqrt{3}$",
+    "$120+40\\sqrt{3}$"
+   ],
+   "imgs": [
+    "q6"
+   ],
+   "imgW": 40
+  },
+  {
+   "n": 7,
+   "pt": "4.5",
+   "ptGuess": true,
+   "type": "객",
+   "ans": "②",
+   "unit": "삼각비",
+   "sub": "직각삼각형의 삼각비",
+   "lv": 3,
+   "q": "그림과 같이 $\\angle A=90^\\circ$이고 $\\overline{AB}=3$, $\\overline{AC}=4$인 직각삼각형 ABC에 대하여 점 A에서 선분 BC에 내린 수선의 발을 H라 하자. 선분 HC 위의 점 D에 대하여 $\\tan(\\angle ADH)=2$일 때, 옳은 것만을 &lt;보기&gt;에서 있는 대로 고른 것은?<div style=\"border:1px solid #888;padding:4px 8px;margin:4px 0\">ㄱ. $\\overline{AD}=\\dfrac{6}{5}\\sqrt{5}$<br>ㄴ. $\\overline{BD}=\\dfrac{16}{5}$<br>ㄷ. $\\tan(\\angle BAD)=2$<br>ㄹ. $\\cos(\\angle ABD)=\\dfrac{4}{5}$</div>",
+   "ch": [
+    "ㄱ, ㄴ",
+    "ㄱ, ㄷ",
+    "ㄴ, ㄹ",
+    "ㄱ, ㄷ, ㄹ",
+    "ㄴ, ㄷ, ㄹ"
+   ],
+   "imgs": [
+    "q7"
+   ],
+   "imgW": 50
+  },
+  {
+   "n": 8,
+   "pt": "4.5",
+   "ptGuess": true,
+   "type": "객",
+   "ans": "②",
+   "unit": "삼각비",
+   "sub": "삼각형의 넓이",
+   "lv": 3,
+   "q": "그림과 같이 중심이 O이고 중심각의 크기가 $90^\\circ$인 부채꼴 OAB에서 $\\angle BOC=30^\\circ$인 호 AB 위의 점 C에 대하여 선분 OC와 선분 AB가 만나는 점을 D, 점 D에서 선분 OB에 내린 수선의 발을 E라 하자. $\\overline{BE}=2\\sqrt{6}$일 때, $\\triangle CDA$의 넓이는?",
+   "ch": [
+    "$6\\sqrt{6}$",
+    "$12\\sqrt{3}$",
+    "$12\\sqrt{6}$",
+    "$18\\sqrt{2}$",
+    "$24\\sqrt{3}$"
+   ],
+   "imgs": [
+    "q8"
+   ],
+   "imgW": 42
+  },
+  {
+   "n": 9,
+   "pt": "4",
+   "ptGuess": true,
+   "type": "객",
+   "ans": "④",
+   "unit": "원의 성질",
+   "sub": "원의 중심과 현의 수직이등분선",
+   "lv": 1,
+   "q": "원 O의 반지름의 길이는 $16$이고 $\\overline{AB}=24$, $\\overline{OM}\\perp\\overline{AB}$일 때, $\\overline{OM}$의 길이는?",
+   "ch": [
+    "$5$",
+    "$4\\sqrt{3}$",
+    "$8$",
+    "$4\\sqrt{7}$",
+    "$10$"
+   ],
+   "imgs": [
+    "q9"
+   ],
+   "imgW": 38
+  },
+  {
+   "n": 10,
+   "pt": "4",
+   "ptGuess": true,
+   "type": "객",
+   "ans": "⑤",
+   "unit": "원의 성질",
+   "sub": "원의 접선의 성질",
+   "lv": 1,
+   "q": "두 점 A, B는 원 밖의 한 점 P에서 반지름의 길이가 $3\\,\\text{cm}$인 원 O에 그은 두 접선의 접점이다. $\\overline{OP}=5\\,\\text{cm}$, $\\overline{PB}=x\\,\\text{cm}$일 때, $x$의 값은?",
+   "ch": [
+    "$2$",
+    "$\\dfrac{5}{2}$",
+    "$3$",
+    "$\\dfrac{11}{3}$",
+    "$4$"
+   ],
+   "imgs": [
+    "q10"
+   ],
+   "imgW": 42
+  },
+  {
+   "n": 11,
+   "pt": "4",
+   "ptGuess": true,
+   "type": "객",
+   "ans": "②",
+   "unit": "원의 성질",
+   "sub": "원의 중심과 현의 수직이등분선",
+   "lv": 1,
+   "q": "두 원 O, O'이 두 점 P, Q에서 만날 때, 점 P를 지나는 직선과 두 원의 교점을 각각 점 A, B라 하자. $\\overline{AB}=8$이고, 두 원의 중심에서 $\\overline{AB}$에 내린 수선의 발을 각각 M, N이라 할 때 $\\overline{MN}$의 길이는?",
+   "ch": [
+    "$3$",
+    "$4$",
+    "$5$",
+    "$6$",
+    "$7$"
+   ],
+   "imgs": [
+    "q11"
+   ],
+   "imgW": 42
+  },
+  {
+   "n": 12,
+   "pt": "4",
+   "ptGuess": true,
+   "type": "객",
+   "ans": "③",
+   "unit": "원의 성질",
+   "sub": "원의 중심에서 현까지의 거리와 현의 길이",
+   "lv": 2,
+   "q": "원 O 위의 점 A, B, C에 대하여 $\\overline{OM}\\perp\\overline{AB}$, $\\overline{ON}\\perp\\overline{BC}$이고, $\\overline{OM}=\\overline{ON}$이다. $\\angle MON=120^\\circ$이고, $\\overline{BM}=4$일 때, $\\triangle ABC$의 넓이는?",
+   "ch": [
+    "$8\\sqrt{3}$",
+    "$16$",
+    "$16\\sqrt{3}$",
+    "$40$",
+    "$48$"
+   ],
+   "imgs": [
+    "q12"
+   ],
+   "imgW": 38
+  },
+  {
+   "n": 13,
+   "pt": "4",
+   "ptGuess": true,
+   "type": "객",
+   "ans": "③",
+   "unit": "원의 성질",
+   "sub": "원의 접선의 성질의 활용",
+   "lv": 2,
+   "q": "그림과 같이 원 O가 $\\overline{AB}$, $\\overline{AC}$의 연장선 및 $\\overline{BC}$와 접하는 접점을 각각 D, E, F라 하자. $\\overline{OD}=6$, $\\overline{AO}=18$일 때, $\\triangle ABC$의 둘레의 길이는?",
+   "ch": [
+    "$12\\sqrt{2}$",
+    "$24$",
+    "$24\\sqrt{2}$",
+    "$12+24\\sqrt{2}$",
+    "$24+24\\sqrt{2}$"
+   ],
+   "imgs": [
+    "q13"
+   ],
+   "imgW": 48
+  },
+  {
+   "n": 14,
+   "pt": "4",
+   "ptGuess": true,
+   "type": "객",
+   "ans": "⑤",
+   "unit": "원의 성질",
+   "sub": "원의 중심과 현의 수직이등분선",
+   "lv": 2,
+   "q": "반지름의 길이가 $13$인 원 O에서 현 AB의 길이가 $24$이다. 원 O 위를 움직이는 임의의 점 P에 대하여 $\\triangle ABP$의 넓이의 최댓값은?",
+   "ch": [
+    "$108$",
+    "$156$",
+    "$169$",
+    "$196$",
+    "$216$"
+   ],
+   "imgs": [
+    "q14"
+   ],
+   "imgW": 38
+  },
+  {
+   "n": 15,
+   "pt": "4.5",
+   "ptGuess": true,
+   "type": "객",
+   "ans": "①",
+   "unit": "원의 성질",
+   "sub": "원의 접선의 성질",
+   "lv": 3,
+   "q": "원 밖의 한 점 P에서 원 O에 그은 두 접선의 접점을 각각 A, B라 하고, $\\overline{PO}$가 원 O와 만나는 점을 Q라 하자. 점 Q를 지나는 원 O의 접선이 $\\overline{PA}$, $\\overline{PB}$와 만나는 점을 각각 C, D라 하고, $\\overline{AC}=3$, $\\overline{CP}=5$일 때, 원 O의 넓이는?",
+   "ch": [
+    "$36\\pi$",
+    "$49\\pi$",
+    "$64\\pi$",
+    "$81\\pi$",
+    "$100\\pi$"
+   ],
+   "imgs": [
+    "q15"
+   ],
+   "imgW": 44
+  },
+  {
+   "n": 16,
+   "pt": "4",
+   "ptGuess": true,
+   "type": "객",
+   "ans": "②",
+   "unit": "원의 성질",
+   "sub": "원의 접선의 성질",
+   "lv": 2,
+   "q": "반지름의 길이가 $4$인 원 O가 $\\square ABCD$와 네 점 P, Q, R, S에서 그림과 같이 접하고, $\\overline{AB}+\\overline{CD}=20$일 때, 색칠한 부분 $\\triangle APO+\\triangle BQO+\\triangle CRO+\\triangle DSO$의 넓이는?",
+   "ch": [
+    "$20$",
+    "$40$",
+    "$60$",
+    "$80$",
+    "$100$"
+   ],
+   "imgs": [
+    "q16"
+   ],
+   "imgW": 40
+  },
+  {
+   "n": 17,
+   "pt": "4",
+   "ptGuess": true,
+   "type": "객",
+   "ans": "①",
+   "unit": "원의 성질",
+   "sub": "원주각의 성질",
+   "lv": 1,
+   "q": "그림에서 $\\overline{AB}$는 원 O의 지름이고, $\\angle BOC=40^\\circ$일 때, $\\angle ACO$의 크기는?",
+   "ch": [
+    "$20^\\circ$",
+    "$25^\\circ$",
+    "$30^\\circ$",
+    "$35^\\circ$",
+    "$40^\\circ$"
+   ],
+   "imgs": [
+    "q17"
+   ],
+   "imgW": 40
+  },
+  {
+   "n": 18,
+   "pt": "4",
+   "ptGuess": true,
+   "type": "객",
+   "ans": "③",
+   "unit": "원의 성질",
+   "sub": "원주각의 크기와 호의 길이",
+   "lv": 1,
+   "q": "그림과 같이 원 O에서 $\\overset{\\frown}{AB}=\\overset{\\frown}{BC}$이고, $\\angle BOC=50^\\circ$일 때, $\\angle APC$의 크기는?",
+   "ch": [
+    "$25^\\circ$",
+    "$40^\\circ$",
+    "$50^\\circ$",
+    "$70^\\circ$",
+    "$100^\\circ$"
+   ],
+   "imgs": [
+    "q18"
+   ],
+   "imgW": 34
+  },
+  {
+   "n": 19,
+   "pt": "4.5",
+   "ptGuess": true,
+   "type": "객",
+   "ans": "①",
+   "unit": "원의 성질",
+   "sub": "원주각의 크기와 호의 길이",
+   "lv": 3,
+   "q": "그림에서 $\\overline{AD}$는 원 O의 지름이고, 점 C는 $\\overset{\\frown}{AB}$의 중점이다. $\\angle CDA=35^\\circ$일 때, $\\angle BAD+\\angle CPA$의 값은?",
+   "ch": [
+    "$75^\\circ$",
+    "$80^\\circ$",
+    "$85^\\circ$",
+    "$90^\\circ$",
+    "$95^\\circ$"
+   ],
+   "imgs": [
+    "q19"
+   ],
+   "imgW": 40
+  },
+  {
+   "n": 20,
+   "pt": "4",
+   "ptGuess": true,
+   "type": "객",
+   "ans": "④",
+   "unit": "원의 성질",
+   "sub": "접선과 현이 이루는 각의 활용",
+   "lv": 2,
+   "q": "그림에서 $\\overline{BP}$는 반원의 접선이고, 점 B는 접점이다. $\\overline{AB}$는 원 O의 지름이고, $\\angle CAB=40^\\circ$, $\\angle P$의 이등분선을 $\\overline{PD}$라 할 때, $\\angle PEB$의 크기는?",
+   "ch": [
+    "$100^\\circ$",
+    "$105^\\circ$",
+    "$110^\\circ$",
+    "$115^\\circ$",
+    "$120^\\circ$"
+   ],
+   "imgs": [
+    "q20"
+   ],
+   "imgW": 42
+  },
+  {
+   "n": 21,
+   "pt": "4.5",
+   "ptGuess": true,
+   "type": "객",
+   "ans": "⑤",
+   "unit": "원의 성질",
+   "sub": "원주각의 성질",
+   "lv": 3,
+   "q": "그림과 같이 직선 DT는 원 O의 접선이고, 점 D는 접점이다. $\\overline{BC}\\parallel\\overline{DT}$이고, $\\angle BAD=40^\\circ$, $\\angle ACE=80^\\circ$일 때, $\\angle BED$의 크기는?",
+   "ch": [
+    "$40^\\circ$",
+    "$45^\\circ$",
+    "$50^\\circ$",
+    "$55^\\circ$",
+    "$60^\\circ$"
+   ],
+   "imgs": [
+    "q21"
+   ],
+   "imgW": 40
+  },
+  {
+   "n": 22,
+   "pt": "4",
+   "ptGuess": true,
+   "type": "객",
+   "ans": "④",
+   "unit": "원의 성질",
+   "sub": "원주각의 크기와 호의 길이",
+   "lv": 2,
+   "q": "그림에서 $\\overset{\\frown}{AB}$의 길이는 전체 원주의 $\\dfrac{1}{5}$이고, $\\overset{\\frown}{CD}$의 길이는 전체 원주의 $\\dfrac{1}{4}$일 때, $\\angle x$의 크기는?",
+   "ch": [
+    "$70^\\circ$",
+    "$73^\\circ$",
+    "$75^\\circ$",
+    "$81^\\circ$",
+    "$85^\\circ$"
+   ],
+   "imgs": [
+    "q22"
+   ],
+   "imgW": 38
+  },
+  {
+   "n": 23,
+   "pt": "4.5",
+   "ptGuess": true,
+   "type": "객",
+   "ans": "⑤",
+   "unit": "원의 성질",
+   "sub": "두 원에서 접선과 현이 이루는 각",
+   "lv": 3,
+   "q": "그림과 같이 직선 BT는 두 원과 점 B에서 접하고, $\\overline{AC}$는 점 D에서 작은 원과 접한다. $\\angle ABT=60^\\circ$, $\\angle DAB=50^\\circ$일 때, $\\angle ABD+\\angle CDB$의 값은?",
+   "ch": [
+    "$100^\\circ$",
+    "$105^\\circ$",
+    "$110^\\circ$",
+    "$115^\\circ$",
+    "$120^\\circ$"
+   ],
+   "imgs": [
+    "q23"
+   ],
+   "imgW": 40
+  },
+  {
+   "n": 24,
+   "pt": "4.5",
+   "ptGuess": true,
+   "type": "객",
+   "ans": "②",
+   "unit": "원의 성질",
+   "sub": "접선과 현이 이루는 각의 활용",
+   "lv": 3,
+   "q": "그림과 같이 $\\overline{AB}$를 지름으로 하는 큰 반원과 $\\overline{AB}$ 위의 한 점 C에 대하여 $\\overline{BC}$를 지름으로 하는 작은 반원이 있다. 점 A에서 작은 반원에 그은 접선이 작은 반원과 만나는 접점을 D라 하고, 큰 반원과 만나는 점을 E라고 하자. 호 AB의 길이가 $54\\pi$일 때, 호 EB의 길이는? (단, 그림에서 $\\angle EDB=50^\\circ$이다.)",
+   "ch": [
+    "$3\\pi$",
+    "$6\\pi$",
+    "$7\\pi$",
+    "$8\\pi$",
+    "$9\\pi$"
+   ],
+   "imgs": [
+    "q24"
+   ],
+   "imgW": 55
+  }
+ ]
+}

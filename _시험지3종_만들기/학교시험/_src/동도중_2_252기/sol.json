@@ -1,0 +1,211 @@
+{
+ "1": {
+  "tp": "SAS 닮음",
+  "key": "$\\triangle\\text{ABC}\\sim\\triangle\\text{CBD}$",
+  "sol": [
+   "$\\overline{\\text{AB}}=27$, $\\overline{\\text{BC}}:\\overline{\\text{BA}}=18:27=2:3$, $\\overline{\\text{BD}}:\\overline{\\text{BC}}=12:18=2:3$, $\\angle\\text{B}$ 공통",
+   "$\\triangle\\text{ABC}\\sim\\triangle\\text{CBD}$(SAS) → $x=\\dfrac23\\times21=14$"
+  ],
+  "check": "ok"
+ },
+ "2": {
+  "tp": "접은 도형 속 닮음",
+  "key": "$\\triangle\\text{EAF}\\sim\\triangle\\text{FDG}\\sim\\triangle\\text{HIG}$",
+  "sol": [
+   "$\\overline{\\text{EF}}=\\overline{\\text{EB}}=5$, $\\overline{\\text{AE}}=3$, $\\overline{\\text{AF}}=4$, $\\overline{\\text{FD}}=4$",
+   "$\\triangle\\text{EAF}\\sim\\triangle\\text{FDG}$: $\\overline{\\text{DG}}=\\dfrac{16}{3}$, $\\overline{\\text{FG}}=\\dfrac{20}{3}$",
+   "$\\overline{\\text{GI}}=8-\\dfrac{20}{3}=\\dfrac43$, $\\triangle\\text{FDG}\\sim\\triangle\\text{HIG}$ → $\\overline{\\text{HI}}=\\dfrac43\\times\\dfrac{4}{16/3}=1$",
+   "$\\overline{\\text{DG}}+\\overline{\\text{HI}}=\\dfrac{16}{3}+1=\\dfrac{19}{3}$"
+  ],
+  "check": "ok"
+ },
+ "3": {
+  "tp": "평행사변형 속 닮음과 넓이",
+  "key": "△FEC∽△FDA, 닮음비 1:3",
+  "sol": [
+   "$\\overline{\\text{AF}}:\\overline{\\text{FC}}=3:1$, $\\triangle\\text{FEC}\\sim\\triangle\\text{FDA}$(닮음비 $1:3$)",
+   "평행사변형 넓이를 $S$라 하면 $\\triangle\\text{AFD}=\\dfrac34\\times\\dfrac S2=\\dfrac{3S}{8}$, $\\triangle\\text{CFE}=\\dfrac19\\times\\dfrac{3S}8=\\dfrac{S}{24}$",
+   "$\\triangle\\text{AOD}=\\dfrac S4$ → $\\dfrac S4:\\dfrac S{24}=6:1$"
+  ],
+  "check": "ok"
+ },
+ "4": {
+  "tp": "내각·외각 이등분선",
+  "key": "AB:AC=BD:DC=BE:CE",
+  "sol": [
+   "외각: $\\overline{\\text{BE}}:\\overline{\\text{CE}}=15:10$ → $\\overline{\\text{BE}}=27$, $\\overline{\\text{BC}}=9$",
+   "내각: $\\overline{\\text{BD}}:\\overline{\\text{DC}}=3:2$ → $\\overline{\\text{CD}}=\\dfrac{18}{5}$"
+  ],
+  "check": "ok"
+ },
+ "5": {
+  "tp": "사다리꼴의 중점연결",
+  "key": "MP=AD/2, MQ=BC/2",
+  "sol": [
+   "$\\overline{\\text{MP}}=3k$, $\\overline{\\text{PQ}}=4k$ → $\\overline{\\text{AD}}=6k$, $\\overline{\\text{BC}}=2\\times7k=14k$",
+   "$20k=30$, $k=\\dfrac32$ → $\\overline{\\text{PQ}}=6$"
+  ],
+  "check": "ok"
+ },
+ "6": {
+  "tp": "무게중심의 성질",
+  "key": "세 중선이 넓이를 6등분",
+  "sol": [
+   "$\\triangle\\text{ABG}=\\triangle\\text{BCG}=\\triangle\\text{CAG}=\\dfrac13\\triangle\\text{ABC}$ → ③",
+   "①②⑤는 일반적으로 성립하지 않고, ④는 $\\overline{\\text{CG}}:\\overline{\\text{GF}}=2:1$이어야 함"
+  ],
+  "check": "ok"
+ },
+ "7": {
+  "tp": "무게중심과 넓이",
+  "key": "△AGC=⅓△ABC, △DBE=¼△ABC",
+  "sol": [
+   "$\\triangle\\text{ABC}=3\\times80=240$",
+   "D, E는 각각 AB, BC의 중점 → $\\triangle\\text{DBE}=\\dfrac14\\times240=60$"
+  ],
+  "check": "ok"
+ },
+ "8": {
+  "tp": "무게중심과 중점연결",
+  "key": "DF=½BE",
+  "sol": [
+   "D는 BC의 중점, $\\overline{\\text{DF}}\\,/\\!/\\,\\overline{\\text{BE}}$ → $\\overline{\\text{DF}}=\\dfrac12\\overline{\\text{BE}}$",
+   "$\\overline{\\text{BE}}=42$, $\\overline{\\text{BG}}=\\dfrac23\\times42=28$"
+  ],
+  "check": "ok"
+ },
+ "9": {
+  "tp": "무게중심의 높이",
+  "key": "G의 높이는 A의 높이의 ⅓",
+  "sol": [
+   "A의 높이 $=\\dfrac{2\\times60}{12}=10$",
+   "$x=\\dfrac13\\times10=\\dfrac{10}{3}$"
+  ],
+  "check": "ok"
+ },
+ "10": {
+  "tp": "중점과 넓이의 비",
+  "key": "△ABC=S로 두고 □DEHF=△DEF+△EFH",
+  "sol": [
+   "$\\triangle\\text{ABC}=S$라 하면 $\\triangle\\text{ADE}=\\dfrac14S$, F가 AE의 중점이므로 $\\triangle\\text{DEF}=\\dfrac18S$",
+   "H가 CD의 중점이므로 $\\triangle\\text{AEH}=\\dfrac12(\\triangle\\text{AEC}-\\triangle\\text{AED})=\\dfrac12\\left(\\dfrac S2-\\dfrac S4\\right)=\\dfrac S8$, $\\triangle\\text{EFH}=\\dfrac{S}{16}$",
+   "$\\square\\text{DEHF}=\\dfrac{3}{16}S=18$ → $S=96$",
+   "$\\triangle\\text{AEC}=\\dfrac12S=48$"
+  ],
+  "check": "ok"
+ },
+ "11": {
+  "tp": "세 정사각형의 넓이",
+  "key": "P=Q+R",
+  "sol": [
+   "$\\overline{\\text{BC}}=9$, $\\overline{\\text{AB}}=15$, $\\overline{\\text{AC}}=12$",
+   "$P+R=225+144=369$"
+  ],
+  "check": "ok"
+ },
+ "12": {
+  "tp": "피타고라스 정리",
+  "key": "AB²=39²−36²",
+  "sol": [
+   "$\\overline{\\text{AB}}=\\sqrt{39^2-36^2}=\\sqrt{225}=15$",
+   "넓이 $=\\dfrac12\\times36\\times15=270$"
+  ],
+  "check": "ok"
+ },
+ "13": {
+  "tp": "유클리드의 증명",
+  "key": "△EBC≡△ABF(SAS)",
+  "sol": [
+   "$\\overline{\\text{EB}}=\\overline{\\text{AB}}$, $\\overline{\\text{BC}}=\\overline{\\text{BF}}$, $\\angle\\text{EBC}=\\angle\\text{ABF}=90^\\circ+\\angle\\text{ABC}$ → ④ 참",
+   "① $\\triangle\\text{EBC}=\\dfrac12\\times64=32$ ② $100$ ⑤ $\\triangle\\text{EBA}=32\\ne24$"
+  ],
+  "check": "③의 □ABFJ는 원본 표기를 그대로 옮김(직사각형 BFKJ=64를 의도한 듯, 정답 ④에는 영향 없음)"
+ },
+ "14": {
+  "tp": "피타고라스 정리 두 번",
+  "key": "AD를 먼저 구한다",
+  "sol": [
+   "$\\overline{\\text{AD}}=\\sqrt{30^2-18^2}=24$",
+   "$\\overline{\\text{AC}}=\\sqrt{24^2+10^2}=26$"
+  ],
+  "check": "ok"
+ },
+ "15": {
+  "tp": "삼등분점과 피타고라스",
+  "key": "BA=3a, BC=3c로 놓기",
+  "sol": [
+   "$\\overline{\\text{BE}}=a$, $\\overline{\\text{BD}}=2a$, $\\overline{\\text{BF}}=c$, $\\overline{\\text{BG}}=2c$",
+   "$\\overline{\\text{DF}}^2+\\overline{\\text{EG}}^2=5(a^2+c^2)=4205$ → $a^2+c^2=841$",
+   "$\\overline{\\text{AC}}^2-\\overline{\\text{EF}}^2=9\\times841-841=6728$"
+  ],
+  "check": "ok"
+ },
+ "16": {
+  "tp": "또는의 경우의 수",
+  "key": "중복(12의 배수)을 뺀다",
+  "sol": [
+   "$33+25-8=50$"
+  ],
+  "check": "ok"
+ },
+ "17": {
+  "tp": "지불 금액의 수",
+  "key": "50원 2개=100원 1개처럼 겹침 → 10원 단위로 정리",
+  "sol": [
+   "50원·100원으로 만드는 금액: 0, 50, 100, 150, 200원",
+   "10원 5개(0~50원)와 합치면 0원부터 250원까지 10원 단위로 모두 가능 → $26$가지"
+  ],
+  "check": "ok"
+ },
+ "18": {
+  "tp": "사전식 배열",
+  "key": "앞자리부터 차례로 센다",
+  "sol": [
+   "CE□□□□: $4!=24$",
+   "CLE□□□: $3!=6$",
+   "CLOE□□: $2$, CLOR□□: $2$, CLOVER: 다음",
+   "$24+6+4+1=35$번째"
+  ],
+  "check": "ok"
+ },
+ "19": {
+  "tp": "0 포함 세 자리 짝수",
+  "key": "일의 자리가 0인 경우와 아닌 경우를 나눈다",
+  "sol": [
+   "전체 $6\\times6\\times5=180$",
+   "일의 자리 0: $6\\times5=30$, 2·4·6: $3\\times5\\times5=75$",
+   "$\\dfrac{105}{180}=\\dfrac{7}{12}$"
+  ],
+  "check": "ok"
+ },
+ "20": {
+  "tp": "적어도 한 번",
+  "key": "여사건",
+  "sol": [
+   "$1-\\left(\\dfrac34\\right)^3=1-\\dfrac{27}{64}=\\dfrac{37}{64}$"
+  ],
+  "check": "ok"
+ },
+ "21": {
+  "tp": "직각삼각형의 중선과 AA 닮음",
+  "key": "AM=BM이므로 ∠MAB=∠B",
+  "sol": [
+   "(1) $10^2+24^2=26^2$이므로 $\\angle\\text{BAC}=90^\\circ$, 빗변의 중점 M에 대해 $\\overline{\\text{MA}}=\\overline{\\text{MB}}=13$",
+   "$\\angle\\text{GAD}=\\angle\\text{MAB}=\\angle\\text{CBA}$, $\\angle\\text{GDA}=\\angle\\text{CAB}=90^\\circ$ → $\\triangle\\text{GDA}\\sim\\triangle\\text{CAB}$(AA 닮음)",
+   "(2) $\\overline{\\text{AG}}=\\dfrac23\\times13=\\dfrac{26}{3}$, 닮음비 $\\overline{\\text{GA}}:\\overline{\\text{CB}}=\\dfrac{26}3:26=1:3$",
+   "$\\triangle\\text{CAB}=\\dfrac12\\times24\\times10=120$ → $\\triangle\\text{GDA}=\\dfrac{120}{9}=\\dfrac{40}{3}$"
+  ],
+  "check": "ok"
+ },
+ "22": {
+  "tp": "복원추출과 비복원추출",
+  "key": "(1) 순서 3가지 (2) 첫 공의 색에 따라 주머니 구성이 바뀜",
+  "sol": [
+   "(1) $3\\times\\dfrac59\\times\\left(\\dfrac49\\right)^2=\\dfrac{240}{729}=\\dfrac{80}{243}$",
+   "(2) 흰 공 먼저: 흰 4, 검은 5 → 흰 공 $\\dfrac59\\times\\dfrac49=\\dfrac{20}{81}$",
+   "검은 공 먼저: 흰 6, 검은 3 → 검은 공 $\\dfrac49\\times\\dfrac39=\\dfrac{12}{81}$",
+   "합 $=\\dfrac{32}{81}$"
+  ],
+  "check": "ok"
+ }
+}

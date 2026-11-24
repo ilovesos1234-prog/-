@@ -1,0 +1,355 @@
+{
+ "meta": {
+  "year": 2026,
+  "school": "영남중",
+  "grade": "중3",
+  "subject": "수학",
+  "title": "2026 영남중 3학년 2학기 중간",
+  "term": "2학기 중간",
+  "range": "삼각비 · 삼각비의 활용, 통계 (대푯값과 산포도 · 상관관계)",
+  "has_key": true,
+  "note": "",
+  "src": ""
+ },
+ "Q": [
+  {
+   "n": 1,
+   "pt": "3",
+   "type": "객",
+   "ans": "④",
+   "unit": "삼각비",
+   "sub": "특수각의 삼각비 계산",
+   "lv": 1,
+   "q": "다음 &lt;보기&gt;에서 옳은 것을 있는 대로 고른 것은?<div style=\"border:1px solid #888;padding:4px 8px;margin:4px 0\">ㄱ. $\\sin 0^\\circ+\\cos 90^\\circ+\\tan 0^\\circ=0$<br>ㄴ. $\\sin 30^\\circ\\div\\cos 0^\\circ\\div\\tan 60^\\circ=\\dfrac{\\sqrt{3}}{6}$<br>ㄷ. $\\tan 30^\\circ\\times\\tan 60^\\circ+\\sin 45^\\circ\\times\\sin 90^\\circ=1-\\dfrac{\\sqrt{2}}{2}$<br>ㄹ. $\\cos 0^\\circ\\times\\sin 90^\\circ-\\sin 30^\\circ\\times\\cos 60^\\circ=\\dfrac{3}{4}$<br>ㅁ. $(\\tan 45^\\circ-\\cos 30^\\circ)(\\sin 90^\\circ-\\cos 60^\\circ)=\\dfrac{2+\\sqrt{3}}{4}$</div>",
+   "ch": [
+    "ㄱ, ㄴ",
+    "ㄴ, ㄹ",
+    "ㄷ, ㅁ",
+    "ㄱ, ㄴ, ㄹ",
+    "ㄱ, ㄹ, ㅁ"
+   ]
+  },
+  {
+   "n": 2,
+   "pt": "3",
+   "type": "객",
+   "ans": "④",
+   "unit": "통계",
+   "sub": "줄기와 잎 그림에서 중앙값",
+   "lv": 1,
+   "q": "다음은 영중이네 반 학생들의 스마트폰에 설치된 앱의 수를 조사하여 나타낸 줄기와 잎 그림이다. 중앙값은?<br><table style=\"border-collapse:collapse;margin:4px 0\"><tr><th colspan=\"2\" style=\"padding:2px 6px\">스마트폰에 설치된 앱의 수 (0|5는 5개)</th></tr><tr><th style=\"border-bottom:1px solid #888;border-right:1px solid #888;padding:2px 8px\">줄기</th><th style=\"border-bottom:1px solid #888;padding:2px 8px\">잎</th></tr><tr><td style=\"border-right:1px solid #888;padding:2px 8px;text-align:center\">0</td><td style=\"padding:2px 8px\">4 5 8 8 9 9</td></tr><tr><td style=\"border-right:1px solid #888;padding:2px 8px;text-align:center\">1</td><td style=\"padding:2px 8px\">2 3 4 4 5 6 8 9</td></tr><tr><td style=\"border-right:1px solid #888;padding:2px 8px;text-align:center\">2</td><td style=\"padding:2px 8px\">1 1 1 2 2 8 8</td></tr><tr><td style=\"border-right:1px solid #888;padding:2px 8px;text-align:center\">3</td><td style=\"padding:2px 8px\">1 4 5 7</td></tr><tr><td style=\"border-right:1px solid #888;padding:2px 8px;text-align:center\">4</td><td style=\"padding:2px 8px\">2 5 6</td></tr></table>",
+   "ch": [
+    "$16$",
+    "$18$",
+    "$19$",
+    "$20$",
+    "$21$"
+   ]
+  },
+  {
+   "n": 3,
+   "pt": "3",
+   "type": "객",
+   "ans": "③",
+   "unit": "통계",
+   "sub": "양의 상관관계",
+   "lv": 1,
+   "q": "다음 &lt;보기&gt;에서 두 변량 사이의 상관관계가 양의 상관관계인 것을 모두 고른 것은?<div style=\"border:1px solid #888;padding:4px 8px;margin:4px 0\">ㄱ. 산의 높이와 정상에서의 온도<br>ㄴ. 통학 거리와 통학 시간<br>ㄷ. 도시의 인구수와 교통량<br>ㄹ. 겨울철 일평균 기온과 도시가스 사용량</div>",
+   "ch": [
+    "ㄱ, ㄴ",
+    "ㄱ, ㄷ",
+    "ㄴ, ㄷ",
+    "ㄴ, ㄹ",
+    "ㄷ, ㄹ"
+   ]
+  },
+  {
+   "n": 4,
+   "pt": "4",
+   "type": "객",
+   "ans": "⑤",
+   "unit": "통계",
+   "sub": "평균과 표준편차의 해석",
+   "lv": 1,
+   "q": "다음은 철호가 다섯 번의 대회에서 받은 종목별 점수의 평균과 표준편차를 조사하여 나타낸 표이다. 평균으로 순위를 정한다고 할 때, 성적이 가장 우수한 종목과 가장 고른 종목을 순서대로 나열한 것은?<br><table style=\"border-collapse:collapse;margin:4px 0;text-align:center\"><tr><th style=\"border:1px solid #888;padding:2px 10px\">종목</th><th style=\"border:1px solid #888;padding:2px 10px\">평균</th><th style=\"border:1px solid #888;padding:2px 10px\">표준편차</th></tr><tr><td style=\"border:1px solid #888\">마루운동</td><td style=\"border:1px solid #888\">13.56</td><td style=\"border:1px solid #888\">0.97</td></tr><tr><td style=\"border:1px solid #888\">도마</td><td style=\"border:1px solid #888\">12.55</td><td style=\"border:1px solid #888\">0.87</td></tr><tr><td style=\"border:1px solid #888\">안마</td><td style=\"border:1px solid #888\">13.71</td><td style=\"border:1px solid #888\">0.89</td></tr><tr><td style=\"border:1px solid #888\">링</td><td style=\"border:1px solid #888\">12.02</td><td style=\"border:1px solid #888\">0.95</td></tr><tr><td style=\"border:1px solid #888\">평행봉</td><td style=\"border:1px solid #888\">13.11</td><td style=\"border:1px solid #888\">0.92</td></tr></table>",
+   "ch": [
+    "안마 / 평행봉",
+    "링 / 마루운동",
+    "안마 / 마루운동",
+    "평행봉 / 도마",
+    "안마 / 도마"
+   ]
+  },
+  {
+   "n": 5,
+   "pt": "4",
+   "type": "객",
+   "ans": "②",
+   "unit": "통계",
+   "sub": "편차·분산·표준편차의 성질",
+   "lv": 1,
+   "q": "다음 &lt;보기&gt;에서 옳은 것만을 있는 대로 고른 것은?<div style=\"border:1px solid #888;padding:4px 8px;margin:4px 0\">ㄱ. 분산은 편차의 평균이다.<br>ㄴ. 편차의 합은 항상 0이다.<br>ㄷ. 평균이 클수록 표준편차가 크다.<br>ㄹ. 평균보다 큰 변량의 편차는 음수이다.<br>ㅁ. 분산이 작을수록 자료의 분포 상태는 평균 가까이에 모여 있다.</div>",
+   "ch": [
+    "ㄱ, ㄴ",
+    "ㄴ, ㅁ",
+    "ㄷ, ㄹ",
+    "ㄴ, ㄹ, ㅁ",
+    "ㄷ, ㄹ, ㅁ"
+   ]
+  },
+  {
+   "n": 6,
+   "pt": "4",
+   "type": "객",
+   "ans": "③",
+   "unit": "통계",
+   "sub": "편차와 표준편차",
+   "lv": 1,
+   "q": "아래 표는 5명의 학생의 수학 수행평가 점수의 편차를 조사하여 나타낸 것이다. 수학 수행평가 점수의 표준편차는?<br><table style=\"border-collapse:collapse;margin:4px 0;text-align:center\"><tr><th style=\"border:1px solid #888;padding:2px 10px\">학생</th><td style=\"border:1px solid #888;padding:2px 12px\">A</td><td style=\"border:1px solid #888;padding:2px 12px\">B</td><td style=\"border:1px solid #888;padding:2px 12px\">C</td><td style=\"border:1px solid #888;padding:2px 12px\">D</td><td style=\"border:1px solid #888;padding:2px 12px\">E</td></tr><tr><th style=\"border:1px solid #888;padding:2px 10px\">편차(점)</th><td style=\"border:1px solid #888\">$x$</td><td style=\"border:1px solid #888\">3</td><td style=\"border:1px solid #888\">1</td><td style=\"border:1px solid #888\">$-1$</td><td style=\"border:1px solid #888\">2</td></tr></table>",
+   "ch": [
+    "$2$",
+    "$\\sqrt{7}$",
+    "$2\\sqrt{2}$",
+    "$3$",
+    "$\\sqrt{10}$"
+   ]
+  },
+  {
+   "n": 7,
+   "pt": "4",
+   "type": "객",
+   "ans": "③",
+   "unit": "삼각비",
+   "sub": "평행사변형에서 삼각비 (수선 이용)",
+   "lv": 3,
+   "q": "아래 그림과 같이 $\\overline{AB}=5\\sqrt{2}$, $\\angle ABC=30^\\circ$, $\\angle ACB=45^\\circ$인 평행사변형 ABCD에서 $\\tan(\\angle CBD)$의 값은?",
+   "ch": [
+    "$\\dfrac{2\\sqrt{3}-1}{22}$",
+    "$\\dfrac{2\\sqrt{6}-\\sqrt{2}}{22}$",
+    "$\\dfrac{2\\sqrt{3}-1}{11}$",
+    "$\\dfrac{2\\sqrt{6}-\\sqrt{2}}{11}$",
+    "$\\dfrac{4\\sqrt{3}-2}{11}$"
+   ],
+   "imgs": [
+    "q7"
+   ],
+   "imgW": 48
+  },
+  {
+   "n": 8,
+   "pt": "4",
+   "type": "객",
+   "ans": "①",
+   "unit": "삼각비",
+   "sub": "삼각형의 넓이 (각의 이등분선)",
+   "lv": 3,
+   "q": "아래 그림과 같이 $\\triangle ABC$에서 $\\angle A=60^\\circ$이고, $\\overline{AD}$는 $\\angle A$의 이등분선이다. $\\overline{AB}=45$, $\\overline{AC}=36$이고, 점 D에서 $\\overline{AC}$에 내린 수선의 발을 E라 할 때, $\\triangle EDC$의 넓이는?",
+   "ch": [
+    "$30\\sqrt{3}$",
+    "$32\\sqrt{3}$",
+    "$34\\sqrt{3}$",
+    "$36\\sqrt{3}$",
+    "$38\\sqrt{3}$"
+   ],
+   "imgs": [
+    "q8"
+   ],
+   "imgW": 36
+  },
+  {
+   "n": 9,
+   "pt": "4",
+   "type": "객",
+   "ans": "①",
+   "unit": "삼각비",
+   "sub": "좌표평면 위 삼각형의 삼각비",
+   "lv": 2,
+   "q": "좌표평면 위의 세 점 $\\mathrm{A}(6,\\,6)$, $\\mathrm{B}(-2,\\,2)$, $\\mathrm{C}(2,\\,-1)$에 대하여 $\\angle ABC=x^\\circ$일 때, $\\sin x^\\circ+\\cos x^\\circ-\\tan x^\\circ$의 값은?",
+   "ch": [
+    "$\\dfrac{3\\sqrt{5}}{5}-2$",
+    "$\\dfrac{\\sqrt{5}}{5}$",
+    "$\\dfrac{3}{5}$",
+    "$\\dfrac{3\\sqrt{5}}{5}$",
+    "$\\dfrac{3\\sqrt{5}}{5}+2$"
+   ],
+   "imgs": [
+    "q9"
+   ],
+   "imgW": 34
+  },
+  {
+   "n": 10,
+   "pt": "4",
+   "type": "객",
+   "ans": "⑤",
+   "unit": "삼각비",
+   "sub": "직선의 기울기와 tan",
+   "lv": 2,
+   "q": "아래 그림과 같이 좌표평면 위의 직선 $y=ax+b$가 $x$축, $y$축과 만나는 점을 각각 A, B라 하자. 원점 O에 대해 $\\overline{AB}\\perp\\overline{OC}$이고, $\\overline{OC}=6$이며, $\\tan(\\angle BAO)=\\dfrac{3}{4}$일 때, $4a+2b$의 값은? (단, $a$, $b$는 실수이다.)",
+   "ch": [
+    "$14$",
+    "$15$",
+    "$16$",
+    "$17$",
+    "$18$"
+   ],
+   "imgs": [
+    "q10"
+   ],
+   "imgW": 32
+  },
+  {
+   "n": 11,
+   "pt": "4",
+   "type": "객",
+   "ans": "②",
+   "unit": "삼각비",
+   "sub": "이차함수 그래프와 삼각비",
+   "lv": 3,
+   "q": "아래 그림과 같이 이차함수 $y=-\\dfrac{1}{3}x^2+\\dfrac{20}{3}$ 위의 점 P에서 $y$축에 내린 수선의 발을 H, 이차함수가 $y$축과 만나는 점을 A라 하고, $\\angle APH=\\alpha$, $\\angle POH=\\beta$라 하자. $\\tan\\alpha=1$이고 $\\sin\\beta=\\sqrt{\\dfrac{b}{a}}$일 때, $a-b$의 값은? (단, $a$, $b$는 서로소인 자연수, 점 P는 제1사분면 위의 점이고, 점 O는 원점이다.)",
+   "ch": [
+    "$120$",
+    "$121$",
+    "$122$",
+    "$123$",
+    "$124$"
+   ],
+   "imgs": [
+    "q11"
+   ],
+   "imgW": 30
+  },
+  {
+   "n": 12,
+   "pt": "4",
+   "type": "객",
+   "ans": "④",
+   "unit": "삼각비",
+   "sub": "닮은 직각삼각형과 삼각비",
+   "lv": 2,
+   "q": "아래 그림과 같이 직각삼각형 ABC의 꼭짓점 C에서 변 AB에 내린 수선의 발을 D라 하고, 점 D에서 변 BC에 내린 수선의 발을 E라고 하자. $\\angle ACD=x^\\circ$, $\\angle DCE=y^\\circ$라고 할 때, $\\sin x^\\circ+\\cos y^\\circ$의 값은? (단, $\\overline{BE}=1$, $\\overline{EC}=9$)",
+   "ch": [
+    "$\\dfrac{\\sqrt{10}}{10}$",
+    "$\\dfrac{3\\sqrt{10}}{10}$",
+    "$\\dfrac{2\\sqrt{10}}{5}$",
+    "$\\dfrac{3\\sqrt{10}}{5}$",
+    "$\\dfrac{4\\sqrt{11}}{5}$"
+   ],
+   "imgs": [
+    "q12"
+   ],
+   "imgW": 30
+  },
+  {
+   "n": 13,
+   "pt": "5",
+   "type": "객",
+   "ans": "②",
+   "unit": "삼각비",
+   "sub": "닮음과 코사인 (삼각형의 둘레)",
+   "lv": 4,
+   "q": "아래 그림과 같이 $\\overline{AB}=10\\,\\mathrm{cm}$, $\\overline{AC}=6\\,\\mathrm{cm}$인 삼각형 ABC가 있다. 선분 AB 위의 점 D와 선분 BC 위의 점 E에 대하여 $\\cos(\\angle ADC)=\\dfrac{1}{3}$, $\\angle CAD=\\angle ADC=\\angle DEC$일 때, $\\triangle BED$의 둘레의 길이는?",
+   "ch": [
+    "$6+2\\sqrt{6}$",
+    "$6+3\\sqrt{6}$",
+    "$8+2\\sqrt{6}$",
+    "$8+3\\sqrt{6}$",
+    "$8+4\\sqrt{6}$"
+   ],
+   "imgs": [
+    "q13"
+   ],
+   "imgW": 36
+  },
+  {
+   "n": 14,
+   "pt": "5",
+   "type": "객",
+   "ans": "①",
+   "unit": "삼각비",
+   "sub": "정다각형과 사각형의 넓이",
+   "lv": 4,
+   "q": "아래 그림은 한 변의 길이가 같은 정육각형과 정팔각형의 한 변을 맞붙인 후, 두 변을 연장하여 사각형을 만든 것이다. 정육각형의 한 변의 길이가 $2\\sqrt{2}$일 때, 사각형의 넓이는 $a+b\\sqrt{3}+c\\sqrt{6}$이다. $a+b+c$의 값은? (단, $a$, $b$, $c$는 유리수이다.)",
+   "ch": [
+    "$2$",
+    "$4$",
+    "$6$",
+    "$8$",
+    "$10$"
+   ],
+   "imgs": [
+    "q14"
+   ],
+   "imgW": 44
+  },
+  {
+   "n": 15,
+   "pt": "5",
+   "type": "객",
+   "ans": "③",
+   "unit": "통계",
+   "sub": "산점도 해석",
+   "lv": 2,
+   "q": "다음은 2018 평창 동계 올림픽에서 20개국이 획득한 금메달 수$(x)$와 은메달 수$(y)$를 두 변량으로 하는 순서쌍 $(x,\\,y)$를 좌표평면 위에 나타낸 것이다. 금메달 수와 은메달 수의 차가 2개 이상인 국가의 금메달 수와 은메달 수의 합의 평균은?",
+   "ch": [
+    "$13$",
+    "$\\dfrac{93}{7}$",
+    "$\\dfrac{115}{8}$",
+    "$\\dfrac{59}{4}$",
+    "$\\dfrac{107}{7}$"
+   ],
+   "imgs": [
+    "q15"
+   ],
+   "imgW": 36
+  },
+  {
+   "n": 16,
+   "pt": "10",
+   "type": "서",
+   "ans": "$2$",
+   "unit": "삼각비",
+   "sub": "이차방정식의 근과 삼각비",
+   "lv": 2,
+   "q": "<b>[서술형 1]</b> 이차방정식 $x^2-x+\\dfrac{1}{4}=0$의 한 근을 $\\sin a$라 할 때, $\\dfrac{\\sqrt{3}}{\\tan a}-\\sqrt{3}\\tan a$의 값을 서술하시오. (단, $0^\\circ\\lt a\\lt 90^\\circ$)"
+  },
+  {
+   "n": 17,
+   "pt": "10",
+   "type": "서",
+   "ans": "$\\overline{BC}=100\\sqrt{2}+\\dfrac{100\\sqrt{6}}{3}\\,\\mathrm{m}$, 넓이 $10000+\\dfrac{10000\\sqrt{3}}{3}\\,\\mathrm{m}^2$",
+   "unit": "삼각비",
+   "sub": "삼각비의 활용 – 두 변 사이 거리와 넓이",
+   "lv": 3,
+   "q": "<b>[서술형 2]</b> 오른쪽 그림과 같은 놀이 공원의 세 지점 A, B, C에서 $\\overline{AC}=200\\,\\mathrm{m}$, $\\angle A=75^\\circ$, $\\angle C=45^\\circ$일 때, 두 지점 B, C 사이의 거리를 구하고, 삼각형 ABC의 넓이를 서술하시오. (단, 반드시 삼각비를 이용하여 풀이하시오.)",
+   "imgs": [
+    "q17"
+   ],
+   "imgW": 32
+  },
+  {
+   "n": 18,
+   "pt": "10",
+   "type": "서",
+   "ans": "$2$",
+   "unit": "통계",
+   "sub": "평균과 중앙값으로 미지수 구하기",
+   "lv": 2,
+   "q": "<b>[서술형 3]</b> 다음은 영남이네 반 누리집에 실린 7가지 게시글에 대한 댓글 수를 조사하여 나타낸 것이다. 이 자료의 평균이 8개이고 중앙값도 8개일 때, $a-b$의 값을 서술하시오. (단, $a\\gt b$, 풀이 과정을 자세히 쓰시오.)<div style=\"border:1px solid #888;padding:4px 8px;margin:4px 0;text-align:center\">게시글에 대한 댓글 수 (단위: 개)<br>$a$, $b$, 3, 4, 5, 10, 16</div>"
+  },
+  {
+   "n": 19,
+   "pt": "10",
+   "type": "서",
+   "ans": "$\\dfrac{2\\sqrt{15}}{5}$점",
+   "unit": "통계",
+   "sub": "막대그래프에서 표준편차",
+   "lv": 2,
+   "q": "<b>[서술형 4]</b> 다음은 민수네 학교 3학년 1반의 1번부터 10번 학생의 영화 &lt;스파이더 맨: 브랜드 뉴 데이&gt; 감상 점수를 나타낸 막대그래프이다. (가로축: 번호, 세로축: 점수) 이 자료의 표준편차를 서술하시오. (단, 풀이 과정을 자세히 쓰시오.)",
+   "imgs": [
+    "q19"
+   ],
+   "imgW": 44
+  }
+ ]
+}

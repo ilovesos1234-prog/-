@@ -1,0 +1,182 @@
+{
+ "1": {
+  "tp": "거듭제곱근",
+  "key": "$125^{\\frac14}=\\sqrt[4]{125}$",
+  "sol": [
+   "$\\sqrt[4]5\\times\\sqrt[4]{125}=\\sqrt[4]{625}=5$"
+  ],
+  "check": "ok"
+ },
+ "2": {
+  "tp": "상용로그",
+  "key": "소수부분이 같으면 숫자 배열이 같다",
+  "sol": [
+   "$4.4814=3+1.4814=\\log(30.3\\times10^3)$",
+   "$x=30300$"
+  ],
+  "check": "ok"
+ },
+ "3": {
+  "tp": "단위원과 삼각함수",
+  "key": "B의 $y$좌표 $=\\sin\\theta$",
+  "sol": [
+   "$\\text{B}(a,-b)$이므로 $\\sin\\theta=-b=-\\dfrac35$, $b=\\dfrac35$",
+   "$a^2=1-\\dfrac9{25}$, $|a|=\\dfrac45$",
+   "$\\left|\\dfrac ba\\right|=\\dfrac34$"
+  ],
+  "check": "ok"
+ },
+ "4": {
+  "tp": "삼각함수의 정의",
+  "key": "$r=6$",
+  "sol": [
+   "$r=\\sqrt{27+9}=6$",
+   "$\\sin\\theta=-\\dfrac12$, $\\cos\\theta=\\dfrac{\\sqrt3}2$",
+   "곱 $=-\\dfrac{\\sqrt3}4$"
+  ],
+  "check": "ok"
+ },
+ "5": {
+  "tp": "코사인함수 계수",
+  "key": "주기 $\\frac{2\\pi}{|a|}$, 최솟값 $-3+b$",
+  "sol": [
+   "$\\dfrac{2\\pi}{|a|}=\\dfrac{2\\pi}3$, $|a|=3$",
+   "$-3+b=1$, $b=4$",
+   "$|a|\\times b=12$"
+  ],
+  "check": "ok"
+ },
+ "6": {
+  "tp": "로그의 성질",
+  "key": "$\\log a$, $\\log b$에 대한 연립",
+  "sol": [
+   "$\\log b=4\\log a$, $\\log a-\\log b=-3$",
+   "$-3\\log a=-3$, $\\log a=1$, $\\log b=4$",
+   "$\\log ab=5$"
+  ],
+  "check": "ok"
+ },
+ "7": {
+  "tp": "지수함수의 평행이동",
+  "key": "$2^{x-a}=5\\times2^x$",
+  "sol": [
+   "$2^{-a}=5$",
+   "$a=-\\log_25$"
+  ],
+  "check": "ok"
+ },
+ "8": {
+  "tp": "절댓값 삼각함수",
+  "key": "부호에 따라 식 나누기",
+  "sol": [
+   "$\\sin x\\lt0$일 때 $f=-2\\sin x$, 최댓값 $a=2$",
+   "$g$는 $\\cos2x\\ge0$일 때 $2\\cos2x$, 아니면 $0$이므로 주기 $b=\\pi$",
+   "$a+b=2+\\pi$"
+  ],
+  "check": "ok"
+ },
+ "9": {
+  "tp": "지수방정식과 교점",
+  "key": "$t=2^x$ 치환",
+  "sol": [
+   "$\\dfrac{t^2}4+\\dfrac12=\\dfrac{3t}4$, $t^2-3t+2=0$, $t=1,2$",
+   "교점 $\\left(0,\\dfrac34\\right)$, $\\left(1,\\dfrac32\\right)$",
+   "거리 $=\\sqrt{1+\\dfrac9{16}}=\\dfrac54$"
+  ],
+  "check": "ok"
+ },
+ "10": {
+  "tp": "판별식과 로그",
+  "key": "$L=\\log_2a$에 대한 이차부등식",
+  "sol": [
+   "$\\dfrac D4=L^2+3L-7\\lt0$의 해를 $L_1\\lt L\\lt L_2$",
+   "$\\alpha=2^{L_1}$, $\\beta=2^{L_2}$",
+   "$\\alpha\\beta=2^{L_1+L_2}=2^{-3}=\\dfrac18$"
+  ],
+  "check": "ok"
+ },
+ "11": {
+  "tp": "거듭제곱근과 자연수",
+  "key": "$ab^2=100$",
+  "sol": [
+   "$\\sqrt[3]{ab^2}=\\sqrt[3]{100}$, $ab^2=100$",
+   "$(a,b)=(100,1),(25,2),(4,5),(1,10)$",
+   "$a+b$: $101,27,9,11$이므로 $M+m=110$"
+  ],
+  "check": "ok"
+ },
+ "12": {
+  "tp": "로그방정식과 삼각함수",
+  "key": "밑을 $4$로 통일",
+  "sol": [
+   "$\\log_4(3\\cos^2x)=\\log_4\\{4(1-\\sin x)\\}$",
+   "$3-3\\sin^2x=4-4\\sin x$, $(3\\sin x-1)(\\sin x-1)=0$",
+   "$x\\lt\\dfrac\\pi2$이므로 $\\sin\\alpha=\\dfrac13$"
+  ],
+  "check": "ok"
+ },
+ "13": {
+  "tp": "두 감소함수의 교점",
+  "key": "$x\\to a+$에서 로그함수가 $+\\infty$",
+  "sol": [
+   "$0\\lt\\log a\\lt1$: $a=2,\\cdots,9$",
+   "$x\\to a^+$이면 $\\log_{\\frac13}(x-a)\\to\\infty$, $x\\to\\infty$이면 $-\\infty$",
+   "$x\\gt a\\ge2$에서 $2^{-x+2}-1\\lt0$이므로 교점은 항상 제$4$사분면",
+   "합 $=2+3+\\cdots+9=44$"
+  ],
+  "check": "ok"
+ },
+ "14": {
+  "tp": "역함수와의 교점",
+  "key": "증가함수이면 교점은 $y=x$ 위",
+  "sol": [
+   "교점 $x$좌표 $p$, $p+3$: $3^{p-\\alpha}=p-\\dfrac5{13}$, $3^{p+3-\\alpha}=p+3-\\dfrac5{13}$",
+   "$27\\left(p-\\dfrac5{13}\\right)=p+\\dfrac{34}{13}$에서 $p=\\dfrac12$",
+   "$3^{\\frac12-\\alpha}=\\dfrac3{26}$",
+   "$3^{\\alpha+\\frac12}=3\\cdot3^{\\alpha-\\frac12}=26$"
+  ],
+  "check": "ok"
+ },
+ "15": {
+  "tp": "로그부등식",
+  "key": "진수 조건 + 밑과 1의 대소",
+  "sol": [
+   "(1) $-\\dfrac15\\lt x\\lt7$, $5x+1\\lt7-x$에서 $x\\lt1$ → $-\\dfrac15\\lt x\\lt1$",
+   "(2) $-\\dfrac43\\lt x\\lt\\dfrac32$, 밑이 $\\dfrac12$이므로 $3-2x\\gt4+3x$, $x\\lt-\\dfrac15$",
+   "→ $-\\dfrac43\\lt x\\lt-\\dfrac15$"
+  ],
+  "check": "ok"
+ },
+ "16": {
+  "tp": "내분점과 지수방정식",
+  "key": "Q $=\\left(\\frac p4,\\frac{8^p}4\\right)$",
+  "sol": [
+   "$\\text{P}(p,8^p)$, $\\text{Q}\\left(\\dfrac p4,\\dfrac{8^p}4\\right)$",
+   "$\\dfrac{8^p}4=4^{\\frac p4}$: $2^{3p-2}=2^{\\frac p2}$",
+   "$3p-2=\\dfrac p2$, $p=\\dfrac45$"
+  ],
+  "check": "ok"
+ },
+ "17": {
+  "tp": "밑변환",
+  "key": "$u=\\log a$, $v=\\log b$",
+  "sol": [
+   "$\\log_{ab}\\dfrac1{10}=-\\dfrac1{u+v}=\\dfrac14$, $u+v=-4$",
+   "$u=\\dfrac3v$, $uv=3$",
+   "$u,v=-1,-3$, $a\\gt b$이므로 $u=-1$, $v=-3$",
+   "$\\log\\dfrac ab=u-v=2$"
+  ],
+  "check": "ok"
+ },
+ "18": {
+  "tp": "점근선",
+  "key": "$\\tan$의 점근선 $=$ 로그함수의 점근선 $x=-\\frac{2\\pi}3$",
+  "sol": [
+   "$\\sqrt a\\,x+4\\pi=\\dfrac\\pi2+n\\pi$, $x=\\dfrac{(2m+1)\\pi}{2\\sqrt a}$",
+   "$\\dfrac{(2m+1)\\pi}{2\\sqrt a}=-\\dfrac{2\\pi}3$, $\\sqrt a=\\dfrac{3(2k-1)}4$ ($k\\ge1$)",
+   "$\\sqrt a\\le10$: $2k-1\\le13$",
+   "최댓값 $\\dfrac{39}4$, 최솟값 $\\dfrac34$, 차 $9$"
+  ],
+  "check": "ok"
+ }
+}

@@ -1,0 +1,266 @@
+{
+ "1": {
+  "tp": "대우와 집합의 원소",
+  "key": "대우: a∈A ⇒ f(a)=4a²−3∈A, 원소 1개 또는 2개",
+  "sol": [
+   "(가)의 대우: $a\\in A \\Rightarrow f(a)=4a^2-3\\in A$",
+   "원소 1개: $f(a)=a \\Rightarrow (4a+3)(a-1)=0$, $\\{1\\}$, $\\{-\\frac{3}{4}\\}$",
+   "원소 2개: $\\{1,-\\frac{3}{4}\\}$",
+   "$f(c)=1, c\\ne 1 \\Rightarrow c=-1$: $\\{-1,1\\}$; $f(c)=-\\frac{3}{4} \\Rightarrow c=\\frac{3}{4}$: $\\{\\frac{3}{4},-\\frac{3}{4}\\}$",
+   "$f(a)=b, f(b)=a$: $16a^2+4a-11=0$ 의 두 근 $\\Rightarrow$ $1$ 개",
+   "모두 $6$ 개"
+  ],
+  "check": "ok"
+ },
+ "2": {
+  "tp": "대우와 집합의 원소",
+  "key": "대우: a∈A ⇒ f(a)=(a²−5)/4∈A",
+  "sol": [
+   "대우: $a\\in A \\Rightarrow f(a)=\\frac{a^2-5}{4}\\in A$",
+   "$f(a)=a \\Rightarrow a^2-4a-5=0 \\Rightarrow a=5,-1$: $\\{5\\},\\{-1\\},\\{5,-1\\}$",
+   "$f(c)=5 \\Rightarrow c=-5$: $\\{-5,5\\}$; $f(c)=-1 \\Rightarrow c=1$: $\\{1,-1\\}$",
+   "$f(a)=b, f(b)=a (a\\ne b)$: $a^2+4a+11=0$ 실근 없음",
+   "모두 $5$ 개"
+  ],
+  "check": "ok"
+ },
+ "3": {
+  "tp": "대우와 집합의 원소",
+  "key": "2에서 출발해 닫힌 원소를 모은 뒤 넷째 원소 c를 찾는다",
+  "sol": [
+   "대우: $a\\in A \\Rightarrow a^2-3\\in A$",
+   "$2\\to 1\\to -2\\to 1$: $\\{1,2,-2\\}\\subset A$",
+   "넷째 원소 $c$: $c^2-3\\in\\{1,2,-2,c\\}$",
+   "$c^2=5$: $\\pm\\sqrt{5}$, $c^2=1$: $c=-1$, $c^2-c-3=0$: $\\frac{1\\pm\\sqrt{13}}{2}$",
+   "모두 $5$ 개"
+  ],
+  "check": "ok"
+ },
+ "4": {
+  "tp": "대우와 집합의 원소",
+  "key": "−1에서 출발해 닫힌 원소를 모은 뒤 넷째 원소 c를 찾는다",
+  "sol": [
+   "대우: $a\\in A \\Rightarrow a^2+2a-2\\in A$",
+   "$-1\\to -3\\to 1\\to 1$: $\\{-1,-3,1\\}\\subset A$",
+   "$c^2+2c-2=-1$: $c=-1\\pm\\sqrt{2}$",
+   "$c^2+2c-2=-3$: $c=-1$, $=1$: $c=1,-3$ (이미 있음)",
+   "$c^2+2c-2=c$: $c=-2$ (새 원소)",
+   "모두 $3$ 개"
+  ],
+  "check": "ok"
+ },
+ "5": {
+  "tp": "필요조건이지만 충분조건이 아닌 것",
+  "key": "Q⊊P 인지 각각 확인",
+  "sol": [
+   "ㄱ: $0\\lt\\frac{2}{y}\\lt\\frac{3}{x} \\Leftrightarrow x\\gt 0, y\\gt 0, 2x\\lt 3y$ → 필요충분",
+   "ㄴ: 양변 제곱 $\\Leftrightarrow (x-3y)\\cdot 3y\\gt 0 \\Leftrightarrow x\\gt 3y\\gt 0$ → 필요충분",
+   "ㄷ: $x\\gt 2y\\gt z$ 이면 곱 $\\lt 0$, 역은 $2y\\gt z\\gt x$ 도 성립 → 필요조건만",
+   "답: ㄷ"
+  ],
+  "check": "ok"
+ },
+ "6": {
+  "tp": "필요조건이지만 충분조건이 아닌 것",
+  "key": "Q⊊P 인지 각각 확인",
+  "sol": [
+   "ㄱ: $0\\lt\\frac{5}{y}\\lt\\frac{2}{x} \\Leftrightarrow 0\\lt 5x\\lt 2y$ → 필요충분",
+   "ㄴ: $x\\gt y\\gt 3z$ 이면 곱 $\\lt 0$, 역은 $y\\gt 3z\\gt x$ 도 성립 → 필요조건만",
+   "ㄷ: 제곱 $\\Leftrightarrow (2x-y)y\\gt 0 \\Leftrightarrow 2x\\gt y\\gt 0$ → 필요충분",
+   "답: ㄴ"
+  ],
+  "check": "ok"
+ },
+ "7": {
+  "tp": "필요조건이지만 충분조건이 아닌 것",
+  "key": "|u+v|=|u|+|v| ⇔ uv≥0",
+  "sol": [
+   "ㄱ: $q \\Rightarrow p$, 역은 $a=0, b=0$ 반례 → ○",
+   "ㄴ: $(a-2)(b-3)\\lt 0$ 이면 하나는 작음 $\\Rightarrow p$, 역은 $a=b=0$ 반례 → ○",
+   "ㄷ: $p \\Leftrightarrow ab\\ge 0$, $q \\Leftrightarrow |a|=|a-3b|+|3b| \\Leftrightarrow b(a-3b)\\ge 0$",
+   "$q$ 이면 $ab\\ge 0$, 역은 $a=b=1$ 반례 → ○",
+   "답: ㄱ, ㄴ, ㄷ"
+  ],
+  "check": "ok"
+ },
+ "8": {
+  "tp": "필요조건이지만 충분조건이 아닌 것",
+  "key": "|u+v|=|u|+|v| ⇔ uv≥0",
+  "sol": [
+   "ㄱ: $q \\Rightarrow p$, 역은 $a=-3, b=1$ 반례 → ○",
+   "ㄴ: $q \\Rightarrow p$, 역은 $a=b=0$ 반례 → ○",
+   "ㄷ: $p \\Leftrightarrow ab\\ge 0$, $q \\Leftrightarrow b(2a-b)\\ge 0 \\Rightarrow ab\\ge 0$, 역은 $a=b=1$ 반례 → ○",
+   "답: ㄱ, ㄴ, ㄷ"
+  ],
+  "check": "ok"
+ },
+ "9": {
+  "tp": "필요충분조건 찾기",
+  "key": "⑤: (x−3)(y−3)≥0 이고 (x−3)+(y−3)≥0",
+  "sol": [
+   "①: $x=-2y$ 반례, ②: $x=2, y=-2$ 반례",
+   "③: $(x-2)y\\le 0$ 이므로 $x=3, y=-1$ 반례",
+   "④: $x=0, y=0$ 이면 $q$ 만 성립",
+   "⑤: $(x-3)(y-3)\\ge 0$, $(x-3)+(y-3)\\ge 0 \\Leftrightarrow x\\ge 3, y\\ge 3$",
+   "답: ⑤"
+  ],
+  "check": "ok"
+ },
+ "10": {
+  "tp": "필요충분조건 찾기",
+  "key": "⑤: (x+1)(y+1)≥0 이고 (x+1)+(y+1)≤0",
+  "sol": [
+   "①: $y=-3x$ 반례, ②: $x=y=1$ 반례",
+   "③: $x(y+1)\\le 0$ 이므로 $x=1, y=-2$ 반례",
+   "④: $x=1, y=3$ 이면 $q$ 만 성립",
+   "⑤: $(x+1)(y+1)\\ge 0$, $(x+1)+(y+1)\\le 0 \\Leftrightarrow x\\le -1, y\\le -1$",
+   "답: ⑤"
+  ],
+  "check": "ok"
+ },
+ "11": {
+  "tp": "삼단논법",
+  "key": "조건을 화살표로 바꾸어 순환을 찾는다",
+  "sol": [
+   "$q\\Rightarrow s$, $p\\Rightarrow\\sim r$, $\\sim r\\Rightarrow q$, $\\sim p\\Rightarrow\\sim q$ 즉 $q\\Rightarrow p$",
+   "$p\\Rightarrow\\sim r\\Rightarrow q\\Rightarrow p$: 셋은 동치",
+   "ㄱ: $p\\Rightarrow q\\Rightarrow s$ ○",
+   "ㄴ: $\\sim p\\Rightarrow\\sim s$, 즉 $s\\Rightarrow p$ 는 알 수 없음 ×",
+   "ㄷ: $\\sim r\\Leftrightarrow p$ ○",
+   "답: ㄱ, ㄷ"
+  ],
+  "check": "ok"
+ },
+ "12": {
+  "tp": "삼단논법",
+  "key": "조건을 화살표로 바꾸어 순환을 찾는다",
+  "sol": [
+   "$p\\Rightarrow s$, $s\\Rightarrow\\sim r$, $\\sim r\\Rightarrow q$, $\\sim s\\Rightarrow\\sim q$ 즉 $q\\Rightarrow s$",
+   "$s\\Rightarrow\\sim r\\Rightarrow q\\Rightarrow s$: 셋은 동치",
+   "ㄱ: $\\sim r\\Rightarrow p$ 는 알 수 없음 ×",
+   "ㄴ: $\\sim q\\Rightarrow\\sim p$, 즉 $p\\Rightarrow q$ ○",
+   "ㄷ: $s\\Leftrightarrow q$ ○",
+   "답: ㄴ, ㄷ"
+  ],
+  "check": "ok"
+ },
+ "13": {
+  "tp": "충분조건과 진리집합",
+  "key": "P⊂Q ⇔ −3, 2가 삼차식의 근",
+  "sol": [
+   "$P\\subset Q \\Leftrightarrow Q^{C}\\subset P^{C}$, 즉 $-3, 2$ 는 $f(x)=0$ 의 근",
+   "$f(2)=8-16+2a+b=0 \\Rightarrow 2a+b=8$",
+   "$f(-3)=-27-36-3a+b=0 \\Rightarrow -3a+b=63$",
+   "$a=-11, b=30$",
+   "$b-a=41$"
+  ],
+  "check": "ok"
+ },
+ "14": {
+  "tp": "충분조건과 진리집합",
+  "key": "P⊂Q ⇔ 2, 4가 삼차식의 근",
+  "sol": [
+   "$2, 4$ 는 $x^3-x^2+ax+b=0$ 의 근",
+   "$f(2)=4+2a+b=0$, $f(4)=48+4a+b=0$",
+   "$a=-22, b=40$",
+   "$b-a=62$"
+  ],
+  "check": "ok"
+ },
+ "15": {
+  "tp": "충분·필요조건과 구간",
+  "key": "P⊂Q 와 R^C⊂P",
+  "sol": [
+   "$q: |x|(|x|-4)\\le 0 \\Rightarrow -4\\le x\\le 4$",
+   "$\\sim p\\Rightarrow r$ 이므로 $R^{C}\\subset P$",
+   "$R^{C}: \\frac{-3-\\sqrt{13}}{2}\\lt x\\lt\\frac{-3+\\sqrt{13}}{2}$ $(\\approx -3.30, 0.30)$",
+   "$a\\le -3.30$, $a\\ge -4$ 이고 정수 $\\Rightarrow a=-4$",
+   "$0.30\\le -4+k\\le 4 \\Rightarrow k=5,6,7,8$",
+   "합 $=26$"
+  ],
+  "check": "ok"
+ },
+ "16": {
+  "tp": "충분·필요조건과 구간",
+  "key": "P⊂Q 와 R^C⊂P",
+  "sol": [
+   "$q: |x|(|x|-6)\\le 0 \\Rightarrow -6\\le x\\le 6$",
+   "$R^{C}: \\frac{-5-\\sqrt{33}}{2}\\lt x\\lt\\frac{-5+\\sqrt{33}}{2}$ $(\\approx -5.37, 0.37)$",
+   "$a=-6$",
+   "$0.37\\le -6+k\\le 6 \\Rightarrow k=7,\\cdots,12$",
+   "합 $=57$"
+  ],
+  "check": "ok"
+ },
+ "17": {
+  "tp": "절대부등식과 필요조건",
+  "key": "(가)로 P=R, (나)로 Q=∅",
+  "sol": [
+   "(가) $D/4=9-5a\\le 0 \\Rightarrow a\\ge\\frac{9}{5}$, $m=\\frac{9}{5}$",
+   "(나) $p\\Rightarrow\\sim q$, $P=\\mathbb{R}$ 이므로 $Q=\\varnothing$",
+   "$x^2-2bx+3b+10\\gt 0$ 항상: $b^2-3b-10\\lt 0 \\Rightarrow -2\\lt b\\lt 5$",
+   "$M=4$",
+   "$M-m=4-\\frac{9}{5}=\\frac{11}{5}$"
+  ],
+  "check": "ok"
+ },
+ "18": {
+  "tp": "절대부등식과 필요조건",
+  "key": "(가)로 P=R, (나)로 Q=∅",
+  "sol": [
+   "(가) $D/4=1-3a\\le 0 \\Rightarrow m=\\frac{1}{3}$",
+   "(나) $Q=\\varnothing$: $b^2-5b-6\\lt 0 \\Rightarrow -1\\lt b\\lt 6$",
+   "$M=5$",
+   "$M-m=5-\\frac{1}{3}=\\frac{14}{3}$"
+  ],
+  "check": "ok"
+ },
+ "19": {
+  "tp": "필요충분조건과 집합",
+  "key": "(나) ⇔ 14 이하 y에 대해 y∈A ⇔ 2y∈A",
+  "sol": [
+   "(나): $y\\le 14$ 이면 $y\\in A \\Leftrightarrow 2y\\in A$",
+   "$1\\notin A \\Rightarrow 2,4,8,16\\notin A$",
+   "묶음: $\\{3,6,12,24\\}$, $\\{5,10,20\\}$, $\\{7,14,28\\}$, $\\{13,26\\}$, …",
+   "(가): $\\{x, x^2+1\\}\\subset A$ 인 $x\\le 5$: $x=3$ 또는 $5$",
+   "$x=3$: $\\{3,6,12,24\\}\\cup\\{5,10,20\\}$ 합 $80$",
+   "$x=5$: $\\{5,10,20\\}\\cup\\{13,26\\}$ 합 $74$",
+   "최솟값 $74$"
+  ],
+  "check": "ok"
+ },
+ "20": {
+  "tp": "필요충분조건과 집합",
+  "key": "(나) ⇔ 18 이하 y에 대해 y∈A ⇔ 2y∈A",
+  "sol": [
+   "$y\\le 18$: $y\\in A\\Leftrightarrow 2y\\in A$, $1\\notin A\\Rightarrow 2,4,8,16,32\\notin A$",
+   "(가): $x^2+3\\le 36$ 이므로 $x=3$ 또는 $5$",
+   "$x=3$: $\\{3,12\\}\\subset\\{3,6,12,24\\}$ 합 $45$",
+   "$x=5$: $\\{5,10,20\\}\\cup\\{7,14,28\\}$ 합 $84$",
+   "최솟값 $45$"
+  ],
+  "check": "ok"
+ },
+ "21": {
+  "tp": "귀류법 증명 빈칸",
+  "key": "x^q−1=(x−1)(x^{q−1}+…+1)",
+  "sol": [
+   "(가) $1$ $\\Rightarrow a=1$",
+   "(나) $\\frac{3^p-1}{2}$, $f(3)=13$",
+   "(다) $p,q\\ge 2$ 이므로 최소 $3^2+1=10$, $b=10$",
+   "$1+13+10=24$"
+  ],
+  "check": "ok"
+ },
+ "22": {
+  "tp": "귀류법 증명 빈칸",
+  "key": "x^q−1=(x−1)(x^{q−1}+…+1)",
+  "sol": [
+   "(가) $1$ $\\Rightarrow a=1$",
+   "(나) $\\frac{5^p-1}{4}$, $f(3)=31$",
+   "(다) 최소 $5^2+1=26$, $b=26$",
+   "$1+31+26=58$"
+  ],
+  "check": "ok"
+ }
+}

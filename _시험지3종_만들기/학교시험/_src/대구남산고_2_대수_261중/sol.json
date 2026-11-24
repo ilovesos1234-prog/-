@@ -1,0 +1,228 @@
+{
+ "1": {
+  "tp": "세제곱근",
+  "key": "$x^3=-27$의 실근",
+  "sol": [
+   "$(-3)^3=-27$이므로 $-3$"
+  ],
+  "check": "ok"
+ },
+ "2": {
+  "tp": "지수법칙",
+  "key": "$a^m a^n=a^{m+n}$",
+  "sol": [
+   "$3^{\\frac53+\\frac13}=3^2=9$"
+  ],
+  "check": "ok"
+ },
+ "3": {
+  "tp": "로그의 성질",
+  "key": "성질 하나씩 확인",
+  "sol": [
+   "ㄱ, ㄴ: 참",
+   "ㄷ. $a^{\\log_bc}=c^{\\log_ba}$이지 $b^{\\log_ac}$가 아님 (거짓)",
+   "ㄹ. $\\log_ab\\log_bc\\log_ca=1$ (거짓)",
+   "ㄱ, ㄴ"
+  ],
+  "check": "ok"
+ },
+ "4": {
+  "tp": "로그를 문자로",
+  "key": "$72=2^3\\cdot3^2$",
+  "sol": [
+   "$\\log72=3\\log2+2\\log3=3a+2b$"
+  ],
+  "check": "ok"
+ },
+ "5": {
+  "tp": "일반각",
+  "key": "$360^\\circ n+\\alpha$ 꼴",
+  "sol": [
+   "$-820^\\circ=-3\\cdot360^\\circ+260^\\circ$(제$3$), $120^\\circ$(제$2$)",
+   "$280^\\circ$(제$4$), $430^\\circ=360^\\circ+70^\\circ$(제$1$), $1050^\\circ=720^\\circ+330^\\circ$(제$4$)"
+  ],
+  "check": "ok"
+ },
+ "6": {
+  "tp": "로그함수 그래프의 위치",
+  "key": "$y$절편이 $0$ 이하",
+  "sol": [
+   "점근선 $x=-a=-\\dfrac19$이므로 $a=\\dfrac19$",
+   "증가함수이므로 $x=0$에서 $y\\le0$: $\\log_3\\dfrac19+b\\le0$",
+   "$b\\le2$, 최댓값 $2$"
+  ],
+  "check": "ok"
+ },
+ "7": {
+  "tp": "부채꼴의 넓이",
+  "key": "$S=\\dfrac12r^2\\theta$",
+  "sol": [
+   "$\\dfrac12(4.5)^2(1.1\\theta)=\\dfrac{11}{5}\\pi$",
+   "$\\dfrac{891}{80}\\theta=\\dfrac{11}{5}\\pi$, $\\theta=\\dfrac{16}{81}\\pi$",
+   "$p+q=81+16=97$"
+  ],
+  "check": "ok"
+ },
+ "8": {
+  "tp": "지수함수의 함수방정식",
+  "key": "지수 비교",
+  "sol": [
+   "$2^{a(x+y)+b}=2^4\\cdot2^{ax+b}\\cdot2^{ay+b}$에서 $b=4+2b$, $b=-4$",
+   "$f(3)=2^{3a-4}=2^5$에서 $a=3$",
+   "$2a-b=10$"
+  ],
+  "check": "ok"
+ },
+ "9": {
+  "tp": "합성함수의 최대·최소",
+  "key": "$f$의 범위 → 밑의 범위",
+  "sol": [
+   "$\\sin x\\in\\left[-\\dfrac12,\\,1\\right]$이므로 $7\\le f(x)\\le16$",
+   "$a\\gt1$이면 최솟값 $\\log_a7\\gt0$이므로 모순, $0\\lt a\\lt1$",
+   "최솟값 $\\log_a16=-2$에서 $a=\\dfrac14$",
+   "최댓값 $\\log_{\\frac14}7=-\\log_47$"
+  ],
+  "check": "ok"
+ },
+ "10": {
+  "tp": "로그 활용",
+  "key": "주어진 값으로 $a$ 결정",
+  "sol": [
+   "$15=-\\dfrac a{1000}\\log_2\\dfrac18=\\dfrac{3a}{1000}$, $a=5000$",
+   "$-5\\log_2\\dfrac P{1000}\\ge10$에서 $\\dfrac P{1000}\\le\\dfrac14$",
+   "$P\\le250$, $k=250$"
+  ],
+  "check": "ok"
+ },
+ "11": {
+  "tp": "삼각함수의 평행이동",
+  "key": "$-\\sin\\theta=\\cos\\left(\\theta+\\dfrac{\\pi}{2}\\right)$",
+  "sol": [
+   "$y=-\\sin(x-m)+n=\\cos\\left(x-m+\\dfrac{\\pi}{2}\\right)+n$",
+   "$n=6$, $-m+\\dfrac{\\pi}{2}=-\\dfrac{2\\pi}{3}$이므로 $m=\\dfrac{7\\pi}{6}$",
+   "$mn=7\\pi$"
+  ],
+  "check": "ok"
+ },
+ "12": {
+  "tp": "사분면의 각 세기",
+  "key": "주기적으로 나머지 분류",
+  "sol": [
+   "$\\dfrac n4\\pi$가 제$2$사분면: $n\\equiv3\\pmod8$, $3,11,\\cdots,99$로 $a=13$",
+   "$\\dfrac n6\\pi$가 제$4$사분면: $n\\equiv10,\\,11\\pmod{12}$, 각 $8$개로 $b=16$",
+   "$a+b=29$"
+  ],
+  "check": "ok"
+ },
+ "13": {
+  "tp": "가장 큰 근",
+  "key": "$t$의 부호로 나누기",
+  "sol": [
+   "$t\\lt0$: $\\pi\\theta(t)=2\\pi+\\sin^{-1}t$, $t\\ge0$: $\\pi\\theta(t)=2\\pi-\\cos^{-1}t$",
+   "$t_1\\lt0\\le t_2$, $\\cos^{-1}t_2=\\varphi$이면 $t_1=-\\sin\\varphi$, $t_2=\\cos\\varphi$",
+   "$\\sin\\varphi+\\cos\\varphi=\\dfrac75$에서 $\\sin\\varphi\\cos\\varphi=\\dfrac{12}{25}$",
+   "$t_1t_2=-\\dfrac{12}{25}$, $100k=-48$"
+  ],
+  "check": "ok"
+ },
+ "14": {
+  "tp": "거듭제곱근이 자연수",
+  "key": "$n=2^x3^y$의 지수 조건",
+  "sol": [
+   "$\\dfrac n2$이 세제곱수: $x\\equiv1$, $y\\equiv0\\pmod3$",
+   "$\\dfrac n3$이 다섯제곱수: $x\\equiv0$, $y\\equiv1\\pmod5$",
+   "최소 $x=10$, $y=6$, $m=2^{10}3^6$",
+   "$\\log m=3+2.88=5.88$"
+  ],
+  "check": "ok"
+ },
+ "15": {
+  "tp": "역함수와의 교점",
+  "key": "감소함수: $f(\\alpha)=\\gamma$, $f(\\gamma)=\\alpha$",
+  "sol": [
+   "$\\log_2\\dfrac{a-\\alpha}{a-\\gamma}=\\gamma-\\alpha=d$",
+   "$u=a-\\gamma$: $u(2^d-1)=d$에서 $d=1$, $u=1$",
+   "$\\alpha=5$, $\\gamma=6$, $a=7$; $f(6)=b=5$",
+   "$f(-1)=\\log_28+5=8$"
+  ],
+  "check": "ok"
+ },
+ "16": {
+  "tp": "상용로그",
+  "key": "정수부분과 소수부분",
+  "sol": [
+   "$-1.2874=-2+0.7126$",
+   "$\\beta=5.16\\times10^{-2}=0.0516$"
+  ],
+  "check": "ok"
+ },
+ "17": {
+  "tp": "삼각함수의 값",
+  "key": "제$2$사분면: $\\sin\\gt0$",
+  "sol": [
+   "$\\sin\\theta=\\dfrac45$, $\\tan\\theta=-\\dfrac43$",
+   "$\\dfrac45-\\dfrac43=-\\dfrac8{15}$"
+  ],
+  "check": "ok"
+ },
+ "18": {
+  "tp": "로그방정식과 근과 계수",
+  "key": "$X=\\log_2x$",
+  "sol": [
+   "$2X^2-8X+7=0$: $X_1+X_2=4$, $X_1X_2=\\dfrac72$",
+   "$\\log_\\alpha\\beta+\\log_\\beta\\alpha=\\dfrac{X_1^2+X_2^2}{X_1X_2}=\\dfrac{16-7}{7/2}=\\dfrac{18}{7}$",
+   "$p+q=25$"
+  ],
+  "check": "ok"
+ },
+ "19": {
+  "tp": "코사인 값이 같을 조건",
+  "key": "$\\cos A=\\cos B\\iff A=\\pm B+2n\\pi$",
+  "sol": [
+   "$2x-\\dfrac{2\\pi}{3}=x+2n\\pi$: $x=\\dfrac{2\\pi}{3},\\,-\\dfrac{4\\pi}{3}$ ($2$개)",
+   "$2x-\\dfrac{2\\pi}{3}=-x+2n\\pi$: $x=\\dfrac{2\\pi}{9}+\\dfrac{2n\\pi}{3}$, $n=-3,\\cdots,2$ ($6$개)",
+   "겹치지 않으므로 $8$"
+  ],
+  "check": "ok"
+ },
+ "20": {
+  "tp": "절댓값과 지수함수",
+  "key": "$g(x)=a^{|f(x)|}$",
+  "sol": [
+   "$a\\lt1$이면 $g\\le1$이므로 $a\\gt1$",
+   "$|f(x)|=\\log_a27$의 해가 $3$개: 꼭짓점 높이 $3$, $a=3$",
+   "$g(2)=27$: $\\big||2-k|-3\\big|=3$, $k=8,\\,-4,\\,2$",
+   "합 $6$"
+  ],
+  "check": "ok"
+ },
+ "21": {
+  "tp": "지수부등식",
+  "key": "밑 $\\dfrac12$로 통일",
+  "sol": [
+   "$\\left(\\dfrac12\\right)^{\\frac x2}\\gt\\left(\\dfrac12\\right)^{2x-12}$",
+   "밑이 $1$보다 작으므로 $\\dfrac x2\\lt2x-12$, $x\\gt8$"
+  ],
+  "check": "ok"
+ },
+ "22": {
+  "tp": "지수와 로그",
+  "key": "$2^a=3^b=t$",
+  "sol": [
+   "$(a-2)(b-2)=4$에서 $ab=2(a+b)$, $\\dfrac1a+\\dfrac1b=\\dfrac12$",
+   "$\\log_t2+\\log_t3=\\dfrac12$이므로 $t=36$",
+   "$12^a\\left(\\dfrac13\\right)^{a+b}=\\dfrac{4^a}{3^b}=\\dfrac{t^2}{t}=36$"
+  ],
+  "check": "ok"
+ },
+ "23": {
+  "tp": "로그부등식",
+  "key": "진수 조건 후 정리",
+  "sol": [
+   "$x\\lt3$, $x\\ne\\dfrac14$; $\\log_2|4x-1|\\le\\log_22(3-x)$",
+   "$|4x-1|\\le6-2x$에서 $-\\dfrac52\\le x\\le\\dfrac76$",
+   "정수 $-2,-1,0,1$: $4$개"
+  ],
+  "check": "ok"
+ }
+}

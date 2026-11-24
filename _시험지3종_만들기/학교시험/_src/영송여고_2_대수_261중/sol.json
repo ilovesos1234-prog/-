@@ -1,0 +1,149 @@
+{
+ "1": {
+  "tp": "거듭제곱근",
+  "key": "$\\sqrt[3]{64}=4$",
+  "sol": [
+   "$3\\times4+\\sqrt4=12+2=14$"
+  ],
+  "check": "ok"
+ },
+ "2": {
+  "tp": "로그의 성질",
+  "key": "$3\\log_5\\sqrt[3]9=\\log_59$",
+  "sol": [
+   "$(1-\\log_59)+\\log_59-3=-2$"
+  ],
+  "check": "ok"
+ },
+ "3": {
+  "tp": "지수함수의 점근선",
+  "key": "$y=2^{x+2}$의 점근선 $y=0$",
+  "sol": [
+   "$a=0$"
+  ],
+  "check": "ok"
+ },
+ "4": {
+  "tp": "로그함수 최대",
+  "key": "증가함수: 오른쪽 끝 최대",
+  "sol": [
+   "$x=7$: $\\log_33+1=2$"
+  ],
+  "check": "ok"
+ },
+ "5": {
+  "tp": "특수각",
+  "key": "$\\frac{11}3\\pi$의 동경은 $-\\frac\\pi3$",
+  "sol": [
+   "$\\cos\\theta=\\dfrac12$, $\\sin\\theta=-\\dfrac{\\sqrt3}2$, $\\tan\\theta=-\\sqrt3$",
+   "$\\dfrac12-\\dfrac{\\sqrt3}2+\\sqrt3=\\dfrac{1+\\sqrt3}2$"
+  ],
+  "check": "ok"
+ },
+ "6": {
+  "tp": "근과 계수의 관계",
+  "key": "$p=\\log a$, $q=\\log b$",
+  "sol": [
+   "$p+q=3$, $pq=1$",
+   "$\\dfrac p{2q}+\\dfrac q{2p}=\\dfrac{(p+q)^2-2pq}{2pq}=\\dfrac{9-2}2=\\dfrac72$"
+  ],
+  "check": "ok"
+ },
+ "7": {
+  "tp": "지수 실생활",
+  "key": "$\\left(\\frac32\\right)^{\\frac t2}=\\frac94$",
+  "sol": [
+   "$100\\left(\\dfrac32\\right)^{\\frac t2}=225$",
+   "$\\dfrac t2=2$, $t=4$"
+  ],
+  "check": "ok"
+ },
+ "8": {
+  "tp": "부채꼴",
+  "key": "$l=r\\theta$",
+  "sol": [
+   "$l=\\dfrac{2\\pi}3$, $S=\\dfrac12\\times4\\times\\dfrac{2\\pi}3=\\dfrac{4\\pi}3$",
+   "$a+b=\\dfrac23+\\dfrac43=2$"
+  ],
+  "check": "ok"
+ },
+ "9": {
+  "tp": "코사인 계수 결정",
+  "key": "$a\\lt0$이면 최솟값 $a+b$",
+  "sol": [
+   "$f(x)=a\\cos\\dfrac\\pi2x+b$, $f(1)=b=2$",
+   "$a+b=-5$, $a=-7$",
+   "$ab=-14$"
+  ],
+  "check": "ok"
+ },
+ "10": {
+  "tp": "로그부등식",
+  "key": "$0\\lt f(x)\\le9$",
+  "sol": [
+   "$f(x)=(x-1)(x-3)$, 밑이 $\\dfrac13$이므로 $0\\lt f(x)\\le9$",
+   "$f\\gt0$: $x\\lt1$ 또는 $x\\gt3$; $x^2-4x-6\\le0$: $2-\\sqrt{10}\\le x\\le2+\\sqrt{10}$",
+   "정수 $-1,0,4,5$: $k=4$"
+  ],
+  "check": "ok"
+ },
+ "11": {
+  "tp": "삼각함수 그래프와 넓이",
+  "key": "$y=\\cos\\frac x2$",
+  "sol": [
+   "$\\sin\\dfrac12(x+\\pi)=\\cos\\dfrac x2=\\dfrac12$: $x=\\dfrac23\\pi,\\dfrac{10}3\\pi,\\dfrac{14}3\\pi$",
+   "$\\overline{\\text{AB}}$ 최대 $4\\pi$, 높이 최대 $\\dfrac12-(-1)=\\dfrac32$",
+   "넓이 최대 $\\dfrac12\\times4\\pi\\times\\dfrac32=3\\pi$, $p=3$"
+  ],
+  "check": "ok"
+ },
+ "12": {
+  "tp": "sin−cos",
+  "key": "$a^3-b^3=(a-b)(a^2+ab+b^2)$",
+  "sol": [
+   "제곱: $1-2\\sin\\theta\\cos\\theta=\\dfrac9{16}$, $\\sin\\theta\\cos\\theta=\\dfrac7{32}$",
+   "$\\sin^3\\theta-\\cos^3\\theta=\\dfrac34\\left(1+\\dfrac7{32}\\right)=\\dfrac34\\times\\dfrac{39}{32}=\\dfrac{117}{128}$"
+  ],
+  "check": "ok"
+ },
+ "13": {
+  "tp": "지수를 로그로",
+  "key": "$\\frac1c=\\frac1a+\\frac1b$",
+  "sol": [
+   "$3^a=5^b=k^c=t$이면 $\\dfrac1a=\\log_t3$, $\\dfrac1b=\\log_t5$, $\\dfrac1c=\\log_tk$",
+   "$ab=bc+ca$를 $abc$로 나누면 $\\dfrac1c=\\dfrac1a+\\dfrac1b$",
+   "$\\log_tk=\\log_t15$, $k=15$"
+  ],
+  "check": "ok"
+ },
+ "14": {
+  "tp": "판별식과 삼각부등식",
+  "key": "$\\frac D4\\lt0$을 $\\sin\\theta$로",
+  "sol": [
+   "$\\dfrac D4=4\\cos^2\\theta+6\\sin^2\\theta+\\sin\\theta-5\\lt0$",
+   "$2\\sin^2\\theta+\\sin\\theta-1\\lt0$, $-1\\lt\\sin\\theta\\lt\\dfrac12$",
+   "$0\\le\\theta\\lt\\dfrac\\pi6$, $\\dfrac56\\pi\\lt\\theta\\lt\\dfrac32\\pi$, $\\dfrac32\\pi\\lt\\theta\\lt2\\pi$"
+  ],
+  "check": "ok"
+ },
+ "15": {
+  "tp": "역함수 관계",
+  "key": "로그함수의 역함수를 구해 비교",
+  "sol": [
+   "$y=\\log_3\\{81(x-3)\\}=4+\\log_3(x-3)$",
+   "역함수: $y=3^{x-4}+3$",
+   "$y=3^{x-m}+3$과 같으므로 $m=4$"
+  ],
+  "check": "ok"
+ },
+ "16": {
+  "tp": "로그부등식",
+  "key": "$\\log(x-2)^2=2\\log|x-2|$",
+  "sol": [
+   "좌변 $=\\log|x-2|\\le2$, $x\\ne2$",
+   "$0\\lt|x-2|\\le100$, $-98\\le x\\le102$, $x\\ne2$",
+   "$201-1=200$개"
+  ],
+  "check": "ok"
+ }
+}

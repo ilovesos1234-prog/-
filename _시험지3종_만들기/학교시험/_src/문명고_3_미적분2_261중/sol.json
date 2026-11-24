@@ -1,0 +1,200 @@
+{
+ "1": {
+  "tp": "수열의 수렴·발산",
+  "key": "각 수열의 극한 확인",
+  "sol": [
+   "ㄱ. $\\log3$로 수렴, ㄴ. $0,\\dfrac12$ 반복 → 발산",
+   "ㄷ. $0$으로 수렴, ㄹ. $(-1)^n$ → 발산",
+   "수렴: ㄱ, ㄷ의 $2$개"
+  ],
+  "check": "ok"
+ },
+ "2": {
+  "tp": "이계도함수",
+  "key": "곱의 미분 두 번",
+  "sol": [
+   "$f'(x)=\\sin x+x\\cos x$",
+   "$f''(x)=2\\cos x-x\\sin x$",
+   "$f''\\left(\\dfrac{\\pi}{2}\\right)=-\\dfrac{\\pi}{2}$"
+  ],
+  "check": "ok"
+ },
+ "3": {
+  "tp": "거듭제곱근 미분",
+  "key": "f=(x/4)^(1/5)",
+  "sol": [
+   "$f'(x)=\\dfrac15\\left(\\dfrac x4\\right)^{-\\frac45}\\cdot\\dfrac14$",
+   "$f'(4)=\\dfrac{1}{20}$"
+  ],
+  "check": "ok"
+ },
+ "4": {
+  "tp": "급수와 수열의 극한",
+  "key": "급수 수렴 ⇒ a_n→0",
+  "sol": [
+   "$S_n\\to1$, $a_n\\to0$",
+   "$\\dfrac{0+2}{1-0}=2$"
+  ],
+  "check": "ok"
+ },
+ "5": {
+  "tp": "연속과 지수함수 극한",
+  "key": "분모→0이면 분자→0",
+  "sol": [
+   "$1-0+a=0\\Rightarrow a=-1$",
+   "$b=\\displaystyle\\lim_{x\\to0}\\left(\\dfrac{e^{2x}-1}{3x}-\\dfrac{\\tan3x}{3x}\\right)=\\dfrac23-1=-\\dfrac13$",
+   "$b-a=\\dfrac23$"
+  ],
+  "check": "ok"
+ },
+ "6": {
+  "tp": "삼각함수 미분",
+  "key": "sec, tan의 도함수",
+  "sol": [
+   "$f'(x)=a\\sec^2x-\\sec x\\tan x$",
+   "$f'\\left(\\dfrac{\\pi}{6}\\right)=\\dfrac43a-\\dfrac23=6$",
+   "$a=5$"
+  ],
+  "check": "ok"
+ },
+ "7": {
+  "tp": "등차수열의 극한",
+  "key": "공차 d=2a_1+1",
+  "sol": [
+   "$a_n=a_1+(n-1)d$",
+   "$\\dfrac{2d+1}{d-1}=3\\Rightarrow d=4$, $a_1=\\dfrac32$",
+   "$a_5=\\dfrac32+16=\\dfrac{35}{2}$"
+  ],
+  "check": "ok"
+ },
+ "8": {
+  "tp": "매개변수 미분",
+  "key": "dy/dx=(dy/dt)/(dx/dt)",
+  "sol": [
+   "$\\dfrac{dy}{dx}=\\dfrac{2t-a}{3t^2}$",
+   "$t=1$: $\\dfrac{2-a}{3}=-2\\Rightarrow a=8$"
+  ],
+  "check": "ok"
+ },
+ "9": {
+  "tp": "등비수열의 극한",
+  "key": "사다리꼴 넓이 a_n=(9/2)8^n",
+  "sol": [
+   "$\\mathrm{P}_n(4^n,2^n)$",
+   "$a_n=\\dfrac{2^n+2^{n+1}}{2}(4^{n+1}-4^n)=\\dfrac92\\cdot8^n$",
+   "$\\displaystyle\\lim\\dfrac{36\\cdot8^n-6^n}{\\frac92\\cdot8^n+7^n}=8$"
+  ],
+  "check": "ok"
+ },
+ "10": {
+  "tp": "등비수열의 극한",
+  "key": "a_n=2·3^(n−1)",
+  "sol": [
+   "$a_n=2\\cdot3^{n-1}$, $b_n=\\dfrac{a_{n+1}^2}{a_n}=2\\cdot3^{n+1}$",
+   "$a_n(a_{n+1}+b_n)=2\\cdot3^{n-1}\\cdot8\\cdot3^n=\\dfrac{16}{3}\\cdot9^n$",
+   "극한 $\\dfrac{16}{3}$"
+  ],
+  "check": "ok"
+ },
+ "11": {
+  "tp": "수열의 극한",
+  "key": "a_n/n→2",
+  "sol": [
+   "$\\dfrac{a_n}{n}\\to2$",
+   "$\\dfrac{1}{\\left(\\frac{a_n}{n}+1\\right)\\left(\\frac{a_n}{n}-1\\right)}\\to\\dfrac13$"
+  ],
+  "check": "ok"
+ },
+ "12": {
+  "tp": "극한의 대소 관계",
+  "key": "완전제곱식으로 변형",
+  "sol": [
+   "$(a_n-2)^2\\le4-\\dfrac{4n+1}{n+2}=\\dfrac{7}{n+2}$",
+   "$\\dfrac{7}{n+2}\\to0$이므로 $a_n\\to2$"
+  ],
+  "check": "ok"
+ },
+ "13": {
+  "tp": "지수함수 극한",
+  "key": "PQ=OQ로 f(t) 구하기",
+  "sol": [
+   "$(x-t)^2+y^2=x^2\\Rightarrow f(t)=\\dfrac{t^2+(e^{2t}-1)^2}{2t}$",
+   "$\\dfrac{f(t)}{t}=\\dfrac12+\\dfrac12\\left(\\dfrac{e^{2t}-1}{t}\\right)^2\\to\\dfrac12+2=\\dfrac52$",
+   "$\\dfrac{f(2t)}{t}=2\\cdot\\dfrac{f(2t)}{2t}\\to5$"
+  ],
+  "check": "ok"
+ },
+ "14": {
+  "tp": "곱의 미분법",
+  "key": "g'=(f+f')e^x",
+  "sol": [
+   "$g(2)=g'(2)\\Rightarrow f'(2)=0$, $f(x)=2x^2-8x+q$",
+   "$f+f'=2x^2-4x+q-8$, 중근: $4-2(q-8)=0$",
+   "$q=10$, $f(3)=4$"
+  ],
+  "check": "ok"
+ },
+ "15": {
+  "tp": "지수함수 극한",
+  "key": "x=1/2에서 우변=0",
+  "sol": [
+   "$e^{\\frac a2+b}=1\\Rightarrow b=-\\dfrac a2$",
+   "$f\\left(\\dfrac12\\right)=\\displaystyle\\lim\\dfrac{e^{a(x-\\frac12)}-1}{2(x-\\frac12)}=\\dfrac a2=2$",
+   "$a=4$, $b=-2$, $f(0)=\\dfrac{e^{-2}-1}{-1}=1-e^{-2}$",
+   "$a+b+f(0)=3-e^{-2}$"
+  ],
+  "check": "ok"
+ },
+ "16": {
+  "tp": "등비급수",
+  "key": "공비는 자연수",
+  "sol": [
+   "$a_n=ar^{n-1}$, $\\dfrac{a}{3-r}=3$",
+   "$\\sum\\dfrac{1}{a_{2n}}$ 수렴 ⇒ $r\\ge2$, $r\\lt3$ → $r=2$, $a=3$",
+   "$S=\\displaystyle\\sum\\dfrac{1}{3\\cdot2^{2n-1}}=\\dfrac23\\cdot\\dfrac13=\\dfrac29$"
+  ],
+  "check": "ok"
+ },
+ "17": {
+  "tp": "미분가능성",
+  "key": "x=π에서 연속·미분가능",
+  "sol": [
+   "$\\sin(k\\pi+x)=(-1)^k\\sin x$, $\\sum k(-1)^k=50$ → $f=50\\sin x$",
+   "$x=\\pi$ 연속: $b=0$, 미분계수: $-a=-50$, $a=50$",
+   "$f\\left(\\dfrac72\\pi\\right)=f\\left(\\dfrac32\\pi\\right)=-50$"
+  ],
+  "check": "ok"
+ },
+ "18": {
+  "tp": "삼각함수 극한",
+  "key": "∠CBA=30°, BH=1−cos2θ",
+  "sol": [
+   "$\\mathrm{BH}=1-\\cos2\\theta=2\\sin^2\\theta$",
+   "$\\mathrm{QH}=\\mathrm{BH}\\tan30^\\circ$",
+   "$S=\\dfrac{(2\\sin^2\\theta)^2}{2\\sqrt3}$",
+   "$\\dfrac{S}{\\theta^4}\\to\\dfrac{4}{2\\sqrt3}=\\dfrac{2\\sqrt3}{3}$"
+  ],
+  "check": "ok"
+ },
+ "19": {
+  "tp": "등비급수 활용",
+  "key": "이동 벡터가 2/3배·60° 회전",
+  "sol": [
+   "$\\overrightarrow{\\mathrm{A}_n\\mathrm{A}_{n+1}}$: 길이 $7\\left(\\frac23\\right)^{n-1}$, 방향 $60^\\circ$씩 회전",
+   "극한점 $\\dfrac{7}{1-\\frac23(\\cos60^\\circ+i\\sin60^\\circ)}$ 꼴",
+   "$\\left|1-\\dfrac23e^{i\\pi/3}\\right|^2=\\dfrac49+\\dfrac13=\\dfrac79$",
+   "$x^2+y^2\\to\\dfrac{49}{7/9}=63$"
+  ],
+  "check": "ok"
+ },
+ "20": {
+  "tp": "덧셈정리",
+  "key": "tan으로 두 각 표현",
+  "sol": [
+   "높이 $h$: $\\tan\\theta=\\dfrac{h/7}{1-\\frac{h-1}{49}}=\\dfrac{7h}{50-h}$",
+   "$\\tan\\left(\\theta+\\dfrac{\\pi}{4}\\right)=\\dfrac{2h}{5-h}=\\dfrac{50+6h}{50-8h}$",
+   "$h^2-12h+25=0$, $a+b=12$"
+  ],
+  "check": "ok"
+ }
+}
