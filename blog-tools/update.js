@@ -31,5 +31,8 @@ const dir = path.join(process.cwd(), 'blog-fix');
       process.exit(1);
     }
   }
+  // 여러 글 한꺼번에 임시저장·발행하는 도구도 프로그램 폴더에 둔다
+  const res = await fetch(BASE + 'batch.js?v=' + Date.now(), { cache: 'no-store' });
+  if (res.ok) fs.writeFileSync(path.join(process.cwd(), 'batch.js'), Buffer.from(await res.arrayBuffer()));
   console.log('\n===== 모두 끝났어요! 이제  node server.js  로 프로그램을 켜 주세요. =====\n');
 })();
