@@ -8,7 +8,7 @@ const imagesDir = path.join(process.cwd(), 'src', 'images');
 const target = path.join(imagesDir, 'contactCard.js');
 
 async function get(name) {
-  const res = await fetch(BASE + name);
+  const res = await fetch(BASE + name + '?v=' + Date.now(), { cache: 'no-store' }); // 옛 파일이 남지 않게
   if (!res.ok) throw new Error(`${name} 받기 실패 (${res.status})`);
   return Buffer.from(await res.arrayBuffer());
 }
