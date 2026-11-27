@@ -31,7 +31,8 @@ async function renderContactCard({ type = 'phone', phone = '', academyName = '',
   const line = isPhone ? '클릭하시면\n전화로 연결됩니다' : '클릭하시면\n네이버 톡톡으로 연결됩니다';
   const sub = note || (isPhone ? '수업 중에는 연결이 어려우니\n부재 시 문자 남겨주시면\n연락드리겠습니다 :)' : '편한 시간에 메시지 남겨주세요\n확인 후 바로 답변드리겠습니다 :)');
   // 관 이름이 비어 있으면 " · " 만 남으므로 학원 이름으로 바꾼다
-  const name = String(academyName || '').replace(/^[\s·]+|[\s·]+$/g, '') || DEFAULT_NAME;
+  // 초등관·중고등관 이름이 같으면 한 번만 쓴다 (예: "채수학교습소 · 채수학교습소" → "채수학교습소")
+  const name = [...new Set(String(academyName || '').split('·').map((s) => s.trim()).filter(Boolean))].join(' · ') || DEFAULT_NAME;
   const ch = characterUri(isPhone ? 'point' : 'heart');
 
   const html = `<!doctype html><html><head><meta charset="utf-8"><style>
