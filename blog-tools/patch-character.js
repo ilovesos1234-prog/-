@@ -20,12 +20,13 @@ async function get(name) {
     process.exit(1);
   }
   try {
-    const [card, point, heart] = await Promise.all([get('contactCard.js'), get('character/point.png'), get('character/heart.png')]);
+    const [card, point, heart, bulb] = await Promise.all([get('contactCard.js'), get('character/point.png'), get('character/heart.png'), get('character/bulb.png')]);
     const backup = path.join(imagesDir, 'contactCard.backup.js');
     if (!fs.existsSync(backup)) fs.copyFileSync(target, backup);
     fs.mkdirSync(path.join(imagesDir, 'character'), { recursive: true });
     fs.writeFileSync(path.join(imagesDir, 'character', 'point.png'), point);
     fs.writeFileSync(path.join(imagesDir, 'character', 'heart.png'), heart);
+    fs.writeFileSync(path.join(imagesDir, 'character', 'bulb.png'), bulb);
     fs.writeFileSync(target, card);
     console.log('\n[성공] 상담 카드에 캐릭터를 넣었어요!');
     console.log('원본은 contactCard.backup.js 로 보관했어요.');

@@ -12,6 +12,7 @@ const CHAR_DIR = path.join(__dirname, 'character');
 const GREEN = { bg: '#1e6b45', ink: '#ffffff', accent: '#f2c661', sub: '#d7eadf' };
 
 const PHONE_ICON = `<svg viewBox="0 0 24 24" width="110" height="110" fill="currentColor"><path d="M6.6 10.8c1.7 3.3 4.3 5.9 7.6 7.6l2.5-2.5c.3-.3.8-.4 1.2-.3 1.3.4 2.7.7 4.1.7.7 0 1.2.5 1.2 1.2V21c0 .7-.5 1.2-1.2 1.2C10.7 22.2 1.8 13.3 1.8 2.2 1.8 1.5 2.3 1 3 1h3.5c.7 0 1.2.5 1.2 1.2 0 1.4.2 2.8.7 4.1.1.4 0 .9-.3 1.2l-2.5 2.3z"/></svg>`;
+const PIN_ICON = `<svg viewBox="0 0 24 24" width="110" height="110" fill="currentColor"><path d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>`;
 const TALK_ICON = `<svg viewBox="0 0 24 24" width="110" height="110" fill="currentColor"><path d="M12 2C6.5 2 2 5.8 2 10.4c0 2.9 1.9 5.5 4.7 7-.2.8-.8 2.8-.9 3.2-.1.5.2.5.4.4.2-.1 2.9-2 4.1-2.8.6.1 1.1.1 1.7.1 5.5 0 10-3.8 10-8.4S17.5 2 12 2z"/></svg>`;
 
 /** 캐릭터 그림을 data URI로 (없으면 빈 문자열 → 캐릭터 없이 그린다) */
@@ -24,18 +25,22 @@ function characterUri(name) {
 }
 
 /**
- * @param {'phone'|'talk'} type
+ * @param {'phone'|'talk'|'map'} type
  */
-async function renderContactCard({ type = 'phone', phone = '', academyName = '', note = '', branch = 'both' }, dest) {
+async function renderContactCard({ type = 'phone', phone = '', academyName = '', note = '', branch = 'both', address = '' }, dest) {
   const t = GREEN || THEMES[branch] || THEMES.both;
   const isPhone = type === 'phone';
-  const title = isPhone ? '상담문의' : '톡톡 상담';
-  const line = isPhone ? '클릭하시면\n전화로 연결됩니다' : '클릭하시면\n네이버 톡톡으로 연결됩니다';
-  const sub = note || (isPhone ? '수업 중에는 연결이 어려우니\n부재 시 문자 남겨주시면\n연락드리겠습니다 :)' : '편한 시간에 메시지 남겨주세요\n확인 후 바로 답변드리겠습니다 :)');
-  // 관 이름이 비어 있으면 " · " 만 남으므로 학원 이름으로 바꾼다
+  const isMap = type === 'map';
+  const title = isMap ? '오시는 길' : isPhone ? '상담문의' : '톡톡 상담';
+  // 주소는 동네와 번지 사이에서 줄을 바꾼다 (예: "대구 수성구 범어동\n261-33, 4층")
+  const addr = String(address || '').trim().replace(/\s+(?=\d)/, '\n');
+  const line = isMap ? addr || '클릭하시면 지도로 연결됩니다' : isPhone ? '클릭하시면\n전화로 연결됩니다' : '클릭하시면\n네이버 톡톡으로 연결됩니다';
+  const sub = note || (isMap ? '클릭하시면\n네이버 지도로 연결됩니다' : isPhone ? '수업 중에는 연결이 어려우니\n부재 시 문자 남겨주시면\n연락드리겠습니다 :)' : '편한 시간에 메시지 남겨주세요\n확인 후 바로 답변드리겠습니다 :)');
   // 초등관·중고등관 이름이 같으면 한 번만 쓴다 (예: "채수학교습소 · 채수학교습소" → "채수학교습소")
   const name = [...new Set(String(academyName || '').split('·').map((s) => s.trim()).filter(Boolean))].join(' · ') || DEFAULT_NAME;
-  const ch = characterUri(isPhone ? 'point' : 'heart');
+  const ch = characterUri(isMap ? 'bulb' : isPhone ? 'point' : 'heart');
+  const icon = isMap ? PIN_ICON : isPhone ? PHONE_ICON : TALK_ICON;
+  const showPhone = (isPhone || isMap) && phone;
 
   const html = `<!doctype html><html><head><meta charset="utf-8"><style>
     * { box-sizing: border-box; margin: 0; }
@@ -54,11 +59,11 @@ async function renderContactCard({ type = 'phone', phone = '', academyName = '',
     <div class="card">
       ${ch ? `<div class="glow"></div><img class="ch" src="${ch}">` : ''}
       <div class="col">
-        <div class="icon">${isPhone ? PHONE_ICON : TALK_ICON}</div>
+        <div class="icon">${icon}</div>
         <h1>${title}</h1>
         <div class="line">${esc(line)}</div>
         <div class="sub">${esc(sub)}</div>
-        <div class="foot">${esc(name)}${isPhone && phone ? `<br>${esc(phone)}` : ''}</div>
+        <div class="foot">${esc(name)}${showPhone ? `<br>${esc(phone)}` : ''}</div>
       </div>
     </div>
   </body></html>`;
