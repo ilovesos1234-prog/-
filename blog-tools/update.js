@@ -5,7 +5,7 @@ const path = require('path');
 const { execFileSync } = require('child_process');
 
 const BASE = 'https://raw.githubusercontent.com/ilovesos1234-prog/-/refs/heads/claude/upbeat-hawking-6hp1wt/blog-tools/';
-const STEPS = ['patch-tags.js', 'patch-tags2.js', 'patch-tags3.js', 'patch-tags4.js', 'patch-tags5.js', 'patch-map.js', 'patch-character.js'];
+const STEPS = ['patch-tags.js', 'patch-tags2.js', 'patch-tags3.js', 'patch-tags4.js', 'patch-tags5.js', 'patch-map.js', 'patch-map2.js', 'patch-character.js'];
 const dir = path.join(process.cwd(), 'blog-fix');
 
 (async () => {
