@@ -57,7 +57,7 @@ async function runJob(post, apiMode) {
 
   const posts = await api('/api/posts');
   const isDraft = mode === '임시저장';
-  const targets = posts.filter((p) => (isDraft ? ['draft', 'approved'].includes(p.status) : p.status === 'approved'));
+  const targets = posts.filter((p) => (isDraft ? ['draft', 'approved', 'failed'] : ['approved', 'failed']).includes(p.status)); // 발행 실패한 글도 다시 시도
   if (!targets.length) {
     console.log(isDraft ? '\n임시저장할 글이 없어요. (검토 대기·승인된 글이 없음)\n' : '\n발행할 글이 없어요. 대시보드에서 [이 글 승인하기]를 먼저 눌러 주세요.\n');
     return;
